@@ -10,10 +10,16 @@ sections:
 ---
 
 ## Overview
+{: #{{ 'Overview' | slugify }} }
+
 ...
 
 ## Media queries
+{: #{{ 'Media queries' | slugify }} }
+
 ...
 
 ## Grid options
+{: #{{ 'Grid options' | slugify }} }
+
 ...
