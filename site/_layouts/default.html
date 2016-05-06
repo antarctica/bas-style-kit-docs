@@ -1,30 +1,28 @@
-<!DOCTYPE html>
-<html lang="en-GB">
-    {% include head.html %}
+---
+layout: html
+---
 
-    <body>
-        {% include cookie-banner.html %}
-        {% include site-navigation.html %}
-        {% include beta-banner.html %}
+<div id="site-top"></div>
+{% include cookie-banner.html %}
+{% include site-navigation.html %}
+{% include beta-banner.html %}
 
-        <main class="container">
-            {{ content }}
-        </main>
+<main class="container">
+    {{ content }}
+</main>
 
-        {% include site-footer.html %}
+{% include site-footer.html %}
 
-        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-        <!-- Compiled and minified Bootstrap JavaScript plugins, include individual plugins instead if needed -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-        <!-- Cookie library used to persistently hide the cookie banner (slightly ironic we need a cookie to do this) -->
-        <script src="https://s3-eu-west-1.amazonaws.com/bas-cdn-dev/scratch/geomap/js.cookie.js"></script>
-        <!-- Code for managing cookie banner -->
-        <script src="{{ "/js/cookie-banner.js" | prepend: site.baseurl }}"></script>
-        <!-- Code for gathering user agent, etc. for feedback form -->
-        {% if page.url == "/feedback.html" %}
-        <script src="{{ "/js/feedback-environment.js" | prepend: site.baseurl }}"></script>
-        <script src="{{ "/js/feedback-decoration.js"  | prepend: site.baseurl }}"></script>
-        {% endif %}
-    </body>
-</html>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<!-- Compiled and minified Bootstrap JavaScript plugins, include individual plugins instead if needed -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<!-- Cookie library used to persistently hide the cookie banner (slightly ironic we need a cookie to do this) -->
+<script src="https://s3-eu-west-1.amazonaws.com/bas-cdn-dev/scratch/geomap/js.cookie.js"></script>
+<!-- Code for managing cookie banner -->
+<script src="{{ "/js/cookie-banner.js" | prepend: site.baseurl }}"></script>
+{% if page.url == "/feedback.html" %}
+<!-- Code for gathering user agent, etc. for feedback form -->
+<script src="{{ "/js/feedback-environment.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "/js/feedback-decoration.js"  | prepend: site.baseurl }}"></script>
+{% endif %}
