@@ -1,0 +1,65 @@
+---
+layout: home
+---
+
+<header class="jumbotron jumbotron-bsk jumbotron-bsk-inverse bsk-docs-masthead text-center">
+    <div class="container">
+        <span class="bsk-docs-symbol bsk-docs-symbol-lg bsk-docs-symbol-outline">
+            <img src="{{ "/img/bas-logo-roundel-only.png" | prepend: site.baseurl }}" />
+        </span>
+
+        <h1>BAS Style Kit</h1>
+        <p class="lead">
+            A collection of HTML, CSS, and JS components for developing web projects consistent with the BAS brand.
+        </p>
+        <p>
+            <a href="{{ "/start/download" | prepend: site.baseurl }}" class="btn btn-primary btn-lg btn-bsk btn-bsk-primary">
+                Download the BAS Style Kit
+            </a>
+        </p>
+        <p>Version: {{ site.bsk_version }}</p>
+    </div>
+</header>
+
+<div class="container">
+    <section class="lead text-center">
+        <span class="label label-app-phase-beta"><strong>BETA</strong></span>
+        This is a new website – your <a href="{{ "/feedback.html" | prepend: site.baseurl }}">feedback</a> will help us to improve it.
+    </section>
+
+    <hr />
+
+    <section class="text-center">
+        <h2>Counterpart to the BAS Style Guide</h2>
+        <p>The BAS Style Guide gives official guidance and suggestions on how to design BAS projects on the web,
+    and how to use the resources in this Style Kit.</p>
+        <a href="{{ site.bas_navigation_menu.bas_style_guide | prepend: site.baseurl }}"
+        class="btn btn-primary btn-lg btn-bsk btn-bsk-primary">
+            View the BAS Style Kit
+        </a>
+    </section>
+
+    <hr />
+
+    <section class="text-center">
+        <h2>A living, shared, resource, developed in the open</h2>
+        <p>Anyone can contribute changes, whether its a new component or improving the documentation.</p>
+        <p>The BAS Style Kit is designed around the needs of BAS Projects.
+        If you can't find something you need let us know and we'll work with you to find something suitable.</p>
+        <a href="{{ site.bsk_source_code_url | prepend: site.baseurl }}"
+        class="btn btn-primary btn-lg btn-bsk btn-bsk-primary">
+            View the code
+        </a>
+    </section>
+
+    <hr />
+
+    <section class="text-center">
+        TODO: Style as warning. <br />
+
+        <strong>Some parts of the BAS Style Kit, such as the BAS Logo, are licensed works.</strong>
+
+        This means they may only be used in projects officially endorsed by BAS, subject to certain conditions.
+        This is explained in detail where this applies.
+    </section>
+</div>
