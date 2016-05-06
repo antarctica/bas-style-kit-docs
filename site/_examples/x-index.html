@@ -1,0 +1,25 @@
+---
+slug: index
+layout: default
+title: Examples
+subtitle: Build on a basic template or try out many of the Style Kit's components to solve various typical designs and uses
+---
+
+<header class="page-header">
+    <h1>{{ page.title }}</h1>
+    <p class="lead">{{ page.subtitle }}</p>
+</header>
+
+{% for topic in site.examples %}
+{% unless topic.slug == "index" %}
+    {% capture modulo %}{{ forloop.index | modulo: 3 }}{% endcapture %}
+
+    {% if modulo == '1' %}<div class="row">{% endif %}
+
+        <div class="col-md-4">
+            <h2><a href="{{ topic.url | prepend: site.baseurl }}">{{ topic.title }}</a></h2>
+        </div>
+
+    {% if modulo == '0' or forloop.last %}</div>{% endif %}
+{% endunless %}
+{% endfor %}
