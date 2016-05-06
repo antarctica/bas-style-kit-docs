@@ -4,16 +4,15 @@ layout: home
 
 <header class="jumbotron jumbotron-bsk jumbotron-bsk-inverse bsk-docs-masthead text-center">
     <div class="container">
-        <span class="bsk-docs-symbol bsk-docs-symbol-lg bsk-docs-symbol-outline">
-            <img src="{{ "/img/bas-logo-roundel-only.png" | prepend: site.baseurl }}" />
-        </span>
+
+        <div class="bsk-docs-symbol"></div>
 
         <h1>BAS Style Kit</h1>
         <p class="lead">
             A collection of HTML, CSS, and JS components for developing web projects consistent with the BAS brand.
         </p>
         <p>
-            <a href="{{ "/start/download" | prepend: site.baseurl }}" class="btn btn-primary btn-lg btn-bsk btn-bsk-primary">
+            <a href="{{ "/start/download" | prepend: site.baseurl }}" class="btn btn-default btn-lg btn-bsk">
                 Download the BAS Style Kit
             </a>
         </p>
@@ -21,7 +20,7 @@ layout: home
     </div>
 </header>
 
-<div class="container">
+<div class="container bsk-docs-home-sections">
     <section class="lead text-center">
         <span class="label label-app-phase-beta"><strong>BETA</strong></span>
         This is a new website – your <a href="{{ "/feedback.html" | prepend: site.baseurl }}">feedback</a> will help us to improve it.
@@ -57,9 +56,8 @@ layout: home
     <section class="text-center">
         TODO: Style as warning. <br />
 
-        <strong>Some parts of the BAS Style Kit, such as the BAS Logo, are licensed works.</strong>
-
-        This means they may only be used in projects officially endorsed by BAS, subject to certain conditions.
-        This is explained in detail where this applies.
+        <p><strong>Some parts of the BAS Style Kit, such as the BAS Logo, are licensed works.</strong> <br/>
+            This means they may only be used in projects officially endorsed by BAS, subject to certain conditions.
+            This is explained in detail where this applies.</p>
     </section>
 </div>

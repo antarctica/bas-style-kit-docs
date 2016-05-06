@@ -38,6 +38,40 @@ $beta-phase: #f47738;
   }
 }
 
+// Styles for main navigation
+.bsk-docs-main-navigation {
+  margin-bottom: 0;
+  border-left: none;
+  border-right: none;
+}
+
+// Styles for BAS logo shown on homepage
+.bsk-docs-symbol {
+  display: inline-block;
+  height: 256px;
+  width: 256px;
+  background-image: url('{{ "/img/bas-logo-roundel-only.png" | prepend: site.baseurl }}');
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: 3px solid #ffffff;
+  border-radius: 100%;
+}
+
+// Background image shown on homepage
+.bsk-docs-masthead {
+  background-image: url('{{ "/img/site-masthead-tom-welsh.jpg" | prepend: site.baseurl }}');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+// Styles for sections on the homepage
+.bsk-docs-home-sections {
+  section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+}
+
 // Styles for feedback form
 
 .app-feedback-form {
