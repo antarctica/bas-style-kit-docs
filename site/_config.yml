@@ -5,6 +5,8 @@
 
 # Build settings
 markdown: kramdown
+kramdown:
+  auto_ids: false
 
 # Server
 host: 0.0.0.0

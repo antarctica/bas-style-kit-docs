@@ -26,6 +26,18 @@ Please contact the [BAS Web & Applications Team](mailto:webapps@bas.ac.uk) for a
     * Topic (e.g. `type` - *Typography*)
         * Section (e.g. `alignment` - *Alignment classes*)
 
+## Section anchors
+
+The methods used by Kramdown and Jekyll differ, therefore Kramdown's automatic anchor generation is disabled and must 
+be set manually to use the Jekyll slugify method to ensure navigation links match page anchors.
+
+E.g.
+
+> ## HTML5
+> {: #{{ 'HTML5' | slugify }} }
+>
+> ...
+
 ## TODO
 
 * When SSL available:
