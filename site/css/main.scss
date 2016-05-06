@@ -1,0 +1,58 @@
+---
+---
+@charset "utf-8";
+
+// ==  Site specific styles
+
+// Styles for Alpha banner - these will be merged into a future version of the BAS Style Kit
+
+$beta-phase: #f47738;
+
+.label-app-phase-beta {
+  background-color: $beta-phase;
+  border-radius: 0;
+}
+
+// Styles for Cookie banner - these will be merged into a future version of the BAS Style Kit
+
+.alert-app-top-pin {
+  margin-bottom: 0;
+  border: none;
+}
+
+.alert-app-cookie-banner {
+  background-color: #006AAA;
+  color: white;
+
+  .alert-link {
+    color: white;
+  }
+
+  .close {
+    filter: alpha(opacity=100);
+    opacity: 1;
+
+    &:focus, &:hover {
+      color: #E7EBF1;
+    }
+  }
+}
+
+// Styles for feedback form
+
+.app-feedback-form {
+  fieldset {
+    margin-top: 40px;
+  }
+
+  .help-block.margin-before {
+    margin-bottom: 20px;
+  }
+  .help-block.margin-after {
+    margin-top: 20px;
+  }
+
+  .collapse {
+    margin-top: 20px;
+  }
+}

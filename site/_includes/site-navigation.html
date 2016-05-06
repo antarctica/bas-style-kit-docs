@@ -1,0 +1,69 @@
+<nav class="navbar navbar-bsk">
+    <div class="container">
+      <!-- Project and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <a class="navbar-brand" href="{{ "/" | prepend: site.baseurl }}">{{ site.title }}</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li{% if page.url == "/" %} class="active"{% endif %}>
+            <a href="{{ "/" | prepend: site.baseurl }}">Home</a>
+          </li>
+          <li{% if page.collection == "start" %} class="active"{% endif %}>
+            <a href="{{ "/start" | prepend: site.baseurl }}">
+              {% if page.collection == "start" %}<span class="sr-only">(current)</span>{% endif %} Getting Started
+            </a>
+          </li>
+          <li{% if page.collection == "core" %} class="active"{% endif %}>
+            <a href="{{ "/core" | prepend: site.baseurl }}">
+              {% if page.collection == "core" %}<span class="sr-only">(current)</span>{% endif %} Core styles
+            </a>
+          </li>
+          <li{% if page.collection == "components" %} class="active"{% endif %}>
+            <a href="{{ "/components" | prepend: site.baseurl }}">
+              {% if page.collection == "components" %}<span class="sr-only">(current)</span>{% endif %} Components
+            </a>
+          </li>
+          <li{% if page.collection == "interactivity" %} class="active"{% endif %}>
+            <a href="{{ "/interactivity" | prepend: site.baseurl }}">
+              {% if page.collection == "interactivity" %}<span class="sr-only">(current)</span>{% endif %} Interactivity
+            </a>
+          </li>
+          <li{% if page.collection == "guides" %} class="active"{% endif %}>
+            <a href="{{ "/guides" | prepend: site.baseurl }}">
+              {% if page.collection == "guides" %}<span class="sr-only">(current)</span>{% endif %} Guides
+            </a>
+          </li>
+          <li{% if page.collection == "examples" %} class="active"{% endif %}>
+            <a href="{{ "/examples" | prepend: site.baseurl }}">
+              {% if page.collection == "examples" %}<span class="sr-only">(current)</span>{% endif %} Examples
+            </a>
+          </li>
+        </ul><!-- /.navbar-nav -->
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              Part of the British Antarctic Survey <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu dropdown-menu-bsk">
+              <li><a href="{{ site.bas_navigation_menu.bas_home }}">BAS Home</a></li>
+              <li><a href="{{ site.bas_navigation_menu.bas_style_guide }}">BAS Style Guide</a></li>
+              <li><a href="{{ site.bas_navigation_menu.bas_data }}">Discover BAS data</a></li>
+            </ul>
+          </li>
+          <li{% if page.url == "/feedback.html" %} class="active"{% endif %}>
+            <a href="{{ "/feedback.html" | prepend: site.baseurl }}">Feedback</a>
+          </li>
+        </ul><!-- /.navbar-nav .navbar-right -->
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container -->
+</nav>

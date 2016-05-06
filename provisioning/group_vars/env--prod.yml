@@ -1,0 +1,5 @@
+---
+# These variables override those defined by roles
+
+# BAS Systems Inventory variables
+bas_systems_inventory_instance_environment: production

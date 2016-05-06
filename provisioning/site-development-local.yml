@@ -1,0 +1,24 @@
+---
+# Setup infrastructure and application for development environment
+
+- name: setup development nodes
+  hosts: project--bas-style-kit-docs:&env--dev-local
+  remote_user: "{{ privileged_remote_user }}"
+  become: yes
+  roles:
+    - bas-ansible-roles-collection.system-core
+    - bas-ansible-roles-collection.jekyll3
+  tasks:
+    - name: generate firewall service for jekyll development webserver - Ubuntu/UFW
+      copy:
+        src=files/etc/ufw/applications.d/jekyll
+        dest=/etc/ufw/applications.d/jekyll
+    - name: configure firewall rules for jekyll development webserver - Ubuntu/UFW
+      ufw:
+        name="jekyll"
+        rule=allow
+        direction=in
+      notify: Restart Firewall - Ubuntu
+  handlers:
+    - name: Restart Firewall - Ubuntu
+      ufw: state=reloaded

@@ -1,0 +1,90 @@
+# Jeykll configuration file
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Build settings
+markdown: kramdown
+
+# Server
+host: 0.0.0.0
+port: 9000
+url: localhost
+encoding: UTF-8
+
+# Site settings
+baseurl: "" # e.g. /foo
+url: "https://style-kit.web.bas.ac.uk" # base hostname & protocol for canonical links
+
+title: BAS Style Kit
+description: > # A collection of HTML, CSS, and JS components for developing web projects consistent with the BAS brand.
+
+bas_navigation_menu:
+  bas_home: https://www.bas.ac.uk
+  bas_data: https://data.bas.ac.uk
+  bas_style_guide: https://antarctica.hackpad.com/BAS-Style-Guide-NT1D10DRTCo
+
+bsk_source_code_url: https://github.com/antarctica/bas-style-kit
+
+feedback_api_identifier: style-kit-docs
+
+# 'site.revision' is set by the 'environment_variables' plugin
+bsk_version: 0.2.0-alpha
+
+collections:
+  start:
+    output: true
+    permalink: /:collection/:slug
+    title: Getting Started
+  core:
+    output: true
+    permalink: /:collection/:slug
+    title: Core styles
+  components:
+    output: true
+    permalink: /:collection/:slug
+    title: Components
+  interactivity:
+    output: true
+    permalink: /:collection/:slug
+    title: Interactivity
+  guides:
+    output: true
+    permalink: /:collection/:slug
+    title: Guides
+  examples:
+    output: true
+    permalink: /:collection/:slug
+    title: Examples
+
+defaults:
+  - scope:
+      path: ""
+      collection: start
+    values:
+      layout: page
+  - scope:
+      path: ""
+      collection: core
+    values:
+      layout: page
+  - scope:
+      path: ""
+      collection: components
+    values:
+      layout: page
+  - scope:
+      path: ""
+      collection: interactivity
+    values:
+      layout: page
+  - scope:
+      path: ""
+      collection: guides
+    values:
+      layout: page
+  - scope:
+      path: ""
+      collection: examples
+    values:
+      layout: page
