@@ -21,33 +21,61 @@ sections:
 {: #{{ 'HTML5' | slugify }} }
 
 ...
+<div class="band-bsk band-bsk-inverse"></div>
+<div class="band-bsk band-bsk-inverse"></div>
+<div class="band-bsk band-bsk-inverse"></div>
+<div class="band-bsk band-bsk-inverse"></div>
 
 ## CSS3
 {: #{{ 'CSS3' | slugify }} }
 
 ...
+<div class="band-bsk band-bsk-inverse"></div>
+<div class="band-bsk band-bsk-inverse"></div>
+<div class="band-bsk band-bsk-inverse"></div>
+<div class="band-bsk band-bsk-inverse"></div>
 
 ## Bootstrap
 {: #{{ 'Bootstrap' | slugify }} }
 
 ...
+<div class="band-bsk band-bsk-inverse"></div>
+<div class="band-bsk band-bsk-inverse"></div>
+<div class="band-bsk band-bsk-inverse"></div>
+<div class="band-bsk band-bsk-inverse"></div>
 
 ## Mobile first
 {: #{{ 'Mobile first' | slugify }} }
 
 ...
+<div class="band-bsk band-bsk-inverse"></div>
+<div class="band-bsk band-bsk-inverse"></div>
+<div class="band-bsk band-bsk-inverse"></div>
+<div class="band-bsk band-bsk-inverse"></div>
 
 ## Normalise.css
 {: #{{ 'Normalise.css' | slugify }} }
 
 ...
+<div class="band-bsk band-bsk-inverse"></div>
+<div class="band-bsk band-bsk-inverse"></div>
+<div class="band-bsk band-bsk-inverse"></div>
+<div class="band-bsk band-bsk-inverse"></div>
 
 ## Page background
 {: #{{ 'Page background' | slugify }} }
 
 ...
+<div class="band-bsk band-bsk-inverse"></div>
+<div class="band-bsk band-bsk-inverse"></div>
+<div class="band-bsk band-bsk-inverse"></div>
+<div class="band-bsk band-bsk-inverse"></div>
 
 ## Containers
 {: #{{ 'Containers' | slugify }} }
 
 ...
+<div class="band-bsk band-bsk-inverse"></div>
+<div class="band-bsk band-bsk-inverse"></div>
+<div class="band-bsk band-bsk-inverse"></div>
+<div class="band-bsk band-bsk-inverse"></div>
