@@ -40,9 +40,12 @@ $beta-phase: #f47738;
 
 // Styles for main navigation
 .bsk-docs-main-navigation {
-  margin-bottom: 0;
   border-left: none;
   border-right: none;
+
+  &.no-margin-bottom {
+      margin-bottom: 0;
+  }
 }
 
 // Styles for BAS logo shown on homepage
