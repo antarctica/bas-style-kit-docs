@@ -1,4 +1,4 @@
-<footer class="footer-bsk footer-bsk-default">
+<footer class="footer-bsk footer-bsk-default hidden-print">
   <div class="container">
     <!-- main content -->
     <div class="row">
@@ -31,4 +31,29 @@
       </div>
     </div>
   </div>
+</footer>
+
+<footer class="visible-print-block">
+  <hr />
+
+  <p>
+    Style Kit version: {{ site.bsk_version }} <br />
+    {% if site.revision == 'unknown' %}
+    Docs site build: {{ site.revision }}
+    {% else %}
+    Docs site build: <a href="https://github.com/antarctica/bas-style-kit/commit/{{ site.revision }}">{{ site.revision }}</a>
+    {% endif %}
+  </p>
+
+  <p>
+    Except where otherwise stated, code is licensed under the
+    <a rel="license" href="https://hackpad.com/BAS-Style-Kit-License-tYBcBNjApkJ">MIT License</a> <br>
+    and documentation, the <a rel="license" href="https://creativecommons.org/licenses/by/3.0/">CC BY v3.0 License</a>
+  </p>
+
+  <p>
+    © NERC BAS -
+    <a href="https://www.bas.ac.uk/about-this-site/copyright-statement/">Copyright:</a>
+    <a href="https://www.bas.ac.uk/about-this-site/privacy-cookie-policy/">Privacy:</a>
+  </p>
 </footer>
