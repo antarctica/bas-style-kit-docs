@@ -111,6 +111,16 @@ $beta-phase: #f47738;
     margin-top: 20px;
   }
 }
+
+// Styles for displaying pre blocks like code blocks where white-space needs preserving
+.bsk-docs-like-code {
+  padding: 2px 4px;
+  font-size: 90%;
+  background-color: #f9f2f4;
+  color: #c7254e;
+  border: none;
+}
+
 // Styles for jumbotrons heading collections
 .bsk-docs-collection-masthead {
   background-color: #006AAA;
