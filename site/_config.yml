@@ -31,7 +31,10 @@ bsk_source_code_url: https://github.com/antarctica/bas-style-kit
 feedback_api_identifier: style-kit-docs
 
 # 'site.revision' is set by the 'environment_variables' plugin
+
+# Style kit variables
 bsk_version: 0.2.0-alpha
+bsk_cdn_base: https://cdn.bas.ac.uk/bas-style-kit/
 
 collections:
   start:
