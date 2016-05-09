@@ -67,11 +67,29 @@ $beta-phase: #f47738;
   background-size: cover;
 }
 
+// Copyright notice shown in the bottom-right of images
+.bsk-docs-image-copyright-container {
+  display: block;
+  position: relative;
+}
+
+.bsk-docs-image-copyright-notice {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 3px 8px;
+  background-color: rgba(51, 51, 51, 0.8);
+  color: #FFFFFF;
+}
+
 // Styles for sections on the homepage
 .bsk-docs-home-sections {
   section {
     margin-top: 40px;
     margin-bottom: 40px;
+  }
+  h2 {
+    margin-bottom: 20px;
   }
 }
 
@@ -93,3 +111,11 @@ $beta-phase: #f47738;
     margin-top: 20px;
   }
 }
+// Temporary styles for alert shown on the homepage
+.bsk-docs-alert-outline-inset {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #EEEEEE;
+  border-left: 10px solid #FFBF47;
+}
+
