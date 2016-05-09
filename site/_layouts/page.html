@@ -17,7 +17,7 @@ layout: default
       <nav>
         <div class="sidebar-bsk sidebar-bsk-default">
           <h2>In <em>{{ page.title }}</em></h2>
-          <ul class="list-unstyled">
+          <ul class="list-unstyled bsk-docs-sections-nav">
           {% for section in page.sections %}
             <li><a href="#{{ section.title | slugify }}">{{ section.title }}</a></li>
           {% endfor %}
@@ -26,7 +26,7 @@ layout: default
           {% for collection in site.collections %}
             {% if collection.label == page.collection %}
               <h2>Also in <a href="/{{ collection.label | prepend: site.baseurl }}"><em>{{ collection.title }}</em></a></h2>
-              <ul class="list-unstyled">
+              <ul class="list-unstyled bsk-docs-topics-nav">
                 {% for topic in collection.docs %}
                 <li><a href="{{ topic.url | prepend: site.baseurl }}">{{ topic.title }}</a></li>
                 {% endfor %}
