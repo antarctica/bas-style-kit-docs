@@ -1,20 +1,34 @@
 <footer class="footer-bsk footer-bsk-default">
   <div class="container">
-    <!-- Copyright & legal -->
-    <div class="footer-bsk-ogl">
-      <a class="ogl-symbol" rel="license" href="http://www.nationalarchives.gov.uk/doc/open-government-licence/"><img alt="Open Government Licence logo" src="{{ "/img/ogl-symbol-white.png" | prepend: site.baseurl }}"></a>
-      <div class="ogl-text">All content is licensed under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/">Open Government Licence v3.0</a>, except where otherwise stated</div>
+    <!-- main content -->
     <div class="row">
+      <div class="col-md-6">
+        Style Kit version {{ site.bsk_version }} <br />
+        {% if site.revision == 'unknown' %}
+        Docs site build {{ site.revision }}
+        {% else %}
+        Docs site build <a href="https://github.com/antarctica/bas-style-kit/commit/{{ site.revision }}">{{ site.revision }}</a>
+        {% endif %}
+      </div>
       <div class="col-md-6 text-right">
         <a class="back-to-top" href="#site-top">Back to top</a>
       </div>
     </div>
-    <div class="footer-bsk-policy-links">
-      © NERC BAS
-      <ul class="list-inline">
-        <li><a href="https://www.bas.ac.uk/about-this-site/copyright-statement/">Copyright</a></li>
-        <li><a href="https://www.bas.ac.uk/about-this-site/privacy-cookie-policy/">Privacy</a></li>
-      </ul>
+    <div role="separator" class="footer-bsk-divider"></div>
+    <!-- Copyright & legal -->
+    <div class="row">
+      <div class="col-md-6">
+        Except where otherwise stated, code is licensed under the
+        <a rel="license" href="https://hackpad.com/BAS-Style-Kit-License-tYBcBNjApkJ">MIT License</a> <br>
+        and documentation, the <a rel="license" href="https://creativecommons.org/licenses/by/3.0/">CC BY v3.0 License</a>
+      </div>
+      <div class="col-md-6 text-right footer-bsk-policy-links">
+        © NERC BAS
+        <ul class="list-inline">
+          <li><a href="https://www.bas.ac.uk/about-this-site/copyright-statement/">Copyright</a></li>
+          <li><a href="https://www.bas.ac.uk/about-this-site/privacy-cookie-policy/">Privacy</a></li>
+        </ul>
+      </div>
     </div>
   </div>
 </footer>
