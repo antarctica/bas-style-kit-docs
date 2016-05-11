@@ -34,7 +34,7 @@ feedback_api_identifier: style-kit-docs
 
 # Style kit variables
 bsk_version: 0.2.0-alpha
-bsk_cdn_base: https://cdn.bas.ac.uk/bas-style-kit/
+bsk_cdn_base: https://s3-eu-west-1.amazonaws.com/bas-cdn-dev/bas-style-kit
 jekyll_get:
   data: bsk_sri
   json: 'https://s3-eu-west-1.amazonaws.com/bas-cdn-dev/bas-style-kit/0.2.0-alpha/sri.json'

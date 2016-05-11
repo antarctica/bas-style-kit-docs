@@ -8,9 +8,9 @@
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 
     <!-- Compiled and minified customised Bootstrap CSS for the BAS Style Kit -->
-    <link rel="stylesheet" href="https://cdn.web.bas.ac.uk/bas-style-kit/0.1.0/dist/css/bootstrap-bsk.min.css">
+    {% include snippets/link-css-bootstrap-bsk-min.html %}
     <!-- Compiled and minified BAS Style Kit CSS -->
-    <link rel="stylesheet" href="https://cdn.web.bas.ac.uk/bas-style-kit/0.1.0/dist/css/bas-style-kit.min.css">
+    {% include snippets/link-css-bas-style-kit-min.html %}
     <!-- Site specific styles -->
     <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 

@@ -39,11 +39,11 @@ Include these two CSS files in the <code>&lt;head&gt;</code> element <strong>bef
 (such as those for your website or application):
 
 {% highlight html %}
-<link rel="stylesheet" href="{{ site.bsk_cdn_base }}{{ site.bsk-version }}/css/bootstrap-bsk.min.css" integrity="{{ site.data.bsk_sri['dist/css/bootstrap-bsk.min.css'] }}" crossorigin="anonymous">
+{% include snippets/link-css-bootstrap-bsk-min.html %}
 {% endhighlight %}
 
 {% highlight html %}
-<link rel="stylesheet" href="{{ site.bsk_cdn_base }}{{ site.bsk-version }}/css/bas-style-kit.min.css" integrity="{{ site.data.bsk_sri['dist/css/bas-style-kit.min.css'] }}" crossorigin="anonymous">
+{% include snippets/link-css-bas-style-kit-min.html %}
 {% endhighlight %}
 
 The first file, <em>bootstrap-bsk.min.css</em>, is a custom version of [Bootstrap](https://www.getbootstrap.com),
