@@ -39,27 +39,27 @@ bsk_cdn_base: https://cdn.bas.ac.uk/bas-style-kit/
 collections:
   start:
     output: true
-    permalink: /:collection/:slug
+    permalink: /:collection/:slug/
     title: Getting Started
   core:
     output: true
-    permalink: /:collection/:slug
+    permalink: /:collection/:slug/
     title: Core styles
   components:
     output: true
-    permalink: /:collection/:slug
+    permalink: /:collection/:slug/
     title: Components
   interactivity:
     output: true
-    permalink: /:collection/:slug
+    permalink: /:collection/:slug/
     title: Interactivity
   guides:
     output: true
-    permalink: /:collection/:slug
+    permalink: /:collection/:slug/
     title: Guides
   examples:
     output: true
-    permalink: /:collection/:slug
+    permalink: /:collection/:slug/
     title: Examples
 
 defaults:
