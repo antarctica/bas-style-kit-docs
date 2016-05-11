@@ -1,1 +1,5 @@
-<link rel="stylesheet" href="{{ site.bsk_cdn_base }}/{{ site.bsk_version }}/css/bas-style-kit.min.css" integrity="{{ site.data.bsk_sri['dist/css/bas-style-kit.min.css'] }}" crossorigin="anonymous">
+{% if site.x_environment == 'staging' %}
+    <link rel="stylesheet" href="{{ site.bsk_cdn_base_staging }}/{{ site.bsk_version_staging }}/css/bas-style-kit.min.css" integrity="{{ site.data.bsk_sri_base_staging['dist/css/bas-style-kit.min.css'] }}" crossorigin="anonymous">
+{% else %}
+    <link rel="stylesheet" href="{{ site.bsk_cdn_base_production }}/{{ site.bsk_version_production }}/css/bas-style-kit.min.css" integrity="{{ site.data.bsk_sri_base_production['dist/css/bas-style-kit.min.css'] }}" crossorigin="anonymous">
+{% endif %}

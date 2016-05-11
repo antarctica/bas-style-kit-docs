@@ -3,11 +3,11 @@
     <!-- main content -->
     <div class="row">
       <div class="col-md-6">
-        Style Kit version {{ site.bsk_version }} <br />
+        Style Kit version {% if site.x_environment == 'staging' %}{{ site.bsk_version_staging }}{% else %}{{ site.bsk_version_production }}{% endif %} <br />
         {% if site.revision == 'unknown' %}
-        Docs site build {{ site.revision }}
+        Docs site build unknown (presumed local build)
         {% else %}
-        Docs site build <a href="https://github.com/antarctica/bas-style-kit/commit/{{ site.revision }}">{{ site.revision }}</a>
+        Docs site build <a href="{{ bsk_source_code_url }}/commit/{{ site.revision }}">{{ site.revision }}</a>
         {% endif %}
       </div>
       <div class="col-md-6 text-right">
@@ -37,9 +37,9 @@
   <hr />
 
   <p>
-    Style Kit version: {{ site.bsk_version }} <br />
+    Style Kit version: {% if site.x_environment == 'staging' %}{{ site.bsk_version_staging }}{% else %}{{ site.bsk_version_production }}{% endif %} <br />
     {% if site.revision == 'unknown' %}
-    Docs site build: {{ site.revision }}
+    Docs site build unknown (presumed local build)
     {% else %}
     Docs site build: <a href="https://github.com/antarctica/bas-style-kit/commit/{{ site.revision }}">{{ site.revision }}</a>
     {% endif %}

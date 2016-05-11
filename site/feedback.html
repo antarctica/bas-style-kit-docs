@@ -12,7 +12,7 @@ title: Site Feedback
   <!-- Additional environment information -->
   <input type="hidden" id="feedbackEnvironmentSiteIdentifier" name="feedbackEnvironmentSiteIdentifier" value="{{ site.feedback_api_identifier }}"></input>
   <input type="hidden" id="feedbackEnvironmentSiteRevsion" name="feedbackEnvironmentSiteRevsion" value="{{ site.revision }}"></input>
-  <input type="hidden" id="feedbackEnvironmentBSKVersion" name="feedbackEnvironmentBSKVersion" value="{{ site.bsk_version }}"></input>
+  <input type="hidden" id="feedbackEnvironmentBSKVersion" name="feedbackEnvironmentBSKVersion" value="{% if site.x_environment == 'staging' %}{{ site.bsk_version_staging }}{% else %}{{ site.bsk_version_production }}{% endif %}"></input>
   <input type="hidden" id="feedbackEnvironmentJSAvailable" name="feedbackEnvironmentJSAvailable" value="false"></input>
   <input type="hidden" id="feedbackEnvironmentUA" name="feedbackEnvironmentUA" value="unkown"></input>
   <input type="hidden" id="feedbackEnvironmentBrowserSize" name="feedbackEnvironmentBrowserSize" value="unkown"></input>
@@ -121,7 +121,13 @@ title: Site Feedback
         <div class="form-group">
           <label class="col-sm-2 control-label">BAS Style Kit version</label>
           <div class="col-sm-10">
-            <p id="feedbackEnvironmentOutputBSKVersion" class="form-control-static">{{ site.bsk_version }}</p>
+            <p id="feedbackEnvironmentOutputBSKVersion" class="form-control-static">
+              {% if site.x_environment == 'staging' %}
+                {{ site.bsk_version_staging }}
+              {% else %}
+                {{ site.bsk_version_production }}
+              {% endif %}
+            </p>
           </div>
         </div>
         <div class="form-group">
