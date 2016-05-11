@@ -2,7 +2,7 @@
 # These variables override those defined by roles
 
 # App variables - apply to a single project
-app_project: "bas-geomap-docs"
+app_project: "bas-style-kit-docs"
 app_project_repository: "ssh://git@stash.ceh.ac.uk:7999/bsk/bas-style-kit-docs.git"
 app_project_directory: "/srv/apps/{{ app_project }}"
 

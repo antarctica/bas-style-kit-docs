@@ -19,6 +19,8 @@
         rule=allow
         direction=in
       notify: Restart Firewall - Ubuntu
+    - include: tasks/shims/ruby/install-bundler.yml
+    - include: tasks/ruby/install-ruby-gems.yml
   handlers:
     - name: Restart Firewall - Ubuntu
       ufw: state=reloaded

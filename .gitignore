@@ -1,2 +1,3 @@
 # Provisioning tool directories
 provisioning/site-development-local/.vagrant
+Gemfile.lock

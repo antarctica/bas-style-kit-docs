@@ -1,0 +1,10 @@
+---
+# Install additional Ruby modules for Jekyll plugins
+
+- name: install bundler gem globally
+  gem:
+            name=bundler
+         version="~>1.12"
+           state=present
+    user_install=no
+  changed_when: false
