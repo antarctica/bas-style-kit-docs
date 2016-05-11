@@ -3,15 +3,15 @@ layout: html
 ---
 
 <div id="site-top"></div>
-{% include cookie-banner.html %}
-{% include site-navigation.html %}
-{% include beta-banner.html %}
+{% include layout/cookie-banner.html %}
+{% include layout/site-navigation.html %}
+{% include layout/beta-banner.html %}
 
 <main class="container">
     {{ content }}
 </main>
 
-{% include site-footer.html %}
+{% include layout/site-footer.html %}
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
