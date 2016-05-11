@@ -45,10 +45,12 @@ bsk_cdn_base_staging: https://s3-eu-west-1.amazonaws.com/bas-cdn-dev/bas-style-k
 bsk_cdn_base_production: https://cdn.web.bas.ac.uk/bas-style-kit
 
 jekyll_get:
-  data: bsk_sri_base_staging
-  json: 'https://s3-eu-west-1.amazonaws.com/bas-cdn-dev/bas-style-kit/0.2.0-alpha/sri.json'
-  data: bsk_sri_base_production
-  json: 'https://cdn.web.bas.ac.uk/bas-style-kit/0.1.0/sri.json'
+  -
+    data: bsk_sri_base_staging
+    json: 'https://s3-eu-west-1.amazonaws.com/bas-cdn-dev/bas-style-kit/0.2.0-alpha/sri.json'
+  -
+    data: bsk_sri_base_production
+    json: 'https://cdn.web.bas.ac.uk/bas-style-kit/0.1.0/sri.json'
 
 collections:
   start:
