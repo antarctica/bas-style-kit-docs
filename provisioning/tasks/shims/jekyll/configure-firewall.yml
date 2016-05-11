@@ -1,0 +1,13 @@
+---
+# Configures the system firewall to allow access to the Jekyll development server
+
+    - name: generate firewall service for jekyll development webserver - Ubuntu/UFW
+      copy:
+        src=files/etc/ufw/applications.d/jekyll
+        dest=/etc/ufw/applications.d/jekyll
+    - name: configure firewall rules for jekyll development webserver - Ubuntu/UFW
+      ufw:
+        name="jekyll"
+        rule=allow
+        direction=in
+      notify: Restart Firewall - Ubuntu

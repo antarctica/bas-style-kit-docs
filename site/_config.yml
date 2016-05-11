@@ -21,6 +21,7 @@ url: "https://style-kit.web.bas.ac.uk" # base hostname & protocol for canonical 
 title: BAS Style Kit
 description: > # A collection of HTML, CSS, and JS components for developing web projects consistent with the BAS brand.
 
+# Site variables
 bas_navigation_menu:
   bas_home: https://www.bas.ac.uk
   bas_data: https://data.bas.ac.uk
@@ -32,9 +33,9 @@ feedback_api_identifier: style-kit-docs
 
 # 'site.revision' is set by the 'environment_variables' plugin
 
-# Style kit variables
 bsk_version: 0.2.0-alpha
 bsk_cdn_base: https://s3-eu-west-1.amazonaws.com/bas-cdn-dev/bas-style-kit
+
 jekyll_get:
   data: bsk_sri
   json: 'https://s3-eu-west-1.amazonaws.com/bas-cdn-dev/bas-style-kit/0.2.0-alpha/sri.json'

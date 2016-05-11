@@ -107,6 +107,10 @@ To deploy changes to the staging environment:
 
 1. Commit project changes to project repository
 
+Continuous Deployment will automatically detect these changes and deploy them into staging.
+
+Note: Due to caching, these changes may not appear immediately.
+
 To deploy changes to the production environment:
 
 1. Commit project changes to project repository
