@@ -17,7 +17,9 @@ jQuery(function($){
   jQuery('#site-cookie-banner').on('close.bs.alert', function () {
 
     // Set a cookie to persist hiding the cookie banner for the next 30 days
-    // TODO: https://github.com/js-cookie/js-cookie/tree/v2.1.0#secure - when SSL available
-    Cookies.set('seen_cookie_message', 'yes', { expires: 30 });
+    Cookies.set('seen_cookie_message', 'yes', {
+      expires: 30,
+      secure: true
+    });
   })
 });

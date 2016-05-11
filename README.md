@@ -38,11 +38,6 @@ E.g.
 >
 > ...
 
-## TODO
-
-* When SSL available:
-  * https://github.com/js-cookie/js-cookie/tree/v2.1.0#secure
-
 ## Setup
 
 To bring up a local development environment:
