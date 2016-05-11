@@ -67,29 +67,29 @@ defaults:
       path: ""
       collection: start
     values:
-      layout: page
+      layout: topic
   - scope:
       path: ""
       collection: core
     values:
-      layout: page
+      layout: topic
   - scope:
       path: ""
       collection: components
     values:
-      layout: page
+      layout: topic
   - scope:
       path: ""
       collection: interactivity
     values:
-      layout: page
+      layout: topic
   - scope:
       path: ""
       collection: guides
     values:
-      layout: page
+      layout: topic
   - scope:
       path: ""
       collection: examples
     values:
-      layout: page
+      layout: topic
