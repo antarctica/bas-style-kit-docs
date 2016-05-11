@@ -38,6 +38,20 @@ E.g.
 >
 > ...
 
+## Topic table of contents
+
+Include the following snippet immediately after the front matter of a topic page:
+
+```markdown
+## Contents
+{:.no_toc #{{ 'Contents' | slugify }}}
+
+* Will be replaced with the ToC, excluding the "Contents" header
+{:toc}
+```
+
+**Note:** If a topic page uses HTML, this won't work and a manually created list will be required instead.
+
 ## Setup
 
 To bring up a local development environment:

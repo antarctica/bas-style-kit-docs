@@ -6,39 +6,6 @@ layout: default
     <h1>{{ page.title }}</h1>
 </header>
 
-<div class="row">
-  <div class="col-md-9">
-    <article class="content-feature">
-      {{ content }}
-    </article>
-  </div>
-  <div class="col-md-3 hidden-print">
-    <aside>
-      <nav>
-        <div class="sidebar-bsk sidebar-bsk-default">
-          <h2>In <em>{{ page.title }}</em></h2>
-          <ul class="list-unstyled bsk-docs-sections-nav">
-          {% for section in page.sections %}
-            <li><a href="#{{ section.title | slugify }}">{{ section.title }}</a></li>
-          {% endfor %}
-          </ul>
-
-          {% for collection in site.collections %}
-            {% if collection.label == page.collection %}
-              <h2>Also in <a href="/{{ collection.label | prepend: site.baseurl }}"><em>{{ collection.title }}</em></a></h2>
-              <ul class="list-unstyled bsk-docs-topics-nav">
-                {% for topic in collection.docs %}
-                  {% unless topic.slug == "index" %}
-                    <li {% if topic.title == page.title %}class="active"{% endif %}>
-                      <a href="{{ topic.url | prepend: site.baseurl }}">{{ topic.title }}</a>
-                    </li>
-                  {% endunless %}
-                {% endfor %}
-              </ul>
-            {% endif %}
-          {% endfor %}
-        </div>
-      </nav>
-    </aside>
-  </div>
-</div>
+<article class="content-feature">
+  {{ content }}
+</article>
