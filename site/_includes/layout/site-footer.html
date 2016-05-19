@@ -3,12 +3,8 @@
     <!-- main content -->
     <div class="row">
       <div class="col-md-6">
-        Style Kit version {% if site.x_environment == 'staging' %}{{ site.bsk_version_staging }}{% else %}{{ site.bsk_version_production }}{% endif %} <br />
-        {% if site.revision == 'unknown' %}
-        Docs site build unknown (presumed local build)
-        {% else %}
-        Docs site build <a href="{{ bsk_source_code_url }}/commit/{{ site.revision }}">{{ site.revision }}</a>
-        {% endif %}
+        Style Kit version {% include snippets/bsk-version.html %} <br />
+        Docs site build {% include snippets/bsk-docs-revision.html %}
       </div>
       <div class="col-md-6 text-right">
         <a class="back-to-top" href="#site-top">Back to top</a>
@@ -18,9 +14,10 @@
     <!-- Copyright & legal -->
     <div class="row">
       <div class="col-md-6">
-        Except where otherwise stated, code is licensed under the
-        <a rel="license" href="https://hackpad.com/BAS-Style-Kit-License-tYBcBNjApkJ">MIT License</a> <br>
-        and documentation, the <a rel="license" href="https://creativecommons.org/licenses/by/3.0/">CC BY v3.0 License</a>
+        Except where otherwise stated, the Style Kit is licensed under the
+        <a rel="license" href="{{ site.bsk_source_code_url }}/blob/master/LICENSE.md"> MIT License</a> <br> and this
+        documentation, the <a rel="license" href="{{ site.bsk_docs_source_code_url }}/blob/master/LICENSE.md">CC BY
+        v3.0 License</a>
       </div>
       <div class="col-md-6 text-right footer-bsk-policy-links">
         © NERC BAS
@@ -37,12 +34,8 @@
   <hr />
 
   <p>
-    Style Kit version: {% if site.x_environment == 'staging' %}{{ site.bsk_version_staging }}{% else %}{{ site.bsk_version_production }}{% endif %} <br />
-    {% if site.revision == 'unknown' %}
-    Docs site build unknown (presumed local build)
-    {% else %}
-    Docs site build: <a href="https://github.com/antarctica/bas-style-kit/commit/{{ site.revision }}">{{ site.revision }}</a>
-    {% endif %}
+    Style Kit version {% include snippets/bsk-version.html %} <br />
+    Docs site build {% include snippets/bsk-docs-revision.html %}
   </p>
 
   <p>
