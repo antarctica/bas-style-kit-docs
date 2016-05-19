@@ -121,16 +121,16 @@ Compiled assets are not currently available, this will be resolved before the ne
 General form:
 
 {% highlight html %}
-{% if site.x_environment == 'staging' %}{{ site.bsk_package_base_staging }}{% else %}{{ site.bsk_package_base_production }}{% endif %}/{VERSION}/bas-style-kit.zip
+{% if site.x_environment == 'staging' %}{{ site.bsk_package_base_staging }}{% else %}{{ site.bsk_package_base_production }}{% endif %}/{VERSION}/bas-style-kit-{VERSION}.zip
 {% endhighlight %}
 
 For the current version ({% include snippets/bsk-version.html %}):
 
 {% highlight html %}
-{% if site.x_environment == 'staging' %}{{ site.bsk_package_base_staging }}{% else %}{{ site.bsk_package_base_production }}{% endif %}/{% include snippets/bsk-version.html %}/bas-style-kit.zip
+{% if site.x_environment == 'staging' %}{{ site.bsk_package_base_staging }}{% else %}{{ site.bsk_package_base_production }}{% endif %}/{% include snippets/bsk-version.html %}/bas-style-kit-{% include snippets/bsk-version.html %}.zip
 {% endhighlight %}
 
-[Download latest version]({% if site.x_environment == 'staging' %}{{ site.bsk_package_base_staging }}{% else %}{{ site.bsk_package_base_production }}{% endif %}/{% include snippets/bsk-version.html %}/bas-style-kit.zip){: .btn .btn-primary .btn-lg .btn-bsk .btn-bsk-primary .disabled }
+[Download latest version]({% if site.x_environment == 'staging' %}{{ site.bsk_package_base_staging }}{% else %}{{ site.bsk_package_base_production }}{% endif %}/{% include snippets/bsk-version.html %}/bas-style-kit-{% include snippets/bsk-version.html %}.zip){: .btn .btn-primary .btn-lg .btn-bsk .btn-bsk-primary }
 
 ## NodeJS package
 {: #{{ 'NodeJS package' | slugify }} }
