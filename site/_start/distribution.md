@@ -233,4 +233,35 @@ For the current version ({% include snippets/bsk-version.html %}):
 ## Cross Origin Resource Sharing (CORS)
 {: #{{ 'CORS' | slugify }} }
 
-... <mark>TODO</mark> ...
+[Cross Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS) is a 
+security technology supported by most browsers to allow resources from another domain (such as the BAS CDN) to be used
+in other applications or websites.
+
+By default many web browsers will now block these *cross-origin* requests for files such as JavaScript, CSS and web 
+fonts. It is therefore necessary for exceptions to this default policy to be made to permit the use of external 
+resources.
+
+Permissions, are defined by the server hosting the resources, not the server which uses them. I.e. If website *foo* 
+includes JavaScript from service *bar*, *bar* must allow *foo* to do so. This access is expressed using an 
+*allowed origin* header. The value for this header can be a wild-card (`*`), or one or more domains. Values are 
+sub-domain sensitive.
+
+Not all browsers support listing multiple origin domains, those that don't will only use the first domain listed.
+{: .alert .alert-warning }
+
+In the case of the Style Kit, the BAS CDN is configured to allow any origin and should work without issue.
+
+If you host your own version of the Style Kit, and reference this from another (sub-)domain, you will need to ensure 
+you configure CORS correctly yourself.
+{: .alert .alert-warning }
+
+It is possible to use authentication within CORS for further restricting access to content (for example in the case of 
+video streaming services). In the case of the BAS CDN this is not supported and resources are therefore accessed *anonymously*.
+It is best practice, but not required, to state this explicitly by setting the `crossorigin` attribute to `anonymous` 
+on <code>&lt;link&gt;</code> and <code>&lt;script&gt;</code> elements.
+
+E.g.
+
+{% highlight html %}
+<link rel="stylesheet" href="https://www.example.com/script.js" crossorigin="anonymous">
+{% endhighlight %}
