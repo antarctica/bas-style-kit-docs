@@ -2,6 +2,8 @@
 title: Colour
 sections:
   -
+    title: Colour contrast
+  -
     title: Page background
   -
     title: Typography
@@ -12,6 +14,13 @@ sections:
 
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
+
+## Colour contrast
+{: #{{ 'Colour contrast' | slugify }} }
+
+If you change any of these colours, or use them for other purposes, ensure this complies with the
+[recommended minimum colour contrast]({{ '/start/standards-accessibility/#colour-contrast' | prepend: site.baseurl }}){: .alert-link }.
+{: .alert .alert-warning }
 
 ## Page background
 {: #{{ 'Page background' | slugify }} }
@@ -27,10 +36,6 @@ A default background colour is applied to the `<body>` element.
     </ul>
   </li>
 </ul>
-
-If you choose a different background colour, ensure it complies with the
-[recommended minimum colour contrast]({{ '/start/standards-accessibility/#colour-contrast' | prepend: site.baseurl }}){: .alert-link }.
-{: .alert .alert-warning }
 
 ## Typography
 {: #{{ 'Typography' | slugify }} }

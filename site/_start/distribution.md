@@ -195,9 +195,6 @@ The BAS Style Kit offers SRI values for:
 * compiled CSS
 * minified CSS
 
-In future, CSS source maps and web fonts will also be included, before the next general release.
-{: .alert .alert-info }
-
 SRI values are currently hosted on the same origin they are intending to protect. This is recognised as a critical
 issue and will be resolved before the next general release.
 {: .alert .alert-danger }
