@@ -62,26 +62,32 @@ collections:
     output: true
     permalink: /:collection/:slug/
     title: Getting Started
+    sort_index: 0
   core:
     output: true
     permalink: /:collection/:slug/
     title: Core styles
+    sort_index: 2
   components:
     output: true
     permalink: /:collection/:slug/
     title: Components
+    sort_index: 3
   interactivity:
     output: true
     permalink: /:collection/:slug/
     title: Interactivity
+    sort_index: 4
   guides:
     output: true
     permalink: /:collection/:slug/
     title: Guides
+    sort_index: 5
   examples:
     output: true
     permalink: /:collection/:slug/
     title: Examples
+    sort_index: 6
 
 defaults:
   - scope:

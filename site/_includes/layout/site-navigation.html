@@ -15,7 +15,8 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="navbar-collapse">
         <ul class="nav navbar-nav">
-          {% for collection in site.collections %}
+          {% assign collectionsSorted = site.collections | sort:"sort_index" %}
+          {% for collection in collectionsSorted %}
             {% unless collection.label == 'posts' %}
               <li class="dropdown {% if page.collection == collection.label %} active{% endif %}">
                 {% if page.collection == collection.label %}<span class="sr-only">(current)</span>{% endif %}
