@@ -54,4 +54,39 @@ The order these files is important because of how CSS styles cascade.
 ## Starter template
 {: #{{ 'Starter template' | slugify }} }
 
-<mark>[TODO - Write section]</mark>
+Below is the minimal HTML needed to use the BAS Style Kit, following recommended best practices, and ensuring
+compatibility with older web browsers.
+
+{% highlight html %}
+<!DOCTYPE html>
+<html lang="en-GB">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Recommended meta tags for SEO -->
+    <title>BAS Style Kit - Starter template</title>
+    <meta name="description" content="A brief description of this page, or application">
+
+    <!-- Compiled and minified customised Bootstrap CSS for the BAS Style Kit -->
+    {% if site.x_environment == 'staging' %}<link rel="stylesheet" href="{{ site.bsk_cdn_base_staging }}/{{ site.bsk_version_staging }}/css/bootstrap-bsk.min.css" integrity="{{ site.data.bsk_sri_base_staging['dist/css/bootstrap-bsk.min.css'] }}" crossorigin="anonymous">{% else %}
+    <link rel="stylesheet" href="{{ site.bsk_cdn_base_production }}/{{ site.bsk_version_production }}/css/bootstrap-bsk.min.css" integrity="{{ site.data.bsk_sri_base_production['dist/css/bootstrap-bsk.min.css'] }}" crossorigin="anonymous">{% endif %}
+    <!-- Compiled and minified BAS Style Kit CSS -->
+    {% if site.x_environment == 'staging' %}<link rel="stylesheet" href="{{ site.bsk_cdn_base_staging }}/{{ site.bsk_version_staging }}/css/bas-style-kit.min.css" integrity="{{ site.data.bsk_sri_base_staging['dist/css/bas-style-kit.min.css'] }}" crossorigin="anonymous">{% else %}
+    <link rel="stylesheet" href="{{ site.bsk_cdn_base_production }}/{{ site.bsk_version_production }}/css/bas-style-kit.min.css" integrity="{{ site.data.bsk_sri_base_production['dist/css/bas-style-kit.min.css'] }}" crossorigin="anonymous">{% endif %}
+
+    <!-- Optionally - any additional CSS for your website or application -->
+  </head>
+  <body>
+    <h1>Welcome to the starter template for the BAS Style Kit!</h1>
+
+    <!-- Optionally - any required JavaScript for your website or application, such as Google Analytics -->
+  </body>
+</html>
+{% endhighlight %}
+
+This [starter template]({{ '/examples/starter-template' | prepend: site.baseurl }}){: .alert-link } is also available
+as a standalone example.
+{: .alert .alert-info }
