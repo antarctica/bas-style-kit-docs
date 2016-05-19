@@ -165,6 +165,9 @@ $beta-phase: #f47738;
   border-left: 10px solid #FFBF47;
 }
 
+// Styles for colour swatches - these may become a component in the future
+@import 'swatches';
+
 // Styles for syntax highlighting
 @import 'syntax-highlighting';
 

@@ -1,0 +1,30 @@
+.bsk-docs-swatch-list {
+  margin: 20px 0;
+}
+
+.bsk-docs-swatch-colour {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 100%;
+}
+
+.bsk-docs-swatch-details {
+  li {
+    margin-bottom: 5px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.bsk-docs-swatch-page-background {
+  background-color: #FFFFFF;
+  border: 1px solid #EEEEEE;
+}
+.bsk-docs-swatch-text-colour {
+  background-color: #333333;
+}

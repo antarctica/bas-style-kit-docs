@@ -19,6 +19,9 @@ sections:
 
 ... <mark>TODO</mark> ...
 
+* include base font-size and controlling variable (14px).
+* include base font-family and line-height - note the line height is inherited in some cases for consistency
+
 ## Headings
 {: #{{ 'Headings' | slugify }} }
 

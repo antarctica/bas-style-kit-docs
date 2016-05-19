@@ -1,0 +1,95 @@
+---
+title: Standards and Accessibility
+sections:
+  -
+    title: HTML5
+  -
+    title: CSS3
+  -
+    title: Responsiveness and Mobile First
+  -
+    title: Colour contrast
+  -
+    title: Browser support
+---
+
+As a government research institute, BAS has a responsibility to make its content available to as many people as
+possible.
+{: .lead }
+
+This is best achieved by properly structuring content and following industry best practices. This ensures our
+content is readable by those with accessibility requirements, such as screen readers, and by search engines.
+
+## Contents
+{:.no_toc #{{ 'Contents' | slugify }}}
+
+* Will be replaced with the ToC, excluding the "Contents" header
+{:toc}
+
+## HTML5
+{: #{{ 'HTML5' | slugify }} }
+
+The BAS Style Kit is designed to work with the [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
+document type.
+
+This is latest version of the HTML standard, supported by all major browsers, and includes new elements,
+attributes and technologies to provide better accessibility and enable new uses such as desktop like web applications.
+
+Whilst the use of this document type is technically optional, no support is offered for other doc types.
+{: .alert .alert-warning }
+
+## CSS3
+{: #{{ 'CSS3' | slugify }} }
+
+As with HTML5, [CSS3](https://developer.mozilla.org/en/docs/Web/CSS/CSS3) is the latest evolution of the CSS standard
+for styling websites and applications, and is used extensively in the Style Kit.
+
+It is supported by all major browsers, and includes new layout options, such as
+[flexbox](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout), as well as new properties
+for [rounded corners](https://developer.mozilla.org/en/docs/Web/CSS/border-radius) and
+[animations](https://developer.mozilla.org/en/docs/Web/CSS/animation) for example.
+
+## Responsiveness and 'Mobile First'
+{: #{{ 'Responsiveness and Mobile First' | slugify }} }
+
+The Style Kit uses the [mobile first](https://developer.mozilla.org/en-US/Apps/Progressive/Responsive/Mobile_first)
+design, which assumes content will be viewed at the smallest possible size (i.e. on mobile phones) and then scales up,
+progressively, to larger sizes. This is also known as
+[responsive design](https://developer.mozilla.org/en-US/docs/Web/Guide/Responsive_design).
+
+Examples of how content can change between sizes include:
+
+* increasing the size of fonts and images
+* organising content into [grid columns]({{ '/core/grid/' | prepend: site.baseurl }}) to make better use of space
+* minimising or hiding navigation menus at smaller sizes
+
+Responsiveness is enabled in the Style Kit using the *viewport* meta tag, as shown below:
+
+{% highlight html %}
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+{% endhighlight %}
+
+If you use the [examples]({{ '/examples' | prepend: site.baseurl }}){: .alert-link } from this website, this meta tag
+will be included.
+{: .alert .alert-info }
+
+## Colour contrast
+{: #{{ 'Colour contrast' | slugify }} }
+
+The colour contrast for text and any interactive elements **should** be at least *4:5:1*, as recommended by GDS and the
+[W3C](http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html).
+
+## Browser support
+{: #{{ 'Browser support' | slugify }} }
+
+In general, the BAS Style Kit aims to support all browsers supported by Bootstrap.
+
+This means the latest, stable, releases of all major browsers (subject to the caveats below) are supported.
+
+**Internet Explorer:**
+
+**Heads up!** Support for Internet Explorer 8 will be removed in the next major Style Kit release.
+{: .alert .alert-danger }
+
+See the Bootstrap documentation on [browser support](http://getbootstrap.com/getting-started/#support)
+for more detailed information.
