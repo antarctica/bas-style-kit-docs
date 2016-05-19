@@ -1,4 +1,5 @@
 ---
+sort_index: 0
 slug: index
 permalink: /:collection/:slug
 layout: default
@@ -11,7 +12,8 @@ subtitle: An overview of the BAS Style Kit, how to get it, how it's developed, a
   <p>{{ page.subtitle }}</p>
 </header>
 
-{% for topic in site.start %}
+{% assign topicsSorted = site.start | sort:"sort_index" %}
+{% for topic in topicsSorted %}
 {% unless topic.slug == "index" %}
     {% capture modulo %}{{ forloop.index | modulo: 3 }}{% endcapture %}
 

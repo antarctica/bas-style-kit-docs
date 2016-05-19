@@ -1,4 +1,5 @@
 ---
+sort_index: 1
 title: Introduction
 sections:
   -

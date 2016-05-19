@@ -28,7 +28,8 @@
                     {% if page.url == topic.url %}<span class="sr-only">(current)</span>{% endif %}
                     <a href="/{{ collection.label | prepend: site.baseurl }}">All {{ collection.title | downcase }}</a>
                   </li>
-                  {% for topic in collection.docs %}
+                  {% assign topicsSorted = collection.docs | sort:"sort_index" %}
+                  {% for topic in topicsSorted %}
                     {% unless topic.slug == "index" %}
                     <li {% if page.url == topic.url %} class="active"{% endif %}>
                       {% if page.url == topic.url %}<span class="sr-only">(current)</span>{% endif %}
