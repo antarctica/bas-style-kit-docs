@@ -32,7 +32,8 @@ bas_navigation_menu:
   bas_data: https://data.bas.ac.uk
   bas_style_guide: https://antarctica.hackpad.com/BAS-Style-Guide-NT1D10DRTCo
 
-bsk_source_code_url: https://github.com/antarctica/bas-style-kit-docs
+bsk_source_code_url: https://github.com/antarctica/bas-style-kit
+bsk_docs_source_code_url: https://github.com/antarctica/bas-style-kit-docs
 
 feedback_api_identifier: style-kit-docs
 
@@ -43,6 +44,10 @@ bsk_version_production: 0.1.0
 
 bsk_cdn_base_staging: https://s3-eu-west-1.amazonaws.com/bas-cdn-dev/bas-style-kit
 bsk_cdn_base_production: https://cdn.web.bas.ac.uk/bas-style-kit
+
+bsk_package_base_staging: https://s3-eu-west-1.amazonaws.com/bas-packages-dev/zip/bas-style-kit
+bsk_package_base_production: https://packages.web.bas.ac.uk/zip/bas-style-kit
+
 
 jekyll_get:
   -
