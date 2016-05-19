@@ -2,24 +2,30 @@
 title: Tables
 sections:
   -
-    title: Basic example
+    title: Basic
   -
-    title: Striped rows
+    title: Striped
   -
     title: Bordered
 ---
 
-## Basic example
-{: #{{ 'Basic example' | slugify }} }
+## Contents
+{:.no_toc #{{ 'Contents' | slugify }}}
+
+* Will be replaced with the ToC, excluding the "Contents" header
+{:toc}
+
+## Basic table
+{: #{{ 'Basic' | slugify }} }
 
 ...
 
 ## Stripped rows
-{: #{{ 'Stripped rows' | slugify }} }
+{: #{{ 'Stripped' | slugify }} }
 
 ...
 
-## Bordered
+## Bordered table
 {: #{{ 'Bordered' | slugify }} }
 
 ...

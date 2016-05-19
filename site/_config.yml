@@ -81,31 +81,31 @@ collections:
 defaults:
   - scope:
       path: ""
-      collection: start
+      type: start
     values:
       layout: topic
   - scope:
       path: ""
-      collection: core
+      type: core
     values:
       layout: topic
   - scope:
       path: ""
-      collection: components
+      type: components
     values:
       layout: topic
   - scope:
       path: ""
-      collection: interactivity
+      type: interactivity
     values:
       layout: topic
   - scope:
       path: ""
-      collection: guides
+      type: guides
     values:
       layout: topic
   - scope:
       path: ""
-      collection: examples
+      type: examples
     values:
-      layout: topic
+      layout: blank

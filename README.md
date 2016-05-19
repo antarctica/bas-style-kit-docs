@@ -3,7 +3,7 @@
 Master: [![Build Status](https://semaphoreci.com/api/v1/antarctica/bas-style-kit-docs/branches/master/badge.svg)](https://semaphoreci.com/antarctica/bas-style-kit-docs)
 Develop: [![Build Status](https://semaphoreci.com/api/v1/antarctica/bas-style-kit-docs/branches/develop/badge.svg)](https://semaphoreci.com/antarctica/bas-style-kit-docs)
 
-End-user documentation for the BAS Style Kit, a collection of HTML, CSS, and JS components for developing web projects 
+End-user documentation for the BAS Style Kit, a collection of HTML, CSS, and JS components for developing web projects
 consistent with the BAS brand.
 
 **This project uses version 0.1.0 of the Base flavour of the BAS Base Project - Pristine**.
@@ -12,10 +12,10 @@ consistent with the BAS brand.
 
 ## Overview
 
-This project is part of the BAS Style Kit. It provides documentation on the various features and components the Style 
+This project is part of the BAS Style Kit. It provides documentation on the various features and components the Style
 Kit contains, and these can be used in websites and applications.
 
-This project uses Jekyll, a static website builder, to convert Markdown documents into HTML pages. Continuous 
+This project uses Jekyll, a static website builder, to convert Markdown documents into HTML pages. Continuous
 Integration and Continuous Deployment services are used to trigger Jekyll builds automatically as changes are made.
 
 Please contact the [BAS Web & Applications Team](mailto:webapps@bas.ac.uk) for a further overview of how this works.
@@ -28,7 +28,7 @@ Please contact the [BAS Web & Applications Team](mailto:webapps@bas.ac.uk) for a
 
 ## Section anchors
 
-The methods used by Kramdown and Jekyll differ, therefore Kramdown's automatic anchor generation is disabled and must 
+The methods used by Kramdown and Jekyll differ, therefore Kramdown's automatic anchor generation is disabled and must
 be set manually to use the Jekyll slugify method to ensure navigation links match page anchors.
 
 E.g.
@@ -37,6 +37,8 @@ E.g.
 > {: #{{ 'HTML5' | slugify }} }
 >
 > ...
+
+**Note:** An anchor is required for any heading which should be included in the table of contents for each page.
 
 ## Topic table of contents
 
@@ -76,8 +78,8 @@ TO bring up the staging environment:
 5. `$ terraform apply`
 6. `$ cd ../..` (back to *bas-style-kit-docs*)
 7. Commit Terraform state files to project repository
-9. Complete the relevant 
-[setup tasks](https://paper.dropbox.com/doc/BAS-Base-Project-Pristine-Base-Flavour-Usage-ZdMdHHzf8xB4HjxcNuDXa#:h2=Environment---staging-(static-) 
+9. Complete the relevant
+[setup tasks](https://paper.dropbox.com/doc/BAS-Base-Project-Pristine-Base-Flavour-Usage-ZdMdHHzf8xB4HjxcNuDXa#:h2=Environment---staging-(static-)
 with these settings:
     * For CloudFront distribution:
         * S3 bucket name: `bas-style-kit-docs-stage`
