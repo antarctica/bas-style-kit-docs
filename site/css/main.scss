@@ -185,3 +185,41 @@ $beta-phase: #f47738;
     border: 0
   }
 }
+
+// Styles for section metadata
+
+.bsk-docs-section-metadata {
+  margin-left: -5px;
+  margin-bottom: 25px;
+  padding-left: 0;
+
+  list-style: none;
+  color: #777777;
+
+  &> li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+
+  .label-phase {
+    border-radius: 0;
+
+    font-weight: normal;
+    text-transform: uppercase;
+  }
+
+  .label-phase-alpha {
+    background-color: #D53880;
+  }
+  .label-phase-beta {
+    background-color: #F47738;
+  }
+  .label-phase-live {
+    background-color: #85994B;
+  }
+  .label-phase-deprecated {
+    background-color: #6F777B;
+  }
+}
+
