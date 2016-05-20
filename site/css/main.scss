@@ -4,7 +4,7 @@
 
 // ==  Site specific styles
 
-// Styles for Alpha banner - these will be merged into a future version of the BAS Style Kit
+// Styles for Better banner - these will be merged into a future version of the BAS Style Kit
 
 $beta-phase: #f47738;
 
@@ -39,6 +39,7 @@ $beta-phase: #f47738;
 }
 
 // Styles for main navigation
+
 .bsk-docs-main-navigation {
   border-left: none;
   border-right: none;
@@ -49,6 +50,7 @@ $beta-phase: #f47738;
 }
 
 // Styles for BAS logo shown on homepage
+
 .bsk-docs-symbol {
   display: inline-block;
   height: 256px;
@@ -61,6 +63,7 @@ $beta-phase: #f47738;
 }
 
 // Background image shown on homepage
+
 .bsk-docs-masthead {
   background-image: url('{{ "/img/site-masthead-tom-welsh.jpg" | prepend: site.baseurl }}');
   background-repeat: no-repeat;
@@ -68,6 +71,7 @@ $beta-phase: #f47738;
 }
 
 // Copyright notice shown in the bottom-right of images
+
 .bsk-docs-image-copyright-container {
   display: block;
   position: relative;
@@ -83,6 +87,7 @@ $beta-phase: #f47738;
 }
 
 // Styles for sections on the homepage
+
 .bsk-docs-home-sections {
   section {
     margin-top: 40px;
@@ -113,6 +118,7 @@ $beta-phase: #f47738;
 }
 
 // Styles for displaying pre blocks like code blocks where white-space needs preserving
+
 .bsk-docs-like-code {
   padding: 2px 4px;
   font-size: 90%;
@@ -121,54 +127,21 @@ $beta-phase: #f47738;
   border: none;
 }
 
-// Styles for jumbotrons heading collections
+
+
+// Styles for collection index jumbotron's
+
 .bsk-docs-collection-masthead {
   background-color: #006AAA;
   color: #FFFFFF;
 }
 
-// Styles for navigation links to sections within a topic (sidebar)
-.bsk-docs-sections-nav,
-.bsk-docs-topics-nav {
-  li {
-    padding: 4px 20px;
+// Styles for colour swatches - base classes may become a component in the future
 
-    &:hover,
-    &:focus {
-      border-left: 2px solid #767676;
-    }
-    a {
-      color: #767676;
-
-      &:hover,
-      &:focus {
-        text-decoration: none;
-      }
-    }
-  }
-
-  li.active {
-    border-left: 2px solid #25658F;
-
-    a {
-      color: #25658F;
-      font-weight: bold;
-    }
-  }
-}
-
-// Temporary styles for alert shown on the homepage
-.bsk-docs-alert-outline-inset {
-  margin: 20px;
-  padding: 20px;
-  border: 1px solid #EEEEEE;
-  border-left: 10px solid #FFBF47;
-}
-
-// Styles for colour swatches - these may become a component in the future
 @import 'swatches';
 
 // Styles for syntax highlighting
+
 @import 'syntax-highlighting';
 
 .highlight {

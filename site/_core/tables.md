@@ -2,11 +2,11 @@
 title: Tables
 sections:
   -
-    title: Basic
+    title: Basic table
   -
-    title: Striped
+    title: Striped table
   -
-    title: Bordered
+    title: Bordered table
 ---
 
 ## Contents
@@ -24,6 +24,8 @@ sections:
 * <i class="fa fa-check" aria-hidden="true"></i> Included in Core Style Kit
 {: .bsk-docs-section-metadata }
 
+## Striped rows
+{: #{{ 'Striped' | slugify }} }
 
 * <span class="label label-phase label-phase-live">Live</span> since version **0.1.0**
 * Bootstrap style
@@ -31,8 +33,6 @@ sections:
 {: .bsk-docs-section-metadata }
 
 
-## Stripped rows
-{: #{{ 'Stripped' | slugify }} }
 
 ...
 

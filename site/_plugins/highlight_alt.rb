@@ -58,7 +58,7 @@ eos
       end
 
       def example(output)
-        "<div class=\"bd-example\" data-example-id=\"#{@options[:id]}\">\n#{output}\n</div>"
+        "<div class=\"bsk-docs-example\" data-example-id=\"#{@options[:id]}\">\n#{output}\n</div>"
       end
 
       def remove_holderjs(code)

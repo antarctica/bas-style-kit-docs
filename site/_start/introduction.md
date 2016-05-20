@@ -49,10 +49,10 @@ The first file, <em>bootstrap-bsk.min.css</em>, is the customised version of [Bo
 <br />
 The second, <em>bas-style-kit.min.css</em>, is the Style Kit itself.
 
-The order these files is important because of how CSS styles cascade.
+The order of these files is important because of how CSS styles cascade.
 {: .alert .alert-warning }
 
-Other ways of including the Style Kit in a website or application are listed in the 
+Other ways of including the Style Kit in a website or application are listed in the
 [distribution]({{ '/start/distribution' | prepend: site.baseurl }}) documentation.
 {: .alert .alert-info }
 
