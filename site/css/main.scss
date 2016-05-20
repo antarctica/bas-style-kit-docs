@@ -127,7 +127,16 @@ $beta-phase: #f47738;
   border: none;
 }
 
+// Styles for displaying rendered portions of examples
+.bsk-docs-example {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
 
+  padding: 25px;
+  border: 2px solid #E7EBF1;
+  border-bottom: none;
+}
 
 // Styles for collection index jumbotron's
 
