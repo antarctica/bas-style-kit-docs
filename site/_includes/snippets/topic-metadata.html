@@ -1,0 +1,33 @@
+{: .bsk-docs-section-metadata }
+{% case include.current_phase %}
+  {% when 'alpha' %}
+* <span class="label label-phase label-phase-alpha">Alpha</span> since version **{{ include.current_version }}**
+  {% when 'beta' %}
+* <span class="label label-phase label-phase-beta">Beta</span> since version **{{ include.current_version }}**
+  {% when 'live' %}
+* <span class="label label-phase label-phase-live">Live</span> since version **{{ include.current_version }}**
+  {% when 'deprecated' %}
+* <span class="label label-phase label-phase-deprecated">Deprecated</span> since version **{{ include.current_version }}**
+{% endcase %}
+
+{% case include.future_phase %}
+  {% when 'alpha' %}
+* <span class="label label-phase label-phase-alpha">Alpha</span> since version **{{ include.future_version }}**
+  {% when 'beta' %}
+* <span class="label label-phase label-phase-beta">Beta</span> since version **{{ include.future_version }}**
+  {% when 'live' %}
+* <span class="label label-phase label-phase-live">Live</span> since version **{{ include.future_version }}**
+  {% when 'deprecated' %}
+* <span class="label label-phase label-phase-deprecated">Deprecated</span> since version **{{ include.future_version }}**
+{% endcase %}
+
+{% if include.origin == "bootstrap" %}
+* Bootstrap style
+{% endif %}
+
+{% if include.included == "yes" %}
+* <i class="fa fa-check" aria-hidden="true"></i> Included in Core Style Kit
+{% else %}
+* {: .text-danger } <i class="fa fa-exclamation-circle" aria-hidden="true"></i> Not included in Core Style Kit
+{% endif %}
+* {% include snippets/back-to-top.html %}

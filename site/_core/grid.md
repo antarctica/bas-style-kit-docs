@@ -18,14 +18,20 @@ sections:
 ## Overview
 {: #{{ 'Overview' | slugify }} }
 
+{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+
 ...
 
 ## Media queries
 {: #{{ 'Media queries' | slugify }} }
 
+{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+
 ...
 
 ## Grid options
 {: #{{ 'Grid options' | slugify }} }
+
+{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
 
 ...

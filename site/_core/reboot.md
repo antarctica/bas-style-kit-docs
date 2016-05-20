@@ -16,6 +16,8 @@ sections:
 ## Overview
 {: #{{ 'Basic' | slugify }} }
 
+{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+
 The Style Kit includes a number of global settings, styles and technologies designed to provide a consistent foundation.
 {: .lead }
 
@@ -32,6 +34,8 @@ Other pages in this section detail other settings used, such as the default font
 
 ## Normalise.css
 {: #{{ 'Normalise.css' | slugify }} }
+
+{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
 
 [Normalize.css](http://necolas.github.io/normalize.css/) makes browsers render all elements more consistently and in
 line with modern standards. It precisely targets only the styles that need normalising.

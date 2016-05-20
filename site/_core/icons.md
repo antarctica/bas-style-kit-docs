@@ -14,10 +14,7 @@ sections:
 ## Standard contextual icons
 {: #{{ 'Standard contextual icons' | slugify }} }
 
-* <span class="label label-phase label-phase-live">Live</span> since version **0.1.0**
-* Bootstrap style
-* <i class="fa fa-check" aria-hidden="true"></i> Included in Core Style Kit
-{: .bsk-docs-section-metadata }
+{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
 
 To indicate the intent or purpose of an element (such as a notice or action), the Style Kit uses a set of conventional
 contextual icons.

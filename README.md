@@ -49,92 +49,65 @@ Each section should include metadata to indicate:
 * where the style/component came from
 * whether the style/component is included in the core Style Kit release or if its optional (e.g. devicons, data-tables)
 
-The structure of this metadata is:
+A snippet is used to generate this metadata, it accepts the following options:
+
+* `current_phase` - one of the *section phases* described below
+* `future_phase` - one of the *section phases* described below
+* `current_version` - a string representing the version the `current_phase` was first applied
+* `future_version` - a string representing the version the `future_phase` was first applied 
+* `origin` - one of the *origins* described below
+* `included` - either `yes` or `no`
+
+The `future_phase` and `future_version` parameters are optional and may be omitted if not applicable.
+Values for other parameters are required.
+
+E.g.
 
 ```markdown
-## Section title
-{: #{{ 'Section title' | slugify }} }
-
-* List of metadata elements
-{: .bsk-docs-section-metadata }
+{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
 ```
 
 ### section phases
 
 The following phases can be used:
 
-* Alpha - where a style/component is under construction, or newly imported and not yet polished and intended for use
-* Beta - where a style/component is in its final form with only minor corrections/tweaks before ready for general use
-* Live - where a style/component is well formed, polished and intended for everyday use
-* Deprecated - where a style/component is no longer needed and will be removed in a future version
-
-Note: When using the *deprecated* phase, use the form 'Deprecated since version x.y.z, to be removed in version x.y.z'.
+* `alpha` - where a style/component is under construction, or newly imported and not yet polished and intended for use
+* `beta` - where a style/component is in its final form with only minor corrections/tweaks before ready for general use
+* `live` - where a style/component is well formed, polished and intended for everyday use
+* `deprecated` - where a style/component is no longer needed and will be removed in a future version
 
 A style/component is expected to move through these phases, but may loop through the Alpha-Beta-Live phases numerous
 times. A style/component may be multiple phases, providing these are in different versions.
 
 E.g. A component *Foo* is developed as part of version `0.2.0`, and then updated with a new design in version `0.3.0`
 
-* When the component is first developed it will be in *Alpha* only (i.e. *Alpha since version 0.2.0-alpha*)
-* The design is refined and moves to the *Beta* phase only (i.e. *Beta since version 0.2.0-beta*)
-* The component is now released and ready for use in the *Live* phase (i.e. *Live since version 0.2.0*)
-* Changes are proposed to the component, these are trailed as an *Alpha* phase (i.e. *Live since version 0.2.0, Alpha since version 0.3.0-alpha*)
-* The changes are agreed and further developed in a *Beta* phase (i.e. *Live since version 0.2.0, Beta since version 0.3.0-beta*)
-* The component is now updated and returns to being live only again (i.e. *Live since version 0.3.0*)
+* When the component is first developed its `current_phase` will be `alpha`
+* As the component is further refined `current_phase` will move to `beta`
+* When the component is fully developed and released `current_phase` will move to `live`
+* Sometime later, enhancements are made to the component, `current_phase` will still be `live`, but `future_phase` will 
+now be set to `alpha`
+* The enhancements are developed further, `current_phase` will still be `live`, `future_phase` will now be set to `beta`
+* The enhanced component is released, `future_phase` is unset
 
-Note: This makes it look like the component was only ever available since *0.3.0* however that's true as it will be
-shown in its current `0.3.0` state. I.e. It would be misleading to indicate the component could be used in `0.2.0`.
+The `current_phase` only moves through its phases once. `future_phase` will move through the `alpha`, `beta` and 
+`deprecated` phases as changes are made.
 
-The syntax of a phase is:
-
-```markdown
-* <span class="label label-phase-PHASE">PHASE</span> since version **x.y.z**
-```
-
-E.g.
-
-```markdown
-* <span class="label label-phase-alpha">Alpha</span> since version **0.2.0-alpha**
-```
-
-Where a style/component is in two phases use two definitions:
-
-E.g.
-
-```markdown
-* <span class="label label-phase label-phase-live">Live</span> since version **0.2.0**
-* <span class="label label-phase label-phase-alpha">Alpha</span> since version **0.3.0-alpha**
-```
+The `current_version` will change each time the component is re-released, 
+though his makes it look like the component was only ever available since the increasing version number, this is 
+technically true. The updated component was only available, in the form that's documented, since the updated version.
 
 ### Section origin
 
 Use one of:
 
-* Bootstrap {style|component}
-* Customised Bootstrap {style|component}
-* Third Party {style|component}
-* Customised Third Party {style|component}
-* Native {style|component}
-
-E.g.
-
-```markdown
-* Customised Bootstrap style
-```
+* `bootstrap`
 
 ### Section availability
 
 Use one of:
 
-```markdown
-* <i class="fa fa-check" aria-hidden="true"></i> Included in Core Style Kit
-```
-
-OR
-
-```markdown
-* {: .text-danger } <i class="fa fa-exclamation-circle" aria-hidden="true"></i> Not included in Core Style Kit
-```
+* `yes`
+* `no`
 
 ## Topic table of contents
 

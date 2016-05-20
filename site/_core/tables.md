@@ -26,10 +26,7 @@ sections:
 ## Basic table
 {: #{{ 'Basic' | slugify }} }
 
-* <span class="label label-phase label-phase-live">Live</span> since version **0.1.0**
-* Bootstrap style
-* <i class="fa fa-check" aria-hidden="true"></i> Included in Core Style Kit
-{: .bsk-docs-section-metadata }
+{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
 
 Use the `.table` class to apply basic table styles. This class is opt-in to ensure compatibility with tables managed by
 third party widgets or applications such as Apex.
@@ -62,10 +59,7 @@ third party widgets or applications such as Apex.
 ## Striped rows
 {: #{{ 'Striped' | slugify }} }
 
-* <span class="label label-phase label-phase-live">Live</span> since version **0.1.0**
-* Bootstrap style
-* <i class="fa fa-check" aria-hidden="true"></i> Included in Core Style Kit
-{: .bsk-docs-section-metadata }
+{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
 
 Add `.table-striped` to style alternate rows with the <code>&lt;tbody&gt;</code> of a table.
 
@@ -100,10 +94,7 @@ This won't work in Internet Explorer 8.
 ## Bordered table
 {: #{{ 'Bordered' | slugify }} }
 
-* <span class="label label-phase label-phase-live">Live</span> since version **0.1.0**
-* Bootstrap style
-* <i class="fa fa-check" aria-hidden="true"></i> Included in Core Style Kit
-{: .bsk-docs-section-metadata }
+{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
 
 Add `.table-bordered` to apply additional borders around the table and between cells.
 
@@ -135,10 +126,7 @@ Add `.table-bordered` to apply additional borders around the table and between c
 ## Hoverable rows
 {: #{{ 'Hoverable rows' | slugify }} }
 
-* <span class="label label-phase label-phase-live">Live</span> since version **0.1.0**
-* Bootstrap style
-* <i class="fa fa-check" aria-hidden="true"></i> Included in Core Style Kit
-{: .bsk-docs-section-metadata }
+{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
 
 Add `.table-hover` to highlight the row with focus within a table.
 
@@ -170,10 +158,7 @@ Add `.table-hover` to highlight the row with focus within a table.
 ## Contextual rows
 {: #{{ 'Contextual rows' | slugify }} }
 
-* <span class="label label-phase label-phase-live">Live</span> since version **0.1.0**
-* Bootstrap style
-* <i class="fa fa-check" aria-hidden="true"></i> Included in Core Style Kit
-{: .bsk-docs-section-metadata }
+{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
 
 The [standard contextual colours]({{ '/core/colours/#standard-conventional-classes' | prepend: site.baseurl }}) can be 
 used as the background of table rows using these classes:
@@ -222,10 +207,7 @@ You can also use the `.active` class to highlight a row as if it had focus when 
 ## Small table
 {: #{{ 'Small table' | slugify }} }
 
-* <span class="label label-phase label-phase-live">Live</span> since version **0.1.0**
-* Bootstrap style
-* <i class="fa fa-check" aria-hidden="true"></i> Included in Core Style Kit
-{: .bsk-docs-section-metadata }
+{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
 
 Add `.table-condensed` to reduce padding within a table to make it more compact.
 
@@ -257,10 +239,7 @@ Add `.table-condensed` to reduce padding within a table to make it more compact.
 ## Responsive table
 {: #{{ 'Responsive table' | slugify }} }
 
-* <span class="label label-phase label-phase-live">Live</span> since version **0.1.0**
-* Bootstrap style
-* <i class="fa fa-check" aria-hidden="true"></i> Included in Core Style Kit
-{: .bsk-docs-section-metadata }
+{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
 
 Wrap a table with the `.table-responsive` class to make them scroll horizontally on smaller devices.
 
