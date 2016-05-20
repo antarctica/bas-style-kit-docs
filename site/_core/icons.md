@@ -32,7 +32,11 @@ Info
 : Indicates something neutral, or informative
 {: .dl-bsk }
 
-They can be used with many core styles and components, such as:
+You should ensure contextual icons are not the only means
+ [context is conveyed to ensure those using assistive technologies are not excluded]({{ '/start/standards-accessibility/#conveying context without colours or icons' | prepend: site.baseurl }}){: .alert-link }.
+{: .alert .alert-warning }
+
+These icons can be used with many core styles and components, such as:
 
 * [buttons]({{ '/core/buttons/#contextual-icons' | prepend: site.baseurl }})
 * etc.

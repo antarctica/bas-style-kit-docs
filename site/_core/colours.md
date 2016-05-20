@@ -87,17 +87,21 @@ Info
 : Indicates something neutral, or informative
 {: .dl-bsk }
 
-They can be used with many core styles and components, such as:
-
-* [text, lists, etc.]({{ '/core/text/#contextual-classes' | prepend: site.baseurl }})
-* [tables]({{ '/core/tables/#contextual-rows' | prepend: site.baseurl }})
-* [buttons]({{ '/core/buttons/#contextual-classes' | prepend: site.baseurl }})
-* etc.
+You should ensure contextual colours are not the only means
+ [context is conveyed to ensure those using assistive technologies are not excluded]({{ '/start/standards-accessibility/#conveying context without colours or icons' | prepend: site.baseurl }}){: .alert-link }.
+{: .alert .alert-warning }
 
 There are accompanying 
 [standard contextual icons]({{ '/core/icons/#standard-contextual-icons' | prepend: site.baseurl }}){: .alert-link } 
 which can be used alongside these classes.
 {: .alert .alert-info }
+
+These colours can be used with many core styles and components, such as:
+
+* [text, lists, etc.]({{ '/core/text/#contextual-classes' | prepend: site.baseurl }})
+* [tables]({{ '/core/tables/#contextual-rows' | prepend: site.baseurl }})
+* [buttons]({{ '/core/buttons/#contextual-classes' | prepend: site.baseurl }})
+* etc.
 
 <div class="bsk-docs-swatch-wrapper">
   <div class="row">
