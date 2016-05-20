@@ -69,3 +69,7 @@ used to apply context to text using these classes:
 <p class="text-danger">De carne animata corpora quaeritis.</p>
 <p class="text-info">De carne animata corpora quaeritis.</p>
 {% endexample %}
+
+In some edge cases these styles will be over-ridden by other styles, wrapping text in a <code>&lt;span&gt;</code> 
+should fix this.
+{: .alert .alert-warning }

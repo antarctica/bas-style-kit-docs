@@ -1,5 +1,5 @@
 ---
-title: Colour
+title: Colours
 sections:
   -
     title: Colour contrast
