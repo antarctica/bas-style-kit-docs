@@ -10,6 +10,8 @@ sections:
   -
     title: Hoverable rows
   -
+    title: Contextual rows
+  -
     title: Small table
   -
     title: Responsive table
@@ -165,6 +167,57 @@ Add `.table-hover` to highlight the row with focus within a table.
 </table>
 {% endexample %}
 
+## Contextual rows
+{: #{{ 'Contextual rows' | slugify }} }
+
+* <span class="label label-phase label-phase-live">Live</span> since version **0.1.0**
+* Bootstrap style
+* <i class="fa fa-check" aria-hidden="true"></i> Included in Core Style Kit
+{: .bsk-docs-section-metadata }
+
+The [standard contextual colours]({{ '/core/colours/#standard-conventional-classes' | prepend: site.baseurl }}) can be 
+used as the background of table rows using these classes:
+
+* `.success`
+* `.warning`
+* `.danger`
+* `.info`
+
+You can also use the `.active` class to highlight a row as if it had focus when using the 
+[row hover]({{ '/core/tables/#hoverable-rows' | prepend: site.baseurl }}) styles.
+
+{% example html %}
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Location</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="success">
+      <td>Ny-Ålesund</td>
+      <td>Svalbard, High Arctic</td>
+    </tr>
+    <tr class="warning">
+      <td>Rothera</td>
+      <td>Adelaide Island, Antarctica</td>
+    </tr>
+    <tr class="danger">
+      <td>Halley VI</td>
+      <td>Brunt Ice Shelf, Antarctica</td>
+    </tr>
+    <tr class="info">
+      <td>Bird Island</td>
+      <td>Bird Island, South Georgia</td>
+    </tr>
+    <tr class="active">
+      <td>Signy</td>
+      <td>Factory Cove, Borge Bay, Signy Island</td>
+    </tr>
+  </tbody>
+</table>
+{% endexample %}
 
 ## Small table
 {: #{{ 'Small table' | slugify }} }

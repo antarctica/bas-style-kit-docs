@@ -9,6 +9,8 @@ sections:
     title: Paragraphs
   -
     title: Lists
+  -
+    title: Contextual colours
 ---
 
 ## Contents
@@ -59,3 +61,26 @@ sections:
 {: .bsk-docs-section-metadata }
 
 ... <mark>TODO</mark> ...
+
+## Contextual colours
+{: #{{ 'Contextual colours' | slugify }} }
+
+* <span class="label label-phase label-phase-live">Live</span> since version **0.1.0**
+* Bootstrap style
+* <i class="fa fa-check" aria-hidden="true"></i> Included in Core Style Kit
+{: .bsk-docs-section-metadata }
+
+The [standard contextual colours]({{ '/core/colours/#standard-conventional-colours' | prepend: site.baseurl }}) can be 
+used to apply context to text using these classes:
+
+* `.text-success`
+* `.text-warning`
+* `.text-danger`
+* `.text-info`
+
+{% example html %}
+<p class="text-success">De carne animata corpora quaeritis.</p>
+<p class="text-warning">De carne animata corpora quaeritis.</p>
+<p class="text-danger">De carne animata corpora quaeritis.</p>
+<p class="text-info">De carne animata corpora quaeritis.</p>
+{% endexample %}

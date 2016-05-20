@@ -1,4 +1,5 @@
-.bsk-docs-swatch-list {
+.bsk-docs-swatch-wrapper,
+.bsk-docs-icons-wrapper {
   margin: 20px 0;
 }
 
@@ -11,7 +12,8 @@
   border-radius: 100%;
 }
 
-.bsk-docs-swatch-details {
+.bsk-docs-swatch-details,
+.bsk-docs-icons-details {
   li {
     margin-bottom: 5px;
 
@@ -21,10 +23,76 @@
   }
 }
 
+.bsk-docs-hex-reference,
+.bsk-docs-icon-reference
+ {
+  font-family: Menlo,Monaco,Consolas,Courier New,monospace;
+  text-transform: uppercase;
+  color: #777777;
+}
+
+.bsk-docs-icon {
+  margin-bottom: 10px;
+
+  text-align: center;
+}
+
 .bsk-docs-swatch-page-background {
   background-color: #FFFFFF;
   border: 1px solid #EEEEEE;
 }
-.bsk-docs-swatch-text-colour {
+.bsk-docs-swatch-page-text {
   background-color: #333333;
+}
+
+.bsk-docs-swatch-context-success {
+  background-color: #5cb85c;
+}
+.bsk-docs-swatch-context-warning {
+  background-color: #f0ad4e;
+}
+.bsk-docs-swatch-context-danger {
+  background-color: #d9534f;
+}
+.bsk-docs-swatch-context-info {
+  background-color: #5bc0de;
+}
+
+.bsk-docs-swatch-context-success-text {
+  background-color: darken(#5cb85c, 10%);
+}
+.bsk-docs-swatch-context-warning-text {
+  background-color: darken(#f0ad4e, 10%);
+}
+.bsk-docs-swatch-context-danger-text {
+  background-color: darken(#d9534f, 10%);
+}
+.bsk-docs-swatch-context-info-text {
+  background-color: darken(#5bc0de, 10%);
+}
+
+.bsk-docs-swatch-context-success-background {
+  background-color: #dff0d8;
+}
+.bsk-docs-swatch-context-warning-background {
+  background-color: #fcf8e3;
+}
+.bsk-docs-swatch-context-danger-background {
+  background-color: #f2dede;
+}
+.bsk-docs-swatch-context-info-background {
+  background-color: #d9edf7;
+}
+
+.bsk-docs-icon-context-success {
+  color: #5cb85c;
+}
+.bsk-docs-icon-context-warning {
+  color: #f0ad4e;
+}
+.bsk-docs-icon-context-danger {
+  color: #d9534f;
+}
+.bsk-docs-icon-context-info {
+  color: #5bc0de;
 }
