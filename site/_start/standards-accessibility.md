@@ -34,6 +34,8 @@ content is readable by those with accessibility requirements, such as screen rea
 ## HTML5
 {: #{{ 'HTML5' | slugify }} }
 
+{% include snippets/back-to-top.html %}
+
 The BAS Style Kit is designed to work with the [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
 document type.
 
@@ -46,6 +48,8 @@ Whilst the use of this document type is technically optional, no support is offe
 ## CSS3
 {: #{{ 'CSS3' | slugify }} }
 
+{% include snippets/back-to-top.html %}
+
 As with HTML5, [CSS3](https://developer.mozilla.org/en/docs/Web/CSS/CSS3) is the latest evolution of the CSS standard
 for styling websites and applications, and is used extensively in the Style Kit.
 
@@ -56,6 +60,8 @@ for [rounded corners](https://developer.mozilla.org/en/docs/Web/CSS/border-radiu
 
 ## Responsiveness and 'Mobile First'
 {: #{{ 'Responsiveness and Mobile First' | slugify }} }
+
+{% include snippets/back-to-top.html %}
 
 The Style Kit uses the [mobile first](https://developer.mozilla.org/en-US/Apps/Progressive/Responsive/Mobile_first)
 design, which assumes content will be viewed at the smallest possible size (i.e. on mobile phones) and then scales up,
@@ -81,15 +87,19 @@ will be included.
 ## Colour contrast
 {: #{{ 'Colour contrast' | slugify }} }
 
+{% include snippets/back-to-top.html %}
+
 The colour contrast for text and any interactive elements **should** be at least *4:5:1*, as recommended by GDS and the
 [W3C](http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html).
 
 ## Conveying context without colours or icons
 {: #{{ 'Conveying context without colours or icons' | slugify }} }
 
-Relying on colour or icons alone to indicate the meaning or context of an action or notice is bad practice. This 
-information cannot is inaccessible to users of assistive technologies – such as screen readers. Instead efforts should 
-be made to ensure that the context is either obvious from the content itself, or is included in an alternative form, 
+{% include snippets/back-to-top.html %}
+
+Relying on colour or icons alone to indicate the meaning or context of an action or notice is bad practice. This
+information cannot is inaccessible to users of assistive technologies – such as screen readers. Instead efforts should
+be made to ensure that the context is either obvious from the content itself, or is included in an alternative form,
 such as with the <code>.sr-only</code> class.
 
 Ideally [contextual colours]({{ '/core/colours/#standard-contextual-colours' | prepend: site.baseurl }}) and 
@@ -99,6 +109,8 @@ meaning that is already present in text or other markup.
 ## Link context and roles
 {: #{{ 'Link context and roles' | slugify }} }
 
+{% include snippets/back-to-top.html %}
+
 Where a link (<code>&lt;a&gt;</code>) element is used as a button to trigger in-page functionality, such as collapsing
 content, make sure to add `role="button"` to provide suitable context to assistive technologies.
 
@@ -107,6 +119,8 @@ Where a button (whether an actual button or a link element styled as such) uses 
 
 ## Browser support
 {: #{{ 'Browser support' | slugify }} }
+
+{% include snippets/back-to-top.html %}
 
 In general, the BAS Style Kit aims to support all browsers supported by Bootstrap.
 

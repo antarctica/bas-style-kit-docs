@@ -19,6 +19,8 @@ sections:
 ## About
 {: #{{ 'About' | slugify }} }
 
+{% include snippets/back-to-top.html %}
+
 The BAS Style Kit is based on [Bootstrap](https://www.getbootstrap.com), the worlds most popular CSS framework.
 The Style Kit uses a customised version of Bootstrap to follow our design choices (such as not using rounded corners).
 
@@ -31,6 +33,8 @@ of best practice - and we are grateful for these being open-sourced.
 
 ## Quick start
 {: #{{ 'Quick start' | slugify }} }
+
+{% include snippets/back-to-top.html %}
 
 The recommended, and quickest, way to include the BAS Style Kit in your website or application is to use the BAS CDN.
 
@@ -58,6 +62,8 @@ Other ways of including the Style Kit in a website or application are listed in 
 
 ## Starter template
 {: #{{ 'Starter template' | slugify }} }
+
+{% include snippets/back-to-top.html %}
 
 Below is the minimal HTML needed to use the BAS Style Kit, following recommended best practices, and ensuring
 compatibility with older web browsers.

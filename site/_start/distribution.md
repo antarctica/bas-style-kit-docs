@@ -25,6 +25,8 @@ sections:
 ## BAS CDN
 {: #{{ 'BAS CDN' | slugify }} }
 
+{% include snippets/back-to-top.html %}
+
 The BAS CDN (Content Delivery Network) hosts, for each version:
 
 * compiled CSS
@@ -34,6 +36,8 @@ The BAS CDN (Content Delivery Network) hosts, for each version:
 
 ### CDN endpoint
 {: #{{ 'CDN endpoint' | slugify }} }
+
+{% include snippets/back-to-top.html %}
 
 General form:
 
@@ -50,6 +54,8 @@ For the current version ({% include snippets/bsk-version.html %}):
 ### Compiled CSS
 {: #{{ 'Compiled CSS' | slugify }} }
 
+{% include snippets/back-to-top.html %}
+
 Customised version of [Bootstrap](https://getbootstrap.com) for the BAS Style Kit:
 
 {% highlight html %}
@@ -64,6 +70,8 @@ BAS Style Kit styles:
 
 ### Minified CSS
 {: #{{ 'Minified CSS' | slugify }} }
+
+{% include snippets/back-to-top.html %}
 
 Customised version of [Bootstrap](https://getbootstrap.com) for the BAS Style Kit:
 
@@ -94,6 +102,8 @@ automatically by compatible browsers.
 ### Web fonts
 {: #{{ 'Web fonts' | slugify }} }
 
+{% include snippets/back-to-top.html %}
+
 As there are a large number of web font files, for the various fonts, and their variants, access URLs are not listed
 here. <br /> URLs can be calculated using the general form given and references defined in `@font-face` declarations.
 {: .alert .alert-info }
@@ -101,11 +111,15 @@ here. <br /> URLs can be calculated using the general form given and references 
 ### Sub-Resource Integrity (SRI) values
 {: #{{ 'Sub-Resource Integrity (SRI) values' | slugify }} }
 
+{% include snippets/back-to-top.html %}
+
 See the [SRI section]({{ '/start/distribution/#sri' | prepend: site.baseurl }}) for more information on these values.
 {: .alert .alert-info}
 
 ## Compiled assets
 {: #{{ 'Compiled assets' | slugify }} }
+
+{% include snippets/back-to-top.html %}
 
 A ZIP archive is available, for each version, containing:
 
@@ -118,6 +132,8 @@ Compiled assets are not currently available, this will be resolved before the ne
 
 ### Download endpoint
 {: #{{ 'Download endpoint' | slugify }} }
+
+{% include snippets/back-to-top.html %}
 
 General form:
 
@@ -136,6 +152,8 @@ For the current version ({% include snippets/bsk-version.html %}):
 ## NodeJS package
 {: #{{ 'NodeJS package' | slugify }} }
 
+{% include snippets/back-to-top.html %}
+
 Source files for the Style Kit are available as a NodeJS package through the
 [NPM registry](https://www.npmjs.com/package/bas-style-kit).
 
@@ -151,6 +169,8 @@ Using the Style Kit in this way requires you to compile the Style Kit's Sass fil
 
 ## Source files
 {: #{{ 'Source files' | slugify }} }
+
+{% include snippets/back-to-top.html %}
 
 Source files for the Style Kit are available as a Git repository, or archives of this repository, for each release.
 
@@ -179,6 +199,8 @@ source files yourself to make upgrading to future releases of the Style Kit easi
 ## Sub-Resource Integrity (SRI)
 {: #{{ 'SRI' | slugify }} }
 
+{% include snippets/back-to-top.html %}
+
 [Sub-Resource Integrity (SRI)](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) is a
 security technology supported by some browsers to ensure resources they fetch (for example, CSS files from a CDN) are
 downloaded without modification or interference.
@@ -203,6 +225,8 @@ issue and will be resolved before the next general release.
 ### SRI values
 {: #{{ 'SRI values' | slugify }} }
 
+{% include snippets/back-to-top.html %}
+
 For the current version ({% include snippets/bsk-version.html %}):
 
 | Resource                    | SRI value                                                                   |
@@ -215,6 +239,8 @@ For the current version ({% include snippets/bsk-version.html %}):
 
 ### SRI values endpoint
 {: #{{ 'SRI values endpoint' | slugify }} }
+
+{% include snippets/back-to-top.html %}
 
 General form:
 
@@ -231,7 +257,9 @@ For the current version ({% include snippets/bsk-version.html %}):
 ## Cross Origin Resource Sharing (CORS)
 {: #{{ 'CORS' | slugify }} }
 
-[Cross Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS) is a 
+{% include snippets/back-to-top.html %}
+
+[Cross Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS) is a
 security technology supported by most browsers to allow resources from another domain (such as the BAS CDN) to be used
 in other applications or websites.
 
