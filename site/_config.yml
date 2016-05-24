@@ -122,3 +122,10 @@ jekyll_get:
     data: bsk_sri_base_production
     json: 'https://cdn.web.bas.ac.uk/bas-style-kit/0.1.0/sri.json'
 
+jira_issues:
+  instance: https://jira.ceh.ac.uk
+  username: bas-bot-read-only
+  password: password
+  classes:
+    wrapper_classes: "label label-jira-issue"
+    link_icon_classes: "fa fa-ticket"

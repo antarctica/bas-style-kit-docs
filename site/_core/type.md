@@ -448,6 +448,10 @@ Terms which are too long will be truncated.
 
 Add `.dl-bsk` to apply additional padding.
 
+**Heads up!** This class will be renamed `.dl-bsk-lg` in the next version of the Style Kit. See 
+{% jira issue="BSK-128" %} for more information.
+{: .alert .alert-info }
+
 {% example html %}
 <dl class="dl-bsk">
   <dt>HF</dt>
@@ -573,6 +577,10 @@ should fix this.
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
 
+**Heads up!** These classes may be removed in the next version of the Style Kit. See {% jira issue="BSK-129" %} for 
+more information.
+{: .alert .alert-info }
+
 {% example html %}
 <p class="text-left">De carne animata corpora quaeritis.</p>
 <p class="text-center">De carne animata corpora quaeritis.</p>
@@ -585,6 +593,10 @@ should fix this.
 {: #{{ 'Transformations' | slugify }} }
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+
+**Heads up!** These classes may be removed in the next version of the Style Kit. See {% jira issue="BSK-129" %} for 
+more information.
+{: .alert .alert-info }
 
 {% example html %}
 <p class="text-lowercase">De carne animata corpora quaeritis.</p>

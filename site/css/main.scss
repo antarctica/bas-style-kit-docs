@@ -242,5 +242,41 @@ $beta-phase: #f47738;
   .label-phase-deprecated {
     background-color: #6F777B;
   }
+
+// Temporary styles for issue components (i.e. issue id + status)
+// These will be become a dedicated component based on labels in the future
+
+.label-jira-issue {
+  padding: 0;
+
+  border-radius: 0;
+  font-weight: normal;
+
+  .jira-issue-link,
+  .jira-issue-status {
+    padding: .2em .6em .3em;
+  }
+
+  .jira-issue-link {
+    background-color: #eeeeee;
+    color: #333333;
+  }
+
+  .jira-issue-status {
+    &.jira-issue-status-to-do {
+      background-color: #4A6785;
+      color: #ffffff;
+    }
+    &.jira-issue-status-in-progress,
+    &.jira-issue-status-in-review {
+      background-color: #FFD351;
+      color: #594300;
+    }
+    &.jira-issue-status-done,
+    &.jira-issue-status-cancelled {
+      background-color: #14892C;
+      color: #ffffff;
+    }
+  }
 }
 

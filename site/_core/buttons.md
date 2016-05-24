@@ -72,6 +72,10 @@ Use this variant for standard or secondary buttons. For added context you can us
 
 Use this variant for call to actions or to distinguish the typical or recommended action where there is more than one.
 
+**Heads up!** This class will be renamed `.btn-primary` in the next version of the Style Kit. See 
+{% jira issue="BSK-130" %} for more information.
+{: .alert .alert-info }
+
 {% example html %}
 <button class="btn btn-bsk btn-bsk-primary" type="submit">Primary Action</button>
 {% endexample %}
