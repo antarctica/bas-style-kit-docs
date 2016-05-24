@@ -1,9 +1,9 @@
 #
-# Defines a single S3 bucket instance (VM) to act as a generic example of using a S3 bucket for a static website
+# Defines a single S3 bucket to hold a static website
 #
 # This file relies on the AWS Terraform provider being previously configured - see '00-providers.tf'
 
-# Generic bucket
+# Staging environment bucket
 #
 # AWS source: https://aws.amazon.com/s3/
 # Terraform source: https://www.terraform.io/docs/providers/aws/r/s3_bucket.html
