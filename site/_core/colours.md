@@ -55,6 +55,8 @@ A default background colour is applied to the `<body>` element.
 
 A default text colour is applied to the `<body>` element, which is inherited by headings and paragraphs for example.
 
+A default link colour is applied to the `<body>` element.
+
 <div class="bsk-docs-swatch-wrapper">
   <div class="row">
     <div class="col-md-2">
@@ -65,6 +67,16 @@ A default text colour is applied to the `<body>` element, which is inherited by 
         <li class="bsk-docs-hex-reference">#333333</li>
       </ul>
     </div>
+    <div class="col-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-link-colour"></div>
+      <ul class="list-unstyled text-center bsk-docs-swatch-details">
+        <li>Link colour</li>
+        <li><code>$link-color</code></li>
+        <li class="bsk-docs-hex-reference">#007ac3</li>
+      </ul>
+    </div>
+  </div>
+</div>
 
 ## Buttons
 {: #{{ 'Buttons' | slugify }} }

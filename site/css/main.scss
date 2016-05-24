@@ -184,6 +184,41 @@ $beta-phase: #f47738;
     padding-right: 5px;
     padding-left: 5px;
   }
+}
+
+// Styles for simulating fonts
+
+.bsk-docs-font-sample-open-sans-light {
+  font-family: "Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+.bsk-docs-font-sample-open-sans-regular {
+  font-family: "Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.bsk-docs-font-sample-open-sans-bold {
+  font-family: "Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
+
+.bsk-docs-font-sample-gill-sans-light {
+  font-family: "Gill Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+}
+.bsk-docs-font-sample-gill-sans-book {
+  font-family: "Gill Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+}
+.bsk-docs-font-sample-gill-sans-roman {
+  font-family: "Gill Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.bsk-docs-font-sample-menlo-regular {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
 
   .label-phase {
     border-radius: 0;

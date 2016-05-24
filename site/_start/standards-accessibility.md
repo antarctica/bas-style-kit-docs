@@ -13,6 +13,8 @@ sections:
   -
     title: Conveying context without colours or icons
   -
+    title: Link context and roles
+  -
     title: Browser support
 ---
 
@@ -93,6 +95,15 @@ such as with the <code>.sr-only</code> class.
 Ideally [contextual colours]({{ '/core/colours/#standard-contextual-colours' | prepend: site.baseurl }}) and 
 [icons]({{ '/core/icons/#standard-contextual-icons' | prepend: site.baseurl }}) should only be needed for reinforcing 
 meaning that is already present in text or other markup.
+
+## Link context and roles
+{: #{{ 'Link context and roles' | slugify }} }
+
+Where a link (<code>&lt;a&gt;</code>) element is used as a button to trigger in-page functionality, such as collapsing
+content, make sure to add `role="button"` to provide suitable context to assistive technologies.
+
+Where a button (whether an actual button or a link element styled as such) uses the `.active` state, add
+`aria-pressed="true"` as well to convey this context to assistive technologies.
 
 ## Browser support
 {: #{{ 'Browser support' | slugify }} }
