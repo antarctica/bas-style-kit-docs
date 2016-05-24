@@ -60,11 +60,11 @@ These icons can be used with many core styles and components, such as:
       </ul>
     </div>
     <div class="col-md-2">
-      <div class="bsk-docs-icon"><i class="fa fa-4x fa-fw fa-exclamation" aria-hidden="true"></i></div>
+      <div class="bsk-docs-icon"><i class="fa fa-4x fa-fw fa-exclamation-circle" aria-hidden="true"></i></div>
       <ul class="list-unstyled text-center bsk-docs-icons-details">
         <li>Danger</li>
-        <li class="bsk-docs-icon-reference">fa-exclamation</li>
-        <li><code>&lt;i class="fa fa-exclamation" <br /> aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+        <li class="bsk-docs-icon-reference">fa-exclamation-circle</li>
+        <li><code>&lt;i class="fa fa-exclamation-circle" <br /> aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
     <div class="col-md-2">
@@ -104,12 +104,12 @@ which can be used alongside these icons.
       </ul>
     </div>
     <div class="col-md-2">
-      <div class="bsk-docs-icon"><i class="fa fa-4x fa-fw fa-exclamation bsk-docs-icon-context-danger" 
+      <div class="bsk-docs-icon"><i class="fa fa-4x fa-fw fa-exclamation-circle bsk-docs-icon-context-danger"
       aria-hidden="true"></i></div>
       <ul class="list-unstyled text-center bsk-docs-icons-details">
         <li>Danger</li>
-        <li class="bsk-docs-icon-reference">fa-exclamation</li>
-        <li><code>&lt;i class="fa fa-exclamation" <br /> aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+        <li class="bsk-docs-icon-reference">fa-exclamation-circle</li>
+        <li><code>&lt;i class="fa fa-exclamation-circle" <br /> aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
     <div class="col-md-2">
