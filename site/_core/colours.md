@@ -147,8 +147,8 @@ You should ensure contextual colours are not the only means
  [context is conveyed to ensure those using assistive technologies are not excluded]({{ '/start/standards-accessibility/#conveying context without colours or icons' | prepend: site.baseurl }}){: .alert-link }.
 {: .alert .alert-warning }
 
-There are accompanying 
-[standard contextual icons]({{ '/core/icons/#standard-contextual-icons' | prepend: site.baseurl }}){: .alert-link } 
+There are accompanying
+[standard contextual icons]({{ '/core/icons/#standard-contextual-icons' | prepend: site.baseurl }}){: .alert-link }
 which can be used alongside these classes.
 {: .alert .alert-info }
 
@@ -256,12 +256,12 @@ These colours can be used with many core styles and components, such as:
   </div>
 </div>
 
-### Background contextual classes
+## Background contextual classes
 {: #{{ 'Background contextual classes' | slugify }} }
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
 
-The [standard contextual colours]({{ '/core/colours/#standard-conventional-colours' | prepend: site.baseurl }}) can be 
+The [standard contextual colours]({{ '/core/colours/#standard-conventional-colours' | prepend: site.baseurl }}) can be
 used as the background of an element using these classes:
 
 * `.bg-success`

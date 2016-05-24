@@ -78,15 +78,15 @@ These icons can be used with many core styles and components, such as:
   </div>
 </div>
 
-There are accompanying 
-[standard contextual colours]({{ '/core/colours/#standard-contextual-colours' | prepend: site.baseurl }}){: .alert-link } 
+There are accompanying
+[standard contextual colours]({{ '/core/colours/#standard-contextual-colours' | prepend: site.baseurl }}){: .alert-link }
 which can be used alongside these icons.
 {: .alert .alert-info }
 
 <div class="bsk-docs-icons-wrapper">
   <div class="row">
     <div class="col-md-2">
-      <div class="bsk-docs-icon"><i class="fa fa-4x fa-fw fa-check bsk-docs-icon-context-success" 
+      <div class="bsk-docs-icon"><i class="fa fa-4x fa-fw fa-check bsk-docs-icon-context-success"
       aria-hidden="true"></i></div>
       <ul class="list-unstyled text-center bsk-docs-icons-details">
         <li>Success</li>
@@ -95,7 +95,7 @@ which can be used alongside these icons.
       </ul>
     </div>
     <div class="col-md-2">
-      <div class="bsk-docs-icon"><i class="fa fa-4x fa-fw fa-exclamation-triangle bsk-docs-icon-context-warning" 
+      <div class="bsk-docs-icon"><i class="fa fa-4x fa-fw fa-exclamation-triangle bsk-docs-icon-context-warning"
       aria-hidden="true"></i></div>
       <ul class="list-unstyled text-center bsk-docs-icons-details">
         <li>Warning</li>
@@ -113,7 +113,7 @@ which can be used alongside these icons.
       </ul>
     </div>
     <div class="col-md-2">
-      <div class="bsk-docs-icon"><i class="fa fa-4x fa-fw fa-info bsk-docs-icon-context-info" 
+      <div class="bsk-docs-icon"><i class="fa fa-4x fa-fw fa-info bsk-docs-icon-context-info"
       aria-hidden="true"></i></div>
       <ul class="list-unstyled text-center bsk-docs-icons-details">
         <li>Info</li>

@@ -220,7 +220,10 @@ $beta-phase: #f47738;
   font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-  .label-phase {
+// Temporary styles for design phases (i.e. discovery, alpha, etc.)
+// These will be replaced with a proper set of label variants when the GDS colour scheme is integrated
+
+.label-phase {
     border-radius: 0;
 
     font-weight: normal;

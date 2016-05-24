@@ -16,7 +16,7 @@ sections:
 ## Overview
 {: #{{ 'Basic' | slugify }} }
 
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/back-to-top.html %}
 
 The Style Kit includes a number of global settings, styles and technologies designed to provide a consistent foundation.
 {: .lead }
@@ -29,13 +29,14 @@ Other technologies which are used in a global fashion, and which are described e
 * the [HTML5 document type]({{ '/start/standards-accessibility/#html5' | prepend: site.baseurl }})
 * the [responsive meta tag]({{ '/start/standards-accessibility/#responsiveness-and-mobile-first' | prepend: site.baseurl }})
 
-Other pages in this section detail other settings used, such as the default font and font-size.
-{: .alert .alert-info }
+Other styles which are used in a global fashion, and which are described elsewhere, include:
+
+* the default [font size, family and line spacing]({{ '/core/typography/#typographic base' | prepend: site.baseurl }})
 
 ## Normalise.css
 {: #{{ 'Normalise.css' | slugify }} }
 
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/back-to-top.html %}
 
-[Normalize.css](http://necolas.github.io/normalize.css/) makes browsers render all elements more consistently and in
-line with modern standards. It precisely targets only the styles that need normalising.
+[Normalize.css](http://necolas.github.io/normalize.css/) ensures browsers render all elements more consistently and in
+line with modern standards.

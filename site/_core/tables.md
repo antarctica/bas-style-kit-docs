@@ -160,7 +160,7 @@ Add `.table-hover` to highlight the row with focus within a table.
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
 
-The [standard contextual colours]({{ '/core/colours/#standard-conventional-classes' | prepend: site.baseurl }}) can be 
+The [standard contextual colours]({{ '/core/colours/#standard-contextual-colours' | prepend: site.baseurl }}) can be
 used as the background of table rows using these classes:
 
 * `.success`
@@ -168,7 +168,7 @@ used as the background of table rows using these classes:
 * `.danger`
 * `.info`
 
-You can also use the `.active` class to highlight a row as if it had focus when using the 
+You can also use the `.active` class to highlight a row as if it had focus when using the
 [row hover]({{ '/core/tables/#hoverable-rows' | prepend: site.baseurl }}) styles.
 
 {% example html %}
@@ -274,7 +274,7 @@ caused by the use of `overflow-y: hidden`.
 </div>
 {% endexample %}
 
-Firefox requires some additional styles to fix a bug with <code>&lt;fieldset&gt;</code> elements which interferes with 
+Firefox requires some additional styles to fix a bug with <code>&lt;fieldset&gt;</code> elements which interferes with
 responsive tables. This can be fixed using the code below, but it **is not** included in the Style Kit by default.
 {: .alert .alert-danger }
 

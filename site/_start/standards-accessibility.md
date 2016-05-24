@@ -102,8 +102,8 @@ information cannot is inaccessible to users of assistive technologies – such a
 be made to ensure that the context is either obvious from the content itself, or is included in an alternative form,
 such as with the <code>.sr-only</code> class.
 
-Ideally [contextual colours]({{ '/core/colours/#standard-contextual-colours' | prepend: site.baseurl }}) and 
-[icons]({{ '/core/icons/#standard-contextual-icons' | prepend: site.baseurl }}) should only be needed for reinforcing 
+Ideally [contextual colours]({{ '/core/colours/#standard-contextual-colours' | prepend: site.baseurl }}) and
+[icons]({{ '/core/icons/#standard-contextual-icons' | prepend: site.baseurl }}) should only be needed for reinforcing
 meaning that is already present in text or other markup.
 
 ## Link context and roles

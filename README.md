@@ -135,8 +135,6 @@ Collections using topic sorting:
 A property `sort_index`, defined as front-matter, is used to control the order of topics, with `0` being first.
 Any topic without this property are listed first, therefore all topics **must** define this property.
 
-
-
 Example front-matter:
 
 ```
