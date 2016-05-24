@@ -99,15 +99,37 @@ eos
             return response
         end
 
+        def get_fake_issue(context, issue_id)
+            site = context.registers[:site]
+
+            # Return faked issue details
+            issue = {}
+            issue['key'] = issue_id
+            issue['x_self_browsable'] = "#{site.config['jira_issues']['instance']}/rest/api/2/issue/#{issue_id}"
+            issue['x_status'] = "Unknown"
+            issue['x_status_class'] = "unknown"
+            issue['x_status_colour'] = "unknown"
+
+            return issue
+        end
+
         def render(context)
             site = context.registers[:site]
             params = parse_params(context) if @params
 
+            # Check if site is in production
+            jekyll_environment = ENV['JEKYLL_ENV'] || 'development'
+
             # Debug
             # puts params['issue']
+            # puts jekyll_environment
 
-            # Get issue details from Jira
-            issue = get_issue(context, params['issue'])
+            # If in production - get issue details from Jira - otherwise fake them
+            if jekyll_environment == 'production'
+                issue = get_issue(context, params['issue'])
+            else
+                issue = get_fake_issue(context, params['issue'])
+            end
 
             # Debug
             # puts issue['key']

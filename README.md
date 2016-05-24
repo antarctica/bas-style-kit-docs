@@ -146,14 +146,16 @@ title: Foo
 
 ## Linking to Jira issues
 
-To link to Jira issue use the following tag, which is implemented by a custom plugin:
+To link to Jira issue use the following tag, which is implemented by a custom plugin.
 
 ```html
 {% jira issue="BSK-129" %}
 ```
 
-This in turn makes a call to a custom tag for displaying Jira issues. At build time a call will be made to the Jira API 
-to retrieve the status of the issue, and display this alongside a link to the issue.
+In production environments, i.e. `JEKYLL_ENV=production`, a call is made to the Jira API to retrieve the current status 
+of an issue ('to-do', 'done', etc.), and display this alongside a link to the issue in a stylised component.
+
+In development environments, the default, the call to Jira is skipped. A static status of 'unknown' is returned instead.
 
 ### Tag configuration
 
@@ -256,6 +258,8 @@ TO bring up the staging environment:
 with these settings:
     * For Semaphore:
         * Add these environment variables:
+            * `JEKYLL_ENV`
+                * Set to: `production`
             * `JEKYLL_JIRA_ISSUE_PLUGIN_ACCOUNT_PASSWORD`
                 * The value for this variable is secret, contact the 
                 [BAS Web & Applications Team](mailto:webapps@bas.ac.uk) for access

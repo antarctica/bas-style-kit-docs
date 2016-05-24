@@ -277,6 +277,10 @@ $beta-phase: #f47738;
       background-color: #14892C;
       color: #ffffff;
     }
+    &.jira-issue-status-unknown {
+      background-color: #333333;
+      color: #eeeeee;
+    }
   }
 }
 
