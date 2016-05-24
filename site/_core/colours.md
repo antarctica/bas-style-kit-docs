@@ -8,6 +8,8 @@ sections:
   -
     title: Typography
   -
+    title: Buttons
+  -
     title: Standard contextual colours
   -
     title: Background contextual classes
@@ -61,6 +63,48 @@ A default text colour is applied to the `<body>` element, which is inherited by 
         <li>Page text</li>
         <li><code>$page-text</code></li>
         <li class="bsk-docs-hex-reference">#333333</li>
+      </ul>
+    </div>
+
+## Buttons
+{: #{{ 'Buttons' | slugify }} }
+
+{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+
+<div class="bsk-docs-swatch-wrapper">
+  <div class="row">
+    <div class="col-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-button-default-bg"></div>
+      <ul class="list-unstyled text-center bsk-docs-swatch-details">
+        <li>Default button (background)</li>
+        <li><code>$btn-bsk-default-bg</code></li>
+        <li class="bsk-docs-hex-reference">#c3c3c3</li>
+      </ul>
+    </div>
+    <div class="col-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-button-primary-bg"></div>
+      <ul class="list-unstyled text-center bsk-docs-swatch-details">
+        <li>Primary button (background)</li>
+        <li><code>$btn-bsk-primary-bg</code></li>
+        <li class="bsk-docs-hex-reference">#0DA59F</li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-button-default-border"></div>
+      <ul class="list-unstyled text-center bsk-docs-swatch-details">
+        <li>Default button (border)</li>
+        <li><code>$btn-bsk-default-border</code></li>
+        <li class="bsk-docs-hex-reference">#8c8c8c</li>
+      </ul>
+    </div>
+    <div class="col-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-button-primary-border"></div>
+      <ul class="list-unstyled text-center bsk-docs-swatch-details">
+        <li>Primary button (border)</li>
+        <li><code>$btn-bsk-primary-border</code></li>
+        <li class="bsk-docs-hex-reference">#0b8d88</li>
       </ul>
     </div>
   </div>
