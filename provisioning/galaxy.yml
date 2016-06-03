@@ -32,12 +32,12 @@
 - src: bas-ansible-roles-collection.system-security
   version: v0.2.0
 - src: bas-ansible-roles-collection.system-users
-  version: v1.0.0
+  version: v2.0.0
 - src: bas-ansible-roles-collection.system-hostname
   version: v0.2.1
 - src: bas-ansible-roles-collection.system-ssh
   version: v0.2.0
 - src: bas-ansible-roles-collection.system-firewall
-  version: v0.2.1
+  version: v0.3.0
 - src: bas-ansible-roles-collection.ruby2
   version: v0.2.0
