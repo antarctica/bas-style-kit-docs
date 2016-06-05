@@ -64,7 +64,7 @@ for [rounded corners](https://developer.mozilla.org/en/docs/Web/CSS/border-radiu
 {% include snippets/back-to-top.html %}
 
 The Style Kit uses the [mobile first](https://developer.mozilla.org/en-US/Apps/Progressive/Responsive/Mobile_first)
-design, which assumes content will be viewed at the smallest possible size (i.e. on mobile phones) and then scales up,
+design, which assumes pages will be viewed at the smallest possible size (i.e. on mobile phones) and then scales up,
 progressively, to larger sizes. This is also known as
 [responsive design](https://developer.mozilla.org/en-US/docs/Web/Guide/Responsive_design).
 
@@ -83,6 +83,9 @@ Responsiveness is enabled in the Style Kit using the *viewport* meta tag, as sho
 If you use the [examples]({{ '/examples' | prepend: site.baseurl }}){: .alert-link } from this website, this meta tag
 will be included.
 {: .alert .alert-info }
+
+See the [responsive breakpoints]({{ '/core/layout/#responsive-breakpoints' | prepend: site.baseurl }}) section for more
+information.
 
 ## Colour contrast
 {: #{{ 'Colour contrast' | slugify }} }
