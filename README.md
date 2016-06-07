@@ -253,7 +253,7 @@ TO bring up the staging environment:
 5. `$ terraform apply`
 6. `$ cd ../..` (back to *bas-style-kit-docs*)
 7. Commit Terraform state files to project repository
-9. Complete the relevant
+8. Complete the relevant
 [setup tasks](https://paper.dropbox.com/doc/BAS-Base-Project-Pristine-Base-Flavour-Usage-ZdMdHHzf8xB4HjxcNuDXa#:h2=Environment---staging-(static-)
 with these settings:
     * For Semaphore:
@@ -263,15 +263,6 @@ with these settings:
             * `JEKYLL_JIRA_ISSUE_PLUGIN_ACCOUNT_PASSWORD`
                 * The value for this variable is secret, contact the 
                 [BAS Web & Applications Team](mailto:webapps@bas.ac.uk) for access
-    * For CloudFront distribution:
-        * S3 bucket name: `bas-style-kit-docs-stage`
-        * Alternate domain names (CNAMEs):
-            * `style-kit-testing.web.bas.ac.uk`
-            * `stylekit-testing.web.bas.ac.uk`
-        * SSL certificate: `star-web-bas-ac-uk`
-10. Ask BAS ICT to create a CNAMES for:
-    * `style-kit-testing.web.bas.ac.uk` pointing to the domain name of the distribution
-    * `stylekit-testing.web.bas.ac.uk` pointing to `style-kit-testing.web.bas.ac.uk`
 
 To bring up the production environment:
 
