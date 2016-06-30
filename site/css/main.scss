@@ -139,6 +139,17 @@ $beta-phase: #f47738;
   border-bottom: none;
 }
 
+// Styles for displaying columns in grid system examples
+
+.bsk-docs-example .row>[class^=col-] {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  background-color: rgba(195, 195, 195,.15);
+  border: 1px solid rgba(140, 140, 140,.2);
+  text-align: center;
+}
+
 // Styles for collection index jumbotron's
 
 .bsk-docs-collection-masthead {
