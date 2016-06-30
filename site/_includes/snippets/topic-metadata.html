@@ -22,7 +22,11 @@
 {% endcase %}
 
 {% if include.origin == "bootstrap" %}
-* Bootstrap style
+* <i class="fa fa-circle-o" aria-hidden="true"></i> Bootstrap style
+{% elsif include.origin == "bootstrap-custom" %}
+* <i class="fa fa-adjust" aria-hidden="true"></i> Bootstrap &amp; Custom style
+{% elsif include.origin == "custom" %}
+* <i class="fa fa-circle" aria-hidden="true"></i> Custom style
 {% endif %}
 
 {% if include.included == "yes" %}
