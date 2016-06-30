@@ -22,12 +22,12 @@ sections:
 ## Overview
 {: #{{ 'Overview' | slugify }} }
 
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
 
 The BAS Style Kit inherits, and expands, the grid system provided by Bootstrap. **Compatibility with Bootstrap's
 grid system classes is guaranteed.**
 
-The Style Kit's additions focus on extending the grid system, to include additional sizes (break-points), and an 
+The Style Kit's additions focus on extending the grid system, to include extra sizes (break-points), and an
 alternate, interchangeable, grid with more columns.
 
 ### Available grids

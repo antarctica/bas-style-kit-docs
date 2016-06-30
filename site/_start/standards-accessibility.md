@@ -11,9 +11,7 @@ sections:
   -
     title: Colour contrast
   -
-    title: Conveying context without colours or icons
-  -
-    title: Link context and roles
+    title: Providing context
   -
     title: Browser support
 ---
@@ -95,21 +93,26 @@ information.
 The colour contrast for text and any interactive elements **should** be at least *4:5:1*, as recommended by GDS and the
 [W3C](http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html).
 
-## Conveying context without colours or icons
+## Providing context
+{: #{{ 'Providing context' | slugify }} }
+
+### Conveying context without colours or icons
 {: #{{ 'Conveying context without colours or icons' | slugify }} }
 
 {% include snippets/back-to-top.html %}
 
 Relying on colour or icons alone to indicate the meaning or context of an action or notice is bad practice. This
-information cannot is inaccessible to users of assistive technologies – such as screen readers. Instead efforts should
-be made to ensure that the context is either obvious from the content itself, or is included in an alternative form,
-such as with the <code>.sr-only</code> class.
+information cannot is inaccessible to colour-blind users for example, or those using assistive technologies – such as
+screen readers.
+
+Instead, efforts should be made to ensure that the context is either obvious from the content itself, or is included in
+an alternative form, such as with the `.sr-only` class.
 
 Ideally [contextual colours]({{ '/core/colours/#standard-contextual-colours' | prepend: site.baseurl }}) and
 [icons]({{ '/core/icons/#standard-contextual-icons' | prepend: site.baseurl }}) should only be needed for reinforcing
 meaning that is already present in text or other markup.
 
-## Link context and roles
+### Link context and roles
 {: #{{ 'Link context and roles' | slugify }} }
 
 {% include snippets/back-to-top.html %}

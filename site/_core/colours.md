@@ -144,7 +144,7 @@ Info
 {: .dl-bsk }
 
 You should ensure contextual colours are not the only means
- [context is conveyed to ensure those using assistive technologies are not excluded]({{ '/start/standards-accessibility/#conveying context without colours or icons' | prepend: site.baseurl }}){: .alert-link }.
+ [context is conveyed to ensure those using assistive technologies are not excluded]({{ '/start/standards-accessibility/#conveying-context-without-colours-or-icons' | prepend: site.baseurl }}){: .alert-link }.
 {: .alert .alert-warning }
 
 There are accompanying
@@ -154,42 +154,12 @@ which can be used alongside these classes.
 
 These colours can be used with many core styles and components, such as:
 
-* [text, lists, etc.]({{ '/core/text/#contextual-classes' | prepend: site.baseurl }})
+* [text, lists, etc.]({{ '/core/type/#contextual-colours' | prepend: site.baseurl }})
 * [tables]({{ '/core/tables/#contextual-rows' | prepend: site.baseurl }})
 * [buttons]({{ '/core/buttons/#contextual-classes' | prepend: site.baseurl }})
 * etc.
 
 <div class="bsk-docs-swatch-wrapper">
-  <div class="row">
-    <div class="col-md-2">
-      <div class="bsk-docs-swatch-colour bsk-docs-swatch-context-success-background"></div>
-      <ul class="list-unstyled text-center bsk-docs-swatch-details">
-        <li>Success (background)</li>
-        <li class="bsk-docs-hex-reference">#dff0d8</li>
-      </ul>
-    </div>
-    <div class="col-md-2">
-      <div class="bsk-docs-swatch-colour bsk-docs-swatch-context-warning-background"></div>
-      <ul class="list-unstyled text-center bsk-docs-swatch-details">
-        <li>Warning (background)</li>
-        <li class="bsk-docs-hex-reference">#fcf8e3</li>
-      </ul>
-    </div>
-    <div class="col-md-2">
-      <div class="bsk-docs-swatch-colour bsk-docs-swatch-context-danger-background"></div>
-      <ul class="list-unstyled text-center bsk-docs-swatch-details">
-        <li>Danger (background)</li>
-        <li class="bsk-docs-hex-reference">#f2dede</li>
-      </ul>
-    </div>
-    <div class="col-md-2">
-      <div class="bsk-docs-swatch-colour bsk-docs-swatch-context-info-background"></div>
-      <ul class="list-unstyled text-center bsk-docs-swatch-details">
-        <li>Info (background)</li>
-        <li class="bsk-docs-hex-reference">#d9edf7</li>
-      </ul>
-    </div>
-  </div>
   <div class="row">
     <div class="col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-context-success"></div>
@@ -204,7 +174,7 @@ These colours can be used with many core styles and components, such as:
       <ul class="list-unstyled text-center bsk-docs-swatch-details">
         <li>Warning</li>
         <li><code>$context-warning</code></li>
-        <li class="bsk-docs-swatch-hex-reference">#f0ad4e</li>
+        <li class="bsk-docs-hex-reference">#f0ad4e</li>
       </ul>
     </div>
     <div class="col-md-2">
@@ -229,6 +199,7 @@ These colours can be used with many core styles and components, such as:
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-context-success-text"></div>
       <ul class="list-unstyled text-center bsk-docs-swatch-details">
         <li>Success (text)</li>
+        <li><code>$state-success-text</code></li>
         <li class="bsk-docs-hex-reference">#3c763d</li>
       </ul>
     </div>
@@ -236,6 +207,7 @@ These colours can be used with many core styles and components, such as:
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-context-warning-text"></div>
       <ul class="list-unstyled text-center bsk-docs-swatch-details">
         <li>Warning (text)</li>
+        <li><code>$state-warning-text</code></li>
         <li class="bsk-docs-hex-reference">#8a6d3b</li>
       </ul>
     </div>
@@ -243,6 +215,7 @@ These colours can be used with many core styles and components, such as:
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-context-danger-text"></div>
       <ul class="list-unstyled text-center bsk-docs-swatch-details">
         <li>Danger (text)</li>
+        <li><code>$state-danger-text</code></li>
         <li class="bsk-docs-hex-reference">#a94442</li>
       </ul>
     </div>
@@ -250,6 +223,7 @@ These colours can be used with many core styles and components, such as:
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-context-info-text"></div>
       <ul class="list-unstyled text-center bsk-docs-swatch-details">
         <li>Info (text)</li>
+        <li><code>$state-info-text</code></li>
         <li class="bsk-docs-hex-reference">#31708f</li>
       </ul>
     </div>
@@ -268,3 +242,40 @@ used as the background of an element using these classes:
 * `.bg-warning`
 * `.bg-danger`
 * `.bg-info`
+
+<div class="bsk-docs-swatch-wrapper">
+  <div class="row">
+    <div class="col-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-context-success-background"></div>
+      <ul class="list-unstyled text-center bsk-docs-swatch-details">
+        <li>Success (background)</li>
+        <li><code>$state-success-bg</code></li>
+        <li class="bsk-docs-hex-reference">#dff0d8</li>
+      </ul>
+    </div>
+    <div class="col-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-context-warning-background"></div>
+      <ul class="list-unstyled text-center bsk-docs-swatch-details">
+        <li>Warning (background)</li>
+        <li><code>$state-warning-bg</code></li>
+        <li class="bsk-docs-hex-reference">#fcf8e3</li>
+      </ul>
+    </div>
+    <div class="col-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-context-danger-background"></div>
+      <ul class="list-unstyled text-center bsk-docs-swatch-details">
+        <li>Danger (background)</li>
+        <li><code>$state-danger-bg</code></li>
+        <li class="bsk-docs-hex-reference">#f2dede</li>
+      </ul>
+    </div>
+    <div class="col-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-context-info-background"></div>
+      <ul class="list-unstyled text-center bsk-docs-swatch-details">
+        <li>Info (background)</li>
+        <li><code>$state-info-bg</code></li>
+        <li class="bsk-docs-hex-reference">#d9edf7</li>
+      </ul>
+    </div>
+  </div>
+</div>
