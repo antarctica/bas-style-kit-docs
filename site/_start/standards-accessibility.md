@@ -123,6 +123,43 @@ content, make sure to add `role="button"` to provide suitable context to assisti
 Where a button (whether an actual button or a link element styled as such) uses the `.active` state, add
 `aria-pressed="true"` as well to convey this context to assistive technologies.
 
+### Contextual help text
+{: #{{ 'Contextual help text' | slugify }} }
+
+{% include snippets/back-to-top.html %}
+
+Where text is used to explain something on screen, for example a form field or the result of a calculation, an explicit
+link should be made between this text and the element.
+
+Visual readers will be able to infer a link using visual cues (such as placement next to the relevant element), however
+for those using assistive technologies such as screen readers, an accessible equivalent should be provided.
+
+For help text which is applicable to all users, the `aria-describedby` attribute is usually enough. For situations
+where extra guidance may be needed, such as to explain the way in which items are arranged, the `.sr-only` class can be
+used as well.
+
+See the [form help text]({{ '/core/forms/#help-text' | prepend: site.baseurl }}) section for an example.
+
+### Validation states
+{: #{{ 'Validation states' | slugify }} }
+
+{% include snippets/back-to-top.html %}
+
+When displaying validation information, usually in the context of a user filling out a form, care should be taken not
+to rely on
+[colours or icons only]({{ '/core/standards-accessibility/#conveying-context-without-colours-or-icons' | prepend: site.baseurl }})
+to provide context.
+
+Stating clearly the reason for a validation failure or warning, in addition to contextual colours and icons where these
+can be seen, is the recommended way to display validation information.
+
+Where possible, validation feedback should include how the user can correct their mistake, for example by enumerating
+valid options, where there are a limited number.
+
+For forms, where a form field is invalid, the `aria-invalid` attribute should be equal to `true`.
+
+See the [form validation]({{ '/core/forms/#validation' | prepend: site.baseurl }}) section for an example.
+
 ## Browser support
 {: #{{ 'Browser support' | slugify }} }
 

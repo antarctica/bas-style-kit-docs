@@ -39,7 +39,7 @@ You should ensure contextual icons are not the only means
 These icons can be used with many core styles and components, such as:
 
 * [buttons]({{ '/core/buttons/#contextual-icons' | prepend: site.baseurl }})
-* etc.
+* [form validation messages]({{ '/core/forms/#validation' | prepend: site.baseurl }})
 
 <div class="bsk-docs-icons-wrapper">
   <div class="row">
