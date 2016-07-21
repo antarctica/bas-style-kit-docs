@@ -448,7 +448,7 @@ Terms which are too long will be truncated.
 
 Add `.dl-bsk` to apply additional padding.
 
-**Heads up!** This class will be renamed `.dl-bsk-lg` in the next version of the Style Kit. See 
+**Heads up!** This class will be renamed `.dl-bsk-lg` in the next version of the Style Kit. See
 {% jira issue="BSK-128" %} for more information.
 {: .alert .alert-info }
 
@@ -577,7 +577,7 @@ should fix this.
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
 
-**Heads up!** These classes may be removed in the next version of the Style Kit. See {% jira issue="BSK-129" %} for 
+**Heads up!** These classes may be removed in the next version of the Style Kit. See {% jira issue="BSK-129" %} for
 more information.
 {: .alert .alert-info }
 
@@ -594,7 +594,7 @@ more information.
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
 
-**Heads up!** These classes may be removed in the next version of the Style Kit. See {% jira issue="BSK-129" %} for 
+**Heads up!** These classes may be removed in the next version of the Style Kit. See {% jira issue="BSK-129" %} for
 more information.
 {: .alert .alert-info }
 

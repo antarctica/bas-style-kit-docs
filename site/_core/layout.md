@@ -100,10 +100,13 @@ to identify the type of device being used. If this information is needed conside
 {: .alert .alert-warning }
 
 No media-query is used for the *extra small* size, therefore devices smaller than the extra small minimum will still be
-considered extra small. This is a slightly strange situation will be resolved in future versions of the Style Kit.
+considered extra small. This slightly strange situation is resolved in the next Bootstrap version (v4) and will be
+included in future versions of the Style Kit when this is released.
+{: #xs-min-width-note .alert .alert-info }
 
 The *extra large* size is custom to the BAS Style Kit, and is used to target larger displays to improve the use of
 space for internal, data rich, applications. It is not recommended for use in general websites.
+{: .alert .alert-info }
 
 **Heads up!** Responsive breakpoints are changing in the next version of the Style Kit. See {% jira issue="BSK-111" %}
 for more information.
@@ -111,7 +114,7 @@ for more information.
 
 | Size        | Class Name | Example Device <small class="text-muted">Orientation</small> | Minimum Width (px) | Min Width Variable | Core Bootstrap |
 | ----------- | ---------- | ------------------------------------------------------------ | ------------------ | ------------------ | -------------- |
-| Extra Small | `xs`       | Phone <small class="text-muted">portrait</small>             | 480 (see note)     | `$screen-xs-min`   | <i class="fa fa-check" aria-hidden="true"></i> Yes                                               |
+| Extra Small | `xs`       | Phone <small class="text-muted">portrait</small>             | 480 ([see note](#xs-min-width-note))     | `$screen-xs-min`   | <i class="fa fa-check" aria-hidden="true"></i> Yes                                               |
 | Small       | `sm`       | Phone <small class="text-muted">landscape</small>            | 768                | `$screen-sm-min`   | <i class="fa fa-check" aria-hidden="true"></i> Yes                                               |
 | Medium      | `md`       | Tablets                                                      | 992                | `$screen-md-min`   | <i class="fa fa-check" aria-hidden="true"></i> Yes                                               |
 | Large       | `lg`       | Computers                                                    | 1200               | `$screen-lg-min`   | <i class="fa fa-check" aria-hidden="true"></i> Yes                                               |

@@ -24,6 +24,8 @@ sections:
 ## Colour contrast
 {: #{{ 'Colour contrast' | slugify }} }
 
+{% include snippets/back-to-top.html %}
+
 If you change any of these colours, or use them for other purposes, ensure this complies with the
 [recommended minimum colour contrast]({{ '/start/standards-accessibility/#colour-contrast' | prepend: site.baseurl }}){: .alert-link }.
 {: .alert .alert-warning }

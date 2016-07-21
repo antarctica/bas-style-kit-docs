@@ -78,7 +78,7 @@ for [rounded corners](https://developer.mozilla.org/en/docs/Web/CSS/border-radiu
 
 {% include snippets/back-to-top.html %}
 
-The Style Kit uses the [mobile first](https://developer.mozilla.org/en-US/Apps/Progressive/Responsive/Mobile_first)
+The Style Kit uses [mobile first](https://developer.mozilla.org/en-US/Apps/Progressive/Responsive/Mobile_first)
 design, which assumes pages will be viewed at the smallest possible size (i.e. on mobile phones) and then scales up,
 progressively, to larger sizes. This is also known as
 [responsive design](https://developer.mozilla.org/en-US/docs/Web/Guide/Responsive_design).
@@ -89,7 +89,7 @@ Examples of how content can change between sizes include:
 * organising content into [grid columns]({{ '/core/grid/' | prepend: site.baseurl }}) to make better use of space
 * minimising or hiding navigation menus at smaller sizes
 
-Responsiveness is enabled in the Style Kit using the *viewport* meta tag, as shown below:
+Responsiveness is enabled in the Style Kit using the `viewport` meta tag, as shown below:
 
 {% highlight html %}
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
