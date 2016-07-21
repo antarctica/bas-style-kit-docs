@@ -17,7 +17,15 @@ $beta-phase: #f47738;
 
 .alert-app-top-pin {
   margin-bottom: 0;
+
   border: none;
+  border-radius: 0;
+}
+.alert-app-top-pin-beside-navbar {
+  .container {
+    padding-left: 27px;
+    padding-right: 27px;
+  }
 }
 
 .alert-app-cookie-banner {
