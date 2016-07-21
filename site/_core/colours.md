@@ -51,7 +51,7 @@ A default background colour is applied to the `<body>` element.
 ## Typography
 {: #{{ 'Typography' | slugify }} }
 
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
 
 A default text colour is applied to the `<body>` element, which is inherited by headings and paragraphs for example.
 
@@ -81,7 +81,7 @@ A default link colour is applied to the `<body>` element.
 ## Buttons
 {: #{{ 'Buttons' | slugify }} }
 
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
 
 <div class="bsk-docs-swatch-wrapper">
   <div class="row">

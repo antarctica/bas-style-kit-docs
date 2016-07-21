@@ -24,7 +24,7 @@ sections:
 ## Supported elements
 {: #{{ 'Supported elements' | slugify }} }
 
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
 
 The BAS Style Kit's various button styles are designed for <code>&lt;button&gt;</code> elements.
 <code>&lt;a&gt;</code> or <code>&lt;input&gt;</code> elements can be used as well, but may not look right.
@@ -47,7 +47,7 @@ content) to give
 ## Variants
 {: #{{ 'Variants' | slugify }} }
 
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
 
 You **must** pick a variant for each button, otherwise it will look strange. I.e. it is not enough to use
 `.btn .btn-bsk` on its own.

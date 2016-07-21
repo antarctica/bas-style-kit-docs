@@ -82,7 +82,7 @@ certain types of content, such as mapping.
 ## Responsive breakpoints
 {: #{{ 'Responsive breakpoints' | slugify }} }
 
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
 
 The Style Kit is
 [mobile first]({{ '/start/standards-accessibility/#responsiveness-and-mobile-first' | prepend: site.baseurl }}),

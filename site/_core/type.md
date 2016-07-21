@@ -54,7 +54,7 @@ sans-serif`
 ## Font families
 {: #{{ 'Font families' | slugify }} }
 
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
 
 Three font families are used in the BAS Style Kit, for distinct purposes:
 
@@ -401,7 +401,7 @@ Place all list items on a single line, with a margin between.
 ## Definition lists
 {: #{{ 'Defintion lists' | slugify }} }
 
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
 
 A list of terms with associated definitions.
 
