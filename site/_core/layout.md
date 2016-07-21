@@ -7,6 +7,14 @@ sections:
     title: Containers
   -
     title: Responsive breakpoints
+  -
+    title: Floated blocks
+  -
+    title: Centred blocks
+  -
+    title: Clearfix
+  -
+    title: Visibility
 ---
 
 ## Contents
@@ -149,3 +157,163 @@ or, in cases where you are integrating with existing code or a third party syste
   }
 }
 {% endhighlight %}
+
+## Floated blocks
+{: #{{ 'Floated blocks' | slugify }} }
+
+{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+
+Use the `.pull-left` and `.pull-right` classes to float content. The `!important` modifier is used to prevent
+specificity issues.
+
+Do not use these classes in [navbars]({{ '/components/navbar' | prepend: site.baseurl }}), `.navbar-left` and
+`.navbar-right` classes should be used instead.
+{: .alert .alert-warning }
+
+{% example html %}
+<div class="pull-left">
+  <!-- TODO: Add example blocks -->
+</div>
+{% endexample %}
+
+{% example html %}
+<div class="pull-right">
+  <!-- TODO: Add example blocks -->
+</div>
+{% endexample %}
+
+Alternatively, mixins can be used:
+
+{% highlight scss %}
+.element-one {
+  .pull-left();
+}
+.element-two {
+  .pull-right();
+}
+{% endhighlight %}
+
+## Centred blocks
+{: #{{ 'Centred blocks' | slugify }} }
+
+{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+
+Use the `.center-block` class to align a block using CSS margins.
+
+{% example html %}
+<div class="center-block">
+  <!-- TODO: Add example blocks -->
+</div>
+{% endexample %}
+
+Alternatively, a mixin can be used:
+
+{% highlight scss %}
+.element {
+  .center-block();
+}
+{% endhighlight %}
+
+## Clearfix
+{: #{{ 'Clearfix' | slugify }} }
+
+{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+
+Floats can be cleared using the `.clearfix` class on the **parent** element. This uses the
+[the micro clearfix](http://nicolasgallagher.com/micro-clearfix-hack/) by Nicolas Gallagher.
+
+{% example html %}
+<div class="clearfix"></div>
+{% endexample %}
+
+Alternatively, a mixin can be used:
+
+{% highlight scss %}
+.element {
+  .clearfix();
+}
+{% endhighlight %}
+
+## Visibility
+{: #{{ 'Visibility' | slugify }} }
+
+{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+
+The BAS Style Kit supports four states of visibility for block level elements. The `!important` modifier is used to
+prevent specificity issues.
+
+Shown (visible)
+: An element which can be seen by everyone, and which affects page layout
+
+Hidden
+: An element which cannot be seen by anyone, and which does not affect the page layout
+
+Invisible
+: An element which cannot be seen by anyone, but which still affects page layout
+
+Screen readers only
+: An element which can only be seen by assistive technologies such as screen readers, and which does not affect the
+page layout
+{: .dl-bsk }
+
+### General visibility classes
+{: #{{ 'General visibility classes' | slugify }} }
+
+{% include snippets/back-to-top.html %}
+
+Both classes and mixins are available for setting these states generally (i.e. under any circumstances).
+
+| State              | Class        | Mixin           |
+| ------------------ | ------------ | --------------- |
+| Shown              | `.show`      | `.show();`      |
+| Hidden             | `.hidden`    | `.hidden();`    |
+| Invisible          | `.invisible` | `.invisible();` |
+| Screen reader only | `.sr-only`   | `.sr-only();`   |
+{: .table }
+
+### Responsive visibility classes
+{: #{{ 'Responsive visibility classes' | slugify }} }
+
+{% include snippets/back-to-top.html %}
+
+As an alternative to the general classes, it's possible to control an elements visibility at each responsive breakpoint.
+Any of these classes can be mixed and matched for each size.
+
+These classes **should not** be used to display completely different content at different breakpoints. Rather these
+classes **should** be targeted to specific areas or features, generally to hide non-essential information on smaller
+devices.
+{: .alert .alert-warning }
+
+The Invisible and Screen reader only states doesn't depend on the screen size and so have no per-breakpoint classes.
+{: .alert .alert-info }
+
+Unlike grid columns for example, visibility does not flow upwards grid sizes. If you hide an element at the
+*extra small* grid size, it will become visible again at the *small* size.
+{: .alert .alert-info }
+
+| Size        | Visible Classes                                                                   | Hidden Class |
+| ----------- | --------------------------------------------------------------------------------- |------------- |
+| Extra Small | `.visible-xs-block` <br /> `.visible-xs-inline` <br /> `.visible-xs-inline-block` | `.hidden-xs` |
+| Small       | `.visible-sm-block` <br /> `.visible-sm-inline` <br /> `.visible-sm-inline-block` | `.hidden-sm` |
+| Medium      | `.visible-md-block` <br /> `.visible-md-inline` <br /> `.visible-md-inline-block` | `.hidden-md` |
+| Large       | `.visible-lg-block` <br /> `.visible-lg-inline` <br /> `.visible-lg-inline-block` | `.hidden-lg` |
+| Extra Large | `.visible-xl-block` <br /> `.visible-xl-inline` <br /> `.visible-xl-inline-block` | `.hidden-xl` |
+{: .table }
+
+### Print visibility classes
+{: #{{ 'Responsive visibility classes' | slugify }} }
+
+{% include snippets/back-to-top.html %}
+
+The `.visible-print-block`, `.visible-print-inline` and `.visible-print-inline-block` classes can be used to show
+content when printing.
+
+Conversely, the `.hidden-print` class can be used to hide content.
+
+### Test cases
+{: #{{ 'Test cases' | slugify }} }
+
+{% include snippets/back-to-top.html %}
+
+See the [visibility examples]({{ '/examples/visibility' | prepend: site.baseurl }}) for testing which classes are
+visible under different circumstances.
