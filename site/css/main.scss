@@ -141,7 +141,7 @@ $beta-phase: #f47738;
 
 // Styles for displaying columns in grid system examples
 
-.bsk-docs-example .row>[class^=col-] {
+.bsk-docs-example .row.bsk-docs-grid-example>[class^=col-] {
   padding-top: 10px;
   padding-bottom: 10px;
 
