@@ -3,6 +3,8 @@ sort_index: 3
 title: Standards and Accessibility
 sections:
   -
+    title: Browser support
+  -
     title: HTML5
   -
     title: CSS3
@@ -13,7 +15,6 @@ sections:
   -
     title: Providing context
   -
-    title: Browser support
     title: Skip navigation
 ---
 
@@ -29,6 +30,21 @@ content is readable by those with accessibility requirements, such as screen rea
 
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
+
+## Browser support
+{: #{{ 'Browser support' | slugify }} }
+
+{% include snippets/back-to-top.html %}
+
+In general, the BAS Style Kit aims to support all browsers supported by Bootstrap.
+
+This means the latest, stable, releases of all major browsers (subject to any caveats below) are supported.
+
+**Heads up!** Support for Internet Explorer 8 will be removed in the next major Style Kit release.
+{: .alert .alert-danger }
+
+See the Bootstrap documentation on [browser support](http://getbootstrap.com/getting-started/#support)
+for more detailed information.
 
 ## HTML5
 {: #{{ 'HTML5' | slugify }} }
@@ -161,29 +177,20 @@ For forms, where a form field is invalid, the `aria-invalid` attribute should be
 
 See the [form validation]({{ '/core/forms/#validation' | prepend: site.baseurl }}) section for an example.
 
-## Browser support
-{: #{{ 'Browser support' | slugify }} }
 ## Skip navigation
 {: #{{ 'Skip navigation' | slugify }} }
 
 {% include snippets/back-to-top.html %}
 
-In general, the BAS Style Kit aims to support all browsers supported by Bootstrap.
-
-This means the latest, stable, releases of all major browsers (subject to the caveats below) are supported.
 Where a page begins with many navigation links, such as a navbar, a link to skip to page content *should* be included.
 
-**Internet Explorer:**
 This link can be hidden to non-screen readers using the `.sr-only` class, and requires a page structure such as the one
 shown below.
 
-**Heads up!** Support for Internet Explorer 8 will be removed in the next major Style Kit release.
 Due to browser bugs, the target of the skip navigation link **must** set the `tabindex` attribute to `-1` to work
 correctly.
 {: .alert .alert-danger }
 
-See the Bootstrap documentation on [browser support](http://getbootstrap.com/getting-started/#support)
-for more detailed information.
 {% highlight html %}
 <body>
   <a href="#site-content" class="sr-only sr-only-focusable">Skip to main content</a>
