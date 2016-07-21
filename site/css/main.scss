@@ -158,6 +158,21 @@ $beta-phase: #f47738;
   text-align: center;
 }
 
+// Styles for displaying content blocks in layout examples
+
+.bsk-docs-content-block {
+  padding: 10px;
+
+  background-color: rgba(195, 195, 195,.15);
+  border: 1px solid rgba(140, 140, 140,.2);
+  text-align: center;
+}
+
+.responsive-utilities-test {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
 // Styles for collection index jumbotron's
 
 .bsk-docs-collection-masthead {
