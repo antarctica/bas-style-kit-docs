@@ -20,6 +20,7 @@ subtitle: An overview of the BAS Style Kit, how to get it, how it's developed, a
     {% if modulo == '1' %}<div class="row">{% endif %}
 
         <div class="col-md-4">
+            <div class="topic-index-divider"></div>
             <h2><a href="{{ topic.url | prepend: site.baseurl }}">{{ topic.title }}</a></h2>
             <ul class="list-inline">
                 {% for section in topic.sections %}

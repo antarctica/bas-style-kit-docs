@@ -180,6 +180,13 @@ $beta-phase: #f47738;
   color: #FFFFFF;
 }
 
+// Styles for topic dividers in collection indexes
+.topic-index-divider {
+  margin-top: 20px;
+
+  border-top: 5px solid #007ac3;
+}
+
 // Styles for colour swatches - base classes may become a component in the future
 // These are also used for icon lists
 
@@ -318,4 +325,3 @@ $beta-phase: #f47738;
     }
   }
 }
-

@@ -18,11 +18,12 @@ subtitle: Over a dozen reusable components built to provide iconography, dropdow
     {% if modulo == '1' %}<div class="row">{% endif %}
 
         <div class="col-md-4">
+            <div class="topic-index-divider"></div>
             <h2><a href="{{ topic.url | prepend: site.baseurl }}">{{ topic.title }}</a></h2>
             <ul class="list-inline">
-                {% for section in topic.sections %}
-                    <li><h4><a href="{{ topic.url | prepend: site.baseurl }}#{{ section.title | slugify }}">{{ section.title }}</a></h4></li>
-                {% endfor %}
+              {% for section in topic.sections %}
+                  <li><h4><a href="{{ topic.url | prepend: site.baseurl }}#{{ section.title | slugify }}">{{ section.title }}</a></h4></li>
+              {% endfor %}
             </ul>
         </div>
 
