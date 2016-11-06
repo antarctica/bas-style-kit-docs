@@ -10,6 +10,10 @@ sections:
   -
     title: Buttons
   -
+    title: BAS brand colours
+  -
+    title: Standard greyscale colours
+  -
     title: Standard contextual colours
   -
     title: Background contextual classes
@@ -119,6 +123,143 @@ A default link colour is applied to the `<body>` element.
         <li>Primary button (border)</li>
         <li><code>$btn-bsk-primary-border</code></li>
         <li class="bsk-docs-hex-reference">#0b8d88</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+## BAS brand colours
+{: #{{ 'BAS brand colours' | slugify }} }
+
+{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
+
+The BAS brand colours consist of a range of blue shades, derived from the official *BAS blue* colour, and a number of
+contrasting and complementary ascent colours.
+
+<div class="bsk-docs-swatch-wrapper">
+  <div class="row">
+    <div class="col-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-bas-brand"></div>
+      <ul class="list-unstyled text-center bsk-docs-swatch-details">
+        <li>BAS brand</li>
+        <li><code>$bsk-bas-brand</code></li>
+        <li class="bsk-docs-hex-reference">#003A5D</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="bsk-docs-swatch-wrapper">
+  <div class="row">
+    <div class="col-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-bas-grey-lighter"></div>
+      <ul class="list-unstyled text-center bsk-docs-swatch-details">
+        <li>BAS grey lighter</li>
+        <li><code>$bsk-grey-lighter</code></li>
+        <li class="bsk-docs-hex-reference">#F4F6F9</li>
+      </ul>
+    </div>
+    <div class="col-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-bas-grey-light"></div>
+      <ul class="list-unstyled text-center bsk-docs-swatch-details">
+        <li>BAS grey light</li>
+        <li><code>$bsk-grey-light</code></li>
+        <li class="bsk-docs-hex-reference">#E7EBF1</li>
+      </ul>
+    </div>
+    <div class="col-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-bas-blue-light"></div>
+      <ul class="list-unstyled text-center bsk-docs-swatch-details">
+        <li>BAS blue light</li>
+        <li><code>$bsk-blue-light</code></li>
+        <li class="bsk-docs-hex-reference">#77CCFF</li>
+      </ul>
+    </div>
+    <div class="col-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-bas-blue"></div>
+      <ul class="list-unstyled text-center bsk-docs-swatch-details">
+        <li>BAS blue</li>
+        <li><code>$bsk-blue</code></li>
+        <li class="bsk-docs-hex-reference">#006AAA</li>
+      </ul>
+    </div>
+    <div class="col-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-bas-blue-dark"></div>
+      <ul class="list-unstyled text-center bsk-docs-swatch-details">
+        <li>BAS blue-dark</li>
+        <li><code>$bsk-blue</code></li>
+        <li class="bsk-docs-hex-reference">#003A5D</li>
+      </ul>
+    </div>
+    <div class="col-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-bas-red"></div>
+      <ul class="list-unstyled text-center bsk-docs-swatch-details">
+        <li>BAS red</li>
+        <li><code>$bsk-red</code></li>
+        <li class="bsk-docs-hex-reference">#B93E14</li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-bas-turquoise"></div>
+      <ul class="list-unstyled text-center bsk-docs-swatch-details">
+        <li>BAS brand</li>
+        <li><code>$bsk-bas-turquoise</code></li>
+        <li class="bsk-docs-hex-reference">#0DA59F</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+## Standard greyscale colours
+{: #{{ 'Standard greyscale colours' | slugify }} }
+
+{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+
+To provide contrast as backgrounds for layout elements, such as
+[sidebars]({{ '/components/sidebar' | prepend: site.baseurl }}), and components, such as
+[buttons]({{ '/core/buttons' | prepend: site.baseurl }}), the Style Kit uses a set of conventional grey shades.
+
+<div class="bsk-docs-swatch-wrapper">
+  <div class="row">
+    <div class="col-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-grey-lighter"></div>
+      <ul class="list-unstyled text-center bsk-docs-swatch-details">
+        <li>Grey lighter</li>
+        <li><code>$grey-lighter</code></li>
+        <li class="bsk-docs-hex-reference">#EEEEEE</li>
+      </ul>
+    </div>
+    <div class="col-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-grey-light"></div>
+      <ul class="list-unstyled text-center bsk-docs-swatch-details">
+        <li>Grey light</li>
+        <li><code>$grey-light</code></li>
+        <li class="bsk-docs-hex-reference">#777777</li>
+      </ul>
+    </div>
+    <div class="col-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-grey"></div>
+      <ul class="list-unstyled text-center bsk-docs-swatch-details">
+        <li>Grey</li>
+        <li><code>$grey</code></li>
+        <li class="bsk-docs-hex-reference">#555555</li>
+      </ul>
+    </div>
+    <div class="col-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-grey-dark"></div>
+      <ul class="list-unstyled text-center bsk-docs-swatch-details">
+        <li>Grey dark</li>
+        <li><code>$grey-dark</code></li>
+        <li class="bsk-docs-hex-reference">#333333</li>
+      </ul>
+    </div>
+    <div class="col-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-grey-darker"></div>
+      <ul class="list-unstyled text-center bsk-docs-swatch-details">
+        <li>Grey darker</li>
+        <li><code>$grey-darker</code></li>
+        <li class="bsk-docs-hex-reference">#222222</li>
       </ul>
     </div>
   </div>
