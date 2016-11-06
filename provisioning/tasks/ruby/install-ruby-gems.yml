@@ -4,13 +4,6 @@
 # In preparation for Ansible 2.0
 - name: install additional ruby gems for jekyll plugins
   bundler:
-    chdir="{{ app_project_directory }}"
+    chdir="{{ app_project_directory }}/site"
     state=present
   become: no
-
-# - name: install additional ruby gems for jekyll plugins
-#   command: bundler install
-#   args:
-#     chdir: "{{ app_project_directory }}"
-#   changed_when: false
-#   become: no

@@ -4,7 +4,7 @@
 # App variables - apply to a single project
 app_project: "bas-style-kit-docs"
 app_project_repository: "ssh://git@stash.ceh.ac.uk:7999/bsk/bas-style-kit-docs.git"
-app_project_directory: "/srv/apps/{{ app_project }}"
+app_project_directory: "/usr/srv/apps/{{ app_project }}"
 
 # BAS Systems Inventory variables
 bas_systems_inventory_system_reference: "{{ app_project }}"
