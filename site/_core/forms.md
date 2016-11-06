@@ -533,7 +533,7 @@ Labels **should** always be visible for checkboxes and radio options, to indicat
 {% include snippets/back-to-top.html %}
 
 The width of each form field, control or label can all be controlled using the
-[grid system]({{ '/core/grid' prepend: site.baseurl }}), as demonstrated by the
+[grid system]({{ '/core/grid' | prepend: site.baseurl }}), as demonstrated by the
 [horizontal form layout]({{ '/core/forms/#horizontal-forms' | prepend: site.baseurl }}).
 
 Don't apply grid classes directly to form controls, instead wrap them in a <code>&lt;div&gt;</code> element.

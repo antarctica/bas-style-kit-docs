@@ -14,7 +14,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # Port forwarding
     # Disables Vagrant's default behaviour of forwarding default SSH port
-  config.vm.network "forwarded_port", id: "ssh", guest: 22, host: 2222, auto_correct: true, disabled: true
+    # config.vm.network "forwarded_port", id: "ssh", guest: 22, host: 2222, auto_correct: true, disabled: true
 
   # Network adapters
     # DHCP is used to prevent clashes with other projects
