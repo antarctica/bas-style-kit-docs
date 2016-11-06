@@ -187,6 +187,11 @@ $beta-phase: #f47738;
   border-top: 5px solid #007ac3;
 }
 
+// Styles for fixing examples, such as fixed with footers and navbars,
+// as these would normally spill out of their example containers.
+
+@import 'example-fixes';
+
 // Styles for colour swatches - base classes may become a component in the future
 // These are also used for icon lists
 
