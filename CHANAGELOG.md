@@ -7,4 +7,5 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ### Added
 
+* Year to copyright statement in site footer
 * New project! - initial version based on 0.1.0 of the Base flavour of the BAS Base Project - Pristine
