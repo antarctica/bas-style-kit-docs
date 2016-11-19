@@ -29,6 +29,10 @@ sections:
 The BAS Style Kit's various button styles are designed for <code>&lt;button&gt;</code> elements.
 <code>&lt;a&gt;</code> or <code>&lt;input&gt;</code> elements can be used as well, but may not look right.
 
+You **must** pick a [variant]({{ '/core/buttons/#variants' | prepend: site.baseurl }}){: .alert-link } for each button,
+otherwise it will look strange. I.e. it is not enough to use `.btn .btn-bsk` on its own.
+{: .alert .alert-warning }
+
 Always use `.btn-bsk` and `.btn` together so that Style Kit specific styles are applied.
 {: .alert .alert-info }
 
@@ -48,10 +52,6 @@ content) to give
 {: #{{ 'Variants' | slugify }} }
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
-
-You **must** pick a variant for each button, otherwise it will look strange. I.e. it is not enough to use
-`.btn .btn-bsk` on its own.
-{: .alert .alert-warning }
 
 ### Default
 {: #{{ 'Default' | slugify }} }

@@ -6,15 +6,13 @@ sections:
   -
     title: Default footer
   -
-    title: Minimal footer
-  -
     title: Divider
   -
     title: Open Government License
   -
     title: Legal policy links
   -
-    title: Footer layouts
+    title: Layouts
 ---
 
 ## Contents
@@ -77,8 +75,8 @@ This example, whilst quite complex, demonstrates the sort of information shown i
 </footer>
 {% endexample %}
 
-## Footer components
-{:.no_toc #{{ 'Footer components' | slugify }}}
+## Components
+{: #{{ 'Components' | slugify }}}
 
 {% include snippets/back-to-top.html %}
 
@@ -138,13 +136,13 @@ The `.footer-bsk-policy-links` class positions and styles links to policies such
 </footer>
 {% endexample %}
 
-## Footer layouts
-{: #{{ 'Footer layouts' | slugify }}}
+## Layouts
+{: #{{ 'Layouts' | slugify }}}
 
 {% include snippets/back-to-top.html %}
 
 ### Fixed to bottom
-{:.no_toc #{{ 'Fixed to bottom' | slugify }} }
+{: #{{ 'Fixed to bottom' | slugify }} }
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
 
@@ -169,7 +167,7 @@ The Style Kit doesn't provide styles for this, as it depends on the height of th
 {% endexample %}
 
 ### Static bottom
-{:.no_toc #{{ 'Static bottom' | slugify }} }
+{: #{{ 'Static bottom' | slugify }} }
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
 
