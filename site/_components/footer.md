@@ -67,7 +67,7 @@ This example, whilst quite complex, demonstrates the sort of information shown i
       <div class="ogl-text">All content is licensed under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/">Open Government Licence v3.0</a>, except where otherwise stated</div>
     </div>
     <div class="footer-bsk-policy-links">
-      © NERC BAS
+      © (Year) NERC BAS
       <ul class="list-inline">
         <li><a href="#">Copyright</a></li>
         <li><a href="#">Privacy</a></li>
@@ -128,7 +128,7 @@ The `.footer-bsk-policy-links` class positions and styles links to policies such
 <footer class="footer-bsk footer-bsk-default">
   <div class="container-fluid">
     <div class="footer-bsk-policy-links">
-      © NERC BAS
+      © (Year) NERC BAS
       <ul class="list-inline">
         <li><a href="#">Copyright</a></li>
         <li><a href="#">Privacy</a></li>
