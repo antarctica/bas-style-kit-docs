@@ -63,6 +63,7 @@ Use this variant for standard or secondary buttons. For added context you can us
 
 {% example html %}
 <button class="btn btn-bsk btn-default" type="submit">Action</button>
+<button class="btn btn-bsk btn-danger" type="submit">Dangerous Action</button>
 {% endexample %}
 
 ### Primary
