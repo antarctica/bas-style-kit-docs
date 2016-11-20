@@ -78,8 +78,6 @@ This example, whilst quite complex, demonstrates the sort of information shown i
 ## Components
 {: #{{ 'Components' | slugify }}}
 
-{% include snippets/back-to-top.html %}
-
 ### Divider
 {: #{{ 'Divider' | slugify }} }
 
@@ -139,8 +137,6 @@ The `.footer-bsk-policy-links` class positions and styles links to policies such
 ## Layouts
 {: #{{ 'Layouts' | slugify }}}
 
-{% include snippets/back-to-top.html %}
-
 ### Fixed to bottom
 {: #{{ 'Fixed to bottom' | slugify }} }
 
@@ -154,7 +150,7 @@ The Style Kit doesn't provide styles for this, as it depends on the height of th
 
 {% example html %}
 <footer class="footer-bsk footer-bsk-default footer-bsk-fixed-bottom">
-  <!-- We use the fluid container to avoid overriding the fixed width of a normal container within the narrower confines of this example box. -->
+  <!-- A '.fluid-container' is used for demonstration purposes, a '.container' would 'break out' of the example box -->
   <div class="container-fluid">
     Footer content with a <a href="#">link</a>
     <div role="separator" class="footer-bsk-divider"></div>
@@ -178,7 +174,7 @@ Unlike with fixed footers, you do not need to change any padding on the `body` e
 
 {% example html %}
 <footer class="footer-bsk footer-bsk-default footer-bsk-static-bottom">
-    <!-- We use the fluid container to avoid overriding the fixed width of a normal container within the narrower confines of this example box. -->
+  <!-- A '.fluid-container' is used for demonstration purposes, a '.container' would 'break out' of the example box -->
   <div class="container-fluid">
     Footer content with a <a href="#">link</a>
     <div role="separator" class="footer-bsk-divider"></div>

@@ -497,7 +497,7 @@ Where labels are hidden, the `.sr-only` class **should** always be used to ensur
 understand forms. Alternatively, you can use the `aria-label`, `aria-labelledby` or `title` attributes.
 {: .alert .alert-warning }
 
-Labels **should** always be visible for checkboxes and radio options, to indicate that they do.
+Labels **should** always be visible for checkboxes and radio options, to indicate what they do.
 {: .alert .alert-info }
 
 {% example html %}

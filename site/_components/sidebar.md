@@ -123,8 +123,6 @@ This adds the same top margin applied to headings and makes the page layout look
 ## Sizes
 {: #{{ 'Sizes' | slugify }} }
 
-{% include snippets/back-to-top.html %}
-
 ### Large sidebar
 {: #{{ 'Large sidebar' | slugify }} }
 
@@ -161,8 +159,6 @@ Use the [grid system]({{ '/core/grid' | prepend: site.baseurl }}){: .alert-link 
 
 ## Variants
 {: #{{ 'Variants' | slugify }} }
-
-{% include snippets/back-to-top.html %}
 
 ### Inverted sidebar
 {: #{{ 'Inverted sidebar' | slugify }} }
