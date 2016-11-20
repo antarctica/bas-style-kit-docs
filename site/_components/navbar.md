@@ -363,7 +363,7 @@ It is recommended to use this feature sparingly until support improves.
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
 
-[Drop-down menus]({{ '/components/drop-downs' | prepend: site.baseurl }}) can be used as navbar items as-is.
+[Drop-down menus]({{ '/components/drop-down' | prepend: site.baseurl }}) can be used as navbar items as-is.
 
 Remember to always use `.dropdown-menu-bsk` and `.dropdown-menu` together so that Style Kit specific styles are applied.
 {: .alert .alert-info }

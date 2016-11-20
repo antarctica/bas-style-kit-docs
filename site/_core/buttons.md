@@ -30,7 +30,7 @@ The BAS Style Kit's various button styles are designed for <code>&lt;button&gt;<
 <code>&lt;a&gt;</code> or <code>&lt;input&gt;</code> elements can be used as well, but may not look right.
 
 You **must** pick a [variant]({{ '/core/buttons/#variants' | prepend: site.baseurl }}){: .alert-link } for each button,
-otherwise it will look strange. I.e. it is not enough to use `.btn .btn-bsk` on its own.
+otherwise it will look strange. It is not enough to use `.btn .btn-bsk` on its own.
 {: .alert .alert-warning }
 
 Always use `.btn-bsk` and `.btn` together so that Style Kit specific styles are applied.
@@ -99,10 +99,10 @@ actions, or those you wish to guide users away from.
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
 
 {% example html %}
-<p><button class="btn btn-bsk btn-default btn-lg" type="submit">Large Button</button></p>
-<p><button class="btn btn-bsk btn-default" type="submit">Regular Button</button></p>
-<p><button class="btn btn-bsk btn-default btn-sm" type="submit">Small Button</button></p>
-<p><button class="btn btn-bsk btn-default btn-xs" type="submit">Extra-Small Button</button></p>
+<p><button class="btn btn-bsk btn-default btn-lg">Large Button</button></p>
+<p><button class="btn btn-bsk btn-default">Regular Button</button></p>
+<p><button class="btn btn-bsk btn-default btn-sm">Small Button</button></p>
+<p><button class="btn btn-bsk btn-default btn-xs">Extra-Small Button</button></p>
 {% endexample %}
 
 ### Block level buttons
@@ -181,7 +181,7 @@ used for adding context to buttons using these classes:
 * `.btn-danger`
 * `.btn-info`
 
-`.btn-default` isn't needed when using these classes.
+The `.btn-default` class isn't needed when using these classes.
 {: .alert .alert-info }
 
 {% example html %}
