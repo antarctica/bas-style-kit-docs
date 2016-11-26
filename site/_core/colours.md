@@ -300,6 +300,7 @@ These colours can be used with many core styles and components, such as:
 * [text, lists, etc.]({{ '/core/type/#contextual-colours' | prepend: site.baseurl }})
 * [tables]({{ '/core/tables/#contextual-rows' | prepend: site.baseurl }})
 * [buttons]({{ '/core/buttons/#contextual-classes' | prepend: site.baseurl }})
+* [alerts]({{ '/components/alert/#contextual-classes' | prepend: site.baseurl }})
 * etc.
 
 <div class="bsk-docs-swatch-wrapper">

@@ -104,6 +104,7 @@ These icons can be used with many core styles and components, such as:
 
 * [buttons]({{ '/core/buttons/#contextual-icons' | prepend: site.baseurl }})
 * [form validation messages]({{ '/core/forms/#validation' | prepend: site.baseurl }})
+* [alerts]({{ '/components/alert' | prepend: site.baseurl }})
 
 <div class="bsk-docs-icons-wrapper">
   <div class="row">
