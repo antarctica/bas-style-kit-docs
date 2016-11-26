@@ -4,15 +4,19 @@ sections:
   -
     title: Supported elements
   -
-    title: Variants
+    title: Default
   -
-    title: Sizes
-  -
-    title: States
+    title: Primary
   -
     title: Contextual colours
   -
     title: Contextual icons
+  -
+    title: Link
+  -
+    title: Sizes
+  -
+    title: States
 ---
 
 ## Contents
@@ -79,6 +83,45 @@ Use this variant for call to actions or to distinguish the typical or recommende
 
 {% example html %}
 <button class="btn btn-bsk btn-bsk-primary" type="submit">Primary Action</button>
+{% endexample %}
+
+### Contextual colours
+{: #{{ 'Contextual colours' | slugify }} }
+
+{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+
+The [standard contextual colours]({{ '/core/colours/#standard-contextual-colours' | prepend: site.baseurl }}) can be
+used for adding context to buttons using these classes:
+
+* `.btn-success`
+* `.btn-warning`
+* `.btn-danger`
+* `.btn-info`
+
+The `.btn-default` class isn't needed when using these classes.
+{: .alert .alert-info }
+
+{% example html %}
+<button class="btn btn-bsk btn-success">Success Action</button>
+<button class="btn btn-bsk btn-warning">Warning Action</button>
+<button class="btn btn-bsk btn-danger">Dangerous Action</button>
+<button class="btn btn-bsk btn-info">Info Action</button>
+{% endexample %}
+
+### Contextual icons
+{: #{{ 'Contextual icons' | slugify }} }
+
+{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+
+The [standard contextual icons]({{ '/core/icons/#standard-contextual-icons' | prepend: site.baseurl }}) can be
+used for adding context to buttons, usually with the
+[contextual colours]({{ '/core/buttons/#contextual-colours' | prepend: site.baseurl }}).
+
+{% example html %}
+<button class="btn btn-bsk btn-success"><i class="fa fa-check" aria-hidden="true"></i> Success Action</button>
+<button class="btn btn-bsk btn-warning"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Warning Action</button>
+<button class="btn btn-bsk btn-danger"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> Dangerous Action</button>
+<button class="btn btn-bsk btn-info"><i class="fa fa-info" aria-hidden="true"></i> Info Action</button>
 {% endexample %}
 
 ### Link
@@ -166,43 +209,4 @@ Unavailable actions can be indicated by adding the `.disabled` class.
 
 {% example html %}
 <a class="btn btn-bsk btn-default disabled" href="#" role="button">Disabled Action</a>
-{% endexample %}
-
-## Contextual colours
-{: #{{ 'Contextual colours' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
-
-The [standard contextual colours]({{ '/core/colours/#standard-contextual-colours' | prepend: site.baseurl }}) can be
-used for adding context to buttons using these classes:
-
-* `.btn-success`
-* `.btn-warning`
-* `.btn-danger`
-* `.btn-info`
-
-The `.btn-default` class isn't needed when using these classes.
-{: .alert .alert-info }
-
-{% example html %}
-<button class="btn btn-bsk btn-success">Success Action</button>
-<button class="btn btn-bsk btn-warning">Warning Action</button>
-<button class="btn btn-bsk btn-danger">Dangerous Action</button>
-<button class="btn btn-bsk btn-info">Info Action</button>
-{% endexample %}
-
-## Contextual icons
-{: #{{ 'Contextual icons' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
-
-The [standard contextual icons]({{ '/core/icons/#standard-contextual-icons' | prepend: site.baseurl }}) can be
-used for adding context to buttons, usually with the
-[contextual colours]({{ '/core/buttons/#contextual-colours' | prepend: site.baseurl }}).
-
-{% example html %}
-<button class="btn btn-bsk btn-success"><i class="fa fa-check" aria-hidden="true"></i> Success Action</button>
-<button class="btn btn-bsk btn-warning"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Warning Action</button>
-<button class="btn btn-bsk btn-danger"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> Dangerous Action</button>
-<button class="btn btn-bsk btn-info"><i class="fa fa-info" aria-hidden="true"></i> Info Action</button>
 {% endexample %}

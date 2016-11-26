@@ -4,11 +4,11 @@ sections:
   -
     title: Overview
   -
-    title: Variants
-  -
-    title: Sizes
+    title: Default
   -
     title: Contextual colours
+  -
+    title: Sizes
 ---
 
 ## Contents
@@ -45,21 +45,7 @@ Use this variant for standard labels. For added context you can use
 Something <span class="label label-default">Label</span>
 {% endexample %}
 
-## Sizes
-{: #{{ 'Sizes' | slugify }} }
-
-{% include snippets/back-to-top.html %}
-
-Labels will scale with their parent element.
-
-{% example html %}
-<p><button class="btn btn-bsk btn-default btn-lg">Large Button <span class="label label-default">Label</span></button></p>
-<p><button class="btn btn-bsk btn-default">Regular Button <span class="label label-default">Label</span></button></p>
-<p><button class="btn btn-bsk btn-default btn-sm">Small Button <span class="label label-default">Label</span></button></p>
-<p><button class="btn btn-bsk btn-default btn-xs">Extra-Small Button <span class="label label-default">Label</span></button></p>
-{% endexample %}
-
-## Contextual colours
+### Contextual colours
 {: #{{ 'Contextual colours' | slugify }} }
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
@@ -80,4 +66,18 @@ The `.label-default` class isn't needed when using these classes.
 <span class="label label-warning">Warning label</span>
 <span class="label label-danger">Dangerous label</span>
 <span class="label label-info">Info label</span>
+{% endexample %}
+
+## Sizes
+{: #{{ 'Sizes' | slugify }} }
+
+{% include snippets/back-to-top.html %}
+
+Labels will scale with their parent element.
+
+{% example html %}
+<p><button class="btn btn-bsk btn-default btn-lg">Large Button <span class="label label-default">Label</span></button></p>
+<p><button class="btn btn-bsk btn-default">Regular Button <span class="label label-default">Label</span></button></p>
+<p><button class="btn btn-bsk btn-default btn-sm">Small Button <span class="label label-default">Label</span></button></p>
+<p><button class="btn btn-bsk btn-default btn-xs">Extra-Small Button <span class="label label-default">Label</span></button></p>
 {% endexample %}
