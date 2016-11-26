@@ -77,7 +77,7 @@ used for adding extra context to alerts.
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
 
-Use the `.alert-link` class for any link (`a`) elements within an alert.
+Use the `.alert-link` class for any <code>&lt;a&gt;</code> elements within an alert.
 
 {% example html %}
 <div class="alert alert-success" role="alert">Alert with a <a href="#" class="alert-link">link</a></div>
@@ -97,7 +97,7 @@ Dismissible alerts require the [alert]({{ '/interactivity/alert' | prepend: site
 JavaScript plugin, which is enabled on this site.
 {: .alert .alert-info }
 
-The close button element should use a `button` element, not a link (`a`) element, for browser compatibility.
+The close button element should use a `button` element, not a <code>&lt;a&gt;</code> element, for browser compatibility.
 {: .alert .alert-danger }
 
 {% example html %}

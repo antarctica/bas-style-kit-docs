@@ -307,7 +307,7 @@ Add the `.navbar-btn` class to correctly position any button elements, unless th
 Remember to always use `.btn-bsk` and `.btn` together so that Style Kit specific styles are applied.
 {: .alert .alert-info }
 
-Using the `.btn` class with a link (`a`) element within a navigation menu using the `.navbar-nav` class is not supported.
+Using the `.btn` class with a <code>&lt;a&gt;</code> element within a navigation menu using the `.navbar-nav` class is not supported.
 {: .alert .alert-warning }
 
 {% example html %}
