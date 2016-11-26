@@ -189,7 +189,7 @@ any screen size (for demonstration purposes).
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
 
-Add the `.active` class to the navbar item currently active, to highlight where the end user is in the site.
+Add the `.active` class to the drop-down menu item currently active, to highlight where the end user is in the site.
 
 Make sure to include the `<span class="sr-only">(current)</span>` attribute as well. <br />
 This provides a non-visual indication of the currently active item, suitable for assistive technologies.
@@ -359,7 +359,7 @@ It is recommended to use this feature sparingly until support improves.
 {% endexample %}
 
 ### Drop-down menus
-{: #{{ 'Forms' | slugify }} }
+{: #{{ 'Drop-down menus' | slugify }} }
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
 
@@ -503,7 +503,7 @@ The [hidden items menu]({{ '/components/navbar/#hidden-items-menu' | prepend: si
 this menu.
 
 The navbar component requires the [collapse]({{ '/interactivity/collapse' | prepend: site.baseurl }}){: .alert-link }
-JavaScript plugin.
+JavaScript plugin, which is enabled on this site.
 {: .alert .alert-danger }
 
 When the screen size narrows past the [small grid size]({{ 'core/grid/#grid-sizes' | prepend: site.baseurl }}), items

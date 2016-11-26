@@ -35,7 +35,8 @@ won't work using the Style Kit.
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
 
-Use the `times-circle` icon wrapped in a `.close` element for indicating closing or dismissive things, such as alerts.
+Use the `times-circle` icon wrapped in a `.close` element for indicating closing or dismissive things, such as
+[alerts]({{ '/components/alert' | prepend: site.baseurl }}).
 
 <div class="bsk-docs-icons-wrapper">
   <div class="row">

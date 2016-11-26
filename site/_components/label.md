@@ -76,8 +76,8 @@ The `.label-default` class isn't needed when using these classes.
 {: .alert .alert-info }
 
 {% example html %}
-<span class="label label-success">Success (New) Label</span>
-<span class="label label-warning">Warning Label</span>
-<span class="label label-danger">Dangerous Label</span>
-<span class="label label-info">Info Label</span>
+<span class="label label-success">Success label</span>
+<span class="label label-warning">Warning label</span>
+<span class="label label-danger">Dangerous label</span>
+<span class="label label-info">Info label</span>
 {% endexample %}

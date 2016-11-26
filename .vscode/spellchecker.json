@@ -1,0 +1,34 @@
+{
+    "language": "en_US",
+    "ignoreWordsList": [
+        "dropdown",
+        "Dropdown",
+        "endexample",
+        "slugify",
+        "metadata",
+        "html",
+        "prepend",
+        "baseurl",
+        "href",
+        "Navbar",
+        "navbar",
+        "assistive",
+        "plugin",
+        "Colour",
+        "colour",
+        "colours",
+        "unstyled",
+        "greyscale",
+        "grey",
+        "Dismissible",
+        "dismissible"
+    ],
+    "documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext"
+    ],
+    "ignoreRegExp": [],
+    "ignoreFileExtensions": [],
+    "checkInterval": 5000
+}
