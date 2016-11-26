@@ -206,7 +206,7 @@ This provides a non-visual indication of the currently active item, suitable for
 </nav>
 {% endexample %}
 
-This class can be used within drop-down menus if needed.
+This can also be used within [drop-down]({{ '/components/drop-down/#active' | prepend: site.baseurl }}) menus if needed.
 {: .alert .alert-info }
 
 {% example html %}
