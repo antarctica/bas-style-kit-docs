@@ -21,7 +21,17 @@
         "greyscale",
         "grey",
         "Dismissible",
-        "dismissible"
+        "dismissible",
+        "navbars",
+        "Navbars",
+        "plugins",
+        "endhighlight",
+        "haspopup",
+        "Licence",
+        "NERC",
+        "inline",
+        "jira",
+        "clickable"
     ],
     "documentTypes": [
         "markdown",

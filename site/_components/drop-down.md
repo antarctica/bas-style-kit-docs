@@ -1,5 +1,5 @@
 ---
-title: Drop-Downs
+title: Drop-Down
 sections:
   -
     title: Overview
@@ -27,10 +27,10 @@ sections:
 {: #{{ 'Overview' | slugify }}}
 
 Use the `.dropdown` class to create a menu that appears when triggered by a
-[supported element]({{ '/components/drop-down/supported-elements' | prepend: site.baseurl }}).
+[supported element]({{ '/components/drop-down/#supported-elements' | prepend: site.baseurl }}).
 
 Drop-down menus are `ul` list elements, containing a set of links and other
-[components]({{ '/components/drop-down/components' | prepend: site.baseurl }}).
+[components]({{ '/components/drop-down/#components' | prepend: site.baseurl }}).
 
 Always use `.dropdown-menu-bsk` and `.dropdown-menu` together so that Style Kit specific styles are applied.
 {: .alert .alert-info }

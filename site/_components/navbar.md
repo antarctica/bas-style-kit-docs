@@ -346,8 +346,8 @@ It is recommended to use this feature sparingly until support improves.
   <div class="container-fluid">
     <form class="navbar-form navbar-left" role="search">
       <div class="form-group">
-        <label class="control-label sr-only" for="navbar-form-inputs-example1">Text input</label>
-        <input id="navbar-form-inputs-example1" type="text" class="form-control" placeholder="Search">
+        <label class="control-label sr-only" for="navbar-form-inputs-example-1">Text input</label>
+        <input id="navbar-form-inputs-example-1" type="text" class="form-control" placeholder="Search">
       </div>
       <button type="submit" class="btn btn-bsk btn-default">Submit</button>
     </form>

@@ -54,7 +54,6 @@ Use the `.container` class for a responsive and fixed-width container. This mean
 
 {% example html %}
 <div class="container">
-  <!-- TODO: Add example blocks -->
 </div>
 {% endexample %}
 
@@ -71,7 +70,6 @@ certain types of content, such as mapping.
 
 {% example html %}
 <div class="container-fluid">
-  <!-- TODO: Add example blocks -->
 </div>
 {% endexample %}
 
