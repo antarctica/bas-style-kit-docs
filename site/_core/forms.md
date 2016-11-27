@@ -79,13 +79,13 @@ See [this MDN page](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/in
 {% example html %}
 <form>
   <fieldset class="form-group">
-    <label class="control-label" for="form-inputs-example1">Text input</label>
-    <input type="text" class="form-control" id="form-inputs-example1">
+    <label class="control-label" for="form-inputs-example-1">Text input</label>
+    <input type="text" class="form-control" id="form-inputs-example-1">
   </fieldset>
 
   <fieldset class="form-group">
-    <label class="control-label" for="form-inputs-example2">Date input</label>
-    <input type="date" class="form-control" id="form-inputs-example2">
+    <label class="control-label" for="form-inputs-example-2">Date input</label>
+    <input type="date" class="form-control" id="form-inputs-example-2">
   </fieldset>
 </form>
 {% endexample %}
@@ -100,13 +100,13 @@ The height of a text area can be set using the `rows` attribute
 {% example html %}
 <form>
   <fieldset class="form-group">
-    <label class="control-label" for="form-textareas-example1">Small textarea</label>
-    <textarea class="form-control" id="form-textareas-example1" rows="3"></textarea>
+    <label class="control-label" for="form-textareas-example-1">Small textarea</label>
+    <textarea class="form-control" id="form-textareas-example-1" rows="3"></textarea>
   </fieldset>
 
   <fieldset class="form-group">
-    <label class="control-label" for="form-textareas-example2">Large textarea</label>
-    <textarea class="form-control" id="form-textareas-example2" rows="9"></textarea>
+    <label class="control-label" for="form-textareas-example-2">Large textarea</label>
+    <textarea class="form-control" id="form-textareas-example-2" rows="9"></textarea>
   </fieldset>
 </form>
 {% endexample %}
@@ -127,8 +127,8 @@ Select elements have quite stubborn browser styling, such as rounded corners, wh
 {% example html %}
 <form>
   <fieldset class="form-group">
-    <label class="control-label" for="form-select-example1">Single select</label>
-    <select class="form-control" id="form-select-example1">
+    <label class="control-label" for="form-select-example-1">Single select</label>
+    <select class="form-control" id="form-select-example-1">
       <option value="1">Option 1</option>
       <option value="2" selected>Option 2</option>
       <option value="3">Option 3</option>
@@ -137,8 +137,8 @@ Select elements have quite stubborn browser styling, such as rounded corners, wh
   </fieldset>
 
   <fieldset class="form-group">
-    <label class="control-label" for="form-select-example2">Multiple select</label>
-    <select class="form-control" id="form-select-example2" multiple>
+    <label class="control-label" for="form-select-example-2">Multiple select</label>
+    <select class="form-control" id="form-select-example-2" multiple>
       <option value="1">Option 1</option>
       <option value="2">Option 2</option>
       <option value="3">Option 3</option>
@@ -159,8 +159,8 @@ Form input elements have quite stubborn browser styling, such as rounded corners
 {% example html %}
 <form>
   <fieldset class="form-group">
-    <label class="control-label" for="form-file-example1">File input</label>
-    <input type="file" class="form-control-file" id="form-file-example1">
+    <label class="control-label" for="form-file-example-1">File input</label>
+    <input type="file" class="form-control-file" id="form-file-example-1">
   </fieldset>
 </form>
 {% endexample %}
@@ -178,19 +178,19 @@ To pre-select an option set the `checked` attribute.
   <fieldset class="form-group">
     <div class="checkbox">
       <label class="control-label">
-        <input type="checkbox" name="form-checkbox-example1" id="form-checkbox-example1-a" value="A">
+        <input type="checkbox" name="form-checkbox-example-1" id="form-checkbox-example-1-a" value="A">
           Option 1 (A)
       </label>
     </div>
     <div class="checkbox">
       <label class="control-label">
-        <input type="checkbox" name="form-checkbox-example1" id="form-checkbox-example1-b" value="B">
+        <input type="checkbox" name="form-checkbox-example-1" id="form-checkbox-example-1-b" value="B">
           Option 1 (B)
       </label>
     </div>
     <div class="checkbox">
       <label class="control-label">
-        <input type="checkbox" name="form-checkbox-example1" id="form-checkbox-example1-c" value="C">
+        <input type="checkbox" name="form-checkbox-example-1" id="form-checkbox-example-1-c" value="C">
           Option 1 (C)
       </label>
     </div>
@@ -199,19 +199,19 @@ To pre-select an option set the `checked` attribute.
   <fieldset class="form-group">
     <div class="radio">
       <label class="control-label">
-        <input type="radio" name="form-radio-example1" id="form-radio-example1-a" value="A">
+        <input type="radio" name="form-radio-example-1" id="form-radio-example-1-a" value="A">
           Option 1 (A)
       </label>
     </div>
     <div class="radio">
       <label class="control-label">
-        <input type="radio" name="form-radio-example1" id="form-radio-example1-b" value="B">
+        <input type="radio" name="form-radio-example-1" id="form-radio-example-1-b" value="B">
           Option 1 (B)
       </label>
     </div>
     <div class="radio">
       <label class="control-label">
-        <input type="radio" name="form-radio-example1" id="form-radio-example1-c" value="C">
+        <input type="radio" name="form-radio-example-1" id="form-radio-example-1-c" value="C">
           Option 1 (C)
       </label>
     </div>
@@ -230,19 +230,19 @@ and `radio-inline` classes **instead** of the standard classes.
   <fieldset class="form-group">
     <div class="checkbox-inline">
       <label class="control-label">
-        <input type="checkbox" name="form-checkbox-example2" id="form-checkbox-example2-a" value="A">
+        <input type="checkbox" name="form-checkbox-example-2" id="form-checkbox-example-2-a" value="A">
           Option 1 (A)
       </label>
     </div>
     <div class="checkbox-inline">
       <label class="control-label">
-        <input type="checkbox" name="form-checkbox-example2" id="form-checkbox-example2-b" value="B">
+        <input type="checkbox" name="form-checkbox-example-2" id="form-checkbox-example-2-b" value="B">
           Option 1 (B)
       </label>
     </div>
     <div class="checkbox-inline">
       <label class="control-label">
-        <input type="checkbox" name="form-checkbox-example2" id="form-checkbox-example2-c" value="C">
+        <input type="checkbox" name="form-checkbox-example-2" id="form-checkbox-example-2-c" value="C">
           Option 1 (C)
       </label>
     </div>
@@ -251,19 +251,19 @@ and `radio-inline` classes **instead** of the standard classes.
   <fieldset class="form-group">
     <div class="radio-inline">
       <label class="control-label">
-        <input type="radio" name="form-radio-example2" id="form-radio-example2-a" value="A">
+        <input type="radio" name="form-radio-example-2" id="form-radio-example-2-a" value="A">
           Option 2 (A)
       </label>
     </div>
     <div class="radio-inline">
       <label class="control-label">
-        <input type="radio" name="form-radio-example2" id="form-radio-example2-b" value="B">
+        <input type="radio" name="form-radio-example-2" id="form-radio-example-2-b" value="B">
           Option 2 (B)
       </label>
     </div>
     <div class="radio-inline">
       <label class="control-label">
-        <input type="radio" name="form-radio-example2" id="form-radio-example2-c" value="C">
+        <input type="radio" name="form-radio-example-2" id="form-radio-example-2-c" value="C">
           Option 2 (C)
       </label>
     </div>
@@ -296,12 +296,12 @@ Static controls can be used to represent pre-computed, or locked values within a
 <form>
   <fieldset>
     <div class="form-group">
-      <label class="control-label" for="form-inputs-example1">Reporter name</label>
-      <p class="form-control-static" id="form-static-example1">Adam Smith</p>
+      <label class="control-label" for="form-inputs-example-1">Reporter name</label>
+      <p class="form-control-static" id="form-static-example-1">Adam Smith</p>
     </div>
     <div class="form-group">
-      <label class="control-label" for="form-static-example2">Reporter email</label>
-      <p class="form-control-static" id="form-static-example2">admin.smith@bas.ac.uk</p>
+      <label class="control-label" for="form-static-example-2">Reporter email</label>
+      <p class="form-control-static" id="form-static-example-2">admin.smith@bas.ac.uk</p>
     </div>
   </fieldset>
 </form>
@@ -329,19 +329,19 @@ Where a form field is standalone, use a <code>&lt;fieldset&gt;</code>. For a gro
 {% example html %}
 <form>
   <fieldset class="form-group">
-    <label class="control-label" for="form-group-example1">Small textarea</label>
-    <textarea class="form-control" id="form-group-example1" rows="3"></textarea>
+    <label class="control-label" for="form-group-example-1">Small textarea</label>
+    <textarea class="form-control" id="form-group-example-1" rows="3"></textarea>
   </fieldset>
 
   <fieldset>
     <legend>Would you like a reply?</legend>
     <div class="form-group">
-      <label class="control-label" for="form-group-example2">Your name</label>
-      <input type="text" class="form-control" id="form-group-example2" placeholder="Adam Smith">
+      <label class="control-label" for="form-group-example-2">Your name</label>
+      <input type="text" class="form-control" id="form-group-example-2" placeholder="Adam Smith">
     </div>
     <div class="form-group">
-      <label class="control-label" for="form-group-example3">Your email address</label>
-      <input type="email" class="form-control" id="form-group-example3" placeholder="adam.smith@bas.ac.uk">
+      <label class="control-label" for="form-group-example-3">Your email address</label>
+      <input type="email" class="form-control" id="form-group-example-3" placeholder="adam.smith@bas.ac.uk">
       <p class="help-block text-muted">We will only use this information for contacting you about your feedback.</p>
     </div>
   </fieldset>
@@ -364,9 +364,9 @@ inner <code>&lt;div&gt;</code> to prevent the <code>&lt;legend&gt;</code> from a
 {% example html %}
 <form class="form-horizontal">
   <fieldset class="form-group">
-    <label class="control-label col-md-2" for="form-horizontal-example1">Small textarea</label>
+    <label class="control-label col-md-2" for="form-horizontal-example-1">Small textarea</label>
     <div class="col-md-10">
-      <textarea class="form-control" id="form-horizontal-example1" rows="3"></textarea>
+      <textarea class="form-control" id="form-horizontal-example-1" rows="3"></textarea>
     </div>
   </fieldset>
 
@@ -376,19 +376,19 @@ inner <code>&lt;div&gt;</code> to prevent the <code>&lt;legend&gt;</code> from a
       <div class="col-md-10 col-md-offset-2">
         <div class="checkbox">
           <label>
-            <input type="checkbox" name="form-horizontal-example2" id="form-horizontal-example2-a" value="A">
+            <input type="checkbox" name="form-horizontal-example-2" id="form-horizontal-example-2-a" value="A">
               Option 1 (A)
           </label>
         </div><!-- / .checkbox -->
         <div class="checkbox">
           <label>
-            <input type="checkbox" name="form-horizontal-example2" id="form-horizontal-example2-b" value="B">
+            <input type="checkbox" name="form-horizontal-example-2" id="form-horizontal-example-2-b" value="B">
               Option 1 (B)
           </label>
         </div><!-- / .checkbox -->
         <div class="checkbox">
           <label>
-            <input type="checkbox" name="form-horizontal-example2" id="form-horizontal-example2-c" value="C">
+            <input type="checkbox" name="form-horizontal-example-2" id="form-horizontal-example-2-c" value="C">
               Option 1 (C)
           </label>
         </div><!-- / .checkbox -->
@@ -401,19 +401,19 @@ inner <code>&lt;div&gt;</code> to prevent the <code>&lt;legend&gt;</code> from a
     <div class="col-md-10 col-md-offset-2">
       <div class="checkbox-inline">
         <label>
-          <input type="checkbox" name="form-horizontal-example3" id="form-horizontal-example3-a" value="A">
+          <input type="checkbox" name="form-horizontal-example-3" id="form-horizontal-example-3-a" value="A">
             Option 2 (A)
         </label>
       </div><!-- / .checkbox-inline -->
       <div class="checkbox-inline">
         <label>
-          <input type="checkbox" name="form-horizontal-example3" id="form-horizontal-example3-b" value="B">
+          <input type="checkbox" name="form-horizontal-example-3" id="form-horizontal-example-3-b" value="B">
             Option 2 (B)
         </label>
       </div><!-- / .checkbox-inline -->
       <div class="checkbox-inline">
         <label>
-          <input type="checkbox" name="form-horizontal-example3" id="form-horizontal-example3-c" value="C">
+          <input type="checkbox" name="form-horizontal-example-3" id="form-horizontal-example-3-c" value="C">
             Option 2 (C)
         </label>
       </div><!-- / .checkbox-inline -->
@@ -423,15 +423,15 @@ inner <code>&lt;div&gt;</code> to prevent the <code>&lt;legend&gt;</code> from a
   <fieldset>
     <legend>Would you like a reply?</legend>
     <div class="form-group">
-      <label class="control-label col-md-2" for="form-horizontal-example3">Your name</label>
+      <label class="control-label col-md-2" for="form-horizontal-example-3">Your name</label>
       <div class="col-md-10">
-        <input type="text" class="form-control" id="form-horizontal-example3" placeholder="Adam Smith">
+        <input type="text" class="form-control" id="form-horizontal-example-3" placeholder="Adam Smith">
       </div>
     </div>
     <div class="form-group">
-      <label class="control-label col-md-2" for="form-horizontal-example4">Your email address</label>
+      <label class="control-label col-md-2" for="form-horizontal-example-4">Your email address</label>
       <div class="col-md-10">
-        <input type="email" class="form-control" id="form-horizontal-example4" placeholder="adam.smith@bas.ac.uk">
+        <input type="email" class="form-control" id="form-horizontal-example-4" placeholder="adam.smith@bas.ac.uk">
         <p class="help-block text-muted">We will only use this information for contacting you about your feedback.</p>
       </div>
     </div>
@@ -461,17 +461,17 @@ Some manual sizing may be needed for inline forms, ensure thorough testing at a 
 <form class="form-inline">
   <fieldset>
     <div class="form-group">
-      <label class="control-label" for="form-inline-example1">Username</label>
-      <input type="text" class="form-control" id="form-inline-example1" placeholder="adam.smith@bas.ac.uk">
+      <label class="control-label" for="form-inline-example-1">Username</label>
+      <input type="text" class="form-control" id="form-inline-example-1" placeholder="adam.smith@bas.ac.uk">
     </div>
     <div class="form-group">
-      <label class="control-label" for="form-inline-example2">Password</label>
-      <input type="password" class="form-control" id="form-inline-example2">
+      <label class="control-label" for="form-inline-example-2">Password</label>
+      <input type="password" class="form-control" id="form-inline-example-2">
     </div>
     <div class="form-group">
       <div class="checkbox">
         <label class="control-label">
-          <input type="checkbox" name="form-inline-example3" id="form-inline-example3-a" value="1" checked>
+          <input type="checkbox" name="form-inline-example-3" id="form-inline-example-3-a" value="1" checked>
           Remember Me
         </label>
       </div>
@@ -500,17 +500,17 @@ Labels **should** always be visible for checkboxes and radio options, to indicat
 <form class="form-inline">
   <fieldset>
     <div class="form-group">
-      <label class="sr-only" for="form-inline-example1">Username</label>
-      <input type="text" class="form-control" id="form-inline-example1" placeholder="adam.smith@bas.ac.uk">
+      <label class="sr-only" for="form-inline-example-1">Username</label>
+      <input type="text" class="form-control" id="form-inline-example-1" placeholder="adam.smith@bas.ac.uk">
     </div>
     <div class="form-group">
-      <label class="sr-only" for="form-inline-example2">Password</label>
-      <input type="password" class="form-control" id="form-inline-example2">
+      <label class="sr-only" for="form-inline-example-2">Password</label>
+      <input type="password" class="form-control" id="form-inline-example-2">
     </div>
     <div class="form-group">
       <div class="checkbox">
         <label>
-          <input type="checkbox" name="form-inline-example3" id="form-inline-example3-a" value="1" checked>
+          <input type="checkbox" name="form-inline-example-3" id="form-inline-example-3-a" value="1" checked>
           Remember Me
         </label>
       </div>
@@ -542,21 +542,21 @@ Make sure to use `.control-label` to ensure all labels are virtually aligned.
 <form>
   <div class="row">
     <fieldset class="form-group col-md-6">
-      <label class="control-label" for="form-sizing-example1">Text input</label>
-      <input type="text" class="form-control" id="form-sizing-example1">
+      <label class="control-label" for="form-sizing-example-1">Text input</label>
+      <input type="text" class="form-control" id="form-sizing-example-1">
     </fieldset>
   </div>
   <div class="row">
     <fieldset class="form-group">
-      <label class="control-label col-md-3" for="form-sizing-example2">An extra long label for a text input for this demo</label>
-      <input type="text" class="form-control" id="form-sizing-example2">
+      <label class="control-label col-md-3" for="form-sizing-example-2">An extra long label for a text input for this demo</label>
+      <input type="text" class="form-control" id="form-sizing-example-2">
     </fieldset>
   </div>
   <div class="row">
     <fieldset class="form-group">
-      <label class="control-label" for="form-sizing-example3">Text input</label>
+      <label class="control-label" for="form-sizing-example-3">Text input</label>
       <div class="col-md-6">
-        <input type="text" class="form-control" id="form-sizing-example3">
+        <input type="text" class="form-control" id="form-sizing-example-3">
       </div>
     </fieldset>
   </div>
@@ -568,24 +568,26 @@ Make sure to use `.control-label` to ensure all labels are virtually aligned.
 
 {% include snippets/back-to-top.html %}
 
-Form controls can be sized with similar classes used for
-[sizing buttons]({{ '/core/buttons/#sizes' | prepend: site.baseurl }}) applied to the `.form-group` element.
+Add one of these classes to alter the size of a form control:
+
+* Large form field `.form-group-lg`
+* Small form field `.form-group-sm`
 
 {% example html %}
 <form>
   <fieldset class="form-group form-group-lg">
-    <label class="control-label" for="form-sizing-example4">Large text input</label>
-    <input type="text" class="form-control" id="form-sizing-example4">
+    <label class="control-label" for="form-sizing-example-4">Large text input</label>
+    <input type="text" class="form-control" id="form-sizing-example-4">
   </fieldset>
 
   <fieldset class="form-group">
-    <label class="control-label" for="form-sizing-example4">Default text input</label>
-    <input type="text" class="form-control" id="form-sizing-example4">
+    <label class="control-label" for="form-sizing-example-4">Default text input</label>
+    <input type="text" class="form-control" id="form-sizing-example-4">
   </fieldset>
 
   <fieldset class="form-group form-group-sm">
-    <label class="control-label" for="form-sizing-example4">Small text input</label>
-    <input type="text" class="form-control" id="form-sizing-example4">
+    <label class="control-label" for="form-sizing-example-4">Small text input</label>
+    <input type="text" class="form-control" id="form-sizing-example-4">
   </fieldset>
 </form>
 {% endexample %}
@@ -622,12 +624,12 @@ this, either apply the `disabled` attribute on links directly, or use JavaScript
 <form>
   <fieldset disabled>
     <div class="form-group">
-      <label class="control-label" for="form-disabled-example1">Disabled text field</label>
-      <input type="text" id="form-disabled-example1" class="form-control">
+      <label class="control-label" for="form-disabled-example-1">Disabled text field</label>
+      <input type="text" id="form-disabled-example-1" class="form-control">
     </div>
     <div class="form-group">
-      <label class="control-label" for="form-disabled-example2">Disabled select menu</label>
-      <select id="form-disabled-example2" class="form-control">
+      <label class="control-label" for="form-disabled-example-2">Disabled select menu</label>
+      <select id="form-disabled-example-2" class="form-control">
         <option>Disabled select menu</option>
       </select>
     </div>
@@ -664,12 +666,12 @@ Not all form elements support this value, exceptions include:
 <form>
   <fieldset>
     <div class="form-group">
-      <label class="control-label" for="form-readonly-example1">Readonly text field</label>
-      <input type="text" id="form-readonly-example1" class="form-control" readonly>
+      <label class="control-label" for="form-readonly-example-1">Readonly text field</label>
+      <input type="text" id="form-readonly-example-1" class="form-control" readonly>
     </div>
     <div class="form-group">
-      <label class="control-label" for="form-readonly-example1">Readonly textarea</label>
-      <textarea id="form-readonly-example2" class="form-control" readonly></textarea>
+      <label class="control-label" for="form-readonly-example-1">Readonly textarea</label>
+      <textarea id="form-readonly-example-2" class="form-control" readonly></textarea>
     </div>
   </fieldset>
 </form>
@@ -695,15 +697,15 @@ to inform assistive technologies, such as screen readers.
     <p class="help-block text-muted">If you would like a reply, please enter your contact details,
   we may not reply straight away.</p>
     <div class="form-group">
-        <label class="control-label" for="form-help-example1">Your name</label>
-        <input type="text" class="form-control" id="form-help-example1" placeholder="Adam Smith" aria-describedby="form-help-example1-help">
-        <p id="form-help-example1-help" class="help-block text-muted">
+        <label class="control-label" for="form-help-example-1">Your name</label>
+        <input type="text" class="form-control" id="form-help-example-1" placeholder="Adam Smith" aria-describedby="form-help-example-1-help">
+        <p id="form-help-example-1-help" class="help-block text-muted">
           Please enter your name as you would expect in a reply (e.g. Mr. A Smith).
         </p>
     </div>
     <div class="form-group">
-        <label class="control-label" for="form-help-example2">Your email address</label>
-        <input type="email" class="form-control" id="form-help-example2" placeholder="adam.smith@bas.ac.uk">
+        <label class="control-label" for="form-help-example-2">Your email address</label>
+        <input type="email" class="form-control" id="form-help-example-2" placeholder="adam.smith@bas.ac.uk">
         <p class="help-block text-muted">We will only use this information for contacting you about your feedback.</p>
     </div>
   </fieldset>
@@ -740,22 +742,22 @@ of the Style Kit. See {% jira issue="BSK-135" %} for more information.
 {% example html %}
 <form>
   <fieldset class="form-group has-success">
-      <label class="control-label" for="form-validation-example1">Your email address</label>
-      <input type="email" class="form-control" id="form-validation-example1" value="adam.smith@bas.ac.uk">
+      <label class="control-label" for="form-validation-example-1">Your email address</label>
+      <input type="email" class="form-control" id="form-validation-example-1" value="adam.smith@bas.ac.uk">
       <p class="help-block text-muted">We will only use this information for contacting you about your feedback.</p>
   </fieldset>
 
   <fieldset class="form-group has-warning">
-      <label class="control-label" for="form-validation-example2">Your email address</label>
-      <input type="email" class="form-control" id="form-validation-example2" value="adam.smith@bas.acc.uk">
+      <label class="control-label" for="form-validation-example-2">Your email address</label>
+      <input type="email" class="form-control" id="form-validation-example-2" value="adam.smith@bas.acc.uk">
       <p class="help-block text-muted">We will only use this information for contacting you about your feedback.</p>
       <p class="help-block text-muted"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Did you mean
       <em>adam.smith@bas.<strong>ac</strong>.uk</em>, rather than <em>adam.smith@bas.<strong>acc</strong>.uk</em>.</p>
   </fieldset>
 
   <fieldset class="form-group has-error">
-      <label class="control-label" for="form-validation-example3">Your email address</label>
-      <input type="email" class="form-control" id="form-validation-example3" value="adam.smith" aria-invalid="true">
+      <label class="control-label" for="form-validation-example-3">Your email address</label>
+      <input type="email" class="form-control" id="form-validation-example-3" value="adam.smith" aria-invalid="true">
       <p class="help-block text-muted">We will only use this information for contacting you about your feedback.</p>
       <p class="help-block text-muted"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> <em>adam.smith</em>,
       is not a valid email address.</p>
