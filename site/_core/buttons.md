@@ -64,7 +64,7 @@ content) to give
 
 {% include snippets/back-to-top.html %}
 
-Use this variant for standard or secondary buttons. For added context you can use
+Add the `.btn-default` for standard or secondary buttons. For added context you can use
 [contextual colours]({{ '/core/buttons/#contextual-colours' | prepend: site.baseurl }}).
 
 {% example html %}
@@ -75,9 +75,10 @@ Use this variant for standard or secondary buttons. For added context you can us
 ### Primary
 {: #{{ 'Primary' | slugify }} }
 
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
 
-Use this variant for call to actions or to distinguish the typical or recommended action where there is more than one.
+Add the `.btn-primary` for call to actions or to distinguish the typical or recommended action where there is more than
+one.
 
 **Heads up!** This class will be renamed `.btn-primary` in the next version of the Style Kit. See
 {% jira issue="BSK-130" %} for more information.
@@ -99,9 +100,6 @@ used for adding context to buttons using these classes:
 * `.btn-warning`
 * `.btn-danger`
 * `.btn-info`
-
-The `.btn-default` class isn't needed when using these classes.
-{: .alert .alert-info }
 
 {% example html %}
 <button class="btn btn-bsk btn-success">Success Action</button>

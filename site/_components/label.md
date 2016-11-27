@@ -54,9 +54,6 @@ used for adding context to labels using these classes:
 * `.label-danger`
 * `.label-info`
 
-The `.label-default` class isn't needed when using these classes.
-{: .alert .alert-info }
-
 {% example html %}
 <span class="label label-success">Success label</span>
 <span class="label label-warning">Warning label</span>
