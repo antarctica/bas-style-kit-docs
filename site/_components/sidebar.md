@@ -16,7 +16,11 @@ sections:
 ## Overview
 {: #{{ 'Overview' | slugify }}}
 
-Use the `.sidebar` class to display information that is distinct from main content, but which is shown next to it.
+Use the `.sidebar` class to display information that is distinct from main content, but which is shown **next to** it.
+
+See the [Panel]({{ '/components/panel' | prepend: site.baseurl }}){: .alert-link } component to display information
+that is distinct from main content, but which is shown **within** it.
+{: .alert .alert-info }
 
 ## Default sidebar
 {: #{{ 'Default sidebar' | slugify }} }
