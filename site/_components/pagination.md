@@ -25,12 +25,12 @@ sections:
 Use the `.pagination` class for navigating within large collections of items, such as
 [lists]({{ '/core/type/#lists' | prepend: site.baseurl }}) or [tables]({{ '/core/tables' | prepend: site.baseurl }}).
 
-This component does not provide pagination functions itself, just styled elements for use with a pagination
-implementation. For example [data-tables](https://datatables.net) or [list.js](http://listjs.com).
 Use the `.pager` class as a simpler alternative to pagination.
 
-Pagination or pager instances should use the `aria-label` element so assistive technologies can tell each instance
-apart.
+This component does not provide pagination or paging functions itself, only styled elements for use with a pagination
+or paging implementation. For example [data-tables](https://datatables.net) or [list.js](http://listjs.com).
+
+Use the `aria-label` element so assistive technologies can tell each pagination or pager instance apart.
 {: .alert .alert-warning }
 
 ## Default pagination
@@ -56,8 +56,6 @@ apart.
 {: #{{ 'Simple pager' | slugify }} }
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
-
-Where full pagination is unsuitable a simple pager component can be used instead.
 
 {% example html %}
 <nav aria-label="pager-example-1">

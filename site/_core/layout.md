@@ -216,7 +216,7 @@ Alternatively, a mixin can be used:
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
 
-Floats can be cleared using the `.clearfix` class on the **parent** element. This uses the
+Use the `.clearfix` class on the **parent** element to clear floats. This uses the
 [the micro clearfix](http://nicolasgallagher.com/micro-clearfix-hack/) by Nicolas Gallagher.
 
 {% example html %}

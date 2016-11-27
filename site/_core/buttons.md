@@ -25,13 +25,6 @@ sections:
 
 ## Overview
 
-## Supported elements
-{: #{{ 'Supported elements' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
-
-The BAS Style Kit's various button styles are designed for <code>&lt;button&gt;</code> elements.
-<code>&lt;a&gt;</code> or <code>&lt;input&gt;</code> elements can be used as well, but may not look right.
 Use the `.btn` and `.btn-bsk` classes to create clickable actions or links.
 
 You **must** pick a [variant]({{ '/core/buttons/#variants' | prepend: site.baseurl }}){: .alert-link } for each button,
@@ -40,6 +33,14 @@ otherwise it will look strange. It is not enough to use `.btn .btn-bsk` on its o
 
 Always use `.btn-bsk` and `.btn` together so that Style Kit specific styles are applied.
 {: .alert .alert-info }
+
+## Supported elements
+{: #{{ 'Supported elements' | slugify }} }
+
+{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
+
+The BAS Style Kit's various button styles are designed for <code>&lt;button&gt;</code> elements.
+<code>&lt;a&gt;</code> or <code>&lt;input&gt;</code> elements can be used as well, but may not look right.
 
 Use `role="button"` for link elements which trigger in-page functionality (such as collapsing
 content) to give

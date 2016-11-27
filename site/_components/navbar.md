@@ -41,7 +41,10 @@ They can contain links, drop-down menus, forms and other
 [components]({{ '/components/navbar/#components' | prepend: site.baseurl }}).
 
 Navbars are designed to scale with screen size. At small sizes key items will be shown normally, with less important
-items shown in a slide out menu. At larger sizes, all elements are shown directly.
+items shown in a hidden menu, which can be toggled with a button. At larger sizes, all elements are shown directly.
+
+Always use `.navbar-bsk` and `.navbar` together so that Style Kit specific styles are applied.
+{: .alert .alert-info }
 
 Navbars are relatively *heavy* elements, requiring significant markup and JavaScript plugins to work correctly. Where
 this isn't possible, or suitable, the [header]({{ '/components/header' | prepend: site.baseurl }}){: .alert-link }
@@ -68,9 +71,6 @@ sizes to ensure things work correctly.
 {: #{{ 'Default navbar' | slugify }} }
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
-
-Always use `.navbar-bsk` and `.navbar` together so that Style Kit specific styles are applied.
-{: .alert .alert-info }
 
 {% example html %}
 <nav class="navbar navbar-bsk">

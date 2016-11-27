@@ -16,10 +16,8 @@ Use the `.header-bsk` class to create an element with the illusion of a
 [navbar]({{ '/components/navbar' | prepend: site.baseurl }}), but using simpler, self-contained styles, and which
 doesn't support navigation.
 
-This component is useful where the navbar component is otherwise unsuitable, for example within external systems.
-
-[Navbar's]({{ '/components/navbar' | prepend: site.baseurl }}){: .alert-link } should be used wherever possible,
-headers are only designed for compatibility with systems and services we have limited control over.
+Headers should only be used where the [Navbar's]({{ '/components/navbar' | prepend: site.baseurl }}){: .alert-link }
+component is unsuitable, for example within external systems.
 {: .alert .alert-warning }
 
 ## Default header
