@@ -22,11 +22,12 @@ sections:
 ## Overview
 {: #{{ 'Overview' | slugify }}}
 
-An abstract pagination component is available for navigating within large collections of items, such as
+Use the `.pagination` class for navigating within large collections of items, such as
 [lists]({{ '/core/type/#lists' | prepend: site.baseurl }}) or [tables]({{ '/core/tables' | prepend: site.baseurl }}).
 
 This component does not provide pagination functions itself, just styled elements for use with a pagination
 implementation. For example [data-tables](https://datatables.net) or [list.js](http://listjs.com).
+Use the `.pager` class as a simpler alternative to pagination.
 
 Pagination or pager instances should use the `aria-label` element so assistive technologies can tell each instance
 apart.

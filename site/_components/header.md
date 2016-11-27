@@ -12,8 +12,9 @@ sections:
 ## Overview
 {: #{{ 'Overview' | slugify }}}
 
-Headers give the illusion of a [navbar]({{ '/components/navbar' | prepend: site.baseurl }}), but use simpler styles,
-and doesn't support navigation.
+Use the `.header-bsk` class to create an element with the illusion of a
+[navbar]({{ '/components/navbar' | prepend: site.baseurl }}), but using simpler, self-contained styles, and which
+doesn't support navigation.
 
 This component is useful where the navbar component is otherwise unsuitable, for example within external systems.
 

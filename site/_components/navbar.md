@@ -36,8 +36,9 @@ sections:
 ## Overview
 {: #{{ 'Overview' | slugify }}}
 
-Navigation Bars (navbars) are used for primary, horizontal, navigation. They support links, drop-down menus, forms and
-other elements.
+Use the `.navbar` and `.navbar-bsk` classes to create Navigation Bars used for primary, horizontal, navigation.
+They can contain links, drop-down menus, forms and other
+[components]({{ '/components/navbar/#components' | prepend: site.baseurl }}).
 
 Navbars are designed to scale with screen size. At small sizes key items will be shown normally, with less important
 items shown in a slide out menu. At larger sizes, all elements are shown directly.

@@ -16,7 +16,7 @@ sections:
 ## Overview
 {: #{{ 'Overview' | slugify }}}
 
-Sidebars are used to separate information that is distinct from the main content, but which should be shown beside it.
+Use the `.sidebar` class to display information that is distinct from main content, but which is shown next to it.
 
 ## Default sidebar
 {: #{{ 'Default sidebar' | slugify }} }

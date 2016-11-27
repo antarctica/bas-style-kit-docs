@@ -20,14 +20,12 @@ sections:
 ## Overview
 {: #{{ 'Overview' | slugify }}}
 
-Footers are a general purpose element (in that they can contain anything), but with a specific context.
+Use the `.footer-bsk` class as a general purpose element to create *slim*, minimal elements with only simple text,
+or *fat* elements, containing navigation links, information and actions.
 
 Whereas [navbar's]({{ '/components/navbar' | prepend: site.baseurl }}) contain only crucial information, such as the
 name of a project/service and navigation links, footers typically contain important or additional information, but that
 isn't vital to show straight away, such as copyright and privacy links.
-
-Footers can range from very *slim*, minimal elements with only simple text, to *fat* elements, containing navigation
-links, information and actions.
 
 The footer component is designed to be compatible with almost all other components and core styles, however it is
 strongly recommended to use a [container]({{ '/core/layout/#containers' | prepend: site.baseurl }}){: .alert-link }.

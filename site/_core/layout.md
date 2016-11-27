@@ -49,7 +49,7 @@ Use the *default container* if you are unsure which to use.
 
 {% include snippets/back-to-top.html %}
 
-The default container, `.container`, is responsive and fixed-width, meaning its `max-width` changes at each
+Use the `.container` class for a responsive and fixed-width container. This means its `max-width` changes at each
 [responsive breakpoint]({{ '/core/layout/#responsive-breakpoints' | prepend: site.baseurl }}).
 
 {% example html %}
@@ -63,7 +63,7 @@ The default container, `.container`, is responsive and fixed-width, meaning its 
 
 {% include snippets/back-to-top.html %}
 
-The fluid container, `.container-fluid`, is full-width, meaning it will always span the entire width of the viewport.
+Use the `.container-fluid` class for a full-width container, meaning it spans the entire width of the viewport.
 
 You might need to use this container where you are integrating the Style Kit with existing or third party code, or for
 certain types of content, such as mapping.

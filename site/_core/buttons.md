@@ -2,6 +2,8 @@
 title: Buttons
 sections:
   -
+    title: Overview
+  -
     title: Supported elements
   -
     title: Default
@@ -21,6 +23,7 @@ sections:
 
 {% include snippets/table-of-contents.md %}
 
+## Overview
 
 ## Supported elements
 {: #{{ 'Supported elements' | slugify }} }
@@ -29,6 +32,7 @@ sections:
 
 The BAS Style Kit's various button styles are designed for <code>&lt;button&gt;</code> elements.
 <code>&lt;a&gt;</code> or <code>&lt;input&gt;</code> elements can be used as well, but may not look right.
+Use the `.btn` and `.btn-bsk` classes to create clickable actions or links.
 
 You **must** pick a [variant]({{ '/core/buttons/#variants' | prepend: site.baseurl }}){: .alert-link } for each button,
 otherwise it will look strange. It is not enough to use `.btn .btn-bsk` on its own.

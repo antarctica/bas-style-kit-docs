@@ -12,7 +12,8 @@ sections:
 ## Overview
 {: #{{ 'Overview' | slugify }}}
 
-A component to title a page, or section within a page, using a more prominent heading with additional spacing.
+Use the `.page-header` class to title a page, or section within a page, using a more prominent heading with extra
+spacing.
 
 ## Default page header
 {: #{{ 'Default page header' | slugify }}}

@@ -14,7 +14,7 @@ sections:
 ## Overview
 {: #{{ 'Overview' | slugify }}}
 
-A component to highlight a count, such as items needing further attention. An empty badge will automatically
+Use the `.badge` class to highlight a count, such as items needing further attention. An empty badge will automatically
 collapse and be hidden.
 
 Badges are only designed for numbers. For more general purposes, including other types of indicators, use

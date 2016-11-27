@@ -16,7 +16,7 @@ sections:
 ## Overview
 {: #{{ 'Overview' | slugify }}}
 
-A generic component to highlight something, such as a status or some other property.
+Use the `.label` class to highlight something, such as a status or some other property.
 
 You **must** pick a [variant]({{ '/components/label/#variants' | prepend: site.baseurl }}){: .alert-link } for each
 label, otherwise it will look strange. It is not enough to use `.label` on its own.
