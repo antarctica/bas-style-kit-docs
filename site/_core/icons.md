@@ -11,11 +11,7 @@ sections:
     title: Caret icon
 ---
 
-## Contents
-{:.no_toc #{{ 'Contents' | slugify }}}
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
+{% include snippets/table-of-contents.md %}
 
 ## Available icons
 {: #{{ 'Available icons' | slugify }} }

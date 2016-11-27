@@ -12,11 +12,7 @@ sections:
     title: Responsive column resets
 ---
 
-## Contents
-{:.no_toc #{{ 'Contents' | slugify }}}
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
+{% include snippets/table-of-contents.md %}
 
 ## Example: Stacked to horizontal
 {: #{{ 'stacked to horizontal' | slugify }} }

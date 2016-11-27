@@ -19,11 +19,8 @@ sections:
     title: States
 ---
 
-## Contents
-{:.no_toc #{{ 'Contents' | slugify }}}
+{% include snippets/table-of-contents.md %}
 
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
 
 ## Supported elements
 {: #{{ 'Supported elements' | slugify }} }

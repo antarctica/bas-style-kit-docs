@@ -19,11 +19,7 @@ sections:
     title: Examples
 ---
 
-## Contents
-{:.no_toc #{{ 'Contents' | slugify }}}
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
+{% include snippets/table-of-contents.md %}
 
 ## Form fields
 {: #{{ 'Form elements' | slugify }} }
