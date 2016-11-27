@@ -16,20 +16,26 @@ sections:
 ## Overview
 {: #{{ 'Overview' | slugify }}}
 
-Use the `.sidebar` class to display information that is distinct from main content, but which is shown **next to** it.
+Use the `.sidebar-bsk` class to display information that is distinct from main content, but which is shown
+**next to** it.
 
 See the [Panel]({{ '/components/panel' | prepend: site.baseurl }}){: .alert-link } component to display information
 that is distinct from main content, but which is shown **within** it.
 {: .alert .alert-info }
 
-## Default sidebar
+You **must** pick a [variant]({{ '/components/sidebar/#variants' | prepend: site.baseurl }}){: .alert-link } for each
+sidebar, otherwise it will look strange. I.e. it is not enough to use `.sidebar-bsk` on its own.
+{: .alert .alert-warning }
+
+## Variants
+{: #{{ 'Variants' | slugify }} }
+
+### Default sidebar
 {: #{{ 'Default sidebar' | slugify }} }
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
 
-You **must** pick a [variant]({{ '/components/sidebar/#variants' | prepend: site.baseurl }}){: .alert-link } for each
-sidebar, otherwise it will look strange. I.e. it is not enough to use `.sidebar-bsk` on its own.
-{: .alert .alert-warning }
+Add the `.sidebar-bsk-default` class for standard Jumbotrons.
 
 {% example html %}
 <div class="row">
@@ -120,6 +126,31 @@ This adds the same top margin applied to headings and makes the page layout look
 </div>
 {% endexample %}
 
+### Inverted sidebar
+{: #{{ 'Inverted sidebar' | slugify }} }
+
+{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
+
+Use the `.sidebar-bsk-inverse` class to use a darker background for a sidebar. Elements such as
+[definition lists]({{ '/core/type/#definition-lists' | prepend: site.baseurl }}) will be styled appropriately.
+
+{% example html %}
+<div class="row">
+  <div class="col-md-offset-9 col-md-3">
+    <aside class="sidebar-bsk sidebar-bsk-inverse">
+      <h2>Sidebar content</h2>
+      <p>Explorations dream of the mind's eye laws of physics not a sunrise but a galaxyrise</p>
+      <dl class="dl-bsk">
+        <dt>Term 1</dt>
+        <dd>Term 1 Value</dd>
+        <dt>Term 2</dt>
+        <dd>Term 2 Value</dd>
+      </dl>
+    </aside>
+  </div>
+</div>
+{% endexample %}
+
 ## Sizes
 {: #{{ 'Sizes' | slugify }} }
 
@@ -152,34 +183,6 @@ Use the [grid system]({{ '/core/grid' | prepend: site.baseurl }}){: .alert-link 
       <h2>Sidebar content</h2>
       <p>Explorations dream of the mind's eye laws of physics not a sunrise but a galaxyrise, colonies worldlets with
       pretty stories for which there's little good evidence.</p>
-    </aside>
-  </div>
-</div>
-{% endexample %}
-
-## Variants
-{: #{{ 'Variants' | slugify }} }
-
-### Inverted sidebar
-{: #{{ 'Inverted sidebar' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
-
-Use the `.sidebar-bsk-inverse` class to use a darker background for a sidebar. Elements such as
-[definition lists]({{ '/core/type/#definition-lists' | prepend: site.baseurl }}) will be styled appropriately.
-
-{% example html %}
-<div class="row">
-  <div class="col-md-offset-9 col-md-3">
-    <aside class="sidebar-bsk sidebar-bsk-inverse">
-      <h2>Sidebar content</h2>
-      <p>Explorations dream of the mind's eye laws of physics not a sunrise but a galaxyrise</p>
-      <dl class="dl-bsk">
-        <dt>Term 1</dt>
-        <dd>Term 1 Value</dd>
-        <dt>Term 2</dt>
-        <dd>Term 2 Value</dd>
-      </dl>
     </aside>
   </div>
 </div>

@@ -24,7 +24,7 @@ sections:
   -
     title: Non-navigation links
   -
-    title: Large Navbar
+    title: Sizes
   -
     title: Hidden items
   -
@@ -36,7 +36,7 @@ sections:
 ## Overview
 {: #{{ 'Overview' | slugify }}}
 
-Use the `.navbar` and `.navbar-bsk` classes to create Navigation Bars used for primary, horizontal, navigation.
+Use the `.navbar-bsk` and `.navbar` classes to create Navigation Bars used for primary, horizontal, navigation.
 They can contain links, drop-down menus, forms and other
 [components]({{ '/components/navbar/#components' | prepend: site.baseurl }}).
 
@@ -67,7 +67,10 @@ elements and so reduce pressure on the number of items that need to be shown.
 There is no way to automatically detect when this overflow happens, and so requires manual testing at multiple screen
 sizes to ensure things work correctly.
 
-## Default navbar
+## Variants
+{: #{{ 'Variants' | slugify }} }
+
+### Default navbar
 {: #{{ 'Default navbar' | slugify }} }
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
@@ -403,9 +406,6 @@ Typically this will be used within elements using the
 
 ## Sizes
 {: #{{ 'Sizes' | slugify }}}
-
-### Large navbar
-{: #{{ 'Large navbar' | slugify }}}
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
 

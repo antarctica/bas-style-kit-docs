@@ -41,11 +41,11 @@ other layout designs.
 
 Two containers are available, they can be mixed and nested if needed.
 
-Use the *default container* if you are unsure which to use.
+Use the *fixed-width container* if you are unsure which to use.
 {: .alert .alert-info }
 
-### Default container
-{: #{{ 'Default container' | slugify }} }
+### Fixed-width container
+{: #{{ 'Fixed-width container' | slugify }} }
 
 {% include snippets/back-to-top.html %}
 

@@ -42,7 +42,8 @@ JavaScript plugin, which is enabled on this site.
 ## Supported elements
 {: #{{ 'Supported elements' | slugify }}}
 
-Drop downs are designed to triggered by a supporting element
+These elements are supported for triggering a drop-down menu. Other elements may be used, but are not supported and may
+not look right.
 
 ### Button drop-down
 {: #{{ 'Button drop-downs' | slugify }}}

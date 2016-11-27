@@ -31,7 +31,10 @@ The footer component is designed to be compatible with almost all other componen
 strongly recommended to use a [container]({{ '/core/layout/#containers' | prepend: site.baseurl }}){: .alert-link }.
 {: .alert .alert-info }
 
-## Default footer
+## Variants
+{: #{{ 'Variants' | slugify }} }
+
+### Default footer
 {: #{{ 'Default footer' | slugify }} }
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}

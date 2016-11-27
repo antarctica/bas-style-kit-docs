@@ -21,7 +21,10 @@ Badges are only designed for numbers. For more general purposes, including other
 [Label's]({{ '/components/label' | prepend: site.baseurl }}){: .alert-link }.
 {: .alert .alert-warning }
 
-## Default badge
+## Variants
+{: #{{ 'Variants' | slugify }} }
+
+### Default badge
 {: #{{ 'Default badge' | slugify }} }
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}

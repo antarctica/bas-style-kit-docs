@@ -15,7 +15,10 @@ sections:
 Use the `.page-header` class to title a page, or section within a page, using a more prominent heading with extra
 spacing.
 
-## Default page header
+## Variants
+{: #{{ 'Variants' | slugify }} }
+
+### Default page header
 {: #{{ 'Default page header' | slugify }}}
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}

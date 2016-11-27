@@ -92,7 +92,7 @@ Add the `.panel-primary` class for the most important panel, where there is more
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
 
 The [standard contextual colours]({{ '/core/colours/#standard-contextual-colours' | prepend: site.baseurl }}) can be
-used for adding context to buttons using these classes:
+used for context by adding these classes:
 
 * `.panel-success`
 * `.panel-warning`

@@ -31,7 +31,10 @@
         "NERC",
         "inline",
         "jira",
-        "clickable"
+        "clickable",
+        "Successf",
+        "Jumbotron",
+        "jumbotron"
     ],
     "documentTypes": [
         "markdown",

@@ -40,7 +40,8 @@ Always use `.btn-bsk` and `.btn` together so that Style Kit specific styles are 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
 
 The BAS Style Kit's various button styles are designed for <code>&lt;button&gt;</code> elements.
-<code>&lt;a&gt;</code> or <code>&lt;input&gt;</code> elements can be used as well, but may not look right.
+<code>&lt;a&gt;</code> or <code>&lt;input&gt;</code> elements may be used as well, but are not supported and may
+not look right.
 
 Use `role="button"` for link elements which trigger in-page functionality (such as collapsing
 content) to give
@@ -77,8 +78,8 @@ Add the `.btn-default` for standard or secondary buttons. For added context you 
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
 
-Add the `.btn-primary` for call to actions or to distinguish the typical or recommended action where there is more than
-one.
+Add the `.btn-bsk-primary` for call to actions or to distinguish the typical or recommended action where there is more
+than one.
 
 **Heads up!** This class will be renamed `.btn-primary` in the next version of the Style Kit. See
 {% jira issue="BSK-130" %} for more information.
@@ -94,7 +95,7 @@ one.
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
 
 The [standard contextual colours]({{ '/core/colours/#standard-contextual-colours' | prepend: site.baseurl }}) can be
-used for adding context to buttons using these classes:
+used for context by adding these classes:
 
 * `.btn-success`
 * `.btn-warning`
@@ -140,6 +141,12 @@ actions, or those you wish to guide users away from.
 {: #{{ 'Sizes' | slugify }} }
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+
+Add one of these classes to alter the size of a button:
+
+* Large button `.btn-lg`
+* Small button `.btn-sm`
+* Extra-small button `.btn-xl`
 
 {% example html %}
 <p><button class="btn btn-bsk btn-default btn-lg">Large Button</button></p>

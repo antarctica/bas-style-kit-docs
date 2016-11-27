@@ -34,8 +34,8 @@ be used.
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
 
-Use this variant for standard labels. For added context you can use
-[contextual colours]({{ '/components/label/#contextual-colours' | prepend: site.baseurl }}).
+Add the `label-default` class for a standard label. For added context you can use
+[contextual colours]({{ '/components/label/#contextual-colours' | prepend: site.baseurl }}) instead.
 
 {% example html %}
 Something <span class="label label-default">Label</span>
@@ -47,7 +47,7 @@ Something <span class="label label-default">Label</span>
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
 
 The [standard contextual colours]({{ '/core/colours/#standard-contextual-colours' | prepend: site.baseurl }}) can be
-used for adding context to labels using these classes:
+used for context by adding these classes:
 
 * `.label-success`
 * `.label-warning`

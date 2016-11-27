@@ -20,7 +20,10 @@ Headers should only be used where the [Navbar's]({{ '/components/navbar' | prepe
 component is unsuitable, for example within external systems.
 {: .alert .alert-warning }
 
-## Default header
+## Variants
+{: #{{ 'Variants' | slugify }} }
+
+### Default header
 {: #{{ 'Default header' | slugify }} }
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}

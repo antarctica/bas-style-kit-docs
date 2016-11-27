@@ -36,7 +36,7 @@ There is no *default* alert variant, as a grey alert for example wouldn't make a
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
 
 The [standard contextual colours]({{ '/core/colours/#standard-contextual-colours' | prepend: site.baseurl }}) can be
-used for adding context to alerts using these classes:
+used for context by adding these classes:
 
 * `.label-success`
 * `.label-warning`
