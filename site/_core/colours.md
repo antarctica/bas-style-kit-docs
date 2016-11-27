@@ -298,6 +298,7 @@ These colours can be used with many core styles and components, such as:
 * [buttons]({{ '/core/buttons/#contextual-classes' | prepend: site.baseurl }})
 * [alerts]({{ '/components/alert/#contextual-classes' | prepend: site.baseurl }})
 * [labels]({{ '/components/label/#contextual-classes' | prepend: site.baseurl }})
+* [list groups]({{ '/components/list-group/#contextual-classes' | prepend: site.baseurl }})
 * etc.
 
 <div class="bsk-docs-swatch-wrapper">
