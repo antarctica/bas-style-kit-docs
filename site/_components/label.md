@@ -4,7 +4,7 @@ sections:
   -
     title: Overview
   -
-    title: Default
+    title: Default label
   -
     title: Contextual colours
   -
@@ -29,8 +29,8 @@ be used.
 ## Variants
 {: #{{ 'Variants' | slugify }} }
 
-### Default
-{: #{{ 'Default' | slugify }} }
+### Default label
+{: #{{ 'Default label' | slugify }} }
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
 

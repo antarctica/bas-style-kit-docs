@@ -50,7 +50,15 @@
         "Username",
         "readonly",
         "describedby",
-        "adam"
+        "adam",
+        "labelledby",
+        "addon",
+        "Checkbox",
+        "Tooltips",
+        "tooltip",
+        "scss",
+        "addons",
+        "Addon"
     ],
     "documentTypes": [
         "markdown",

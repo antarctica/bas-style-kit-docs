@@ -46,7 +46,7 @@ These elements are supported for triggering a drop-down menu. Other elements may
 not look right.
 
 ### Button drop-down
-{: #{{ 'Button drop-downs' | slugify }}}
+{: #{{ 'Button drop-down' | slugify }}}
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
 
@@ -67,7 +67,7 @@ not look right.
 
 {% include snippets/back-to-top.html %}
 
-See the [Navbar]({{ '/components/navbar/#drop-down-menu' | prepend: site.baseurl }}) documentation for using drop-downs
+See the [navbar]({{ '/components/navbar/#drop-down-menu' | prepend: site.baseurl }}) documentation for using drop-downs
 in Navbar items.
 
 ## Variants
