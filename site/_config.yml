@@ -35,6 +35,9 @@ bas_navigation_menu:
 bsk_source_code_url: https://github.com/antarctica/bas-style-kit
 bsk_docs_source_code_url: https://github.com/antarctica/bas-style-kit-docs
 
+bsk_docs_production_url: style-kit.web.bas.ac.uk
+bsk_docs_testing_url: style-kit-testing.web.bas.ac.uk
+
 feedback_api_identifier: style-kit-docs
 
 # Note: If changing these version variables - ensure you also change the jekyll_get URLs

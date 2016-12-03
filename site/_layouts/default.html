@@ -6,12 +6,14 @@ layout: html
 <a href="#site-content" class="sr-only sr-only-focusable">Skip to main content</a>
 {% include layout/cookie-banner.html %}
 {% include layout/site-navigation.html %}
+{% if site.x_environment != 'production' %}{% include layout/testing-site.html position="after-main-navigation" %}{% endif %}
 {% include layout/beta-banner.html %}
 
 <main class="container">
     {{ content }}
 </main>
 
+{% if site.x_environment != 'production' %}{% include layout/testing-site.html position="before-footer" %}{% endif %}
 {% include layout/site-footer.html %}
 
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

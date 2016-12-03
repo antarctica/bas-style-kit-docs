@@ -57,6 +57,14 @@ $beta-phase: #f47738;
   }
 }
 
+// Styles for footer
+
+.bsk-docs-site-footer {
+  &.no-margin {
+    margin-top: 0;
+  }
+}
+
 // Styles for BAS logo shown on homepage
 
 .bsk-docs-symbol {
@@ -328,5 +336,56 @@ $beta-phase: #f47738;
       background-color: #333333;
       color: #eeeeee;
     }
+  }
+}
+
+// Temporary styles for site version (i.e. highlights to indicate this is a staging/testing site)
+// These will be become a variant of the navbar component in the future
+
+$testing-background-colour: #77ccff; // blue
+$testing-foreground-colour: #333333;
+
+// $testing-background-colour: #7cf7cf; // aquamarine
+// $testing-foreground-colour: #333333;
+
+// $testing-background-colour: #6F72AF; // purple - GDS mauve
+// $testing-foreground-colour: #ffffff;
+
+$testing-link-foreground-colour: $testing-foreground-colour;
+
+.bsk-docs-navbar-testing {
+  border-bottom: 5px solid $testing-background-colour;
+}
+.bsk-docs-testing {
+  color: $testing-background-colour !important;
+}
+.bsk-docs-alert-testing {
+  border-radius: 0;
+  background-color: $testing-background-colour;
+  color: $testing-foreground-colour;
+
+  .alert-link {
+    color: $testing-link-foreground-colour;
+  }
+
+  // Enable for darker testing colours
+  /*
+  .close {
+    filter: alpha(opacity=100);
+    opacity: 1;
+
+    &:focus, &:hover {
+      color: #E7EBF1;
+    }
+  }
+  */
+
+  &.margin-top {
+    margin-top: 50px;
+    margin-bottom: 0;
+  }
+  &.margin-bottom {
+    margin-top: -20px;
+    margin-bottom: 20px;
   }
 }

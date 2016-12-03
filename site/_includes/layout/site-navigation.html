@@ -1,4 +1,4 @@
-<nav class="navbar navbar-bsk bsk-docs-main-navigation {% if page.url == '/' %} no-margin-bottom{% endif %}">
+<nav class="navbar navbar-bsk bsk-docs-main-navigation bsk-docs-navbar-testing {% if page.url == '/' %} no-margin-bottom{% endif %}">
     <div class="container">
       <!-- Project and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -9,7 +9,10 @@
           <span class="icon-bar"></span>
         </button>
 
-        <a class="navbar-brand" href="{{ "/" | prepend: site.baseurl }}">{{ site.title }}</a>
+        <a class="navbar-brand" href="{{ "/" | prepend: site.baseurl }}">
+          {{ site.title }}
+          {% if site.x_environment != 'production' %}<i class="fa fa-flask bsk-docs-testing" aria-hidden="true"></i> <span class="sr-only">Testing version</span>{% endif %}
+        </a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->

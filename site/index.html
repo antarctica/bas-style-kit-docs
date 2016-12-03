@@ -7,7 +7,10 @@ layout: home
 
         <div class="bsk-docs-symbol"></div>
 
-        <h1>BAS Style Kit</h1>
+        <h1>
+          BAS Style Kit
+          {% if site.x_environment != 'production' %}<i class="fa fa-flask bsk-docs-testing" aria-hidden="true"></i> <span class="sr-only">Testing version</span>{% endif %}
+        </h1>
         <p class="lead">
             A collection of HTML, CSS, and JS components for developing web projects consistent with the BAS brand.
         </p>
@@ -28,6 +31,21 @@ layout: home
         <span class="label label-app-phase-beta"><strong>BETA</strong></span>
         This website is being rebuilt – your <a href="{{ "/feedback.html" | prepend: site.baseurl }}">feedback</a> will help us to improve it.
     </section>
+{% if site.x_environment != 'production' %}
+
+    <hr />
+
+    <section class="row">
+      <div class="col-md-8 col-md-offset-2 text-center">
+        <h2>This website is used for testing</h2>
+        <p>This site contains a preview of upcoming changes and other experiments. It isn't safe to rely on examples
+          from this website, as as they may not work, or be removed, at any time.</p>
+        <a href="https://{{ site.bsk_docs_production_url }}" class="btn btn-primary btn-lg btn-bsk btn-bsk-primary">
+          View the real documentation
+        </a>
+      </div>
+    </section>
+{% endif %}
 
     <hr />
 
