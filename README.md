@@ -243,7 +243,7 @@ to bring up a local development environment
 6. `$ ansible-playbook site-development-local.yml`
 7. `$ cd ..` (back to *bas-style-kit-docs*)
 
-TO bring up the staging environment:
+To bring up the staging environment:
 
 1. Ensure you meet all the
 [requirements](https://paper.dropbox.com/doc/BAS-Base-Project-Pristine-Base-Flavour-Usage-ZdMdHHzf8xB4HjxcNuDXa#:h2=Environment---staging-(static-)
@@ -267,6 +267,21 @@ with these settings:
 To bring up the production environment:
 
 [TODO]
+
+To bring up this project using Docker [Experimental!]:
+
+```
+$ cd bas-style-kit-docs/
+$ docker run -it -v $(PWD):/usr/src/app antarctica/jekyll-image:alpine-0.1.0 /bin/ash
+$ cd /usr/src/app
+$ bundle install
+$ cd site
+$ jekyll build --watch --incremental
+```
+
+TODO: Convert steps to a docker image? Need to preserve mounted folder somehow.
+
+**Note:** Running Jekyll within Docker currently takes x2 longer to generate files.
 
 ## Usage
 
