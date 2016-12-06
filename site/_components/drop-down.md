@@ -62,6 +62,25 @@ not look right.
 </div>
 {% endexample %}
 
+### Split-button drop-down
+{: #{{ 'Split-button drop-down' | slugify }}}
+
+{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+
+{% example html %}
+<div class="btn-group">
+  <button class="btn btn-bsk btn-bsk-default" type="button">Dropdown</button>
+  <button class="btn btn-bsk btn-bsk-default dropdown-toggle" type="button" id="dropdown-menu-1a" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <span class="caret"></span>
+    <span class="sr-only">Toggle Dropdown</span>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-bsk">
+    <li><a href="#">Action</a></li>
+    <li><a href="#">Another action</a></li>
+  </ul>
+</div>
+{% endexample %}
+
 ### Navbar item drop-down
 {: #{{ 'Navbar item drop-downs' | slugify }}}
 
