@@ -54,7 +54,7 @@ A snippet is used to generate this metadata, it accepts the following options:
 * `current_phase` - one of the *section phases* described below
 * `future_phase` - one of the *section phases* described below
 * `current_version` - a string representing the version the `current_phase` was first applied
-* `future_version` - a string representing the version the `future_phase` was first applied 
+* `future_version` - a string representing the version the `future_phase` was first applied
 * `origin` - one of the *origins* described below
 * `included` - either `yes` or `no`
 
@@ -84,16 +84,16 @@ E.g. A component *Foo* is developed as part of version `0.2.0`, and then updated
 * When the component is first developed its `current_phase` will be `alpha`
 * As the component is further refined `current_phase` will move to `beta`
 * When the component is fully developed and released `current_phase` will move to `live`
-* Sometime later, enhancements are made to the component, `current_phase` will still be `live`, but `future_phase` will 
+* Sometime later, enhancements are made to the component, `current_phase` will still be `live`, but `future_phase` will
 now be set to `alpha`
 * The enhancements are developed further, `current_phase` will still be `live`, `future_phase` will now be set to `beta`
 * The enhanced component is released, `future_phase` is unset
 
-The `current_phase` only moves through its phases once. `future_phase` will move through the `alpha`, `beta` and 
+The `current_phase` only moves through its phases once. `future_phase` will move through the `alpha`, `beta` and
 `deprecated` phases as changes are made.
 
-The `current_version` will change each time the component is re-released, 
-though his makes it look like the component was only ever available since the increasing version number, this is 
+The `current_version` will change each time the component is re-released,
+though his makes it look like the component was only ever available since the increasing version number, this is
 technically true. The updated component was only available, in the form that's documented, since the updated version.
 
 ### Section origin
@@ -152,7 +152,7 @@ To link to Jira issue use the following tag, which is implemented by a custom pl
 {% jira issue="BSK-129" %}
 ```
 
-In production environments, i.e. `JEKYLL_ENV=production`, a call is made to the Jira API to retrieve the current status 
+In production environments, i.e. `JEKYLL_ENV=production`, a call is made to the Jira API to retrieve the current status
 of an issue ('to-do', 'done', etc.), and display this alongside a link to the issue in a stylised component.
 
 In development environments, the default, the call to Jira is skipped. A static status of 'unknown' is returned instead.
@@ -183,16 +183,16 @@ $ JEKYLL_JIRA_ISSUE_PLUGIN_ACCOUNT_PASSWORD=password jekyll build
 The markup structure used to render each issue is:
 
 * wrapper
-    * link element 
+    * link element
         * Icon (*optional*)
         * Issue ID
     * Status element
 
-I.e. A wrapper surrounds two elements, a link to the issue, whose text is the issue ID, and the current status of the 
+I.e. A wrapper surrounds two elements, a link to the issue, whose text is the issue ID, and the current status of the
 issue (as text).
 
 Classes are applied to these elements, a default set are defined by this plugin and cannot be omitted.
-Additional classes can be set either at a global level (using `_config.yml` options) or on an instance by instance 
+Additional classes can be set either at a global level (using `_config.yml` options) or on an instance by instance
 basis using tag parameters.
 
 Global classes are defined as part of the plugin configuration under the `classes` element, for example:
@@ -203,7 +203,7 @@ jira_issues:
     wrapper_classes: "label label-jira-issue"
 ```
 
-**Note:** Both global and instance classes can be set together. It is not possible to omit global variables for a 
+**Note:** Both global and instance classes can be set together. It is not possible to omit global variables for a
 particular instance.
 
 This table summarises the classes which can be applied and how these are set in various contexts.
@@ -261,7 +261,7 @@ with these settings:
             * `JEKYLL_ENV`
                 * Set to: `production`
             * `JEKYLL_JIRA_ISSUE_PLUGIN_ACCOUNT_PASSWORD`
-                * The value for this variable is secret, contact the 
+                * The value for this variable is secret, contact the
                 [BAS Web & Applications Team](mailto:webapps@bas.ac.uk) for access
 
 To bring up the production environment:
@@ -291,7 +291,7 @@ To apply and view changes you've made to site content in a local development env
 4. `$ JEKYLL_JIRA_ISSUE_PLUGIN_ACCOUNT_PASSWORD=password jekyll serve`
 5. Visit [bas-style-kit-docs-dev-node1.v.m:9000](http://bas-style-kit-docs-dev-node1.v.m:9000)
 
-**Note:** The value of the `JEKYLL_JIRA_ISSUE_PLUGIN_ACCOUNT_PASSWORD` environment variable is secret, contact the 
+**Note:** The value of the `JEKYLL_JIRA_ISSUE_PLUGIN_ACCOUNT_PASSWORD` environment variable is secret, contact the
 [BAS Web & Applications Team](mailto:webapps@bas.ac.uk) for access.
 
 To deploy changes to the staging environment:
