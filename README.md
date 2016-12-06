@@ -270,18 +270,16 @@ To bring up the production environment:
 
 To bring up this project using Docker [Experimental!]:
 
+-v $(PWD):/usr/src/app
+
 ```
 $ cd bas-style-kit-docs/
-$ docker run -it -v $(PWD):/usr/src/app antarctica/jekyll-image:alpine-0.1.0 /bin/ash
-$ cd /usr/src/app
-$ bundle install
-$ cd site
-$ jekyll build --watch --incremental
+$ docker build -t antarctica/bsk-docs:alpine-001 .
 ```
 
-TODO: Convert steps to a docker image? Need to preserve mounted folder somehow.
+Where: `001` is an incrementing number, e.g. `001`, `002`, etc.
 
-**Note:** Running Jekyll within Docker currently takes x2 longer to generate files.
+**Note:** In future this docker image will be built centrally.
 
 ## Usage
 
@@ -311,6 +309,17 @@ To deploy changes to the production environment:
 Continuous Deployment will automatically detect these changes and deploy them into production.
 
 Note: Due to caching, these changes may not appear immediately.
+
+To deploy changes using Docker [Experimental!]:
+
+```
+$ cd bas-style-kit-docs/
+$ docker run -p 9000:9000 antarctica/bsk-docs:alpine-0.1.0
+```
+
+**Note:** You will need to create a docker image locally before running the above command. See the *Setup* section.
+
+**Note:** You will need to rebuild the docker image whenever the site contents changes.
 
 ## Developing
 
