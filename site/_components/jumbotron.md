@@ -24,7 +24,7 @@ You **must** pick a [variant]({{ '/components/jumbotron/#variants' | prepend: si
 jumbotron, otherwise it will look strange. It is not enough to use `.jumbotron .jumbotron-bsk` on its own.
 {: .alert .alert-warning }
 
-Always use `.jumbotron-bsk` and `.jumbotron` together so that Style Kit specific styles are applied.
+Always use the `.jumbotron-bsk` and `.jumbotron` classes together so that Style Kit specific styles are applied.
 {: .alert .alert-info }
 
 ## Variants

@@ -31,7 +31,7 @@ You **must** pick a [variant]({{ '/core/buttons/#variants' | prepend: site.baseu
 otherwise it will look strange. It is not enough to use `.btn .btn-bsk` on its own.
 {: .alert .alert-warning }
 
-Always use `.btn-bsk` and `.btn` together so that Style Kit specific styles are applied.
+Always use the `.btn-bsk` and `.btn` classes together so that Style Kit specific styles are applied.
 {: .alert .alert-info }
 
 ## Supported elements

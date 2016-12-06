@@ -22,8 +22,8 @@ elements, before or a after a control in a [form field]({{ '/core/forms/#form-fi
 Multiple input group add-ons are not supported on a single side (i.e. 2 add-ons on the left).
 {: .alert .alert-warning }
 
-We do not support multiple [form controls]({{ '/core/forms/#form-controls' | prepend: site.baseurl }}) in a single
-input group.
+Multiple [form controls]({{ '/core/forms/#form-controls' | prepend: site.baseurl }}) used in a single input group are
+not supported.
 {: .alert .alert-warning }
 
 All input groups should have a label to make sure they can be understood by assistive technologies.

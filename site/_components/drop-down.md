@@ -32,7 +32,7 @@ Use the `.dropdown` class to create a menu that appears when triggered by a
 Drop-down menus are `ul` list elements, containing a set of links and other
 [components]({{ '/components/drop-down/#components' | prepend: site.baseurl }}).
 
-Always use `.dropdown-menu-bsk` and `.dropdown-menu` together so that Style Kit specific styles are applied.
+Always use the `.dropdown-menu-bsk` and `.dropdown-menu` classes together so that Style Kit specific styles are applied.
 {: .alert .alert-info }
 
 Interactive drop-downs require the [drop-down]({{ '/interactivity/drop-down' | prepend: site.baseurl }}){: .alert-link }

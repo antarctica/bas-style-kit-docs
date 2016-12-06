@@ -43,7 +43,7 @@ They can contain links, drop-down menus, forms and other
 Navbars are designed to scale with screen size. At small sizes key items will be shown normally, with less important
 items shown in a hidden menu, which can be toggled with a button. At larger sizes, all elements are shown directly.
 
-Always use `.navbar-bsk` and `.navbar` together so that Style Kit specific styles are applied.
+Always use the `.navbar-bsk` and `.navbar` classes together so that Style Kit specific styles are applied.
 {: .alert .alert-info }
 
 Navbars are relatively *heavy* elements, requiring significant markup and JavaScript plugins to work correctly. Where

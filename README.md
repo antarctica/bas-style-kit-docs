@@ -270,8 +270,6 @@ To bring up the production environment:
 
 To bring up this project using Docker [Experimental!]:
 
--v $(PWD):/usr/src/app
-
 ```
 $ cd bas-style-kit-docs/
 $ docker build -t antarctica/bsk-docs:alpine-001 .
