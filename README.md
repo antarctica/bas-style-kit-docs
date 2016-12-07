@@ -268,16 +268,16 @@ To bring up the production environment:
 
 [TODO]
 
-To bring up this project using Docker [Experimental!]:
+To create or update the Docker image for this project [Experimental!]:
 
 ```
 $ cd bas-style-kit-docs/
-$ docker build -t antarctica/bsk-docs:alpine-001 .
+$ docker login docker-registry.data.bas.ac.uk
+$ docker build -t docker-registry.data.bas.ac.uk/bsk/bas-style-kit-docs:alpine .
 ```
 
-Where: `001` is an incrementing number, e.g. `001`, `002`, etc.
-
-**Note:** In future this docker image will be built centrally.
+**Note:** The Docker image for this project is hosted in the BAS Docker Registry, which is private.
+You will need an account for the [BAS GitLab instance](https://gitlab.data.bas.ac.uk) to use this registry.
 
 ## Usage
 
@@ -310,14 +310,17 @@ Note: Due to caching, these changes may not appear immediately.
 
 To deploy changes using Docker [Experimental!]:
 
-```
-$ cd bas-style-kit-docs/
-$ docker run -p 9000:9000 antarctica/bsk-docs:alpine-0.1.0
-```
-
-**Note:** You will need to create a docker image locally before running the above command. See the *Setup* section.
+1. Rebuild the docker image for this project (see the *Setup* section)
+2. Run an instance of this docker image [1]
+3. Visit [localhost:9000](http://localhost:9000)
 
 **Note:** You will need to rebuild the docker image whenever the site contents changes.
+
+[1]
+```
+$ cd bas-style-kit-docs/
+$ docker run -p 9000:9000 docker-registry.data.bas.ac.uk/bsk/bas-style-kit-docs:alpine
+```
 
 ## Developing
 
