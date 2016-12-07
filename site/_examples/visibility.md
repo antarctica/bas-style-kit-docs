@@ -1,6 +1,6 @@
 ---
 layout: topic
-title: Visibility test cases
+title: Visibility examples
 sections:
   -
     title: Current breakpoint
