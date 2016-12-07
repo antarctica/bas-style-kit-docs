@@ -72,16 +72,11 @@ collections:
     permalink: /:collection/:slug/
     title: Interactivity
     sort_index: 4
-  guides:
-    output: true
-    permalink: /:collection/:slug/
-    title: Guides
-    sort_index: 5
   examples:
     output: true
     permalink: /:collection/:slug/
     title: Examples
-    sort_index: 6
+    sort_index: 5
 
 defaults:
   - scope:
@@ -102,11 +97,6 @@ defaults:
   - scope:
       path: ""
       type: interactivity
-    values:
-      layout: topic
-  - scope:
-      path: ""
-      type: guides
     values:
       layout: topic
   - scope:
