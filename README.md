@@ -342,7 +342,7 @@ This uses issue tracking for feedback. The project issue tracker is located at:
 
 The vast majority of this project is based on the [Bootstrap](http://getbootstrap.com) project.
 
-90% of any credit for this project should go to Boostrap's [authors and contributors](http://getbootstrap.com/about/).
+90% of any credit for this project should go to Bootstrap's [authors and contributors](http://getbootstrap.com/about/).
 
 The original Bootstrap licensing statement is shown below,
 see their original `LICENSE-BOOTSTRAP-MIT` further licensing information.
