@@ -308,18 +308,21 @@ Continuous Deployment will automatically detect these changes and deploy them in
 
 Note: Due to caching, these changes may not appear immediately.
 
-To deploy changes using Docker [Experimental!]:
+To test changes using Docker [Experimental!]:
 
-1. Rebuild the docker image for this project (see the *Setup* section)
+1. Optionally, rebuild the docker image for this project if the Gemfile has changed  (see the *Setup* section)
 2. Run an instance of this docker image [1]
 3. Visit [localhost:9000](http://localhost:9000)
 
-**Note:** You will need to rebuild the docker image whenever the site contents changes.
+To deploy changes using Docker [Experimental!]:
+
+* follow the instructions given for the relevant environment above
 
 [1]
-```
+
+```shell
 $ cd bas-style-kit-docs/
-$ docker run -p 9000:9000 docker-registry.data.bas.ac.uk/bsk/bas-style-kit-docs:alpine
+$ docker run -p 9000:9000 -v $PWD\site:/usr/src/app/site --name bsk-docs docker-registry.data.bas.ac.uk/bsk/bas-style-kit-docs:alpine
 ```
 
 ## Developing
