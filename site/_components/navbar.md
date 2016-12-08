@@ -36,7 +36,7 @@ sections:
 ## Overview
 {: #{{ 'Overview' | slugify }}}
 
-Use the `.navbar-bsk` and `.navbar` classes to create Navigation Bars used for primary, horizontal, navigation.
+Use the `.navbar-bsk` and `.navbar` classes to create navigation bars used for primary, horizontal, navigation.
 They can contain links, drop-down menus, forms and other
 [components]({{ '/components/navbar/#components' | prepend: site.baseurl }}).
 
@@ -180,49 +180,6 @@ any screen size (for demonstration purposes).
         <span class="icon-bar"></span>
       </button>
     </div>
-  </div><!-- /.container-fluid -->
-</nav>
-{% endexample %}
-
-### Active item
-{: #{{ 'Active item' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
-
-Add the `.active` class to the drop-down menu item currently active, to highlight where the end user is in the site.
-
-Make sure to include the `<span class="sr-only">(current)</span>` attribute as well. <br />
-This provides a non-visual indication of the currently active item, suitable for assistive technologies.
-{: .alert .alert-warning }
-
-{% example html %}
-<nav class="navbar navbar-bsk">
-  <div class="container-fluid">
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Active item <span class="sr-only">(current)</span></a></li>
-      <li><a href="#">Another item</a></li>
-    </ul>
-  </div><!-- /.container-fluid -->
-</nav>
-{% endexample %}
-
-This can also be used within [drop-down]({{ '/components/drop-down/#active' | prepend: site.baseurl }}) menus if needed.
-{: .alert .alert-info }
-
-{% example html %}
-<nav class="navbar navbar-bsk">
-  <div class="container-fluid">
-    <ul class="nav navbar-nav">
-      <li class="active dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-        Dropdown <span class="caret"></span></a>
-        <ul class="dropdown-menu dropdown-menu-bsk">
-          <li><a href="#">Action</a></li>
-          <li class="active"><a href="#">Active item <span class="sr-only">(current)</span></a></li>
-          <li><a href="#">Another item</a></li>
-        </ul>
-      </li>
-    </ul>
   </div><!-- /.container-fluid -->
 </nav>
 {% endexample %}
@@ -482,6 +439,52 @@ This adds the correct top-padding and makes the page layout look normal.
     </div>
     <ul class="nav navbar-nav">
       <li><a href="#">Item</a></li>
+    </ul>
+  </div><!-- /.container-fluid -->
+</nav>
+{% endexample %}
+
+## States
+{: #{{ 'States' | slugify }} }
+
+### Active item state
+{: #{{ 'Active state' | slugify }} }
+
+{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+
+Add the `.active` class to the navbar item currently active, to highlight where the end user is in the site.
+
+Make sure to include the `<span class="sr-only">(current)</span>` attribute as well. <br />
+This provides a non-visual indication of the currently active item, suitable for assistive technologies.
+{: .alert .alert-warning }
+
+{% example html %}
+<nav class="navbar navbar-bsk">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Active item <span class="sr-only">(current)</span></a></li>
+      <li><a href="#">Another item</a></li>
+    </ul>
+  </div><!-- /.container-fluid -->
+</nav>
+{% endexample %}
+
+This can also be used within [drop-down]({{ '/components/drop-down/#active' | prepend: site.baseurl }}) menus if needed.
+{: .alert .alert-info }
+
+{% example html %}
+<nav class="navbar navbar-bsk">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li class="active dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Dropdown <span class="caret"></span></a>
+        <ul class="dropdown-menu dropdown-menu-bsk">
+          <li><a href="#">Action</a></li>
+          <li class="active"><a href="#">Active item <span class="sr-only">(current)</span></a></li>
+          <li><a href="#">Another item</a></li>
+        </ul>
+      </li>
     </ul>
   </div><!-- /.container-fluid -->
 </nav>

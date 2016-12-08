@@ -204,7 +204,7 @@ be used for dangerous actions.
 
 #### <code>&lt;button&gt;</code> elements
 
-Unavailable actions can be indicated by adding the `disabled` attribute.
+Add the `disabled` attribute to indicate unavailable actions.
 
 {% example html %}
 <button class="btn btn-bsk btn-default" disabled>Disabled Action</button>
@@ -212,7 +212,7 @@ Unavailable actions can be indicated by adding the `disabled` attribute.
 
 #### <code>&lt;a&gt;</code> elements
 
-Unavailable actions can be indicated by adding the `.disabled` class.
+Add the `.disabled` class to indicate unavailable actions.
 
 {% example html %}
 <a class="btn btn-bsk btn-default disabled" href="#" role="button">Disabled Action</a>
