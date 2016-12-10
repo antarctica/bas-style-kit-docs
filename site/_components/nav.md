@@ -3,6 +3,16 @@ title: Navigation
 sections:
   -
     title: Overview
+  -
+    title: Pill navigation
+  -
+    title: Tab navigation
+  -
+    title: Components
+  -
+    title: States
+  -
+    title: Layouts
 ---
 
 {% include snippets/table-of-contents.md %}
