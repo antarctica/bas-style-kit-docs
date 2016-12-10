@@ -36,6 +36,10 @@ See the [Sidebar]({{ '/components/sidebar' | prepend: site.baseurl }}){: .alert-
 that is distinct from main content, but which is shown **next to** it.
 {: .alert .alert-info }
 
+See the [Thumbnail]({{ '/components/thumbnail' | prepend: site.baseurl }}){: .alert-link } component to display media
+items that are distinct from main content, but which is shown **within** it.
+{: .alert .alert-info }
+
 ## Variants
 {: #{{ 'Variants' | slugify }}}
 
