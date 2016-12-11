@@ -3,6 +3,14 @@ title: Thumbnail
 sections:
   -
     title: Overview
+  -
+    title: Supported elements
+  -
+    title: Default thumbnail
+  -
+    title: Inverse thumbnail
+  -
+    title: Caption
 ---
 
 {% include snippets/table-of-contents.md %}
@@ -34,8 +42,8 @@ Thumbnail styles are designed for <code>&lt;div&gt;</code> or <code>&lt;a&gt;</c
 ## Variants
 {: #{{ 'Variants' | slugify }} }
 
-### Default
-{: #{{ 'Default' | slugify }} }
+### Default thumbnail
+{: #{{ 'Default thumbnail' | slugify }} }
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
 
@@ -56,23 +64,23 @@ Add the `.thumbnail-bsk-default` class for standard thumbnails.
 </div>
 {% endexample %}
 
-### Inverted
-{: #{{ 'Inverted' | slugify }} }
+### Inverse thumbnail
+{: #{{ 'Inverse thumbnail' | slugify }} }
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
 
-Add the `.thumbnail-bsk-inverted` class for an alternative style of thumbnail. There is no smenatic significance
+Add the `.thumbnail-bsk-inverse` class for an alternative style of thumbnail. There is no semantic significance
 implied by this variant.
 
 {% example html %}
 <div class="row">
   <div class="col-md-6">
-    <div class="thumbnail thumbnail-bsk thumbnail-bsk-inverted">
+    <div class="thumbnail thumbnail-bsk thumbnail-bsk-inverse">
       <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=Media%20Item&w=400&h=250" alt="thumbnail">
     </div>
   </div>
   <div class="col-md-6">
-    <a href="#" class="thumbnail thumbnail-bsk thumbnail-bsk-inverted">
+    <a href="#" class="thumbnail thumbnail-bsk thumbnail-bsk-inverse">
       <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=Media%20Item&w=400&h=250" alt="thumbnail">
     </a>
   </div>
@@ -82,8 +90,8 @@ implied by this variant.
 ## Components
 {: #{{ 'Components' | slugify }} }
 
-### Captions
-{: #{{ 'Captions' | slugify }} }
+### Caption
+{: #{{ 'Caption' | slugify }} }
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
 
@@ -99,7 +107,7 @@ Use the `.caption` class on an element within a thumbnail to add additional info
 If using the inverted variant, the caption will be styled accordingly.
 
 {% example html %}
-<div class="thumbnail thumbnail-bsk thumbnail-bsk-inverted">
+<div class="thumbnail thumbnail-bsk thumbnail-bsk-inverse">
   <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=Media%20Item&w=800&h=500" alt="thumbnail">
   <div class="caption">Thumbnail caption</div>
 </div>

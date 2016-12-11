@@ -4,9 +4,9 @@ sections:
   -
     title: Overview
   -
-    title: Default
+    title: Default panel
   -
-    title: Primary
+    title: Primary panel
   -
     title: Contextual colours
   -
@@ -43,8 +43,8 @@ items that are distinct from main content, but which is shown **within** it.
 ## Variants
 {: #{{ 'Variants' | slugify }}}
 
-### Default
-{: #{{ 'Default' | slugify }} }
+### Default panel
+{: #{{ 'Default panel' | slugify }} }
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
 
@@ -72,8 +72,8 @@ A more typical example includes a [header]({{ '/components/panel/#header' | prep
 </div>
 {% endexample %}
 
-### Primary
-{: #{{ 'Primary' | slugify }} }
+### Primary panel
+{: #{{ 'Primary panel' | slugify }} }
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
 

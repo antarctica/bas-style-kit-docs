@@ -2,6 +2,10 @@
 ---
 @charset "utf-8";
 
+// == Copies of Bootstrap or BAS Style Kit variables
+
+$screen-sm-min: 768px !default;
+
 // ==  Site specific styles
 
 // Styles for Better banner - these will be merged into a future version of the BAS Style Kit
@@ -58,10 +62,32 @@ $beta-phase: #f47738;
 }
 
 // Styles for footer
+// Some elements to be formalised
 
 .bsk-docs-site-footer {
   &.no-margin {
     margin-top: 0;
+  }
+
+  .bsk-docs-site-build-info,
+  .bsk-docs-site-back-to-top,
+  .footer-bsk-policy-links,
+  .bsk-docs-site-licensing {
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  @media (min-width: $screen-sm-min) {
+    .bsk-docs-site-back-to-top,
+    .footer-bsk-policy-links {
+      margin-top: 0;
+      text-align: right;
+    }
+
+    .bsk-docs-site-build-info,
+    .bsk-docs-site-licensing {
+      text-align: left;
+    }
   }
 }
 
@@ -205,24 +231,13 @@ $beta-phase: #f47738;
 
 @import 'swatches';
 
+// Styles for simulating fonts, normally these are used inherently by relevant elements and components
+
+@import 'fonts';
+
 // Styles for syntax highlighting
 
 @import 'syntax-highlighting';
-
-.highlight {
-  padding: 9px 14px;
-  margin-bottom: 14px;
-  background-color: #F4F6F9;
-  border: 1px solid #E7EBF1;
-
-  pre {
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 0;
-    background-color: transparent;
-    border: 0
-  }
-}
 
 // Styles for section metadata
 
@@ -239,40 +254,6 @@ $beta-phase: #f47738;
     padding-right: 5px;
     padding-left: 5px;
   }
-}
-
-// Styles for simulating fonts
-
-.bsk-docs-font-sample-open-sans-light {
-  font-family: "Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-}
-.bsk-docs-font-sample-open-sans-regular {
-  font-family: "Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-.bsk-docs-font-sample-open-sans-bold {
-  font-family: "Open Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: bold;
-}
-
-.bsk-docs-font-sample-gill-sans-light {
-  font-family: "Gill Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 100;
-  font-size: 15px;
-}
-.bsk-docs-font-sample-gill-sans-book {
-  font-family: "Gill Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 200;
-  font-size: 15px;
-}
-.bsk-docs-font-sample-gill-sans-roman {
-  font-family: "Gill Sans","Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 300;
-  font-size: 15px;
-}
-
-.bsk-docs-font-sample-menlo-regular {
-  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 // Temporary styles for design phases (i.e. discovery, alpha, etc.)

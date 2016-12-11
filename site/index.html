@@ -27,62 +27,62 @@ layout: home
 </header>
 
 <div class="container bsk-docs-home-sections">
-    <section class="lead text-center">
-        <span class="label label-app-phase-beta"><strong>BETA</strong></span>
-        This website is being rebuilt – your <a href="{{ "/feedback.html" | prepend: site.baseurl }}">feedback</a> will help us to improve it.
-    </section>
+  <section class="lead text-center">
+    <span class="label label-app-phase-beta"><strong>BETA</strong></span>
+    This website is being rebuilt – your <a href="{{ "/feedback.html" | prepend: site.baseurl }}">feedback</a> will help us to improve it.
+  </section>
 {% if site.x_environment != 'production' %}
 
-    <hr />
+  <hr />
 
-    <section class="row">
-      <div class="col-md-8 col-md-offset-2 text-center">
-        <h2>This website is used for testing</h2>
-        <p>This site contains a preview of upcoming changes and other experiments. It isn't safe to rely on examples
-          from this website, as as they may not work, or be removed, at any time.</p>
-        <a href="https://{{ site.bsk_docs_production_url }}" class="btn btn-primary btn-lg btn-bsk btn-bsk-primary">
-          View the real documentation
-        </a>
-      </div>
-    </section>
+  <section class="row">
+    <div class="col-md-8 col-md-offset-2 text-center lead alert bsk-docs-alert-testing">
+      <h2>This website is used for testing</h2>
+      <p>This site contains a preview of upcoming changes and other experiments. It isn't safe to rely on examples
+        from this website, as as they may not work, or be removed, at any time.</p>
+      <a href="https://{{ site.bsk_docs_production_url }}" class="btn btn-primary btn-lg btn-bsk btn-bsk-primary">
+        View the real documentation
+      </a>
+    </div>
+  </section>
 {% endif %}
 
-    <hr />
+  <hr />
 
-    <section class="row">
-        <div class="col-md-8 col-md-offset-2 text-center">
-            <h2>Counterpart to the BAS Style Guide</h2>
-            <p>The BAS Style Guide gives official requirements and advise for building BAS websites,
-            including how they should be styled using the resources from the BAS Style Kit.</p>
-            <a href="{{ site.bas_navigation_menu.bas_style_guide | prepend: site.baseurl }}"
-            class="btn btn-primary btn-lg btn-bsk btn-bsk-primary">
-                View the BAS Style Guide
-            </a>
-        </div>
-    </section>
+  <section class="row">
+      <div class="col-md-8 col-md-offset-2 text-center">
+          <h2>Counterpart to the BAS Style Guide</h2>
+          <p>The BAS Style Guide gives official requirements and advise for building BAS websites,
+          including how they should be styled using the resources from the BAS Style Kit.</p>
+          <a href="{{ site.bas_navigation_menu.bas_style_guide | prepend: site.baseurl }}"
+          class="btn btn-primary btn-lg btn-bsk btn-bsk-primary">
+              View the BAS Style Guide
+          </a>
+      </div>
+  </section>
 
-    <hr />
+  <hr />
 
-    <section class="row">
-        <div class="col-md-8 col-md-offset-2 text-center lead alert alert-warning">
-            <h2>Parts of the BAS Style Kit are protected works</h2>
-            <p>This includes things like the BAS Logo, which may only be used in projects officially endorsed by
-            BAS, subject to certain conditions.</p>
-            <p>This will be explained in more detail wherever this applies.</p>
-        </div>
-    </section>
+  <section class="row">
+      <div class="col-md-8 col-md-offset-2 text-center lead alert alert-warning">
+          <h2>Parts of the BAS Style Kit are protected works</h2>
+          <p>This includes things like the BAS Logo, which may only be used in projects officially endorsed by
+          BAS, subject to certain conditions.</p>
+          <p>This will be explained in more detail wherever this applies.</p>
+      </div>
+  </section>
 
-      <hr />
+  <hr />
 
-    <section class="row">
-        <div class="col-md-8 col-md-offset-2 text-center">
-            <h2>A living, open, resource</h2>
-            <p>The BAS Style Kit is designed around BAS Projects, and anyone is welcome to make changes to the code,
-            from fixing documentation, to adding whole new components.</p>
-            <a href="{{ site.bsk_source_code_url | prepend: site.baseurl }}"
-            class="btn btn-primary btn-lg btn-bsk btn-bsk-primary">
-                View the code
-            </a>
-        </div>
-    </section>
+  <section class="row">
+      <div class="col-md-8 col-md-offset-2 text-center">
+          <h2>A living, open, resource</h2>
+          <p>The BAS Style Kit is designed around BAS Projects, and anyone is welcome to make changes to the code,
+          from fixing documentation, to adding whole new components.</p>
+          <a href="{{ site.bsk_source_code_url | prepend: site.baseurl }}"
+          class="btn btn-primary btn-lg btn-bsk btn-bsk-primary">
+              View the code
+          </a>
+      </div>
+  </section>
 </div>
