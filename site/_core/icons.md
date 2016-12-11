@@ -11,6 +11,8 @@ sections:
     title: Image purchase icon
   -
     title: Standard contextual icons
+  -
+    title: External service icons
 ---
 
 {% include snippets/table-of-contents.md %}
@@ -66,7 +68,7 @@ Use the `times-circle` icon wrapped in a `.close` element for indicating closing
     <div class="col-md-3">
       <div class="bsk-docs-icon"><i class="fa fa-4x fa-fw fa-times-circle" aria-hidden="true"></i></div>
       <ul class="list-unstyled text-center bsk-docs-icons-details">
-        <li>Close</li>
+        <li>Times Circle</li>
         <li class="bsk-docs-icon-reference">fa-times-circle</li>
         <li><code>&lt;i class="fa fa-times-circle" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
@@ -134,7 +136,7 @@ You should ensure contextual icons are not the only means
  [context is conveyed to ensure those using assistive technologies are not excluded]({{ '/start/standards-accessibility/#conveying-context-without-colours-or-icons' | prepend: site.baseurl }}){: .alert-link }.
 {: .alert .alert-warning }
 
-These icons can be used with many core styles and components, such as:
+These icons can be used with core styles and components, such as:
 
 * [buttons]({{ '/core/buttons/#contextual-icons' | prepend: site.baseurl }})
 * [form validation messages]({{ '/core/forms/#validation' | prepend: site.baseurl }})
@@ -218,6 +220,60 @@ these icons.
         <li>Info</li>
         <li class="bsk-docs-icon-reference">fa-info</li>
         <li><code>&lt;i class="fa fa-info text-info" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+## External service icons
+{: #{{ 'External service icons' | slugify }} }
+
+{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
+
+By convention, and often recommendation by the relevant service, the Style Kit uses these icons for various external
+services.
+
+All brand assets trademarks of their respective owners, and subject to their respective licensing restrictions. <br />
+You must ensure that where you use these assets you comply with these restrictions.
+{: .alert .alert-warning }
+
+These icons can be used with components such as:
+
+* [social media]({{ '/components/social-media' | prepend: site.baseurl }})
+
+<div class="bsk-docs-icons-wrapper">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="bsk-docs-icon"><i class="fa fa-4x fa-fw fa-twitter-square" aria-hidden="true"></i></div>
+      <ul class="list-unstyled text-center bsk-docs-icons-details">
+        <li>Twitter</li>
+        <li class="bsk-docs-icon-reference">fa-twitter-square</li>
+        <li><code>&lt;i class="fa fa-twitter-square" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <div class="bsk-docs-icon"><i class="fa fa-4x fa-fw fa-facebook-square" aria-hidden="true"></i></div>
+      <ul class="list-unstyled text-center bsk-docs-icons-details">
+        <li>Facebook</li>
+        <li class="bsk-docs-icon-reference">fa-facebook-square</li>
+        <li><code>&lt;i class="fa fa-facebook-square" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <div class="bsk-docs-icon"><i class="fa fa-4x fa-fw fa-youtube-square" aria-hidden="true"></i></div>
+      <ul class="list-unstyled text-center bsk-docs-icons-details">
+        <li>YouTube</li>
+        <li class="bsk-docs-icon-reference">fa-youtube-square</li>
+        <li><code>&lt;i class="fa fa-youtube-square" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+      </ul>
+    </div>
+    <div class="col-md-3">
+      <div class="bsk-docs-icon"><i class="fa fa-4x fa-fw fa-rss-square"
+      aria-hidden="true"></i></div>
+      <ul class="list-unstyled text-center bsk-docs-icons-details">
+        <li>RSS</li>
+        <li class="bsk-docs-icon-reference">fa-rss-square</li>
+        <li><code>&lt;i class="fa fa-rss-square" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
   </div>

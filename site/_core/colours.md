@@ -421,3 +421,52 @@ used as the background of an element using these classes:
     </div>
   </div>
 </div>
+
+## External service colours
+{: #{{ 'External service colours' | slugify }} }
+
+{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
+
+By convention, and often recommendation by the relevant service, the Style Kit uses these colours for various external
+services.
+
+These colours can be used with components such as:
+
+* [social media]({{ '/components/social-media' | prepend: site.baseurl }})
+
+<div class="bsk-docs-swatch-wrapper">
+  <div class="row">
+    <div class="col-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-external-service-twitter-background"></div>
+      <ul class="list-unstyled text-center bsk-docs-swatch-details">
+        <li>Twitter</li>
+        <li><code>$brands-twitter-primary</code></li>
+        <li class="bsk-docs-hex-reference">#55ACEE</li>
+      </ul>
+    </div>
+    <div class="col-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-external-service-facebook-background"></div>
+      <ul class="list-unstyled text-center bsk-docs-swatch-details">
+        <li>Facebook</li>
+        <li><code>$brands-facebook-primary</code></li>
+        <li class="bsk-docs-hex-reference">#3B5998</li>
+      </ul>
+    </div>
+    <div class="col-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-external-service-youtube-background"></div>
+      <ul class="list-unstyled text-center bsk-docs-swatch-details">
+        <li>YouTube</li>
+        <li><code>$brands-youtube-primary</code></li>
+        <li class="bsk-docs-hex-reference">#CD201F</li>
+      </ul>
+    </div>
+    <div class="col-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-external-service-rss-background"></div>
+      <ul class="list-unstyled text-center bsk-docs-swatch-details">
+        <li>RSS</li>
+        <li><code>$brands-rss-primary</code></li>
+        <li class="bsk-docs-hex-reference">#F26522</li>
+      </ul>
+    </div>
+  </div>
+</div>
