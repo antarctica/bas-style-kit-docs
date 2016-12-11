@@ -86,8 +86,8 @@ Use the `.alert-link` class for any <code>&lt;a&gt;</code> elements within an al
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
 
-Add the `.alert-dismissible` class, with a `button` element using the
-[close icon]({{ '/core/icons/#close-icon' | prepend: site.baseurl }}), to create an alert that can be closed or dismissed.
+Add a `button` element using the [close icon]({{ '/core/icons/#close-icon' | prepend: site.baseurl }}), to create an ]
+alert that can be closed or dismissed.
 
 Dismissible alerts require the [alert]({{ '/interactivity/alert' | prepend: site.baseurl }}){: .alert-link }
 JavaScript plugin, which is enabled on this site.
@@ -97,7 +97,7 @@ The close button element should use a `button` element, not a <code>&lt;a&gt;</c
 {: .alert .alert-danger }
 
 {% example html %}
-<div class="alert alert-success alert-dismissible" role="alert">
+<div class="alert alert-success" role="alert">
   <button type="button" class="close" data-dismiss="alert" aria-label="Close"><i class="fa fa-times-circle" aria-hidden="true"></i></button>
   An alert
 </div>
