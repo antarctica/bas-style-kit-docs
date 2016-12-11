@@ -4,11 +4,13 @@ sections:
   -
     title: Available icons
   -
-    title: Standard contextual icons
+    title: Caret icon
   -
     title: Close icon
   -
-    title: Caret icon
+    title: Image purchase icon
+  -
+    title: Standard contextual icons
 ---
 
 {% include snippets/table-of-contents.md %}
@@ -26,7 +28,32 @@ won't work using the Style Kit.
 
 [View Available Icons](http://fontawesome.io/icons/){:.btn .btn-bsk .btn-default }
 
-## Close icon
+## Caret icon
+{: #{{ 'Caret icon' | slugify }} }
+
+{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
+
+For menus, Bootstrap's `.caret` class should be used over the Font Awesome `.caret-` classes, as it will automatically
+rotate in drop up menus.
+
+In all other cases, Font Awesome's `.caret-` classes should be used instead.
+
+{% example html %}
+<span class="caret"></span>
+
+<br /><br />
+
+<a href="#">Move right <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+{% endexample %}
+
+## Standard conventional icons
+{: #{{ 'Standard conventional icons' | slugify }} }
+
+{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
+
+For common actions or concepts, the Style Kit uses a set of conventional icons.
+
+### Close icon
 {: #{{ 'Close icon' | slugify }} }
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
@@ -54,23 +81,33 @@ Use the `times-circle` icon wrapped in a `.close` element for indicating closing
 **Hint** The close icon is aligned right.
 {: .alert .alert-info }
 
-## Caret icon
-{: #{{ 'Caret icon' | slugify }} }
+### Image purchase icon
+{: #{{ 'Image purchase icon' | slugify }} }
 
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
+{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
 
-For menus, Bootstrap's `.caret` class should be used over the Font Awesome `.caret-` classes, as it will automatically
-rotate in drop up menus.
+Use the `fa-camera` icon for indicating images and other media items available for purchase from the BAS Image
+Collection, such as [image purchases]({{ '/components/image-purchase' | prepend: site.baseurl }}).
 
-In all other cases, Font Awesome's `.caret-` classes should be used instead.
+<div class="bsk-docs-icons-wrapper">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="bsk-docs-icon"><i class="fa fa-4x fa-fw fa-camera" aria-hidden="true"></i></div>
+      <ul class="list-unstyled text-center bsk-docs-icons-details">
+        <li>Camera</li>
+        <li class="bsk-docs-icon-reference">fa-camera</li>
+        <li><code>&lt;i class="fa fa-camera" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+      </ul>
+    </div>
+  </div>
+</div>
 
 {% example html %}
-<span class="caret"></span>
-
-<br /><br />
-
-<a href="#">Move right <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+...
 {% endexample %}
+
+**Hint** The image purchase icon is aligned bottom right.
+{: .alert .alert-info }
 
 ## Standard contextual icons
 {: #{{ 'Standard contextual icons' | slugify }} }
