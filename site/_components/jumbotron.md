@@ -67,8 +67,11 @@ Use the `.jumbotron-bsk-inverse` class to use a darker background for a jumbotro
 
 Add one of these classes to alter the size of a jumbotron:
 
-* Extra-large jumbotron `.jumbotron-xl`
-* Large jumbotron `.jumbotron-lg`
+| Jumbotron Size | Jumbotron Size Class    |
+| -------------- | ----------------------- |
+| Extra-large    | `.jumbotron-xl`         |
+| Large          | `.jumbotron-lg`         |
+{: .table }
 
 {% example html %}
 <div class="jumbotron jumbotron-bsk jumbotron-bsk-default jumbotron-bsk-lg">

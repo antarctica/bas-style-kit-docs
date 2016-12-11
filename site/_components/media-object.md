@@ -181,7 +181,7 @@ Add one of these classes to align a media object horizontally:
 | Vertical Alignment  | Vertical Alignment Class |
 | ------------------- | ------------------------ |
 | Middle              | `.media-middle`          |
-| Bottom button       | `.media-bottom`          |
+| Bottom              | `.media-bottom`          |
 {: .table }
 
 {% example html %}

@@ -25,11 +25,11 @@ Use the `.img-responsive` class to scale images nicely within their parent eleme
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
 
+Shapes with rounded edges won't work in Internet Explorer 8.
+{: .alert .alert-danger }
+
 {% example html %}
 <img class="img-rounded" src="https://placeholdit.imgix.net/~text?txtsize=50&amp;w=140&amp;h=140" alt="Rounded image" >
 <img class="img-circle" src="https://placeholdit.imgix.net/~text?txtsize=50&amp;w=140&amp;h=140" alt="Circular image">
 <img class="img-thumbnail" src="https://placeholdit.imgix.net/~text?txtsize=50&amp;w=140&amp;h=140" alt="Thumbnail image">
 {% endexample %}
-
-Shapes with rounded edges won't work in Internet Explorer 8.
-{: .alert .alert-danger }

@@ -397,7 +397,6 @@ inner <code>&lt;div&gt;</code> to prevent the <code>&lt;legend&gt;</code> from a
   </fieldset>
 
   <fieldset class="form-group">
-    <p class="col-md-12 help-block text-muted">Select one or more other options</p>
     <div class="col-md-10 col-md-offset-2">
       <div class="checkbox-inline">
         <label>
@@ -541,23 +540,21 @@ Make sure to use `.control-label` to ensure all labels are virtually aligned.
 {% example html %}
 <form>
   <div class="row">
-    <fieldset class="form-group col-md-6">
+    <fieldset class="form-group col-md-3">
       <label class="control-label" for="form-sizing-example-1">Text input</label>
       <input type="text" class="form-control" id="form-sizing-example-1">
     </fieldset>
   </div>
   <div class="row">
-    <fieldset class="form-group">
-      <label class="control-label col-md-3" for="form-sizing-example-2">An extra long label for a text input for this demo</label>
+    <fieldset class="form-group col-md-6">
+      <label class="control-label" for="form-sizing-example-2">An extra long label for a text input for this demo</label>
       <input type="text" class="form-control" id="form-sizing-example-2">
     </fieldset>
   </div>
   <div class="row">
-    <fieldset class="form-group">
+    <fieldset class="form-group col-md-12">
       <label class="control-label" for="form-sizing-example-3">Text input</label>
-      <div class="col-md-6">
-        <input type="text" class="form-control" id="form-sizing-example-3">
-      </div>
+      <input type="text" class="form-control" id="form-sizing-example-3">
     </fieldset>
   </div>
 </form>
@@ -570,8 +567,11 @@ Make sure to use `.control-label` to ensure all labels are virtually aligned.
 
 Add one of these classes to alter the size of a form control:
 
-* Large form field `.form-group-lg`
-* Small form field `.form-group-sm`
+| Form Control Size | Form Control Size Class |
+| ----------------- | ----------------------- |
+| Large form field  | `.form-group-lg`        |
+| Small form field  | `.form-group-sm`        |
+{: .table }
 
 {% example html %}
 <form>

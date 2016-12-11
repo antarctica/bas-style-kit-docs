@@ -39,9 +39,16 @@ Always use the `.btn-bsk` and `.btn` classes together so that Style Kit specific
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
 
-The BAS Style Kit's various button styles are designed for <code>&lt;button&gt;</code> elements.
-<code>&lt;a&gt;</code> or <code>&lt;input&gt;</code> elements may be used as well, but are not supported and may
-not look right.
+This component is fully supported when used with these elements:
+
+* <code>&lt;button&gt;</code>
+
+This component can also be used these elements:
+
+* <code>&lt;a&gt;</code>
+* <code>&lt;input&gt;</code>
+
+Other elements may be used as well, but are not supported and may not look right.
 
 Use `role="button"` for link elements which trigger in-page functionality (such as collapsing
 content) to give
@@ -97,10 +104,13 @@ than one.
 The [standard contextual colours]({{ '/core/colours/#standard-contextual-colours' | prepend: site.baseurl }}) can be
 used for context by adding these classes:
 
-* `.btn-success`
-* `.btn-warning`
-* `.btn-danger`
-* `.btn-info`
+| Standard Context | Button Contextual Class |
+| ---------------- | ----------------------- |
+| Success          | `.btn-success`          |
+| Warning          | `.btn-warning`          |
+| Danger           | `.btn-danger`           |
+| Info             | `.btn-info`             |
+{: .table }
 
 {% example html %}
 <button class="btn btn-bsk btn-success">Success Action</button>
@@ -144,9 +154,12 @@ actions, or those you wish to guide users away from.
 
 Add one of these classes to alter the size of a button:
 
-* Large button `.btn-lg`
-* Small button `.btn-sm`
-* Extra-small button `.btn-xl`
+| Button Size | Button Size Class |
+| ----------- | ----------------- |
+| Large       | `.btn-lg`         |
+| Small       | `.btn-sm`         |
+| Extra-small | `.btn-xl`         |
+{: .table }
 
 {% example html %}
 <p><button class="btn btn-bsk btn-default btn-lg">Large Button</button></p>

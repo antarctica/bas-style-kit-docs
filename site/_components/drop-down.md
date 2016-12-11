@@ -187,7 +187,7 @@ Use the `.dropup` class, rather than `.dropdown` to have the drop-down menu open
 if used within the [Navbar]({{ '/components/navbar' | prepend: site.baseurl }}) component, add the `.active` class to
 the drop-down menu item currently active, to highlight where the end user is in the site.
 
-Make sure to include the `<span class="sr-only">(current)</span>` attribute as well. <br />
+Make sure to include a `<span class="sr-only">(current)</span>` element as well. <br />
 This provides a non-visual indication of the currently active item, suitable for assistive technologies.
 {: .alert .alert-warning }
 

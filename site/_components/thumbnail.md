@@ -69,8 +69,7 @@ Add the `.thumbnail-bsk-default` class for standard thumbnails.
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
 
-Add the `.thumbnail-bsk-inverse` class for an alternative style of thumbnail. There is no semantic significance
-implied by this variant.
+Add the `.thumbnail-bsk-inverse` class for an alternative thumbnail style. This has no semantic significance.
 
 {% example html %}
 <div class="row">

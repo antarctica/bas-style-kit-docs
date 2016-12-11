@@ -552,10 +552,13 @@ Remember, the `.dl-bsk-horizontal-lg` class depends on using `.dl-horizontal` as
 The [standard contextual colours]({{ '/core/colours/#standard-contextual-colours' | prepend: site.baseurl }}) can be
 used to apply context to text using these classes:
 
-* `.text-success`
-* `.text-warning`
-* `.text-danger`
-* `.text-info`
+| Standard Context | Text Contextual Class |
+| ---------------- | --------------------- |
+| Success          | `.text-success`       |
+| Warning          | `.text-warning`       |
+| Danger           | `.text-danger`        |
+| Info             | `.text-info`          |
+{: .table }
 
 In some edge cases these styles will be over-ridden by other styles, wrapping text in a <code>&lt;span&gt;</code>
 should fix this.

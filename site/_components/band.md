@@ -57,8 +57,11 @@ Add the `.band-bsk-inverse` class for an alternative band style. This has no sem
 
 Add one of these classes to alter the size of a band:
 
-* Medium band `.band-bsk-mg`
-* Small band `.band-bsk-sm`
+| Band Size | Band Size Class |
+| --------- | --------------- |
+| Medium    | `.band-bsk-md`  |
+| Small     | `.band-bsk-sm`  |
+{: .table }
 
 {% example html %}
 <!-- Regular band -->

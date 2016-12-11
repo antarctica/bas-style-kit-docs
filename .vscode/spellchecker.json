@@ -1,6 +1,7 @@
 {
     "language": "en_US",
     "ignoreWordsList": [
+        "scss",
         "dropdown",
         "Dropdown",
         "endexample",
@@ -56,9 +57,13 @@
         "Checkbox",
         "Tooltips",
         "tooltip",
-        "scss",
         "addons",
-        "Addon"
+        "Addon",
+        "Colours",
+        "YouTube",
+        "Facebook",
+        "facebook",
+        "youtube"
     ],
     "documentTypes": [
         "markdown",

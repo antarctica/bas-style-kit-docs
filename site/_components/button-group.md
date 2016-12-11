@@ -80,9 +80,12 @@ Toolbars contain groups.
 
 Add one of these classes to alter the size of a button group:
 
-* Large button group `.btn-group-lg`
-* Small button group `.btn-group-sm`
-* Extra-small button group `.btn-group-xl`
+| Button Group Size | Button Group Size Class |
+| ----------------- | ----------------------- |
+| Large             | `.btn-group-lg`         |
+| Small             | `.btn-group-sm`         |
+| Extra-small       | `.btn-group-xl`         |
+{: .table }
 
 Individual buttons will inherit the size of each button group.
 {: .alert .alert-info }

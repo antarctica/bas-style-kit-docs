@@ -84,6 +84,14 @@ used for context by adding these classes:
 * `.list-group-item-danger`
 * `.list-group-item-info`
 
+| Standard Context | List Group Contextual Class |
+| ---------------- | --------------------------- |
+| Success          | `.list-group-item-success`  |
+| Warning          | `.list-group-item-warning`  |
+| Danger           | `.list-group-item-danger`   |
+| Info             | `.list-group-item-info`     |
+{: .table }
+
 {% example html %}
 <ul class="list-group">
   <li class="list-group-item list-group-item-success">Successful list group item</li>
@@ -127,7 +135,7 @@ Do not use the `.btn` and `.btn-bsk` classes for <code>&lt;button&gt;</code> ele
 
 Add the `.active` class to the list group item currently active, to highlight where the end user is in the site.
 
-Make sure to include the `<span class="sr-only">(current)</span>` attribute as well. <br />
+Make sure to include a `<span class="sr-only">(current)</span>` element as well. <br />
 This provides a non-visual indication of the currently active item, suitable for assistive technologies.
 {: .alert .alert-warning }
 

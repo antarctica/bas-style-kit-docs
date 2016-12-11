@@ -42,8 +42,9 @@ Add one of these classes to alter the size of a well:
 
 | Well Size  | Well Size Class |
 | ---------- | --------------- |
-| Large well | `.well-lg`      |
-| Small well | `.well-sm`      |
+| Large      | `.well-lg`      |
+| Small      | `.well-sm`      |
+{: .table }
 
 {% example html %}
 <div class="well well-lg">Large well</div>

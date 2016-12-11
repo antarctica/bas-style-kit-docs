@@ -156,13 +156,21 @@ Add `.table-hover` to highlight the row with focus within a table.
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
 
-The [standard contextual colours]({{ '/core/colours/#standard-contextual-colours' | prepend: site.baseurl }}) can be
-used as the background of table rows using these classes:
+The [standard contextual background classes]({{ '/core/colours/#standard-contextual-background-colours' | prepend: site.baseurl }}){: .alert-link }
+can be used as the background of table rows using these classes:
 
-* `.success`
-* `.warning`
-* `.danger`
-* `.info`
+| Standard Contextual Background | Table Cell Contextual Background Class |
+| ------------------------------ | ----------------------- |
+| Success                        | `.success`          |
+| Warning                        | `.warning`          |
+| Danger                         | `.danger`           |
+| Info                           | `.info`             |
+{: .table }
+
+These classes only work within tables. Use the
+[standard contextual background classes]({{ '/core/colours/#standard-contextual-background-colours' | prepend: site.baseurl }}){: .alert-link }
+to use them in other situations.
+{: .alert .alert-info }
 
 You can also use the `.active` class to highlight a row as if it had focus when using the
 [row hover]({{ '/core/tables/#hoverable-rows' | prepend: site.baseurl }}) styles.

@@ -62,4 +62,12 @@
       width: 160px;
     }
   }
+
+  .jumbotron-image-purchase-example {
+    background-image: url('/img/site-masthead-tom-welsh.jpg');
+
+    .text-overlay {
+      color: #ffffff;
+    }
+  }
 }

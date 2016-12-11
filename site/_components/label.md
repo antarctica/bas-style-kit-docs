@@ -49,10 +49,13 @@ Something <span class="label label-default">Label</span>
 The [standard contextual colours]({{ '/core/colours/#standard-contextual-colours' | prepend: site.baseurl }}) can be
 used for context by adding these classes:
 
-* `.label-success`
-* `.label-warning`
-* `.label-danger`
-* `.label-info`
+| Standard Context | Label Contextual Class  |
+| ---------------- | ----------------------- |
+| Success          | `.label-success`        |
+| Warning          | `.label-warning`        |
+| Danger           | `.label-danger`         |
+| Info             | `.label-info`           |
+{: .table }
 
 {% example html %}
 <span class="label label-success">Success label</span>
@@ -69,8 +72,7 @@ used for context by adding these classes:
 Labels will scale with their parent element.
 
 {% example html %}
-<p><button class="btn btn-bsk btn-default btn-lg">Large Button <span class="label label-default">Label</span></button></p>
-<p><button class="btn btn-bsk btn-default">Regular Button <span class="label label-default">Label</span></button></p>
-<p><button class="btn btn-bsk btn-default btn-sm">Small Button <span class="label label-default">Label</span></button></p>
-<p><button class="btn btn-bsk btn-default btn-xs">Extra-Small Button <span class="label label-default">Label</span></button></p>
+<h1><span class="label label-default">Label</span></h1>
+<h2><span class="label label-default">Label</span></h2>
+<h3><span class="label label-default">Label</span></h3>
 {% endexample %}

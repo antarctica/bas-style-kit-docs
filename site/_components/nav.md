@@ -22,7 +22,7 @@ sections:
 
 Use the `.nav` class to create secondary navigation elements, for splitting content into logical sections.
 
-Each navigation item must use an <code>&lt;a&gt;</code> element.
+Each navigation item **must** use an <code>&lt;a&gt;</code> element.
 
 For assistive technologies, all navigation elements should use a `role=navigation` attribute on an element which wraps
 around the element using the `.nav` class.
@@ -134,7 +134,7 @@ Remember to always use `.dropdown-menu-bsk` and `.dropdown-menu` together so tha
 
 Add the `.active` class to the navigation item currently active, to highlight where the end user is in the site.
 
-Make sure to include the `<span class="sr-only">(current)</span>` attribute as well. <br />
+Make sure to include a `<span class="sr-only">(current)</span>` element as well. <br />
 This provides a non-visual indication of the currently active item, suitable for assistive technologies.
 {: .alert .alert-warning }
 

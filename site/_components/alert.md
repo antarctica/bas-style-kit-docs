@@ -38,10 +38,13 @@ There is no *default* alert variant, as a grey alert for example wouldn't make a
 The [standard contextual colours]({{ '/core/colours/#standard-contextual-colours' | prepend: site.baseurl }}) can be
 used for context by adding these classes:
 
-* `.label-success`
-* `.label-warning`
-* `.label-danger`
-* `.label-info`
+| Standard Context | Label Contextual Class |
+| ---------------- | ---------------------- |
+| Success          | `.label-success`       |
+| Warning          | `.label-warning`       |
+| Danger           | `.label-danger`        |
+| Info             | `.label-info`          |
+{: .table }
 
 {% example html %}
 <div class="alert alert-success" role="alert">Success alert</div>

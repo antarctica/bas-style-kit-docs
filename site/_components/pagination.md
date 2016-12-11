@@ -74,7 +74,13 @@ Use the `aria-label` element so assistive technologies can tell each pagination 
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
 
-Add the `.pagination-sm` or `.pagination-lg` class to create smaller or larger pagination elements.
+Add one of these classes to alter the size of a pagination instance:
+
+| Pagination Size | Pagination Group Size Class |
+| --------------- | --------------------------- |
+| Large           | `.pagination-lg`            |
+| Small           | `.pagination-sm`            |
+{: .table }
 
 These classes don't apply to the pager.
 {: .alert .alert-info }
