@@ -323,14 +323,21 @@ $beta-phase: #f47738;
 // Temporary styles for site version (i.e. highlights to indicate this is a staging/testing site)
 // These will be become a variant of the navbar component in the future
 
-$testing-background-colour: #77ccff; // blue
-$testing-foreground-colour: #333333;
-
-// $testing-background-colour: #7cf7cf; // aquamarine
+// $testing-background-colour: #77ccff;  // blue
 // $testing-foreground-colour: #333333;
 
-// $testing-background-colour: #6F72AF; // purple - GDS mauve
+// $testing-background-colour: #7cf7cf;  // aquamarine
+// $testing-foreground-colour: #333333;
+
+// $testing-background-colour: #6F72AF;  // purple - GDS mauve
 // $testing-foreground-colour: #ffffff;
+
+// $testing-background-colour: #E1BEE7;  // purple - MD purple
+// $testing-foreground-colour: #333333;
+
+$testing-background-colour: #D1C4E9;  // purple - MD deep purple
+$testing-foreground-colour: #311B92;
+$testing-border-colour: #B39DDB;
 
 $testing-link-foreground-colour: $testing-foreground-colour;
 
@@ -343,6 +350,7 @@ $testing-link-foreground-colour: $testing-foreground-colour;
 .bsk-docs-alert-testing {
   border-radius: 0;
   background-color: $testing-background-colour;
+  border-color: $testing-border-colour;
   color: $testing-foreground-colour;
 
   .alert-link {
@@ -368,5 +376,10 @@ $testing-link-foreground-colour: $testing-foreground-colour;
   &.margin-bottom {
     margin-top: -20px;
     margin-bottom: 20px;
+    border-bottom: 5px solid $testing-background-colour;
   }
+}
+
+.bsk-docs-alert-no-border {
+  border: none;
 }
