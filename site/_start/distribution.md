@@ -53,19 +53,32 @@ For the current version ({% include snippets/bsk-version.html %}):
 
 ### Compiled CSS
 {: #{{ 'Compiled CSS' | slugify }} }
+### Sub-Resource Integrity (SRI) values
+{: #{{ 'Sub-Resource Integrity (SRI) values' | slugify }} }
 
 {% include snippets/back-to-top.html %}
 
 Customised version of [Bootstrap](https://getbootstrap.com) for the BAS Style Kit:
+[Sub-Resource Integrity (SRI)](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) values are
+available for all CSS files served through the BAS CDN.
 
 {% highlight html %}
 {% if site.x_environment == 'staging' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endif %}/{% include snippets/bsk-version.html %}/css/bootstrap-bsk.css
 {% endhighlight %}
+| Resource                    | SRI value                                                                   |
+| --------------------------- | --------------------------------------------------------------------------- |
+| `css/bas-style-kit.css`     | `{% if site.x_environment == 'staging' %}{{ site.data.bsk_sri_base_staging['dist/css/bas-style-kit.css'] }}{% else %}{{ site.data.bsk_sri_base_production['dist/css/bas-style-kit.css'] }}{% endif %}`     |
+| `css/bootstrap-bsk.css`     | `{% if site.x_environment == 'staging' %}{{ site.data.bsk_sri_base_staging['dist/css/bootstrap-bsk.css'] }}{% else %}{{ site.data.bsk_sri_base_production['dist/css/bootstrap-bsk.css'] }}{% endif %}`     |
+| `css/bas-style-kit.min.css` | `{% if site.x_environment == 'staging' %}{{ site.data.bsk_sri_base_staging['dist/css/bas-style-kit.min.css'] }}{% else %}{{ site.data.bsk_sri_base_production['dist/css/bas-style-kit.min.css'] }}{% endif %}` |
+| `css/bootstrap-bsk.min.css` | `{% if site.x_environment == 'staging' %}{{ site.data.bsk_sri_base_staging['dist/css/bootstrap-bsk.min.css'] }}{% else %}{{ site.data.bsk_sri_base_production['dist/css/bootstrap-bsk.min.css'] }}{% endif %}` |
+{: .table .table-hover }
 
 BAS Style Kit styles:
+These values are also available in a machine readable format from:
 
 {% highlight html %}
 {% if site.x_environment == 'staging' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endif %}/{% include snippets/bsk-version.html %}/css/bas-style-kit.css
+https://{% if site.x_environment == 'staging' %}{{ site.bsk_docs_testing_url }}{% else %}{{ site.bsk_docs_production_url }}{% endif %}/data/bsk-sri.json
 {% endhighlight %}
 
 ### Minified CSS
@@ -195,64 +208,6 @@ It is **strongly** recommended to use the
 [NPM package]({{ '/start/distribution/#nodejs-package' | prepend: site.baseurl  }}){: .alert-link} rather than managing
 source files yourself to make upgrading to future releases of the Style Kit easier.
 {: .alert .alert-warning }
-
-## Sub-Resource Integrity (SRI)
-{: #{{ 'SRI' | slugify }} }
-
-{% include snippets/back-to-top.html %}
-
-[Sub-Resource Integrity (SRI)](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) is a
-security technology supported by some browsers to ensure resources they fetch (for example, CSS files from a CDN) are
-downloaded without modification or interference.
-
-It works by calculating a a cryptographic hash for each file and comparing it to a known, safe, value. If the values
-differ the resource will be blocked by the browser. Although primarily intended for JavaScript, it can, and is, also
-used for CSS styles.
-
-SRI is still an experimental technology, pending standardisation. However is it currently supported by major browsers
-and is **recommended** to be used.
-{: .alert .alert-info }
-
-The BAS Style Kit offers SRI values for:
-
-* compiled CSS
-* minified CSS
-
-SRI values are currently hosted on the same origin they are intending to protect. This is recognised as a critical
-issue and will be resolved before the next general release.
-{: .alert .alert-danger }
-
-### SRI values
-{: #{{ 'SRI values' | slugify }} }
-
-{% include snippets/back-to-top.html %}
-
-For the current version ({% include snippets/bsk-version.html %}):
-
-| Resource                    | SRI value                                                                   |
-| --------------------------- | --------------------------------------------------------------------------- |
-| `css/bas-style-kit.css`     | `{% if site.x_environment == 'staging' %}{{ site.data.bsk_sri_base_staging['dist/css/bas-style-kit.css'] }}{% else %}{{ site.data.bsk_sri_base_production['dist/css/bas-style-kit.css'] }}{% endif %}`     |
-| `css/bootstrap-bsk.css`     | `{% if site.x_environment == 'staging' %}{{ site.data.bsk_sri_base_staging['dist/css/bootstrap-bsk.css'] }}{% else %}{{ site.data.bsk_sri_base_production['dist/css/bootstrap-bsk.css'] }}{% endif %}`     |
-| `css/bas-style-kit.min.css` | `{% if site.x_environment == 'staging' %}{{ site.data.bsk_sri_base_staging['dist/css/bas-style-kit.min.css'] }}{% else %}{{ site.data.bsk_sri_base_production['dist/css/bas-style-kit.min.css'] }}{% endif %}` |
-| `css/bootstrap-bsk.min.css` | `{% if site.x_environment == 'staging' %}{{ site.data.bsk_sri_base_staging['dist/css/bootstrap-bsk.min.css'] }}{% else %}{{ site.data.bsk_sri_base_production['dist/css/bootstrap-bsk.min.css'] }}{% endif %}` |
-{: .table .table-hover }
-
-### SRI values endpoint
-{: #{{ 'SRI values endpoint' | slugify }} }
-
-{% include snippets/back-to-top.html %}
-
-General form:
-
-{% highlight html %}
-{% if site.x_environment == 'staging' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endif %}/{VERSION}/sri.json
-{% endhighlight %}
-
-For the current version ({% include snippets/bsk-version.html %}):
-
-{% highlight html %}
-{% if site.x_environment == 'staging' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endif %}/{% include snippets/bsk-version.html %}/sri.json
-{% endhighlight %}
 
 ## Cross Origin Resource Sharing (CORS)
 {: #{{ 'CORS' | slugify }} }
