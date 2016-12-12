@@ -27,9 +27,10 @@ The Style Kit uses a customised version of Bootstrap to follow our design choice
 The Style Kit is currently based on version <em>3.6.6</em> of Bootstrap,
 using the official [Bootstrap Sass port](https://github.com/twbs/bootstrap-sass).
 
-As well as Bootstrap, the BAS Style Kit takes influences from the
-[Government Digital Service (GDS)](https://gds.blog.gov.uk/about/), other frameworks, organisations and other sources
-of best practice - and we are grateful for these being open-sourced.
+As well as Bootstrap, the BAS Style Kit takes influences from:
+
+* the [Government Digital Service (GDS)](https://gds.blog.gov.uk/about/)
+* other frameworks, organisations and other sources of best practice
 
 ## Quick start
 {: #{{ 'Quick start' | slugify }} }
@@ -49,15 +50,14 @@ in the <code>&lt;head&gt;</code> element:
 {% include snippets/link-css-bas-style-kit-min.html %}
 {% endhighlight %}
 
-The first file, <em>bootstrap-bsk.min.css</em>, is the customised version of [Bootstrap](https://www.getbootstrap.com).
-<br />
-The second, <em>bas-style-kit.min.css</em>, is the Style Kit itself.
+The first file, `bootstrap-bsk.min.css`, is the customised version of [Bootstrap](https://www.getbootstrap.com). <br />
+The second, `bas-style-kit.min.css`, is the Style Kit itself.
 
 The order of these files is important because of how CSS styles cascade.
 {: .alert .alert-warning }
 
 Other ways of including the Style Kit in a website or application are listed in the
-[distribution]({{ '/start/distribution' | prepend: site.baseurl }}) documentation.
+[distribution]({{ '/start/distribution' | prepend: site.baseurl }}){: .alert-link } documentation.
 {: .alert .alert-info }
 
 ## Starter template
@@ -67,6 +67,10 @@ Other ways of including the Style Kit in a website or application are listed in 
 
 Below is the minimal HTML needed to use the BAS Style Kit, following recommended best practices, and ensuring
 compatibility with older web browsers.
+
+This [starter template]({{ '/examples/starter-template' | prepend: site.baseurl }}){: .alert-link } is also available
+as a standalone example.
+{: .alert .alert-info }
 
 {% highlight html %}
 <!DOCTYPE html>
@@ -97,7 +101,3 @@ compatibility with older web browsers.
   </body>
 </html>
 {% endhighlight %}
-
-This [starter template]({{ '/examples/starter-template' | prepend: site.baseurl }}){: .alert-link } is also available
-as a standalone example.
-{: .alert .alert-info }
