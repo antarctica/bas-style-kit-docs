@@ -9,4 +9,4 @@ RUN bundle install
 VOLUME /usr/src/app/site
 WORKDIR /usr/src/app/site
 EXPOSE 9000
-CMD jekyll serve --incremental --watch
+CMD jekyll serve --incremental --force_polling
