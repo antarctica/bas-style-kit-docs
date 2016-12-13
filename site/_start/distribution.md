@@ -32,6 +32,14 @@ Use **compiled** CSS styles in development environments, use **minified** CSS st
 [Source maps](http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/){: .alert-link } should loaded
 automatically by compatible browsers when **minified** CSS styles are used.
 
+{% if site.x_environment == 'staging' %}
+ <i class="fa fa-flask" aria-hidden="true"></i> <span class="sr-only">Testing version</span>
+These URLs refer to files in the latest development version of the Style Kit. Visit
+[style-kit.web.bas.ac.uk]({{ 'https://' | append: site.bsk_docs_production_url | append: '/start/distribution/#bas-cdn' }}){: .alert-link}
+for URLs to the latest stable version.
+{: .alert .bsk-docs-alert-testing }
+{% endif %}
+
 <table class="table table-bordered">
   <thead>
     <tr>
@@ -79,15 +87,13 @@ Remember, the order CSS files are included matters. Include the custom bootstrap
 
 {% include snippets/back-to-top.html %}
 
-Web fonts used by the BAS Style Kit are made available from the BAS CDN in these formats:
+Web fonts used by the BAS Style Kit are declared in their respective `@font-face` declarations.
+Font files are made available from the BAS CDN in these formats:
 
 * `.eot`
 * `.ttf`
 * `.woff`
 * `.woff2`
-
-URLs to these files are declared in their respective `@font-face` declarations.
-{: .alert .alert-info }
 
 ### Sub-Resource Integrity (SRI) values
 {: #{{ 'Sub-Resource Integrity (SRI) values' | slugify }} }
@@ -96,6 +102,14 @@ URLs to these files are declared in their respective `@font-face` declarations.
 
 [Sub-Resource Integrity (SRI)](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) values are
 available for all CSS files served through the BAS CDN.
+
+{% if site.x_environment == 'staging' %}
+ <i class="fa fa-flask" aria-hidden="true"></i> <span class="sr-only">Testing version</span>
+These values refer to files in the latest development version of the Style Kit. Visit
+[style-kit.web.bas.ac.uk]({{ 'https://' | append: site.bsk_docs_production_url | append: '/start/distribution/#sub-resource-integrity-sri-values' }}){: .alert-link}
+for values of the latest stable version.
+{: .alert .bsk-docs-alert-testing }
+{% endif %}
 
 | Resource                    | SRI value                                                                   |
 | --------------------------- | --------------------------------------------------------------------------- |
@@ -134,24 +148,41 @@ E.g.
 
 {% include snippets/back-to-top.html %}
 
-A `.zip` archive of he Style Kit is available containing:
+A `.zip` archive of the Style Kit is available containing:
 
 * compiled CSS
 * minified CSS with source maps
 * web fonts in `.eot`, `.ttf`, `.woff` and `.woff2` formats
 
-[Download latest version]({% if site.x_environment == 'staging' %}{{ site.bsk_package_base_staging }}{% else %}{{ site.bsk_package_base_production }}{% endif %}/{% include snippets/bsk-version.html %}/bas-style-kit-{% include snippets/bsk-version.html %}.zip){: .btn .btn-primary .btn-lg .btn-bsk .btn-bsk-primary }
+{% if site.x_environment == 'staging' %}
+ <i class="fa fa-flask" aria-hidden="true"></i> <span class="sr-only">Testing version</span>
+This download is for the latest development version of the Style Kit. Visit
+[style-kit.web.bas.ac.uk]({{ 'https://' | append: site.bsk_docs_production_url | append: '/start/distribution/#bas-cdn' }}){: .alert-link}
+for latest stable version.
+{: .alert .bsk-docs-alert-testing }
+{% endif %}
 
 It is **strongly** recommended to use the
 [BAS CDN]({{ '/start/distribution/#bas-cdn' | prepend: site.baseurl  }}){: .alert-link} rather than managing
 these files yourself to make upgrading to future releases of the Style Kit easier.
 {: .alert .alert-warning }
 
+[Download latest version]({% if site.x_environment == 'staging' %}{{ site.bsk_package_base_staging }}{% else %}{{ site.bsk_package_base_production }}{% endif %}/{% include snippets/bsk-version.html %}/bas-style-kit-{% include snippets/bsk-version.html %}.zip){: .btn .btn-bsk .btn-default }
+
 ## NodeJS package
 {: #{{ 'NodeJS package' | slugify }} }
 
 {% include snippets/back-to-top.html %}
 
+{% if site.x_environment == 'staging' %}
+ <i class="fa fa-flask" aria-hidden="true"></i> <span class="sr-only">Testing version</span>
+There isn't a NodeJS package for the latest development version of the Style Kit. Visit
+[style-kit.web.bas.ac.uk]({{ 'https://' | append: site.bsk_docs_production_url | append: '/start/distribution/#bas-cdn' }}){: .alert-link}
+for latest stable version.
+{: .alert .bsk-docs-alert-testing }
+{% endif %}
+
+{% if site.x_environment == 'production' %}
 Source files for the Style Kit are available as a [NodeJS](https://www.npmjs.com/package/bas-style-kit) package.
 
 {% highlight shell %}
@@ -161,19 +192,25 @@ $ npm install --save bas-style-kit
 Using the Style Kit in this way requires you to compile the Style Kit's Sass files and perform other tasks yourself.
 <br /> This workflow is documented in the [core BAS Style Kit project]({{ site.bsk_source_code_url }}){: .alert-link}.
 {: .alert .alert-info }
+{% endif %}
 
 ## Source files
 {: #{{ 'Source files' | slugify }} }
 
 {% include snippets/back-to-top.html %}
 
-Source files for the Style Kit are available as a [Git repository]({{ site.bsk_source_code_url }}):
+Source files for the Style Kit are available as a [Git repository]({{ site.bsk_source_code_url }}).
+Stable releases of the Style Kit are [tagged]({{ site.bsk_source_code_url }}/releases).
 
 {% highlight shell %}
 $ git clone {{ site.bsk_source_code_url }}.git
 {% endhighlight %}
 
-Releases of the Style Kit are [tagged]({{ site.bsk_source_code_url }}/releases).
+{% if site.x_environment == 'staging' %}
+ <i class="fa fa-flask" aria-hidden="true"></i> <span class="sr-only">Testing version</span>
+Checkout the `develop` branch for the latest development version of the Style Kit.
+{: .alert .bsk-docs-alert-testing }
+{% endif %}
 
 Using the Style Kit in this way requires you to compile the Style Kit's Sass files and perform other tasks yourself.
 <br /> This workflow is documented in the [core BAS Style Kit project]({{ site.bsk_source_code_url }}){: .alert-link}.
