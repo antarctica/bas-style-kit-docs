@@ -274,10 +274,10 @@ To create or update the Docker image for this project [Experimental!]:
 $ cd bas-style-kit-docs/
 $ docker login docker-registry.data.bas.ac.uk
 $ docker build -t docker-registry.data.bas.ac.uk/bsk/bas-style-kit-docs:alpine .
+$ docker push docker-registry.data.bas.ac.uk/bsk/bas-style-kit-docs:alpine
 ```
 
-**Note:** The Docker image for this project is hosted in the BAS Docker Registry, which is private.
-You will need an account for the [BAS GitLab instance](https://gitlab.data.bas.ac.uk) to use this registry.
+**Note:** An account for the [BAS Docker Registry](https://gitlab.data.bas.ac.uk) is needed to use this image.
 
 ## Usage
 
@@ -314,15 +314,20 @@ To test changes using Docker [Experimental!]:
 2. Run an instance of this docker image [1]
 3. Visit [localhost:9000](http://localhost:9000)
 
-To deploy changes using Docker [Experimental!]:
-
-* follow the instructions given for the relevant environment above
-
 [1]
+
+On Linux/MacOS:
 
 ```shell
 $ cd bas-style-kit-docs/
-$ docker run -p 9000:9000 -v $PWD\site:/usr/src/app/site --name bsk-docs docker-registry.data.bas.ac.uk/bsk/bas-style-kit-docs:alpine
+$ docker run -t -i -p 9000:9000 -v $(PWD)/site:/usr/src/app/site --rm --name bsk-docs docker-registry.data.bas.ac.uk/bsk/bas-style-kit-docs:alpine
+```
+
+On Windows:
+
+```shell
+$ cd bas-style-kit-docs/
+$ docker run -t -i -p 9000:9000 -v $PWD\site:/usr/src/app/site --rm --name bsk-docs docker-registry.data.bas.ac.uk/bsk/bas-style-kit-docs:alpine
 ```
 
 ## Developing
