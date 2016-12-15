@@ -8,5 +8,8 @@ RUN bundle install
 # Setup site
 VOLUME /usr/src/app/site
 WORKDIR /usr/src/app/site
+
+# Setup Jekyll serve
 EXPOSE 9000
-CMD jekyll serve --incremental --force_polling
+ENTRYPOINT ["jekyll"]
+CMD ["serve", "--incremental", "--force_polling"]
