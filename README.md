@@ -1,233 +1,27 @@
 # BAS Style Kit Documentation
 
 Master: [![Build Status](https://semaphoreci.com/api/v1/antarctica/bas-style-kit-docs/branches/master/badge.svg)](https://semaphoreci.com/antarctica/bas-style-kit-docs)
-Develop: [![Build Status](https://semaphoreci.com/api/v1/antarctica/bas-style-kit-docs/branches/develop/badge.svg)](https://semaphoreci.com/antarctica/bas-style-kit-docs)
+Develop: [![build status](https://gitlab.data.bas.ac.uk/BSK/bas-style-kit-docs/badges/develop/build.svg)](https://gitlab.data.bas.ac.uk/BSK/bas-style-kit-docs/commits/develop)
 
-End-user documentation for the BAS Style Kit, a collection of HTML, CSS, and JS components for developing web projects
-consistent with the BAS brand.
+End-user documentation for the BAS Style Kit, documenting what it includes, and how to use it to build websites and
+web-applications.
+
+This documentation is built as a static website, using Jekyll.
 
 **This project uses version 0.1.0 of the Base flavour of the BAS Base Project - Pristine**.
 
 **Note:** Production instances of this project are currently **NOT** supported.
 
-## Overview
+**Note:** This project is currently being updated to use Docker, and switch CI/CD provider to GitLab.
 
-This project is part of the BAS Style Kit. It provides documentation on the various features and components the Style
-Kit contains, and these can be used in websites and applications.
+## Editing
 
-This project uses Jekyll, a static website builder, to convert Markdown documents into HTML pages. Continuous
-Integration and Continuous Deployment services are used to trigger Jekyll builds automatically as changes are made.
+See the relevant documentation for how this documentation is put together:
 
-Please contact the [BAS Web & Applications Team](mailto:webapps@bas.ac.uk) for a further overview of how this works.
-
-## Site structure
-
-* Collection (e.g. `core` - *Core styles*)
-    * Topic (e.g. `type` - *Typography*)
-        * Section (e.g. `alignment` - *Alignment classes*)
-
-## Section anchors
-
-The methods used by Kramdown and Jekyll differ, therefore Kramdown's automatic anchor generation is disabled and must
-be set manually to use the Jekyll slugify method to ensure navigation links match page anchors.
-
-E.g.
-
-> ## HTML5
-> {: #{{ 'HTML5' | slugify }} }
->
-> ...
-
-**Note:** An anchor is required for any heading which should be included in the table of contents for each page.
-
-## Section metadata
-
-Each section should include metadata to indicate:
-
-* the phase of development for the style/component (i.e. live (stable), experimental (alpha/beta), deprecated)
-* the version at which the relevant phase was reached (live since version x.x.x, etc.)
-* where the style/component came from
-* whether the style/component is included in the core Style Kit release or if its optional (e.g. devicons, data-tables)
-
-A snippet is used to generate this metadata, it accepts the following options:
-
-* `current_phase` - one of the *section phases* described below
-* `future_phase` - one of the *section phases* described below
-* `current_version` - a string representing the version the `current_phase` was first applied
-* `future_version` - a string representing the version the `future_phase` was first applied
-* `origin` - one of the *origins* described below
-* `included` - either `yes` or `no`
-
-The `future_phase` and `future_version` parameters are optional and may be omitted if not applicable.
-Values for other parameters are required.
-
-E.g.
-
-```markdown
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
-```
-
-### section phases
-
-The following phases can be used:
-
-* `alpha` - where a style/component is under construction, or newly imported and not yet polished and intended for use
-* `beta` - where a style/component is in its final form with only minor corrections/tweaks before ready for general use
-* `live` - where a style/component is well formed, polished and intended for everyday use
-* `deprecated` - where a style/component is no longer needed and will be removed in a future version
-
-A style/component is expected to move through these phases, but may loop through the Alpha-Beta-Live phases numerous
-times. A style/component may be multiple phases, providing these are in different versions.
-
-E.g. A component *Foo* is developed as part of version `0.2.0`, and then updated with a new design in version `0.3.0`
-
-* When the component is first developed its `current_phase` will be `alpha`
-* As the component is further refined `current_phase` will move to `beta`
-* When the component is fully developed and released `current_phase` will move to `live`
-* Sometime later, enhancements are made to the component, `current_phase` will still be `live`, but `future_phase` will
-now be set to `alpha`
-* The enhancements are developed further, `current_phase` will still be `live`, `future_phase` will now be set to `beta`
-* The enhanced component is released, `future_phase` is unset
-
-The `current_phase` only moves through its phases once. `future_phase` will move through the `alpha`, `beta` and
-`deprecated` phases as changes are made.
-
-The `current_version` will change each time the component is re-released,
-though his makes it look like the component was only ever available since the increasing version number, this is
-technically true. The updated component was only available, in the form that's documented, since the updated version.
-
-### Section origin
-
-Use one of:
-
-* `bootstrap`
-
-### Section availability
-
-Use one of:
-
-* `yes`
-* `no`
-
-## Topic table of contents
-
-Include the following snippet immediately after the front matter of a topic page:
-
-```markdown
-## Contents
-{:.no_toc #{{ 'Contents' | slugify }}}
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
-```
-
-**Note:** If a topic page uses HTML, this won't work and a manually created list will be required instead.
-
-## Topic sorting
-
-For some collections sorting is used to control the order in which topics are presented in topic indexes, and the drop
-down navigation. By default collections sort topics in file order (i.e. `1-numbers`, `and-then-letters`).
-
-Collections using topic sorting:
-
-* Start
-
-A property `sort_index`, defined as front-matter, is used to control the order of topics, with `0` being first.
-Any topic without this property are listed first, therefore all topics **must** define this property.
-
-Example front-matter:
-
-```
----
-sort_index: 2
-title: Foo
----
-```
-
-## Linking to Jira issues
-
-To link to Jira issue use the following tag, which is implemented by a custom plugin.
-
-```html
-{% jira issue="BSK-129" %}
-```
-
-In production environments, i.e. `JEKYLL_ENV=production`, a call is made to the Jira API to retrieve the current status
-of an issue ('to-do', 'done', etc.), and display this alongside a link to the issue in a stylised component.
-
-In development environments, the default, the call to Jira is skipped. A static status of 'unknown' is returned instead.
-
-### Tag configuration
-
-The connection to Jira, and the user the API is accessed under is configured in the Jekyll configuration file.
-
-E.g.
-
-```yaml
-jira_issues:
-  instance: https://jira.example.com
-  username: user
-```
-
-An environment variable, `JEKYLL_JIRA_ISSUE_PLUGIN_ACCOUNT_PASSWORD` is read in to provide the password for the user
-account configured above.
-
-This variable can be set with a bash profile, or CI/CD environment. It can also be passed directly on the command line:
-
-```shell
-$ JEKYLL_JIRA_ISSUE_PLUGIN_ACCOUNT_PASSWORD=password jekyll build
-```
-
-### Markup customisation
-
-The markup structure used to render each issue is:
-
-* wrapper
-    * link element
-        * Icon (*optional*)
-        * Issue ID
-    * Status element
-
-I.e. A wrapper surrounds two elements, a link to the issue, whose text is the issue ID, and the current status of the
-issue (as text).
-
-Classes are applied to these elements, a default set are defined by this plugin and cannot be omitted.
-Additional classes can be set either at a global level (using `_config.yml` options) or on an instance by instance
-basis using tag parameters.
-
-Global classes are defined as part of the plugin configuration under the `classes` element, for example:
-
-```yaml
-jira_issues:
-  classes:
-    wrapper_classes: "label label-jira-issue"
-```
-
-**Note:** Both global and instance classes can be set together. It is not possible to omit global variables for a
-particular instance.
-
-This table summarises the classes which can be applied and how these are set in various contexts.
-
-| Element | Config option       | Parameter           | Default Classes                                                                     |
-| ------- | ------------------- | ------------------- | ----------------------------------------------------------------------------------- |
-| Wrapper | `wrapper_classes`   | `wrapper_classes`   | `jira-issue`                                                                        |
-| Link    | `link_classes`      | `link_classes`      | `jira-issue-link`                                                                   |
-| Icon    | `link_icon_classes` | `link_icon_classes` | None                                                                                |
-| Status  | `status_classes`    | `status_classes`    | `jira-issue-status jira-issue-status-STATUS jira-issue-status-colour-STATUS-COLOUR` |
-
-**Note:** Where `link_icon_classes` isn't defined this element will be omitted entirely.
-
-An example of a rendered issue, with no additional classes defined, looks like this:
-
-```html
-<span class="jira-issue label label-jira-issue">
-    <a class="jira-issue-link " href="https://jira.example.com/browse/APP-101">
-        <i class="fa fa-ticket" aria-hidden="true"></i>
-        APP-101
-    </a>
-    <span class="jira-issue-status jira-issue-status-done jira-issue-status-colour-green ">Done</span>
-</span>
-```
+* [site structure](docs/editing/site-structure.md)
+* [topics](docs/editing/topics.md)
+* [topic sections](docs/editing/topic-sections.md)
+* [jira issues plugin](docs/editing/plugin-jira-issues.md)
 
 ## Setup
 
@@ -242,6 +36,7 @@ to bring up a local development environment
 5. `$ cd ..` (back to *provisioning*)
 6. `$ ansible-playbook site-development-local.yml`
 7. `$ cd ..` (back to *bas-style-kit-docs*)
+**Note:** This information is out of date and should not be relied upon.
 
 To bring up the staging environment:
 
@@ -268,17 +63,6 @@ To bring up the production environment:
 
 [TODO]
 
-To create or update the Docker image for this project [Experimental!]:
-
-```
-$ cd bas-style-kit-docs/
-$ docker login docker-registry.data.bas.ac.uk
-$ docker build -t docker-registry.data.bas.ac.uk/bsk/bas-style-kit-docs:alpine .
-$ docker push docker-registry.data.bas.ac.uk/bsk/bas-style-kit-docs:alpine
-```
-
-**Note:** An account for the [BAS Docker Registry](https://gitlab.data.bas.ac.uk) is needed to use this image.
-
 ## Usage
 
 To apply and view changes you've made to site content in a local development environment:
@@ -291,6 +75,7 @@ To apply and view changes you've made to site content in a local development env
 
 **Note:** The value of the `JEKYLL_JIRA_ISSUE_PLUGIN_ACCOUNT_PASSWORD` environment variable is secret, contact the
 [BAS Web & Applications Team](mailto:webapps@bas.ac.uk) for access.
+**Note:** This information is out of date and should not be relied upon.
 
 To deploy changes to the staging environment:
 
@@ -308,46 +93,64 @@ Continuous Deployment will automatically detect these changes and deploy them in
 
 Note: Due to caching, these changes may not appear immediately.
 
-To test changes using Docker [Experimental!]:
+## Developing
 
-1. Optionally, rebuild the docker image for this project if the Gemfile has changed  (see the *Setup* section)
-2. Run an instance of this docker image [1]
-3. Visit [localhost:9000](http://localhost:9000)
+[Docker](https://www.docker.com/products/docker) and access to the private
+[BAS Docker Registry](https://docker-registry.data.bas.ac.uk) are required to build this project locally.
 
-[1]
-
-On Linux/MacOS:
+On macOS:
 
 ```shell
-$ cd bas-style-kit-docs/
+$ brew install git
+$ brew cask install docker
+$ docker login docker-registry.data.bas.ac.uk
+
+$ git clone -b develop https://bitbucket.org/antarctica/bas-style-kit-docs.git
+$ cd bas-style-kit-docs
+
 $ docker run -t -i -p 9000:9000 -v $(PWD)/site:/usr/src/app/site --rm --name bsk-docs docker-registry.data.bas.ac.uk/bsk/bas-style-kit-docs:alpine
 ```
 
+Visit [localhost:9000](http://localhost:9000)
+
+**Note:** On Windows install Docker and Git, then start the docker container using:
+
 On Windows:
 
+* Install Docker and Git
+
 ```shell
-$ cd bas-style-kit-docs/
+$ docker login docker-registry.data.bas.ac.uk
+
+$ git clone -b develop https://bitbucket.org/antarctica/bas-style-kit-docs.git
+$ cd bas-style-kit-docs
+
 $ docker run -t -i -p 9000:9000 -v $PWD\site:/usr/src/app/site --rm --name bsk-docs docker-registry.data.bas.ac.uk/bsk/bas-style-kit-docs:alpine
 ```
 
-## Developing
+### Updating dependencies
 
-### Version control
+If new Gem dependencies are introduced, the project Docker image will need to be rebuilt and pushed to the private BAS
+Docker Repository.
 
-This project uses version control. The project repository is located at:
-`ssh://git@stash.ceh.ac.uk:7999/bsk/bas-style-kit-docs.git`
+```shell
+$ cd bas-style-kit-docs/
+$ docker login docker-registry.data.bas.ac.uk
 
-Write access to this repository is restricted. Contact the project maintainer to request access.
+$ docker build -t docker-registry.data.bas.ac.uk/bsk/bas-style-kit-docs:alpine .
+$ docker push docker-registry.data.bas.ac.uk/bsk/bas-style-kit-docs:alpine
+```
 
-A read-only mirror of this repository is maintained on GitHub, located at:
-`https://github.com/antarctica/bas-style-kit-docs.git`
+
+
+
 
 ## Feedback
 
-The maintainer of this project is BAS Web & Applications Team, they can be contacted at: webapps@bas.ac.uk.
+The maintainer of this project is BAS Web & Applications Team, they can be contacted at:
+[webapps@bas.ac.uk](mailto:webapps@bas.ac.uk).
 
-This uses issue tracking for feedback. The project issue tracker is located at:
-`https://jira.ceh.ac.uk/BSK`
+The issue tracker for this project is available at: https://trello.com/b/0Mhzizpk/bas-style-kit
 
 ## Acknowledgements
 
@@ -372,4 +175,3 @@ Unless stated otherwise, all documentation is licensed under the Creative Common
 All code is licensed under the MIT license.
 
 Copies of these licenses are included within this project.
-
