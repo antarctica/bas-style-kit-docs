@@ -59,10 +59,6 @@ To deploy changes to the staging environment:
 Continuous Deployment will automatically detect these changes and deploy them into staging.
 
 Note: Due to caching, these changes may not appear immediately.
-To bring up the production environment:
-
-[TODO]
-
 
 To deploy changes to the production environment:
 
