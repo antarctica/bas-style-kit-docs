@@ -25,17 +25,6 @@ See the relevant documentation for how this documentation is put together:
 
 ## Setup
 
-To bring up a local development environment:
-
-1. Ensure you meet all the
-[requirements](https://paper.dropbox.com/doc/BAS-Base-Project-Pristine-Base-Flavour-Usage-ZdMdHHzf8xB4HjxcNuDXa#:h=Environment---local-developmen)
-to bring up a local development environment
-2. `$ git clone ssh://git@stash.ceh.ac.uk:7999/bsk/bas-style-kit-docs.git`
-3. `$ cd bas-style-kit-docs/provisioning/site-development-local`
-4. `$ vagrant up`
-5. `$ cd ..` (back to *provisioning*)
-6. `$ ansible-playbook site-development-local.yml`
-7. `$ cd ..` (back to *bas-style-kit-docs*)
 **Note:** This information is out of date and should not be relied upon.
 
 To bring up the staging environment:
@@ -59,22 +48,8 @@ with these settings:
                 * The value for this variable is secret, contact the
                 [BAS Web & Applications Team](mailto:webapps@bas.ac.uk) for access
 
-To bring up the production environment:
-
-[TODO]
-
 ## Usage
 
-To apply and view changes you've made to site content in a local development environment:
-
-1. `$ cd bas-style-kit-docs/provisioning/site-development-local`
-2. `$ vagrant ssh bas-style-kit-docs-dev-node1`
-3. `$ cd /srv/apps/bas-style-kit-docs/site`
-4. `$ JEKYLL_JIRA_ISSUE_PLUGIN_ACCOUNT_PASSWORD=password jekyll serve`
-5. Visit [bas-style-kit-docs-dev-node1.v.m:9000](http://bas-style-kit-docs-dev-node1.v.m:9000)
-
-**Note:** The value of the `JEKYLL_JIRA_ISSUE_PLUGIN_ACCOUNT_PASSWORD` environment variable is secret, contact the
-[BAS Web & Applications Team](mailto:webapps@bas.ac.uk) for access.
 **Note:** This information is out of date and should not be relied upon.
 
 To deploy changes to the staging environment:
@@ -84,6 +59,10 @@ To deploy changes to the staging environment:
 Continuous Deployment will automatically detect these changes and deploy them into staging.
 
 Note: Due to caching, these changes may not appear immediately.
+To bring up the production environment:
+
+[TODO]
+
 
 To deploy changes to the production environment:
 
