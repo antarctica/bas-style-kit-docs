@@ -1,0 +1,37 @@
+---
+
+stages:
+  - build
+  # - deploy
+
+job_jekyll_build:
+  stage: build
+  image: docker-registry.data.bas.ac.uk/bsk/bas-style-kit-docs:alpine-gitlab
+  script: "build"
+  artifacts:
+    name: "$CI_BUILD_TOKEN-content"
+    paths:
+      - _site
+    expire_in: 1 day
+
+# Note: GitLab automatically passes artifacts from previous stages by default.
+
+# job_s3_deploy_staging:
+#   stage: deploy
+#   image: antarctica/jekyll-deployment-image
+#   only: develop
+#   variables:
+#     - S3_DEPLOYMENT_BUCKET: style-kit-testing.web.bas.ac.uk
+#   environment:
+#     name: staging (testing)
+#     url: https://style-kit-testing.web.bas.ac.uk
+
+# job_s3_deploy_production:
+#   stage: deploy
+#   image: antarctica/jekyll-deployment-image
+#   only: master
+#   variables:
+#     - S3_DEPLOYMENT_BUCKET: style-kit.web.bas.ac.uk
+#   environment:
+#     name: production
+#     url: https://style-kit.web.bas.ac.uk
