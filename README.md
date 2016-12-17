@@ -116,9 +116,26 @@ $ docker build -t docker-registry.data.bas.ac.uk/bsk/bas-style-kit-docs:alpine .
 $ docker push docker-registry.data.bas.ac.uk/bsk/bas-style-kit-docs:alpine
 ```
 
+## Continuous Integration
 
+The BAS GitLab instance is used to run Continuous Integration.
 
+First add a new Git remote:
 
+```shell
+$ cd bas-style-kit-docs/
+$ git remote add bas-gl https://gitlab.data.bas.ac.uk/BSK/bas-style-kit-docs.git
+```
+
+Ensure you are on the `develop` branch, commit changes, and push them to this remote:
+
+```shell
+$ git add foo.bar
+$ git commit -m "..."
+$ git push bas-gl
+```
+
+Check the [project builds](https://gitlab.data.bas.ac.uk/BSK/bas-style-kit-docs/pipelines) for errors.
 
 ## Feedback
 
