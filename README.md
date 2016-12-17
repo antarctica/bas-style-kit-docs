@@ -70,15 +70,17 @@ Note: Due to caching, these changes may not appear immediately.
 
 ## Developing
 
-[Docker](https://www.docker.com/products/docker) and access to the private
-[BAS Docker Registry](https://docker-registry.data.bas.ac.uk) are required to build this project locally.
+[Git](https://git-scm.com), [Docker](https://www.docker.com/products/docker) and access to the private
+[BAS Docker Registry](https://docker-registry.data.bas.ac.uk) [1] are required to build this project locally.
 
-On macOS:
+Once the Docker container is running visit: [localhost:9000](http://localhost:9000). Jekyll will detect any changes to
+files within `/site` and automatically rebuild the relevent parts of the site. You will need to refresh your browser.
+
+**On macOS**
 
 ```shell
 $ brew install git
 $ brew cask install docker
-$ docker login docker-registry.data.bas.ac.uk
 
 $ git clone -b develop https://bitbucket.org/antarctica/bas-style-kit-docs.git
 $ cd bas-style-kit-docs
@@ -86,34 +88,41 @@ $ cd bas-style-kit-docs
 $ docker run -t -i -p 9000:9000 -v $(PWD)/site:/usr/src/app/site --rm --name bsk-docs docker-registry.data.bas.ac.uk/bsk/bas-style-kit-docs:alpine
 ```
 
-Visit [localhost:9000](http://localhost:9000)
-
-**Note:** On Windows install Docker and Git, then start the docker container using:
-
-On Windows:
+**On Windows**
 
 * Install Docker and Git
 
 ```shell
-$ docker login docker-registry.data.bas.ac.uk
-
 $ git clone -b develop https://bitbucket.org/antarctica/bas-style-kit-docs.git
 $ cd bas-style-kit-docs
 
 $ docker run -t -i -p 9000:9000 -v $PWD\site:/usr/src/app/site --rm --name bsk-docs docker-registry.data.bas.ac.uk/bsk/bas-style-kit-docs:alpine
 ```
 
+[1] The first time you use this registry, you will need to authenticate using:
+
+```shell
+$ docker login docker-registry.data.bas.ac.uk
+```
+
+* Visit [localhost:9000](http://localhost:9000)
+
 ### Updating dependencies
 
 If new Gem dependencies are introduced, the project Docker image will need to be rebuilt and pushed to the private BAS
-Docker Repository.
+Docker Repository [1].
 
 ```shell
 $ cd bas-style-kit-docs/
-$ docker login docker-registry.data.bas.ac.uk
 
 $ docker build -t docker-registry.data.bas.ac.uk/bsk/bas-style-kit-docs:alpine .
 $ docker push docker-registry.data.bas.ac.uk/bsk/bas-style-kit-docs:alpine
+```
+
+[1] The first time you use this registry, you will need to authenticate using:
+
+```shell
+$ docker login docker-registry.data.bas.ac.uk
 ```
 
 ## Continuous Integration
