@@ -7,7 +7,9 @@ stages:
 job_jekyll_build:
   stage: build
   image: docker-registry.data.bas.ac.uk/bsk/bas-style-kit-docs:alpine-gitlab
-  script: "build"
+  script:
+    - "pwd"
+    - "ls"
   artifacts:
     name: "$CI_BUILD_TOKEN-content"
     paths:
