@@ -13,7 +13,7 @@ job_jekyll_build:
   artifacts:
     name: "$CI_BUILD_TOKEN-content"
     paths:
-      - _site
+      - site/_site
     expire_in: 1 day
 
 # Note: GitLab automatically passes artifacts from previous stages by default.
