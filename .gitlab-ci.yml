@@ -9,7 +9,7 @@ job_jekyll_build:
   image: docker-registry.data.bas.ac.uk/bsk/bas-style-kit-docs:alpine
   before_script:
     - "cd site"
-  script: "build"
+  # script: "build"
   artifacts:
     name: "$CI_BUILD_TOKEN-content"
     paths:
