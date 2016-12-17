@@ -73,8 +73,9 @@ Note: Due to caching, these changes may not appear immediately.
 [Git](https://git-scm.com), [Docker](https://www.docker.com/products/docker) and access to the private
 [BAS Docker Registry](https://docker-registry.data.bas.ac.uk) [1] are required to build this project locally.
 
-Once the Docker container is running visit: [localhost:9000](http://localhost:9000). Jekyll will detect any changes to
-files within `/site` and automatically rebuild the relevent parts of the site. You will need to refresh your browser.
+Once the Docker container is running visit: [localhost:9000](http://localhost:9000).
+
+Jekyll will detect any changes to files within `/site` and automatically rebuild the relevent parts of the site.
 
 **On macOS**
 
@@ -105,8 +106,6 @@ $ docker run -t -i -p 9000:9000 -v $PWD\site:/usr/src/app/site --rm --name bsk-d
 $ docker login docker-registry.data.bas.ac.uk
 ```
 
-* Visit [localhost:9000](http://localhost:9000)
-
 ### Updating dependencies
 
 If new Gem dependencies are introduced, the project Docker image will need to be rebuilt and pushed to the private BAS
@@ -127,16 +126,11 @@ $ docker login docker-registry.data.bas.ac.uk
 
 ## Continuous Integration
 
-The BAS GitLab instance is used to run Continuous Integration.
+The [BAS GitLab instance](https://gitlab.data.bas.ac.uk) is used to run Continuous Integration. Settings are defined in
+`.gitlab-ci.yml`.
 
-First add a new Git remote:
-
-```shell
-$ cd bas-style-kit-docs/
-$ git remote add bas-gl https://gitlab.data.bas.ac.uk/BSK/bas-style-kit-docs.git
-```
-
-Ensure you are on the `develop` branch, commit changes, and push them to this remote:
+New [builds](https://gitlab.data.bas.ac.uk/BSK/bas-style-kit-docs/builds) are triggered automatically on each commit to
+the BAS GitLab remote [1]:
 
 ```shell
 $ git add foo.bar
@@ -144,7 +138,14 @@ $ git commit -m "..."
 $ git push bas-gl
 ```
 
-Check the [project builds](https://gitlab.data.bas.ac.uk/BSK/bas-style-kit-docs/pipelines) for errors.
+**Note:** Ensure you are on the `develop` branch.
+
+[1] To add the BAS GitLab as a Git remote:
+
+```shell
+$ cd bas-style-kit-docs/
+$ git remote add bas-gl https://gitlab.data.bas.ac.uk/BSK/bas-style-kit-docs.git
+```
 
 ## Feedback
 
