@@ -14,6 +14,8 @@ module Jekyll
 
       if ENV['CI_BUILD_REF'] != nil
         site.config['revision'] = ENV['CI_BUILD_REF']
+      elseif ENV['REVISION'] != nil
+        site.config['revision'] = ENV['REVISION']
       else
         site.config['revision'] = 'unknown'
       end
@@ -27,7 +29,21 @@ module Jekyll
       puts site.config['revision']
 
       # If the branch is known, convert to an environment
-      site.config['branch'] = (ENV['BRANCH_NAME'] if ENV.has_key?('BRANCH_NAME')) || (ENV['CI_BUILD_REF_SLUG'] if ENV.has_key?('CI_BUILD_REF_SLUG')) || "unknown"
+
+      puts "Debbie"
+      puts ENV['CI_BUILD_REF_SLUG']
+
+      if ENV['CI_BUILD_REF_SLUG'] != nil
+        site.config['branch'] = ENV['CI_BUILD_REF_SLUG']
+      elseif ENV['BRANCH_NAME'] != nil
+        site.config['branch'] = ENV['BRANCH_NAME']
+      else
+        site.config['branch'] = 'unknown'
+      end
+
+      puts "Emily"
+      puts site.config['branch']
+
       case site.config['branch']
       when "master"
         site.config['x_environment'] = 'production'
