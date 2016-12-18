@@ -14,7 +14,7 @@ module Jekyll
 
       if ENV['CI_BUILD_REF'] != nil
         site.config['revision'] = ENV['CI_BUILD_REF']
-      elseif ENV['REVISION'] != nil
+      elsif ENV['REVISION'] != nil
         site.config['revision'] = ENV['REVISION']
       else
         site.config['revision'] = 'unknown'
@@ -35,7 +35,7 @@ module Jekyll
 
       if ENV['CI_BUILD_REF_SLUG'] != nil
         site.config['branch'] = ENV['CI_BUILD_REF_SLUG']
-      elseif ENV['BRANCH_NAME'] != nil
+      elsif ENV['BRANCH_NAME'] != nil
         site.config['branch'] = ENV['BRANCH_NAME']
       else
         site.config['branch'] = 'unknown'
