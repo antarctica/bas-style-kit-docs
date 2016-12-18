@@ -21,7 +21,6 @@
   stage: build
   image: docker-registry.data.bas.ac.uk/bsk/bas-style-kit-docs:alpine
   before_script:
-    - "echo $CI_BUILD_REF"
     - "cd site"
   script: "jekyll build"
 
