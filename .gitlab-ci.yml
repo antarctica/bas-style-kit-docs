@@ -23,8 +23,13 @@ job_pack_artifact:
   before_script:
     - "export CI_BUILD_REF_SHORT=`echo $CI_BUILD_REF | cut -c1-7`"
     - "export DATETIME_INSTANT=`date --utc -Iseconds`"
-  script: "echo $CI_PROJECT_DIR/$CI_BUILD_REF_SHORT-content-$DATETIME_INSTANT"
 # Note: GitLab automatically passes artifacts from previous stages by default.
+  script: "zip -r $CI_BUILD_REF_SHORT-content-$DATETIME_INSTANT.zip site/_site/*"
+  artifacts:
+    name: "$CI_BUILD_TOKEN-content-zipped"
+    paths:
+      - "$CI_BUILD_REF_SHORT-content-$DATETIME_INSTANT-.zip"
+    expire_in: 1 day
 
 # job_s3_deploy_staging:
 #   stage: deploy
