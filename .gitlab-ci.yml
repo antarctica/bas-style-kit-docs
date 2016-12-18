@@ -1,29 +1,44 @@
 ---
 
-stages:
-  - build
-  - pack
-  # - deploy
+# == Notes ==
 
-job_jekyll_build:
+# - GitLab automatically passes artifacts from previous stages by default
+# - This configuration file uses some advanced YAML features (namely anchors) which may not be correctly displayed
+#   by syntax highlighting
+
+# == Job Templates ==
+
+.job_template_jekyll_build: &job_template_jekyll_build
   stage: build
   image: docker-registry.data.bas.ac.uk/bsk/bas-style-kit-docs:alpine
   before_script:
     - "cd site"
   script: "jekyll build"
+
+# == Global settings ==
+
+stages:
+  - build
+  - package
+# == Jobs ==
+
+jekyll-build-staging:
+  <<: *job_template_jekyll_build
+  only: develop
+  variables:
+    - JEKYLL_ENV: development
   artifacts:
     name: "$CI_BUILD_TOKEN-content"
     paths:
       - site/_site
     expire_in: 1 day
 
-job_pack_artifact:
-  stage: pack
+package-site-content:
+  stage: package
   image: antarctica/jekyll-deployment-image:alpine-gitlab-0.1.3
   before_script:
     - "export CI_BUILD_REF_SHORT=`echo $CI_BUILD_REF | cut -c1-7`"
     - "export DATETIME_INSTANT=`date --utc -Iseconds`"
-# Note: GitLab automatically passes artifacts from previous stages by default.
     - "cd site/_site"
   script: "zip -r ../../$CI_BUILD_REF_SHORT-content-$DATETIME_INSTANT.zip *"
   artifacts:

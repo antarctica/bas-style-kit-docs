@@ -127,10 +127,12 @@ $ docker login docker-registry.data.bas.ac.uk
 ## Continuous Integration
 
 The [BAS GitLab instance](https://gitlab.data.bas.ac.uk) is used to run Continuous Integration. Settings are defined in
-`.gitlab-ci.yml`.
+`.gitlab-ci.yml`, specifically the `jekyll-build-staging` job.
 
-New [builds](https://gitlab.data.bas.ac.uk/BSK/bas-style-kit-docs/builds) are triggered automatically on each commit to
-the BAS GitLab remote [1]:
+* the `jekyll-build-staging` job is triggered for all commits to the *develop* branch
+Each integration can be tracked from the [builds](https://gitlab.data.bas.ac.uk/BSK/bas-style-kit-docs/builds) page.
+
+To commit to the develop branch, use the BAS GitLab remote [1]:
 
 ```shell
 $ git add foo.bar
@@ -138,7 +140,7 @@ $ git commit -m "..."
 $ git push bas-gl
 ```
 
-**Note:** Ensure you are on the `develop` branch.
+**Note:** Ensure you commit changes to the `develop` branch only.
 
 [1] To add the BAS GitLab as a Git remote:
 
@@ -146,6 +148,16 @@ $ git push bas-gl
 $ cd bas-style-kit-docs/
 $ git remote add bas-gl https://gitlab.data.bas.ac.uk/BSK/bas-style-kit-docs.git
 ```
+
+## Continuous Deployment
+
+**Note:** This process is still being developed.
+
+The [BAS GitLab instance](https://gitlab.data.bas.ac.uk) is used to run Continuous Deployment. Settings are defined in
+`.gitlab-ci.yml`, specifically the `package-site-content` job.
+* the `package-site-content` job is triggered *automatically* after a successful CI build
+
+Each deployment can be tracked from the [builds](https://gitlab.data.bas.ac.uk/BSK/bas-style-kit-docs/builds) page.
 
 ## Feedback
 
