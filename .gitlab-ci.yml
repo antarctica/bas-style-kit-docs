@@ -28,7 +28,7 @@ job_pack_artifact:
   after_script:
     - "ls -l"
   artifacts:
-    name: "$CI_BUILD_REF_SHORT-content-$DATETIME_INSTANT-.zip"
+    name: "$CI_BUILD_TOKEN-content-zip"
     paths:
       - "$CI_BUILD_REF_SHORT-content-$DATETIME_INSTANT-.zip"
     expire_in: 1 day
