@@ -78,15 +78,18 @@ s3-snapshot-staging:
   variables:
     S3_SNAPSHOT_BUCKET: bas-packages-dev
 
-# job_s3_deploy_staging:
-#   stage: deploy
-#   image: antarctica/jekyll-deployment-image
-#   only: develop
 #   variables:
-#     - S3_DEPLOYMENT_BUCKET: style-kit-testing.web.bas.ac.uk
-#   environment:
-#     name: staging (testing)
-#     url: https://style-kit-testing.web.bas.ac.uk
+s3-website-staging:
+  stage: deploy
+  image: antarctica/jekyll-deployment-image:alpine-gitlab-0.1.3
+  only:
+    - develop
+  variables:
+    S3_DEPLOYMENT_BUCKET: bas-style-kit-docs-stage
+  script: "aws s3 sync --delete site/_site s3://$S3_DEPLOYMENT_BUCKET/"
+  environment:
+    name: staging
+    url: https://style-kit-testing.web.bas.ac.uk
 
 # job_s3_deploy_production:
 #   stage: deploy
