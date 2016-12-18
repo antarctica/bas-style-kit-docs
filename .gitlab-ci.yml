@@ -24,9 +24,10 @@ stages:
 
 jekyll-build-staging:
   <<: *job_template_jekyll_build
-  only: develop
+  only:
+    - develop
   variables:
-    - JEKYLL_ENV: development
+    JEKYLL_ENV: development
   artifacts:
     name: "$CI_BUILD_TOKEN-content"
     paths:
