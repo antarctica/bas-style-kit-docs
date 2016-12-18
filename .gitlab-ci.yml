@@ -5,6 +5,15 @@
 # - GitLab automatically passes artifacts from previous stages by default
 # - This configuration file uses some advanced YAML features (namely anchors) which may not be correctly displayed
 #   by syntax highlighting
+# - Set required secret variables at: https://gitlab.data.bas.ac.uk/BSK/bas-style-kit-docs/variables - see below
+
+# = Secret variables
+# - Variables are grouped by section in KEY: "value" format (e.g. FOO: "bar")
+#   Sensetive are indicated with KEY: "[Sensetive]"
+#
+# - AWS IAM id/secret keys for 'scratch-deployment-bas-gitlab' user
+# > AWS_ACCESS_KEY_ID: "AKIAJ7F2QMJLCWPYQBSA"
+# > AWS_SECRET_ACCESS_KEY: [Sensetive]
 
 # == Job Templates ==
 
@@ -15,11 +24,25 @@
     - "cd site"
   script: "jekyll build"
 
+.job_template_s3_snapshot: &job_template_s3_snapshot
+  stage: deploy
+  image: antarctica/jekyll-deployment-image:alpine-gitlab-0.1.3
+  before_script:
+    - "export CI_BUILD_REF_SHORT=`echo $CI_BUILD_REF | cut -c1-7`"
+  script: "aws s3 cp $CI_BUILD_REF_SHORT-* s3://$S3_SNAPSHOT_BUCKET/$SNAPSHOT_BUCKET_PATH/$APP_NAME/"
+
 # == Global settings ==
 
 stages:
   - build
   - package
+  - deploy
+
+variables:
+  AWS_DEFAULT_REGION: eu-west-1
+  SNAPSHOT_BUCKET_PATH: zips/apps
+  APP_NAME: bas-style-kit-docs
+
 # == Jobs ==
 
 jekyll-build-staging:
@@ -47,6 +70,13 @@ package-site-content:
     paths:
       - "*.zip"
     expire_in: 1 day
+
+s3-snapshot-staging:
+  <<: *job_template_s3_snapshot
+  only:
+    - develop
+  variables:
+    S3_SNAPSHOT_BUCKET: bas_packages_dev
 
 # job_s3_deploy_staging:
 #   stage: deploy
