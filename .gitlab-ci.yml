@@ -30,7 +30,7 @@ job_pack_artifact:
   artifacts:
     name: "$CI_BUILD_TOKEN-content-zip"
     paths:
-      - "$CI_BUILD_REF_SHORT-content-$DATETIME_INSTANT-.zip"
+      - "*.zip"
     expire_in: 1 day
 
 # job_s3_deploy_staging:
