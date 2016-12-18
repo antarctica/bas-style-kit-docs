@@ -8,11 +8,7 @@ web-applications.
 
 This documentation is built as a static website, using Jekyll.
 
-**This project uses version 0.1.0 of the Base flavour of the BAS Base Project - Pristine**.
-
 **Note:** Production instances of this project are currently **NOT** supported.
-
-**Note:** This project is currently being updated to use Docker, and switch CI/CD provider to GitLab.
 
 ## Editing
 
@@ -22,26 +18,6 @@ See the relevant documentation for how this documentation is put together:
 * [topics](docs/editing/topics.md)
 * [topic sections](docs/editing/topic-sections.md)
 * [jira issues plugin](docs/editing/plugin-jira-issues.md)
-
-## Usage
-
-**Note:** This information is out of date and should not be relied upon.
-
-To deploy changes to the staging environment:
-
-1. Commit project changes to project repository
-
-Continuous Deployment will automatically detect these changes and deploy them into staging.
-
-Note: Due to caching, these changes may not appear immediately.
-
-To deploy changes to the production environment:
-
-1. Commit project changes to project repository
-
-Continuous Deployment will automatically detect these changes and deploy them into production.
-
-Note: Due to caching, these changes may not appear immediately.
 
 ## Developing
 
@@ -127,10 +103,10 @@ $ git remote add bas-gl https://gitlab.data.bas.ac.uk/BSK/bas-style-kit-docs.git
 
 ## Continuous Deployment
 
-**Note:** This process is still being developed.
-
 The BAS GitLab instance is used for [Continuous Deployment](https://gitlab.data.bas.ac.uk/BSK/bas-style-kit-docs/builds)
 using settings defined in `.gitlab-ci.yml` using these jobs and stages.
+
+**Note:** Due to caching, deployed changes may not appear for up to 30 minutes.
 
 | Stage   | Job                      | Trigger                                                       | Type      | Notes                              |
 | ------- | ------------------------ | ------------------------------------------------------------- | --------- | ---------------------------------- |
