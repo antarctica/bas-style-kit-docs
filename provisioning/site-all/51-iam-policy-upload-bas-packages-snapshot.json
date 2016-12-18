@@ -1,0 +1,16 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "UploadServiceArtefacts",
+            "Effect": "Allow",
+            "Action": [
+                "s3:PutObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::bas-packages-dev/zips/apps/*",
+                "arn:aws:s3:::bas-packages-prod/zips/apps/*"
+            ]
+        }
+    ]
+}

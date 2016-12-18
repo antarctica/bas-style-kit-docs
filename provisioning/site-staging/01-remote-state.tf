@@ -4,30 +4,30 @@
 # This allows resources shared across projects (such as networking infrastructure) to be kept in sync without needing
 # manual updates and allowing scalable, centralised management.
 #
-# This file relies on the AWS Terraform provider being previously configured - see '00-providers.tf'
+# This file relies on Terraform providers being previously configured - see '00-providers.tf'
 
-# The BAS-AWS remote state includes Server Certificate outputs for CloudFront distributions.
+# The BAS-AWS remote state includes outputs such as identifiers for VPC subnets, VPC security groups and DNS zones
 #
-# This resource requires a valid Atlas token specified as an environment variable (i.e. ATLAS_TOKEN=[Token])
-#
-# Atlas source: https://atlas.hashicorp.com/antarctica/environments/BAS-AWS
-# Terraform source: https://www.terraform.io/docs/providers/terraform/r/remote_state.html
-resource "terraform_remote_state" "BAS-AWS" {
-    backend = "atlas"
+# State source: https://s3-eu-west-1.amazonaws.com/bas-terraform-remote-state-prod/v1/BAS-AWS/terraform.tfstate
+# Terraform source: https://www.terraform.io/docs/providers/terraform/d/remote_state.html
+data "terraform_remote_state" "BAS-AWS" {
+    backend = "s3"
     config {
-        name = "antarctica/BAS-AWS"
-        path = "antarctica/BAS-AWS"
+        bucket = "bas-terraform-remote-state-prod"
+        key = "v1/BAS-AWS/terraform.tfstate"
+        region = "eu-west-1"
     }
 }
 
-# The BAS-CORE-DOMAINS remote state includes Route53 Zone outputs for DNS records
+# The BAS-CORE-DOMAINS remote state includes outputs such as identifiers for DNS zones
 #
-# Atlas source: https://atlas.hashicorp.com/antarctica/environments/BAS-AWS
-# Terraform source: https://www.terraform.io/docs/providers/terraform/r/remote_state.html
-resource "terraform_remote_state" "BAS-CORE-DOMAINS" {
-    backend = "atlas"
+# State source: https://s3-eu-west-1.amazonaws.com/bas-terraform-remote-state-prod/v1/BAS-CORE-DOMAINS/terraform.tfstate
+# Terraform source: https://www.terraform.io/docs/providers/terraform/d/remote_state.html
+data "terraform_remote_state" "BAS-CORE-DOMAINS" {
+    backend = "s3"
     config {
-        name = "antarctica/BAS-CORE-DOMAINS"
-        path = "antarctica/BAS-CORE-DOMAINS"
+        bucket = "bas-terraform-remote-state-prod"
+        key = "v1/BAS-CORE-DOMAINS/terraform.tfstate"
+        region = "eu-west-1"
     }
 }

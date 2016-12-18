@@ -9,11 +9,11 @@
 
 # = Secret variables
 # - Variables are grouped by section in KEY: "value" format (e.g. FOO: "bar")
-#   Sensetive are indicated with KEY: "[Sensetive]"
+#   Sensetive values are represented by "[Sensetive]"
 #
-# - AWS IAM id/secret keys for 'scratch-deployment-bas-gitlab' user
-# > AWS_ACCESS_KEY_ID: "AKIAJ7F2QMJLCWPYQBSA"
-# > AWS_SECRET_ACCESS_KEY: [Sensetive]
+# - AWS IAM id/secret keys for 'bas-gitlab-deploy-bas-style-kit-docs' user
+# > AWS_ACCESS_KEY_ID: "[Sensetive]"
+# > AWS_SECRET_ACCESS_KEY: "[Sensetive]"
 
 # == Job Templates ==
 

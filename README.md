@@ -23,31 +23,6 @@ See the relevant documentation for how this documentation is put together:
 * [topic sections](docs/editing/topic-sections.md)
 * [jira issues plugin](docs/editing/plugin-jira-issues.md)
 
-## Setup
-
-**Note:** This information is out of date and should not be relied upon.
-
-To bring up the staging environment:
-
-1. Ensure you meet all the
-[requirements](https://paper.dropbox.com/doc/BAS-Base-Project-Pristine-Base-Flavour-Usage-ZdMdHHzf8xB4HjxcNuDXa#:h2=Environment---staging-(static-)
-2. Checkout this project locally `$ git clone ssh://git@stash.ceh.ac.uk:7999/bsk/bas-style-kit-docs.git`
-3. `$ cd bas-style-kit-docs/provisioning/site-staging`
-4. `$ terraform plan`
-5. `$ terraform apply`
-6. `$ cd ../..` (back to *bas-style-kit-docs*)
-7. Commit Terraform state files to project repository
-8. Complete the relevant
-[setup tasks](https://paper.dropbox.com/doc/BAS-Base-Project-Pristine-Base-Flavour-Usage-ZdMdHHzf8xB4HjxcNuDXa#:h2=Environment---staging-(static-)
-with these settings:
-    * For Semaphore:
-        * Add these environment variables:
-            * `JEKYLL_ENV`
-                * Set to: `production`
-            * `JEKYLL_JIRA_ISSUE_PLUGIN_ACCOUNT_PASSWORD`
-                * The value for this variable is secret, contact the
-                [BAS Web & Applications Team](mailto:webapps@bas.ac.uk) for access
-
 ## Usage
 
 **Note:** This information is out of date and should not be relied upon.
@@ -166,6 +141,44 @@ using settings defined in `.gitlab-ci.yml` using these jobs and stages.
 [1] And then available from the *development* instance of the BAS Packages Service.
 
 [2] And then available at: [style-kit-testing.web.bas.ac.uk](https://style-kit-testing.web.bas.ac.uk).
+
+## Provisioning staging environment
+
+[Terraform](https://terrafrom.io) [1] and access to the [BAS AWS](https://bitbucket.org/antarctica/bas-aws) and
+[BAS Core Domains](https://bitbucket.org/antarctica/bas-core-domains) projects are required to provision resources
+for this project [2].
+
+Provisioned resources are defined in Terraform configuration files and arranged in multiple environments:
+
+* `provisioning/site-all` - defines resources shared by all environments
+* `provisioning/site-staging` - defines resources used by the staging environment
+Each environment is similar, but functions independently, except for the `site-all` environment, which all environments
+depend on. The instructions below show how to configure the staging environment, but they apply equally to any other.
+
+
+**Note:** As all environments depend on resources defined in the `site-all` environment, you **MUST** run provisioning
+for this first.
+
+```shell
+$ cd provisioning/site-all
+$ terraform plan
+$ terraform apply
+
+$ cd ../site-staging
+$ terraform plan
+$ terraform apply
+```
+
+During provisioning, an AWS IAM user will be created with least-privilege permissions to enable Continuous Deployment.
+Access credentials for this user will need to generated manually through the AWS Console and set as secret variables.
+
+See the `.gitlab-ci.yml` file for specifics which user to generate credentials for, and what to name these variables.
+
+**Note:** Commit all Terraform state files to this repository.
+
+[1] https://www.terraform.io/downloads.html
+
+[2] Contact the [BAS Web & Applications Team](mailto:webapps@bas.ac.uk) if you don't yet have access.
 
 ## Feedback
 

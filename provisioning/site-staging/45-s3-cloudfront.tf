@@ -38,7 +38,7 @@ resource "aws_s3_bucket" "bas-style-kit-docs-stage" {
 # Simple distribution
 #
 # This resource implicitly depends on the 'aws_s3_bucket.bas-style-kit-docs-stage' resource
-# This resource implicitly depends on outputs from the the 'terraform_remote_state.BAS-AWS' resource
+# This resource implicitly depends on outputs from the the 'terraform_remote_state.BAS-AWS' data source
 #
 # AWS source: https://aws.amazon.com/cloudfront/
 # Terraform source: https://www.terraform.io/docs/providers/aws/r/cloudfront_distribution.html
@@ -121,21 +121,21 @@ resource "aws_cloudfront_distribution" "bas-style-kit-docs-stage" {
     viewer_certificate {
         ssl_support_method = "sni-only"
         minimum_protocol_version = "TLSv1"
-        iam_certificate_id = "${terraform_remote_state.BAS-AWS.output.BAS-AWS-CERT-STAR-WEB-BAS-AC-UK-ID}"
+        iam_certificate_id = "${data.terraform_remote_state.BAS-AWS.output.BAS-AWS-CERT-STAR-WEB-BAS-AC-UK-ID}"
     }
 }
 
 # Alias static website distribution to a more suitable domain [HTTPS]
 #
 # This resource implicitly depends on the 'aws_cloudfront_distribution.bas-style-kit-docs-stage' resource
-# This resource implicitly depends on outputs from the the 'terraform_remote_state.BAS-CORE-DOMAINS' resource
+# This resource implicitly depends on outputs from the the 'terraform_remote_state.BAS-AWS' data source
 #
 # AWS source: http://docs.aws.amazon.com/Route53/latest/DeveloperGuide/rrsets-working-with.html
 # Terraform source: https://www.terraform.io/docs/providers/aws/r/route53_record.html
 #
 # Tags are not supported by this resource
 resource "aws_route53_record" "bas-style-kit-docs-stage" {
-    zone_id = "${terraform_remote_state.BAS-CORE-DOMAINS.output.WEB-BAS-AC-UK-ID}"
+    zone_id = "${data.terraform_remote_state.BAS-CORE-DOMAINS.output.WEB-BAS-AC-UK-ID}"
 
     name = "style-kit-testing"
     type = "CNAME"
