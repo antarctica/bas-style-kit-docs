@@ -126,13 +126,16 @@ $ docker login docker-registry.data.bas.ac.uk
 
 ## Continuous Integration
 
-The [BAS GitLab instance](https://gitlab.data.bas.ac.uk) is used to run Continuous Integration. Settings are defined in
-`.gitlab-ci.yml`, specifically the `jekyll-build-staging` job.
+The BAS GitLab instance is used for [Continuous Integration](https://gitlab.data.bas.ac.uk/BSK/bas-style-kit-docs/builds)
+using settings defined in `.gitlab-ci.yml` using these jobs and stages.
 
-* the `jekyll-build-staging` job is triggered for all commits to the *develop* branch
-Each integration can be tracked from the [builds](https://gitlab.data.bas.ac.uk/BSK/bas-style-kit-docs/builds) page.
+| Stage | Job                       | Trigger                             | Type      | Notes                           |
+| ----- | ------------------------- | ----------------------------------- | --------- | ------------------------------- |
+| Build | `jekyll-build-staging`    | Commits to the *develop* branch [1] | Automatic | Builds site in development mode |
 
-To commit to the develop branch, use the BAS GitLab remote [1]:
+**Note:** Ensure you commit changes to the `develop` branch only.
+
+[1] To commit to the develop branch, use the BAS GitLab remote [2]:
 
 ```shell
 $ git add foo.bar
@@ -140,9 +143,7 @@ $ git commit -m "..."
 $ git push bas-gl
 ```
 
-**Note:** Ensure you commit changes to the `develop` branch only.
-
-[1] To add the BAS GitLab as a Git remote:
+[2] To add the BAS GitLab as a Git remote:
 
 ```shell
 $ cd bas-style-kit-docs/
@@ -153,11 +154,18 @@ $ git remote add bas-gl https://gitlab.data.bas.ac.uk/BSK/bas-style-kit-docs.git
 
 **Note:** This process is still being developed.
 
-The [BAS GitLab instance](https://gitlab.data.bas.ac.uk) is used to run Continuous Deployment. Settings are defined in
-`.gitlab-ci.yml`, specifically the `package-site-content` job.
-* the `package-site-content` job is triggered *automatically* after a successful CI build
+The BAS GitLab instance is used for [Continuous Deployment](https://gitlab.data.bas.ac.uk/BSK/bas-style-kit-docs/builds)
+using settings defined in `.gitlab-ci.yml` using these jobs and stages.
 
-Each deployment can be tracked from the [builds](https://gitlab.data.bas.ac.uk/BSK/bas-style-kit-docs/builds) page.
+| Stage   | Job                      | Trigger                                                       | Type      | Notes                              |
+| ------- | ------------------------ | ------------------------------------------------------------- | --------- | ---------------------------------- |
+| Package | `package-site-content`   | `jekyll-build-staging` passes                                 | Automatic | -                                  |
+| Deploy  | `s3-snapshot-staging`    | `package-site-content` triggered by `jekyll-build-staging`    | Automatic | [1]                                |
+| Deploy  | `s3-website-staging`     | `package-site-content` triggered by `jekyll-build-staging`    | Automatic | [2]                                |
+
+[1] And then available from the *development* instance of the BAS Packages Service.
+
+[2] And then available at: [style-kit-testing.web.bas.ac.uk](https://style-kit-testing.web.bas.ac.uk).
 
 ## Feedback
 
