@@ -24,9 +24,8 @@ job_pack_artifact:
     - "export CI_BUILD_REF_SHORT=`echo $CI_BUILD_REF | cut -c1-7`"
     - "export DATETIME_INSTANT=`date --utc -Iseconds`"
 # Note: GitLab automatically passes artifacts from previous stages by default.
-  script: "zip -r $CI_BUILD_REF_SHORT-content-$DATETIME_INSTANT.zip site/_site/*"
-  after_script:
-    - "ls -l"
+    - "cd site/_site"
+  script: "zip -r ../../$CI_BUILD_REF_SHORT-content-$DATETIME_INSTANT.zip *"
   artifacts:
     name: "$CI_BUILD_TOKEN-content-zip"
     paths:
