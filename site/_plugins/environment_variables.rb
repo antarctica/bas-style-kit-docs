@@ -12,9 +12,7 @@ module Jekyll
       puts "Amy"
       puts ENV['CI_BUILD_REF']
 
-      if ENV.has_key?('REVISION')
-        site.config['revision'] = ENV['REVISION']
-      elseif ENV.has_key?('CI_BUILD_REF')
+      if ENV.has_key?('CI_BUILD_REF')
         site.config['revision'] = ENV['CI_BUILD_REF']
       else
         site.config['revision'] = 'unknown'
