@@ -31,10 +31,10 @@ module Jekyll
       # If the branch is known, convert to an environment
 
       puts "Debbie"
-      puts ENV['CI_BUILD_REF_SLUG']
+      puts ENV['CI_BUILD_REF_NAME']
 
-      if ENV['CI_BUILD_REF_SLUG'] != nil
-        site.config['branch'] = ENV['CI_BUILD_REF_SLUG']
+      if ENV['CI_BUILD_REF_NAME'] != nil
+        site.config['branch'] = ENV['CI_BUILD_REF_NAME']
       elsif ENV['BRANCH_NAME'] != nil
         site.config['branch'] = ENV['BRANCH_NAME']
       else
