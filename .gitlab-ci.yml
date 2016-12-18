@@ -76,7 +76,7 @@ s3-snapshot-staging:
   only:
     - develop
   variables:
-    S3_SNAPSHOT_BUCKET: bas_packages_dev
+    S3_SNAPSHOT_BUCKET: bas-packages-dev
 
 # job_s3_deploy_staging:
 #   stage: deploy
