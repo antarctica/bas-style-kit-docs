@@ -18,6 +18,7 @@ module Jekyll
         site.config['revision'] = ENV['CI_BUILD_REF']
       else
         site.config['revision'] = 'unknown'
+      end
 
       puts "Becca"
       site.config['revision']
