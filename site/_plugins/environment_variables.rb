@@ -8,6 +8,9 @@ module Jekyll
     def generate(site)
 
       # If the revision is known, take the first 7 characters
+
+      puts ENV['CI_BUILD_REF']
+
       site.config['revision'] = (ENV['REVISION'] if ENV.has_key?('REVISION')) || (ENV['CI_BUILD_REF'] if ENV.has_key?('CI_BUILD_REF')) || "unknown"
       site.config['revision'] = site.config['revision'][0..6]
 
