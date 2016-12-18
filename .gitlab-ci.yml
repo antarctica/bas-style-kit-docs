@@ -22,11 +22,11 @@ job_pack_artifact:
   image: antarctica/jekyll-deployment-image:alpine-gitlab-0.1.3
   before_script:
     - "export CI_BUILD_REF_SHORT=`echo $CI_BUILD_REF | cut -c1-7`"
-    - "export DATETIME_INSTANT=`date --utc --I=seconds`"
+    - "export DATETIME_INSTANT=`date --utc -I=seconds`"
   script:
     - "ls"
     - "ls site"
-    - "ls /"
+    - "ls /cache"
     - "echo $CI_PROJECT_DIR/$CI_BUILD_REF_SHORT-content-$DATETIME_INSTANT"
 # Note: GitLab automatically passes artifacts from previous stages by default.
 
