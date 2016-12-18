@@ -12,19 +12,19 @@ module Jekyll
       puts "Amy"
       puts ENV['CI_BUILD_REF']
 
-      if ENV.has_key?('CI_BUILD_REF')
+      if ENV['CI_BUILD_REF'] != nil
         site.config['revision'] = ENV['CI_BUILD_REF']
       else
         site.config['revision'] = 'unknown'
       end
 
       puts "Becca"
-      site.config['revision']
+      puts site.config['revision']
 
       site.config['revision'] = site.config['revision'][0..6]
 
       puts "Connie"
-      site.config['revision']
+      puts site.config['revision']
 
       # If the branch is known, convert to an environment
       site.config['branch'] = (ENV['BRANCH_NAME'] if ENV.has_key?('BRANCH_NAME')) || (ENV['CI_BUILD_REF_SLUG'] if ENV.has_key?('CI_BUILD_REF_SLUG')) || "unknown"
