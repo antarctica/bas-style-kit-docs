@@ -121,7 +121,7 @@ resource "aws_cloudfront_distribution" "bas-style-kit-docs-stage" {
     viewer_certificate {
         ssl_support_method = "sni-only"
         minimum_protocol_version = "TLSv1"
-        iam_certificate_id = "${data.terraform_remote_state.BAS-AWS.output.BAS-AWS-CERT-STAR-WEB-BAS-AC-UK-ID}"
+        iam_certificate_id = "${data.terraform_remote_state.BAS-AWS.BAS-AWS-CERT-STAR-WEB-BAS-AC-UK-ID}"
     }
 }
 
@@ -135,7 +135,7 @@ resource "aws_cloudfront_distribution" "bas-style-kit-docs-stage" {
 #
 # Tags are not supported by this resource
 resource "aws_route53_record" "bas-style-kit-docs-stage" {
-    zone_id = "${data.terraform_remote_state.BAS-CORE-DOMAINS.output.WEB-BAS-AC-UK-ID}"
+    zone_id = "${data.terraform_remote_state.BAS-CORE-DOMAINS.WEB-BAS-AC-UK-ID}"
 
     name = "style-kit-testing"
     type = "CNAME"
