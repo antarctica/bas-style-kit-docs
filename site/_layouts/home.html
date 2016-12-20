@@ -11,11 +11,4 @@ layout: html
 
 {% include layout/site-footer.html %}
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<!-- Compiled and minified Bootstrap JavaScript plugins, include individual plugins instead if needed -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<!-- Cookie library used to persistently hide the cookie banner (slightly ironic we need a cookie to do this) -->
-<script src="https://s3-eu-west-1.amazonaws.com/bas-cdn-dev/scratch/geomap/js.cookie.js"></script>
-<!-- Code for managing cookie banner -->
-<script src="{{ "/js/cookie-banner.js" | prepend: site.baseurl }}"></script>
+{% include snippets/body-js.html %}
