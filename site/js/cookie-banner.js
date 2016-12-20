@@ -2,11 +2,12 @@ jQuery(function($){
 
   // Look for cookie to hide cookie banner
 
-  var cookieBanner = Cookies.get('seen_cookie_message');
+  var cookieBannerValue = Cookies.get('seen_cookie_message');
 
-  if (typeof cookieBanner !== 'undefined') {
-    if (cookieBanner == 'yes') {
+  if (typeof cookieBannerValue !== 'undefined') {
+    if (cookieBannerValue == 'yes') {
 
+      // Supress cookie message
       // Since we already have jQuery available we may as well use its convenience methods
       jQuery('#site-cookie-banner').remove();
     }
@@ -17,8 +18,15 @@ jQuery(function($){
   jQuery('#site-cookie-banner').on('close.bs.alert', function () {
 
     // Set a cookie to persist hiding the cookie banner for the next 30 days
-    Cookies.set('seen_cookie_message', 'yes', {
-      expires: 30
-    });
+    var cookie_name = '';
+    var cookie_value = 'yes'
+
+    Cookies.set(
+      'seen_cookie_message',  // cookie name
+      'yes',                  // cookie value
+      {
+        expires: 30           // in days
+      }
+    );
   })
 });
