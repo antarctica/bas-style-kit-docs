@@ -42,7 +42,7 @@ $ docker run -t -i -p 9000:9000 -v $(PWD)/site:/usr/src/app/site --rm --name bsk
 
 **On Windows**
 
-* Install Docker and Git
+* Install Docker and Git using their respective installers
 
 ```shell
 $ git clone -b develop https://bitbucket.org/antarctica/bas-style-kit-docs.git

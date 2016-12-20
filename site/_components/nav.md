@@ -56,7 +56,7 @@ Always use the `.nav-tabs-bsk` and `.nav-tabs` classes together so that Style Ki
 {% endexample %}
 
 ### Tab navigation
-{: #{{ 'Pill navigation' | slugify }} }
+{: #{{ 'Tab navigation' | slugify }} }
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
 
