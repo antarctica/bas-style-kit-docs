@@ -13,8 +13,10 @@ sections:
 
 {% include snippets/table-of-contents.md %}
 
-## Overview
-{: #{{ 'Overview' | slugify }}}
+{% include snippets/topic-section-metadata.html
+  title="Overview"
+  heading_level=2
+%}
 
 Use the `.sidebar-bsk` class to display information that is distinct from main content, but which is shown
 **next to** it.
@@ -27,13 +29,18 @@ You **must** pick a [variant]({{ '/components/sidebar/#variants' | prepend: site
 sidebar, otherwise it will look strange. I.e. it is not enough to use `.sidebar-bsk` on its own.
 {: .alert .alert-warning }
 
-## Variants
-{: #{{ 'Variants' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="Variants"
+  heading_level=2
+%}
 
-### Default sidebar
-{: #{{ 'Default sidebar' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Default sidebar"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add the `.sidebar-bsk-default` class for standard Jumbotrons.
 
@@ -126,10 +133,13 @@ This adds the same top margin applied to headings and makes the page layout look
 </div>
 {% endexample %}
 
-### Inverted sidebar
-{: #{{ 'Inverted sidebar' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Inverted sidebar"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Use the `.sidebar-bsk-inverse` class to use a darker background for a sidebar. Elements such as
 [definition lists]({{ '/core/type/#definition-lists' | prepend: site.baseurl }}) will be styled appropriately.
@@ -151,13 +161,18 @@ Use the `.sidebar-bsk-inverse` class to use a darker background for a sidebar. E
 </div>
 {% endexample %}
 
-## Sizes
-{: #{{ 'Sizes' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="Sizes"
+  heading_level=2
+%}
 
-### Large sidebar
-{: #{{ 'Large sidebar' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Large sidebar"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add the `.sidebar-bsk-lg` class to increase the padding inside a sidebar.
 

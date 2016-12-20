@@ -15,8 +15,10 @@ sections:
 
 {% include snippets/table-of-contents.md %}
 
-## Overview
-{: #{{ 'Overview' | slugify }}}
+{% include snippets/topic-section-metadata.html
+  title="Overview"
+  heading_level=2
+%}
 
 Use the `.progress-bar` class to indicate the progress of some process or action.
 
@@ -31,13 +33,18 @@ Make sure to include the `aria-valuenow`, `aria-valuemin` and `aria-valuemax` at
 assistive technologies.
 {: .alert .alert-warning }
 
-## Variants
-{: #{{ 'Variants' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="Variants"
+  heading_level=2
+%}
 
-### Default progress bar
-{: #{{ 'Default progress bar' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Default progress bar"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 {% example html %}
 <div class="progress">
@@ -47,10 +54,13 @@ assistive technologies.
 </div>
 {% endexample %}
 
-### Progress bar with label
-{: #{{ 'Progress bar with label' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Progress bar with label"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add the progress directly within the progress bar to display the progress as an exact value.
 
@@ -81,10 +91,13 @@ Where the current progress value is too low to fit visually, add a `minimum-widt
 </div>
 {% endexample %}
 
-### Contextual colours
-{: #{{ 'Contextual colours' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Contextual colours"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 The [standard contextual colours]({{ '/core/colours/#standard-contextual-colours' | prepend: site.baseurl }}) can be
 used for context by adding these classes:
@@ -120,10 +133,13 @@ used for context by adding these classes:
 </div>
 {% endexample %}
 
-### Stacked progress bar
-{: #{{ 'Stacked progress bar' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Stacked progress bar"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Use the `.progress` class on an element which wraps around multiple progress bars to stack them together.
 

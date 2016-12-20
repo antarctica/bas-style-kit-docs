@@ -9,8 +9,10 @@ sections:
 
 {% include snippets/table-of-contents.md %}
 
-## Overview
-{: #{{ 'Overview' | slugify }}}
+{% include snippets/topic-section-metadata.html
+  title="Overview"
+  heading_level=2
+%}
 
 Use the `.media` class to show a left or right aligned image next to some text.
 
@@ -18,13 +20,18 @@ Use the `.media-object` class for the image of a media item.
 
 Use the `.media-body` class, with an optional `.media-header` element, for the text of a media item.
 
-## Variants
-{: #{{ 'Variants' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="Variants"
+  heading_level=2
+%}
 
-### Default media object
-{: #{{ 'Default media object' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Default media object item"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 {% example html %}
 <div class="media">
@@ -38,10 +45,13 @@ Use the `.media-body` class, with an optional `.media-header` element, for the t
 </div>
 {% endexample %}
 
-### Media object list
-{: #{{ 'Default media object' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Media object list"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Use the `.media-list` class on a list where each list item is a media object.
 
@@ -129,13 +139,18 @@ Media objects can also be nested.
 </ul>
 {% endexample %}
 
-## Layout
-{: #{{ 'Variants' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="Layout"
+  heading_level=2
+%}
 
-### Horizontal alignment
-{: #{{ 'Horizontal alignment' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Horizontal alignment"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add one of these classes to align a media object horizontally:
 
@@ -173,10 +188,13 @@ Add one of these classes to align a media object horizontally:
 </div>
 {% endexample %}
 
-### Vertical alignment
-{: #{{ 'Vertical alignment' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Vertical alignment"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 | Vertical Alignment  | Vertical Alignment Class |
 | ------------------- | ------------------------ |

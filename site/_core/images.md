@@ -9,10 +9,13 @@ sections:
 
 {% include snippets/table-of-contents.md %}
 
-## Responsive images
-{: #{{ 'Responsive images' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Responsive images"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Use the `.img-responsive` class to scale images nicely within their parent element. Use the [centred block]({{ '/core/layout/#centred-block' | prepend: site.baseurl }}) classes to centre a responsive image.
 
@@ -20,10 +23,13 @@ Use the `.img-responsive` class to scale images nicely within their parent eleme
 <img class="img-responsive" src="{{ '/img/site-masthead-tom-welsh.jpg' | prepend: site.baseurl }}" alt="Sky at Halley VI research station">
 {% endexample %}
 
-## Image shapes
-{: #{{ 'Image shapes' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Image shapes"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Shapes with rounded edges won't work in Internet Explorer 8.
 {: .alert .alert-danger }

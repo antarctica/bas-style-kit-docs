@@ -10,17 +10,19 @@ sections:
   -
     title: Sizes
   -
-    title: Nested button groups
+    title: Nested button group
   -
-    title: Vertical button groups
+    title: Vertical button group
   -
-    title: Justified button groups
+    title: Justified button group
 ---
 
 {% include snippets/table-of-contents.md %}
 
-## Overview
-{: #{{ 'Overview' | slugify }}}
+{% include snippets/topic-section-metadata.html
+  title="Overview"
+  heading_level=2
+%}
 
 Use the `.btn-group` class to combine buttons together into groups. Use the `.btn-toolbar` class to combine groups
 together into toolbars.
@@ -33,13 +35,18 @@ For buttons within button groups, remember to use the `.btn` and `.btn-bsk` clas
 styles are applied.
 {: .alert .alert-info }
 
-## Variants
-{: #{{ 'Variants' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="Variants"
+  heading_level=2
+%}
 
-### Default button group
-{: #{{ 'Default button group' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Default button group"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Groups contain buttons.
 
@@ -51,10 +58,13 @@ Groups contain buttons.
 </div>
 {% endexample %}
 
-### Default button toolbar
-{: #{{ 'Default button toolbar' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Default button toolbar"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Toolbars contain groups.
 
@@ -73,10 +83,10 @@ Toolbars contain groups.
 </div>
 {% endexample %}
 
-## Sizes
-{: #{{ 'Sizes' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Sizes"
+  heading_level=2
+%}
 
 Add one of these classes to alter the size of a button group:
 
@@ -123,13 +133,18 @@ Individual buttons will inherit the size of each button group.
 </div>
 {% endexample %}
 
-## Layouts
-{: #{{ 'Layouts' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="Layouts"
+  heading_level=2
+%}
 
-### Nested button groups
-{: #{{ 'Nested button groups' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Nested button group"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Button groups can be nested to include drop-down menus with buttons in a group.
 
@@ -154,8 +169,13 @@ applied.
 </div>
 {% endexample %}
 
-### Vertical button groups
-{: #{{ 'Vertical button groups' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="Vertical button group"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Use the `.btn-group-vertical` class instead of `.btn-group` to stack buttons vertically.
 
@@ -179,8 +199,13 @@ Split button drop-downs and button toolbars are not supported in vertical button
 </div>
 {% endexample %}
 
-### Justified button groups
-{: #{{ 'Justified button groups' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="Justified button group"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add the `.btn-group-justified` class to display equally sized buttons filling the width of the button group element.
 

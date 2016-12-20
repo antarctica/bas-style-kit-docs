@@ -17,8 +17,10 @@ sections:
 
 {% include snippets/table-of-contents.md %}
 
-## Overview
-{: #{{ 'Overview' | slugify }}}
+{% include snippets/topic-section-metadata.html
+  title="Overview"
+  heading_level=2
+%}
 
 Use the `.footer-bsk` class as a general purpose element to create *slim*, minimal elements with only simple text,
 or *fat* elements, containing navigation links, information and actions.
@@ -31,13 +33,18 @@ The footer component is designed to be compatible with almost all other componen
 strongly recommended to use a [container]({{ '/core/layout/#containers' | prepend: site.baseurl }}){: .alert-link }.
 {: .alert .alert-info }
 
-## Variants
-{: #{{ 'Variants' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="Variants"
+  heading_level=2
+%}
 
-### Default footer
-{: #{{ 'Default footer' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Default footer"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 {% example html %}
 <footer class="footer-bsk footer-bsk-default">
@@ -72,13 +79,18 @@ This example, whilst quite complex, demonstrates the sort of information shown i
 </footer>
 {% endexample %}
 
-## Components
-{: #{{ 'Components' | slugify }}}
+{% include snippets/topic-section-metadata.html
+  title="Components"
+  heading_level=2
+%}
 
-### Divider
-{: #{{ 'Divider' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Divider"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 The `.footer-bsk-divider` class acts as horizontal rule, with additional padding.
 
@@ -92,10 +104,13 @@ The `.footer-bsk-divider` class acts as horizontal rule, with additional padding
 </footer>
 {% endexample %}
 
-### Open Government License
-{: #{{ 'Open Government License' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Open Government License"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 The `.footer-bsk-ogl` class positions and styles the OGL logo and an accompanying licensing statement.
 
@@ -110,10 +125,13 @@ The `.footer-bsk-ogl` class positions and styles the OGL logo and an accompanyin
 </footer>
 {% endexample %}
 
-### Legal policy links
-{: #{{ 'Open Government License' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Legal policy links"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 The `.footer-bsk-policy-links` class positions and styles links to policies such as copyright and privacy statements.
 
@@ -131,13 +149,18 @@ The `.footer-bsk-policy-links` class positions and styles links to policies such
 </footer>
 {% endexample %}
 
-## Layouts
-{: #{{ 'Layouts' | slugify }}}
+{% include snippets/topic-section-metadata.html
+  title="Layouts"
+  heading_level=2
+%}
 
-### Fixed to bottom
-{: #{{ 'Fixed to bottom' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Fixed to bottom"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add the `.footer-bsk-fixed-bottom` class to fix a footer to the bottom of the page.
 
@@ -159,10 +182,13 @@ The Style Kit doesn't provide styles for this, as it depends on the height of th
 </footer>
 {% endexample %}
 
-### Static bottom
-{: #{{ 'Static bottom' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Static bottom"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add the `.footer-bsk-static-bottom` class to create a full-width footer that scrolls away with the page.
 

@@ -9,8 +9,10 @@ sections:
 
 {% include snippets/table-of-contents.md %}
 
-## Overview
-{: #{{ 'Overview' | slugify }}}
+{% include snippets/topic-section-metadata.html
+  title="Overview"
+  heading_level=2
+%}
 
 Use the `.header-bsk` class to create an element with the illusion of a
 [navbar]({{ '/components/navbar' | prepend: site.baseurl }}), but using simpler, self-contained styles, and which
@@ -20,13 +22,18 @@ Headers should only be used where the [Navbar's]({{ '/components/navbar' | prepe
 component is unsuitable, for example within external systems.
 {: .alert .alert-warning }
 
-## Variants
-{: #{{ 'Variants' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="Variants"
+  heading_level=2
+%}
 
-### Default header
-{: #{{ 'Default header' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Default header"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Headers need to use `.header-bsk-container-fluid`, instead of `.container-fluid` for headers. The same styles are
 applied, but in a form that is self-contained for compatibility with other styles.

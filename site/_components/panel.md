@@ -23,8 +23,10 @@ sections:
 
 {% include snippets/table-of-contents.md %}
 
-## Overview
-{: #{{ 'Overview' | slugify }}}
+{% include snippets/topic-section-metadata.html
+  title="Overview"
+  heading_level=2
+%}
 
 Use the `.panel` class to display information that is distinct from main content, but which is shown **within** it.
 
@@ -40,13 +42,18 @@ See the [Thumbnail]({{ '/components/thumbnail' | prepend: site.baseurl }}){: .al
 items that are distinct from main content, but which is shown **within** it.
 {: .alert .alert-info }
 
-## Variants
-{: #{{ 'Variants' | slugify }}}
+{% include snippets/topic-section-metadata.html
+  title="Variants"
+  heading_level=2
+%}
 
-### Default panel
-{: #{{ 'Default panel' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Default panel"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add the `.panel-default` class for standard panels. For added context you can use
 [contextual colours]({{ '/components/panel/#contextual-colours' | prepend: site.baseurl }}).
@@ -72,10 +79,13 @@ A more typical example includes a [header]({{ '/components/panel/#header' | prep
 </div>
 {% endexample %}
 
-### Primary panel
-{: #{{ 'Primary panel' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Primary panel"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add the `.panel-primary` class for the most important panel, where there is more than one.
 
@@ -90,10 +100,13 @@ Add the `.panel-primary` class for the most important panel, where there is more
 </div>
 {% endexample %}
 
-### Contextual colours
-{: #{{ 'Contextual colours' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Contextual colours"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 The [standard contextual colours]({{ '/core/colours/#standard-contextual-colours' | prepend: site.baseurl }}) can be
 used for context by adding these classes:
@@ -144,13 +157,18 @@ used for context by adding these classes:
 </div>
 {% endexample %}
 
-## Components
-{: #{{ 'Components' | slugify }}}
+{% include snippets/topic-section-metadata.html
+  title="Components"
+  heading_level=2
+%}
 
-### Body
-{: #{{ 'Body' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Body"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Use `.panel-body` class on a <code>&lt;main&gt;</code> element within a panel for its contents.
 
@@ -162,10 +180,13 @@ Use `.panel-body` class on a <code>&lt;main&gt;</code> element within a panel fo
 </div>
 {% endexample %}
 
-### Header
-{: #{{ 'Header' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Header"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Use the `.panel-heading` class on a <code>&lt;header&gt;</code> element within a panel to add a header.
 
@@ -189,10 +210,13 @@ style links within panel headings.
 </div>
 {% endexample %}
 
-### Footer
-{: #{{ 'Footer' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Footer"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Use `.panel-footer` class on a <code>&lt;footer&gt;</code> element within a panel to add a footer.
 
@@ -217,10 +241,13 @@ foreground.
 </div>
 {% endexample %}
 
-### Table
-{: #{{ 'Table' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Table"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 [Tables]({{ '/core/tables' | prepend: site.baseurl }}) can be added to panels directly. Providing table borders aren't
 used they will look seamless, a dividing border will be added automatically if a
@@ -285,10 +312,13 @@ strange.
 </div>
 {% endexample %}
 
-### List group
-{: #{{ 'List group' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="List group"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 [List groups]({{ '/components/list-group' | prepend: site.baseurl }}) can be added to panels directly. A dividing border
 will be added automatically if a [panel body]({{ '/components/panel/#body' | prepend: site.baseurl }}) is used.

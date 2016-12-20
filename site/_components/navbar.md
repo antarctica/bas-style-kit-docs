@@ -33,8 +33,10 @@ sections:
 
 {% include snippets/table-of-contents.md %}
 
-## Overview
-{: #{{ 'Overview' | slugify }}}
+{% include snippets/topic-section-metadata.html
+  title="Overview"
+  heading_level=2
+%}
 
 Use the `.navbar-bsk` and `.navbar` classes to create navigation bars used for primary, horizontal, navigation.
 They can contain links, drop-down menus, forms and other
@@ -51,10 +53,10 @@ this isn't possible, or suitable, the [header]({{ '/components/header' | prepend
 component can be used instead.
 {: .alert .alert-info }
 
-### Overflowing content
-{: #{{ 'Overflowing content' | slugify }}}
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Overflowing content"
+  heading_level=3
+%}
 
 The navbar component is not aware of the width of items that sit within it. This means it is possible for items to
 *overflow* onto a second level, breaking the page layout and looking bad.
@@ -67,13 +69,18 @@ elements and so reduce pressure on the number of items that need to be shown.
 There is no way to automatically detect when this overflow happens, and so requires manual testing at multiple screen
 sizes to ensure things work correctly.
 
-## Variants
-{: #{{ 'Variants' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="Variants"
+  heading_level=2
+%}
 
-### Default navbar
-{: #{{ 'Default navbar' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Default navbar"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 {% example html %}
 <nav class="navbar navbar-bsk">
@@ -140,13 +147,18 @@ This example, whilst quite complex, demonstrates the sort of items shown in a ty
 </nav>
 {% endexample %}
 
-## Components
-{: #{{ 'Components' | slugify }}}
+{% include snippets/topic-section-metadata.html
+  title="Components"
+  heading_level=2
+%}
 
-### Hidden items menu
-{: #{{ 'Hidden items menu' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Hidden items menu"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 At small screen sizes, a button is shown to open and close the menu of navbar items.
 
@@ -184,10 +196,13 @@ any screen size (for demonstration purposes).
 </nav>
 {% endexample %}
 
-### Brand text
-{: #{{ 'Brand text' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Brand text"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Use the `.navbar-brand` class to indicate the name of the current website or service.
 
@@ -201,10 +216,13 @@ Use the `.navbar-brand` class to indicate the name of the current website or ser
 </nav>
 {% endexample %}
 
-### Brand image
-{: #{{ 'Brand image' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Brand image"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Use the same `.navbar-brand` class with a image to show a logo or other image.
 
@@ -239,10 +257,13 @@ Using an image and text together is not currently supported.
 </nav>
 {% endexample %}
 
-### Text
-{: #{{ 'Text' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Text"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Use the `.navbar-text` class to correctly position and colour any text elements.
 
@@ -254,10 +275,13 @@ Use the `.navbar-text` class to correctly position and colour any text elements.
 </nav>
 {% endexample %}
 
-### Buttons
-{: #{{ 'Buttons' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Buttons"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add the `.navbar-btn` class to correctly position any button elements, unless the button is inside a `form` element.
 
@@ -275,10 +299,13 @@ Using the `.btn` class with a <code>&lt;a&gt;</code> element within a navigation
 </nav>
 {% endexample %}
 
-### Forms
-{: #{{ 'Forms' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Forms"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add the `.navbar-form` class to correctly position any form elements.
 
@@ -315,10 +342,13 @@ It is recommended to use this feature sparingly until support improves.
 </nav>
 {% endexample %}
 
-### Drop-down menus
-{: #{{ 'Drop-down menus' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Drop-down menus"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 [Drop-down menus]({{ '/components/drop-down' | prepend: site.baseurl }}) can be used as navbar items as-is.
 
@@ -342,10 +372,13 @@ Remember to always use `.dropdown-menu-bsk` and `.dropdown-menu` together so tha
 </nav>
 {% endexample %}
 
-### Non-navigation links
-{: #{{ 'Non-navigation links' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Non-navigation links"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add the `.navbar-link` class to correctly colour any link elements that are not part of the navigation menu.
 
@@ -361,10 +394,14 @@ Typically this will be used within elements using the
 </nav>
 {% endexample %}
 
-## Sizes
-{: #{{ 'Sizes' | slugify }}}
+{% include snippets/topic-section-metadata.html
+  title="Sizes"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
 
 Add the `.navbar-bsk-lg` class to increase the padding inside a sidebar.
 
@@ -444,13 +481,18 @@ This adds the correct top-padding and makes the page layout look normal.
 </nav>
 {% endexample %}
 
-## States
-{: #{{ 'States' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="States"
+  heading_level=2
+%}
 
-### Active item state
-{: #{{ 'Active state' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Active item"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add the `.active` class to the navbar item currently active, to highlight where the end user is in the site.
 
@@ -490,13 +532,18 @@ This can also be used within [drop-down]({{ '/components/drop-down/#active' | pr
 </nav>
 {% endexample %}
 
-## Layouts
-{: #{{ 'Layouts' | slugify }}}
+{% include snippets/topic-section-metadata.html
+  title="Layouts"
+  heading_level=2
+%}
 
-### Hidden items
-{: #{{ 'Hidden items' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Hidden items"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Wrap navbar items to be hidden in the menu in an element with the `.navbar-collapse` class.
 The [hidden items menu]({{ '/components/navbar/#hidden-items-menu' | prepend: site.baseurl }}) is used to show and hide
@@ -544,10 +591,13 @@ The example below will only behave correctly at small screen sizes.
 </nav>
 {% endexample %}
 
-### Item alignment
-{: #{{ 'Item alignment' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Item alignment"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Use the `.navbar-left` and `.navbar-right` classes to position navbar items, including navigation links, drop-down
 menus, text, buttons etc.
@@ -570,10 +620,13 @@ Multiple right aligned elements are not currently supported and won't look right
 </nav>
 {% endexample %}
 
-### Fixed to top
-{: #{{ 'Fixed to top' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Fixed to top"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add the `.navbar-fixed-top` class and include a [container]({{ 'core/layout/#containers' | prepend: site.baseurl }})
 to fix a navbar to the top of the page.
@@ -603,10 +656,13 @@ body {
 </nav>
 {% endexample %}
 
-### Fixed to bottom
-{: #{{ 'Fixed to bottom' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Fixed to bottom item"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add the `.navbar-fixed-bottom` class and include a [container]({{ 'core/layout/#containers' | prepend: site.baseurl }})
 to fix a navbar to the bottom of the page.
@@ -636,10 +692,13 @@ body {
 </nav>
 {% endexample %}
 
-### Static top
-{: #{{ 'Static top' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Static top"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add the `.navbar-static-top` class and include a [container]({{ 'core/layout/#containers' | prepend: site.baseurl }}) to create a
 full-width navbar that scrolls with the page.

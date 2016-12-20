@@ -23,8 +23,10 @@ sections:
 
 {% include snippets/table-of-contents.md %}
 
-## Overview
-{: #{{ 'Overview' | slugify }}}
+{% include snippets/topic-section-metadata.html
+  title="Overview"
+  heading_level=2
+%}
 
 Use the `.dropdown` class to create a menu that appears when triggered by a
 [supported element]({{ '/components/drop-down/#supported-elements' | prepend: site.baseurl }}).
@@ -39,16 +41,21 @@ Interactive drop-downs require the [drop-down]({{ '/interactivity/drop-down' | p
 JavaScript plugin, which is enabled on this site.
 {: .alert .alert-info }
 
-## Supported elements
-{: #{{ 'Supported elements' | slugify }}}
+{% include snippets/topic-section-metadata.html
+  title="Supported elements"
+  heading_level=2
+%}
 
 These elements are supported for triggering a drop-down menu. Other elements may be used, but are not supported and may
 not look right.
 
-### Button drop-down
-{: #{{ 'Button drop-down' | slugify }}}
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Button drop-down"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 {% example html %}
 <div class="dropdown">
@@ -62,10 +69,13 @@ not look right.
 </div>
 {% endexample %}
 
-### Split-button drop-down
-{: #{{ 'Split-button drop-down' | slugify }}}
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Split-button drop-down"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 {% example html %}
 <div class="btn-group">
@@ -81,21 +91,29 @@ not look right.
 </div>
 {% endexample %}
 
-### Navbar item drop-down
-{: #{{ 'Navbar item drop-downs' | slugify }}}
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Navbar item drop-down"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 See the [navbar]({{ '/components/navbar/#drop-down-menu' | prepend: site.baseurl }}) documentation for using drop-downs
 in Navbar items.
 
-## Variants
-{: #{{ 'Variants' | slugify }}}
+{% include snippets/topic-section-metadata.html
+  title="Variants"
+  heading_level=2
+%}
 
-### Default drop-down
-{: #{{ 'default-drop-down' | slugify }}}
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Default drop-down"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 {% example html %}
 <div class="dropdown">
@@ -109,10 +127,13 @@ in Navbar items.
 </div>
 {% endexample %}
 
-### Reverse drop-down
-{: #{{ 'reverse-drop-down' | slugify }}}
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Reverse drop-down"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Use the `.dropup` class, rather than `.dropdown` to have the drop-down menu open upwards.
 
@@ -128,13 +149,18 @@ Use the `.dropup` class, rather than `.dropdown` to have the drop-down menu open
 </div>
 {% endexample %}
 
-## Components
-{: #{{ 'Components' | slugify }}}
+{% include snippets/topic-section-metadata.html
+  title="Components"
+  heading_level=2
+%}
 
-### Link
-{: #{{ 'Links' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Link"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 {% example html %}
 <div class="dropdown dropdown-bsk-docs-example">
@@ -145,10 +171,15 @@ Use the `.dropup` class, rather than `.dropdown` to have the drop-down menu open
 </div>
 {% endexample %}
 
-### Divider
-{: #{{ 'Divider' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="Divider"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+Use the `.dropdown-divider` class on a drop-down item.
 
 {% example html %}
 <div class="dropdown dropdown-bsk-docs-example">
@@ -161,10 +192,15 @@ Use the `.dropup` class, rather than `.dropdown` to have the drop-down menu open
 </div>
 {% endexample %}
 
-### Header
-{: #{{ 'Header' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="Header"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+Use the `.dropdown-header` class on a drop-down item.
 
 {% example html %}
 <div class="dropdown dropdown-bsk-docs-example">
@@ -176,13 +212,18 @@ Use the `.dropup` class, rather than `.dropdown` to have the drop-down menu open
 </div>
 {% endexample %}
 
-## States
-{: #{{ 'States' | slugify }}}
+{% include snippets/topic-section-metadata.html
+  title="States"
+  heading_level=2
+%}
 
-### Active item
-{: #{{ 'Active' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Active item"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 if used within the [Navbar]({{ '/components/navbar' | prepend: site.baseurl }}) component, add the `.active` class to
 the drop-down menu item currently active, to highlight where the end user is in the site.
@@ -200,10 +241,13 @@ This provides a non-visual indication of the currently active item, suitable for
 </div>
 {% endexample %}
 
-### Disabled item
-{: #{{ 'Disabled' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Disabled item"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add the `.disabled` class to drop-down menu items which cannot be used.
 
@@ -221,13 +265,21 @@ be used for dangerous actions.
 </div>
 {% endexample %}
 
-## Layouts
-{: #{{ 'Layouts' | slugify }}}
+{% include snippets/topic-section-metadata.html
+  title="Layouts"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
-### Drop-down alignment
-{: #{{ 'Drop-down alignment' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Drop-down alignment"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add the `.dropdown-menu-right` class to right align the drop-down menu
 [supported element]({{ '/components/drop-down/supported-elements' | prepend: site.baseurl }}), by default the menu is

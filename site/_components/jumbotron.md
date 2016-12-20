@@ -15,8 +15,10 @@ sections:
 
 {% include snippets/table-of-contents.md %}
 
-## Overview
-{: #{{ 'Overview' | slugify }}}
+{% include snippets/topic-section-metadata.html
+  title="Overview"
+  heading_level=2
+%}
 
 Use the `.jumbotron-bsk` and `.jumbotron` classes to showcase key content.
 
@@ -27,13 +29,18 @@ jumbotron, otherwise it will look strange. It is not enough to use `.jumbotron .
 Always use the `.jumbotron-bsk` and `.jumbotron` classes together so that Style Kit specific styles are applied.
 {: .alert .alert-info }
 
-## Variants
-{: #{{ 'Variants' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="Variants"
+  heading_level=2
+%}
 
-### Default jumbotron
-{: #{{ 'Default jumbotron' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Default jumbotron"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add the `.jumbotron-bsk-default` class for a standard jumbotron.
 
@@ -45,10 +52,13 @@ Add the `.jumbotron-bsk-default` class for a standard jumbotron.
 </div>
 {% endexample %}
 
-### Inverse jumbotron
-{: #{{ 'Full-width jumbotron' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Inverse jumbotron"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Use the `.jumbotron-bsk-inverse` class to use a darker background for a jumbotron.
 
@@ -60,10 +70,13 @@ Use the `.jumbotron-bsk-inverse` class to use a darker background for a jumbotro
 </div>
 {% endexample %}
 
-## Sizes
-{: #{{ 'Sizes' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Sizes"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add one of these classes to alter the size of a jumbotron:
 
@@ -89,13 +102,18 @@ Add one of these classes to alter the size of a jumbotron:
 </div>
 {% endexample %}
 
-## Layouts
-{: #{{ 'Layouts' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="Layouts"
+  heading_level=2
+%}
 
-### Full-width jumbotron
-{: #{{ 'Full-width jumbotron' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Full-width jumbotron"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 If you want a jumbotron to be full width, but within a layout that uses a
 [fixed-width container]({{ '/core/layout/#fixed-width-container' | prepend: site.baseurl }}), place the jumbotron

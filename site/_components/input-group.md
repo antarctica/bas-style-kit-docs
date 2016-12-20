@@ -13,8 +13,10 @@ sections:
 
 {% include snippets/table-of-contents.md %}
 
-## Overview
-{: #{{ 'Overview' | slugify }}}
+{% include snippets/topic-section-metadata.html
+  title="Overview"
+  heading_level=2
+%}
 
 Use the `.input-group` class with the `.input-group-addon` class to place text/icons, buttons, and even other form
 elements, before or a after a control in a [form field]({{ '/core/forms/#form-fields' | prepend: site.baseurl }}).
@@ -29,10 +31,13 @@ not supported.
 All input groups should have a label to make sure they can be understood by assistive technologies.
 {: .alert .alert-warning }
 
-## Supported elements
-{: #{{ 'Supported elements' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Supported elements"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Input groups are designed for textual [form inputs]({{ '/core/forms/#inputs' | prepend: site.baseurl }}) only.
 Other elements may be used, but are not supported and may not look right.
@@ -49,13 +54,18 @@ such as the example below, to avoid side effects, and may not otherwise look rig
 container: 'body';
 {% endhighlight %}
 
-## Variants
-{: #{{ 'Variants' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="Variants"
+  heading_level=2
+%}
 
-### Basic input group
-{: #{{ 'Basic input group' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Basic input group"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Input group addons can be before and/or after a
 [form control]({{ '/core/forms/#form-controls' | prepend: site.baseurl }}), these examples use text.
@@ -106,10 +116,13 @@ Icons can be used as well.
 </form>
 {% endexample %}
 
-### Checkbox and radio input group
-{: #{{ 'Checkbox radio input group' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Checkbox and radio input group"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 [Radio options and checkboxes]({{ '/core/forms/#radio-options-and-checkboxes' | prepend: site.baseurl }}) can be used
 instead of text.
@@ -140,10 +153,13 @@ instead of text.
 </form>
 {% endexample %}
 
-### Button input group
-{: #{{ 'Button input group' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="alpha" current_version="0.1.0" origin="custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Button input group"
+  heading_level=3
+  current_phase="alpha"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Use the `.input-group-btn` class, instead of `.input-group-addon`, as an element which contains a
 [button]({{ '/core/buttons' | prepend: site.baseurl }}).
@@ -166,10 +182,13 @@ Use the `.input-group-btn` class, instead of `.input-group-addon`, as an element
 </form>
 {% endexample %}
 
-### Drop-down button input group
-{: #{{ 'Drop-down button input group' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="alpha" current_version="0.1.0" origin="custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Drop-down button input group"
+  heading_level=3
+  current_phase="alpha"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Use the `.input-group-btn` class, instead of `.input-group-addon`, as an element which contains a
 [button drop-down]({{ '/components/drop-down/#button-drop-down' | prepend: site.baseurl }}).
@@ -201,10 +220,13 @@ Style Kit.
 </form>
 {% endexample %}
 
-### Split-button drop-down input group
-{: #{{ 'Split-button drop-down input group' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="alpha" current_version="0.1.0" origin="custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Split-button drop-down input group"
+  heading_level=3
+  current_phase="alpha"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Use the `.input-group-btn` class, instead of `.input-group-addon`, as an element which contains a
 [split-button drop-down]({{ '/components/button-group/#split-button-drop-down' | prepend: site.baseurl }}).
@@ -238,10 +260,10 @@ the Style Kit.
 </form>
 {% endexample %}
 
-## Sizing
-{: #{{ 'Sizing' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Sizing"
+  heading_level=2
+%}
 
 Input groups scale with the size of their
 [form group]({{ '/core/forms/#form-groups-and-fieldsets' | prepend: site.baseurl }}).

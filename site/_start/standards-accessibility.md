@@ -18,6 +18,12 @@ sections:
     title: Skip navigation
 ---
 
+
+{% include snippets/topic-section-metadata.html
+  title="Overview"
+  heading_level=2
+%}
+
 As a government research institute, BAS has a responsibility to make its content available to as many people as
 possible.
 {: .lead }
@@ -31,8 +37,10 @@ content is readable by those with accessibility requirements, such as screen rea
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
 
-## Browser support
-{: #{{ 'Browser support' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="Browser support"
+  heading_level=2
+%}
 
 {% include snippets/back-to-top.html %}
 
@@ -46,10 +54,10 @@ This means the latest, stable, releases of all major browsers (subject to any ca
 See the Bootstrap documentation on [browser support](http://getbootstrap.com/getting-started/#support)
 for more detailed information.
 
-## HTML5
-{: #{{ 'HTML5' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="HTML5"
+  heading_level=2
+%}
 
 The BAS Style Kit is designed to work with the [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
 document type.
@@ -60,10 +68,10 @@ attributes and technologies to provide better accessibility and enable new uses 
 Whilst the use of this document type is technically optional, no support is offered for other doc types.
 {: .alert .alert-warning }
 
-## CSS3
-{: #{{ 'CSS3' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="CSS3"
+  heading_level=2
+%}
 
 As with HTML5, [CSS3](https://developer.mozilla.org/en/docs/Web/CSS/CSS3) is the latest evolution of the CSS standard
 for styling websites and applications, and is used extensively in the Style Kit.
@@ -73,10 +81,10 @@ It is supported by all major browsers, and includes new layout options, such as
 for [rounded corners](https://developer.mozilla.org/en/docs/Web/CSS/border-radius) and
 [animations](https://developer.mozilla.org/en/docs/Web/CSS/animation) for example.
 
-## Responsiveness and 'Mobile First'
-{: #{{ 'Responsiveness and Mobile First' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Responsiveness and Mobile First"
+  heading_level=2
+%}
 
 The Style Kit uses [mobile first](https://developer.mozilla.org/en-US/Apps/Progressive/Responsive/Mobile_first)
 design, which assumes pages will be viewed at the smallest possible size (i.e. on mobile phones) and then scales up,
@@ -102,21 +110,23 @@ will be included.
 See the [responsive breakpoints]({{ '/core/layout/#responsive-breakpoints' | prepend: site.baseurl }}) section for more
 information.
 
-## Colour contrast
-{: #{{ 'Colour contrast' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Colour contrast"
+  heading_level=2
+%}
 
 The colour contrast for text and any interactive elements **should** be at least *4:5:1*, as recommended by GDS and the
 [W3C](http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html).
 
-## Providing context
-{: #{{ 'Providing context' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="Providing context"
+  heading_level=2
+%}
 
-### Conveying context without colours or icons
-{: #{{ 'Conveying context without colours or icons' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Conveying context without colours or icons"
+  heading_level=3
+%}
 
 Relying on colour or icons alone to indicate the meaning or context of an action or notice is bad practice. This
 information cannot is inaccessible to colour-blind users for example, or those using assistive technologies – such as
@@ -129,10 +139,10 @@ Ideally [contextual colours]({{ '/core/colours/#standard-contextual-colours' | p
 [icons]({{ '/core/icons/#standard-contextual-icons' | prepend: site.baseurl }}) should only be needed for reinforcing
 meaning that is already present in text or other markup.
 
-### Link context and roles
-{: #{{ 'Link context and roles' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Link context and roles"
+  heading_level=3
+%}
 
 Where a link (<code>&lt;a&gt;</code>) element is used as a button to trigger in-page functionality, such as collapsing
 content, make sure to add `role="button"` to provide suitable context to assistive technologies.
@@ -140,10 +150,10 @@ content, make sure to add `role="button"` to provide suitable context to assisti
 Where a button (whether an actual button or a link element styled as such) uses the `.active` state, add
 `aria-pressed="true"` as well to convey this context to assistive technologies.
 
-### Contextual help text
-{: #{{ 'Contextual help text' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Contextual help text"
+  heading_level=3
+%}
 
 Where text is used to explain something on screen, for example a form field or the result of a calculation, an explicit
 link should be made between this text and the element.
@@ -157,10 +167,10 @@ used as well.
 
 See the [form help text]({{ '/core/forms/#help-text' | prepend: site.baseurl }}) section for an example.
 
-### Validation states
-{: #{{ 'Validation states' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Validation stages"
+  heading_level=3
+%}
 
 When displaying validation information, usually in the context of a user filling out a form, care should be taken not
 to rely on
@@ -177,10 +187,10 @@ For forms, where a form field is invalid, the `aria-invalid` attribute should be
 
 See the [form validation]({{ '/core/forms/#validation' | prepend: site.baseurl }}) section for an example.
 
-## Skip navigation
-{: #{{ 'Skip navigation' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Skip navigation context and roles"
+  heading_level=2
+%}
 
 Where a page begins with many navigation links, such as a navbar, a link to skip to page content *should* be included.
 

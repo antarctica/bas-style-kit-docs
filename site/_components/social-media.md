@@ -13,8 +13,10 @@ sections:
 
 {% include snippets/table-of-contents.md %}
 
-## Overview
-{: #{{ 'Overview' | slugify }}}
+{% include snippets/topic-section-metadata.html
+  title="Overview"
+  heading_level=2
+%}
 
 Use this component to consistently display links to the social media services BAS uses.
 
@@ -24,10 +26,13 @@ All brand assets trademarks of their respective owners, and subject to their res
 You must ensure that where you use these assets you comply with these restrictions.
 {: .alert .alert-warning }
 
-## Supported services
-{: #{{ 'Supported services' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Supported services"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 | Social Media Service | Social Media Service Class |
 | -------------------- | -------------------------- |
@@ -44,13 +49,18 @@ service.
 [Send feedback]({{ "/feedback.html" | prepend: site.baseurl }}){: .alert-link } if you require other services.
 {: .alert .alert-info }
 
-## Variants
-{: #{{ 'Variants' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="States"
+  heading_level=2
+%}
 
-### Static symbols
-{: #{{ 'Static symbols' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Static symbols"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Use the `.social-media-bsk-static` class with the relevant class for each service, containing the relevant
 [icon]({{ '/core/icons/#external-service-icons' | prepend: site.baseurl }}) for each service.
@@ -69,10 +79,13 @@ Use the `.social-media-bsk-static` class with the relevant class for each servic
 <div class="social-media-bsk-static rss"><i class="fa fa-3x fa-rss-square"></i><span class="sr-only">Follow us using RSS</span></div>
 {% endexample %}
 
-### Linked symbols
-{: #{{ 'Linked symbols' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Linked symbols"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Use the `.social-media-bsk-link` class with the relevant class for each service, containing the relevant
 [icon]({{ '/core/icons/#external-service-icons' | prepend: site.baseurl }}) for each service.
@@ -94,10 +107,13 @@ Use the `.social-media-bsk-link` class with the relevant class for each service,
 ## Layouts
 {: #{{ 'Layouts' | slugify }} }
 
-### List of symbols
-{: #{{ 'List of symbols' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="List of symbols"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Use the `social-media-bsk-list` class with a [inline list]({{ '/core/type/#inline-lists' | prepend: site.baseurl }})
 to display multiple [static]({{ '/components/social-media/#static-symbols' | prepend: site.baseurl }}) or

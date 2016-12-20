@@ -15,8 +15,10 @@ sections:
 
 {% include snippets/table-of-contents.md %}
 
-## Overview
-{: #{{ 'Overview' | slugify }}}
+{% include snippets/topic-section-metadata.html
+  title="Overview"
+  heading_level=2
+%}
 
 Use the `.alert` class to highlight feedback about a user action, or some other event.
 
@@ -24,16 +26,21 @@ You **must** pick a [variant]({{ '/components/alert/#variants' | prepend: site.b
 alert, otherwise it will look strange. It is not enough to use `.alert` on its own.
 {: .alert .alert-warning }
 
-## Variants
-{: #{{ 'Variants' | slugify }}}
+{% include snippets/topic-section-metadata.html
+  title="Variants"
+  heading_level=2
+%}
 
 There is no *default* alert variant, as a grey alert for example wouldn't make a lot of sense.
 {: .alert .alert-info }
 
-### Contextual colours
-{: #{{ 'contextual colours' | slugify }}}
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Contextual colours"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 The [standard contextual colours]({{ '/core/colours/#standard-contextual-colours' | prepend: site.baseurl }}) can be
 used for context by adding these classes:
@@ -53,10 +60,13 @@ used for context by adding these classes:
 <div class="alert alert-info" role="alert">Info alert</div>
 {% endexample %}
 
-### Contextual icons
-{: #{{ 'contextual icons' | slugify }}}
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Contextual icons"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 The [standard contextual icons]({{ '/core/icons/#standard-contextual-icons' | prepend: site.baseurl }}) can be
 used for adding extra context to alerts.
@@ -71,10 +81,18 @@ used for adding extra context to alerts.
 ## Components
 {: #{{ 'Components' | slugify }}}
 
-### Alert links
-{: #{{ 'alert links' | slugify }}}
+{% include snippets/topic-section-metadata.html
+  title="Components"
+  heading_level=2
+%}
 
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Alert links"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Use the `.alert-link` class for any <code>&lt;a&gt;</code> elements within an alert.
 
@@ -84,10 +102,13 @@ Use the `.alert-link` class for any <code>&lt;a&gt;</code> elements within an al
 <div class="alert alert-success" role="alert">Alert with a <a href="#">link</a></div>
 {% endexample %}
 
-### Dismissible alerts
-{: #{{ 'dismissible alerts' | slugify }}}
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Dismissible alerts"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add a `button` element using the [close icon]({{ '/core/icons/#close-icon' | prepend: site.baseurl }}), to create an ]
 alert that can be closed or dismissed.

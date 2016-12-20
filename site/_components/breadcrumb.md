@@ -11,8 +11,10 @@ sections:
 
 {% include snippets/table-of-contents.md %}
 
-## Overview
-{: #{{ 'Overview' | slugify }}}
+{% include snippets/topic-section-metadata.html
+  title="Overview"
+  heading_level=2
+%}
 
 Use the `.breadcrumb` class with a list of navigation items to indicate the current page's location within a hierarchy.
 
@@ -22,13 +24,18 @@ For assistive technologies, all navigation elements should use a `role=navigatio
 around the element using the `.nav` class.
 {: .alert .alert-warning }
 
-## Variants
-{: #{{ 'Variants' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="Variants"
+  heading_level=2
+%}
 
-### Default breadcrumb
-{: #{{ 'Default breadcrumb' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Default breadcrumb"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 {% example html %}
 <nav role="navigation">
@@ -40,13 +47,18 @@ around the element using the `.nav` class.
 </nav>
 {% endexample %}
 
-## States
-{: #{{ 'States' | slugify }}}
+{% include snippets/topic-section-metadata.html
+  title="States"
+  heading_level=2
+%}
 
-### Active item
-{: #{{ 'Active' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Active item"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add the `.active` class to the drop-down menu item currently active, to highlight where the end user is in the site.
 

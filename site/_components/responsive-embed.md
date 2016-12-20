@@ -13,8 +13,10 @@ sections:
 
 {% include snippets/table-of-contents.md %}
 
-## Overview
-{: #{{ 'Overview' | slugify }}}
+{% include snippets/topic-section-metadata.html
+  title="Overview"
+  heading_level=2
+%}
 
 Use the `.embed-responsive` class on an element wrapped around a video or other media item to allow browsers to scale
 them.
@@ -28,10 +30,13 @@ each responsive embed, otherwise it will look strange. It is not enough to use `
 You don't need to include `frameborder="0"` on embedded items, as the Style Kit will add this for you.
 {: .alert .alert-info }
 
-## Supported elements
-{: #{{ 'Supported elements' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Supported elements"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 This component is supported when used with these elements:
 
@@ -40,13 +45,18 @@ This component is supported when used with these elements:
 * <code>&lt;video&gt;</code>
 * <code>&lt;object&gt;</code>
 
-## Variants
-{: #{{ 'Variants' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="Variants"
+  heading_level=2
+%}
 
-### 16:9 responsive embed
-{: #{{ 'Responsive embed 16:9' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Responsive embed 16:9"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 {% example html %}
 <div class="embed-responsive embed-responsive-16by9">
@@ -60,10 +70,13 @@ This component is supported when used with these elements:
 </div>
 {% endexample %}
 
-### 4:3 responsive embed
-{: #{{ 'Responsive embed 4:3' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Responsive embed 4:3"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 {% example html %}
 <div class="embed-responsive embed-responsive-4by3">

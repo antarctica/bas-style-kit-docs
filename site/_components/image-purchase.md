@@ -13,22 +13,29 @@ sections:
 
 {% include snippets/table-of-contents.md %}
 
-## Overview
-{: #{{ 'Overview' | slugify }}}
+{% include snippets/topic-section-metadata.html
+  title="Overview"
+  heading_level=2
+%}
 
 Use the `.bsk-image-purchase` class to identify images or other media available for purchase from the BAS Image
 Collection.
 
-## Supported elements
-{: #{{ 'Supported elements' | slugify }}}
+{% include snippets/topic-section-metadata.html
+  title="Supported elements"
+  heading_level=2
+%}
 
 These elements are supported for use with the image purchase components. Other elements may be used, but are not
 supported and may not look right.
 
-### Thumbnail
-{: #{{ 'Thumbnail' | slugify }}}
-
-{% include snippets/topic-metadata.html current_phase="alpha" current_version="0.1.0" origin="custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Thumbnail"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add the `bsk-image-purchase` class to a [thumbnail]({{ '/components/thumbnail' | prepend: site.baseurl }}).
 
@@ -71,10 +78,13 @@ cannot be contained within another link.
 </a>
 {% endexample %}
 
-### Jumbotron
-{: #{{ 'Jumbotron' | slugify }}}
-
-{% include snippets/topic-metadata.html current_phase="alpha" current_version="0.1.0" origin="custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Jumbotron"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add the `image-purchase` class to a [jumbotron]({{ '/components/jumbotron' | prepend: site.baseurl }}).
 
@@ -87,13 +97,18 @@ Use the `background-image` CSS property to set the image, or other media item, a
 </div>
 {% endexample %}
 
-## Components
-{: #{{ 'Components' | slugify }}}
+{% include snippets/topic-section-metadata.html
+  title="Components"
+  heading_level=2
+%}
 
-### Image purchase symbol
-{: #{{ 'Image purchase symbol' | slugify }}}
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Image purchase symbol"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Use the `.image-purchase-symbol` class on an <code>&lt;a&gt;</code> element linked to the source of each image or other
 media item.

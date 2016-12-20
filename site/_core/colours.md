@@ -21,19 +21,22 @@ sections:
 
 {% include snippets/table-of-contents.md %}
 
-## Colour contrast
-{: #{{ 'Colour contrast' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Colour contrast"
+  heading_level=2
+%}
 
 If you change any of these colours, or use them for other purposes, ensure this complies with the
 [recommended minimum colour contrast]({{ '/start/standards-accessibility/#colour-contrast' | prepend: site.baseurl }}){: .alert-link }.
 {: .alert .alert-warning }
 
-## Page background
-{: #{{ 'Page background' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Page background"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 A default background colour is applied to the `<body>` element.
 
@@ -50,10 +53,13 @@ A default background colour is applied to the `<body>` element.
   </div>
 </div>
 
-## Typography
-{: #{{ 'Typography' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Typography"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 A default text colour is applied to the `<body>` element, which is inherited by headings and paragraphs for example.
 
@@ -80,10 +86,13 @@ A default link colour is applied to the `<body>` element.
   </div>
 </div>
 
-## Actions
-{: #{{ 'Actions' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Actions"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 <div class="bsk-docs-swatch-wrapper">
   <div class="row">
@@ -124,10 +133,13 @@ A default link colour is applied to the `<body>` element.
   </div>
 </div>
 
-## BAS brand colours
-{: #{{ 'BAS brand colours' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="BAS brand colours"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 The BAS brand colours consist of a range of blue shades, derived from the official *BAS blue* colour, and a number of
 contrasting and complementary ascent colours.
@@ -207,10 +219,13 @@ contrasting and complementary ascent colours.
   </div>
 </div>
 
-## Standard greyscale colours
-{: #{{ 'Standard greyscale colours' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Standard greyscale colours"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 To provide contrast as backgrounds for layout elements, such as
 [sidebars]({{ '/components/sidebar' | prepend: site.baseurl }}), and components, such as
@@ -261,10 +276,13 @@ To provide contrast as backgrounds for layout elements, such as
   </div>
 </div>
 
-## Standard contextual colours
-{: #{{ 'Standard contextual colours' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Standard contextual colours"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 To indicate the intent or purpose of an element (such as a notice or action), the Style Kit uses a set of conventional
 contextual colours.
@@ -375,10 +393,13 @@ These colours can be used with many core styles and components, such as:
   </div>
 </div>
 
-## Standard Contextual Background classes
-{: #{{ 'Standard Contextual Background classes' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Standard contextual background colours"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 The [standard contextual colours]({{ '/core/colours/#standard-conventional-colours' | prepend: site.baseurl }}) can be
 used as the background of an element using these classes:
@@ -428,10 +449,13 @@ used as the background of an element using these classes:
   </div>
 </div>
 
-## External service colours
-{: #{{ 'External service colours' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="External service colours"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 By convention, and often recommendation by the relevant service, the Style Kit uses these colours for various external
 services.

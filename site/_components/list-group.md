@@ -21,28 +21,38 @@ sections:
 
 {% include snippets/table-of-contents.md %}
 
-## Overview
-{: #{{ 'Overview' | slugify }}}
+{% include snippets/topic-section-metadata.html
+  title="Overview"
+  heading_level=2
+%}
 
 Use the `.list-group` class for displaying stacked content, either as a minimal list, or more advanced custom layout.
 
 Use the `.list-group-item` for items within a list group, see the details of each .
 
-## Supported elements
-{: #{{ 'Supported elements' | slugify }}}
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Supported elements"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Different [variants]({{ '/components/list-group/#variants' | prepend: site.baseurl }}) are designed for different
 supporting elements, as documented. Other elements may be used, but are not supported and may not look right.
 
-## Variants
-{: #{{ 'Variants' | slugify }}}
+{% include snippets/topic-section-metadata.html
+  title="Variants"
+  heading_level=2
+%}
 
-### Basic list group
-{: #{{ 'Basic list group' | slugify }}}
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Basic list group"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Use the `.list-group` class with a <code>&lt;ul&gt;</code> element.
 
@@ -55,10 +65,13 @@ Use the `.list-group-item` class with <code>&lt;li&gt;</code> elements.
 </ul>
 {% endexample %}
 
-### Linked list group
-{: #{{ 'Linked list group' | slugify }}}
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Linked list group"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 use the `.list-group` class with a <code>&lt;div&gt;</code> element.
 
@@ -71,10 +84,13 @@ Use the `.list-group-item` class with <code>&lt;a&gt;</code> elements.
 </div>
 {% endexample %}
 
-### Contextual colours
-{: #{{ 'contextual colours' | slugify }}}
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Contextual colours"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 The [standard contextual colours]({{ '/core/colours/#standard-contextual-colours' | prepend: site.baseurl }}) can be
 used for context by adding these classes:
@@ -96,10 +112,13 @@ used for context by adding these classes:
 </ul>
 {% endexample %}
 
-### Button list group
-{: #{{ 'Button list group' | slugify }}}
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Button list group"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 use the `.list-group` class with a <code>&lt;div&gt;</code> element.
 
@@ -117,16 +136,22 @@ Do not use the `.btn` and `.btn-bsk` classes for <code>&lt;button&gt;</code> ele
 
 ### Custom list group
 {: #{{ 'Custom list group' | slugify }}}
+{% include snippets/topic-section-metadata.html
+  title="States"
+  heading_level=2
+%}
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
 
 ...
 
-## States
-{: #{{ 'Components' | slugify }}}
-
-### Active item
-{: #{{ 'Active item' | slugify }}}
+{% include snippets/topic-section-metadata.html
+  title="Active item"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add the `.active` class to the list group item currently active, to highlight where the end user is in the site.
 
@@ -159,10 +184,13 @@ This provides a non-visual indication of the currently active item, suitable for
 </div>
 {% endexample %}
 
-### Disabled item
-{: #{{ 'Disabled item' | slugify }}}
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Disabled item"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add the `.disabled` class to list group items which cannot be used.
 
@@ -191,11 +219,18 @@ be used for dangerous actions.
 </div>
 {% endexample %}
 
-## Components
-{: #{{ 'Components' | slugify }}}
+{% include snippets/topic-section-metadata.html
+  title="Components"
+  heading_level=2
+%}
 
-### Badges
-{: #{{ 'Badges' | slugify }}}
+{% include snippets/topic-section-metadata.html
+  title="Badges"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 [Badges]({{ '/components/badge' | prepend: site.baseurl }}) can be used within list items, in all list group
 [variants]({{ '/components/list-group/#variants' | prepend: site.baseurl }}), and will be aligned to the right.

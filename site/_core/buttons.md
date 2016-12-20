@@ -6,9 +6,9 @@ sections:
   -
     title: Supported elements
   -
-    title: Default
+    title: Default button
   -
-    title: Primary
+    title: Primary button
   -
     title: Contextual colours
   -
@@ -23,7 +23,10 @@ sections:
 
 {% include snippets/table-of-contents.md %}
 
-## Overview
+{% include snippets/topic-section-metadata.html
+  title="Overview"
+  heading_level=2
+%}
 
 Use the `.btn` and `.btn-bsk` classes to create clickable actions or links.
 
@@ -34,10 +37,14 @@ otherwise it will look strange. It is not enough to use `.btn .btn-bsk` on its o
 Always use the `.btn-bsk` and `.btn` classes together so that Style Kit specific styles are applied.
 {: .alert .alert-info }
 
-## Supported elements
-{: #{{ 'Supported elements' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="Supported elements"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
 
 This component is fully supported when used with these elements:
 
@@ -62,15 +69,18 @@ content) to give
 <a class="btn btn-bsk btn-default" href="#" role="button">Link</a>
 {% endexample %}
 
-## Variants
-{: #{{ 'Variants' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="Variants"
+  heading_level=2
+%}
 
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
-
-### Default
-{: #{{ 'Default' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Default button"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add the `.btn-default` for standard or secondary buttons. For added context you can use
 [contextual colours]({{ '/core/buttons/#contextual-colours' | prepend: site.baseurl }}).
@@ -80,13 +90,13 @@ Add the `.btn-default` for standard or secondary buttons. For added context you 
 <button class="btn btn-bsk btn-danger" type="submit">Dangerous Action</button>
 {% endexample %}
 
-### Primary
-{: #{{ 'Primary' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
-
-Add the `.btn-bsk-primary` for call to actions or to distinguish the typical or recommended action where there is more
-than one.
+{% include snippets/topic-section-metadata.html
+  title="Primary button"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 **Heads up!** This class will be renamed `.btn-primary` in the next version of the Style Kit. See
 [BSK-130](https://jira.ceh.ac.uk/browse/bsk-130) for more information.
@@ -96,10 +106,13 @@ than one.
 <button class="btn btn-bsk btn-bsk-primary" type="submit">Primary Action</button>
 {% endexample %}
 
-### Contextual colours
-{: #{{ 'Contextual colours' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Contextual colours"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 The [standard contextual colours]({{ '/core/colours/#standard-contextual-colours' | prepend: site.baseurl }}) can be
 used for context by adding these classes:
@@ -119,10 +132,13 @@ used for context by adding these classes:
 <button class="btn btn-bsk btn-info">Info Action</button>
 {% endexample %}
 
-### Contextual icons
-{: #{{ 'Contextual icons' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Contextual icons"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 The [standard contextual icons]({{ '/core/icons/#standard-contextual-icons' | prepend: site.baseurl }}) can be
 used for adding context to buttons, usually with the
@@ -135,10 +151,13 @@ used for adding context to buttons, usually with the
 <button class="btn btn-bsk btn-info"><i class="fa fa-info" aria-hidden="true"></i> Info Action</button>
 {% endexample %}
 
-### Link
-{: #{{ 'Link' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Link"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Use this variant to draw attention away from a button, but whilst still functioning like one. Useful for less common
 actions, or those you wish to guide users away from.
@@ -147,10 +166,13 @@ actions, or those you wish to guide users away from.
 <button class="btn btn-bsk btn-link" type="submit">Uncommon Action</button>
 {% endexample %}
 
-## Sizes
-{: #{{ 'Sizes' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Sizes"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add one of these classes to alter the size of a button:
 
@@ -168,10 +190,13 @@ Add one of these classes to alter the size of a button:
 <p><button class="btn btn-bsk btn-default btn-xs">Extra-Small Button</button></p>
 {% endexample %}
 
-### Block level buttons
-{: #{{ 'Block level buttons' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Block level buttons"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add `.btn-block` for buttons to span the width of their parent.
 
@@ -183,15 +208,18 @@ Add `.btn-block` for buttons to span the width of their parent.
 </div>
 {% endexample %}
 
-## States
-{: #{{ 'States' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="States"
+  heading_level=2
+%}
 
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
-
-### Active state
-{: #{{ 'Active state' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Active state"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Active buttons appear *pressed* using a darker background, border and inset shadow. This state will be applied
 automatically when pressed, or forced by adding the `.active` class if needed.
@@ -205,17 +233,23 @@ Use `aria-pressed="true"` to give
 <a class="btn btn-bsk btn-default active" href="#" role="button">Active Action</a>
 {% endexample %}
 
-### Disabled state
-{: #{{ 'Disabled state' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Disabled state"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 **It is not safe to rely on this state to prevent users activating disabled actions**. <br>
 Browsers may not enforce these properties, or users may trivially edit the DOM. Server side protections **must**
 be used for dangerous actions.
 {: .alert .alert-danger }
 
-#### <code>&lt;button&gt;</code> elements
+{% include snippets/topic-section-metadata.html
+  title="Disabled button elements"
+  heading_level=4
+%}
 
 Add the `disabled` attribute to indicate unavailable actions.
 
@@ -223,7 +257,10 @@ Add the `disabled` attribute to indicate unavailable actions.
 <button class="btn btn-bsk btn-default" disabled>Disabled Action</button>
 {% endexample %}
 
-#### <code>&lt;a&gt;</code> elements
+{% include snippets/topic-section-metadata.html
+  title="Disabled link elements"
+  heading_level=4
+%}
 
 Add the `.disabled` class to indicate unavailable actions.
 

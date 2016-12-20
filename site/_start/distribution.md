@@ -22,10 +22,10 @@ sections:
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc }
 
-## BAS CDN
-{: #{{ 'BAS CDN' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="BAS CDN"
+  heading_level=2
+%}
 
 Use **compiled** CSS styles in development environments, use **minified** CSS styles in production environments.
 
@@ -82,10 +82,10 @@ for URLs to the latest stable version.
 Remember, the order CSS files are included matters. Include the custom bootstrap styles before the Style Kit styles.
 {: .alert .alert-info }
 
-### Web fonts
-{: #{{ 'Web fonts' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Web fonts"
+  heading_level=2
+%}
 
 Web fonts used by the BAS Style Kit are declared in their respective `@font-face` declarations.
 Font files are made available from the BAS CDN in these formats:
@@ -95,10 +95,10 @@ Font files are made available from the BAS CDN in these formats:
 * `.woff`
 * `.woff2`
 
-### Sub-Resource Integrity (SRI) values
-{: #{{ 'Sub-Resource Integrity (SRI) values' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Sub-Resource Integrity (SRI) values"
+  heading_level=2
+%}
 
 [Sub-Resource Integrity (SRI)](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) values are
 available for all CSS files served through the BAS CDN.
@@ -125,10 +125,10 @@ These values are also available in a machine readable format from:
 https://{% if site.x_environment == 'staging' %}{{ site.bsk_docs_testing_url }}{% else %}{{ site.bsk_docs_production_url }}{% endif %}/data/bsk-sri.json
 {% endhighlight %}
 
-### Cross Origin Resource Sharing (CORS)
-{: #{{ 'CORS' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="CORS"
+  heading_level=2
+%}
 
 [Cross Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS) is
 supported for all files served through the the BAS CDN using a wildcard (`*`) allowed origin value.
@@ -143,10 +143,10 @@ E.g.
 <link rel="stylesheet" href="https://www.example.com/script.js" crossorigin="anonymous">
 {% endhighlight %}
 
-## Direct download
-{: #{{ 'Direct download' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Direct download"
+  heading_level=2
+%}
 
 A `.zip` archive of the Style Kit is available containing:
 
@@ -169,10 +169,10 @@ these files yourself to make upgrading to future releases of the Style Kit easie
 
 [Download latest version]({% if site.x_environment == 'staging' %}{{ site.bsk_package_base_staging }}{% else %}{{ site.bsk_package_base_production }}{% endif %}/{% include snippets/bsk-version.html %}/bas-style-kit-{% include snippets/bsk-version.html %}.zip){: .btn .btn-bsk .btn-default }
 
-## NodeJS package
-{: #{{ 'NodeJS package' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="NodeJS package"
+  heading_level=2
+%}
 
 {% if site.x_environment == 'staging' %}
  <i class="fa fa-flask" aria-hidden="true"></i> <span class="sr-only">Testing version</span>
@@ -194,8 +194,10 @@ Using the Style Kit in this way requires you to compile the Style Kit's Sass fil
 {: .alert .alert-info }
 {% endif %}
 
-## Source files
-{: #{{ 'Source files' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="Source files"
+  heading_level=2
+%}
 
 {% include snippets/back-to-top.html %}
 

@@ -35,10 +35,13 @@ sections:
 
 {% include snippets/table-of-contents.md %}
 
-## Typographic base
-{: #{{ 'Typographic base' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Typographic base"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 These styles are applied globally, and are usually inherited by other styles, to give a consistent typographic base.
 
@@ -47,10 +50,13 @@ These styles are applied globally, and are usually inherited by other styles, to
 * a default font family, which applies to most elements, is set to `"Open Sans", "Helvetica Neue", Helvetica, Arial,
 sans-serif`
 
-## Font families
-{: #{{ 'Font families' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Font families"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Three font families are used in the BAS Style Kit, for distinct purposes:
 
@@ -89,10 +95,13 @@ For each family, a series of variants are defined for styles such as italics and
 | Monotype (Menlo)    | Regular | Regular     | <span>Menlo regular regular</span>{: .bsk-docs-font-sample-menlo-regular }         |
 {: .table }
 
-### BAS brand font
-{: #{{ 'BAS brand font' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="BAS brand font"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 The BAS *brand* font, Gill Sans, is the BAS official font. It is included in the BAS Style Kit to integrate the font
 into official BAS websites and applications, in high impact areas such as headings and top-level navigation.
@@ -116,10 +125,13 @@ The brand font is applied to these elements:
 | [Headings]({{ '/core/type/#headings' | prepend: site.baseurl }}) | `h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6` | Gill Sans Book  | *N/A*             |
 {: .table }
 
-## Headings
-{: #{{ 'Headings' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Headings"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 In addition to heading elements, you can also use `.h1` - `.h6` classes for styling other elements as headings.
 {: .alert .alert-info }
@@ -139,10 +151,13 @@ De carne animata corpora quaeritis.
 De carne animata corpora quaeritis.
 {% endexample %}
 
-### Secondary header text
-{: #{{ 'Secondary header text' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Secondary header text"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Use the &lt;small&gt; element or the `.small` class for adding secondary text to any header.
 
@@ -161,10 +176,13 @@ De carne animata corpora quaeritis.
 De carne animata corpora quaeritis.
 {% endexample %}
 
-## Paragraphs
-{: #{{ 'Paragraphs' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Paragraphs"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Paragraphs receive a bottom margin of half their computed line-height (10px by default).
 
@@ -175,10 +193,13 @@ that enables scientists from the UK, and colleagues from many nations, to work s
 regions.</p>
 {% endexample %}
 
-### Lead paragraphs
-{: #{{ 'Secondary header text' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Lead paragraphs"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 {% example html %}
 <p class="lead">The British Antarctic Survey (BAS) is an international leader in Antarctic science that is relevant to
@@ -188,20 +209,26 @@ that enables scientists from the UK, and colleagues from many nations, to work s
 regions.</p>
 {% endexample %}
 
-## Links
-{: #{{ 'Links' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Links"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 These styles are applied globally, and are usually inherited by other styles, to give a consistent link style.
 
 * a [default link colour]({{ '/core/colours/#typography' | prepend: site.baseurl }}), `$link-color`, is set
 * an underline is applied on hover
 
-## Inline text elements
-{: #{{ 'Inline elements' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Inline text elements"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 {% example html %}
 <p>Use the <code>&lt;mark&gt;</code> tag for <mark>highlighting text</mark>.</p>
@@ -219,10 +246,13 @@ These styles are applied globally, and are usually inherited by other styles, to
 The <code>&lt;i&gt;</code> tag is also recommended for icons.
 {: .alert .alert-info }
 
-## Abbreviations
-{: #{{ 'Abbreviations' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Abbreviations"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Use to explain/expand abbreviations and acronyms. Additional styles will be applied where a `title` attribute is used.
 
@@ -231,10 +261,13 @@ Use to explain/expand abbreviations and acronyms. Additional styles will be appl
 global problems.
 {% endexample %}
 
-## Blockquotes
-{: #{{ 'Blockquotes' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Blockquotes"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Use for quotes, or highlighting portions of an article (pull-quotes).
 
@@ -247,10 +280,13 @@ Use for quotes, or highlighting portions of an article (pull-quotes).
 </blockquote>
 {% endexample %}
 
-### Blockquotes with a source
-{: #{{ 'Blockquotes with a source' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Blockquotes with a source"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Use a <code>&lt;cite&gt;</code> wrapped in a <code>&lt;footer&gt;</code> to add source to a blockquote.
 
@@ -266,10 +302,13 @@ Use a <code>&lt;cite&gt;</code> wrapped in a <code>&lt;footer&gt;</code> to add 
 </blockquote>
 {% endexample %}
 
-### Reversed blockquotes
-{: #{{ 'Reversed blockquotes' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Reversed blockquotes"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Blockquotes can be aligned right using `.blockquote-reverse`.
 
@@ -285,10 +324,13 @@ Blockquotes can be aligned right using `.blockquote-reverse`.
 </blockquote>
 {% endexample %}
 
-## Addresses
-{: #{{ 'Addresses' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Addresses"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Provides formatting for addresses or contact information. Use <code>&lt;br&gt;</code> elements to preserve structure.
 
@@ -311,15 +353,18 @@ Provides formatting for addresses or contact information. Use <code>&lt;br&gt;</
 </address>
 {% endexample %}
 
-## Lists
-{: #{{ 'Lists' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="Lists"
+  heading_level=2
+%}
 
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
-
-### Unordered lists
-{: #{{ 'Unordered lists' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Unordered Links"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 {% example html %}
 <ul>
@@ -332,10 +377,13 @@ Provides formatting for addresses or contact information. Use <code>&lt;br&gt;</
 </ul>
 {% endexample %}
 
-### Ordered lists
-{: #{{ 'Ordered lists' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Ordered Links"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 {% example html %}
 <ol>
@@ -345,10 +393,13 @@ Provides formatting for addresses or contact information. Use <code>&lt;br&gt;</
 </ol>
 {% endexample %}
 
-### Unstyled lists
-{: #{{ 'Unstyled lists' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Unstyled Links"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Removes the default `list-style` and margin left margin. Useful for things which semantically are lists, but shouldn't
 be styled as such.
@@ -380,10 +431,13 @@ be styled as such.
 </ul>
 {% endexample %}
 
-### Inline lists
-{: #{{ 'Inline lists' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Inline Links"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Place all list items on a single line, with a margin between.
 
@@ -394,10 +448,13 @@ Place all list items on a single line, with a margin between.
 </ul>
 {% endexample %}
 
-## Definition lists
-{: #{{ 'Definition lists' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Definition Links"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 A list of terms with associated definitions.
 
@@ -414,10 +471,13 @@ A list of terms with associated definitions.
 </dl>
 {% endexample %}
 
-### Horizontal definition list
-{: #{{ 'Horizontal definition lists' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Horizontal Definition Links"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add `.dl-horizontal` to show terms and definitions side-by-side (or stacked at smaller sizes).
 
@@ -437,10 +497,13 @@ Terms which are too long will be truncated.
 </dl>
 {% endexample %}
 
-### Large definition list
-{: #{{ 'Large definition lists' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Large definition Links"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add `.dl-bsk` to apply additional padding.
 
@@ -461,10 +524,13 @@ Add `.dl-bsk` to apply additional padding.
 </dl>
 {% endexample %}
 
-### Large horizontal definition list
-{: #{{ 'Large definition lists' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Large horizontal definition Links"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add `.dl-bsk-horizontal-lg` to extend the width of terms in horizontal definition lists.
 
@@ -484,10 +550,13 @@ This class depends on using `.dl-horizontal` as well.
 </dl>
 {% endexample %}
 
-### Striped definition list
-{: #{{ 'Striped definition lists' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Striped definition Links"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add `.dl-bsk-striped` to apply additional styling to terms.
 
@@ -507,10 +576,13 @@ This class is designed to be used with `.dl-bsk` to ensure a suitable amount of 
 </dl>
 {% endexample %}
 
-### Striped horizontal definition list
-{: #{{ 'Striped horizontal definition lists' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Striped horizontal definition Links"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 The `.dl-bsk-striped` class can be combined with `.dl-horizontal`, or `.dl-bsk-horizontal-lg`.
 
@@ -544,10 +616,13 @@ Remember, the `.dl-bsk-horizontal-lg` class depends on using `.dl-horizontal` as
 </dl>
 {% endexample %}
 
-## Contextual colours
-{: #{{ 'Contextual colours' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Contextual colours"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 The [standard contextual colours]({{ '/core/colours/#standard-contextual-colours' | prepend: site.baseurl }}) can be
 used to apply context to text using these classes:
@@ -571,10 +646,14 @@ should fix this.
 <p class="text-info">De carne animata corpora quaeritis.</p>
 {% endexample %}
 
-## Alignment
-{: #{{ 'Alignment' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="Alignment"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
 
 **Heads up!** These classes may be removed in the next version of the Style Kit. See
 [BSK-129](https://jira.ceh.ac.uk/browse/bsk-129) for more information.
@@ -588,10 +667,13 @@ should fix this.
 <p class="text-nowrap">De carne animata corpora quaeritis.</p>
 {% endexample %}
 
-## Transformations
-{: #{{ 'Transformations' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Transformations"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 **Heads up!** These classes may be removed in the next version of the Style Kit. See
 [BSK-129](https://jira.ceh.ac.uk/browse/bsk-129) for more information.

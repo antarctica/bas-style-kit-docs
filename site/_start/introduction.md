@@ -16,10 +16,10 @@ sections:
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
 
-## About
-{: #{{ 'About' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Overview"
+  heading_level=2
+%}
 
 The BAS Style Kit is based on [Bootstrap](https://www.getbootstrap.com), the worlds most popular CSS framework.
 The Style Kit uses a customised version of Bootstrap to follow our design choices (such as not using rounded corners).
@@ -32,10 +32,10 @@ As well as Bootstrap, the BAS Style Kit takes influences from:
 * the [Government Digital Service (GDS)](https://gds.blog.gov.uk/about/)
 * other frameworks, organisations and other sources of best practice
 
-## Quick start
-{: #{{ 'Quick start' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Quick start"
+  heading_level=2
+%}
 
 The recommended, and quickest, way to include the BAS Style Kit in your website or application is to use the BAS CDN.
 
@@ -60,10 +60,10 @@ Other ways of including the Style Kit in a website or application are listed in 
 [distribution]({{ '/start/distribution' | prepend: site.baseurl }}){: .alert-link } documentation.
 {: .alert .alert-info }
 
-## Starter template
-{: #{{ 'Starter template' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Starter template"
+  heading_level=2
+%}
 
 Below is the minimal HTML needed to use the BAS Style Kit, following recommended best practices, and ensuring
 compatibility with older web browsers.

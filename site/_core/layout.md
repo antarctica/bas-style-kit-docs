@@ -19,10 +19,10 @@ sections:
 
 {% include snippets/table-of-contents.md %}
 
-## Overview
-{: #{{ 'Overview' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Overview"
+  heading_level=2
+%}
 
 The BAS Style Kit inherits, and expands, the layout features provided by Bootstrap. **Compatibility with Bootstrap's
 layout classes is guaranteed.**
@@ -30,10 +30,13 @@ layout classes is guaranteed.**
 The Style Kit's additions focus on extending the [grid system]({{ '/core/grid/' | prepend: site.baseurl }}), to include
 additional sizes (break-points), and an alternate, interchangeable, grid with more columns.
 
-## Containers
-{: #{{ 'Containers' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Containers"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Containers are the fundamental layout element and typically contains most of a page. Containers are required when using
 the [grid system]({{ '/core/grid/' | prepend: site.baseurl }}), or can be used independently for compatibility with
@@ -44,10 +47,13 @@ Two containers are available, they can be mixed and nested if needed.
 Use the *fixed-width container* if you are unsure which to use.
 {: .alert .alert-info }
 
-### Fixed-width container
-{: #{{ 'Fixed-width container' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Fixed-width container"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Use the `.container` class for a responsive and fixed-width container. This means its `max-width` changes at each
 [responsive breakpoint]({{ '/core/layout/#responsive-breakpoints' | prepend: site.baseurl }}).
@@ -57,10 +63,13 @@ Use the `.container` class for a responsive and fixed-width container. This mean
 </div>
 {% endexample %}
 
-### Fluid container
-{: #{{ 'Fluid container' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Fluid container"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Use the `.container-fluid` class for a full-width container, meaning it spans the entire width of the viewport.
 
@@ -73,10 +82,13 @@ certain types of content, such as mapping.
 </div>
 {% endexample %}
 
-## Responsive breakpoints
-{: #{{ 'Responsive breakpoints' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Responsive breakpoints"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 The Style Kit is
 [mobile first]({{ '/start/standards-accessibility/#responsiveness-and-mobile-first' | prepend: site.baseurl }}),
@@ -115,10 +127,13 @@ space for internal, data rich, applications. It is not recommended for use in ge
 | Extra Large | `xl`       | Large desktop computers                                      | 1800               | `$screen-xl-min`   | <span class="text-danger"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> No</span>  |
 {: .table }
 
-### Maximum width
-{: #{{ 'Maximum width' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Maximum width"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 In some cases it is necessary to use the `max-width` as well to better target some devices. The maximum width is
 calculated as the next minimum width size minus `1px`. There is no maximum width for the largest grid size.
@@ -132,10 +147,13 @@ calculated as the next minimum width size minus `1px`. There is no maximum width
 | Extra Large | N/A                | N/A                |
 {: .table }
 
-###  Using responsive breakpoints
-{: #{{ 'Using responsive breakpoints' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Unit responsive breakpoints"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Typically these breakpoints are used indirectly, through the [grid system]({{ '/core/grid/' | prepend: site.baseurl }})
 and other components, however they can also be used manually. This is useful where you aren't using the grid system,
@@ -155,10 +173,13 @@ or, in cases where you are integrating with existing code or a third party syste
 }
 {% endhighlight %}
 
-## Floated blocks
-{: #{{ 'Floated blocks' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Floated blocks"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Use the `.pull-left` and `.pull-right` classes to float content. The `!important` modifier is used to prevent
 specificity issues.
@@ -190,10 +211,13 @@ Alternatively, mixins can be used:
 }
 {% endhighlight %}
 
-## Centred blocks
-{: #{{ 'Centred blocks' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Centred blocks"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Use the `.center-block` class to align a block using CSS margins.
 
@@ -211,10 +235,13 @@ Alternatively, a mixin can be used:
 }
 {% endhighlight %}
 
-## Clearfix
-{: #{{ 'Clearfix' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Clearfix"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Use the `.clearfix` class on the **parent** element to clear floats. This uses the
 [the micro clearfix](http://nicolasgallagher.com/micro-clearfix-hack/) by Nicolas Gallagher.
@@ -231,10 +258,13 @@ Alternatively, a mixin can be used:
 }
 {% endhighlight %}
 
-## Visibility
-{: #{{ 'Visibility' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Visibility"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 The BAS Style Kit supports four states of visibility for block level elements. The `!important` modifier is used to
 prevent specificity issues.
@@ -253,10 +283,13 @@ Screen readers only
 page layout
 {: .dl-bsk }
 
-### General visibility classes
-{: #{{ 'General visibility classes' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="General visibiliy classes"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Both classes and mixins are available for setting these states generally (i.e. under any circumstances).
 
@@ -272,6 +305,14 @@ Both classes and mixins are available for setting these states generally (i.e. u
 {: #{{ 'Responsive visibility classes' | slugify }} }
 
 {% include snippets/back-to-top.html %}
+
+{% include snippets/topic-section-metadata.html
+  title="Responsive visibiliy classes"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 As an alternative to the general classes, it's possible to control an elements visibility at each responsive breakpoint.
 Any of these classes can be mixed and matched for each size.
@@ -297,20 +338,23 @@ Unlike grid columns for example, visibility does not flow upwards grid sizes. If
 | Extra Large | `.visible-xl-block` <br /> `.visible-xl-inline` <br /> `.visible-xl-inline-block` | `.hidden-xl` |
 {: .table }
 
-### Print visibility classes
-{: #{{ 'Responsive visibility classes' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Print visibility classes"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 The `.visible-print-block`, `.visible-print-inline` and `.visible-print-inline-block` classes can be used to show
 content when printing.
 
 Conversely, the `.hidden-print` class can be used to hide content.
 
-### Test cases
-{: #{{ 'Test cases' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Test cases"
+  heading_level=2
+%}
 
 See the [visibility examples]({{ '/examples/visibility' | prepend: site.baseurl }}) for testing which classes are
 visible under different circumstances.

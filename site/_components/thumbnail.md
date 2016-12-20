@@ -15,8 +15,10 @@ sections:
 
 {% include snippets/table-of-contents.md %}
 
-## Overview
-{: #{{ 'Overview' | slugify }}}
+{% include snippets/topic-section-metadata.html
+  title="Overview"
+  heading_level=2
+%}
 
 Use the `.thumbnail-bsk` and `.thumbnail` classes to highlight one or more media items, such as images, that are
 distinct from main content, but which is shown **within** it, usually as a grid of items.
@@ -32,20 +34,28 @@ Thumbnails are really only intended for media items. For more general purposes, 
 [Panel's]({{ '/components/panel' | prepend: site.baseurl }}){: .alert-link }.
 {: .alert .alert-info }
 
-## Supported elements
-{: #{{ 'Supported elements' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Supported elements"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Thumbnail styles are designed for <code>&lt;div&gt;</code> or <code>&lt;a&gt;</code> elements.
 
-## Variants
-{: #{{ 'Variants' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="Variants"
+  heading_level=2
+%}
 
-### Default thumbnail
-{: #{{ 'Default thumbnail' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Default thumbnail"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add the `.thumbnail-bsk-default` class for standard thumbnails.
 
@@ -64,10 +74,13 @@ Add the `.thumbnail-bsk-default` class for standard thumbnails.
 </div>
 {% endexample %}
 
-### Inverse thumbnail
-{: #{{ 'Inverse thumbnail' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Inverse thumbnail"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add the `.thumbnail-bsk-inverse` class for an alternative thumbnail style. This has no semantic significance.
 
@@ -86,13 +99,18 @@ Add the `.thumbnail-bsk-inverse` class for an alternative thumbnail style. This 
 </div>
 {% endexample %}
 
-## Components
-{: #{{ 'Components' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="Components"
+  heading_level=2
+%}
 
-### Caption
-{: #{{ 'Caption' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Caption"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Use the `.caption` class on an element within a thumbnail to add additional information, such as a description.
 

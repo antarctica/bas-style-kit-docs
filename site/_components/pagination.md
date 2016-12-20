@@ -10,17 +10,19 @@ sections:
   -
     title: Sizes
   -
-    title: Active state
+    title: Active item
   -
-    title: Disabled state
+    title: Disabled item
   -
     title: Pager alignment
 ---
 
 {% include snippets/table-of-contents.md %}
 
-## Overview
-{: #{{ 'Overview' | slugify }}}
+{% include snippets/topic-section-metadata.html
+  title="Overview"
+  heading_level=2
+%}
 
 Use the `.pagination` class for navigating within large collections of items, such as
 [lists]({{ '/core/type/#lists' | prepend: site.baseurl }}) or [tables]({{ '/core/tables' | prepend: site.baseurl }}).
@@ -33,13 +35,18 @@ or paging implementation. For example [data-tables](https://datatables.net) or [
 Use the `aria-label` element so assistive technologies can tell each pagination or pager instance apart.
 {: .alert .alert-warning }
 
-## Variants
-{: #{{ 'Variants' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="Variants"
+  heading_level=2
+%}
 
-### Default pagination
-{: #{{ 'Default pagination' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Default pagination"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 {% example html %}
 <nav aria-label="pagination-example-1">
@@ -55,10 +62,13 @@ Use the `aria-label` element so assistive technologies can tell each pagination 
 </nav>
 {% endexample %}
 
-### Simple pager
-{: #{{ 'Simple pager' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Simple pager"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 {% example html %}
 <nav aria-label="pager-example-1">
@@ -69,10 +79,13 @@ Use the `aria-label` element so assistive technologies can tell each pagination 
 </nav>
 {% endexample %}
 
-## Sizes
-{: #{{ 'Sizes' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Sizes"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add one of these classes to alter the size of a pagination instance:
 
@@ -121,13 +134,18 @@ These classes don't apply to the pager.
 </nav>
 {% endexample %}
 
-## States
-{: #{{ 'States' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="States"
+  heading_level=2
+%}
 
-### Active state
-{: #{{ 'Active state' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Active item"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add the `.active` class to indicate the current pagination item.
 
@@ -148,10 +166,13 @@ The active state doesn't apply to the pager.
 </nav>
 {% endexample %}
 
-### Disabled state
-{: #{{ 'Disabled state' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Disabled item"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add the `.disabled` class to indicate unavailable items or actions.
 
@@ -178,13 +199,18 @@ Add the `.disabled` class to indicate unavailable items or actions.
 </nav>
 {% endexample %}
 
-## Layouts
-{: #{{ 'Layouts' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="Layouts"
+  heading_level=2
+%}
 
-### Pager alignment
-{: #{{ 'Pager alignment' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Pager alignment"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add the `.previous` and `.next` classes to position pager elements to the sides.
 

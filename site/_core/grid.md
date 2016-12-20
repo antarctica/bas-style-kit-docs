@@ -25,10 +25,13 @@ sections:
 
 {% include snippets/table-of-contents.md %}
 
-## Overview
-{: #{{ 'Overview' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Overview"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 The BAS Style Kit inherits, and expands, the grid system provided by Bootstrap. **Compatibility with Bootstrap's
 grid system classes is guaranteed.**
@@ -36,10 +39,13 @@ grid system classes is guaranteed.**
 The Style Kit's additions focus on extending the grid system, to include extra sizes (break-points), and an
 alternate, interchangeable, grid with more columns.
 
-### Available grids
-{: #{{ 'Available grids' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Available grids"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 There are two grids available, which can be mixed and nested if needed. They function in exactly the same way, other
 than the total number of columns.
@@ -60,10 +66,10 @@ You can use both default and BAS Style Kit grid classes for a single element, ho
 override any default grid classes.
 {: .alert .alert-info }
 
-### Grid components
-{: #{{ 'Grids components' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Grid components"
+  heading_level=2
+%}
 
 There are three main components within the grid system:
 
@@ -78,10 +84,13 @@ There are some rules for using the grid system:
 2. only columns can be the direct children of rows
 3. each row can't span more more than the total number of columns for each grid (i.e. either 12 or 24)
 
-## Grid sizes
-{: #{{ 'Grid sizes' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Grid sizes"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 There are five grid sizes for the
 [five responsive breakpoints]({{ '/core/layout/#responsive-breakpoints' | prepend: site.baseurl }}) available in the
@@ -163,10 +172,13 @@ The first example uses the *default* grid, the second uses the *BAS Style Kit* g
 </div>
 {% endexample %}
 
-## Offsetting columns
-{: #{{ 'Offsetting columns' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Offsetting columns"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Offset classes can be used to 'indent' columns within a row.
 
@@ -204,10 +216,13 @@ The first example uses the *default* grid, the second uses the *BAS Style Kit* g
 </div>
 {% endexample %}
 
-## Nesting columns
-{: #{{ 'Nesting columns' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Nesting columns"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Rows can be used within a column to create a nested grid. Each nested grid has the same total number of grid columns,
 but you don't need to use all of them. You can also nest the BAS Style Kit grid within the default grid or vice versa.
@@ -237,10 +252,13 @@ row with three nested columns, each spanning 8 columns each of the BAS Style Kit
 </div>
 {% endexample %}
 
-## Ordering columns
-{: #{{ 'Ordering columns' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Ordering columns"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Pull and push classes can be used to order columns within a row, though this is rarely needed.
 
@@ -261,9 +279,12 @@ The first example uses the *default* grid, the second uses the *BAS Style Kit* g
 </div>
 {% endexample %}
 
-## Examples
-{: #{{ 'Examples' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Examples"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 See the [grid examples]({{ '/examples/grid' | prepend: site.baseurl }}) for more grid system examples.

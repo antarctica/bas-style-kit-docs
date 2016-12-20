@@ -13,8 +13,10 @@ sections:
 
 {% include snippets/table-of-contents.md %}
 
-## Overview
-{: #{{ 'Overview' | slugify }}}
+{% include snippets/topic-section-metadata.html
+  title="Overview"
+  heading_level=2
+%}
 
 Use the `.label` class to highlight something, such as a status or some other property.
 
@@ -26,13 +28,18 @@ If you are highlighting a number, [Badges]({{ '/components/label' | prepend: sit
 be used.
 {: .alert .alert-info }
 
-## Variants
-{: #{{ 'Variants' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="Variants"
+  heading_level=2
+%}
 
-### Default label
-{: #{{ 'Default label' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Default label"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add the `label-default` class for a standard label. For added context you can use
 [contextual colours]({{ '/components/label/#contextual-colours' | prepend: site.baseurl }}) instead.
@@ -41,10 +48,13 @@ Add the `label-default` class for a standard label. For added context you can us
 Something <span class="label label-default">Label</span>
 {% endexample %}
 
-### Contextual colours
-{: #{{ 'Contextual colours' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Contextual colours"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 The [standard contextual colours]({{ '/core/colours/#standard-contextual-colours' | prepend: site.baseurl }}) can be
 used for context by adding these classes:
@@ -64,10 +74,13 @@ used for context by adding these classes:
 <span class="label label-info">Info label</span>
 {% endexample %}
 
-## Sizes
-{: #{{ 'Sizes' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Sizes"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Labels will scale with their parent element.
 

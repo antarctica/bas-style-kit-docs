@@ -1,3 +1,6 @@
+{% for i in (1..include.heading_level) %}#{% endfor %} {{ include.title }}
+{: #{{ include.title | slugify }} }
+
 {: .bsk-docs-section-metadata }
 {% case include.current_phase %}
   {% when 'alpha' %}
@@ -21,17 +24,12 @@
 * <span class="label label-phase label-phase-deprecated">Deprecated</span> since version **{{ include.future_version }}**
 {% endcase %}
 
-{% if include.origin == "bootstrap" %}
-* <i class="fa fa-circle-o" aria-hidden="true"></i> Bootstrap style
-{% elsif include.origin == "bootstrap-custom" %}
-* <i class="fa fa-adjust" aria-hidden="true"></i> Bootstrap &amp; Custom style
-{% elsif include.origin == "custom" %}
-* <i class="fa fa-circle" aria-hidden="true"></i> Custom style
-{% endif %}
-
 {% if include.included == "yes" %}
 * <i class="fa fa-check" aria-hidden="true"></i> Included in Core Style Kit
-{% else %}
+{% elsif include.included == "no" %}
 * {: .text-danger } <i class="fa fa-exclamation-circle" aria-hidden="true"></i> Not included in Core Style Kit
 {% endif %}
+
 * {% include snippets/back-to-top.html %}
+
+* <a href="#{{ include.title | slugify }}"><i class="fa fa-link" aria-hidden="true"></i> Link to this section</a>

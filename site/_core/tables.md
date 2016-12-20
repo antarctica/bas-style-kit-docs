@@ -19,10 +19,18 @@ sections:
 
 {% include snippets/table-of-contents.md %}
 
-## Basic table
-{: #{{ 'Basic' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="Variations"
+  heading_level=2
+%}
 
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Basic table"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Use the `.table` class to apply basic table styles. This class is opt-in to ensure compatibility with tables managed by
 third party widgets or applications such as Apex.
@@ -52,10 +60,13 @@ third party widgets or applications such as Apex.
 </table>
 {% endexample %}
 
-## Striped rows
-{: #{{ 'Striped' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Striped rows"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add `.table-striped` to style alternate rows with the <code>&lt;tbody&gt;</code> of a table.
 
@@ -87,10 +98,13 @@ This won't work in Internet Explorer 8.
 </table>
 {% endexample %}
 
-## Bordered table
-{: #{{ 'Bordered' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Bordered table"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add `.table-bordered` to apply additional borders around the table and between cells.
 
@@ -119,10 +133,13 @@ Add `.table-bordered` to apply additional borders around the table and between c
 </table>
 {% endexample %}
 
-## Hoverable rows
-{: #{{ 'Hoverable rows' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Hoverable rows"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add `.table-hover` to highlight the row with focus within a table.
 
@@ -151,10 +168,13 @@ Add `.table-hover` to highlight the row with focus within a table.
 </table>
 {% endexample %}
 
-## Contextual rows
-{: #{{ 'Contextual rows' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Contextual rows"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 The [standard contextual background classes]({{ '/core/colours/#standard-contextual-background-classes' | prepend: site.baseurl }}){: .alert-link }
 can be used as the background of table rows using these classes:
@@ -208,10 +228,13 @@ You can also use the `.active` class to highlight a row as if it had focus when 
 </table>
 {% endexample %}
 
-## Small table
-{: #{{ 'Small table' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Small table"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add `.table-condensed` to reduce padding within a table to make it more compact.
 
@@ -240,10 +263,18 @@ Add `.table-condensed` to reduce padding within a table to make it more compact.
 </table>
 {% endexample %}
 
-## Responsive table
-{: #{{ 'Responsive table' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="Layouts"
+  heading_level=2
+%}
 
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Responsive table"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Wrap a table with the `.table-responsive` class to make them scroll horizontally on smaller devices.
 

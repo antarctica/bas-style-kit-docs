@@ -21,10 +21,13 @@ sections:
 
 {% include snippets/table-of-contents.md %}
 
-## Form fields
-{: #{{ 'Form elements' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Form fields"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 A form field is made up of a form control (such as an input or textarea) with an accompanying label to explain what
 each field is for.
@@ -38,15 +41,18 @@ separate each form field.
 All form fields should have a label to make sure they can be understood by assistive technologies.
 {: .alert .alert-warning }
 
-## Form controls
-{: #{{ 'Form controls' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="Form controls"
+  heading_level=2
+%}
 
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
-
-### Inputs
-{: #{{ 'Inputs' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Inputs"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Form inputs are the most common form control. Supported types are listed below and demonstrated in the
 [form input]({{ '/examples/forms/#form-inputs' | prepend: site.baseurl }}) example.
@@ -90,10 +96,13 @@ See [this MDN page](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/in
 </form>
 {% endexample %}
 
-### Textareas
-{: #{{ 'Textareas' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Textareas"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 The height of a text area can be set using the `rows` attribute
 
@@ -111,10 +120,13 @@ The height of a text area can be set using the `rows` attribute
 </form>
 {% endexample %}
 
-### Selects
-{: #{{ 'Selects' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Selects"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Select elements allow one option to be chosen by default, add the `multiple` attribute to allow more than one.
 
@@ -148,8 +160,13 @@ Select elements have quite stubborn browser styling, such as rounded corners, wh
 </form>
 {% endexample %}
 
-### File inputs
-{: #{{ 'File inputs' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="File inputs"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 For file inputs use `.form-control-file` instead of `.form-control`.
 
@@ -165,8 +182,13 @@ Form input elements have quite stubborn browser styling, such as rounded corners
 </form>
 {% endexample %}
 
-### Radio options and checkboxes
-{: #{{ 'Radio options and checkboxes' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="Radio options and checkboxes"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Checkboxes allow multiple options to be chosen, radio options allow only one. Use the `.checkbox` and `.radio` classes
 as shown to ensure proper styling.
@@ -219,8 +241,13 @@ To pre-select an option set the `checked` attribute.
 </form>
 {% endexample %}
 
-#### Inline radio options and checkboxes
-{: #{{ 'Radio options and checkboxes' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="Inline radio options and checkboxes"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Radio options and checkboxes can be shown inline (i.e. side-by-side rather than stacked) using the `.checkbox-inline`
 and `radio-inline` classes **instead** of the standard classes.
@@ -271,10 +298,13 @@ and `radio-inline` classes **instead** of the standard classes.
 </form>
 {% endexample %}
 
-### Form buttons
-{: #{{ 'Radio options and checkboxes' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Form buttons"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Form buttons, such as the form submission button, are styled the same way as
 [standard buttons]({{ '/core/buttons' | prepend: site.baseurl }}).
@@ -285,10 +315,13 @@ Form buttons, such as the form submission button, are styled the same way as
 </form>
 {% endexample %}
 
-### Static control
-{: #{{ 'Static control' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Static control"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Static controls can be used to represent pre-computed, or locked values within a form.
 
@@ -307,18 +340,21 @@ Static controls can be used to represent pre-computed, or locked values within a
 </form>
 {% endexample %}
 
-## Form layouts
-{: #{{ 'Form layouts' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
-
 By default, forms will stack vertically. This can be changed, for example to show labels and inputs side-by-side, using
 the options in the section.
 
-### Form groups and fieldsets
-{: #{{ 'Form groups and fieldsets' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="Form layouts"
+  heading_level=2
+%}
 
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Form groups and fieldsets"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 The `.form-group` class is intended to wrap around an input, its label and extra elements (such as help text).
 It applies spacing to visually separate each input group.
@@ -348,10 +384,13 @@ Where a form field is standalone, use a <code>&lt;fieldset&gt;</code>. For a gro
 </form>
 {% endexample %}
 
-### Horizontal forms
-{: #{{ 'Horizontal forms' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Horizontal forms"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Use the `.form-horizontal` class to display labels and controls side-by-side using
 [grid system]({{ '/core/grid/' | prepend: site.baseurl }}). Ensure all labels use the `.control-label` class for best
@@ -438,10 +477,13 @@ inner <code>&lt;div&gt;</code> to prevent the <code>&lt;legend&gt;</code> from a
 </form>
 {% endexample %}
 
-### Inline forms
-{: #{{ 'Inline forms' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Inline forms"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Use the `.form-inline` class to display labels and controls in a single horizontal row.
 
@@ -451,10 +493,10 @@ On small devices (smaller than 768 pixels) form fields will always stack.
 Some manual sizing may be needed for inline forms, ensure thorough testing at a range of grid sizes.
 {: .alert .alert-warning }
 
-#### Visible labels
-{: #{{ 'Visible labels' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Visible labels"
+  heading_level=4
+%}
 
 {% example html %}
 <form class="form-inline">
@@ -480,10 +522,10 @@ Some manual sizing may be needed for inline forms, ensure thorough testing at a 
 </form>
 {% endexample %}
 
-#### Invisible labels
-{: #{{ 'Invisible labels' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Invisible labels"
+  heading_level=4
+%}
 
 It is strongly recommended to include visible labels for each form field (the `placeholder` attribute is not
 universally supported yet for example).
@@ -522,10 +564,18 @@ Labels **should** always be visible for checkboxes and radio options, to indicat
 ### Form sizing
 {: #{{ 'Form sizing' | slugify }} }
 
-#### Width (grid sizing)
-{: #{{ 'Width (grid sizing)' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="Form sizing"
+  heading_level=3
+%}
 
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Width"
+  heading_level=4
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 The width of each form field, control or label can all be controlled using the
 [grid system]({{ '/core/grid' | prepend: site.baseurl }}), as demonstrated by the
@@ -560,10 +610,13 @@ Make sure to use `.control-label` to ensure all labels are virtually aligned.
 </form>
 {% endexample %}
 
-#### Form control sizing
-{: #{{ 'Form control sizing' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Form control sizing"
+  heading_level=4
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add one of these classes to alter the size of a form control:
 
@@ -592,15 +645,21 @@ Add one of these classes to alter the size of a form control:
 </form>
 {% endexample %}
 
-## Element states
-{: #{{ 'Element states' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="Element states"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
-
-### Disabled state
-{: #{{ 'Disabled state' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Disabled state"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Use the `disabled` attribute to mark a form field as disabled. This will prevent interaction, change the cursor to
 'not-allowed', and alter the field's appearance. In most browsers, setting the `disabled` attribute on a
@@ -643,10 +702,13 @@ this, either apply the `disabled` attribute on links directly, or use JavaScript
 </form>
 {% endexample %}
 
-### Readonly state
-{: #{{ 'Readonly state' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Readonly state"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Use the `readonly` attribute to some form fields as read-only. This will prevent interaction and alter the field's
 appearance, but won't change the cursor.
@@ -677,10 +739,13 @@ Not all form elements support this value, exceptions include:
 </form>
 {% endexample %}
 
-## Help text
-{: #{{ 'Help text' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Help text"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add context or other guidance to form fields, or more generally to sections of a form, using a combination of
 `.help-block` and `.text-muted`.
@@ -712,10 +777,13 @@ to inform assistive technologies, such as screen readers.
 </form>
 {% endexample %}
 
-## Validation
-{: #{{ 'Validation' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Validation"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 The Style Kit includes validation classes, based on the
 [standard contextual colours]({{ '/core/colours/#standard-contextual-colours'}}). Apply to the parent of form fields,
@@ -765,9 +833,9 @@ of the Style Kit. See [BSK-135](https://jira.ceh.ac.uk/browse/bsk-135) for more 
 </form>
 {% endexample %}
 
-## Examples
-{: #{{ 'Examples' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Examples"
+  heading_level=2
+%}
 
 See the [form examples]({{ '/examples/forms' | prepend: site.baseurl }}) for more examples of forms.

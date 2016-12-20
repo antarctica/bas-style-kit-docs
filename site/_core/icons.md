@@ -17,10 +17,13 @@ sections:
 
 {% include snippets/table-of-contents.md %}
 
-## Available icons
-{: #{{ 'Available icons' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Available icons"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 The BAS Style Kit includes version **3.6** of the [Font Awesome](http://fontawesome.io) icon web font.
 
@@ -30,10 +33,13 @@ won't work using the Style Kit.
 
 [View Available Icons](http://fontawesome.io/icons/){:.btn .btn-bsk .btn-default }
 
-## Caret icon
-{: #{{ 'Caret icon' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Caret icon"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 For menus, Bootstrap's `.caret` class should be used over the Font Awesome `.caret-` classes, as it will automatically
 rotate in drop up menus.
@@ -48,17 +54,20 @@ In all other cases, Font Awesome's `.caret-` classes should be used instead.
 <a href="#">Move right <i class="fa fa-caret-right" aria-hidden="true"></i></a>
 {% endexample %}
 
-## Standard conventional icons
-{: #{{ 'Standard conventional icons' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Standard conventional icons"
+  heading_level=2
+%}
 
 For common actions or concepts, the Style Kit uses a set of conventional icons.
 
-### Close icon
-{: #{{ 'Close icon' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Close icon"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Use the `times-circle` icon wrapped in a `.close` element for indicating closing or dismissive things, such as
 [alerts]({{ '/components/alert' | prepend: site.baseurl }}).
@@ -83,10 +92,13 @@ Use the `times-circle` icon wrapped in a `.close` element for indicating closing
 **Hint** The close icon is aligned right.
 {: .alert .alert-info }
 
-### Image purchase icon
-{: #{{ 'Image purchase icon' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Image purchase icon"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Use the `fa-camera` icon for indicating images and other media items available for purchase from the BAS Image
 Collection, such as the [image purchase]({{ '/components/image-purchase' | prepend: site.baseurl }}) component.
@@ -107,10 +119,13 @@ Collection, such as the [image purchase]({{ '/components/image-purchase' | prepe
 **Hint** The image purchase icon is aligned bottom right.
 {: .alert .alert-info }
 
-## Standard contextual icons
-{: #{{ 'Standard contextual icons' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Standard contextual icons"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 To indicate the intent or purpose of an element (such as a notice or action), the Style Kit uses a set of conventional
 contextual icons.
@@ -221,10 +236,13 @@ these icons.
   </div>
 </div>
 
-## External service icons
-{: #{{ 'External service icons' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="External service icons"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 By convention, and often recommendation by the relevant service, the Style Kit uses these icons for various external
 services.

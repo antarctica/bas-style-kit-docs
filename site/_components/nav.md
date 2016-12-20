@@ -17,8 +17,10 @@ sections:
 
 {% include snippets/table-of-contents.md %}
 
-## Overview
-{: #{{ 'Overview' | slugify }}}
+{% include snippets/topic-section-metadata.html
+  title="Overview"
+  heading_level=2
+%}
 
 Use the `.nav` class to create secondary navigation elements, for splitting content into logical sections.
 
@@ -32,13 +34,18 @@ Interactive tabs and pills require the [tabs]({{ '/interactivity/tab' | prepend:
 JavaScript plugin, which is enabled on this site.
 {: .alert .alert-info }
 
-## Variants
-{: #{{ 'Variants' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="Variants"
+  heading_level=2
+%}
 
-### Pill navigation
-{: #{{ 'Pill navigation' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Pill navigation"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add the `.nav-pills` and `.nav-pills-bsk` classes to create a minimalist navigation element.
 
@@ -55,10 +62,13 @@ Always use the `.nav-tabs-bsk` and `.nav-tabs` classes together so that Style Ki
 </nav>
 {% endexample %}
 
-### Tab navigation
-{: #{{ 'Tab navigation' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Tab navigation item"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add the `.nav-tabs` and `.nav-tabs-bsk` classes to create a more structured navigation element.
 
@@ -75,13 +85,18 @@ Always use the `.nav-tabs-bsk` and `.nav-tabs` classes together so that Style Ki
 </nav>
 {% endexample %}
 
-## Components
-{: #{{ 'Components' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="Components"
+  heading_level=2
+%}
 
-### Drop-down menus
-{: #{{ 'Drop-down menus' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Drop-down menus"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 [Drop-down menus]({{ '/components/drop-down' | prepend: site.baseurl }}) can be used as navigation items as-is.
 
@@ -124,13 +139,18 @@ Remember to always use `.dropdown-menu-bsk` and `.dropdown-menu` together so tha
 </nav>
 {% endexample %}
 
-## States
-{: #{{ 'States' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="States"
+  heading_level=2
+%}
 
-### Active item state
-{: #{{ 'Active state' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Active item"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add the `.active` class to the navigation item currently active, to highlight where the end user is in the site.
 
@@ -197,10 +217,13 @@ This can also be used within [drop-down]({{ '/components/drop-down/#active' | pr
 </nav>
 {% endexample %}
 
-### Disabled state
-{: #{{ 'Disabled state' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Disabled item"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add the `.disabled` class to indicate unavailable navigation items.
 
@@ -229,13 +252,18 @@ be used for dangerous actions.
 </nav>
 {% endexample %}
 
-## Layouts
-{: #{{ 'States' | slugify }} }
+{% include snippets/topic-section-metadata.html
+  title="Layouts"
+  heading_level=2
+%}
 
-### Stacked pills
-{: #{{ 'Stacked pills' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Stacked pills"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add the `.nav-stacked` class to arrange pills vertically.
 
@@ -251,10 +279,13 @@ Stacked tabs are not supported.
 </nav>
 {% endexample %}
 
-### Justified pills/tabs
-{: #{{ 'Justified pills/tabs' | slugify }} }
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
+{% include snippets/topic-section-metadata.html
+  title="Justified pills/tabs"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
 
 Add the `.nav-justified` class to display equally navigation items filling the width of the navigation element.
 On smaller screens, the navigation items are stacked.

@@ -9,10 +9,10 @@ sections:
 
 {% include snippets/table-of-contents.md %}
 
-## Overview
-{: #{{ 'Basic' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Overview"
+  heading_level=2
+%}
 
 The Style Kit includes a number of global settings, styles and technologies designed to provide a consistent foundation.
 {: .lead }
@@ -29,10 +29,10 @@ Other styles which are used in a global fashion, and which are described elsewhe
 
 * the default [font size, family and line spacing]({{ '/core/typography/#typographic base' | prepend: site.baseurl }})
 
-## Normalise.css
-{: #{{ 'Normalise.css' | slugify }} }
-
-{% include snippets/back-to-top.html %}
+{% include snippets/topic-section-metadata.html
+  title="Normalise.css"
+  heading_level=2
+%}
 
 [Normalize.css](http://necolas.github.io/normalize.css/) ensures browsers render all elements more consistently and in
 line with modern standards.
