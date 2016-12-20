@@ -106,6 +106,4 @@ defaults:
       layout: blank
 
 # Plugin settings
-
-jekyll_get: []
-
+# ...
