@@ -16,11 +16,7 @@ sections:
     title: Source files
 ---
 
-## Contents
-{:.no_toc #{{ 'Contents' | slugify }}}
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc }
+{% include snippets/table-of-contents.md %}
 
 {% include snippets/topic-section-metadata.html
   title="BAS CDN"

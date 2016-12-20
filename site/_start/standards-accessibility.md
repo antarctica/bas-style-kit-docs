@@ -18,6 +18,7 @@ sections:
     title: Skip navigation
 ---
 
+{% include snippets/table-of-contents.md %}
 
 {% include snippets/topic-section-metadata.html
   title="Overview"
@@ -30,12 +31,6 @@ possible.
 
 This is best achieved by properly structuring content and following industry best practices. This ensures our
 content is readable by those with accessibility requirements, such as screen readers, and by search engines.
-
-## Contents
-{:.no_toc #{{ 'Contents' | slugify }}}
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
 
 {% include snippets/topic-section-metadata.html
   title="Browser support"

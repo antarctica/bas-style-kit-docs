@@ -7,11 +7,7 @@
 Include the following snippet immediately after the front matter of a topic page:
 
 ```markdown
-## Contents
-{:.no_toc #{{ 'Contents' | slugify }}}
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
+{% include snippets/table-of-contents.md %}
 ```
 
 **Note:** If a topic page uses HTML, this won't work and a manually created list will be required instead.
