@@ -99,4 +99,4 @@ Use the `.image-purchase-symbol` class on an <code>&lt;a&gt;</code> element link
 media item.
 
 This <code>&lt;a&gt;</code> element should contain the conventional icon defined for the
-[image purchase component]({{ '/components/image-purchase' | prepend: site.baseurl }}).
+[image purchase component]({{ '/core/icons/#image-purchase-icon' | prepend: site.baseurl }}).

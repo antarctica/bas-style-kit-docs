@@ -89,7 +89,7 @@ Use the `times-circle` icon wrapped in a `.close` element for indicating closing
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="custom" included="yes" %}
 
 Use the `fa-camera` icon for indicating images and other media items available for purchase from the BAS Image
-Collection, such as [image purchases]({{ '/components/image-purchase' | prepend: site.baseurl }}).
+Collection, such as the [image purchase]({{ '/components/image-purchase' | prepend: site.baseurl }}) component.
 
 <div class="bsk-docs-icons-wrapper">
   <div class="row">
@@ -103,10 +103,6 @@ Collection, such as [image purchases]({{ '/components/image-purchase' | prepend:
     </div>
   </div>
 </div>
-
-{% example html %}
-...
-{% endexample %}
 
 **Hint** The image purchase icon is aligned bottom right.
 {: .alert .alert-info }
