@@ -92,7 +92,7 @@ This example, whilst quite complex, demonstrates the sort of information shown i
   included="yes"
 %}
 
-The `.footer-bsk-divider` class acts as horizontal rule, with additional padding.
+Use the `.footer-bsk-divider` class on an element, to act as a horizontal rule with additional padding.
 
 {% example html %}
 <footer class="footer-bsk footer-bsk-default">
@@ -112,7 +112,8 @@ The `.footer-bsk-divider` class acts as horizontal rule, with additional padding
   included="yes"
 %}
 
-The `.footer-bsk-ogl` class positions and styles the OGL logo and an accompanying licensing statement.
+Use the `.footer-bsk-ogl` class, `.ogl-symbol` and `.ogl-text` classes on elements to position and style the OGL
+logo and accompanying licensing statement.
 
 {% example html %}
 <footer class="footer-bsk footer-bsk-default">
@@ -133,7 +134,8 @@ The `.footer-bsk-ogl` class positions and styles the OGL logo and an accompanyin
   included="yes"
 %}
 
-The `.footer-bsk-policy-links` class positions and styles links to policies such as copyright and privacy statements.
+Use the `.footer-bsk-policy-links` class to position and style links to policies such as copyright and privacy
+statements.
 
 {% example html %}
 <footer class="footer-bsk footer-bsk-default">

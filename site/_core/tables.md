@@ -180,12 +180,12 @@ The [standard contextual background classes]({{ '/core/colours/#standard-context
 can be used as the background of table rows using these classes:
 
 | Standard Contextual Background | Table Cell Contextual Background Class |
-| ------------------------------ | ----------------------- |
-| Success                        | `.success`          |
-| Warning                        | `.warning`          |
-| Danger                         | `.danger`           |
-| Info                           | `.info`             |
-{: .table }
+| ------------------------------ | -------------------------------------- |
+| Success                        | `.success`                             |
+| Warning                        | `.warning`                             |
+| Danger                         | `.danger`                              |
+| Info                           | `.info`                                |
+{: .table .table-responsive }
 
 These classes only work within tables. Use the
 [standard contextual background classes]({{ '/core/colours/#standard-contextual-background-colours' | prepend: site.baseurl }}){: .alert-link }

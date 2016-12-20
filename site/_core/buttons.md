@@ -45,12 +45,11 @@ Always use the `.btn-bsk` and `.btn` classes together so that Style Kit specific
   included="yes"
 %}
 
-
-This component is fully supported when used with these elements:
+These styles are fully supported when used with these elements:
 
 * <code>&lt;button&gt;</code>
 
-This component can also be used these elements:
+These styles are also supported, but to a lesser extent, when used with these elements:
 
 * <code>&lt;a&gt;</code>
 * <code>&lt;input&gt;</code>

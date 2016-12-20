@@ -340,9 +340,6 @@ Static controls can be used to represent pre-computed, or locked values within a
 </form>
 {% endexample %}
 
-By default, forms will stack vertically. This can be changed, for example to show labels and inputs side-by-side, using
-the options in the section.
-
 {% include snippets/topic-section-metadata.html
   title="Form layouts"
   heading_level=2

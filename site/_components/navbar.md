@@ -402,8 +402,12 @@ Typically this will be used within elements using the
   included="yes"
 %}
 
+Add one of these classes to alter the size of a jumbotron:
 
-Add the `.navbar-bsk-lg` class to increase the padding inside a sidebar.
+| Navbar Size | Navbar Size Class |
+| ----------- | ----------------- |
+| Large       | `.navbar-bsk-lg`  |
+{: .table .table-responsive }
 
 {% example html %}
 <nav class="navbar navbar-bsk navbar-bsk-lg">

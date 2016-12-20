@@ -27,7 +27,6 @@ sections:
 
 As a government research institute, BAS has a responsibility to make its content available to as many people as
 possible.
-{: .lead }
 
 This is best achieved by properly structuring content and following industry best practices. This ensures our
 content is readable by those with accessibility requirements, such as screen readers, and by search engines.
@@ -43,7 +42,7 @@ In general, the BAS Style Kit aims to support all browsers supported by Bootstra
 
 This means the latest, stable, releases of all major browsers (subject to any caveats below) are supported.
 
-**Heads up!** Support for Internet Explorer 8 will be removed in the next major Style Kit release.
+**Heads up!** Support for Internet Explorer 8 will be removed in the next Style Kit release.
 {: .alert .alert-danger }
 
 See the Bootstrap documentation on [browser support](http://getbootstrap.com/getting-started/#support)

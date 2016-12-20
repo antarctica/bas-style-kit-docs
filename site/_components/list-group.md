@@ -134,16 +134,10 @@ Do not use the `.btn` and `.btn-bsk` classes for <code>&lt;button&gt;</code> ele
 </div>
 {% endexample %}
 
-### Custom list group
-{: #{{ 'Custom list group' | slugify }}}
 {% include snippets/topic-section-metadata.html
   title="States"
   heading_level=2
 %}
-
-{% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
-
-...
 
 {% include snippets/topic-section-metadata.html
   title="Active item"
