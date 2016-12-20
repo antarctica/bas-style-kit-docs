@@ -79,11 +79,6 @@ Use the `.list-group-item` class with <code>&lt;a&gt;</code> elements.
 The [standard contextual colours]({{ '/core/colours/#standard-contextual-colours' | prepend: site.baseurl }}) can be
 used for context by adding these classes:
 
-* `.list-group-item-success`
-* `.list-group-item-warning`
-* `.list-group-item-danger`
-* `.list-group-item-info`
-
 | Standard Context | List Group Contextual Class |
 | ---------------- | --------------------------- |
 | Success          | `.list-group-item-success`  |

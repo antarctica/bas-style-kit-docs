@@ -98,10 +98,13 @@ Add the `.panel-primary` class for the most important panel, where there is more
 The [standard contextual colours]({{ '/core/colours/#standard-contextual-colours' | prepend: site.baseurl }}) can be
 used for context by adding these classes:
 
-* `.panel-success`
-* `.panel-warning`
-* `.panel-danger`
-* `.panel-info`
+| Standard Context | Panel Contextual Class |
+| ---------------- | ---------------------- |
+| Success          | `.panel-success`       |
+| Warning          | `.panel-warning`       |
+| Danger           | `.panel-danger`        |
+| Info             | `.panel-info`          |
+{: .table }
 
 {% example html %}
 <div class="panel panel-success">

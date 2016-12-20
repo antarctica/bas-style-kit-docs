@@ -80,25 +80,25 @@ A default link colour is applied to the `<body>` element.
   </div>
 </div>
 
-## Buttons
-{: #{{ 'Buttons' | slugify }} }
+## Actions
+{: #{{ 'Actions' | slugify }} }
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap-custom" included="yes" %}
 
 <div class="bsk-docs-swatch-wrapper">
   <div class="row">
     <div class="col-md-2">
-      <div class="bsk-docs-swatch-colour bsk-docs-swatch-button-default-bg"></div>
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-action-default-bg"></div>
       <ul class="list-unstyled text-center bsk-docs-swatch-details">
-        <li>Default button (background)</li>
+        <li>Default action (background)</li>
         <li><code>$btn-bsk-default-bg</code></li>
         <li class="bsk-docs-hex-reference">#c3c3c3</li>
       </ul>
     </div>
     <div class="col-md-2">
-      <div class="bsk-docs-swatch-colour bsk-docs-swatch-button-primary-bg"></div>
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-action-primary-bg"></div>
       <ul class="list-unstyled text-center bsk-docs-swatch-details">
-        <li>Primary button (background)</li>
+        <li>Primary action (background)</li>
         <li><code>$btn-bsk-primary-bg</code></li>
         <li class="bsk-docs-hex-reference">#0DA59F</li>
       </ul>
@@ -106,17 +106,17 @@ A default link colour is applied to the `<body>` element.
   </div>
   <div class="row">
     <div class="col-md-2">
-      <div class="bsk-docs-swatch-colour bsk-docs-swatch-button-default-border"></div>
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-action-default-border"></div>
       <ul class="list-unstyled text-center bsk-docs-swatch-details">
-        <li>Default button (border)</li>
+        <li>Default action (border)</li>
         <li><code>$btn-bsk-default-border</code></li>
         <li class="bsk-docs-hex-reference">#8c8c8c</li>
       </ul>
     </div>
     <div class="col-md-2">
-      <div class="bsk-docs-swatch-colour bsk-docs-swatch-button-primary-border"></div>
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-action-primary-border"></div>
       <ul class="list-unstyled text-center bsk-docs-swatch-details">
-        <li>Primary button (border)</li>
+        <li>Primary action (border)</li>
         <li><code>$btn-bsk-primary-border</code></li>
         <li class="bsk-docs-hex-reference">#0b8d88</li>
       </ul>
@@ -293,12 +293,15 @@ which can be used alongside these classes.
 
 These colours can be used with many core styles and components, such as:
 
-* [text, lists, etc.]({{ '/core/type/#contextual-colours' | prepend: site.baseurl }})
+* [alerts]({{ '/components/alert/#contextual-colours' | prepend: site.baseurl }})
+* [buttons]({{ '/core/buttons/#contextual-colours' | prepend: site.baseurl }})
+* [form validation]({{ '/core/forms/#validation' | prepend: site.baseurl }})
+* [labels]({{ '/components/label/#contextual-colours' | prepend: site.baseurl }})
+* [list groups]({{ '/components/list-group/#contextual-colours' | prepend: site.baseurl }})
+* [panels]({{ '/components/panel/#contextual-colours' | prepend: site.baseurl }})
+* [progress bars]({{ '/components/progress-bar/#contextual-colours' | prepend: site.baseurl }})
 * [tables]({{ '/core/tables/#contextual-rows' | prepend: site.baseurl }})
-* [buttons]({{ '/core/buttons/#contextual-classes' | prepend: site.baseurl }})
-* [alerts]({{ '/components/alert/#contextual-classes' | prepend: site.baseurl }})
-* [labels]({{ '/components/label/#contextual-classes' | prepend: site.baseurl }})
-* [list groups]({{ '/components/list-group/#contextual-classes' | prepend: site.baseurl }})
+* [text, lists, etc.]({{ '/core/type/#contextual-colours' | prepend: site.baseurl }})
 * etc.
 
 <div class="bsk-docs-swatch-wrapper">

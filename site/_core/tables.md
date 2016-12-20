@@ -156,7 +156,7 @@ Add `.table-hover` to highlight the row with focus within a table.
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
 
-The [standard contextual background classes]({{ '/core/colours/#standard-contextual-background-colours' | prepend: site.baseurl }}){: .alert-link }
+The [standard contextual background classes]({{ '/core/colours/#standard-contextual-background-classes' | prepend: site.baseurl }}){: .alert-link }
 can be used as the background of table rows using these classes:
 
 | Standard Contextual Background | Table Cell Contextual Background Class |
