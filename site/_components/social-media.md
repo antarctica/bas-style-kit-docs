@@ -40,7 +40,7 @@ You must ensure that where you use these assets you comply with these restrictio
 | Facebook             | `.facebook`                |
 | YouTube              | `.youtube`                 |
 | RSS                  | `.rss`                     |
-{: .table }
+{: .table .table-responsive }
 
 [Colours]({{ '/core/colours/#external-service-colours' | prepend: site.baseurl }}) and
 [Icon]({{ '/core/icons/#external-service-icons' | prepend: site.baseurl }}) are defined for each supported social media

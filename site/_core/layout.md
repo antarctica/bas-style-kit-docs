@@ -125,7 +125,7 @@ space for internal, data rich, applications. It is not recommended for use in ge
 | Medium      | `md`       | Tablets                                                      | 992                | `$screen-md-min`   | <i class="fa fa-check" aria-hidden="true"></i> Yes                                               |
 | Large       | `lg`       | Computers                                                    | 1200               | `$screen-lg-min`   | <i class="fa fa-check" aria-hidden="true"></i> Yes                                               |
 | Extra Large | `xl`       | Large desktop computers                                      | 1800               | `$screen-xl-min`   | <span class="text-danger"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> No</span>  |
-{: .table }
+{: .table .table-responsive }
 
 {% include snippets/topic-section-metadata.html
   title="Maximum width"
@@ -145,7 +145,7 @@ calculated as the next minimum width size minus `1px`. There is no maximum width
 | Medium      | 1199               | `$screen-md-max`   |
 | Large       | 1799               | `$screen-lg-max`   |
 | Extra Large | N/A                | N/A                |
-{: .table }
+{: .table .table-responsive }
 
 {% include snippets/topic-section-metadata.html
   title="Unit responsive breakpoints"
@@ -299,7 +299,7 @@ Both classes and mixins are available for setting these states generally (i.e. u
 | Hidden             | `.hidden`    | `.hidden();`    |
 | Invisible          | `.invisible` | `.invisible();` |
 | Screen reader only | `.sr-only`   | `.sr-only();`   |
-{: .table }
+{: .table .table-responsive }
 
 ### Responsive visibility classes
 {: #{{ 'Responsive visibility classes' | slugify }} }
@@ -336,7 +336,7 @@ Unlike grid columns for example, visibility does not flow upwards grid sizes. If
 | Medium      | `.visible-md-block` <br /> `.visible-md-inline` <br /> `.visible-md-inline-block` | `.hidden-md` |
 | Large       | `.visible-lg-block` <br /> `.visible-lg-inline` <br /> `.visible-lg-inline-block` | `.hidden-lg` |
 | Extra Large | `.visible-xl-block` <br /> `.visible-xl-inline` <br /> `.visible-xl-inline-block` | `.hidden-xl` |
-{: .table }
+{: .table .table-responsive }
 
 {% include snippets/topic-section-metadata.html
   title="Print visibility classes"

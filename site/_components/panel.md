@@ -117,7 +117,7 @@ used for context by adding these classes:
 | Warning          | `.panel-warning`       |
 | Danger           | `.panel-danger`        |
 | Info             | `.panel-info`          |
-{: .table }
+{: .table .table-responsive }
 
 {% example html %}
 <div class="panel panel-success">

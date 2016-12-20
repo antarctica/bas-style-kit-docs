@@ -101,7 +101,7 @@ used for context by adding these classes:
 | Warning          | `.list-group-item-warning`  |
 | Danger           | `.list-group-item-danger`   |
 | Info             | `.list-group-item-info`     |
-{: .table }
+{: .table .table-responsive }
 
 {% example html %}
 <ul class="list-group">

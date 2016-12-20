@@ -51,7 +51,7 @@ used for context by adding these classes:
 | Warning          | `.label-warning`       |
 | Danger           | `.label-danger`        |
 | Info             | `.label-info`          |
-{: .table }
+{: .table .table-responsive }
 
 {% example html %}
 <div class="alert alert-success" role="alert">Success alert</div>

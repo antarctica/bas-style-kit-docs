@@ -54,7 +54,7 @@ Add one of these classes to alter the size of a well:
 | ---------- | --------------- |
 | Large      | `.well-lg`      |
 | Small      | `.well-sm`      |
-{: .table }
+{: .table .table-responsive }
 
 {% example html %}
 <div class="well well-lg">Large well</div>

@@ -71,7 +71,7 @@ For each family, a series of fall-back fonts are defined where the primary fonts
 | Default     | Open Sans    | "Helvetica Neue", Helvetica, Arial, *sans-serif* |
 | Brand       | Gill Sans    | "Helvetica Neue", Helvetica, Arial, *sans-serif* |
 | Monotype    | Menlo        | Monaco, Consolas, Courier New, *monospace*       |
-{: .table }
+{: .table .table-responsive }
 
 Fall-back fonts shown in *italics* will depend on the browser and operating system used.
 {: .alert .alert-info }
@@ -93,7 +93,7 @@ For each family, a series of variants are defined for styles such as italics and
 | Brand (Gill Sans)   | Regular | Roman (300) | <span>Gill Sans regular roman</span>{: .bsk-docs-font-sample-gill-sans-roman }     |
 | Brand (Gill Sans)   | Italics | Roman (300) | *Gill Sans italics roman*{: .bsk-docs-font-sample-gill-sans-roman }                |
 | Monotype (Menlo)    | Regular | Regular     | <span>Menlo regular regular</span>{: .bsk-docs-font-sample-menlo-regular }         |
-{: .table }
+{: .table .table-responsive }
 
 {% include snippets/topic-section-metadata.html
   title="BAS brand font"
@@ -123,7 +123,7 @@ The brand font is applied to these elements:
 | [Navbar]({{ '/components/navar/' | prepend: site.baseurl }})     | `.navbar-bsk`                                          | Gill Sans Book  | Base font + `1px` |
 | [Header]({{ '/components/header/' | prepend: site.baseurl }})    | `.header-bsk`                                          | Gill Sans Book  | Base font + `1px` |
 | [Headings]({{ '/core/type/#headings' | prepend: site.baseurl }}) | `h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6` | Gill Sans Book  | *N/A*             |
-{: .table }
+{: .table .table-responsive }
 
 {% include snippets/topic-section-metadata.html
   title="Headings"
@@ -508,7 +508,7 @@ Terms which are too long will be truncated.
 Add `.dl-bsk` to apply additional padding.
 
 **Heads up!** This class will be renamed `.dl-bsk-lg` in the next version of the Style Kit. See
-{% jira issue="BSK-128" %} for more information.
+[BSK-128](https://jira.ceh.ac.uk/browse/bsk-128) for more information.
 {: .alert .alert-info }
 
 {% example html %}
@@ -633,7 +633,7 @@ used to apply context to text using these classes:
 | Warning          | `.text-warning`       |
 | Danger           | `.text-danger`        |
 | Info             | `.text-info`          |
-{: .table }
+{: .table .table-responsive }
 
 In some edge cases these styles will be over-ridden by other styles, wrapping text in a <code>&lt;span&gt;</code>
 should fix this.

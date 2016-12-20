@@ -74,7 +74,7 @@ Add one of these classes to alter the size of a band:
 | --------- | --------------- |
 | Medium    | `.band-bsk-md`  |
 | Small     | `.band-bsk-sm`  |
-{: .table }
+{: .table .table-responsive }
 
 {% example html %}
 <!-- Regular band -->

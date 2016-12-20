@@ -84,7 +84,7 @@ Add one of these classes to alter the size of a jumbotron:
 | -------------- | ----------------------- |
 | Extra-large    | `.jumbotron-xl`         |
 | Large          | `.jumbotron-lg`         |
-{: .table }
+{: .table .table-responsive }
 
 {% example html %}
 <div class="jumbotron jumbotron-bsk jumbotron-bsk-default jumbotron-bsk-lg">

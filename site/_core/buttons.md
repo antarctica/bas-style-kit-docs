@@ -123,7 +123,7 @@ used for context by adding these classes:
 | Warning          | `.btn-warning`          |
 | Danger           | `.btn-danger`           |
 | Info             | `.btn-info`             |
-{: .table }
+{: .table .table-responsive }
 
 {% example html %}
 <button class="btn btn-bsk btn-success">Success Action</button>
@@ -181,7 +181,7 @@ Add one of these classes to alter the size of a button:
 | Large       | `.btn-lg`         |
 | Small       | `.btn-sm`         |
 | Extra-small | `.btn-xl`         |
-{: .table }
+{: .table .table-responsive }
 
 {% example html %}
 <p><button class="btn btn-bsk btn-default btn-lg">Large Button</button></p>

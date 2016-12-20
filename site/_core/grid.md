@@ -54,7 +54,7 @@ than the total number of columns.
 | ------------- | ------------- | ------------ | ----------------------------------------------------------------------------------------------- |
 | Default       | 12            | `col-`       | <i class="fa fa-check" aria-hidden="true"></i> Yes                                              |
 | BAS Style Kit | 24            | `col-bsk-`   | <span class="text-danger"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> No</span> |
-{: .table }
+{: .table .table-responsive }
 
 The extra columns in the BAS Style Kit grid are primarily intended for use in applications, where more complex or
 detailed layouts and interfaces are required.

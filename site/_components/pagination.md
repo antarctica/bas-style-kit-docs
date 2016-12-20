@@ -93,7 +93,7 @@ Add one of these classes to alter the size of a pagination instance:
 | --------------- | --------------------------- |
 | Large           | `.pagination-lg`            |
 | Small           | `.pagination-sm`            |
-{: .table }
+{: .table .table-responsive }
 
 These classes don't apply to the pager.
 {: .alert .alert-info }

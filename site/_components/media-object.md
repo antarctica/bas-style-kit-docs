@@ -158,7 +158,7 @@ Add one of these classes to align a media object horizontally:
 | -------------------- | -------------------------- |
 | Left                 | `.media-left`              |
 | Right                | `.media-right`             |
-{: .table }
+{: .table .table-responsive }
 
 {% example html %}
 <!-- Left aligned -->
@@ -200,7 +200,7 @@ Add one of these classes to align a media object horizontally:
 | ------------------- | ------------------------ |
 | Middle              | `.media-middle`          |
 | Bottom              | `.media-bottom`          |
-{: .table }
+{: .table .table-responsive }
 
 {% example html %}
 <!-- Top aligned (default) -->

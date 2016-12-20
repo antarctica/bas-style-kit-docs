@@ -108,7 +108,7 @@ used for context by adding these classes:
 | Warning          | `.progress-bar-warning`       |
 | Danger           | `.progress-bar-danger`        |
 | Info             | `.progress-bar-info`          |
-{: .table }
+{: .table .table-responsive }
 
 {% example html %}
 <div class="progress">

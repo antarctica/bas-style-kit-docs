@@ -624,7 +624,7 @@ Add one of these classes to alter the size of a form control:
 | ----------------- | ----------------------- |
 | Large form field  | `.form-group-lg`        |
 | Small form field  | `.form-group-sm`        |
-{: .table }
+{: .table .table-responsive }
 
 {% example html %}
 <form>
@@ -801,7 +801,7 @@ to assistive technologies, such as screen readers.
 | Valid               | `.has-success`   | Success                     |
 | Valid, with warning | `.has-warning`   | Warning                     |
 | Invalid             | `.has-error`     | Danger                      |
-{: .table }
+{: .table .table-responsive }
 
 **Heads up!** The validation class for invalid fields is changing from `.has-error` to `.has-danger` in the next version
 of the Style Kit. See [BSK-135](https://jira.ceh.ac.uk/browse/bsk-135) for more information.

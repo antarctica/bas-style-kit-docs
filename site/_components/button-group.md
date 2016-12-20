@@ -95,7 +95,7 @@ Add one of these classes to alter the size of a button group:
 | Large             | `.btn-group-lg`         |
 | Small             | `.btn-group-sm`         |
 | Extra-small       | `.btn-group-xl`         |
-{: .table }
+{: .table .table-responsive }
 
 Individual buttons will inherit the size of each button group.
 {: .alert .alert-info }

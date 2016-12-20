@@ -410,7 +410,7 @@ used as the background of an element using these classes:
 | Warning          | `.bg-warning`               |
 | Danger           | `.bg-danger`                |
 | Info             | `.bg-info`                  |
-{: .table }
+{: .table .table-responsive }
 
 <div class="bsk-docs-swatch-wrapper">
   <div class="row">
