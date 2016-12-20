@@ -102,8 +102,8 @@ The *extra large* size is custom to the BAS Style Kit, and is used to target lar
 space for internal, data rich, applications. It is not recommended for use in general websites.
 {: .alert .alert-info }
 
-**Heads up!** Responsive breakpoints are changing in the next version of the Style Kit. See {% jira issue="BSK-111" %}
-for more information.
+**Heads up!** Responsive breakpoints are changing in the next version of the Style Kit. See
+[BSK-111](https://jira.ceh.ac.uk/browse/bsk-111) for more information.
 {: .alert .alert-info }
 
 | Size        | Class Name | Example Device <small class="text-muted">Orientation</small> | Minimum Width (px) | Min Width Variable | Core Bootstrap |

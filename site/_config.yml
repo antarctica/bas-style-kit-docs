@@ -109,10 +109,3 @@ defaults:
 
 jekyll_get: []
 
-jira_issues:
-  instance: https://jira.ceh.ac.uk
-  username: bas-bot-read-only
-  password: password
-  classes:
-    wrapper_classes: "label label-jira-issue"
-    link_icon_classes: "fa fa-ticket"

@@ -89,7 +89,7 @@ Add the `.btn-bsk-primary` for call to actions or to distinguish the typical or 
 than one.
 
 **Heads up!** This class will be renamed `.btn-primary` in the next version of the Style Kit. See
-{% jira issue="BSK-130" %} for more information.
+[BSK-130](https://jira.ceh.ac.uk/browse/bsk-130) for more information.
 {: .alert .alert-info }
 
 {% example html %}

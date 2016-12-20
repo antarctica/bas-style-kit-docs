@@ -576,8 +576,8 @@ should fix this.
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
 
-**Heads up!** These classes may be removed in the next version of the Style Kit. See {% jira issue="BSK-129" %} for
-more information.
+**Heads up!** These classes may be removed in the next version of the Style Kit. See
+[BSK-129](https://jira.ceh.ac.uk/browse/bsk-129) for more information.
 {: .alert .alert-info }
 
 {% example html %}
@@ -593,8 +593,8 @@ more information.
 
 {% include snippets/topic-metadata.html current_phase="live" current_version="0.1.0" origin="bootstrap" included="yes" %}
 
-**Heads up!** These classes may be removed in the next version of the Style Kit. See {% jira issue="BSK-129" %} for
-more information.
+**Heads up!** These classes may be removed in the next version of the Style Kit. See
+[BSK-129](https://jira.ceh.ac.uk/browse/bsk-129) for more information.
 {: .alert .alert-info }
 
 {% example html %}
