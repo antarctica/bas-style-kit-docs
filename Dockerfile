@@ -1,5 +1,7 @@
 FROM antarctica/jekyll-image:alpine-0.1.1
 
+MAINTAINER Felix Fennell <felnne@bas.ac.uk>
+
 # Setup dependencies
 ADD Gemfile /usr/src/app/
 RUN bundle install
