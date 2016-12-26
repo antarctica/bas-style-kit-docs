@@ -2,7 +2,6 @@ FROM antarctica/jekyll-image:alpine-0.1.1
 
 # Setup dependencies
 ADD Gemfile /usr/src/app/
-ADD Gemfile.lock /usr/src/app
 RUN bundle install
 
 # Setup site
