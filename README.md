@@ -21,37 +21,35 @@ See the relevant documentation for how this documentation is put together:
 
 ## Developing
 
-[Git](https://git-scm.com), [Docker](https://www.docker.com/products/docker) and access to the private
-[BAS Docker Registry](https://docker-registry.data.bas.ac.uk) [1] are required to build this project locally.
+[Git](https://git-scm.com), [Docker](https://www.docker.com/products/docker) [1] and access to the private
+[BAS Docker Registry](https://docker-registry.data.bas.ac.uk) [2] are required to build this project locally.
 
-Once the Docker container is running visit: [localhost:9000](http://localhost:9000).
+```shell
+$ git clone -b develop https://bitbucket.org/antarctica/bas-style-kit-docs.git
+$ cd bas-style-kit
 
-Jekyll will detect any changes to files within `/site` and automatically rebuild the relevent parts of the site.
+$ docker-compose up
+```
+
+This will bring up a single docker container, running the `jekyll serve` in a way that will automatically rebuild parts
+of the documentation when changes are made to files `/site`.
+
+When finished, exit the Docker Compose using `ctrl` + `c`, then run `docker-compose down`.
+
+[1] To install Git and Docker:
 
 **On macOS**
 
 ```shell
 $ brew install git
 $ brew cask install docker
-
-$ git clone -b develop https://bitbucket.org/antarctica/bas-style-kit-docs.git
-$ cd bas-style-kit-docs
-
-$ docker run -t -i -p 9000:9000 -v $(PWD)/site:/usr/src/app/site --rm --name bsk-docs docker-registry.data.bas.ac.uk/bsk/bas-style-kit-docs:alpine
 ```
 
 **On Windows**
 
 * Install Docker and Git using their respective installers
 
-```shell
-$ git clone -b develop https://bitbucket.org/antarctica/bas-style-kit-docs.git
-$ cd bas-style-kit-docs
-
-$ docker run -t -i -p 9000:9000 -v $PWD\site:/usr/src/app/site --rm --name bsk-docs docker-registry.data.bas.ac.uk/bsk/bas-style-kit-docs:alpine
-```
-
-[1] The first time you use this registry, you will need to authenticate using:
+[2] The first time you use this registry, you will need to authenticate using:
 
 ```shell
 $ docker login docker-registry.data.bas.ac.uk
@@ -62,11 +60,14 @@ $ docker login docker-registry.data.bas.ac.uk
 If new Gem dependencies are introduced, the project Docker image will need to be rebuilt and pushed to the private BAS
 Docker Repository [1].
 
-```shell
-$ cd bas-style-kit-docs/
+The current date is used as part of the project Docker image tag to ensure the latest version is used by all developers.
+Before rebuilding this image you **MUST** update this tag value in `docker-compose.yml` and `.gitlab-ci.yml` first.
 
-$ docker build -t docker-registry.data.bas.ac.uk/bsk/bas-style-kit-docs:alpine .
-$ docker push docker-registry.data.bas.ac.uk/bsk/bas-style-kit-docs:alpine
+```shell
+$ cd bas-style-kit/
+
+$ docker-compose build app
+$ docker-compose push app
 ```
 
 [1] The first time you use this registry, you will need to authenticate using:
