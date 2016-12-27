@@ -50,10 +50,7 @@ $ brew cask install docker
 * Install Docker and Git using their respective installers
 
 [2] The first time you use this registry, you will need to authenticate using:
-
-```shell
-$ docker login docker-registry.data.bas.ac.uk
-```
+`docker login docker-registry.data.bas.ac.uk`
 
 ### Updating dependencies
 
@@ -71,15 +68,12 @@ $ docker-compose push app
 ```
 
 [1] The first time you use this registry, you will need to authenticate using:
-
-```shell
-$ docker login docker-registry.data.bas.ac.uk
-```
+`docker login docker-registry.data.bas.ac.uk`
 
 ## Continuous Integration
 
 The BAS GitLab instance is used for [Continuous Integration](https://gitlab.data.bas.ac.uk/BSK/bas-style-kit-docs/builds)
-using settings defined in `.gitlab-ci.yml` using these jobs and stages.
+using settings defined in `.gitlab-ci.yml`, using these jobs and stages.
 
 | Stage | Job                       | Trigger                             | Type      | Notes                           |
 | ----- | ------------------------- | ----------------------------------- | --------- | ------------------------------- |
@@ -105,15 +99,15 @@ $ git remote add bas-gl https://gitlab.data.bas.ac.uk/BSK/bas-style-kit-docs.git
 ## Continuous Deployment
 
 The BAS GitLab instance is used for [Continuous Deployment](https://gitlab.data.bas.ac.uk/BSK/bas-style-kit-docs/builds)
-using settings defined in `.gitlab-ci.yml` using these jobs and stages.
+using settings defined in `.gitlab-ci.yml`, using these jobs and stages.
 
 **Note:** Due to caching, deployed changes may not appear for up to 30 minutes.
 
-| Stage   | Job                      | Trigger                                                       | Type      | Notes                              |
-| ------- | ------------------------ | ------------------------------------------------------------- | --------- | ---------------------------------- |
-| Package | `package-site-content`   | `jekyll-build-staging` passes                                 | Automatic | -                                  |
-| Deploy  | `s3-snapshot-staging`    | `package-site-content` triggered by `jekyll-build-staging`    | Automatic | [1]                                |
-| Deploy  | `s3-website-staging`     | `package-site-content` triggered by `jekyll-build-staging`    | Automatic | [2]                                |
+| Stage   | Job                      | Trigger                                                             | Type      | Notes                              |
+| ------- | ------------------------ | ------------------------------------------------------------------- | --------- | ---------------------------------- |
+| Package | `package-site-content`   | `jekyll-build-staging` or `jekyll-build-production` passes          | Automatic | -                                  |
+| Deploy  | `s3-snapshot-staging`    | `package-site-content` passes with a commit to the `develop` branch | Automatic | [1]                                |
+| Deploy  | `s3-website-staging`     | `package-site-content` passes with a commit to the `develop` branch | Automatic | [2]                                |
 
 [1] And then available from the *development* instance of the BAS Packages Service.
 
