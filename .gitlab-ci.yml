@@ -19,7 +19,7 @@
 
 .job_template_jekyll_build: &job_template_jekyll_build
   stage: build
-  image: docker-registry.data.bas.ac.uk/bsk/bas-style-kit-docs:alpine-2016-12-17
+  image: docker-registry.data.bas.ac.uk/bsk/bas-style-kit-docs:2016-12-17-alpine
   before_script:
     - "cd site"
   script: "jekyll build"
