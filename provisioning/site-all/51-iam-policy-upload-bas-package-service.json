@@ -8,8 +8,7 @@
                 "s3:PutObject"
             ],
             "Resource": [
-                "arn:aws:s3:::bas-packages-dev/zips/apps/*",
-                "arn:aws:s3:::bas-packages-prod/zips/apps/*"
+                "arn:aws:s3:::bas-package-service-prod/zips/apps/*"
             ]
         }
     ]
