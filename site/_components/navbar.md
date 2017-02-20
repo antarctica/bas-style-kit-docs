@@ -309,12 +309,12 @@ Using the `.btn` class with a <code>&lt;a&gt;</code> element within a navigation
 
 Add the `.navbar-form` class to correctly position any form elements.
 
-The navbar [alignment]({{ '/components/navbar/#item-alignment' | prepend: site.baseurl }}){: .alert-link }, classes can
-be used to further control such items.
+The [navbar alignment classes]({{ '/components/navbar/#item-alignment' | prepend: site.baseurl }}){: .alert-link }
+can be used to further control form elements.
 {: .alert .alert-info }
 
-It is strongly recommended to include visible labels for each form field (the `placeholder` attribute is not
-universally supported yet for example).
+It is strongly recommended to include visible labels for each form field (the `placeholder` attribute is not yet
+universally supported).
 
 Where labels are hidden, the `.sr-only` class **should** always be used to ensure assistive technologies can
 understand forms. Alternatively, you can use the `aria-label`, `aria-labelledby` or `title` attributes.
@@ -334,9 +334,9 @@ It is recommended to use this feature sparingly until support improves.
     <form class="navbar-form navbar-left" role="search">
       <div class="form-group">
         <label class="control-label sr-only" for="navbar-form-inputs-example-1">Text input</label>
-        <input id="navbar-form-inputs-example-1" type="text" class="form-control" placeholder="Search">
+        <input id="navbar-form-inputs-example-1" type="search" class="form-control" placeholder="Search">
       </div>
-      <button type="submit" class="btn btn-bsk btn-default">Submit</button>
+      <button type="submit" class="btn btn-bsk btn-default navbar-btn">Submit</button>
     </form>
   </div><!-- /.container-fluid -->
 </nav>
@@ -711,7 +711,7 @@ Unlike the `.navbar-fixed-*` classes, you do not need to change any padding on t
 {: .alert .alert-info }
 
 {% example html %}
-<nav class="navbar navbar-bsk navbar-static-bottom">
+<nav class="navbar navbar-bsk navbar-static-top">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">Site Name</a>

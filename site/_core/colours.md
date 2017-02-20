@@ -194,7 +194,7 @@ contrasting and complementary ascent colours.
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-bas-blue-dark"></div>
       <ul class="list-unstyled text-center bsk-docs-swatch-details">
         <li>BAS blue-dark</li>
-        <li><code>$bsk-blue</code></li>
+        <li><code>$bsk-blue-dark</code></li>
         <li class="bsk-docs-hex-reference">#003A5D</li>
       </ul>
     </div>
@@ -211,7 +211,7 @@ contrasting and complementary ascent colours.
     <div class="col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-bas-turquoise"></div>
       <ul class="list-unstyled text-center bsk-docs-swatch-details">
-        <li>BAS brand</li>
+        <li>BAS turquoise</li>
         <li><code>$bsk-bas-turquoise</code></li>
         <li class="bsk-docs-hex-reference">#0DA59F</li>
       </ul>

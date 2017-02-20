@@ -70,7 +70,7 @@ For each family, a series of fall-back fonts are defined where the primary fonts
 | ----------- | ------------ | ------------------------------------------------ |
 | Default     | Open Sans    | "Helvetica Neue", Helvetica, Arial, *sans-serif* |
 | Brand       | Gill Sans    | "Helvetica Neue", Helvetica, Arial, *sans-serif* |
-| Monotype    | Menlo        | Monaco, Consolas, Courier New, *monospace*       |
+| Monotype    | Menlo        | Monaco, Consolas, "Courier New", *monospace*     |
 {: .table .table-responsive }
 
 Fall-back fonts shown in *italics* will depend on the browser and operating system used.

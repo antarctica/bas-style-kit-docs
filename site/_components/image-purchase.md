@@ -44,7 +44,7 @@ Add the `bsk-image-purchase` class to a [thumbnail]({{ '/components/thumbnail' |
 <div class="thumbnail thumbnail-bsk thumbnail-bsk-default bsk-image-purchase">
   <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=Media%20Item&w=800&h=500" alt="thumbnail">
   <div class="caption">
-    Thumbnail label <a href="#" class="image-purchase-symbol"><i class="fa fa-camera"></i></a>
+    Thumbnail caption <a href="#" class="image-purchase-symbol"><i class="fa fa-camera"></i></a>
   </div>
 </div>
 {% endexample %}

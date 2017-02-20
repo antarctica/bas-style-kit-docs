@@ -65,7 +65,7 @@ Use the `.container` class for a responsive and fixed-width container. This mean
 
 {% include snippets/topic-section-metadata.html
   title="Fluid container"
-  heading_level=2
+  heading_level=3
   current_phase="live"
   current_version="0.1.0"
   included="yes"
@@ -189,15 +189,11 @@ Do not use these classes in [navbars]({{ '/components/navbar' | prepend: site.ba
 {: .alert .alert-warning }
 
 {% example html %}
-<div class="pull-left">
-  <!-- TODO: Add example blocks -->
-</div>
+<div class="pull-left"></div>
 {% endexample %}
 
 {% example html %}
-<div class="pull-right">
-  <!-- TODO: Add example blocks -->
-</div>
+<div class="pull-right"></div>
 {% endexample %}
 
 Alternatively, mixins can be used:

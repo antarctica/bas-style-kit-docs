@@ -62,7 +62,7 @@ shown in <span class="text-success">green</span>.
 
 Your active breakpoint is also indicated in the table header.
 
-<table class="table">
+<table class="table table-responsive">
   <thead>
     <tr>
       <th></th>
@@ -152,7 +152,7 @@ in <span class="text-success">green</span>.
 
 Your active breakpoint is also indicated in the table header.
 
-<table class="table">
+<table class="table table-responsive">
   <thead>
     <tr>
       <th></th>

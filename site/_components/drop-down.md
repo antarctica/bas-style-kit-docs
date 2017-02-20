@@ -1,5 +1,5 @@
 ---
-title: Drop-Down
+title: Drop down
 sections:
   -
     title: Overview

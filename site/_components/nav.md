@@ -55,15 +55,15 @@ Always use the `.nav-tabs-bsk` and `.nav-tabs` classes together so that Style Ki
 {% example html %}
 <nav role="navigation">
   <ul class="nav nav-pills nav-pills-bsk">
-    <li role="presentation" class="active"><a href="#">Tab 1</a></li>
-    <li role="presentation"><a href="#">Tab 1</a></li>
-    <li role="presentation"><a href="#">Tab 1</a></li>
+    <li role="presentation" class="active"><a href="#">Pill 1</a></li>
+    <li role="presentation"><a href="#">Pill 2</a></li>
+    <li role="presentation"><a href="#">Pill 3</a></li>
   </ul>
 </nav>
 {% endexample %}
 
 {% include snippets/topic-section-metadata.html
-  title="Tab navigation item"
+  title="Tab navigation"
   heading_level=3
   current_phase="live"
   current_version="0.1.0"

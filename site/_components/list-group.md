@@ -1,5 +1,5 @@
 ---
-title: List Group
+title: List group
 sections:
   -
     title: Overview
@@ -160,21 +160,18 @@ This provides a non-visual indication of the currently active item, suitable for
 <ul class="list-group">
   <li class="list-group-item active">Active list group item</li>
   <li class="list-group-item">Another list group item</li>
-  <li class="list-group-item disabled">Disabled list group item</li>
 </ul>
 
 <!-- Link list group -->
 <div class="list-group">
   <a href="#" class="list-group-item active">Active list group item</a>
   <a href="#" class="list-group-item">Another list group item</a>
-  <a href="#" class="list-group-item disabled">Disabled list group item</a>
 </div>
 
 <!-- Button list group -->
 <div class="list-group">
   <button type="button" class="list-group-item active">List group item</button>
   <button type="button" class="list-group-item">Another list group item</button>
-  <button type="button" class="list-group-item disabled">Disabled list group item</button>
 </div>
 {% endexample %}
 

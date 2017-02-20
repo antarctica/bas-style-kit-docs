@@ -558,7 +558,6 @@ Labels **should** always be visible for checkboxes and radio options, to indicat
 </form>
 {% endexample %}
 
-### Form sizing
 {: #{{ 'Form sizing' | slugify }} }
 
 {% include snippets/topic-section-metadata.html

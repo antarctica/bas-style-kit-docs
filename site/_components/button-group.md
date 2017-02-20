@@ -1,5 +1,5 @@
 ---
-title: Button-Group
+title: Button group
 sections:
   -
     title: Overview
