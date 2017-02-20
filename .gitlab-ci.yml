@@ -48,8 +48,8 @@ variables:
 
 jekyll-build-staging:
   <<: *job_template_jekyll_build
-  only:
-    - develop
+  except:
+    - master
   variables:
     JEKYLL_ENV: development
   artifacts:

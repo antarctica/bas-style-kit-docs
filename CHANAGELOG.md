@@ -15,6 +15,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 ### Fixed
 
 * [project] Updated references to the BAS Package Service
+* [project] Running development Jekyll build job in all but the master branch
 
 ### Changed
 
