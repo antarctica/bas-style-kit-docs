@@ -20,3 +20,4 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 ### Changed
 
 * [site] Improving licensing statement in footer
+* [project] Updating copyright date

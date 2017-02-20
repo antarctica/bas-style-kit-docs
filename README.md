@@ -72,46 +72,19 @@ $ docker-compose push app
 
 ## Continuous Integration
 
-The BAS GitLab instance is used for [Continuous Integration](https://gitlab.data.bas.ac.uk/BSK/bas-style-kit-docs/builds)
-using settings defined in `.gitlab-ci.yml`, using these jobs and stages.
-
-| Stage | Job                       | Trigger                             | Type      | Notes                           |
-| ----- | ------------------------- | ----------------------------------- | --------- | ------------------------------- |
-| Build | `jekyll-build-staging`    | Commits to the *develop* branch [1] | Automatic | Builds site in development mode |
-
-**Note:** Ensure you commit changes to the `develop` branch only.
-
-[1] To commit to the develop branch, use the BAS GitLab remote [2]:
-
-```shell
-$ git add foo.bar
-$ git commit -m "..."
-$ git push bas-gl
-```
-
-[2] To add the BAS GitLab as a Git remote:
-
-```shell
-$ cd bas-style-kit-docs/
-$ git remote add bas-gl https://gitlab.data.bas.ac.uk/BSK/bas-style-kit-docs.git
-```
+The BAS GitLab instance is used for
+[Continuous Integration](https://gitlab.data.bas.ac.uk/BSK/bas-style-kit-docs/pipelines) using settings defined in
+`.gitlab-ci.yml`.
 
 ## Continuous Deployment
 
 The BAS GitLab instance is used for [Continuous Deployment](https://gitlab.data.bas.ac.uk/BSK/bas-style-kit-docs/builds)
-using settings defined in `.gitlab-ci.yml`, using these jobs and stages.
+using settings defined in `.gitlab-ci.yml`.
+
+
+After deployment changes pushed to the *develop* branch will be available at: https://style-kit-testing.web.bas.ac.uk.
 
 **Note:** Due to caching, deployed changes may not appear for up to 30 minutes.
-
-| Stage   | Job                      | Trigger                                                             | Type      | Notes                              |
-| ------- | ------------------------ | ------------------------------------------------------------------- | --------- | ---------------------------------- |
-| Package | `package-site-content`   | `jekyll-build-staging` or `jekyll-build-production` passes          | Automatic | -                                  |
-| Deploy  | `s3-snapshot-staging`    | `package-site-content` passes with a commit to the `develop` branch | Automatic | [1]                                |
-| Deploy  | `s3-website-staging`     | `package-site-content` passes with a commit to the `develop` branch | Automatic | [2]                                |
-
-[1] And then available from the *development* instance of the BAS Packages Service.
-
-[2] And then available at: [style-kit-testing.web.bas.ac.uk](https://style-kit-testing.web.bas.ac.uk).
 
 ## Provisioning staging environment
 
@@ -123,6 +96,7 @@ Provisioned resources are defined in Terraform configuration files and arranged 
 
 * `provisioning/site-all` - defines resources shared by all environments
 * `provisioning/site-staging` - defines resources used by the staging environment
+
 Each environment is similar, but functions independently, except for the `site-all` environment, which all environments
 depend on. The instructions below show how to configure the staging environment, but they apply equally to any other.
 
@@ -175,7 +149,7 @@ The authors of this project are incredibly grateful for their work.
 
 ## Licence
 
-Copyright 2016 NERC BAS.
+Copyright 2017 NERC BAS.
 
 Unless stated otherwise, all documentation is licensed under the Creative Commons Public License - version 3.
 All code is licensed under the MIT license.
