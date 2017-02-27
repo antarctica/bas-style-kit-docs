@@ -117,7 +117,7 @@ $ terraform apply
 During provisioning, an AWS IAM user will be created with least-privilege permissions to enable Continuous Deployment.
 Access credentials for this user will need to generated manually through the AWS Console and set as secret variables.
 
-See the `.gitlab-ci.yml` file for specifics which user to generate credentials for, and what to name these variables.
+See the `.gitlab-ci.yml` file for specifics on which user to generate credentials for, and what to name them.
 
 **Note:** Commit all Terraform state files to this repository.
 
