@@ -81,7 +81,6 @@ The BAS GitLab instance is used for
 The BAS GitLab instance is used for [Continuous Deployment](https://gitlab.data.bas.ac.uk/BSK/bas-style-kit-docs/builds)
 using settings defined in `.gitlab-ci.yml`.
 
-
 After deployment changes pushed to the *develop* branch will be available at: https://style-kit-testing.web.bas.ac.uk.
 
 **Note:** Due to caching, deployed changes may not appear for up to 30 minutes.
@@ -100,7 +99,6 @@ Provisioned resources are defined in Terraform configuration files and arranged 
 Each environment is similar, but functions independently, except for the `site-all` environment, which all environments
 depend on. The instructions below show how to configure the staging environment, but they apply equally to any other.
 
-
 **Note:** As all environments depend on resources defined in the `site-all` environment, you **MUST** run provisioning
 for this first.
 
@@ -117,7 +115,7 @@ $ terraform apply
 During provisioning, an AWS IAM user will be created with least-privilege permissions to enable Continuous Deployment.
 Access credentials for this user will need to generated manually through the AWS Console and set as secret variables.
 
-See the `.gitlab-ci.yml` file for specifics which user to generate credentials for, and what to name these variables.
+See the `.gitlab-ci.yml` file for specifics on which user to generate credentials for, and what to name them.
 
 **Note:** Commit all Terraform state files to this repository.
 
