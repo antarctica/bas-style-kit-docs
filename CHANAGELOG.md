@@ -15,6 +15,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ### Fixed
 
+* [site] Corrected spelling error in definition 'lists', was definition 'links'
 * [site] Updated all 'app-' classes to 'bsk-docs-' for consistency
 * [project] Updated references to the BAS Package Service
 * [project] Running development Jekyll build job in all but the master branch
@@ -22,5 +23,6 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ### Changed
 
+* [site] Splitting list elements into a separate page in core
 * [site] Improving licensing statement in footer
 * [project] Updating copyright date
