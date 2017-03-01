@@ -26,6 +26,9 @@ sections:
 Use the <code>&lt;code&gt;</code> tag to denote snippets of code.
 Any angle brackets will need escaping with `&lt;` and `&gt;`.
 
+**Heads up!** Inline code elements are not yet fully styled, but will be in the next version of the Style Kit.
+{: .alert .alert-info }
+
 {% example html %}
 <code>var foo = 'bar';</code>
 {% endexample %}

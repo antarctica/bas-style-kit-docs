@@ -23,6 +23,9 @@ Badges are only designed for numbers. For more general purposes, including other
 [Label's]({{ '/components/label' | prepend: site.baseurl }}){: .alert-link }.
 {: .alert .alert-warning }
 
+**Heads up!** Badge elements are not yet fully styled, but will be in the next version of the Style Kit.
+{: .alert .alert-info }
+
 {% include snippets/topic-section-metadata.html
   title="Variants"
   heading_level=2

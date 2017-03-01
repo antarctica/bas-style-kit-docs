@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ### Added
 
+* [site] Added notices for elements awaiting styling
 * [component] Copyright year added to footer examples
 * [site] Build date in footer
 * [site] Year to copyright statement in footer

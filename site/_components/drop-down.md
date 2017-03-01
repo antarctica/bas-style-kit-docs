@@ -77,6 +77,10 @@ not look right.
   included="yes"
 %}
 
+**Heads up!** Split-button drop-down elements are not yet fully styled, but will be in the next version of the Style
+Kit.
+{: .alert .alert-info }
+
 {% example html %}
 <div class="btn-group">
   <button class="btn btn-bsk btn-bsk-default" type="button">Dropdown</button>
@@ -225,12 +229,15 @@ Use the `.dropdown-header` class on a drop-down item.
   included="yes"
 %}
 
-if used within the [Navbar]({{ '/components/navbar' | prepend: site.baseurl }}) component, add the `.active` class to
+If used within the [Navbar]({{ '/components/navbar' | prepend: site.baseurl }}) component, add the `.active` class to
 the drop-down menu item currently active, to highlight where the end user is in the site.
 
 Make sure to include a `<span class="sr-only">(current)</span>` element as well. <br />
 This provides a non-visual indication of the currently active item, suitable for assistive technologies.
 {: .alert .alert-warning }
+
+**Heads up!** Active drop-down item elements are not yet fully styled, but will be in the next version of the Style Kit.
+{: .alert .alert-info }
 
 {% example html %}
 <div class="dropdown dropdown-bsk-docs-example">

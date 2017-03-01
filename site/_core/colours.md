@@ -412,6 +412,9 @@ used as the background of an element using these classes:
 | Info             | `.bg-info`                  |
 {: .table .table-responsive }
 
+**Heads up!** Contextual colours are not yet fully styled, but will be in the next version of the Style Kit.
+{: .alert .alert-info }
+
 <div class="bsk-docs-swatch-wrapper">
   <div class="row">
     <div class="col-md-2">

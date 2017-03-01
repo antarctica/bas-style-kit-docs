@@ -167,6 +167,9 @@ Use the `.input-group-btn` class, instead of `.input-group-addon`, as an element
 **Heads up!** Buttons in input groups are not yet fully supported, but will be in the next version of the Style Kit.
 {: .alert .alert-warning }
 
+**Heads up!** Buttons in input groups are not yet fully styled, but will be in the next version of the Style Kit.
+{: .alert .alert-info }
+
 {% example html %}
 <form>
   <!-- Input group with a button -->
@@ -196,6 +199,10 @@ Use the `.input-group-btn` class, instead of `.input-group-addon`, as an element
 **Heads up!** Button drop-downs in input groups are not yet fully supported, but will be in the next version of the
 Style Kit.
 {: .alert .alert-warning }
+
+**Heads up!** Button drop-downs in input groups are not yet fully styled, but will be in the next version of the Style
+Kit.
+{: .alert .alert-info }
 
 {% example html %}
 <form>
@@ -234,6 +241,10 @@ Use the `.input-group-btn` class, instead of `.input-group-addon`, as an element
 **Heads up!** Split-button drop-down's in input groups are not yet fully supported, but will be in the next version of
 the Style Kit.
 {: .alert .alert-warning }
+
+**Heads up!** Split-button drop-down's in input groups are not yet fully styled, but will be in the next version of the
+Style Kit.
+{: .alert .alert-info }
 
 {% example html %}
 <form>

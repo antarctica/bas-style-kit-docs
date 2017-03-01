@@ -34,6 +34,9 @@ You **must** pick a [variant]({{ '/components/panel/#variants' | prepend: site.b
 panel, otherwise it will look strange. It is not enough to use `.panel` on its own.
 {: .alert .alert-warning }
 
+**Heads up!** Panel elements are not yet fully styled, but will be in the next version of the Style Kit.
+{: .alert .alert-info }
+
 See the [Sidebar]({{ '/components/sidebar' | prepend: site.baseurl }}){: .alert-link } component to display information
 that is distinct from main content, but which is shown **next to** it.
 {: .alert .alert-info }

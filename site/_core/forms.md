@@ -46,6 +46,9 @@ All form fields should have a label to make sure they can be understood by assis
   heading_level=2
 %}
 
+**Heads up!** Form control elements are not yet fully styled, but will be in the next version of the Style Kit.
+{: .alert .alert-info }
+
 {% include snippets/topic-section-metadata.html
   title="Inputs"
   heading_level=3
@@ -195,6 +198,10 @@ as shown to ensure proper styling.
 
 To pre-select an option set the `checked` attribute.
 
+**Heads up!** Radio options and checkbox elements are not yet fully styled, but will be in the next version of the
+Style Kit.
+{: .alert .alert-info }
+
 {% example html %}
 <form>
   <fieldset class="form-group">
@@ -251,6 +258,10 @@ To pre-select an option set the `checked` attribute.
 
 Radio options and checkboxes can be shown inline (i.e. side-by-side rather than stacked) using the `.checkbox-inline`
 and `radio-inline` classes **instead** of the standard classes.
+
+**Heads up!** Inline radio options and checkbox elements are not yet fully styled, but will be in the next version of
+the Style Kit.
+{: .alert .alert-info }
 
 {% example html %}
 <form>

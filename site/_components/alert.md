@@ -26,6 +26,9 @@ You **must** pick a [variant]({{ '/components/alert/#variants' | prepend: site.b
 alert, otherwise it will look strange. It is not enough to use `.alert` on its own.
 {: .alert .alert-warning }
 
+**Heads up!** Alert elements are not yet fully styled, but will be in the next version of the Style Kit.
+{: .alert .alert-info }
+
 {% include snippets/topic-section-metadata.html
   title="Variants"
   heading_level=2
