@@ -33,6 +33,9 @@ Make sure to include the `aria-valuenow`, `aria-valuemin` and `aria-valuemax` at
 assistive technologies.
 {: .alert .alert-warning }
 
+**Heads up!** Progress bar elements are not yet fully styled, but will be in the next version of the Style Kit.
+{: .alert .alert-info }
+
 {% include snippets/topic-section-metadata.html
   title="Variants"
   heading_level=2

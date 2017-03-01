@@ -35,6 +35,9 @@ or paging implementation. For example [data-tables](https://datatables.net) or [
 Use the `aria-label` element so assistive technologies can tell each pagination or pager instance apart.
 {: .alert .alert-warning }
 
+**Heads up!** Pagination and pager elements are not yet fully styled, but will be in the next version of the Style Kit.
+{: .alert .alert-info }
+
 {% include snippets/topic-section-metadata.html
   title="Variants"
   heading_level=2

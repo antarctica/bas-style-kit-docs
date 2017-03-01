@@ -28,7 +28,10 @@ sections:
 
 Use the `.list-group` class for displaying stacked content, either as a minimal list, or more advanced custom layout.
 
-Use the `.list-group-item` for items within a list group, see the details of each .
+Use the `.list-group-item` for items within a list group, see the details of each.
+
+**Heads up!** List group elements are not yet fully styled, but will be in the next version of the Style Kit.
+{: .alert .alert-info }
 
 {% include snippets/topic-section-metadata.html
   title="Supported elements"

@@ -24,6 +24,9 @@ You **must** pick a [variant]({{ '/components/label/#variants' | prepend: site.b
 label, otherwise it will look strange. It is not enough to use `.label` on its own.
 {: .alert .alert-warning }
 
+**Heads up!** Label elements are not yet fully styled, but will be in the next version of the Style Kit.
+{: .alert .alert-info }
+
 If you are highlighting a number, [Badges]({{ '/components/label' | prepend: site.baseurl }}){: .alert-link } can also
 be used.
 {: .alert .alert-info }
