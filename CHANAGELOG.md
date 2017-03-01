@@ -15,6 +15,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ### Fixed
 
+* [site] Updated all 'app-' classes to 'bsk-docs-' for consistency
 * [project] Updated references to the BAS Package Service
 * [project] Running development Jekyll build job in all but the master branch
 * [site] Using DIV tag for beta banner, rather than P tag which is semantically incorrect

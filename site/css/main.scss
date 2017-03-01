@@ -12,21 +12,21 @@ $screen-sm-min: 768px !default;
 
 $beta-phase: #f47738;
 
-.label-app-phase-beta {
+.bsk-docs-label-phase-beta {
   background-color: $beta-phase;
   border-radius: 0;
 }
 
 // Styles for Cookie banner - these will be merged into a future version of the BAS Style Kit
 
-.alert-app-top-pin {
+.bsk-docs-alert-top-pin {
   margin-bottom: 0;
 
   border: none;
   border-radius: 0;
 }
 
-.alert-app-cookie-banner {
+.bsk-docs-alert-cookie-banner {
   background-color: #006AAA;
   color: white;
 
@@ -142,7 +142,7 @@ $beta-phase: #f47738;
 
 // Styles for feedback form
 
-.app-feedback-form {
+.bsk-docs-feedback-form {
   fieldset {
     margin-top: 40px;
   }
