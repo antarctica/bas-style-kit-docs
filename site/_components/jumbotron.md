@@ -8,6 +8,10 @@ sections:
   -
     title: Inverse jumbotron
   -
+    title: Image jumbotron
+  -
+    title: Text overlay
+  -
     title: Sizes
   -
     title: Full-width jumbotron
@@ -67,6 +71,44 @@ Use the `.jumbotron-bsk-inverse` class to use a darker background for a jumbotro
   <h1>Don't Panic!</h1>
   <p>This should be something snappy, to highlight a message and with a possible call to action.</p>
   <p><a class="btn btn-primary btn-lg btn-bsk btn-bsk-primary" href="#" role="button">Do something</a></p>
+</div>
+{% endexample %}
+
+{% include snippets/topic-section-metadata.html
+  title="Image jumbotron"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
+
+An image can also bed used as a background for a jumbotron.
+
+Additional CSS rules will be needed to set a `background-image` property.
+
+{% example html %}
+<div class="jumbotron jumbotron-bsk jumbotron-image-example">
+</div>
+{% endexample %}
+
+{% include snippets/topic-section-metadata.html
+  title="Components"
+  heading_level=2
+%}
+
+{% include snippets/topic-section-metadata.html
+  title="Text overlay"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
+
+Use the `.text-overlay` class to add additional contrast around a jumbotron's title.
+
+{% example html %}
+<div class="jumbotron jumbotron-bsk jumbotron-image-example">
+  <h1><span class="text-overlay">Jumbotron caption</span></h1>
 </div>
 {% endexample %}
 
