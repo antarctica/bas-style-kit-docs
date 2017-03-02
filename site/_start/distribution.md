@@ -195,8 +195,6 @@ Using the Style Kit in this way requires you to compile the Style Kit's Sass fil
   heading_level=2
 %}
 
-{% include snippets/back-to-top.html %}
-
 Source files for the Style Kit are available as a [Git repository]({{ site.bsk_source_code_url }}).
 Stable releases of the Style Kit are [tagged]({{ site.bsk_source_code_url }}/releases).
 

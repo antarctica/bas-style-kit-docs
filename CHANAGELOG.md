@@ -16,6 +16,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ### Fixed
 
+* [site] Checking the site environment as to whether to show the testing stripe under the nav-bar
 * [site] Corrected spelling error in definition 'lists', was definition 'links'
 * [site] Updated all 'app-' classes to 'bsk-docs-' for consistency
 * [project] Updated references to the BAS Package Service
@@ -27,3 +28,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * [site] Splitting list elements into a separate page in core
 * [site] Improving licensing statement in footer
 * [project] Updating copyright date
+
+### Removed
+
+* [site] Removing un-needed 'back to top' include usage
