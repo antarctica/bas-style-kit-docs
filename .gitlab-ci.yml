@@ -114,7 +114,7 @@ s3-website-production:
   only:
     - release
   variables:
-    S3_DEPLOYMENT_BUCKET: bas-style-kit-docs
+    S3_DEPLOYMENT_BUCKET: bas-style-kit-docs-prod
   environment:
     name: production
     url: https://style-kit.web.bas.ac.uk
