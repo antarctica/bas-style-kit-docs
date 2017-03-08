@@ -18,20 +18,13 @@ module Jekyll
 
       site.config['revision'] = site.config['revision'][0..6]
 
-      # If the branch is known, convert to an environment
+      # If the branch is known, expose as a variable
       if ENV['CI_BUILD_REF_NAME'] != nil
         site.config['branch'] = ENV['CI_BUILD_REF_NAME']
       elsif ENV['BRANCH_NAME'] != nil
         site.config['branch'] = ENV['BRANCH_NAME']
       else
         site.config['branch'] = 'unknown'
-      end
-
-      case site.config['branch']
-      when "master"
-        site.config['x_environment'] = 'production'
-      else
-        site.config['x_environment'] = 'staging'
       end
 
     end

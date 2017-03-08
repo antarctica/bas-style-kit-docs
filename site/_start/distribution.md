@@ -28,7 +28,7 @@ Use **compiled** CSS styles in development environments, use **minified** CSS st
 [Source maps](http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/){: .alert-link } should loaded
 automatically by compatible browsers when **minified** CSS styles are used.
 
-{% if site.x_environment == 'staging' %}
+{% if jekyll.environment == 'staging' %}
 <i class="fa fa-flask" aria-hidden="true"></i> <span class="sr-only">Testing version</span>
 These URLs refer to files in the latest development version of the Style Kit. Visit
 [style-kit.web.bas.ac.uk]({{ 'https://' | append: site.bsk_docs_production_url | append: '/start/distribution/#bas-cdn' }}){: .alert-link}
@@ -48,29 +48,29 @@ for URLs to the latest stable version.
     <tr>
       <td rowspan="2">Compiled CSS</td>
       <td>Customised <a href="https://getbootstrap.com">Bootstrap</a></td>
-      <td class="highlight"><pre><code>{% if site.x_environment == 'staging' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endif %}/{% include snippets/bsk-version.html %}/css/bootstrap-bsk.css</code></pre></td>
+      <td class="highlight"><pre><code>{% if jekyll.environment == 'staging' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endif %}/{% include snippets/bsk-version.html %}/css/bootstrap-bsk.css</code></pre></td>
     </tr>
     <tr>
       <td>BAS Style Kit</td>
-      <td class="highlight"><pre><code>{% if site.x_environment == 'staging' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endif %}/{% include snippets/bsk-version.html %}/css/bas-style-kit.css</code></pre></td>
+      <td class="highlight"><pre><code>{% if jekyll.environment == 'staging' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endif %}/{% include snippets/bsk-version.html %}/css/bas-style-kit.css</code></pre></td>
     </tr>
     <tr>
       <td rowspan="2">Compiled &amp; minified CSS</td>
       <td>Customised <a href="https://getbootstrap.com">Bootstrap</a></td>
-      <td class="highlight"><pre><code>{% if site.x_environment == 'staging' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endif %}/{% include snippets/bsk-version.html %}/css/bootstrap-bsk.min.css</code></pre></td>
+      <td class="highlight"><pre><code>{% if jekyll.environment == 'staging' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endif %}/{% include snippets/bsk-version.html %}/css/bootstrap-bsk.min.css</code></pre></td>
     </tr>
     <tr>
       <td>BAS Style Kit</td>
-      <td class="highlight"><pre><code>{% if site.x_environment == 'staging' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endif %}/{% include snippets/bsk-version.html %}/css/bas-style-kit.min.css</code></pre></td>
+      <td class="highlight"><pre><code>{% if jekyll.environment == 'staging' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endif %}/{% include snippets/bsk-version.html %}/css/bas-style-kit.min.css</code></pre></td>
     </tr>
     <tr>
       <td rowspan="2">Minified CSS source-maps</td>
       <td>Customised <a href="https://getbootstrap.com">Bootstrap</a></td>
-      <td class="highlight"><pre><code>{% if site.x_environment == 'staging' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endif %}/{% include snippets/bsk-version.html %}/css/maps/bootstrap-bsk.min.css.map</code></pre></td>
+      <td class="highlight"><pre><code>{% if jekyll.environment == 'staging' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endif %}/{% include snippets/bsk-version.html %}/css/maps/bootstrap-bsk.min.css.map</code></pre></td>
     </tr>
     <tr>
       <td>BAS Style Kit</td>
-      <td class="highlight"><pre><code>{% if site.x_environment == 'staging' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endif %}/{% include snippets/bsk-version.html %}/css/maps/bas-style-kit.min.css.map</code></pre></td>
+      <td class="highlight"><pre><code>{% if jekyll.environment == 'staging' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endif %}/{% include snippets/bsk-version.html %}/css/maps/bas-style-kit.min.css.map</code></pre></td>
     </tr>
   </tbody>
 </table>
@@ -99,7 +99,7 @@ Font files are made available from the BAS CDN in these formats:
 [Sub-Resource Integrity (SRI)](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) values are
 available for all CSS files served through the BAS CDN.
 
-{% if site.x_environment == 'staging' %}
+{% if jekyll.environment == 'staging' %}
 <i class="fa fa-flask" aria-hidden="true"></i> <span class="sr-only">Testing version</span>
 These values refer to files in the latest development version of the Style Kit. Visit
 [style-kit.web.bas.ac.uk]({{ 'https://' | append: site.bsk_docs_production_url | append: '/start/distribution/#sub-resource-integrity-sri-values' }}){: .alert-link}
@@ -109,16 +109,16 @@ for values of the latest stable version.
 
 | Resource                    | SRI value                                                                   |
 | --------------------------- | --------------------------------------------------------------------------- |
-| `css/bas-style-kit.css`     | `{% if site.x_environment == 'staging' %}{{ site.data.bsk_sri_base_staging['dist/css/bas-style-kit.css'] }}{% else %}{{ site.data.bsk_sri_base_production['dist/css/bas-style-kit.css'] }}{% endif %}`     |
-| `css/bootstrap-bsk.css`     | `{% if site.x_environment == 'staging' %}{{ site.data.bsk_sri_base_staging['dist/css/bootstrap-bsk.css'] }}{% else %}{{ site.data.bsk_sri_base_production['dist/css/bootstrap-bsk.css'] }}{% endif %}`     |
-| `css/bas-style-kit.min.css` | `{% if site.x_environment == 'staging' %}{{ site.data.bsk_sri_base_staging['dist/css/bas-style-kit.min.css'] }}{% else %}{{ site.data.bsk_sri_base_production['dist/css/bas-style-kit.min.css'] }}{% endif %}` |
-| `css/bootstrap-bsk.min.css` | `{% if site.x_environment == 'staging' %}{{ site.data.bsk_sri_base_staging['dist/css/bootstrap-bsk.min.css'] }}{% else %}{{ site.data.bsk_sri_base_production['dist/css/bootstrap-bsk.min.css'] }}{% endif %}` |
+| `css/bas-style-kit.css`     | `{% if jekyll.environment == 'staging' %}{{ site.data.bsk_sri_base_staging['dist/css/bas-style-kit.css'] }}{% else %}{{ site.data.bsk_sri_base_production['dist/css/bas-style-kit.css'] }}{% endif %}`     |
+| `css/bootstrap-bsk.css`     | `{% if jekyll.environment == 'staging' %}{{ site.data.bsk_sri_base_staging['dist/css/bootstrap-bsk.css'] }}{% else %}{{ site.data.bsk_sri_base_production['dist/css/bootstrap-bsk.css'] }}{% endif %}`     |
+| `css/bas-style-kit.min.css` | `{% if jekyll.environment == 'staging' %}{{ site.data.bsk_sri_base_staging['dist/css/bas-style-kit.min.css'] }}{% else %}{{ site.data.bsk_sri_base_production['dist/css/bas-style-kit.min.css'] }}{% endif %}` |
+| `css/bootstrap-bsk.min.css` | `{% if jekyll.environment == 'staging' %}{{ site.data.bsk_sri_base_staging['dist/css/bootstrap-bsk.min.css'] }}{% else %}{{ site.data.bsk_sri_base_production['dist/css/bootstrap-bsk.min.css'] }}{% endif %}` |
 {: .table .table-hover }
 
 These values are also available in a machine readable format from:
 
 {% highlight html %}
-https://{% if site.x_environment == 'staging' %}{{ site.bsk_docs_testing_url }}{% else %}{{ site.bsk_docs_production_url }}{% endif %}/data/bsk-sri.json
+https://{% if jekyll.environment == 'staging' %}{{ site.bsk_docs_testing_url }}{% else %}{{ site.bsk_docs_production_url }}{% endif %}/data/bsk-sri.json
 {% endhighlight %}
 
 {% include snippets/topic-section-metadata.html
@@ -150,7 +150,7 @@ A `.zip` archive of the Style Kit is available containing:
 * minified CSS with source maps
 * web fonts in `.eot`, `.ttf`, `.woff` and `.woff2` formats
 
-{% if site.x_environment == 'staging' %}
+{% if jekyll.environment == 'staging' %}
 <i class="fa fa-flask" aria-hidden="true"></i> <span class="sr-only">Testing version</span>
 This download is for the latest development version of the Style Kit. Visit
 [style-kit.web.bas.ac.uk]({{ 'https://' | append: site.bsk_docs_production_url | append: '/start/distribution/#bas-cdn' }}){: .alert-link}
@@ -163,14 +163,14 @@ It is **strongly** recommended to use the
 these files yourself to make upgrading to future releases of the Style Kit easier.
 {: .alert .alert-warning }
 
-[Download latest version]({% if site.x_environment == 'staging' %}{{ site.bsk_package_base_staging }}{% else %}{{ site.bsk_package_base_production }}{% endif %}/{% include snippets/bsk-version.html %}/bas-style-kit-{% include snippets/bsk-version.html %}.zip){: .btn .btn-bsk .btn-default }
+[Download latest version]({% if jekyll.environment == 'staging' %}{{ site.bsk_package_base_staging }}{% else %}{{ site.bsk_package_base_production }}{% endif %}/{% include snippets/bsk-version.html %}/bas-style-kit-{% include snippets/bsk-version.html %}.zip){: .btn .btn-bsk .btn-default }
 
 {% include snippets/topic-section-metadata.html
   title="NodeJS package"
   heading_level=2
 %}
 
-{% if site.x_environment == 'staging' %}
+{% if jekyll.environment == 'staging' %}
 <i class="fa fa-flask" aria-hidden="true"></i> <span class="sr-only">Testing version</span>
 There isn't a NodeJS package for the latest development version of the Style Kit. Visit
 [style-kit.web.bas.ac.uk]({{ 'https://' | append: site.bsk_docs_production_url | append: '/start/distribution/#bas-cdn' }}){: .alert-link}
@@ -178,7 +178,7 @@ for latest stable version.
 {: .alert .bsk-docs-alert-testing }
 {% endif %}
 
-{% if site.x_environment == 'production' %}
+{% if jekyll.environment == 'production' %}
 Source files for the Style Kit are available as a [NodeJS](https://www.npmjs.com/package/bas-style-kit) package.
 
 {% highlight shell %}
@@ -202,7 +202,7 @@ Stable releases of the Style Kit are [tagged]({{ site.bsk_source_code_url }}/rel
 $ git clone {{ site.bsk_source_code_url }}.git
 {% endhighlight %}
 
-{% if site.x_environment == 'staging' %}
+{% if jekyll.environment == 'staging' %}
 <i class="fa fa-flask" aria-hidden="true"></i> <span class="sr-only">Testing version</span>
 Checkout the `develop` branch for the latest development version of the Style Kit.
 {: .alert .bsk-docs-alert-testing }
