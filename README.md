@@ -85,29 +85,16 @@ After deployment changes pushed to the *develop* branch will be available at: ht
 
 **Note:** Due to caching, deployed changes may not appear for up to 30 minutes.
 
-## Provisioning staging environment
+## Provisioning
 
 [Terraform](https://terrafrom.io) [1] and access to the [BAS AWS](https://bitbucket.org/antarctica/bas-aws) and
 [BAS Core Domains](https://bitbucket.org/antarctica/bas-core-domains) projects are required to provision resources
 for this project [2].
 
-Provisioned resources are defined in Terraform configuration files and arranged in multiple environments:
-
-* `provisioning/site-all` - defines resources shared by all environments
-* `provisioning/site-staging` - defines resources used by the staging environment
-
-Each environment is similar, but functions independently, except for the `site-all` environment, which all environments
-depend on. The instructions below show how to configure the staging environment, but they apply equally to any other.
-
-**Note:** As all environments depend on resources defined in the `site-all` environment, you **MUST** run provisioning
-for this first.
+Provisioned resources are defined in Terraform configuration files contained in `provisioning/terraform`.
 
 ```shell
-$ cd provisioning/site-all
-$ terraform plan
-$ terraform apply
-
-$ cd ../site-staging
+$ cd provisioning/terraform
 $ terraform plan
 $ terraform apply
 ```
