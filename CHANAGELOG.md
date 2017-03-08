@@ -29,6 +29,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * [site] Improving licensing statement in footer
 * [project] Updating copyright date
 * [project] Refactoring Terraform configuration into a single set of configuration files
+* [project] 'develop' branch changed to 'master' branch to fit with GitLab conventions
 
 ### Removed
 

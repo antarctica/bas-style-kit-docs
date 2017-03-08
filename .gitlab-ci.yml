@@ -49,7 +49,7 @@ variables:
 jekyll-build-staging:
   <<: *job_template_jekyll_build
   except:
-    - master
+    - release
   variables:
     JEKYLL_ENV: development
   artifacts:
@@ -57,6 +57,18 @@ jekyll-build-staging:
     paths:
       - site/_site
     expire_in: 1 day
+
+# jekyll-build-staging:
+#   <<: *job_template_jekyll_build
+#   only:
+#     - release
+#   variables:
+#     JEKYLL_ENV: production
+#   artifacts:
+#     name: "$CI_BUILD_TOKEN-content"
+#     paths:
+#       - site/_site
+#     expire_in: 1 day
 
 package-site-content:
   stage: package
@@ -75,14 +87,14 @@ package-site-content:
 s3-snapshot-staging:
   <<: *job_template_s3_snapshot
   only:
-    - develop
+    - master
 
 #   variables:
 s3-website-staging:
   stage: deploy
   image: antarctica/aws-cli-image:0.1.0-alpine-gl
   only:
-    - develop
+    - master
   variables:
     S3_DEPLOYMENT_BUCKET: bas-style-kit-docs-stage
   script: "aws s3 sync --delete site/_site s3://$S3_DEPLOYMENT_BUCKET/"
@@ -93,7 +105,7 @@ s3-website-staging:
 # job_s3_deploy_production:
 #   stage: deploy
 #   image: antarctica/jekyll-deployment-image
-#   only: master
+#   only: release
 #   variables:
 #     - S3_DEPLOYMENT_BUCKET: style-kit.web.bas.ac.uk
 #   environment:
