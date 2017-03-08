@@ -25,7 +25,6 @@ description: > # A collection of HTML, CSS, and JS components for developing web
 
 # 'site.revision' is set by the 'environment_variables' plugin
 # 'site.branch' is set by the 'environment_variables' plugin
-# 'site.x_environment' is set by the 'environment_variables' plugin
 
 bas_navigation_menu:
   bas_home: https://www.bas.ac.uk
