@@ -25,7 +25,7 @@ See the relevant documentation for how this documentation is put together:
 [BAS Docker Registry](https://docker-registry.data.bas.ac.uk) [2] are required to build this project locally.
 
 ```shell
-$ git clone -b develop https://bitbucket.org/antarctica/bas-style-kit-docs.git
+$ git clone https://bitbucket.org/antarctica/bas-style-kit-docs.git
 $ cd bas-style-kit
 
 $ docker-compose up
@@ -81,7 +81,9 @@ The BAS GitLab instance is used for
 The BAS GitLab instance is used for [Continuous Deployment](https://gitlab.data.bas.ac.uk/BSK/bas-style-kit-docs/builds)
 using settings defined in `.gitlab-ci.yml`.
 
-After deployment changes pushed to the *develop* branch will be available at: https://style-kit-testing.web.bas.ac.uk.
+Changes pushed to the *master* branch will be available at: https://style-kit-testing.web.bas.ac.uk.
+
+Changes pushed to the *release* branch will be available at: https://style-kit.web.bas.ac.uk.
 
 **Note:** Due to caching, deployed changes may not appear for up to 30 minutes.
 
