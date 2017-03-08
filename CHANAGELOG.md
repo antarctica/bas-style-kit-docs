@@ -30,6 +30,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * [project] Updating copyright date
 * [project] Refactoring Terraform configuration into a single set of configuration files
 * [project] 'develop' branch changed to 'master' branch to fit with GitLab conventions
+* [project] 'release' branch added to replace 'master' branch as a stable branch used for production ready updates
 
 ### Removed
 
