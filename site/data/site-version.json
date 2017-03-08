@@ -1,0 +1,7 @@
+---
+layout: blank
+---
+{
+    "revision": "{{ site.revision }}",
+    "branch": "{{ site.branch }}"
+}

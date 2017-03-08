@@ -1,0 +1,5 @@
+{% if site.revision == 'unknown' %}
+unknown (presumed local build),
+{% else %}
+<a href="{{ bsk_docs_source_code_url }}/commit/{{ site.revision }}">{{ site.revision }}</a>,
+{% endif %}

@@ -1,0 +1,113 @@
+---
+
+# == Notes ==
+
+# - GitLab automatically passes artifacts from previous stages by default
+# - This configuration file uses some advanced YAML features (namely anchors) which may not be correctly displayed
+#   by syntax highlighting
+# - Set required secret variables at: https://gitlab.data.bas.ac.uk/BSK/bas-style-kit-docs/variables - see below
+
+# = Secret variables
+# - Variables are grouped by section in KEY: "value" format (e.g. FOO: "bar")
+#   Sensetive values are represented by "[Sensetive]"
+#
+# - AWS IAM id/secret keys for 'bas-gitlab-deploy-bas-style-kit-docs' user
+# > AWS_ACCESS_KEY_ID: "[Sensetive]"
+# > AWS_SECRET_ACCESS_KEY: "[Sensetive]"
+
+# == Job Templates ==
+
+.job_template_jekyll_build: &job_template_jekyll_build
+  stage: build
+  image: docker-registry.data.bas.ac.uk/bsk/bas-style-kit-docs:2016-12-17-alpine
+  before_script:
+    - "cd site"
+  script: "jekyll build"
+
+.job_template_s3_snapshot: &job_template_s3_snapshot
+  stage: deploy
+  image: antarctica/aws-cli-image:0.1.0-alpine-gl
+  before_script:
+    - "export CI_BUILD_REF_SHORT=`echo $CI_BUILD_REF | cut -c1-7`"
+  script: "aws s3 cp $CI_BUILD_REF_SHORT-* s3://$SNAPSHOT_BUCKET/$SNAPSHOT_BUCKET_PATH/$APP_NAME/"
+
+# == Global settings ==
+
+stages:
+  - build
+  - package
+  - deploy
+
+variables:
+  AWS_DEFAULT_REGION: eu-west-1
+  SNAPSHOT_BUCKET: bas-package-service-prod
+  SNAPSHOT_BUCKET_PATH: zips/apps
+  APP_NAME: bas-style-kit-docs
+
+# == Jobs ==
+
+jekyll-build-staging:
+  <<: *job_template_jekyll_build
+  except:
+    - release
+  variables:
+    JEKYLL_ENV: development
+  artifacts:
+    name: "$CI_BUILD_TOKEN-content"
+    paths:
+      - site/_site
+    expire_in: 1 day
+
+# jekyll-build-staging:
+#   <<: *job_template_jekyll_build
+#   only:
+#     - release
+#   variables:
+#     JEKYLL_ENV: production
+#   artifacts:
+#     name: "$CI_BUILD_TOKEN-content"
+#     paths:
+#       - site/_site
+#     expire_in: 1 day
+
+package-site-content:
+  stage: package
+  image: antarctica/aws-cli-image:0.1.0-alpine-gl
+  before_script:
+    - "export CI_BUILD_REF_SHORT=`echo $CI_BUILD_REF | cut -c1-7`"
+    - "export DATETIME_INSTANT=`date --utc -Iseconds`"
+    - "cd site/_site"
+  script: "zip -r ../../$CI_BUILD_REF_SHORT-$DATETIME_INSTANT.zip *"
+  artifacts:
+    name: "$CI_BUILD_TOKEN-zip"
+    paths:
+      - "*.zip"
+    expire_in: 1 day
+
+s3-snapshot-staging:
+  <<: *job_template_s3_snapshot
+  only:
+    - master
+
+#   variables:
+s3-website-staging:
+  stage: deploy
+  image: antarctica/aws-cli-image:0.1.0-alpine-gl
+  only:
+    - master
+  variables:
+    S3_DEPLOYMENT_BUCKET: bas-style-kit-docs-stage
+  script: "aws s3 sync --delete site/_site s3://$S3_DEPLOYMENT_BUCKET/"
+  environment:
+    name: staging
+    url: https://style-kit-testing.web.bas.ac.uk
+
+# job_s3_deploy_production:
+#   stage: deploy
+#   image: antarctica/jekyll-deployment-image
+#   only: release
+#   variables:
+#     - S3_DEPLOYMENT_BUCKET: style-kit.web.bas.ac.uk
+#   environment:
+#     name: production
+#     url: https://style-kit.web.bas.ac.uk

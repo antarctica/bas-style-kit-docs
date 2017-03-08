@@ -3,3 +3,6 @@
 .gitignore export-ignore
 .editorconfig export-ignore
 .rsync-filter export-ignore
+
+# Ignore provisioning files in language statistics
+provisioning/* linguist-vendored

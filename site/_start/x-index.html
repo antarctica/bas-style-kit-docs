@@ -1,22 +1,26 @@
 ---
+sort_index: 0
 slug: index
+permalink: /:collection/:slug
 layout: default
 title: Getting started
-subtitle: An overview of the BAS Style Kit, how to get it, basic templates and examples, how to make contributions, and more
+subtitle: An overview of the BAS Style Kit, how to get it, how it's developed, and more
 ---
 
-<header class="page-header">
-    <h1>{{ page.title }}</h1>
-    <p class="lead">{{ page.subtitle }}</p>
+<header id="site-content" class="jumbotron jumbotron-bsk jumbotron-bsk-default jumbotron-bsk-lg bsk-docs-collection-masthead" tabindex="-1">
+  <h1>{{ page.title }}</h1>
+  <p>{{ page.subtitle }}</p>
 </header>
 
-{% for topic in site.start %}
+{% assign topicsSorted = site.start | sort:"sort_index" %}
+{% for topic in topicsSorted %}
 {% unless topic.slug == "index" %}
     {% capture modulo %}{{ forloop.index | modulo: 3 }}{% endcapture %}
 
     {% if modulo == '1' %}<div class="row">{% endif %}
 
         <div class="col-md-4">
+            <div class="topic-index-divider"></div>
             <h2><a href="{{ topic.url | prepend: site.baseurl }}">{{ topic.title }}</a></h2>
             <ul class="list-inline">
                 {% for section in topic.sections %}

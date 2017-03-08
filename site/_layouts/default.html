@@ -3,26 +3,17 @@ layout: html
 ---
 
 <div id="site-top"></div>
-{% include cookie-banner.html %}
-{% include site-navigation.html %}
-{% include beta-banner.html %}
+<a href="#site-content" class="sr-only sr-only-focusable">Skip to main content</a>
+{% include layout/cookie-banner.html %}
+{% include layout/site-navigation.html %}
+{% if jekyll.environment != 'production' %}{% include layout/testing-site.html position="after-main-navigation" %}{% endif %}
+{% include layout/beta-banner.html %}
 
 <main class="container">
     {{ content }}
 </main>
 
-{% include site-footer.html %}
+{% if jekyll.environment != 'production' %}{% include layout/testing-site.html position="before-footer" %}{% endif %}
+{% include layout/site-footer.html %}
 
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<!-- Compiled and minified Bootstrap JavaScript plugins, include individual plugins instead if needed -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<!-- Cookie library used to persistently hide the cookie banner (slightly ironic we need a cookie to do this) -->
-<script src="https://s3-eu-west-1.amazonaws.com/bas-cdn-dev/scratch/geomap/js.cookie.js"></script>
-<!-- Code for managing cookie banner -->
-<script src="{{ "/js/cookie-banner.js" | prepend: site.baseurl }}"></script>
-{% if page.url == "/feedback.html" %}
-<!-- Code for gathering user agent, etc. for feedback form -->
-<script src="{{ "/js/feedback-environment.js" | prepend: site.baseurl }}"></script>
-<script src="{{ "/js/feedback-decoration.js"  | prepend: site.baseurl }}"></script>
-{% endif %}
+{% include snippets/body-js.html %}

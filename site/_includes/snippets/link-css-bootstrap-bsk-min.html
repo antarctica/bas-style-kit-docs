@@ -1,0 +1,5 @@
+{% if jekyll.environment == 'staging' %}
+<link rel="stylesheet" href="{{ site.bsk_cdn_base_staging }}/{{ site.bsk_version_staging }}/css/bootstrap-bsk.min.css" integrity="{{ site.data.bsk_sri_base_staging['dist/css/bootstrap-bsk.min.css'] }}" crossorigin="anonymous">
+{% else %}
+<link rel="stylesheet" href="{{ site.bsk_cdn_base_production }}/{{ site.bsk_version_production }}/css/bootstrap-bsk.min.css" integrity="{{ site.data.bsk_sri_base_production['dist/css/bootstrap-bsk.min.css'] }}" crossorigin="anonymous">
+{% endif %}
