@@ -58,17 +58,17 @@ jekyll-build-staging:
       - site/_site
     expire_in: 1 day
 
-# jekyll-build-staging:
-#   <<: *job_template_jekyll_build
-#   only:
-#     - release
-#   variables:
-#     JEKYLL_ENV: production
-#   artifacts:
-#     name: "$CI_BUILD_TOKEN-content"
-#     paths:
-#       - site/_site
-#     expire_in: 1 day
+jekyll-build-production:
+  <<: *job_template_jekyll_build
+  only:
+    - release
+  variables:
+    JEKYLL_ENV: production
+  artifacts:
+    name: "$CI_BUILD_TOKEN-content"
+    paths:
+      - site/_site
+    expire_in: 1 day
 
 package-site-content:
   stage: package
@@ -102,12 +102,12 @@ s3-website-staging:
     name: staging
     url: https://style-kit-testing.web.bas.ac.uk
 
-# job_s3_deploy_production:
-#   stage: deploy
-#   image: antarctica/jekyll-deployment-image
-#   only: release
-#   variables:
-#     - S3_DEPLOYMENT_BUCKET: style-kit.web.bas.ac.uk
-#   environment:
-#     name: production
-#     url: https://style-kit.web.bas.ac.uk
+job_s3_deploy_production:
+  stage: deploy
+  image: antarctica/jekyll-deployment-image
+  only: release
+  variables:
+    - S3_DEPLOYMENT_BUCKET: style-kit.web.bas.ac.uk
+  environment:
+    name: production
+    url: https://style-kit.web.bas.ac.uk
