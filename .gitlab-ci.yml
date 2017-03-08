@@ -51,12 +51,25 @@ variables:
 
 # == Jobs ==
 
-jekyll-build-staging:
+jekyll-build-development:
   <<: *job_template_jekyll_build
   except:
     - release
+    - master
   variables:
     JEKYLL_ENV: development
+  artifacts:
+    name: "$CI_BUILD_TOKEN-content"
+    paths:
+      - site/_site
+    expire_in: 1 day
+
+jekyll-build-staging:
+  <<: *job_template_jekyll_build
+  only:
+    - master
+  variables:
+    JEKYLL_ENV: staging
   artifacts:
     name: "$CI_BUILD_TOKEN-content"
     paths:
