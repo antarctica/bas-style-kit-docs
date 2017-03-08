@@ -31,6 +31,11 @@
     - "export CI_BUILD_REF_SHORT=`echo $CI_BUILD_REF | cut -c1-7`"
   script: "aws s3 cp $CI_BUILD_REF_SHORT-* s3://$SNAPSHOT_BUCKET/$SNAPSHOT_BUCKET_PATH/$APP_NAME/"
 
+.job_template_s3_website: &job_template_s3_website
+  stage: deploy
+  image: antarctica/aws-cli-image:0.1.0-alpine-gl
+  script: "aws s3 sync --delete site/_site s3://$S3_DEPLOYMENT_BUCKET/"
+
 # == Global settings ==
 
 stages:
@@ -89,25 +94,27 @@ s3-snapshot-staging:
   only:
     - master
 
-#   variables:
+s3-snapshot-production:
+  <<: *job_template_s3_snapshot
+  only:
+    - release
+
 s3-website-staging:
-  stage: deploy
-  image: antarctica/aws-cli-image:0.1.0-alpine-gl
+  <<: *job_template_s3_website
   only:
     - master
   variables:
     S3_DEPLOYMENT_BUCKET: bas-style-kit-docs-stage
-  script: "aws s3 sync --delete site/_site s3://$S3_DEPLOYMENT_BUCKET/"
   environment:
     name: staging
     url: https://style-kit-testing.web.bas.ac.uk
 
-job_s3_deploy_production:
-  stage: deploy
-  image: antarctica/jekyll-deployment-image
-  only: release
+s3-website-production:
+  <<: *job_template_s3_website
+  only:
+    - release
   variables:
-    - S3_DEPLOYMENT_BUCKET: style-kit.web.bas.ac.uk
+    S3_DEPLOYMENT_BUCKET: bas-style-kit-docs
   environment:
     name: production
     url: https://style-kit.web.bas.ac.uk
