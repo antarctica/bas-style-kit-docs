@@ -4,10 +4,10 @@ version: '2'
 services:
   app:
     build: .
-    image: docker-registry.data.bas.ac.uk/bsk/bas-style-kit-docs:2016-12-26-alpine
+    image: docker-registry.data.bas.ac.uk/bsk/bas-style-kit-docs:2016-12-28-alpine
     volumes:
       - ./site:/usr/src/app/site
     ports:
       - "9000:9000"
     environment:
-      - JEKYLL_ENV=development
+      - JEKYLL_ENV=staging
