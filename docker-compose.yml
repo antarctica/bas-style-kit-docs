@@ -4,7 +4,7 @@ version: '2'
 services:
   app:
     build: .
-    image: docker-registry.data.bas.ac.uk/bsk/bas-style-kit-docs:2016-12-28-alpine
+    image: docker-registry.data.bas.ac.uk/bsk/bas-style-kit-docs:2017-04-17-alpine
     volumes:
       - ./site:/usr/src/app/site
     ports:

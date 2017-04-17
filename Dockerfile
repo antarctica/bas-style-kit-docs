@@ -1,4 +1,4 @@
-FROM antarctica/jekyll-image:alpine-0.1.1
+FROM antarctica/jekyll-image:0.2.0-alpine
 
 MAINTAINER Felix Fennell <felnne@bas.ac.uk>
 
