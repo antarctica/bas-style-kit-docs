@@ -104,5 +104,7 @@ defaults:
     values:
       layout: blank
 
+ga_property: UA-64130716-27
+
 # Plugin settings
 # ...
