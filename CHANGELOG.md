@@ -24,6 +24,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * [site] Using DIV tag for beta banner, rather than P tag which is semantically incorrect
 * [project] CI tasks now distinguish between development/staging/production, rather than development/production
 * [project] Fixed change log file name
+* [project] Corrected copyright date in license file
 
 ### Changed
 
