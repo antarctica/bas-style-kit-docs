@@ -8,6 +8,8 @@ sections:
   -
     title: Default navbar
   -
+    title: Item
+  -
     title: Active item
   -
     title: Brand text
@@ -151,6 +153,26 @@ This example, whilst quite complex, demonstrates the sort of items shown in a ty
   title="Components"
   heading_level=2
 %}
+
+{% include snippets/topic-section-metadata.html
+  title="Item"
+  heading_level=3
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
+
+Use a list of <code>&lt;a&gt;</code> elements within a navigation menu using the `.nav .navbar-nav` classes.
+
+{% example html %}
+<nav class="navbar navbar-bsk">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li><a href="#">Item</a></li>
+    </ul>
+  </div><!-- /.container-fluid -->
+</nav>
+{% endexample %}
 
 {% include snippets/topic-section-metadata.html
   title="Hidden items menu"
