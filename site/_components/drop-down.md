@@ -77,14 +77,10 @@ not look right.
   included="yes"
 %}
 
-**Heads up!** Split-button drop-down elements are not yet fully styled, but will be in the next version of the Style
-Kit.
-{: .alert .alert-info }
-
 {% example html %}
 <div class="btn-group">
-  <button class="btn btn-bsk btn-bsk-default" type="button">Dropdown</button>
-  <button class="btn btn-bsk btn-bsk-default dropdown-toggle" type="button" id="dropdown-menu-1a" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button class="btn btn-bsk btn-default" type="button">Dropdown</button>
+  <button class="btn btn-bsk btn-default dropdown-toggle" type="button" id="dropdown-menu-1a" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <span class="caret"></span>
     <span class="sr-only">Toggle Dropdown</span>
   </button>
