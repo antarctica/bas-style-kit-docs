@@ -42,7 +42,7 @@ sidebar, otherwise it will look strange. I.e. it is not enough to use `.sidebar-
   included="yes"
 %}
 
-Add the `.sidebar-bsk-default` class for standard Jumbotrons.
+Add the `.sidebar-bsk-default` class a for standard sidebar.
 
 {% example html %}
 <div class="row">
