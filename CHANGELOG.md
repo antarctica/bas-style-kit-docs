@@ -41,6 +41,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * [site] Reducing warning for using split button drop-down menus in input groups
 * [site] Removing warning for using brand text and images within a navbar
 * [site] Adopting fixed width icons across the documentation site
+* [site] Removing margin from topic table of contents items
 * [project] Updating copyright date
 * [project] Refactoring Terraform configuration into a single set of configuration files
 * [project] 'develop' branch changed to 'master' branch to fit with GitLab conventions
