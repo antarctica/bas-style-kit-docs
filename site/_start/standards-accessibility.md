@@ -16,6 +16,8 @@ sections:
     title: Providing context
   -
     title: Skip navigation
+  -
+    title: Useful resources
 ---
 
 {% include snippets/table-of-contents.md %}
@@ -206,3 +208,14 @@ correctly.
 {% endhighlight %}
 
 For more information, see [this article](http://a11yproject.com/posts/skip-nav-links/) from the A11Y Project.
+
+{% include snippets/topic-section-metadata.html
+  title="Useful resources"
+  heading_level=2
+%}
+
+These resources provide additional general, or specific, guidance:
+
+* [A11Y Style Guide](http://a11y-style-guide.com/style-guide/)
+* [Accessibility - Mozilla Developer Network (MDN)](https://developer.mozilla.org/en-US/docs/Web/Accessibility)
+* [Accessibility blog - Government Digital Service (GDS)](https://accessibility.blog.gov.uk/)
