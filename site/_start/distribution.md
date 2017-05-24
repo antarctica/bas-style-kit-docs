@@ -29,7 +29,7 @@ Use **compiled** CSS styles in development environments, use **minified** CSS st
 automatically by compatible browsers when **minified** CSS styles are used.
 
 {% if jekyll.environment == 'staging' %}
-<i class="fa fa-flask" aria-hidden="true"></i> <span class="sr-only">Testing version</span>
+<i class="fa fa-fw fa-flask" aria-hidden="true"></i> <span class="sr-only">Testing version</span>
 These URLs refer to files in the latest development version of the Style Kit. Visit
 [style-kit.web.bas.ac.uk]({{ 'https://' | append: site.bsk_docs_production_url | append: '/start/distribution/#bas-cdn' }}){: .alert-link}
 for URLs to the latest stable version.
@@ -100,7 +100,7 @@ Font files are made available from the BAS CDN in these formats:
 available for all CSS files served through the BAS CDN.
 
 {% if jekyll.environment == 'staging' %}
-<i class="fa fa-flask" aria-hidden="true"></i> <span class="sr-only">Testing version</span>
+<i class="fa fa-fw fa-flask" aria-hidden="true"></i> <span class="sr-only">Testing version</span>
 These values refer to files in the latest development version of the Style Kit. Visit
 [style-kit.web.bas.ac.uk]({{ 'https://' | append: site.bsk_docs_production_url | append: '/start/distribution/#sub-resource-integrity-sri-values' }}){: .alert-link}
 for values of the latest stable version.
@@ -151,7 +151,7 @@ A `.zip` archive of the Style Kit is available containing:
 * web fonts in `.eot`, `.ttf`, `.woff` and `.woff2` formats
 
 {% if jekyll.environment == 'staging' %}
-<i class="fa fa-flask" aria-hidden="true"></i> <span class="sr-only">Testing version</span>
+<i class="fa fa-fw fa-flask" aria-hidden="true"></i> <span class="sr-only">Testing version</span>
 This download is for the latest development version of the Style Kit. Visit
 [style-kit.web.bas.ac.uk]({{ 'https://' | append: site.bsk_docs_production_url | append: '/start/distribution/#bas-cdn' }}){: .alert-link}
 for latest stable version.
@@ -171,7 +171,7 @@ these files yourself to make upgrading to future releases of the Style Kit easie
 %}
 
 {% if jekyll.environment == 'staging' %}
-<i class="fa fa-flask" aria-hidden="true"></i> <span class="sr-only">Testing version</span>
+<i class="fa fa-fw fa-flask" aria-hidden="true"></i> <span class="sr-only">Testing version</span>
 There isn't a NodeJS package for the latest development version of the Style Kit. Visit
 [style-kit.web.bas.ac.uk]({{ 'https://' | append: site.bsk_docs_production_url | append: '/start/distribution/#bas-cdn' }}){: .alert-link}
 for latest stable version.
@@ -203,7 +203,7 @@ $ git clone {{ site.bsk_source_code_url }}.git
 {% endhighlight %}
 
 {% if jekyll.environment == 'staging' %}
-<i class="fa fa-flask" aria-hidden="true"></i> <span class="sr-only">Testing version</span>
+<i class="fa fa-fw fa-flask" aria-hidden="true"></i> <span class="sr-only">Testing version</span>
 Checkout the `develop` branch for the latest development version of the Style Kit.
 {: .alert .bsk-docs-alert-testing }
 {% endif %}

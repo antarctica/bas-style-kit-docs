@@ -50,10 +50,10 @@ alternate, interchangeable, grid with more columns.
 There are two grids available, which can be mixed and nested if needed. They function in exactly the same way, other
 than the total number of columns.
 
-| Grid Name     | Total Columns | Class Prefix | Core Bootstrap                                                                                  |
-| ------------- | ------------- | ------------ | ----------------------------------------------------------------------------------------------- |
-| Default       | 12            | `col-`       | <i class="fa fa-check" aria-hidden="true"></i> Yes                                              |
-| BAS Style Kit | 24            | `col-bsk-`   | <span class="text-danger"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> No</span> |
+| Grid Name     | Total Columns | Class Prefix | Core Bootstrap                                                                                        |
+| ------------- | ------------- | ------------ | ----------------------------------------------------------------------------------------------------- |
+| Default       | 12            | `col-`       | <i class="fa fa-fw fa-check" aria-hidden="true"></i> Yes                                              |
+| BAS Style Kit | 24            | `col-bsk-`   | <span class="text-danger"><i class="fa fa-fw fa-exclamation-circle" aria-hidden="true"></i> No</span> |
 {: .table .table-responsive }
 
 The extra columns in the BAS Style Kit grid are primarily intended for use in applications, where more complex or

@@ -25,11 +25,11 @@
 {% endcase %}
 
 {% if include.included == "yes" %}
-* <i class="fa fa-check" aria-hidden="true"></i> Included in Core Style Kit
+* <i class="fa fa-fw fa-check" aria-hidden="true"></i> Included in Core Style Kit
 {% elsif include.included == "no" %}
-* {: .text-danger } <i class="fa fa-exclamation-circle" aria-hidden="true"></i> Not included in Core Style Kit
+* {: .text-danger } <i class="fa fa-fw fa-exclamation-circle" aria-hidden="true"></i> Not included in Core Style Kit
 {% endif %}
 
 * {% include snippets/back-to-top.html %}
 
-* <a href="#{{ include.title | slugify }}"><i class="fa fa-link" aria-hidden="true"></i> Link to this section</a>
+* <a href="#{{ include.title | slugify }}"><i class="fa fa-fw fa-link" aria-hidden="true"></i> Link to this section</a>

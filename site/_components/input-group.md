@@ -109,7 +109,7 @@ Icons can be used as well.
   <fieldset class="form-group">
     <label class="control-label" for="form-input-group-example-4">Username</label>
     <div class="input-group">
-      <span class="input-group-addon" id="form-input-group-example-4-addon-1"><i class="fa fa-user" aria-hidden="true"></i></span>
+      <span class="input-group-addon" id="form-input-group-example-4-addon-1"><i class="fa fa-fw fa-user" aria-hidden="true"></i></span>
       <input type="text" class="form-control" placeholder="Username" id="form-input-group-example-4" aria-describedby="form-input-group-example-4-addon-1">
     </div>
   </fieldset>
