@@ -826,7 +826,7 @@ of the Style Kit. See [BSK-135](https://jira.ceh.ac.uk/browse/bsk-135) for more 
       <label class="control-label" for="form-validation-example-2">Your email address</label>
       <input type="email" class="form-control" id="form-validation-example-2" value="adam.smith@bas.acc.uk">
       <p class="help-block text-muted">We will only use this information for contacting you about your feedback.</p>
-      <p class="help-block text-muted"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Did you mean
+      <p class="help-block text-muted"><i class="fa fa-fw fa-exclamation-triangle" aria-hidden="true"></i> Did you mean
       <em>adam.smith@bas.<strong>ac</strong>.uk</em>, rather than <em>adam.smith@bas.<strong>acc</strong>.uk</em>.</p>
   </fieldset>
 
@@ -834,7 +834,7 @@ of the Style Kit. See [BSK-135](https://jira.ceh.ac.uk/browse/bsk-135) for more 
       <label class="control-label" for="form-validation-example-3">Your email address</label>
       <input type="email" class="form-control" id="form-validation-example-3" value="adam.smith" aria-invalid="true">
       <p class="help-block text-muted">We will only use this information for contacting you about your feedback.</p>
-      <p class="help-block text-muted"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> <em>adam.smith</em>,
+      <p class="help-block text-muted"><i class="fa fa-fw fa-exclamation-circle" aria-hidden="true"></i> <em>adam.smith</em>,
       is not a valid email address.</p>
   </fieldset>
 </form>

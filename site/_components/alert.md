@@ -75,10 +75,10 @@ The [standard contextual icons]({{ '/core/icons/#standard-contextual-icons' | pr
 used for adding extra context to alerts.
 
 {% example html %}
-<div class="alert alert-success" role="alert"><i class="fa fa-check text-success" aria-hidden="true"></i> Success alert</div>
-<div class="alert alert-warning" role="alert"><i class="fa fa-exclamation-triangle text-warning" aria-hidden="true"></i> Warning alert</div>
-<div class="alert alert-danger" role="alert"><i class="fa fa-exclamation-circle text-danger" aria-hidden="true"></i> Danger alert</div>
-<div class="alert alert-info" role="alert"><i class="fa fa-info text-info" aria-hidden="true"></i> Info alert</div>
+<div class="alert alert-success" role="alert"><i class="fa fa-fw fa-check text-success" aria-hidden="true"></i> Success alert</div>
+<div class="alert alert-warning" role="alert"><i class="fa fa-fw fa-exclamation-triangle text-warning" aria-hidden="true"></i> Warning alert</div>
+<div class="alert alert-danger" role="alert"><i class="fa fa-fw fa-exclamation-circle text-danger" aria-hidden="true"></i> Danger alert</div>
+<div class="alert alert-info" role="alert"><i class="fa fa-fw fa-info text-info" aria-hidden="true"></i> Info alert</div>
 {% endexample %}
 
 ## Components
@@ -125,7 +125,7 @@ The close button element should use a `button` element, not a <code>&lt;a&gt;</c
 
 {% example html %}
 <div class="alert alert-success" role="alert">
-  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><i class="fa fa-times-circle" aria-hidden="true"></i></button>
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><i class="fa times-circle" aria-hidden="true"></i></button>
   An alert
 </div>
 {% endexample %}

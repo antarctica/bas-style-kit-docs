@@ -143,10 +143,10 @@ used for adding context to buttons, usually with the
 [contextual colours]({{ '/core/buttons/#contextual-colours' | prepend: site.baseurl }}).
 
 {% example html %}
-<button class="btn btn-bsk btn-success"><i class="fa fa-check" aria-hidden="true"></i> Success Action</button>
-<button class="btn btn-bsk btn-warning"><i class="fa fa-exclamation-triangle" aria-hidden="true"></i> Warning Action</button>
-<button class="btn btn-bsk btn-danger"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> Dangerous Action</button>
-<button class="btn btn-bsk btn-info"><i class="fa fa-info" aria-hidden="true"></i> Info Action</button>
+<button class="btn btn-bsk btn-success"><i class="fa fa-fw fa-check" aria-hidden="true"></i> Success Action</button>
+<button class="btn btn-bsk btn-warning"><i class="fa fa-fw fa-exclamation-triangle" aria-hidden="true"></i> Warning Action</button>
+<button class="btn btn-bsk btn-danger"><i class="fa fa-fw fa-exclamation-circle" aria-hidden="true"></i> Dangerous Action</button>
+<button class="btn btn-bsk btn-info"><i class="fa fa-fw fa-info" aria-hidden="true"></i> Info Action</button>
 {% endexample %}
 
 {% include snippets/topic-section-metadata.html

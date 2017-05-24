@@ -21,33 +21,33 @@ breakpoint is shown in <span class="text-success">green</span> below. Resize you
 
 <div class="row responsive-utilities-test">
   <div class="col-xs-6 col-sm-3 col-lg-2"><div class="bsk-docs-content-block">
-    <span class="hidden-xs text-muted"><i class="fa fa-square-o" aria-hidden="true"></i> Extra Small</span>
+    <span class="hidden-xs text-muted"><i class="fa fa-fw fa-square-o" aria-hidden="true"></i> Extra Small</span>
     <span class="hidden-sm hidden-md hidden-lg hidden-xl visible-xs-inline text-success">
-      <i class="fa fa-check-square" aria-hidden="true"></i> <span class="sr-only">Active breakpoint</span> Extra Small
+      <i class="fa fa-fw fa-check-square" aria-hidden="true"></i> <span class="sr-only">Active breakpoint</span> Extra Small
     </span>
   </div></div>
   <div class="col-xs-6 col-sm-3 col-lg-2"><div class="bsk-docs-content-block">
-    <span class="hidden-sm text-muted"><i class="fa fa-square-o" aria-hidden="true"></i> Small</span>
+    <span class="hidden-sm text-muted"><i class="fa fa-fw fa-square-o" aria-hidden="true"></i> Small</span>
     <span class="hidden-xs hidden-md hidden-lg hidden-xl visible-sm-inline text-success">
-      <i class="fa fa-check-square" aria-hidden="true"></i> <span class="sr-only">Active breakpoint</span> Small
+      <i class="fa fa-fw fa-check-square" aria-hidden="true"></i> <span class="sr-only">Active breakpoint</span> Small
     </span>
   </div></div>
   <div class="col-xs-6 col-sm-3 col-lg-2"><div class="bsk-docs-content-block">
-    <span class="hidden-md text-muted"><i class="fa fa-square-o" aria-hidden="true"></i> Medium</span>
+    <span class="hidden-md text-muted"><i class="fa fa-fw fa-square-o" aria-hidden="true"></i> Medium</span>
     <span class="hidden-xs hidden-sm hidden-lg hidden-xl visible-md-inline text-success">
-      <i class="fa fa-check-square" aria-hidden="true"></i> <span class="sr-only">Active breakpoint</span> Medium
+      <i class="fa fa-fw fa-check-square" aria-hidden="true"></i> <span class="sr-only">Active breakpoint</span> Medium
     </span>
   </div></div>
   <div class="col-xs-6 col-sm-3 col-lg-2"><div class="bsk-docs-content-block">
-    <span class="hidden-lg text-muted"><i class="fa fa-square-o" aria-hidden="true"></i> Large</span>
+    <span class="hidden-lg text-muted"><i class="fa fa-fw fa-square-o" aria-hidden="true"></i> Large</span>
     <span class="hidden-xs hidden-sm hidden-md hidden-xl visible-lg-inline text-success">
-      <i class="fa fa-check-square" aria-hidden="true"></i> <span class="sr-only">Active breakpoint</span> Large
+      <i class="fa fa-fw fa-check-square" aria-hidden="true"></i> <span class="sr-only">Active breakpoint</span> Large
     </span>
   </div></div>
   <div class="col-xs-6 col-sm-3 col-lg-2"><div class="bsk-docs-content-block">
-    <span class="hidden-xl text-muted"><i class="fa fa-square-o" aria-hidden="true"></i> Extra Large</span>
+    <span class="hidden-xl text-muted"><i class="fa fa-fw fa-square-o" aria-hidden="true"></i> Extra Large</span>
     <span class="hidden-xs hidden-sm hidden-md hidden-lg visible-xl-inline text-success">
-      <i class="fa fa-check-square" aria-hidden="true"></i> <span class="sr-only">Active breakpoint</span> Extra Large
+      <i class="fa fa-fw fa-check-square" aria-hidden="true"></i> <span class="sr-only">Active breakpoint</span> Extra Large
     </span>
   </div></div>
 </div>
@@ -67,33 +67,33 @@ Your active breakpoint is also indicated in the table header.
     <tr>
       <th></th>
       <th>
-        <span class="hidden-xs text-muted"><i class="fa fa-square-o" aria-hidden="true"></i> Extra Small</span>
+        <span class="hidden-xs text-muted"><i class="fa fa-fw fa-square-o" aria-hidden="true"></i> Extra Small</span>
         <span class="hidden-sm hidden-md hidden-lg hidden-xl visible-xs-inline text-success">
-          <i class="fa fa-check-square" aria-hidden="true"></i> <span class="sr-only">Active breakpoint</span> Extra Small
+          <i class="fa fa-fw fa-check-square" aria-hidden="true"></i> <span class="sr-only">Active breakpoint</span> Extra Small
         </span>
       </th>
       <th>
-        <span class="hidden-sm text-muted"><i class="fa fa-square-o" aria-hidden="true"></i> Small</span>
+        <span class="hidden-sm text-muted"><i class="fa fa-fw fa-square-o" aria-hidden="true"></i> Small</span>
         <span class="hidden-xs hidden-md hidden-lg hidden-xl visible-sm-inline text-success">
-          <i class="fa fa-check-square" aria-hidden="true"></i> <span class="sr-only">Active breakpoint</span> Small
+          <i class="fa fa-fw fa-check-square" aria-hidden="true"></i> <span class="sr-only">Active breakpoint</span> Small
         </span>
       </th>
       <th>
-        <span class="hidden-md text-muted"><i class="fa fa-square-o" aria-hidden="true"></i> Medium</span>
+        <span class="hidden-md text-muted"><i class="fa fa-fw fa-square-o" aria-hidden="true"></i> Medium</span>
         <span class="hidden-xs hidden-sm hidden-lg hidden-xl visible-md-inline text-success">
-          <i class="fa fa-check-square" aria-hidden="true"></i> <span class="sr-only">Active breakpoint</span> Medium
+          <i class="fa fa-fw fa-check-square" aria-hidden="true"></i> <span class="sr-only">Active breakpoint</span> Medium
         </span>
       </th>
       <th>
-        <span class="hidden-lg text-muted"><i class="fa fa-square-o" aria-hidden="true"></i> Large</span>
+        <span class="hidden-lg text-muted"><i class="fa fa-fw fa-square-o" aria-hidden="true"></i> Large</span>
         <span class="hidden-xs hidden-sm hidden-md hidden-xl visible-lg-inline text-success">
-          <i class="fa fa-check-square" aria-hidden="true"></i> <span class="sr-only">Active breakpoint</span> Large
+          <i class="fa fa-fw fa-check-square" aria-hidden="true"></i> <span class="sr-only">Active breakpoint</span> Large
         </span>
       </th>
       <th>
-        <span class="hidden-xl text-muted"><i class="fa fa-square-o" aria-hidden="true"></i> Extra Large</span>
+        <span class="hidden-xl text-muted"><i class="fa fa-fw fa-square-o" aria-hidden="true"></i> Extra Large</span>
         <span class="hidden-xs hidden-sm hidden-md hidden-lg visible-xl-inline text-success">
-          <i class="fa fa-check-square" aria-hidden="true"></i> <span class="sr-only">Active breakpoint</span> Extra Large
+          <i class="fa fa-fw fa-check-square" aria-hidden="true"></i> <span class="sr-only">Active breakpoint</span> Extra Large
         </span>
       </th>
     </tr>
@@ -101,43 +101,43 @@ Your active breakpoint is also indicated in the table header.
   <tbody>
     <tr>
       <th><code>.visible-xs-*</code></th>
-      <td><span class="text-success"><i class="fa fa-eye" aria-hidden="true"></i> Visible</span></td>
-      <td><span class="text-muted"><i class="fa fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
-      <td><span class="text-muted"><i class="fa fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
-      <td><span class="text-muted"><i class="fa fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
-      <td><span class="text-muted"><i class="fa fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
+      <td><span class="text-success"><i class="fa fa-fw fa-eye" aria-hidden="true"></i> Visible</span></td>
+      <td><span class="text-muted"><i class="fa fa-fw fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
+      <td><span class="text-muted"><i class="fa fa-fw fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
+      <td><span class="text-muted"><i class="fa fa-fw fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
+      <td><span class="text-muted"><i class="fa fa-fw fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
     </tr>
     <tr>
       <th><code>.visible-sm-*</code></th>
-      <td><span class="text-muted"><i class="fa fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
-      <td><span class="text-success"><i class="fa fa-eye" aria-hidden="true"></i> Visible</span></td>
-      <td><span class="text-muted"><i class="fa fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
-      <td><span class="text-muted"><i class="fa fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
-      <td><span class="text-muted"><i class="fa fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
+      <td><span class="text-muted"><i class="fa fa-fw fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
+      <td><span class="text-success"><i class="fa fa-fw fa-eye" aria-hidden="true"></i> Visible</span></td>
+      <td><span class="text-muted"><i class="fa fa-fw fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
+      <td><span class="text-muted"><i class="fa fa-fw fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
+      <td><span class="text-muted"><i class="fa fa-fw fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
     </tr>
     <tr>
       <th><code>.visible-md-*</code></th>
-      <td><span class="text-muted"><i class="fa fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
-      <td><span class="text-muted"><i class="fa fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
-      <td><span class="text-success"><i class="fa fa-eye" aria-hidden="true"></i> Visible</span></td>
-      <td><span class="text-muted"><i class="fa fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
-      <td><span class="text-muted"><i class="fa fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
+      <td><span class="text-muted"><i class="fa fa-fw fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
+      <td><span class="text-muted"><i class="fa fa-fw fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
+      <td><span class="text-success"><i class="fa fa-fw fa-eye" aria-hidden="true"></i> Visible</span></td>
+      <td><span class="text-muted"><i class="fa fa-fw fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
+      <td><span class="text-muted"><i class="fa fa-fw fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
     </tr>
     <tr>
       <th><code>.visible-lg-*</code></th>
-      <td><span class="text-muted"><i class="fa fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
-      <td><span class="text-muted"><i class="fa fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
-      <td><span class="text-muted"><i class="fa fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
-      <td><span class="text-success"><i class="fa fa-eye" aria-hidden="true"></i> Visible</span></td>
-      <td><span class="text-muted"><i class="fa fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
+      <td><span class="text-muted"><i class="fa fa-fw fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
+      <td><span class="text-muted"><i class="fa fa-fw fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
+      <td><span class="text-muted"><i class="fa fa-fw fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
+      <td><span class="text-success"><i class="fa fa-fw fa-eye" aria-hidden="true"></i> Visible</span></td>
+      <td><span class="text-muted"><i class="fa fa-fw fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
     </tr>
     <tr>
       <th><code>.visible-xl-*</code></th>
-      <td><span class="text-muted"><i class="fa fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
-      <td><span class="text-muted"><i class="fa fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
-      <td><span class="text-muted"><i class="fa fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
-      <td><span class="text-muted"><i class="fa fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
-      <td><span class="text-success"><i class="fa fa-eye" aria-hidden="true"></i> Visible</span></td>
+      <td><span class="text-muted"><i class="fa fa-fw fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
+      <td><span class="text-muted"><i class="fa fa-fw fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
+      <td><span class="text-muted"><i class="fa fa-fw fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
+      <td><span class="text-muted"><i class="fa fa-fw fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
+      <td><span class="text-success"><i class="fa fa-fw fa-eye" aria-hidden="true"></i> Visible</span></td>
     </tr>
   </tbody>
 </table>
@@ -157,33 +157,33 @@ Your active breakpoint is also indicated in the table header.
     <tr>
       <th></th>
       <th>
-        <span class="hidden-xs text-muted"><i class="fa fa-square-o" aria-hidden="true"></i> Extra Small</span>
+        <span class="hidden-xs text-muted"><i class="fa fa-fw fa-square-o" aria-hidden="true"></i> Extra Small</span>
         <span class="hidden-sm hidden-md hidden-lg hidden-xl visible-xs-inline text-success">
-          <i class="fa fa-check-square" aria-hidden="true"></i> <span class="sr-only">Active breakpoint</span> Extra Small
+          <i class="fa fa-fw fa-check-square" aria-hidden="true"></i> <span class="sr-only">Active breakpoint</span> Extra Small
         </span>
       </th>
-      <th>
-        <span class="hidden-sm text-muted"><i class="fa fa-square-o" aria-hidden="true"></i> Small</span>
+      <th>fa-fw
+        <span class="hidden-sm text-muted"><i class="fa fa-fw fa-square-o" aria-hidden="true"></i> Small</span>
         <span class="hidden-xs hidden-md hidden-lg hidden-xl visible-sm-inline text-success">
-          <i class="fa fa-check-square" aria-hidden="true"></i> <span class="sr-only">Active breakpoint</span> Small
+          <i class="fa fa-fw fa-check-square" aria-hidden="true"></i> <span class="sr-only">Active breakpoint</span> Small
         </span>
       </th>
       <th>
-        <span class="hidden-md text-muted"><i class="fa fa-square-o" aria-hidden="true"></i> Medium</span>
+        <span class="hidden-md text-muted"><i class="fa fa-fw fa-square-o" aria-hidden="true"></i> Medium</span>
         <span class="hidden-xs hidden-sm hidden-lg hidden-xl visible-md-inline text-success">
-          <i class="fa fa-check-square" aria-hidden="true"></i> <span class="sr-only">Active breakpoint</span> Medium
+          <i class="fa fa-fw fa-check-square" aria-hidden="true"></i> <span class="sr-only">Active breakpoint</span> Medium
         </span>
       </th>
       <th>
-        <span class="hidden-lg text-muted"><i class="fa fa-square-o" aria-hidden="true"></i> Large</span>
+        <span class="hidden-lg text-muted"><i class="fa fa-fw fa-square-o" aria-hidden="true"></i> Large</span>
         <span class="hidden-xs hidden-sm hidden-md hidden-xl visible-lg-inline text-success">
-          <i class="fa fa-check-square" aria-hidden="true"></i> <span class="sr-only">Active breakpoint</span> Large
+          <i class="fa fa-fw fa-check-square" aria-hidden="true"></i> <span class="sr-only">Active breakpoint</span> Large
         </span>
       </th>
       <th>
-        <span class="hidden-xl text-muted"><i class="fa fa-square-o" aria-hidden="true"></i> Extra Large</span>
+        <span class="hidden-xl text-muted"><i class="fa fa-fw fa-square-o" aria-hidden="true"></i> Extra Large</span>
         <span class="hidden-xs hidden-sm hidden-md hidden-lg visible-xl-inline text-success">
-          <i class="fa fa-check-square" aria-hidden="true"></i> <span class="sr-only">Active breakpoint</span> Extra Large
+          <i class="fa fa-fw fa-check-square" aria-hidden="true"></i> <span class="sr-only">Active breakpoint</span> Extra Large
         </span>
       </th>
     </tr>
@@ -191,43 +191,43 @@ Your active breakpoint is also indicated in the table header.
   <tbody>
     <tr>
       <th><code>.hidden-xs</code></th>
-      <td><span class="text-success"><i class="fa fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
-      <td><span class="text-muted"><i class="fa fa-eye" aria-hidden="true"></i> Visible</span></td>
-      <td><span class="text-muted"><i class="fa fa-eye" aria-hidden="true"></i> Visible</span></td>
-      <td><span class="text-muted"><i class="fa fa-eye" aria-hidden="true"></i> Visible</span></td>
-      <td><span class="text-muted"><i class="fa fa-eye" aria-hidden="true"></i> Visible</span></td>
+      <td><span class="text-success"><i class="fa fa-fw fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
+      <td><span class="text-muted"><i class="fa fa-fw fa-eye" aria-hidden="true"></i> Visible</span></td>
+      <td><span class="text-muted"><i class="fa fa-fw fa-eye" aria-hidden="true"></i> Visible</span></td>
+      <td><span class="text-muted"><i class="fa fa-fw fa-eye" aria-hidden="true"></i> Visible</span></td>
+      <td><span class="text-muted"><i class="fa fa-fw fa-eye" aria-hidden="true"></i> Visible</span></td>
     </tr>
     <tr>
       <th><code>.hidden-sm</code></th>
-      <td><span class="text-muted"><i class="fa fa-eye" aria-hidden="true"></i> Visible</span></td>
-      <td><span class="text-success"><i class="fa fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
-      <td><span class="text-muted"><i class="fa fa-eye" aria-hidden="true"></i> Visible</span></td>
-      <td><span class="text-muted"><i class="fa fa-eye" aria-hidden="true"></i> Visible</span></td>
-      <td><span class="text-muted"><i class="fa fa-eye" aria-hidden="true"></i> Visible</span></td>
+      <td><span class="text-muted"><i class="fa fa-fw fa-eye" aria-hidden="true"></i> Visible</span></td>
+      <td><span class="text-success"><i class="fa fa-fw fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
+      <td><span class="text-muted"><i class="fa fa-fw fa-eye" aria-hidden="true"></i> Visible</span></td>
+      <td><span class="text-muted"><i class="fa fa-fw fa-eye" aria-hidden="true"></i> Visible</span></td>
+      <td><span class="text-muted"><i class="fa fa-fw fa-eye" aria-hidden="true"></i> Visible</span></td>
     </tr>
     <tr>
       <th><code>.hidden-md</code></th>
-      <td><span class="text-muted"><i class="fa fa-eye" aria-hidden="true"></i> Visible</span></td>
-      <td><span class="text-muted"><i class="fa fa-eye" aria-hidden="true"></i> Visible</span></td>
-      <td><span class="text-success"><i class="fa fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
-      <td><span class="text-muted"><i class="fa fa-eye" aria-hidden="true"></i> Visible</span></td>
-      <td><span class="text-muted"><i class="fa fa-eye" aria-hidden="true"></i> Visible</span></td>
+      <td><span class="text-muted"><i class="fa fa-fw fa-eye" aria-hidden="true"></i> Visible</span></td>
+      <td><span class="text-muted"><i class="fa fa-fw fa-eye" aria-hidden="true"></i> Visible</span></td>
+      <td><span class="text-success"><i class="fa fa-fw fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
+      <td><span class="text-muted"><i class="fa fa-fw fa-eye" aria-hidden="true"></i> Visible</span></td>
+      <td><span class="text-muted"><i class="fa fa-fw fa-eye" aria-hidden="true"></i> Visible</span></td>
     </tr>
     <tr>
       <th><code>.hidden-lg</code></th>
-      <td><span class="text-muted"><i class="fa fa-eye" aria-hidden="true"></i> Visible</span></td>
-      <td><span class="text-muted"><i class="fa fa-eye" aria-hidden="true"></i> Visible</span></td>
-      <td><span class="text-muted"><i class="fa fa-eye" aria-hidden="true"></i> Visible</span></td>
-      <td><span class="text-success"><i class="fa fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
-      <td><span class="text-muted"><i class="fa fa-eye" aria-hidden="true"></i> Visible</span></td>
+      <td><span class="text-muted"><i class="fa fa-fw fa-eye" aria-hidden="true"></i> Visible</span></td>
+      <td><span class="text-muted"><i class="fa fa-fw fa-eye" aria-hidden="true"></i> Visible</span></td>
+      <td><span class="text-muted"><i class="fa fa-fw fa-eye" aria-hidden="true"></i> Visible</span></td>
+      <td><span class="text-success"><i class="fa fa-fw fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
+      <td><span class="text-muted"><i class="fa fa-fw fa-eye" aria-hidden="true"></i> Visible</span></td>
     </tr>
     <tr>
       <th><code>.hidden-xl</code></th>
-      <td><span class="text-muted"><i class="fa fa-eye" aria-hidden="true"></i> Visible</span></td>
-      <td><span class="text-muted"><i class="fa fa-eye" aria-hidden="true"></i> Visible</span></td>
-      <td><span class="text-muted"><i class="fa fa-eye" aria-hidden="true"></i> Visible</span></td>
-      <td><span class="text-muted"><i class="fa fa-eye" aria-hidden="true"></i> Visible</span></td>
-      <td><span class="text-success"><i class="fa fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
+      <td><span class="text-muted"><i class="fa fa-fw fa-eye" aria-hidden="true"></i> Visible</span></td>
+      <td><span class="text-muted"><i class="fa fa-fw fa-eye" aria-hidden="true"></i> Visible</span></td>
+      <td><span class="text-muted"><i class="fa fa-fw fa-eye" aria-hidden="true"></i> Visible</span></td>
+      <td><span class="text-muted"><i class="fa fa-fw fa-eye" aria-hidden="true"></i> Visible</span></td>
+      <td><span class="text-success"><i class="fa fa-fw fa-low-vision" aria-hidden="true"></i> Hidden</span></td>
     </tr>
   </tbody>
 </table>

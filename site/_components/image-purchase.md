@@ -44,7 +44,7 @@ Add the `bsk-image-purchase` class to a [thumbnail]({{ '/components/thumbnail' |
 <div class="thumbnail thumbnail-bsk thumbnail-bsk-default bsk-image-purchase">
   <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=Media%20Item&w=800&h=500" alt="thumbnail">
   <div class="caption">
-    Thumbnail caption <a href="#" class="image-purchase-symbol"><i class="fa fa-camera"></i></a>
+    Thumbnail caption <a href="#" class="image-purchase-symbol"><i class="fa fa-fw fa-camera"></i></a>
   </div>
 </div>
 {% endexample %}
@@ -54,7 +54,7 @@ Use the `.bsk-image-purchase-no-caption` class for thumbnails without captions.
 {% example html %}
 <!-- Thumbnail using a div element -->
 <div class="thumbnail thumbnail-bsk thumbnail-bsk-default bsk-image-purchase bsk-image-purchase-no-caption">
-  <a href="#" class="image-purchase-symbol"><i class="fa fa-camera"></i></a>
+  <a href="#" class="image-purchase-symbol"><i class="fa fa-fw fa-camera"></i></a>
   <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=Media%20Item&w=800&h=500" alt="thumbnail">
 </div>
 {% endexample %}
@@ -67,13 +67,13 @@ cannot be contained within another link.
 <a href="#thumbnail" class="thumbnail thumbnail-bsk thumbnail-bsk-inverse bsk-image-purchase">
   <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=Media%20Item&w=800&h=500" alt="thumbnail">
   <div class="caption">
-    Thumbnail label <div onclick="location.href='#image-purchase';" class="image-purchase-symbol"><i class="fa fa-camera"></i></div>
+    Thumbnail label <div onclick="location.href='#image-purchase';" class="image-purchase-symbol"><i class="fa fa-fw fa-camera"></i></div>
   </div>
 </a>
 
 <!-- Thumbnail using a link element -->
 <a href="#thumbnail" class="thumbnail thumbnail-bsk thumbnail-bsk-default bsk-image-purchase bsk-image-purchase-no-caption">
-  <div onclick="location.href='#image-purchase';" class="image-purchase-symbol"><i class="fa fa-camera"></i></div>
+  <div onclick="location.href='#image-purchase';" class="image-purchase-symbol"><i class="fa fa-fw fa-camera"></i></div>
   <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=Media%20Item&w=800&h=500" alt="thumbnail">
 </a>
 {% endexample %}
@@ -92,7 +92,7 @@ Use the `background-image` CSS property to set the image, or other media item, a
 
 {% example html %}
 <div class="jumbotron jumbotron-bsk bsk-image-purchase jumbotron-image-purchase-example">
-  <a class="image-purchase-symbol" href="#"><i class="fa fa-camera fa-2x"></i></a>
+  <a class="image-purchase-symbol" href="#"><i class="fa fa-fw fa-camera fa-2x"></i></a>
   <h1><span class="text-overlay">Jumbotron caption</span></h1>
 </div>
 {% endexample %}

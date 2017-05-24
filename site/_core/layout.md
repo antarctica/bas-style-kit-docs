@@ -118,13 +118,13 @@ space for internal, data rich, applications. It is not recommended for use in ge
 [BSK-111](https://jira.ceh.ac.uk/browse/bsk-111) for more information.
 {: .alert .alert-info }
 
-| Size        | Class Name | Example Device <small class="text-muted">Orientation</small> | Minimum Width (px) | Min Width Variable | Core Bootstrap |
-| ----------- | ---------- | ------------------------------------------------------------ | ------------------ | ------------------ | -------------- |
-| Extra Small | `xs`       | Phone <small class="text-muted">portrait</small>             | 480 ([see note](#xs-min-width-note))     | `$screen-xs-min`   | <i class="fa fa-check" aria-hidden="true"></i> Yes                                               |
-| Small       | `sm`       | Phone <small class="text-muted">landscape</small>            | 768                | `$screen-sm-min`   | <i class="fa fa-check" aria-hidden="true"></i> Yes                                               |
-| Medium      | `md`       | Tablets                                                      | 992                | `$screen-md-min`   | <i class="fa fa-check" aria-hidden="true"></i> Yes                                               |
-| Large       | `lg`       | Computers                                                    | 1200               | `$screen-lg-min`   | <i class="fa fa-check" aria-hidden="true"></i> Yes                                               |
-| Extra Large | `xl`       | Large desktop computers                                      | 1800               | `$screen-xl-min`   | <span class="text-danger"><i class="fa fa-exclamation-circle" aria-hidden="true"></i> No</span>  |
+| Size        | Class Name | Example Device <small class="text-muted">Orientation</small> | Minimum Width (px)                      | Min Width Variable | Core Bootstrap                                                                                         |
+| ----------- | ---------- | ------------------------------------------------------------ | --------------------------------------- | ------------------ | ------------------------------------------------------------------------------------------------------ |
+| Extra Small | `xs`       | Phone <small class="text-muted">portrait</small>             | 480 ([see note](#xs-min-width-note))    | `$screen-xs-min`   | <i class="fa fa-fw fa-check" aria-hidden="true"></i> Yes                                               |
+| Small       | `sm`       | Phone <small class="text-muted">landscape</small>            | 768                                     | `$screen-sm-min`   | <i class="fa fa-fw fa-check" aria-hidden="true"></i> Yes                                               |
+| Medium      | `md`       | Tablets                                                      | 992                                     | `$screen-md-min`   | <i class="fa fa-fw fa-check" aria-hidden="true"></i> Yes                                               |
+| Large       | `lg`       | Computers                                                    | 1200                                    | `$screen-lg-min`   | <i class="fa fa-fw fa-check" aria-hidden="true"></i> Yes                                               |
+| Extra Large | `xl`       | Large desktop computers                                      | 1800                                    | `$screen-xl-min`   | <span class="text-danger"><i class="fa fa-fw fa-exclamation-circle" aria-hidden="true"></i> No</span>  |
 {: .table .table-responsive }
 
 {% include snippets/topic-section-metadata.html
