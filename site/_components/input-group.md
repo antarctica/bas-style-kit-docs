@@ -157,18 +157,14 @@ instead of text.
   title="Button input group"
   heading_level=3
   current_phase="alpha"
+  future_phase="live"
   current_version="0.1.0"
+  future_version="0.2.0"
   included="yes"
 %}
 
 Use the `.input-group-btn` class, instead of `.input-group-addon`, as an element which contains a
 [button]({{ '/core/buttons' | prepend: site.baseurl }}).
-
-**Heads up!** Buttons in input groups are not yet fully supported, but will be in the next version of the Style Kit.
-{: .alert .alert-warning }
-
-**Heads up!** Buttons in input groups are not yet fully styled, but will be in the next version of the Style Kit.
-{: .alert .alert-info }
 
 {% example html %}
 <form>
@@ -189,20 +185,17 @@ Use the `.input-group-btn` class, instead of `.input-group-addon`, as an element
   title="Drop-down button input group"
   heading_level=3
   current_phase="alpha"
+  future_phase="beta"
   current_version="0.1.0"
+  future_version="0.2.0"
   included="yes"
 %}
 
 Use the `.input-group-btn` class, instead of `.input-group-addon`, as an element which contains a
 [button drop-down]({{ '/components/drop-down/#button-drop-down' | prepend: site.baseurl }}).
 
-**Heads up!** Button drop-downs in input groups are not yet fully supported, but will be in the next version of the
-Style Kit.
+**Heads up!** Button drop-downs in input groups are not yet fully supported.
 {: .alert .alert-warning }
-
-**Heads up!** Button drop-downs in input groups are not yet fully styled, but will be in the next version of the Style
-Kit.
-{: .alert .alert-info }
 
 {% example html %}
 <form>
@@ -240,8 +233,7 @@ Kit.
 Use the `.input-group-btn` class, instead of `.input-group-addon`, as an element which contains a
 [split-button drop-down]({{ '/components/drop-down/#split-button-drop-down' | prepend: site.baseurl }}).
 
-**Heads up!** Split-button drop-down's in input groups are not yet fully supported, but will be in the next version of
-the Style Kit.
+**Heads up!** Split-button drop-down's in input groups are not yet fully supported.
 {: .alert .alert-warning }
 
 {% example html %}
