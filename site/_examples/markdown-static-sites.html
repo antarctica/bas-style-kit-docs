@@ -261,12 +261,22 @@ sections:
   </thead>
   <tbody>
     <tr>
-      <td>Standard image</td>
+      <td>Standard image - from the same website</td>
+      <td><code>![Image description...]({% raw %}{{'/img/example-image-64.png' | prepend: site.baseurl }}{% endraw %})</code></td>
+      <td><img src="{{ '/img/example-image-64.png' | prepend: site.baseurl }}" /></td>
+    </tr>
+    <tr>
+      <td>Linked image - from the same website</td>
+      <td><code>[![Image description...]({% raw %}{{ '/img/example-image-64.png' | prepend: site.baseurl }}{% endraw %})](https://www.bas.ac.uk)</code></td>
+      <td><a href="https://www.bas.ac.uk"><img src="{{ '/img/example-image-64.png' | prepend: site.baseurl }}" /></a></td>
+    </tr>
+    <tr>
+      <td>Standard image - from another website</td>
       <td><code>![Image description...](http://placehold.it/64x64)</code></td>
       <td><img src="http://placehold.it/64x64" /></td>
     </tr>
     <tr>
-      <td>Linked image</td>
+      <td>Linked image - from another website</td>
       <td><code>[![Image description...](http://placehold.it/64x64)](https://www.bas.ac.uk)</code></td>
       <td><a href="https://www.bas.ac.uk"><img src="http://placehold.it/64x64" /></a></td>
     </tr>
