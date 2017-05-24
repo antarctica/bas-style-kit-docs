@@ -242,7 +242,9 @@ Use the `.navbar-brand` class to indicate the name of the current website or ser
   title="Brand image"
   heading_level=3
   current_phase="live"
+  future_phase="live"
   current_version="0.1.0"
+  future_version="0.2.0"
   included="yes"
 %}
 
@@ -261,15 +263,30 @@ The examples below use a `.navbar-brand-bas-logo` class with the following style
 }
 {% endhighlight %}
 
-Using an image and text together is not currently supported.
-{: .alert .alert-warning }
-
 {% example html %}
 <nav class="navbar navbar-bsk">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand navbar-brand-bas-logo" href="#">
         <img alt="British Antarctic Survey Logo" src="{{ '/img/bas-logo-full-white-transparent.png' | prepend: site.baseurl }}">
+      </a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="#">Item</a></li>
+    </ul>
+  </div><!-- /.container-fluid -->
+</nav>
+{% endexample %}
+
+Add the `.bsk-fix-navbar-brand-img-txt` class to a brand image to combine with brand text.
+
+{% example html %}
+<nav class="navbar navbar-bsk">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand navbar-brand-bas-logo" href="#">
+        <img class="fix-navbar-brand-img-txt" alt="British Antarctic Survey Logo" src="{{ '/img/bas-logo-full-white-transparent.png' | prepend: site.baseurl }}">
+        Site Name
       </a>
     </div>
     <ul class="nav navbar-nav">

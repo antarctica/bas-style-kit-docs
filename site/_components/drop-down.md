@@ -4,7 +4,9 @@ sections:
   -
     title: Overview
   -
-    title: Supported elements
+    title: Button drop-down
+  -
+    title: Split-button drop-down
   -
     title: Variants
   -
