@@ -5,6 +5,8 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ## [Unreleased][unreleased]
 
+## v1.0.0 - 26/05/2017
+
 ### Added
 
 * [site] Added documentation on image jumbrontons and jumbronton header text overlays
