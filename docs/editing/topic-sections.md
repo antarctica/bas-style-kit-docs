@@ -4,13 +4,15 @@
 
 ### Section metadata
 
-Each (sub-)section **MUST** use the `topic-section-metadata.html` snippet to insert standardised titles and metadata:
+Each (sub-)section **MUST** use the `topic-section-metadata.html` snippet to insert standardised titles and metadata.
+
+**Note** Lists used directly after this snippet will not render correctly, add paragraph text first
 
 The options accepted by this snippet are:
 
 | Option            | Required | Description                                             | Valid Values                        | Notes                                                  |
 | ----------------- | -------- | ------------------------------------------------------- | ----------------------------------- | ------------------------------------------------------ |
-| `title`           | Yes      | Name of the section, used for the title and link anchor | String beginning with a letter      | -                                                      |
+| `title`           | Yes      | Name of the section, used for the title and link anchor | String beginning with a letter      | Must start with a letter                               |
 | `heading_level`   | Yes      | Heading level (i.e. `h1` to `h6`) of the section        | One of 1, 2, 3, 4, 5, 6             | -                                                      |
 | `current_phase`   | No       | Phase of development for the section                    | One of the *section phases* [1]     | -                                                      |
 | `current_version` | No       | Version the `current_phase` was reached                 | String, ideally a Style Kit version | i.e. section live as of version 1.2.3                  |

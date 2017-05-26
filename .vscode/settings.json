@@ -1,6 +1,6 @@
 {
-    "language": "en_US",
-    "ignoreWordsList": [
+    "spellchecker.language": "en_GB",
+    "spellchecker.ignoreWordsList": [
         "scss",
         "dropdown",
         "Dropdown",
@@ -66,12 +66,12 @@
         "youtube",
         "Customised"
     ],
-    "documentTypes": [
+    "spellchecker.documentTypes": [
         "markdown",
         "latex",
         "plaintext"
     ],
-    "ignoreRegExp": [],
-    "ignoreFileExtensions": [],
-    "checkInterval": 5000
+    "spellchecker.ignoreRegExp": [],
+    "spellchecker.ignoreFileExtensions": [],
+    "spellchecker.checkInterval": 5000
 }
