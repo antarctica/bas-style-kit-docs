@@ -1,7 +1,6 @@
 # BAS Style Kit Documentation
 
-Master: [![Build Status](https://semaphoreci.com/api/v1/antarctica/bas-style-kit-docs/branches/master/badge.svg)](https://semaphoreci.com/antarctica/bas-style-kit-docs)
-Develop: [![build status](https://gitlab.data.bas.ac.uk/BSK/bas-style-kit-docs/badges/develop/build.svg)](https://gitlab.data.bas.ac.uk/BSK/bas-style-kit-docs/commits/develop)
+[![build status](https://gitlab.data.bas.ac.uk/BSK/bas-style-kit-docs/badges/master/build.svg)](https://gitlab.data.bas.ac.uk/BSK/bas-style-kit-docs/commits/master)
 
 End-user documentation for the BAS Style Kit, documenting what it includes, and how to use it to build websites and
 web-applications.
