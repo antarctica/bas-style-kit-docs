@@ -54,8 +54,8 @@ variables:
 jekyll-build-development:
   <<: *job_template_jekyll_build
   except:
-    - release
     - master
+    - tags
   variables:
     JEKYLL_ENV: development
   artifacts:
@@ -79,7 +79,7 @@ jekyll-build-staging:
 jekyll-build-production:
   <<: *job_template_jekyll_build
   only:
-    - release
+    - tags
   variables:
     JEKYLL_ENV: production
   artifacts:
@@ -110,7 +110,7 @@ s3-snapshot-staging:
 s3-snapshot-production:
   <<: *job_template_s3_snapshot
   only:
-    - release
+    - tags
 
 s3-website-staging:
   <<: *job_template_s3_website
@@ -125,7 +125,7 @@ s3-website-staging:
 s3-website-production:
   <<: *job_template_s3_website
   only:
-    - release
+    - tags
   variables:
     S3_DEPLOYMENT_BUCKET: bas-style-kit-docs-prod
   environment:
