@@ -33,6 +33,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * [project] Fixed change log file name
 * [project] Corrected copyright date in license file
 * [project] CI badge corrected
+* [project] Documentation revision link variable was incorrectly referenced
 
 ### Changed
 
