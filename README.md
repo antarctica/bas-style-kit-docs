@@ -83,9 +83,20 @@ using settings defined in `.gitlab-ci.yml`.
 
 Changes pushed to the *master* branch will be available at: https://style-kit-testing.web.bas.ac.uk.
 
-Changes pushed to the *release* branch will be available at: https://style-kit.web.bas.ac.uk.
+Tagged commits will be available at: https://style-kit.web.bas.ac.uk.
 
-**Note:** Due to caching, deployed changes may not appear for up to 30 minutes.
+**Note:** Due to caching, deployed changes may not appear for up to 1 hour.
+
+## Branching model
+
+There is only one long-term branch in this repository, *master*, which represents a working, stable, version of the
+project, but is not necessarily the released version.
+
+All changes are made in other branches and merged into the Master branch when ready. Multiple branches may be active at
+any one time, and **MUST** therefore be rebased on *master* before they are merged.
+
+When required, a release is made using a release branch. This is then merged with *master* and tagged.
+This triggers the relevant deployment tasks to release a new version.
 
 ## Provisioning
 
