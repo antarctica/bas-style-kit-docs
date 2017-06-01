@@ -5,6 +5,16 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ## [Unreleased][unreleased]
 
+## v1.0.1 - 01/06/2017
+
+### Added
+
+* Documentation on how locally test a production build of the static site
+
+### Fixed
+
+* Forgot to bump prod version number
+
 ## v1.0.0 - 26/05/2017
 
 ### Added

@@ -86,6 +86,18 @@ Tagged commits will be available at: https://style-kit.web.bas.ac.uk.
 
 **Note:** Due to caching, deployed changes may not appear for up to 1 hour.
 
+### Simulating production environment
+
+To sumulate a production build of the documentation site add this environment variable to the `app` service in
+`docker-compose.yml`:
+
+```yaml
+    environment:
+      - JEKYLL_ENV=production
+```
+
+**Note:** You will need to remove the previously built site as by default it uses incremental building.
+
 ## Branching model
 
 There is only one long-term branch in this repository, *master*, which represents a working, stable, version of the
