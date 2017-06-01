@@ -5,6 +5,11 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ## [Unreleased][unreleased]
 
+
+### Fixed
+
+* Forgot to bump prod version number
+
 ## v1.0.0 - 26/05/2017
 
 ### Added
