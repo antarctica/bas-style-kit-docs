@@ -144,6 +144,10 @@ $screen-sm-min: 768px !default;
 
 // Styles for displaying rendered portions of examples
 
+.highlight {
+  font-size: 14px;
+}
+
 .bsk-docs-example {
   margin-left: 0;
   margin-right: 0;
@@ -188,7 +192,7 @@ $screen-sm-min: 768px !default;
 }
 
 // Styles for topic dividers in collection indexes
-.topic-index-divider {
+.bsk-docs-topic-index-divider {
   margin-top: 20px;
 
   border-top: 5px solid #007ac3;
