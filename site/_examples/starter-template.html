@@ -14,9 +14,7 @@ title: Starter template
     <title>BAS Style Kit - Starter template</title>
     <meta name="description" content="A brief description of this page, or application">
 
-    <!-- Compiled and minified customised Bootstrap CSS for the BAS Style Kit -->
-    {% include snippets/link-css-bootstrap-bsk-min.html %}
-    <!-- Compiled and minified BAS Style Kit CSS -->
+    <!-- Compiled and minified BAS Style Kit -->
     {% include snippets/link-css-bas-style-kit-min.html %}
 
     <!-- Site specific styles - optionally, any additional CSS for your website or application -->
@@ -24,6 +22,12 @@ title: Starter template
   <body>
     <h1>Welcome to the starter template for the BAS Style Kit!</h1>
 
+    <!-- jQuery (necessary for JavaScript plugins) -->
+    <script src="https://cdn.web.bas.ac.uk/js-libs/jquery-3.1.1.min.js"></script>
+    <!-- Cookie library used to persistently hide the cookie banner (slightly ironic we need a cookie to do this) -->
+    <script src="https://cdn.web.bas.ac.uk/js-libs/js.cookie-2.1.3.min.js"></script>
+    <!-- Compiled and minified JavaScript plugins provided by the Style Kit -->
+    <script src="https://cdn.web.bas.ac.uk/bas-style-kit/0.3.0-alpha/js/bas-style-kit.min.js"></script>
     <!-- Site specific scripts - optionally - any required JavaScript for your website or application -->
   </body>
 </html>

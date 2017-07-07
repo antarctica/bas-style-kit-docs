@@ -39,10 +39,6 @@ Include these two CSS files, in the order given and before any other of your pro
 in the <code>&lt;head&gt;</code> element:
 
 {% highlight html %}
-{% include snippets/link-css-bootstrap-bsk-min.html %}
-{% endhighlight %}
-
-{% highlight html %}
 {% include snippets/link-css-bas-style-kit-min.html %}
 {% endhighlight %}
 
