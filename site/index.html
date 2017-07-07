@@ -2,45 +2,41 @@
 layout: home
 ---
 
-<header id="site-content" class="jumbotron jumbotron-bsk jumbotron-bsk-inverse bsk-docs-masthead bsk-docs-image-copyright-container text-center" tabindex="-1">
+<header id="site-content" class="bsk-jumbotron bsk-jumbotron-bsk-inverse bsk-text-center bsk-docs-masthead bsk-image-copyright" tabindex="-1">
     <div class="container">
 
         <div class="bsk-docs-symbol"></div>
 
         <h1>
           BAS Style Kit
-          {% if jekyll.environment != 'production' %}<i class="fa fa-fw fa-flask bsk-docs-testing" aria-hidden="true"></i> <span class="sr-only">Testing version</span>{% endif %}
+          {% if jekyll.environment != 'production' %}<i class="fa fa-fw fa-flask bsk-text-experimental" aria-hidden="true"></i> <span class="bsk-sr-only">Testing version</span>{% endif %}
         </h1>
-        <p class="lead">
-            A collection of HTML, CSS, and JS components for developing web projects consistent with the BAS brand.
-        </p>
+        <p>A collection of HTML, CSS, and JS components for developing web projects consistent with the BAS brand.</p>
         <p>
-            <a href="{{ "/start/introduction/#quick-start" | prepend: site.baseurl }}" class="btn btn-default btn-lg btn-bsk">
+            <a href="{{ "/start/introduction/#quick-start" | prepend: site.baseurl }}" class="bsk-btn bsk-btn-default bsk-btn-lg">
                 Download the BAS Style Kit
             </a>
         </p>
         <p>Version {% include snippets/bsk-version.html %}</p>
     </div>
-    <span class="bsk-docs-image-copyright-notice">
-      <i class="fa fa-camera" aria-hidden="true"></i> Sky at Halley VI research station | Tom Wales / BAS
-    </span>
+    <a href="#" class="bsk-image-copyright-attribution"><i class="fa fa-camera"></i> Sky at Halley VI research station | Tom Wales / BAS</a>
 </header>
 
-<div class="container bsk-docs-home-sections">
-  <section class="lead text-center">
-    <span class="label bsk-docs-label-phase-beta"><strong>BETA</strong></span>
-    This website is being rebuilt – your <a href="{{ "/feedback.html" | prepend: site.baseurl }}">feedback</a> will help us to improve it.
+<div class="bsk-container bsk-docs-home-sections">
+  <section class="bsk-lead bsk-text-center">
+    <span class="bsk-label bsk-label-phase-beta"><strong>BETA</strong></span>
+    <span class="bsk-docs-text-with-label">This website is being rebuilt – your <a href="{{ "/feedback.html" | prepend: site.baseurl }}">feedback</a> will help us to improve it.</span>
   </section>
 {% if jekyll.environment != 'production' %}
 
   <hr />
 
-  <section class="row">
-    <div class="col-md-8 col-md-offset-2 text-center lead alert bsk-docs-alert-testing">
+  <section class="bsk-row">
+    <div class="bsk-col-12-md-8 bsk-col-12-md-offset-2 bsk-text-center bsk-lead bsk-alert bsk-alert-outline-experimental">
       <h2>This website is used for testing</h2>
       <p>This site contains a preview of upcoming changes and other experiments. It isn't safe to rely on examples
         from this website, as as they may not work, or be removed, at any time.</p>
-      <a href="https://{{ site.bsk_docs_production_url }}" class="btn btn-bsk btn-default btn-lg">
+      <a href="https://{{ site.bsk_docs_production_url }}" class="bsk-btn bsk-btn-default bsk-btn-lg">
         View the real documentation
       </a>
     </div>
@@ -49,13 +45,13 @@ layout: home
 
   <hr />
 
-  <section class="row">
-      <div class="col-md-8 col-md-offset-2 text-center">
+  <section class="bsk-row">
+      <div class="bsk-col-12-md-8 bsk-col-12-md-offset-2 bsk-text-center">
           <h2>Counterpart to the BAS Style Guide</h2>
           <p>The BAS Style Guide gives official requirements and advise for building BAS websites,
           including how they should be styled using the resources from the BAS Style Kit.</p>
           <a href="{{ site.bas_navigation_menu.bas_style_guide | prepend: site.baseurl }}"
-          class="btn btn-primary btn-lg btn-bsk btn-bsk-primary">
+          class="bsk-btn bsk-btn-primary bsk-btn-lg">
               View the BAS Style Guide
           </a>
       </div>
@@ -63,8 +59,8 @@ layout: home
 
   <hr />
 
-  <section class="row">
-      <div class="col-md-8 col-md-offset-2 text-center lead alert alert-warning">
+  <section class="bsk-row">
+      <div class="bsk-col-12-md-8 bsk-col-12-md-offset-2 bsk-text-center bsk-lead bsk-alert bsk-alert-solid-warning">
           <h2>Parts of the BAS Style Kit are protected works</h2>
           <p>This includes things like the BAS Logo, which may only be used in projects officially endorsed by
           BAS, subject to certain conditions.</p>
@@ -74,13 +70,13 @@ layout: home
 
   <hr />
 
-  <section class="row">
-      <div class="col-md-8 col-md-offset-2 text-center">
+  <section class="bsk-row">
+      <div class="bsk-col-12-md-8 bsk-col-12-md-offset-2 bsk-text-center">
           <h2>A living, open, resource</h2>
           <p>The BAS Style Kit is designed around BAS Projects, and anyone is welcome to make changes to the code,
           from fixing documentation, to adding whole new components.</p>
           <a href="{{ site.bsk_source_code_url | prepend: site.baseurl }}"
-          class="btn btn-primary btn-lg btn-bsk btn-bsk-primary">
+          class="bsk-btn bsk-btn-primary bsk-btn-lg">
               View the code
           </a>
       </div>
