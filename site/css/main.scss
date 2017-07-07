@@ -8,19 +8,12 @@ $screen-sm-min: 768px !default;
 
 // ==  Site specific styles
 
-// Styles for Better banner - these will be merged into a future version of the BAS Style Kit
-
-$beta-phase: #f47738;
 // Styles for topic table of contents
 
-.bsk-docs-label-phase-beta {
-  background-color: $beta-phase;
-  border-radius: 0;
 #markdown-toc {
   padding-left: 20px;
 }
 
-// Styles for Cookie banner - these will be merged into a future version of the BAS Style Kit
 // Styles for cookie notice
 .bsk-docs-cookie-notice {
   // Fix padding to align banner with navbar
@@ -29,32 +22,11 @@ $beta-phase: #f47738;
   }
 }
 
-.bsk-docs-alert-top-pin {
 // Styles for navbar
 .bsk-docs-navbar-testing {
   margin-bottom: 0;
-
-  border: none;
-  border-radius: 0;
 }
 
-.bsk-docs-alert-cookie-banner {
-  background-color: #006AAA;
-  color: white;
-
-  .alert-link {
-    color: white;
-  }
-
-  .close {
-    filter: alpha(opacity=70);
-    opacity: .7;
-    color: #E7EBF1;
-
-    &:focus, &:hover {
-      filter: alpha(opacity=100);
-      opacity: 1;
-    }
 // Styles for testing banner
 .bsk-docs-banner-testing {
   // Fix padding to align banner with navbar
@@ -63,13 +35,10 @@ $beta-phase: #f47738;
   }
 }
 
-// Styles for topic table of contents
 // Styles for site development notice
 .bsk-docs-development-notice {
   margin-top: 20px;
 
-#markdown-toc {
-  padding-left: 20px;
   // These styles for using text alongside a label
   .bsk-docs-text-with-label {
     position: relative;
@@ -126,22 +95,6 @@ $beta-phase: #f47738;
   background-image: url('{{ "/img/site-masthead-tom-welsh.jpg" | prepend: site.baseurl }}');
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-// Copyright notice shown in the bottom-right of images
-
-.bsk-docs-image-copyright-container {
-  display: block;
-  position: relative;
-}
-
-.bsk-docs-image-copyright-notice {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  padding: 3px 8px;
-  background-color: rgba(51, 51, 51, 0.8);
-  color: #FFFFFF;
 }
 
 // Styles for sections on the homepage
@@ -274,91 +227,4 @@ $beta-phase: #f47738;
     padding-right: 5px;
     padding-left: 5px;
   }
-}
-
-// Temporary styles for design phases (i.e. discovery, alpha, etc.)
-// These will be replaced with a proper set of label variants when the GDS colour scheme is integrated
-
-.label-phase {
-    border-radius: 0;
-
-    font-weight: normal;
-    text-transform: uppercase;
-  }
-
-  .label-phase-alpha {
-    background-color: #D53880;
-  }
-  .label-phase-beta {
-    background-color: #F47738;
-  }
-  .label-phase-live {
-    background-color: #85994B;
-  }
-  .label-phase-deprecated {
-    background-color: #6F777B;
-  }
-
-// Temporary styles for site version (i.e. highlights to indicate this is a staging/testing site)
-// These will be become a variant of the navbar component in the future
-
-// $testing-background-colour: #77ccff;  // blue
-// $testing-foreground-colour: #333333;
-
-// $testing-background-colour: #7cf7cf;  // aquamarine
-// $testing-foreground-colour: #333333;
-
-// $testing-background-colour: #6F72AF;  // purple - GDS mauve
-// $testing-foreground-colour: #ffffff;
-
-// $testing-background-colour: #E1BEE7;  // purple - MD purple
-// $testing-foreground-colour: #333333;
-
-$testing-background-colour: #D1C4E9;  // purple - MD deep purple
-$testing-foreground-colour: #311B92;
-$testing-border-colour: #B39DDB;
-
-$testing-link-foreground-colour: $testing-foreground-colour;
-
-.bsk-docs-navbar-testing {
-  border-bottom: 5px solid $testing-background-colour;
-}
-.bsk-docs-testing {
-  color: $testing-background-colour !important;
-}
-.bsk-docs-alert-testing {
-  border-radius: 0;
-  background-color: $testing-background-colour;
-  border-color: $testing-border-colour;
-  color: $testing-foreground-colour;
-
-  .alert-link {
-    color: $testing-link-foreground-colour;
-  }
-
-  // Enable for darker testing colours
-  /*
-  .close {
-    filter: alpha(opacity=100);
-    opacity: 1;
-
-    &:focus, &:hover {
-      color: #E7EBF1;
-    }
-  }
-  */
-
-  &.margin-top {
-    margin-top: 50px;
-    margin-bottom: 0;
-  }
-  &.margin-bottom {
-    margin-top: -20px;
-    margin-bottom: 20px;
-    border-bottom: 5px solid $testing-background-colour;
-  }
-}
-
-.bsk-docs-alert-no-border {
-  border: none;
 }

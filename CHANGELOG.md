@@ -9,6 +9,10 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 * Checks for the site environment check if the site *isn't* production, rather than if it *is* staging
 
+### Removed
+
+* Unnecessary local styles that have been replaced by improvements or additions to the Style Kit
+
 ## v1.0.1 - 01/06/2017
 
 ### Added
