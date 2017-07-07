@@ -1,27 +1,27 @@
-<footer class="footer-bsk footer-bsk-default hidden-print bsk-docs-site-footer {% if jekyll.environment != 'production' %}no-margin{% endif %}">
-  <div class="container">
+<footer class="bsk-footer bsk-footer-default bsk-hidden-print bsk-docs-site-footer {% if jekyll.environment != 'production' %}no-margin{% endif %}">
+  <div class="bsk-container">
     <!-- main content -->
-    <div class="row">
-      <div class="col-md-6 bsk-docs-site-build-info">
+    <div class="bsk-row">
+      <div class="bsk-col-12-md-6 bsk-docs-site-build-info">
         BAS Style Kit version {% include snippets/bsk-version.html %} <br />
         Site build {% include snippets/bsk-docs-revision.html %} built {{ site.time | date: "%-d %b %Y" }}
       </div>
-      <div class="col-md-6 bsk-docs-site-back-to-top">
+      <div class="bsk-col-12-md-6 bsk-docs-site-back-to-top">
         {% include snippets/back-to-top.html %}
       </div>
     </div>
-    <div role="separator" class="footer-bsk-divider"></div>
+    <div role="separator" class="bsk-footer-divider"></div>
     <!-- Copyright & legal -->
-    <div class="row">
-      <div class="col-md-6 bsk-docs-site-licensing">
+    <div class="bsk-row">
+      <div class="bsk-col-12-md-6 bsk-docs-site-licensing">
         Except where otherwise stated, the BAS Style Kit is licensed under the
         <a rel="license" href="{{ site.bsk_source_code_url }}/blob/master/LICENSE.md"> MIT License</a>, and this
         documentation, the <a rel="license" href="{{ site.bsk_docs_source_code_url }}/blob/master/LICENSE.md">CC BY
         v3.0 License.</a>
       </div>
-      <div class="col-md-6 text-right footer-bsk-policy-links">
+      <div class="bsk-col-12-md-6 bsk-text-right bsk-footer-policy-links">
         © {{site.time | date: "%Y"}} NERC BAS
-        <ul class="list-inline">
+        <ul class="bsk-list-inline">
           <li><a href="https://www.bas.ac.uk/about-this-site/copyright-statement/">Copyright</a></li>
           <li><a href="https://www.bas.ac.uk/about-this-site/privacy-cookie-policy/">Privacy</a></li>
         </ul>
@@ -30,7 +30,7 @@
   </div>
 </footer>
 
-<footer class="visible-print-block">
+<footer class="bsk-visible-print-block">
   <hr />
 
   <p>

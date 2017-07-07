@@ -4,24 +4,24 @@
 {: .bsk-docs-section-metadata }
 {% case include.current_phase %}
   {% when 'alpha' %}
-* <span class="label label-phase label-phase-alpha">Alpha</span> since version **{{ include.current_version }}**
+* <span class=" bsk-label bsk-label-phase-alpha">Alpha</span> since version **{{ include.current_version }}**
   {% when 'beta' %}
-* <span class="label label-phase label-phase-beta">Beta</span> since version **{{ include.current_version }}**
+* <span class="bsk-label bsk-label-phase-beta">Beta</span> since version **{{ include.current_version }}**
   {% when 'live' %}
-* <span class="label label-phase label-phase-live">Live</span> since version **{{ include.current_version }}**
+* <span class="bsk-label bsk-label-phase-live">Live</span> since version **{{ include.current_version }}**
   {% when 'deprecated' %}
-* <span class="label label-phase label-phase-deprecated">Deprecated</span> since version **{{ include.current_version }}**
+* <span class="bsk-label bsk-label-phase-retired">Deprecated</span> since version **{{ include.current_version }}**
 {% endcase %}
 
 {% case include.future_phase %}
   {% when 'alpha' %}
-* <span class="label label-phase label-phase-alpha">Alpha</span> since version **{{ include.future_version }}**
+* <span class="bsk-label bsk-label-phase-alpha">Alpha</span> since version **{{ include.future_version }}**
   {% when 'beta' %}
-* <span class="label label-phase label-phase-beta">Beta</span> since version **{{ include.future_version }}**
+* <span class="bsk-label bsk-label-phase-beta">Beta</span> since version **{{ include.future_version }}**
   {% when 'live' %}
-* <span class="label label-phase label-phase-live">Live</span> since version **{{ include.future_version }}**
+* <span class="bsk-label bsk-label-phase-live">Live</span> since version **{{ include.future_version }}**
   {% when 'deprecated' %}
-* <span class="label label-phase label-phase-deprecated">Deprecated</span> since version **{{ include.future_version }}**
+* <span class="bsk-label bsk-label-phase-retired">Deprecated</span> since version **{{ include.future_version }}**
 {% endcase %}
 
 {% if include.included == "yes" %}
