@@ -1,1 +1,1 @@
-{% if jekyll.environment == 'staging' %}{{ site.bsk_version_staging }}{% else %}{{ site.bsk_version_production }}{% endif %}
+{% unless jekyll.environment == 'production' %}{{ site.bsk_version_staging }}{% else %}{{ site.bsk_version_production }}{% endunless %}
