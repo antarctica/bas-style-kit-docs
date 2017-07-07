@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ### Changed
 
+* Integrating 0.3.0-alpha version of the Style Kit
 * Checks for the site environment check if the site *isn't* production, rather than if it *is* staging
 
 ### Removed
