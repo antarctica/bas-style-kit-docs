@@ -44,9 +44,9 @@ In general, the BAS Style Kit aims to support all browsers supported by Bootstra
 
 This means the latest, stable, releases of all major browsers (subject to any caveats below) are supported.
 
-<i class="fa fa-fw fa-exclamation-circle bsk-alert-icon" aria-hidden="true"></i>
+{% alert danger %}
 **Heads up!** Support for Internet Explorer 8 will be removed in the next Style Kit release.
-{: .bsk-alert .bsk-alert-outline-danger .bsk-alert-icon }
+{% endalert %}
 
 See the Bootstrap documentation on [browser support](http://getbootstrap.com/getting-started/#support)
 for more detailed information.
@@ -62,9 +62,9 @@ document type.
 This is latest version of the HTML standard, supported by all major browsers, and includes new elements,
 attributes and technologies to provide better accessibility and enable new uses such as desktop like web applications.
 
-<i class="fa fa-fw fa-exclamation-triangle bsk-alert-icon" aria-hidden="true"></i>
+{% alert warning style=highlight %}
 Whilst the use of this document type is technically optional, no support is offered for other doc types.
-{: .alert .alert-highlight-warning .bsk-alert-icon }
+{% endalert %}
 
 {% include snippets/topic-section-metadata.html
   title="CSS3"
@@ -101,10 +101,10 @@ Responsiveness is enabled in the Style Kit using the `viewport` meta tag, as sho
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 {% endhighlight %}
 
-<i class="fa fa-fw fa-info bsk-alert-icon" aria-hidden="true"></i>
+{% alert info style=highlight %}
 If you use the [examples]({{ '/examples' | prepend: site.baseurl }}){: .alert-link } from this website, this meta tag
 will be included.
-{: .bsk-alert .bsk-alert-highlight-info .bsk-alert-icon }
+{% endalert %}
 
 See the [responsive breakpoints]({{ '/core/layout/#responsive-breakpoints' | prepend: site.baseurl }}) section for more
 information.
@@ -132,7 +132,7 @@ information cannot is inaccessible to colour-blind users for example, or those u
 screen readers.
 
 Instead, efforts should be made to ensure that the context is either obvious from the content itself, or is included in
-an alternative form, such as with the `.sr-only` class.
+an alternative form, such as with the `.bsk-sr-only` class.
 
 Ideally [contextual colours]({{ '/core/colours/#standard-contextual-colours' | prepend: site.baseurl }}) and
 [icons]({{ '/core/icons/#standard-contextual-icons' | prepend: site.baseurl }}) should only be needed for reinforcing
@@ -146,7 +146,7 @@ meaning that is already present in text or other markup.
 Where a link (<code>&lt;a&gt;</code>) element is used as a button to trigger in-page functionality, such as collapsing
 content, make sure to add `role="button"` to provide suitable context to assistive technologies.
 
-Where a button (whether an actual button or a link element styled as such) uses the `.active` state, add
+Where a button (whether an actual button or a link element styled as such) uses the `.bsk-active` state, add
 `aria-pressed="true"` as well to convey this context to assistive technologies.
 
 {% include snippets/topic-section-metadata.html
@@ -196,10 +196,10 @@ Where a page begins with many navigation links, such as a navbar, a link to skip
 This link can be hidden to non-screen readers using the `.sr-only` class, and requires a page structure such as the one
 shown below.
 
-<i class="fa fa-fw fa-exclamation-triangle bsk-alert-icon" aria-hidden="true"></i>
+{% alert warning %}
 Due to browser bugs, the target of the skip navigation link **must** set the `tabindex` attribute to `-1` to work
 correctly.
-{: .bsk-alert .bsk-alert-outline-warning .bsk-alert-icon }
+{% endalert %}
 
 {% highlight html %}
 <body>
