@@ -5,6 +5,10 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ## [Unreleased][unreleased]
 
+### Added
+
+* New alert plugin for generating new style alerts with icons and various styles
+
 ### Changed
 
 * Integrating 0.3.0-alpha version of the Style Kit
