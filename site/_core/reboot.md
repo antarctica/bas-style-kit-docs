@@ -15,7 +15,6 @@ sections:
 %}
 
 The Style Kit includes a number of global settings, styles and technologies designed to provide a consistent foundation.
-{: .lead }
 
 This minimises differences in experience between different browsers and operating systems, ensuring features such as
 the layout grid work as expected.

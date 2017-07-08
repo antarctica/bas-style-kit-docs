@@ -57,13 +57,15 @@ sections:
   included="yes"
 %}
 
-Removes the default `list-style` and margin left margin. Useful for things which semantically are lists, but shouldn't
-be styled as such.
+Use the `.bsk-list-unstyled` class to remove the default `list-style` and margin left margin. Useful for things which
+semantically are lists, but shouldn't be styled as such.
 
-**This only applies to immediate list items.** I.e. this style won't be used by any nested lists.
+{% alert info style=highlight %}
+This only applies to immediate list items. I.e. this style won't be used by any nested lists.
+{% endalert %}
 
 {% example html %}
-<ul class="list-unstyled">
+<ul class="bsk-list-unstyled">
   <li>unstyled list item</li>
   <li>unstyled list item</li>
   <li>
@@ -80,7 +82,7 @@ be styled as such.
   </li>
 </ul>
 
-<ul class="list-unstyled">
+<ul class="bsk-list-unstyled">
   <li>2012 &mdash; Present: Head of Information Services (Band 4), BAS</li>
   <li>2006 &mdash; 2012: Senior Geoscience Data Manager (Band 5), BAS</li>
   <li>2002 &mdash; 2006: Geology Data Manager (Band 6), BAS</li>
@@ -95,10 +97,10 @@ be styled as such.
   included="yes"
 %}
 
-Place all list items on a single line, with a margin between.
+Use the `.bsk-list-inline` class to place all list items on a single line, with horizontal spacing between.
 
 {% example html %}
-<ul class="list-inline">
+<ul class="bsk-list-inline">
   <li>Information Services</li>
   <li>Polar Data Centre</li>
 </ul>
@@ -135,13 +137,14 @@ A list of terms with associated definitions.
   included="yes"
 %}
 
-Add `.dl-horizontal` to show terms and definitions side-by-side (or stacked at smaller sizes).
+Add the `.bsk-dl-horizontal` class to show terms and definitions side-by-side (or stacked at smaller sizes).
 
+{% alert info %}
 Terms which are too long will be truncated.
-{: .alert .alert-info }
+{% endalert %}
 
 {% example html %}
-<dl class="dl-horizontal">
+<dl class="bsk-dl-horizontal">
   <dt>HF</dt>
     <dd>High Frequency</dd>
   <dt>VFH Radio</dt>
@@ -161,14 +164,10 @@ Terms which are too long will be truncated.
   included="yes"
 %}
 
-Add `.dl-bsk` to apply additional padding.
-
-**Heads up!** This class will be renamed `.dl-bsk-lg` in the next version of the Style Kit. See
-[BSK-128](https://jira.ceh.ac.uk/browse/bsk-128) for more information.
-{: .alert .alert-info }
+Add the `.bsk-dl-lg` class to apply additional padding.
 
 {% example html %}
-<dl class="dl-bsk">
+<dl class="bsk-dl-lg">
   <dt>HF</dt>
     <dd>High Frequency</dd>
   <dt>VFH Radio</dt>
@@ -188,13 +187,15 @@ Add `.dl-bsk` to apply additional padding.
   included="yes"
 %}
 
-Add `.dl-bsk-horizontal-lg` to extend the width of terms in horizontal definition lists.
+Add the `.bsk-dl-horizontal-lg` class to extend the width of terms in horizontal
+definition lists.
 
-This class depends on using `.dl-horizontal` as well.
-{: .alert .alert-warning }
+{% alert info %}
+This class depends on the `.bsk-dl-horizontal` classes as well.
+{% endalert %}
 
 {% example html %}
-<dl class="dl-horizontal dl-bsk-horizontal-lg">
+<dl class="bsk-dl-horizontal bsk-dl-horizontal-lg">
   <dt>HF</dt>
     <dd>High Frequency</dd>
   <dt>VFH Radio</dt>
@@ -214,13 +215,14 @@ This class depends on using `.dl-horizontal` as well.
   included="yes"
 %}
 
-Add `.dl-bsk-striped` to apply additional styling to terms.
+Add `.bsk-dl-striped` to apply additional styling to terms.
 
-This class is designed to be used with `.dl-bsk` to ensure a suitable amount of padding.
-{: .alert .alert-info}
+{% alert info style=highlight %}
+This class is designed to be used with `.bsk-dl-lg` to ensure a suitable amount of padding.
+{% endalert %}
 
 {% example html %}
-<dl class="dl-bsk dl-bsk-striped">
+<dl class="bsk-dl-lg bsk-dl-striped">
   <dt>HF</dt>
     <dd>High Frequency</dd>
   <dt>VFH Radio</dt>
@@ -240,16 +242,18 @@ This class is designed to be used with `.dl-bsk` to ensure a suitable amount of 
   included="yes"
 %}
 
-The `.dl-bsk-striped` class can be combined with `.dl-horizontal`, or `.dl-bsk-horizontal-lg`.
+The `.bsk-dl-striped` class can be combined with `.bsk-dl-horizontal`, or `.bsk-dl-horizontal-lg`.
 
-Remember, the `.dl-bsk-striped` class is designed to be used with `.dl-bsk` to ensure a suitable amount of padding.
-{: .alert .alert-info}
+{% alert info style=highlight %}
+Remember, the `.bsk-dl-striped` class is designed to be used with `.bsk-dl-lg` to ensure a suitable amount of padding.
+{% endalert %}
 
-Remember, the `.dl-bsk-horizontal-lg` class depends on using `.dl-horizontal` as well.
-{: .alert .alert-warning }
+{% alert info style=highlight %}
+Remember, the `.bsk-dl-horizontal-lg` class depends on using `.bsk-dl-horizontal` as well.
+{% endalert %}
 
 {% example html %}
-<dl class="dl-bsk dl-bsk-striped dl-horizontal">
+<dl class="bsk-dl-lg bsk-dl-striped bsk-dl-horizontal">
   <dt>HF</dt>
     <dd>High Frequency</dd>
   <dt>VFH Radio</dt>
@@ -260,7 +264,7 @@ Remember, the `.dl-bsk-horizontal-lg` class depends on using `.dl-horizontal` as
     <dd>Voice over IP</dd>
 </dl>
 
-<dl class="dl-bsk dl-bsk-striped dl-horizontal dl-bsk-horizontal-lg">
+<dl class="bsk-dl-lg bsk-dl-striped bsk-dl-horizontal bsk-dl-horizontal-lg">
   <dt>HF</dt>
     <dd>High Frequency</dd>
   <dt>VFH Radio</dt>

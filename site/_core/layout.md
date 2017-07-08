@@ -44,8 +44,9 @@ other layout designs.
 
 Two containers are available, they can be mixed and nested if needed.
 
+{% alert info %}
 Use the *fixed-width container* if you are unsure which to use.
-{: .alert .alert-info }
+{% endalert %}
 
 {% include snippets/topic-section-metadata.html
   title="Fixed-width container"
@@ -55,11 +56,17 @@ Use the *fixed-width container* if you are unsure which to use.
   included="yes"
 %}
 
-Use the `.container` class for a responsive and fixed-width container. This means its `max-width` changes at each
+Use the `.bsk-container` class for a responsive and fixed-width container. This means its `max-width` changes at each
 [responsive breakpoint]({{ '/core/layout/#responsive-breakpoints' | prepend: site.baseurl }}).
 
+{% alert info style=highlight %}
+The container in the example will appear broken, this is because it is already placed within a container as part of
+this site's layout.
+{% endalert %}
+
 {% example html %}
-<div class="container">
+<div class="bsk-container">
+  <div class="bsk-docs-content-block"></div>
 </div>
 {% endexample %}
 
@@ -71,14 +78,16 @@ Use the `.container` class for a responsive and fixed-width container. This mean
   included="yes"
 %}
 
-Use the `.container-fluid` class for a full-width container, meaning it spans the entire width of the viewport.
+Use the `.bsk-container-fluid` class for a full-width container, meaning it spans the entire width of the viewport.
 
+{% alert info %}
 You might need to use this container where you are integrating the Style Kit with existing or third party code, or for
 certain types of content, such as mapping.
-{: .alert .alert-info }
+{% endalert %}
 
 {% example html %}
-<div class="container-fluid">
+<div class="bsk-container-fluid">
+  <div class="bsk-docs-content-block"></div>
 </div>
 {% endexample %}
 
@@ -101,31 +110,35 @@ implement this design. They check if the current browser width is greater than t
 These queries are reapplied whenever the browser size changes, for example when switching from landscape to portrait
 orientation on a phone.
 
+{% alert info %}
 These queries are based on the browser width only. We don't use query string sniffing, or other related techniques,
 to identify the type of device being used. If this information is needed consider using an analytics service.
-{: .alert .alert-warning }
+{% endalert %}
 
+{% alert info %}
 No media-query is used for the *extra small* size, therefore devices smaller than the extra small minimum will still be
 considered extra small. This slightly strange situation is resolved in the next Bootstrap version (v4) and will be
 included in future versions of the Style Kit when this is released.
-{: #xs-min-width-note .alert .alert-info }
+{% endalert %}
 
+{% alert info %}
 The *extra large* size is custom to the BAS Style Kit, and is used to target larger displays to improve the use of
 space for internal, data rich, applications. It is not recommended for use in general websites.
-{: .alert .alert-info }
+{% endalert %}
 
+{% alert info %}
 **Heads up!** Responsive breakpoints are changing in the next version of the Style Kit. See
 [BSK-111](https://jira.ceh.ac.uk/browse/bsk-111) for more information.
-{: .alert .alert-info }
+{% endalert %}
 
-| Size        | Class Name | Example Device <small class="text-muted">Orientation</small> | Minimum Width (px)                      | Min Width Variable | Core Bootstrap                                                                                         |
-| ----------- | ---------- | ------------------------------------------------------------ | --------------------------------------- | ------------------ | ------------------------------------------------------------------------------------------------------ |
-| Extra Small | `xs`       | Phone <small class="text-muted">portrait</small>             | 480 ([see note](#xs-min-width-note))    | `$screen-xs-min`   | <i class="fa fa-fw fa-check" aria-hidden="true"></i> Yes                                               |
-| Small       | `sm`       | Phone <small class="text-muted">landscape</small>            | 768                                     | `$screen-sm-min`   | <i class="fa fa-fw fa-check" aria-hidden="true"></i> Yes                                               |
-| Medium      | `md`       | Tablets                                                      | 992                                     | `$screen-md-min`   | <i class="fa fa-fw fa-check" aria-hidden="true"></i> Yes                                               |
-| Large       | `lg`       | Computers                                                    | 1200                                    | `$screen-lg-min`   | <i class="fa fa-fw fa-check" aria-hidden="true"></i> Yes                                               |
-| Extra Large | `xl`       | Large desktop computers                                      | 1800                                    | `$screen-xl-min`   | <span class="text-danger"><i class="fa fa-fw fa-exclamation-circle" aria-hidden="true"></i> No</span>  |
-{: .table .table-responsive }
+| Size        | Class Name | Example Device <small class="bsk-text-muted">Orientation</small> | Minimum Width (px)                      | Min Width Variable | Core Bootstrap                                                                                             |
+| ----------- | ---------- | ---------------------------------------------------------------- | --------------------------------------- | ------------------ | ---------------------------------------------------------------------------------------------------------- |
+| Extra Small | `xs`       | Phone <small class="bsk-text-muted">portrait</small>             | 480 ([see note](#xs-min-width-note))    | `$screen-xs-min`   | <i class="fa fa-fw fa-check" aria-hidden="true"></i> Yes                                                   |
+| Small       | `sm`       | Phone <small class="bsk-text-muted">landscape</small>            | 768                                     | `$screen-sm-min`   | <i class="fa fa-fw fa-check" aria-hidden="true"></i> Yes                                                   |
+| Medium      | `md`       | Tablets                                                          | 992                                     | `$screen-md-min`   | <i class="fa fa-fw fa-check" aria-hidden="true"></i> Yes                                                   |
+| Large       | `lg`       | Computers                                                        | 1200                                    | `$screen-lg-min`   | <i class="fa fa-fw fa-check" aria-hidden="true"></i> Yes                                                   |
+| Extra Large | `xl`       | Large desktop computers                                          | 1800                                    | `$screen-xl-min`   | <span class="bsk-text-danger"><i class="fa fa-fw fa-exclamation-circle" aria-hidden="true"></i> No</span>  |
+{: .bsk-table .bsk-table-responsive }
 
 {% include snippets/topic-section-metadata.html
   title="Maximum width"
@@ -145,7 +158,7 @@ calculated as the next minimum width size minus `1px`. There is no maximum width
 | Medium      | 1199               | `$screen-md-max`   |
 | Large       | 1799               | `$screen-lg-max`   |
 | Extra Large | N/A                | N/A                |
-{: .table .table-responsive }
+{: .bsk-table .bsk-table-responsive }
 
 {% include snippets/topic-section-metadata.html
   title="Unit responsive breakpoints"
@@ -181,19 +194,20 @@ or, in cases where you are integrating with existing code or a third party syste
   included="yes"
 %}
 
-Use the `.pull-left` and `.pull-right` classes to float content. The `!important` modifier is used to prevent
+Use the `.bsk-pull-left` and `.bsk-pull-right` classes to float content. The `!important` modifier is used to prevent
 specificity issues.
 
-Do not use these classes in [navbars]({{ '/components/navbar' | prepend: site.baseurl }}), `.navbar-left` and
-`.navbar-right` classes should be used instead.
-{: .alert .alert-warning }
+{% alert warning %}
+Do not use these classes in [navbars]({{ '/components/navbar' | prepend: site.baseurl }}), `.bsk-navbar-left` and
+`.bsk-navbar-right` classes should be used instead.
+{% endalert %}
 
 {% example html %}
-<div class="pull-left"></div>
+<div class="bsk-pull-left"></div>
 {% endexample %}
 
 {% example html %}
-<div class="pull-right"></div>
+<div class="bsk-pull-right"></div>
 {% endexample %}
 
 Alternatively, mixins can be used:
@@ -215,10 +229,10 @@ Alternatively, mixins can be used:
   included="yes"
 %}
 
-Use the `.center-block` class to align a block using CSS margins.
+Use the `.bsk-center-block` class to align a block using CSS margins.
 
 {% example html %}
-<div class="center-block">
+<div class="bsk-center-block">
   <!-- TODO: Add example blocks -->
 </div>
 {% endexample %}
@@ -239,11 +253,11 @@ Alternatively, a mixin can be used:
   included="yes"
 %}
 
-Use the `.clearfix` class on the **parent** element to clear floats. This uses the
+Use the `.bsk-clearfix` class on the **parent** element to clear floats. This uses the
 [the micro clearfix](http://nicolasgallagher.com/micro-clearfix-hack/) by Nicolas Gallagher.
 
 {% example html %}
-<div class="clearfix"></div>
+<div class="bsk-clearfix"></div>
 {% endexample %}
 
 Alternatively, a mixin can be used:
@@ -277,7 +291,6 @@ Invisible
 Screen readers only
 : An element which can only be seen by assistive technologies such as screen readers, and which does not affect the
 page layout
-{: .dl-bsk }
 
 {% include snippets/topic-section-metadata.html
   title="General visibiliy classes"
@@ -289,13 +302,13 @@ page layout
 
 Both classes and mixins are available for setting these states generally (i.e. under any circumstances).
 
-| State              | Class        | Mixin           |
-| ------------------ | ------------ | --------------- |
-| Shown              | `.show`      | `.show();`      |
-| Hidden             | `.hidden`    | `.hidden();`    |
-| Invisible          | `.invisible` | `.invisible();` |
-| Screen reader only | `.sr-only`   | `.sr-only();`   |
-{: .table .table-responsive }
+| State              | Class            | Mixin           |
+| ------------------ | ---------------- | --------------- |
+| Shown              | `.bsk-show`      | `.show();`      |
+| Hidden             | `.bsk-hidden`    | `.hidden();`    |
+| Invisible          | `.bsk-invisible` | `.invisible();` |
+| Screen reader only | `.bsk-sr-only`   | `.sr-only();`   |
+{: .bsk-table .bsk-table-responsive }
 
 ### Responsive visibility classes
 {: #{{ 'Responsive visibility classes' | slugify }} }
@@ -313,26 +326,29 @@ Both classes and mixins are available for setting these states generally (i.e. u
 As an alternative to the general classes, it's possible to control an elements visibility at each responsive breakpoint.
 Any of these classes can be mixed and matched for each size.
 
+{% alert warning %}
 These classes **should not** be used to display completely different content at different breakpoints. Rather these
 classes **should** be targeted to specific areas or features, generally to hide non-essential information on smaller
 devices.
-{: .alert .alert-warning }
+{% endalert %}
 
-The Invisible and Screen reader only states doesn't depend on the screen size and so have no per-breakpoint classes.
-{: .alert .alert-info }
+{% alert info %}
+The Invisible and Screen Reader only states doesn't depend on the screen size and so have no per-breakpoint classes.
+{% endalert %}
 
+{% alert info %}
 Unlike grid columns for example, visibility does not flow upwards grid sizes. If you hide an element at the
 *extra small* grid size, it will become visible again at the *small* size.
-{: .alert .alert-info }
+{% endalert %}
 
-| Size        | Visible Classes                                                                   | Hidden Class |
-| ----------- | --------------------------------------------------------------------------------- |------------- |
-| Extra Small | `.visible-xs-block` <br /> `.visible-xs-inline` <br /> `.visible-xs-inline-block` | `.hidden-xs` |
-| Small       | `.visible-sm-block` <br /> `.visible-sm-inline` <br /> `.visible-sm-inline-block` | `.hidden-sm` |
-| Medium      | `.visible-md-block` <br /> `.visible-md-inline` <br /> `.visible-md-inline-block` | `.hidden-md` |
-| Large       | `.visible-lg-block` <br /> `.visible-lg-inline` <br /> `.visible-lg-inline-block` | `.hidden-lg` |
-| Extra Large | `.visible-xl-block` <br /> `.visible-xl-inline` <br /> `.visible-xl-inline-block` | `.hidden-xl` |
-{: .table .table-responsive }
+| Size        | Visible Classes                                                                               | Hidden Class     |
+| ----------- | --------------------------------------------------------------------------------------------- |----------------- |
+| Extra Small | `.bsk-visible-xs-block` <br /> `.bsk-visible-xs-inline` <br /> `.bsk-visible-xs-inline-block` | `.bsk-hidden-xs` |
+| Small       | `.bsk-visible-sm-block` <br /> `.bsk-visible-sm-inline` <br /> `.bsk-visible-sm-inline-block` | `.bsk-hidden-sm` |
+| Medium      | `.bsk-visible-md-block` <br /> `.bsk-visible-md-inline` <br /> `.bsk-visible-md-inline-block` | `.bsk-hidden-md` |
+| Large       | `.bsk-visible-lg-block` <br /> `.bsk-visible-lg-inline` <br /> `.bsk-visible-lg-inline-block` | `.bsk-hidden-lg` |
+| Extra Large | `.bsk-visible-xl-block` <br /> `.bsk-visible-xl-inline` <br /> `.bsk-visible-xl-inline-block` | `.bsk-hidden-xl` |
+{: .bsk-table .bsk-table-responsive }
 
 {% include snippets/topic-section-metadata.html
   title="Print visibility classes"
@@ -342,10 +358,10 @@ Unlike grid columns for example, visibility does not flow upwards grid sizes. If
   included="yes"
 %}
 
-The `.visible-print-block`, `.visible-print-inline` and `.visible-print-inline-block` classes can be used to show
-content when printing.
+The `.bsk-visible-print-block`, `.bsk-visible-print-inline` and `.bsk-visible-print-inline-block` classes can be used
+to show content when printing.
 
-Conversely, the `.hidden-print` class can be used to hide content.
+Conversely, the `.bsk-hidden-print` class can be used to hide content.
 
 {% include snippets/topic-section-metadata.html
   title="Test cases"
