@@ -22,17 +22,19 @@ sections:
   heading_level=2
 %}
 
-Use the `.nav` class to create secondary navigation elements, for splitting content into logical sections.
+Use the `.bsk-nav` class to create secondary navigation elements, for splitting content into logical sections.
 
 Each navigation item **must** use an <code>&lt;a&gt;</code> element.
 
+{% alert warning %}
 For assistive technologies, all navigation elements should use a `role=navigation` attribute on an element which wraps
-around the element using the `.nav` class.
-{: .alert .alert-warning }
+around the element using the `.bsk-nav` class.
+{% endalert %}
 
-Interactive tabs and pills require the [tabs]({{ '/interactivity/tab' | prepend: site.baseurl }}){: .alert-link }
+{% alert info style=solid %}
+Interactive tabs and pills require the [tabs]({{ '/interactivity/tab' | prepend: site.baseurl }}){: .bsk-alert-link }
 JavaScript plugin, which is enabled on this site.
-{: .alert .alert-info }
+{% endalert %}
 
 {% include snippets/topic-section-metadata.html
   title="Variants"
@@ -47,15 +49,12 @@ JavaScript plugin, which is enabled on this site.
   included="yes"
 %}
 
-Add the `.nav-pills` and `.nav-pills-bsk` classes to create a minimalist navigation element.
-
-Always use the `.nav-tabs-bsk` and `.nav-tabs` classes together so that Style Kit specific styles are applied.
-{: .alert .alert-info }
+Add the `.bsk-nav-pills` class to create a minimalist navigation element.
 
 {% example html %}
 <nav role="navigation">
-  <ul class="nav nav-pills nav-pills-bsk">
-    <li role="presentation" class="active"><a href="#">Pill 1</a></li>
+  <ul class="bsk-nav bsk-nav-pills">
+    <li role="presentation" class="bsk-active"><a href="#">Pill 1</a></li>
     <li role="presentation"><a href="#">Pill 2</a></li>
     <li role="presentation"><a href="#">Pill 3</a></li>
   </ul>
@@ -70,15 +69,12 @@ Always use the `.nav-tabs-bsk` and `.nav-tabs` classes together so that Style Ki
   included="yes"
 %}
 
-Add the `.nav-tabs` and `.nav-tabs-bsk` classes to create a more structured navigation element.
-
-Always use the `.nav-tabs-bsk` and `.nav-tabs` classes together so that Style Kit specific styles are applied.
-{: .alert .alert-info }
+Add the `.bsk-nav-tabs` class to create a more structured navigation element.
 
 {% example html %}
 <nav role="navigation">
-  <ul class="nav nav-tabs nav-tabs-bsk">
-    <li role="presentation" class="active"><a href="#">Tab 1</a></li>
+  <ul class="bsk-nav bsk-nav-tabs">
+    <li role="presentation" class="bsk-active"><a href="#">Tab 1</a></li>
     <li role="presentation"><a href="#">Tab 2</a></li>
     <li role="presentation"><a href="#">Tab 3</a></li>
   </ul>
@@ -100,19 +96,16 @@ Always use the `.nav-tabs-bsk` and `.nav-tabs` classes together so that Style Ki
 
 [Drop-down menus]({{ '/components/drop-down' | prepend: site.baseurl }}) can be used as navigation items as-is.
 
-Remember to always use `.dropdown-menu-bsk` and `.dropdown-menu` together so that Style Kit specific styles are applied.
-{: .alert .alert-info }
-
 {% example html %}
 <!-- Pills -->
 <nav role="navigation">
-  <ul class="nav nav-pills nav-pills-bsk">
+  <ul class="bsk-nav bsk-nav-pills">
     <li role="presentation"><a href="#">Pill 1</a></li>
     <li role="presentation"><a href="#">Pill 2</a></li>
-    <li role="presentation" class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-      Dropdown <span class="caret"></span></a>
-      <ul class="dropdown-menu dropdown-menu-bsk">
+    <li role="presentation" class="bsk-dropdown">
+      <a href="#" class="bsk-dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+      Dropdown <span class="bsk-caret"></span></a>
+      <ul class="bsk-dropdown-menu">
         <li><a href="#">Action</a></li>
         <li><a href="#">Another item</a></li>
       </ul>
@@ -124,13 +117,13 @@ Remember to always use `.dropdown-menu-bsk` and `.dropdown-menu` together so tha
 {% example html %}
 <!-- Tabs -->
 <nav role="navigation">
-  <ul class="nav nav-tabs nav-tabs-bsk">
+  <ul class="bsk-nav bsk-nav-tabs">
     <li role="presentation"><a href="#">Tab 1</a></li>
     <li role="presentation"><a href="#">Tab 2</a></li>
-    <li role="presentation" class="dropdown">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-      Dropdown <span class="caret"></span></a>
-      <ul class="dropdown-menu dropdown-menu-bsk">
+    <li role="presentation" class="bsk-dropdown">
+      <a href="#" class="bsk-dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+      Dropdown <span class="bsk-caret"></span></a>
+      <ul class="bsk-dropdown-menu">
         <li><a href="#">Action</a></li>
         <li><a href="#">Another item</a></li>
       </ul>
@@ -152,17 +145,18 @@ Remember to always use `.dropdown-menu-bsk` and `.dropdown-menu` together so tha
   included="yes"
 %}
 
-Add the `.active` class to the navigation item currently active, to highlight where the end user is in the site.
+Add the `.bsk-active` class to the navigation item currently active, to highlight where the end user is in the site.
 
-Make sure to include a `<span class="sr-only">(current)</span>` element as well. <br />
+{% alert warning %}
+Make sure to include a `<span class="bsk-sr-only">(current)</span>` element as well. <br />
 This provides a non-visual indication of the currently active item, suitable for assistive technologies.
-{: .alert .alert-warning }
+{% endalert %}
 
 {% example html %}
 <!-- Pills -->
 <nav role="navigation">
-  <ul class="nav nav-pills nav-pills-bsk">
-    <li role="presentation" class="active"><a href="#">Pill 1</a></li>
+  <ul class="bsk-nav bsk-nav-pills">
+    <li role="presentation" class="bsk-active"><a href="#">Pill 1</a></li>
     <li role="presentation"><a href="#">Pill 2</a></li>
   </ul>
 </nav>
@@ -171,8 +165,8 @@ This provides a non-visual indication of the currently active item, suitable for
 {% example html %}
 <!-- Tabs -->
 <nav role="navigation">
-  <ul class="nav nav-tabs nav-tabs-bsk">
-    <li role="presentation" class="active"><a href="#">Tab 1</a></li>
+  <ul class="bsk-nav bsk-nav-tabs">
+    <li role="presentation" class="bsk-active"><a href="#">Tab 1</a></li>
     <li role="presentation"><a href="#">Tab 2</a></li>
   </ul>
 </nav>
@@ -184,14 +178,14 @@ This can also be used within [drop-down]({{ '/components/drop-down/#active' | pr
 {% example html %}
 <!-- Pills -->
 <nav role="navigation">
-  <ul class="nav nav-pills nav-pills-bsk">
+  <ul class="bsk-nav bsk-nav-pills">
     <li role="presentation"><a href="#">Pill 1</a></li>
     <li role="presentation"><a href="#">Pill 2</a></li>
-    <li role="presentation" class="dropdown active">
+    <li role="presentation" class="bsk-dropdown bsk-active">
       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-      Dropdown <span class="caret"></span></a>
-      <ul class="dropdown-menu dropdown-menu-bsk">
-        <li class="active"><a href="#">Action</a></li>
+      Dropdown <span class="bsk-caret"></span></a>
+      <ul class="bsk-dropdown-menu">
+        <li class="bsk-active"><a href="#">Action</a></li>
         <li><a href="#">Another item</a></li>
       </ul>
     </li>
@@ -202,14 +196,14 @@ This can also be used within [drop-down]({{ '/components/drop-down/#active' | pr
 {% example html %}
 <!-- Tabs -->
 <nav role="navigation">
-  <ul class="nav nav-tabs nav-tabs-bsk">
+  <ul class="bsk-nav bsk-nav-tabs">
     <li role="presentation"><a href="#">Tab 1</a></li>
     <li role="presentation"><a href="#">Tab 2</a></li>
-    <li role="presentation" class="dropdown active">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-      Dropdown <span class="caret"></span></a>
-      <ul class="dropdown-menu dropdown-menu-bsk">
-        <li class="active"><a href="#">Action</a></li>
+    <li role="presentation" class="bsk-dropdown bsk-active">
+      <a href="#" class="bsk-dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+      Dropdown <span class="bsk-caret"></span></a>
+      <ul class="bsk-dropdown-menu">
+        <li class="bsk-active"><a href="#">Action</a></li>
         <li><a href="#">Another item</a></li>
       </ul>
     </li>
@@ -225,19 +219,23 @@ This can also be used within [drop-down]({{ '/components/drop-down/#active' | pr
   included="yes"
 %}
 
-Add the `.disabled` class to indicate unavailable navigation items.
+Add the `.bsk-disabled` class to indicate unavailable navigation items.
 
-**It is not safe to rely on this state to prevent users activating disabled actions**. <br>
-Browsers may not enforce these properties, or users may trivially edit the DOM. Server side protections **must**
-be used for dangerous actions.
-{: .alert .alert-danger }
+<div class="bsk-alert bsk-alert-solid-danger bsk-alert-block bsk-alert-icon">
+  <header class="bsk-alert-title">
+    <h4><i class="fa fa-fw fa-exclamation-circle bsk-alert-icon"></i>
+    It is not safe to rely on this state to prevent users activating disabled actions</h4>
+  </header>
+  <p>Browsers may not enforce these properties, or users may trivially edit the DOM. Server side protections
+   <strong>must</strong> be used for dangerous actions.</p>
+</div>
 
 {% example html %}
 <!-- Pills -->
 <nav role="navigation">
-  <ul class="nav nav-pills nav-pills-bsk">
+  <ul class="bsk-nav bsk-nav-pills">
     <li role="presentation"><a href="#">Pill 1</a></li>
-    <li role="presentation" class="disabled"><a href="#">Pill 2</a></li>
+    <li role="presentation" class="bsk-disabled"><a href="#">Pill 2</a></li>
   </ul>
 </nav>
 {% endexample %}
@@ -245,9 +243,9 @@ be used for dangerous actions.
 {% example html %}
 <!-- Tabs -->
 <nav role="navigation">
-  <ul class="nav nav-tabs nav-tabs-bsk">
+  <ul class="bsk-nav bsk-nav-tabs">
     <li role="presentation"><a href="#">Tab 1</a></li>
-    <li role="presentation" class="disabled"><a href="#">Tab 2</a></li>
+    <li role="presentation" class="bsk-disabled"><a href="#">Tab 2</a></li>
   </ul>
 </nav>
 {% endexample %}
@@ -265,14 +263,15 @@ be used for dangerous actions.
   included="yes"
 %}
 
-Add the `.nav-stacked` class to arrange pills vertically.
+Add the `.bsk-nav-stacked` class to arrange pills vertically.
 
+{% alert danger %}
 Stacked tabs are not supported.
-{: .alert .alert-warning }
+{% endalert %}
 
 {% example html %}
 <nav role="navigation">
-  <ul class="nav nav-stacked nav-pills nav-pills-bsk">
+  <ul class="bsk-nav bsk-nav-stacked bsk-nav-pills">
     <li role="presentation"><a href="#">Pill 1</a></li>
     <li role="presentation"><a href="#">Pill 2</a></li>
   </ul>
@@ -287,13 +286,13 @@ Stacked tabs are not supported.
   included="yes"
 %}
 
-Add the `.nav-justified` class to display equally navigation items filling the width of the navigation element.
+Add the `.bsk-nav-justified` class to display equally navigation items filling the width of the navigation element.
 On smaller screens, the navigation items are stacked.
 
 {% example html %}
 <!-- Pills -->
 <nav role="navigation">
-  <ul class="nav nav-justified nav-pills nav-pills-bsk">
+  <ul class="bsk-nav bsk-nav-justified bsk-nav-pills">
     <li role="presentation"><a href="#">Pill 1</a></li>
     <li role="presentation"><a href="#">Pill 2</a></li>
   </ul>
@@ -303,7 +302,7 @@ On smaller screens, the navigation items are stacked.
 {% example html %}
 <!-- Tabs -->
 <nav role="navigation">
-  <ul class="nav nav-justified nav-tabs nav-tabs-bsk">
+  <ul class="bsk-nav bsk-nav-justified bsk-nav-tabs">
     <li role="presentation"><a href="#">Tab 1</a></li>
     <li role="presentation"><a href="#">Tab 2</a></li>
   </ul>

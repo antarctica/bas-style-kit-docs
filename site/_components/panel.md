@@ -28,22 +28,26 @@ sections:
   heading_level=2
 %}
 
-Use the `.panel` class to display information that is distinct from main content, but which is shown **within** it.
+Use the `.bsk-panel` class to display information that is distinct from main content, but which is shown **within** it.
 
-You **must** pick a [variant]({{ '/components/panel/#variants' | prepend: site.baseurl }}){: .alert-link } for each
-panel, otherwise it will look strange. It is not enough to use `.panel` on its own.
-{: .alert .alert-warning }
+{% alert warning style=solid %}
+You **must** pick a [variant]({{ '/components/panel/#variants' | prepend: site.baseurl }}){: .bsk-alert-link } for each
+panel, otherwise it will look strange. It is not enough to use `.bsk-panel` on its own.
+{% endalert %}
 
+{% alert info %}
 **Heads up!** Panel elements are not yet fully styled, but will be in the next version of the Style Kit.
-{: .alert .alert-info }
+{% endalert %}
 
-See the [Sidebar]({{ '/components/sidebar' | prepend: site.baseurl }}){: .alert-link } component to display information
-that is distinct from main content, but which is shown **next to** it.
-{: .alert .alert-info }
+{% alert info style=solid %}
+See the [Sidebar]({{ '/components/sidebar' | prepend: site.baseurl }}){: .bsk-alert-link } component to display
+information that is distinct from main content, but which is shown **next to** it.
+{% endalert %}
 
-See the [Thumbnail]({{ '/components/thumbnail' | prepend: site.baseurl }}){: .alert-link } component to display media
-items that are distinct from main content, but which is shown **within** it.
-{: .alert .alert-info }
+{% alert info style=solid %}
+See the [Thumbnail]({{ '/components/thumbnail' | prepend: site.baseurl }}){: .bsk-alert-link } component to display
+media items that are distinct from main content, but which is shown **within** it.
+{% endalert %}
 
 {% include snippets/topic-section-metadata.html
   title="Variants"
@@ -58,12 +62,12 @@ items that are distinct from main content, but which is shown **within** it.
   included="yes"
 %}
 
-Add the `.panel-default` class for standard panels. For added context you can use
+Add the `.bsk-panel-default` class for standard panels. For added context you can use
 [contextual colours]({{ '/components/panel/#contextual-colours' | prepend: site.baseurl }}).
 
 {% example html %}
-<div class="panel panel-default">
-  <main class="panel-body">
+<div class="bsk-panel bsk-panel-default">
+  <main class="bsk-panel-body">
     Default panel example
   </main>
 </div>
@@ -72,11 +76,11 @@ Add the `.panel-default` class for standard panels. For added context you can us
 A more typical example includes a [header]({{ '/components/panel/#header' | prepend: site.baseurl }}).
 
 {% example html %}
-<div class="panel panel-default">
-  <header class="panel-heading">
-    <h3 class="panel-title">Default panel example title</h3>
+<div class="bsk-panel bsk-panel-default">
+  <header class="bsk-panel-heading">
+    <h3 class="bsk-panel-title">Default panel example title</h3>
   </header>
-  <main class="panel-body">
+  <main class="bsk-panel-body">
     Default panel example body
   </main>
 </div>
@@ -90,14 +94,14 @@ A more typical example includes a [header]({{ '/components/panel/#header' | prep
   included="yes"
 %}
 
-Add the `.panel-primary` class for the most important panel, where there is more than one.
+Add the `.bsk-panel-primary` class for the most important panel, where there is more than one.
 
 {% example html %}
-<div class="panel panel-primary">
-  <header class="panel-heading">
-    <h3 class="panel-title">Primary panel example title</h3>
+<div class="bsk-panel bsk-panel-primary">
+  <header class="bsk-panel-heading">
+    <h3 class="bsk-panel-title">Primary panel example title</h3>
   </header>
-  <main class="panel-body">
+  <main class="bsk-panel-body">
     Primary panel example body
   </main>
 </div>
@@ -114,47 +118,47 @@ Add the `.panel-primary` class for the most important panel, where there is more
 The [standard contextual colours]({{ '/core/colours/#standard-contextual-colours' | prepend: site.baseurl }}) can be
 used for context by adding these classes:
 
-| Standard Context | Panel Contextual Class |
-| ---------------- | ---------------------- |
-| Success          | `.panel-success`       |
-| Warning          | `.panel-warning`       |
-| Danger           | `.panel-danger`        |
-| Info             | `.panel-info`          |
-{: .table .table-responsive }
+| Standard Context | Panel Contextual Class     |
+| ---------------- | -------------------------- |
+| Success          | `.bsk-panel-success`       |
+| Warning          | `.bsk-panel-warning`       |
+| Danger           | `.bsk-panel-danger`        |
+| Info             | `.bsk-panel-info`          |
+{: .bsk-table .bsk-table-responsive }
 
 {% example html %}
-<div class="panel panel-success">
-  <header class="panel-heading">
-    <h3 class="panel-title">Success panel example title</h3>
+<div class="bsk-panel bsk-panel-success">
+  <header class="bsk-panel-heading">
+    <h3 class="bsk-panel-title">Success panel example title</h3>
   </header>
-  <main class="panel-body">
+  <main class="bsk-panel-body">
     Success panel example body
   </main>
 </div>
 
-<div class="panel panel-warning">
-  <header class="panel-heading">
-    <h3 class="panel-title">Warning panel example title</h3>
+<div class="bsk-panel bsk-panel-warning">
+  <header class="bsk-panel-heading">
+    <h3 class="bsk-panel-title">Warning panel example title</h3>
   </header>
-  <main class="panel-body">
+  <main class="bsk-panel-body">
     Warning panel example body
   </main>
 </div>
 
-<div class="panel panel-danger">
-  <header class="panel-heading">
-    <h3 class="panel-title">Danger panel example title</h3>
+<div class="bsk-panel bsk-panel-danger">
+  <header class="bsk-panel-heading">
+    <h3 class="bsk-panel-title">Danger panel example title</h3>
   </header>
-  <main class="panel-body">
+  <main class="bsk-panel-body">
     Danger panel example body
   </main>
 </div>
 
-<div class="panel panel-info">
-  <header class="panel-heading">
-    <h3 class="panel-title">Info panel example title</h3>
+<div class="bsk-panel bsk-panel-info">
+  <header class="bsk-panel-heading">
+    <h3 class="bsk-panel-title">Info panel example title</h3>
   </header>
-  <main class="panel-body">
+  <main class="bsk-panel-body">
     Info panel example body
   </main>
 </div>
@@ -173,11 +177,11 @@ used for context by adding these classes:
   included="yes"
 %}
 
-Use `.panel-body` class on a <code>&lt;main&gt;</code> element within a panel for its contents.
+Use `.bsk-panel-body` class on a <code>&lt;main&gt;</code> element within a panel for its contents.
 
 {% example html %}
-<div class="panel panel-default">
-  <main class="panel-body">
+<div class="bsk-panel bsk-panel-default">
+  <main class="bsk-panel-body">
     Example panel body
   </main>
 </div>
@@ -191,23 +195,23 @@ Use `.panel-body` class on a <code>&lt;main&gt;</code> element within a panel fo
   included="yes"
 %}
 
-Use the `.panel-heading` class on a <code>&lt;header&gt;</code> element within a panel to add a header.
+Use the `.bsk-panel-heading` class on a <code>&lt;header&gt;</code> element within a panel to add a header.
 
-Use the `.panel-title` class on a [heading]({{ '/core/type/#headings' | prepend: site.baseurl }}) element to correctly
+Use the `.bsk-panel-title` class on a [heading]({{ '/core/type/#headings' | prepend: site.baseurl }}) element to correctly
 style links within panel headings.
 
 {% example html %}
-<div class="panel panel-default">
-  <header class="panel-heading">
-    <h3 class="panel-title">Example panel title</h3>
+<div class="bsk-panel bsk-panel-default">
+  <header class="bsk-panel-heading">
+    <h3 class="bsk-panel-title">Example panel title</h3>
   </header>
 </div>
 
-<div class="panel panel-default">
-  <header class="panel-heading">
-    <h3 class="panel-title">Example panel title</h3>
+<div class="bsk-panel bsk-panel-default">
+  <header class="bsk-panel-heading">
+    <h3 class="bsk-panel-title">Example panel title</h3>
   </header>
-  <main class="panel-body">
+  <main class="bsk-panel-body">
     Default panel example body
   </main>
 </div>
@@ -221,24 +225,24 @@ style links within panel headings.
   included="yes"
 %}
 
-Use `.panel-footer` class on a <code>&lt;footer&gt;</code> element within a panel to add a footer.
+Use `.bsk-panel-footer` class on a <code>&lt;footer&gt;</code> element within a panel to add a footer.
 
 Panel footers don't inherit colors and borders when using contextual variations as they are not meant to be in the
 foreground.
 {: .alert .alert-info }
 
 {% example html %}
-<div class="panel panel-default">
-  <footer class="panel-footer">
+<div class="bsk-panel bsk-panel-default">
+  <footer class="bsk-panel-footer">
     Example panel footer
   </footer>
 </div>
 
-<div class="panel panel-default">
-  <main class="panel-body">
+<div class="bsk-panel bsk-panel-default">
+  <main class="bsk-panel-body">
     Default panel example body
   </main>
-  <footer class="panel-footer">
+  <footer class="bsk-panel-footer">
     Example panel footer
   </footer>
 </div>
@@ -256,13 +260,14 @@ foreground.
 used they will look seamless, a dividing border will be added automatically if a
 [panel body]({{ '/components/panel/#body' | prepend: site.baseurl }}) is used.
 
-Don't put tables **within** [panel bodies]({{ '/components/panel/#body' | prepend: site.baseurl }}){: .alert-link }, as they may look
-strange.
-{: .alert .alert-warning }
+{% alert warning %}
+Don't put tables **within** [panel bodies]({{ '/components/panel/#body' | prepend: site.baseurl }}){: .bsk-alert-link },
+as they may lookstrange.
+{% endalert %}
 
 {% example html %}
-<div class="panel panel-default">
-  <table class="table">
+<div class="bsk-panel bsk-panel-default">
+  <table class="bsk-table">
     <thead>
       <tr>
         <th>Name</th>
@@ -286,11 +291,11 @@ strange.
   </table>
 </div>
 
-<div class="panel panel-default">
-  <main class="panel-body">
+<div class="bsk-panel bsk-panel-default">
+  <main class="bsk-panel-body">
     Example panel body
   </main>
-  <table class="table">
+  <table class="bsk-table">
     <thead>
       <tr>
         <th>Name</th>
@@ -326,25 +331,26 @@ strange.
 [List groups]({{ '/components/list-group' | prepend: site.baseurl }}) can be added to panels directly. A dividing border
 will be added automatically if a [panel body]({{ '/components/panel/#body' | prepend: site.baseurl }}) is used.
 
-Don't put list groups **within** [panel bodies]({{ '/components/panel/#body' | prepend: site.baseurl }}){: .alert-link }
-, as they may look strange.
-{: .alert .alert-warning }
+{% alert warning %}
+Don't put list groups **within**
+[panel bodies]({{ '/components/panel/#body' | prepend: site.baseurl }}){: .alert-bsk-link }, as they may look strange.
+{% endalert %}
 
 {% example html %}
-<div class="panel panel-default">
-  <ul class="list-group">
-    <li class="list-group-item">List group item</li>
-    <li class="list-group-item">Another list group item</li>
+<div class="bsk-panel bsk-panel-default">
+  <ul class="bsk-list-group">
+    <li class="bsk-list-group-item">List group item</li>
+    <li class="bsk-list-group-item">Another list group item</li>
   </ul>
 </div>
 
-<div class="panel panel-default">
-  <main class="panel-body">
+<div class="bsk-panel bsk-panel-default">
+  <main class="bsk-panel-body">
     Example panel body
   </main>
-  <ul class="list-group">
-    <li class="list-group-item">List group item</li>
-    <li class="list-group-item">Another list group item</li>
+  <ul class="bsk-list-group">
+    <li class="bsk-list-group-item">List group item</li>
+    <li class="bsk-list-group-item">Another list group item</li>
   </ul>
 </div>
 {% endexample %}

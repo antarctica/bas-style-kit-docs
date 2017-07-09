@@ -22,9 +22,10 @@ Use this component to consistently display links to the social media services BA
 
 Where possible, the BAS Style Kit uses officially provided assets for social media services, such as logos.
 
+{% alert warning style=solid %}
 All brand assets trademarks of their respective owners, and subject to their respective licensing restrictions. <br />
-You must ensure that where you use these assets you comply with these restrictions.
-{: .alert .alert-warning }
+You **must** ensure that where you use these assets you comply with these restrictions.
+{% endalert %}
 
 {% include snippets/topic-section-metadata.html
   title="Supported services"
@@ -36,18 +37,19 @@ You must ensure that where you use these assets you comply with these restrictio
 
 | Social Media Service | Social Media Service Class |
 | -------------------- | -------------------------- |
-| Twitter              | `.twitter`                 |
-| Facebook             | `.facebook`                |
-| YouTube              | `.youtube`                 |
-| RSS                  | `.rss`                     |
-{: .table .table-responsive }
+| Twitter              | `.bsk-twitter`             |
+| Facebook             | `.bsk-facebook`            |
+| YouTube              | `.bsk-youtube`             |
+| RSS                  | `.bsk-rss`                 |
+{: .bsk-table .bsk-table-responsive }
 
 [Colours]({{ '/core/colours/#external-service-colours' | prepend: site.baseurl }}) and
 [Icon]({{ '/core/icons/#external-service-icons' | prepend: site.baseurl }}) are defined for each supported social media
 service.
 
-[Send feedback]({{ "/feedback.html" | prepend: site.baseurl }}){: .alert-link } if you require other services.
-{: .alert .alert-info }
+{% alert info style=highlight %}
+[Send feedback]({{ "/feedback.html" | prepend: site.baseurl }}){: .bsk-alert-link } if you require other services.
+{% endalert %}
 
 {% include snippets/topic-section-metadata.html
   title="States"
@@ -62,21 +64,21 @@ service.
   included="yes"
 %}
 
-Use the `.social-media-bsk-static` class with the relevant class for each service, containing the relevant
+Use the `.bsk-social-media-static` class with the relevant class for each service, containing the relevant
 [icon]({{ '/core/icons/#external-service-icons' | prepend: site.baseurl }}) for each service.
 
 {% example html %}
 <!-- Twitter -->
-<div class="social-media-bsk-static twitter"><i class="fa fa-fw fa-3x fa-twitter-square"></i><span class="sr-only">Follow us on Twitter</span></div>
+<div class="bsk-social-media-static bsk-twitter"><i class="fa fa-fw fa-3x fa-twitter-square"></i><span class="bsk-sr-only">Follow us on Twitter</span></div>
 
 <!-- Facebook -->
-<div class="social-media-bsk-static facebook"><i class="fa fa-fw fa-3x fa-facebook-square"></i><span class="sr-only">Follow us on Facebook</span></div>
+<div class="bsk-social-media-static bsk-facebook"><i class="fa fa-fw fa-3x fa-facebook-square"></i><span class="bsk-sr-only">Follow us on Facebook</span></div>
 
 <!-- YouTube -->
-<div class="social-media-bsk-static youtube"><i class="fa fa-fw fa-3x fa-youtube-square"></i><span class="sr-only">Subscribe to us on YouTube</span></div>
+<div class="bsk-social-media-static bsk-youtube"><i class="fa fa-fw fa-3x fa-youtube-square"></i><span class="bsk-sr-only">Subscribe to us on YouTube</span></div>
 
 <!-- RSS -->
-<div class="social-media-bsk-static rss"><i class="fa fa-fw fa-3x fa-rss-square"></i><span class="sr-only">Follow us with RSS</span></div>
+<div class="bsk-social-media-static bsk-rss"><i class="fa fa-fw fa-3x fa-rss-square"></i><span class="bsk-sr-only">Follow us with RSS</span></div>
 {% endexample %}
 
 {% include snippets/topic-section-metadata.html
@@ -87,21 +89,21 @@ Use the `.social-media-bsk-static` class with the relevant class for each servic
   included="yes"
 %}
 
-Use the `.social-media-bsk-link` class with the relevant class for each service, containing the relevant
+Use the `.bsk-social-media-link` class with the relevant class for each service, containing the relevant
 [icon]({{ '/core/icons/#external-service-icons' | prepend: site.baseurl }}) for each service.
 
 {% example html %}
 <!-- Twitter -->
-<div><a href="#" class="social-media-bsk-link twitter"><i class="fa fa-fw fa-3x fa-twitter-square"></i><span class="sr-only">Follow us on Twitter</span></a></div>
+<div><a href="#" class="bsk-social-media-link bsk-twitter"><i class="fa fa-fw fa-3x fa-twitter-square"></i><span class="bsk-sr-only">Follow us on Twitter</span></a></div>
 
 <!-- Facebook -->
-<div><a href="#" class="social-media-bsk-link facebook"><i class="fa fa-fw fa-3x fa-facebook-square"></i><span class="sr-only">Follow us on Facebook</span></a></div>
+<div><a href="#" class="bsk-social-media-link bsk-facebook"><i class="fa fa-fw fa-3x fa-facebook-square"></i><span class="bsk-sr-only">Follow us on Facebook</span></a></div>
 
 <!-- YouTube -->
-<div><a href="#" class="social-media-bsk-link youtube"><i class="fa fa-fw fa-3x fa-youtube-square"></i><span class="sr-only">Subscribe to us on YouTube</span></a></div>
+<div><a href="#" class="bsk-social-media-link bsk-youtube"><i class="fa fa-fw fa-3x fa-youtube-square"></i><span class="bsk-sr-only">Subscribe to us on YouTube</span></a></div>
 
 <!-- RSS -->
-<div><a href="#" class="social-media-bsk-link rss"><i class="fa fa-fw fa-3x fa-rss-square"></i><span class="sr-only">Follow us with RSS</span></a></div>
+<div><a href="#" class="bsk-social-media-link bsk-rss"><i class="fa fa-fw fa-3x fa-rss-square"></i><span class="bsk-sr-only">Follow us with RSS</span></a></div>
 {% endexample %}
 
 ## Layouts
@@ -115,16 +117,16 @@ Use the `.social-media-bsk-link` class with the relevant class for each service,
   included="yes"
 %}
 
-Use the `social-media-bsk-list` class with a [inline list]({{ '/core/type/#inline-lists' | prepend: site.baseurl }})
+Use the `.bsk-social-media-list` class with a [inline list]({{ '/core/type/#inline-lists' | prepend: site.baseurl }})
 to display multiple [static]({{ '/components/social-media/#static-symbols' | prepend: site.baseurl }}) or
 [linked]({{ '/components/social-media/#linked-symbols' | prepend: site.baseurl }}) social media symbols next to each
 other.
 
 {% example html %}
-<ul class="list-inline social-media-bsk-list">
-  <li><a href="#" class="social-media-bsk-link twitter"><i class="fa fa-fw fa-3x fa-twitter-square"></i><span class="sr-only">Follow us on Twitter</span></a></li>
-  <li><a href="#" class="social-media-bsk-link facebook"><i class="fa fa-fw fa-3x fa-facebook-square"></i><span class="sr-only">Follow us on Facebook</span></a></li>
-  <li><a href="#" class="social-media-bsk-link youtube"><i class="fa fa-fw fa-3x fa-youtube-square"></i><span class="sr-only">Subscribe to us on YouTube</span></a></li>
-  <li><a href="#" class="social-media-bsk-link rss"><i class="fa fa-fw fa-3x fa-rss-square"></i><span class="sr-only">Follow us with RSS</span></a></li>
+<ul class="bsk-list-inline bsk-social-media-list">
+  <li><a href="#" class="bsk-social-media-link bsk-twitter"><i class="fa fa-fw fa-3x fa-twitter-square"></i><span class="bsk-sr-only">Follow us on Twitter</span></a></li>
+  <li><a href="#" class="bsk-social-media-link bsk-facebook"><i class="fa fa-fw fa-3x fa-facebook-square"></i><span class="bsk-sr-only">Follow us on Facebook</span></a></li>
+  <li><a href="#" class="bsk-social-media-link bsk-youtube"><i class="fa fa-fw fa-3x fa-youtube-square"></i><span class="bsk-sr-only">Subscribe to us on YouTube</span></a></li>
+  <li><a href="#" class="bsk-social-media-link bsk-rss"><i class="fa fa-fw fa-3x fa-rss-square"></i><span class="bsk-sr-only">Follow us with RSS</span></a></li>
 </ul>
 {% endexample %}
