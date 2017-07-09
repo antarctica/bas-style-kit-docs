@@ -25,7 +25,7 @@ sections:
 
 Use **compiled** CSS styles in development environments, use **minified** CSS styles in production environments.
 
-[Source maps](http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/){: .alert-link } should loaded
+[Source maps](http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/){: .bsk-alert-link } should loaded
 automatically by compatible browsers when **minified** CSS styles are used.
 
 {% unless jekyll.environment == 'production' %}

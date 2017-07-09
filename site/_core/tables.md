@@ -177,7 +177,7 @@ Add `.bsk-table-hover` to highlight the row with focus within a table.
   included="yes"
 %}
 
-The [standard contextual background classes]({{ '/core/colours/#standard-contextual-background-classes' | prepend: site.baseurl }}){: .alert-link }
+The [standard contextual background classes]({{ '/core/colours/#standard-contextual-background-classes' | prepend: site.baseurl }}){: .bsk-alert-link }
 can be used as the background of table rows using these classes:
 
 | Standard Contextual Background | Table Cell Contextual Background Class |
@@ -190,7 +190,7 @@ can be used as the background of table rows using these classes:
 
 {% alert warning %}
 These classes only work within tables. Use the
-[standard contextual background classes]({{ '/core/colours/#standard-contextual-background-colours' | prepend: site.baseurl }}){: .alert-link }
+[standard contextual background classes]({{ '/core/colours/#standard-contextual-background-colours' | prepend: site.baseurl }}){: .bsk-alert-link }
 to use them in other situations.
 {% endalert %}
 

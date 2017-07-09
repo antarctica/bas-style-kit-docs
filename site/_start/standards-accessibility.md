@@ -102,7 +102,7 @@ Responsiveness is enabled in the Style Kit using the `viewport` meta tag, as sho
 {% endhighlight %}
 
 {% alert info style=highlight %}
-If you use the [examples]({{ '/examples' | prepend: site.baseurl }}){: .alert-link } from this website, this meta tag
+If you use the [examples]({{ '/examples' | prepend: site.baseurl }}){: .bsk-alert-link } from this website, this meta tag
 will be included.
 {% endalert %}
 
