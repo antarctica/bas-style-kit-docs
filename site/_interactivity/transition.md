@@ -17,7 +17,8 @@ sections:
 Use the Bootstrap [transitions](http://getbootstrap.com/javascript/#transitions) plugin to create simple transition
 effects.
 
-[View Transitions Plugin](http://getbootstrap.com/javascript/#transitions){:.btn .btn-bsk .btn-default }
+[View Transitions Plugin](http://getbootstrap.com/javascript/#transitions){:.bsk-btn .bsk-btn-default }
 
-All Bootstrap plugins require [jQuery](https://jquery.com){: .alert-link }.
-{: .alert .alert-warning }
+{% alert info %}
+All Bootstrap plugins require [jQuery](https://jquery.com){: .bsk-alert-link }.
+{% endalert %}

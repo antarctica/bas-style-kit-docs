@@ -16,7 +16,8 @@ sections:
 
 Use the Bootstrap [modal](http://getbootstrap.com/javascript/#modal) plugin to create Modal dialogues.
 
-[View Modal Plugin](http://getbootstrap.com/javascript/#modal){:.btn .btn-bsk .btn-default }
+[View Modal Plugin](http://getbootstrap.com/javascript/#modal){:.bsk-btn .bsk-btn-default }
 
-All Bootstrap plugins require [jQuery](https://jquery.com){: .alert-link }.
-{: .alert .alert-warning }
+{% alert info %}
+All Bootstrap plugins require [jQuery](https://jquery.com){: .bsk-alert-link }.
+{% endalert %}

@@ -17,7 +17,8 @@ sections:
 Use the Bootstrap [pop-over](http://getbootstrap.com/javascript/#popovers) plugin to create small overlays of content,
 for providing secondary information.
 
-[View Pop-Over Plugin](http://getbootstrap.com/javascript/#popovers){:.btn .btn-bsk .btn-default }
+[View Pop-Over Plugin](http://getbootstrap.com/javascript/#popovers){:.bsk-btn .bsk-btn-default }
 
-All Bootstrap plugins require [jQuery](https://jquery.com){: .alert-link }.
-{: .alert .alert-warning }
+{% alert info %}
+All Bootstrap plugins require [jQuery](https://jquery.com){: .bsk-alert-link }.
+{% endalert %}

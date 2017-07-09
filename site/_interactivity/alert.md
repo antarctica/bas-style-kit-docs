@@ -18,7 +18,8 @@ Use the Bootstrap [alert](http://getbootstrap.com/javascript/#alerts) plugin wit
 [alert component]({{ '/components/alert' | prepend: site.baseurl }}) to create
 [dismissible alerts]({{ '/components/alert/#dismissible-alerts' | prepend: site.baseurl }}).
 
-[View Alert Plugin](http://getbootstrap.com/javascript/#alerts){:.btn .btn-bsk .btn-default }
+[View Alert Plugin](http://getbootstrap.com/javascript/#alerts){:.bsk-btn .bsk-btn-default }
 
-All Bootstrap plugins require [jQuery](https://jquery.com){: .alert-link }.
-{: .alert .alert-warning }
+{% alert info %}
+All Bootstrap plugins require [jQuery](https://jquery.com){: .bsk-alert-link }.
+{% endalert %}

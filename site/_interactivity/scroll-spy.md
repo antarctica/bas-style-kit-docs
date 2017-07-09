@@ -17,7 +17,8 @@ sections:
 Use the Bootstrap [Scroll-spy](http://getbootstrap.com/javascript/#scrollspy) plugin to automatically update navigation
 targets based on scroll position.
 
-[View Scroll-Spy Plugin](http://getbootstrap.com/javascript/#scrollspy){:.btn .btn-bsk .btn-default }
+[View Scroll-Spy Plugin](http://getbootstrap.com/javascript/#scrollspy){:.bsk-btn .bsk-btn-default }
 
-All Bootstrap plugins require [jQuery](https://jquery.com){: .alert-link }.
-{: .alert .alert-warning }
+{% alert info %}
+All Bootstrap plugins require [jQuery](https://jquery.com){: .bsk-alert-link }.
+{% endalert %}

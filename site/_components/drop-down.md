@@ -101,7 +101,7 @@ not look right.
   included="yes"
 %}
 
-See the [navbar]({{ '/components/navbar/#drop-down-menu' | prepend: site.baseurl }}) documentation for using drop-downs
+See the [navbar]({{ '/components/navbar/#drop-down-menus' | prepend: site.baseurl }}) documentation for using drop-downs
 in Navbar items.
 
 {% include snippets/topic-section-metadata.html
