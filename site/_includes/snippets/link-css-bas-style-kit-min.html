@@ -1,10 +1,5 @@
 {% unless jekyll.environment == 'production' %}
-<!--<link rel="stylesheet" href="{{ site.bsk_cdn_base_staging }}/{{ site.bsk_version_staging }}/css/bas-style-kit.min.css" integrity="{{ site.data.bsk_sri_base_staging['dist/css/bas-style-kit.min.css'] }}" crossorigin="anonymous">-->
-
-<link rel="stylesheet" href="{{ site.bsk_cdn_base_staging }}/{{ site.bsk_version_staging }}/css/fonts-bsk.css">
-<link rel="stylesheet" href="{{ site.bsk_cdn_base_staging }}/{{ site.bsk_version_staging }}/css/bootstrap-bsk.css">
-<link rel="stylesheet" href="{{ site.bsk_cdn_base_staging }}/{{ site.bsk_version_staging }}/css/styles-bsk.css">
-
+<link rel="stylesheet" href="https://s3-eu-west-1.amazonaws.com/bas-cdn-dev/bas-style-kit/4e3aeaf/css/bas-style-kit.min.css">
 {% else %}
 <link rel="stylesheet" href="{{ site.bsk_cdn_base_production }}/{{ site.bsk_version_production }}/css/bas-style-kit.min.css" integrity="{{ site.data.bsk_sri_base_production['dist/css/bas-style-kit.min.css'] }}" crossorigin="anonymous">
 {% endunless %}
