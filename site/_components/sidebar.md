@@ -179,7 +179,7 @@ Use the `.bsk-sidebar-inverse` class to use a darker background for a sidebar. E
 
 Add the `.bsk-sidebar-lg` class to increase the padding inside a sidebar.
 
-Use the [grid system]({{ '/core/grid' | prepend: site.baseurl }}){: .alert-link } to control the width of a sidebar.
+Use the [grid system]({{ '/core/grid' | prepend: site.baseurl }}){: .bsk-alert-link } to control the width of a sidebar.
 {: .alert .alert-info }
 
 {% example html %}

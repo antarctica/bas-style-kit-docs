@@ -32,24 +32,25 @@ sections:
 A form field is made up of a form control (such as an input or textarea) with an accompanying label to explain what
 each field is for.
 
-<i class="fa fa-fw fa-info bsk-alert-icon" aria-hidden="true"></i>
+{% alert warning %}
+All form fields should have a label to make sure they can be understood by assistive technologies.
+{% endalert %}
+
+{% alert info %}
 For styling across devices and browsers, form controls should use the `.form-control` class and labels `.control-label`.
 Each form field should be be wrapped in a
-[from group]({{ '/core/forms/#form-groups-and-fieldsets' | prepend: site.baseurl }}){: .alert-link } to structurally
-separate each form field.
-{: .bsk-alert .bsk-alert-outline-info .bsk-alert-icon }
-
-<i class="fa fa-fw fa-exclamation-triangle bsk-alert-icon" aria-hidden="true"></i>
-All form fields should have a label to make sure they can be understood by assistive technologies.
-{: .bsk-alert .bsk-alert-outline-warning .bsk-alert-icon }
+[from group]({{ '/core/forms/#form-groups-and-fieldsets' | prepend: site.baseurl }}){: .bsk-alert-link } to
+structurally separate each form field.
+{% endalert %}
 
 {% include snippets/topic-section-metadata.html
   title="Form controls"
   heading_level=2
 %}
 
+{% alert info %}
 **Heads up!** Form control elements are not yet fully styled, but will be in the next version of the Style Kit.
-{: .alert .alert-info }
+{% endalert %}
 
 {% include snippets/topic-section-metadata.html
   title="Inputs"
@@ -78,16 +79,16 @@ Form inputs are the most common form control. Supported types are listed below a
 * tel
 * color
 
-<i class="fa fa-fw fa-exclamation-triangle bsk-alert-icon" aria-hidden="true"></i>
+{% alert warning %}
 It is a requirement of the HTML5 specification to declare a type for every form input, even if it's just a text input.
 Form elements won't be styled correctly without a supported type.
-{: .bsk-alert .bsk-alert-outline-warning .bsk-alert-icon }
+{% endalert %}
 
-<i class="fa fa-fw fa-info bsk-alert-icon" aria-hidden="true"></i>
+{% alert info style=highlight %}
 Support for newer input types such as datetime varies significantly between devices and browsers. It is still
 recommended use these newer types for forwards-compatibility, especially on mobile devices.
 See [this MDN page](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) for more information.
-{: .bsk-alert .bsk-alert-block .bsk-alert-highlight-info .bsk-alert-icon }
+{% endalert %}
 
 {% example html %}
 <form>
@@ -140,8 +141,9 @@ Select elements allow one option to be chosen by default, add the `multiple` att
 For single selects, the first option will be selected by default. Set the `selected` attribute on another option to
 change this.
 
+{% alert info style=highlight %}
 Select elements have quite stubborn browser styling, such as rounded corners, which is difficult to override.
-{: .alert .alert-info }
+{% endalert %}
 
 {% example html %}
 <form>
@@ -177,8 +179,9 @@ Select elements have quite stubborn browser styling, such as rounded corners, wh
 
 For file inputs use `.bsk-form-control-file` instead of `.bsk-form-control`.
 
-Form input elements have quite stubborn browser styling, such as rounded corners, which are difficult to override.
-{: .alert .alert-info }
+{% alert info style=highlight %}
+Field input elements have quite stubborn browser styling, such as rounded corners, which are difficult to override.
+{% endalert %}
 
 {% example html %}
 <form>
@@ -202,9 +205,10 @@ Checkboxes allow multiple options to be chosen, radio options allow only one. Us
 
 To pre-select an option set the `checked` attribute.
 
+{% alert info %}
 **Heads up!** Radio options and checkbox elements are not yet fully styled, but will be in the next version of the
 Style Kit.
-{: .alert .alert-info }
+{% endalert %}
 
 {% example html %}
 <form>
@@ -263,10 +267,10 @@ Style Kit.
 Radio options and checkboxes can be shown inline (i.e. side-by-side rather than stacked) using the
 `.bsk-checkbox-inline` and `.bsk-radio-inline` classes **instead** of the standard classes.
 
-<i class="fa fa-fw fa-info bsk-alert-icon" aria-hidden="true"></i>
+{% alert info %}
 **Heads up!** Inline radio options and checkbox elements are not yet fully styled, but will be in the next version of
 the Style Kit.
-{: .bsk-alert .bsk-alert-outline-info .bsk-alert-icon }
+{% endalert %}
 
 {% example html %}
 <form>
@@ -409,10 +413,10 @@ Use the `.bsk-form-horizontal` class to display labels and controls side-by-side
 [grid system]({{ '/core/grid/' | prepend: site.baseurl }}). Ensure all labels use the `.control-label` class for best
 results.
 
-<i class="fa fa-fw fa-info bsk-alert-icon" aria-hidden="true"></i>
+{% alert info %}
 When using a <code>&lt;fieldset&gt;</code> with a <code>&lt;legend&gt;</code>, apply the `.bsk-form-group` class to an
 inner <code>&lt;div&gt;</code> to prevent the <code>&lt;legend&gt;</code> from appearing to overflow horizontally.
-{: .bsk-alert .bsk-alert-outline-info .bsk-alert-icon }
+{% endalert %}
 
 {% example html %}
 <form class="bsk-form-horizontal">
@@ -501,13 +505,13 @@ inner <code>&lt;div&gt;</code> to prevent the <code>&lt;legend&gt;</code> from a
 
 Use the `.bsk-form-inline` class to display labels and controls in a single horizontal row.
 
-<i class="fa fa-fw fa-info bsk-alert-icon" aria-hidden="true"></i>
-On small devices (smaller than 768 pixels) form fields will always stack.
-{: .bsk-alert .bsk-alert-outline-info .bsk-alert-icon }
-
-<i class="fa fa-fw fa-exclamation-triangle bsk-alert-icon" aria-hidden="true"></i>
+{% alert warning %}
 Some manual sizing may be needed for inline forms, ensure thorough testing at a range of grid sizes.
-{: .bsk-alert .bsk-alert-outline-warning .bsk-alert-icon }
+{% endalert %}
+
+{% alert info %}
+On small devices (smaller than 768 pixels) form fields will always stack.
+{% endalert %}
 
 {% include snippets/topic-section-metadata.html
   title="Visible labels"
@@ -546,14 +550,14 @@ Some manual sizing may be needed for inline forms, ensure thorough testing at a 
 It is strongly recommended to include visible labels for each form field (the `placeholder` attribute is not
 universally supported yet for example).
 
-<i class="fa fa-fw fa-exclamation-triangle bsk-alert-icon" aria-hidden="true"></i>
+{% alert warning %}
 Where labels are hidden, the `.bsk-sr-only` class **should** always be used to ensure assistive technologies can
 understand forms. Alternatively, you can use the `aria-label`, `aria-labelledby` or `title` attributes.
-{: .bsk-alert .bsk-alert-outline-warning .bsk-alert-icon }
+{% endalert %}
 
-<i class="fa fa-fw fa-exclamation-triangle bsk-alert-icon" aria-hidden="true"></i>
+{% alert warning %}
 Labels **should** always be visible for checkboxes and radio options, to indicate what they do.
-{: .bsk-alert .bsk-alert-outline-warning .bsk-alert-icon }
+{% endalert %}
 
 {% example html %}
 <form class="bsk-form-inline">
@@ -598,13 +602,13 @@ The width of each form field, control or label can all be controlled using the
 [grid system]({{ '/core/grid' | prepend: site.baseurl }}), as demonstrated by the
 [horizontal form layout]({{ '/core/forms/#horizontal-forms' | prepend: site.baseurl }}).
 
-<i class="fa fa-fw fa-info bsk-alert-icon" aria-hidden="true"></i>
+{% alert warning %}
 Don't apply grid classes directly to form controls, instead wrap them in a <code>&lt;div&gt;</code> element.
-{: .bsk-alert .bsk-alert-outline-info .bsk-alert-icon }
+{% endalert %}
 
-<i class="fa fa-fw fa-info bsk-alert-icon" aria-hidden="true"></i>
+{% alert info %}
 Make sure to use `.control-label` to ensure all labels are virtually aligned.
-{: .bsk-alert .bsk-alert-outline-info .bsk-alert-icon }
+{% endalert %}
 
 {% example html %}
 <form>
@@ -684,25 +688,25 @@ Use the `disabled` attribute to mark a form field as disabled. This will prevent
 'not-allowed', and alter the field's appearance. In most browsers, setting the `disabled` attribute on a
 <code>&lt;fieldset&gt;</code> will disable all of the fields it contains.
 
-<div class="bsk-alert bsk-alert-block bsk-alert-outline-danger bsk-alert-icon">
-  <header class="bsk-alert-heading">
-    <h4><i class="fa fa-fw fa-exclamation-circle bsk-alert-icon" aria-hidden="true"></i>
-    It is not safe to rely on this state to prevent users activating disabled actions.</h4>
+<div class="bsk-alert bsk-alert-solid-danger bsk-alert-block bsk-alert-icon">
+  <header class="bsk-alert-title">
+    <h4><i class="fa fa-fw fa-exclamation-circle bsk-alert-icon"></i>
+    It is not safe to rely on this state to prevent users activating disabled actions</h4>
   </header>
   <p>Browsers may not enforce these properties, or users may trivially edit the DOM. Server side protections
-  <strong>must</strong> be used for dangerous actions.</p>
+   <strong>must</strong> be used for dangerous actions.</p>
 </div>
 
-<i class="fa fa-fw fa-exclamation-circle bsk-alert-icon" aria-hidden="true"></i>
+{% alert danger %}
 Not all browsers fully support setting the `disabled` attribute on a
 <code>&lt;fieldset&gt;</code>. To work around this, either apply the `disabled` attribute on form fields directly, or
 use JavaScript to disable them.
-{: .bsk-alert .bsk-alert-outline-danger .bsk-alert-icon }
+{% endalert %}
 
-<i class="fa fa-fw fa-exclamation-circle bsk-alert-icon" aria-hidden="true"></i>
+{% alert danger %}
 Links, including links styled as buttons, within disabled fieldsets may not be enforced by all browsers. To work around
 this, either apply the `disabled` attribute on links directly, or use JavaScript to disable them.
-{: .bsk-alert .bsk-alert-outline-danger .bsk-alert-icon }
+{% endalert %}
 
 {% example html %}
 <form>
@@ -785,11 +789,11 @@ appearance, but won't change the cursor.
 Add context or other guidance to form fields, or more generally to sections of a form, using a combination of
 `.bsk-help-block` and `.bsk-text-muted`.
 
-<i class="fa fa-fw fa-exclamation-triangle bsk-alert-icon" aria-hidden="true"></i>
+{% alert warning %}
 Where help text relates to a specific form field,
-[the `aria-describedby` attribute should be used]({{ '/start/standards-accessibility/#contextual-help-text' | prepend: site.baseurl }}){: .alert-link }
+[the `aria-describedby` attribute should be used]({{ '/start/standards-accessibility/#contextual-help-text' | prepend: site.baseurl }}){: .bsk-alert-link }
 to inform assistive technologies, such as screen readers.
-{: .bsk-alert .bsk-alert-outline-warning .bsk-alert-icon }
+{% endalert %}
 
 {% example html %}
 <form>
@@ -825,12 +829,11 @@ The Style Kit includes validation classes, based on the
 [standard contextual colours]({{ '/core/colours/#standard-contextual-colours'}}). Apply to the parent of form fields,
 such as `.bsk-form-group`, for best effect.
 
+{% alert info %}
 It is strongly recommended to include a validation message, with the appropriate
-[standard contextual icon]({{ '/core/icons/#standard-contextual-icons' | prepend: site.baseurl }}){: .alert-link }
-where there is a validation warning or failure. This ensures
-[validation information is as accessible as possible]({{ '/start/standards-accessibility/#validation-states' | prepend: site.baseurl }}){: .alert-link }
-to assistive technologies, such as screen readers.
-{: .alert .alert-warning }
+[standard contextual icon]({{ '/core/icons/#standard-contextual-icons' | prepend: site.baseurl }}){: .bsk-alert-link }
+where there is a validation warning or failure.
+{% endalert %}
 
 | Validation State    | Validation Class     | Associated Standard Context |
 | ------------------- | -------------------- | --------------------------- |
@@ -839,11 +842,10 @@ to assistive technologies, such as screen readers.
 | Invalid             | `.bsk-has-error`     | Danger                      |
 {: .bsk-table .bsk-table-responsive }
 
-<i class="fa fa-fw fa-info bsk-alert-icon" aria-hidden="true"></i>
+{% alert info %}
 **Heads up!** The validation class for invalid fields is changing from `.has-error` to `.has-danger` in the next version
 of the Style Kit. See [BSK-135](https://jira.ceh.ac.uk/browse/bsk-135) for more information.
-{: .alert .alert-info }
-{: .bsk-alert .bsk-alert-outline-info .bsk-alert-icon }
+{% endalert %}
 
 {% example html %}
 <form>

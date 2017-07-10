@@ -28,12 +28,12 @@ sections:
   heading_level=2
 %}
 
-Use the `.bsk-btn` classes to create clickable actions or links.
+Use the `.bsk-btn` class to create clickable actions or links.
 
-<i class="fa fa-fw fa-exclamation-triangle bsk-alert-icon" aria-hidden="true"></i>
+{% alert warning style=solid %}
 You **must** pick a [variant]({{ '/core/buttons/#variants' | prepend: site.baseurl }}){: .bsk-alert-link } for each
 button, otherwise it will look strange. It is not enough to use `.bsk-btn` on its own.
-{: .bsk-alert .bsk-alert-solid-warning .bsk-alert-icon }
+{% endalert %}
 
 {% include snippets/topic-section-metadata.html
   title="Supported elements"
@@ -54,11 +54,11 @@ These elements are also supported, but to a lesser extent:
 
 Other elements may be used as well, but are not supported and may not look right.
 
-<i class="fa fa-fw fa-info bsk-alert-icon" aria-hidden="true"></i>
+{% alert info %}
 Use `role="button"` for link elements which trigger in-page functionality (such as collapsing
 content) to give
 [proper context to assistive technologies]({{ '/start/standards-accessibility/#link-context-and-roles' | prepend: site.baseurl }}){: .bsk-alert-link }.
-{: .bsk-alert .bsk-alert-outline-info .bsk-alert-icon }
+{% endalert %}
 
 {% example html %}
 <button class="bsk-btn bsk-btn-default" type="submit">Button</button>
@@ -114,10 +114,10 @@ used for context by adding these classes:
 
 | Standard Context | Button Contextual Class |
 | ---------------- | ----------------------- |
-| Success          | `.bsk-btn-success`          |
-| Warning          | `.bsk-btn-warning`          |
-| Danger           | `.bsk-btn-danger`           |
-| Info             | `.bsk-btn-info`             |
+| Success          | `.bsk-btn-success`      |
+| Warning          | `.bsk-btn-warning`      |
+| Danger           | `.bsk-btn-danger`       |
+| Info             | `.bsk-btn-info`         |
 {: .bsk-table .bsk-table-responsive }
 
 {% example html %}
@@ -226,10 +226,10 @@ Add `.bsk-btn-block` for buttons to span the width of their parent.
 Active buttons appear *pressed* using a darker background, border and inset shadow. This state will be applied
 automatically when pressed, or forced by adding the `.bsk-active` class if needed.
 
-<i class="fa fa-fw fa-info bsk-alert-icon" aria-hidden="true"></i>
+{% alert info %}
 Use `aria-pressed="true"` to give
 [proper context to assistive technologies]({{ '/start/standards-accessibility/#link-context-and-roles' | prepend: site.baseurl }}){: .alert-bsk-link }.
-{: .bsk-alert .bsk-alert-outline-info .bsk-alert-icon }
+{% endalert %}
 
 {% example html %}
 <button class="bsk-btn bsk-btn-default bsk-active">Active Action</button>
@@ -245,13 +245,13 @@ Use `aria-pressed="true"` to give
 %}
 
 
-<div class="bsk-alert bsk-alert-block bsk-alert-outline-danger bsk-alert-icon">
-  <header class="bsk-alert-heading">
-    <h4><i class="fa fa-fw fa-exclamation-circle bsk-alert-icon" aria-hidden="true"></i>
-    It is not safe to rely on this state to prevent users activating disabled actions.</h4>
+<div class="bsk-alert bsk-alert-solid-danger bsk-alert-block bsk-alert-icon">
+  <header class="bsk-alert-title">
+    <h4><i class="fa fa-fw fa-exclamation-circle bsk-alert-icon"></i>
+    It is not safe to rely on this state to prevent users activating disabled actions</h4>
   </header>
   <p>Browsers may not enforce these properties, or users may trivially edit the DOM. Server side protections
-  <strong>must</strong> be used for dangerous actions.</p>
+   <strong>must</strong> be used for dangerous actions.</p>
 </div>
 
 {% include snippets/topic-section-metadata.html

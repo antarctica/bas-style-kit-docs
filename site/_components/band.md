@@ -23,7 +23,7 @@ Use the `.band-bsk` class to add visual space between elements.
 **Heads up!** This component will be removed in the next version of the Style Kit.
 {: .alert .alert-warning }
 
-You **must** pick a [variant]({{ '/components/band/#variants' | prepend: site.baseurl }}){: .alert-link } for each
+You **must** pick a [variant]({{ '/components/band/#variants' | prepend: site.baseurl }}){: .bsk-alert-link } for each
 band, otherwise it will look strange. It is not enough to use `.band-bsk` on its own.
 {: .alert .alert-warning }
 

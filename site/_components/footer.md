@@ -29,6 +29,11 @@ Whereas [navbar's]({{ '/components/navbar' | prepend: site.baseurl }}) contain o
 name of a project/service and navigation links, footers typically contain important or additional information, but that
 isn't vital to show straight away, such as copyright and privacy links.
 
+{% alert warning style=solid %}
+You **must** pick a [variant]({{ '/core/buttons/#variants' | prepend: site.baseurl }}){: .bsk-alert-link } for each
+button, otherwise it will look strange. It is not enough to use `.bsk-btn` on its own.
+{% endalert %}
+
 {% alert info style=solid %}
 The footer component is designed to be compatible with almost all other components and core styles, however it is
 strongly recommended to use a [container]({{ '/core/layout/#containers' | prepend: site.baseurl }}){: .bsk-alert-link }.

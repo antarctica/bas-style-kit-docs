@@ -102,7 +102,7 @@ This form shows common form controls, optional states and how these can be arran
 
 This form shows the various types of form input supported by the Style Kit.
 
-{% alert info %}
+{% alert info style=highlight %}
 Support for newer input types such as datetime varies significantly between devices and browsers. It is still
 recommended to use these newer types for forwards-compatibility, especially on mobile devices.
 {% endalert %}

@@ -421,7 +421,7 @@ Add the `.bsk-navbar-link` class to correctly colour any link elements that are 
 
 {% alert info style=highlight %}
 Typically this will be used within elements using the
-[navbar text]({{ '/components/#text' | prepend: site.baseurl }}){: .alert-link } class.
+[navbar text]({{ '/components/#text' | prepend: site.baseurl }}){: .bsk-alert-link } class.
 {% endalert %}
 
 {% example html %}
@@ -497,7 +497,7 @@ Add one of these classes to alter the size of a jumbotron:
 {% endexample %}
 
 {% alert info %}
-Large navbars using a [brand image]({{ '/components/navbar/#brand-image' | prepend: site.baseurl }}){: .alert-link }
+Large navbars using a [brand image]({{ '/components/navbar/#brand-image' | prepend: site.baseurl }}){: .bsk-alert-link }
 need to use the `.bsk-navbar-brand-img-fix` class. <br />
 This adds the correct top-padding and makes the page layout look normal.
 {% endalert %}

@@ -26,9 +26,9 @@ sections:
 Use the <code>&lt;code&gt;</code> tag to denote snippets of code.
 Any angle brackets will need escaping with `&lt;` and `&gt;`.
 
-<i class="fa fa-fw fa-info bsk-alert-icon" aria-hidden="true"></i>
+{% alert info %}
 **Heads up!** Inline code elements are not fully styled yet.
-{: .bsk-alert .bsk-alert-outline-info .bsk-alert-icon }
+{% endalert %}
 
 {% example html %}
 <code>var foo = 'bar';</code>

@@ -299,17 +299,18 @@ Danger
 
 Info
 : Indicates something neutral, or informative
+{: .bsk-dl-lg }
 
-<i class="fa fa-fw fa-exclamation-triangle bsk-alert-icon" aria-hidden="true"></i>
+{% alert warning %}
 You should ensure contextual colours are not the only means
  [context is conveyed to ensure those using assistive technologies are not excluded]({{ '/start/standards-accessibility/#conveying-context-without-colours-or-icons' | prepend: site.baseurl }}){: .bsk-alert-link }.
-{: .bsk-alert .bsk-alert-outline-warning .bsk-alert-icon }
+{% endalert %}
 
-<i class="fa fa-fw fa-info bsk-alert-icon" aria-hidden="true"></i>
+{% alert info %}
 There are accompanying
 [standard contextual icons]({{ '/core/icons/#standard-contextual-icons' | prepend: site.baseurl }}){: .bsk-alert-link }
 which can be used alongside these classes.
-{: .bsk-alert .bsk-alert-outline-info .bsk-alert-icon }
+{% endalert %}
 
 These colours can be used with many core styles and components, such as:
 
@@ -408,10 +409,10 @@ used as the background of an element using these classes:
 
 | Standard Context | Background Contextual Class |
 | ---------------- | --------------------------- |
-| Success          | `.bg-success`               |
-| Warning          | `.bg-warning`               |
-| Danger           | `.bg-danger`                |
-| Info             | `.bg-info`                  |
+| Success          | `.bsk-bg-success`           |
+| Warning          | `.bsk-bg-warning`           |
+| Danger           | `.bsk-bg-danger`            |
+| Info             | `.bsk-bg-info`              |
 {: .bsk-table .bsk-table-responsive }
 
 <div class="bsk-docs-swatch-wrapper">
