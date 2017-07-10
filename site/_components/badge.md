@@ -16,15 +16,13 @@ sections:
   heading_level=2
 %}
 
-Use the `.badge` class to highlight a count, such as items needing further attention. An empty badge will automatically
-collapse and be hidden.
+Use the `.bsk-badge` class to highlight a count, such as items needing further attention. An empty badge will
+automatically collapse and be hidden.
 
+{% alert warning %}
 Badges are only designed for numbers. For more general purposes, including other types of indicators, use
-[Label's]({{ '/components/label' | prepend: site.baseurl }}){: .alert-link }.
-{: .alert .alert-warning }
-
-**Heads up!** Badge elements are not yet fully styled, but will be in the next version of the Style Kit.
-{: .alert .alert-info }
+[Label's]({{ '/components/label' | prepend: site.baseurl }}){: .bsk-alert-link }.
+{% endalert %}
 
 {% include snippets/topic-section-metadata.html
   title="Variants"
@@ -40,9 +38,9 @@ Badges are only designed for numbers. For more general purposes, including other
 %}
 
 {% example html %}
-<p><a href="#">Unread notifications <span class="badge">42</span></a></p>
+<p><a href="#">Unread notifications <span class="bsk-badge">42</span></a></p>
 <!-- Empty badges automatically hide -->
-<p><a href="#">Unread notifications <span class="badge"></span></a></p>
+<p><a href="#">Unread notifications <span class="bsk-badge"></span></a></p>
 {% endexample %}
 
 {% include snippets/topic-section-metadata.html
@@ -53,7 +51,7 @@ Badges are only designed for numbers. For more general purposes, including other
 Badges will scale with their parent element.
 
 {% example html %}
-<p><button class="btn btn-bsk btn-default btn-sm" type="button">Items <span class="badge">4</span></button></p>
-<p><button class="btn btn-bsk btn-default" type="button">Items <span class="badge">4</span></button></p>
-<p><button class="btn btn-bsk btn-default btn-lg" type="button">Items <span class="badge">4</span></button></p>
+<p><button class="bsk-btn bsk-btn-default bsk-btn-sm" type="button">Items <span class="bsk-badge">4</span></button></p>
+<p><button class="bsk-btn bsk-btn-default" type="button">Items <span class="bsk-badge">4</span></button></p>
+<p><button class="bsk-btn bsk-btn-default bsk-btn-lg" type="button">Items <span class="bsk-badge">4</span></button></p>
 {% endexample %}

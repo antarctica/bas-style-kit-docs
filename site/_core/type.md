@@ -67,10 +67,11 @@ For each family, a series of fall-back fonts are defined where the primary fonts
 | Default     | Open Sans    | "Helvetica Neue", Helvetica, Arial, *sans-serif* |
 | Brand       | Gill Sans    | "Helvetica Neue", Helvetica, Arial, *sans-serif* |
 | Monotype    | Menlo        | Monaco, Consolas, "Courier New", *monospace*     |
-{: .table .table-responsive }
+{: .bsk-table .bsk-table-responsive }
 
+{% alert info %}
 Fall-back fonts shown in *italics* will depend on the browser and operating system used.
-{: .alert .alert-info }
+{% endalert %}
 
 For each family, a series of variants are defined for styles such as italics and bold.
 
@@ -89,7 +90,7 @@ For each family, a series of variants are defined for styles such as italics and
 | Brand (Gill Sans)   | Regular | Roman (300) | <span>Gill Sans regular roman</span>{: .bsk-docs-font-sample-gill-sans-roman }     |
 | Brand (Gill Sans)   | Italics | Roman (300) | *Gill Sans italics roman*{: .bsk-docs-font-sample-gill-sans-roman }                |
 | Monotype (Menlo)    | Regular | Regular     | <span>Menlo regular regular</span>{: .bsk-docs-font-sample-menlo-regular }         |
-{: .table .table-responsive }
+{: .bsk-table .bsk-table-responsive }
 
 {% include snippets/topic-section-metadata.html
   title="BAS brand font"
@@ -102,24 +103,29 @@ For each family, a series of variants are defined for styles such as italics and
 The BAS *brand* font, Gill Sans, is the BAS official font. It is included in the BAS Style Kit to integrate the font
 into official BAS websites and applications, in high impact areas such as headings and top-level navigation.
 
-**Gill Sans is a licensed work and may not be used without a license.** <br /> BAS has a license to use this font its
-official websites and applications. This license **does not cover** non-BAS projects, including personal projects of
-BAS Staff.
-{: .alert .alert-warning }
+<div class="bsk-alert bsk-alert-solid-warning bsk-alert-block bsk-alert-icon">
+  <header class="bsk-alert-title">
+    <h4><i class="fa fa-fw fa-exclamation-triangle bsk-alert-icon"></i>
+    Gill Sans is a licensed work and may not be used without a license</h4>
+  </header>
+  <p>BAS has a license to use this font its official websites and applications. This license
+  <strong>does not cover</strong> non-BAS projects, including personal projects of BAS Staff.</p>
+</div>
 
+{% alert info %}
 If you are unsure whether a website or application can use the BAS license, contact the
-[Web & Applications Team](mailto:webapps@bas.ac.uk){: .alert-link }.
-{: .alert .alert-info }
+[Web & Applications Team](mailto:webapps@bas.ac.uk){: .bsk-alert-link }.
+{% endalert %}
 
 The brand font is applied to these elements:
 
-| Element/Component                                                | Selector                                               | Font Variant    | Modifications     |
-| ---------------------------------------------------------------- | ------------------------------------------------------ | --------------- | ----------------- |
-| [Footer]({{ '/components/footer/' | prepend: site.baseurl }})    | `.footer-bsk`                                          | Gill Sans Light | Base font + `1px` |
-| [Navbar]({{ '/components/navar/' | prepend: site.baseurl }})     | `.navbar-bsk`                                          | Gill Sans Book  | Base font + `1px` |
-| [Header]({{ '/components/header/' | prepend: site.baseurl }})    | `.header-bsk`                                          | Gill Sans Book  | Base font + `1px` |
-| [Headings]({{ '/core/type/#headings' | prepend: site.baseurl }}) | `h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6` | Gill Sans Book  | *N/A*             |
-{: .table .table-responsive }
+| Element/Component                                                | Selector                                                                       | Font Variant    | Modifications     |
+| ---------------------------------------------------------------- | ------------------------------------------------------------------------------ | --------------- | ----------------- |
+| [Footer]({{ '/components/footer/' | prepend: site.baseurl }})    | `.bsk-footer-bsk`                                                              | Gill Sans Light | Base font + `1px` |
+| [Navbar]({{ '/components/navar/' | prepend: site.baseurl }})     | `.bsk-navbar-bsk`                                                              | Gill Sans Book  | Base font + `1px` |
+| [Header]({{ '/components/header/' | prepend: site.baseurl }})    | `.bsk-header-bsk`                                                              | Gill Sans Book  | Base font + `1px` |
+| [Headings]({{ '/core/type/#headings' | prepend: site.baseurl }}) | `h1, h2, h3, h4, h5, h6, .bsk-h1, .bsk-h2, .bsk-h3, .bsk-h4, .bsk-h5, .bsk-h6` | Gill Sans Book  | *N/A*             |
+{: .bsk-table .bsk-table-responsive }
 
 {% include snippets/topic-section-metadata.html
   title="Headings"
@@ -129,8 +135,9 @@ The brand font is applied to these elements:
   included="yes"
 %}
 
-In addition to heading elements, you can also use `.h1` - `.h6` classes for styling other elements as headings.
-{: .alert .alert-info }
+{% alert info style=highlight %}
+In addition to heading elements, you can also use `.bsk-h1` - `.bsk-h6` classes for styling other elements as headings.
+{% endalert %}
 
 {% example html %}
 <h1>Heading 1</h1>
@@ -155,7 +162,7 @@ De carne animata corpora quaeritis.
   included="yes"
 %}
 
-Use the &lt;small&gt; element or the `.small` class for adding secondary text to any header.
+Use the `&lt;small&gt;` element or the `.bsk-small` class for adding secondary text to any header.
 
 {% example html %}
 <h1>Heading 1 <small>secondary text</small></h1>
@@ -198,7 +205,7 @@ regions.</p>
 %}
 
 {% example html %}
-<p class="lead">The British Antarctic Survey (BAS) is an international leader in Antarctic science that is relevant to
+<p class="bsk-lead">The British Antarctic Survey (BAS) is an international leader in Antarctic science that is relevant to
 global problems.</p>
 <p>We deliver science that is excellent, exciting, and innovative. We also provide world-leading research infrastructure
 that enables scientists from the UK, and colleagues from many nations, to work safely and effectively in the polar
@@ -239,8 +246,9 @@ These styles are applied globally, and are usually inherited by other styles, to
 <p>Use the <code>&lt;em&gt;</code> tag for <em>italicised text</em>.</p>
 {% endexample %}
 
+{% alert info style=highlight %}
 The <code>&lt;i&gt;</code> tag is also recommended for icons.
-{: .alert .alert-info }
+{% endalert %}
 
 {% include snippets/topic-section-metadata.html
   title="Abbreviations"
@@ -306,10 +314,10 @@ Use a <code>&lt;cite&gt;</code> wrapped in a <code>&lt;footer&gt;</code> to add 
   included="yes"
 %}
 
-Blockquotes can be aligned right using `.blockquote-reverse`.
+Blockquotes can be aligned right using `.bsk-blockquote-reverse`.
 
 {% example html %}
-<blockquote class="blockquote-reverse">
+<blockquote class="bsk-blockquote-reverse">
   <p>I am truly honoured by this naming decision and hope that everyone who suggested a name will feel just as inspired
   to follow the ship’s progress as it explores our polar regions. I have been privileged to explore the world’s deepest
   oceans alongside amazing teams of researchers, and with this new polar research ship they will be able to go further
@@ -360,23 +368,24 @@ Provides formatting for addresses or contact information. Use <code>&lt;br&gt;</
 The [standard contextual colours]({{ '/core/colours/#standard-contextual-colours' | prepend: site.baseurl }}) can be
 used to apply context to text using these classes:
 
-| Standard Context | Text Contextual Class |
-| ---------------- | --------------------- |
-| Success          | `.text-success`       |
-| Warning          | `.text-warning`       |
-| Danger           | `.text-danger`        |
-| Info             | `.text-info`          |
-{: .table .table-responsive }
+| Standard Context | Text Contextual Class     |
+| ---------------- | ------------------------- |
+| Success          | `.bsk-text-success`       |
+| Warning          | `.bsk-text-warning`       |
+| Danger           | `.bsk-text-danger`        |
+| Info             | `.bsk-text-info`          |
+{: .bsk-table .bsk-table-responsive }
 
+{% alert warning %}
 In some edge cases these styles will be over-ridden by other styles, wrapping text in a <code>&lt;span&gt;</code>
 should fix this.
-{: .alert .alert-warning }
+{% endalert %}
 
 {% example html %}
-<p class="text-success">De carne animata corpora quaeritis.</p>
-<p class="text-warning">De carne animata corpora quaeritis.</p>
-<p class="text-danger">De carne animata corpora quaeritis.</p>
-<p class="text-info">De carne animata corpora quaeritis.</p>
+<p class="bsk-text-success">De carne animata corpora quaeritis.</p>
+<p class="bsk-text-warning">De carne animata corpora quaeritis.</p>
+<p class="bsk-text-danger">De carne animata corpora quaeritis.</p>
+<p class="bsk-text-info">De carne animata corpora quaeritis.</p>
 {% endexample %}
 
 {% include snippets/topic-section-metadata.html
@@ -387,17 +396,17 @@ should fix this.
   included="yes"
 %}
 
-
+{% alert warning %}
 **Heads up!** These classes may be removed in the next version of the Style Kit. See
-[BSK-129](https://jira.ceh.ac.uk/browse/bsk-129) for more information.
-{: .alert .alert-info }
+[BSK-129](https://jira.ceh.ac.uk/browse/bsk-129){: .bsk-alert-link } for more information.
+{% endalert %}
 
 {% example html %}
-<p class="text-left">De carne animata corpora quaeritis.</p>
-<p class="text-center">De carne animata corpora quaeritis.</p>
-<p class="text-right">De carne animata corpora quaeritis.</p>
-<p class="text-justify">De carne animata corpora quaeritis.</p>
-<p class="text-nowrap">De carne animata corpora quaeritis.</p>
+<p class="bsk-text-left">De carne animata corpora quaeritis.</p>
+<p class="bsk-text-center">De carne animata corpora quaeritis.</p>
+<p class="bsk-text-right">De carne animata corpora quaeritis.</p>
+<p class="bsk-text-justify">De carne animata corpora quaeritis.</p>
+<p class="bsk-text-nowrap">De carne animata corpora quaeritis.</p>
 {% endexample %}
 
 {% include snippets/topic-section-metadata.html
@@ -408,12 +417,13 @@ should fix this.
   included="yes"
 %}
 
+{% alert warning %}
 **Heads up!** These classes may be removed in the next version of the Style Kit. See
-[BSK-129](https://jira.ceh.ac.uk/browse/bsk-129) for more information.
-{: .alert .alert-info }
+[BSK-129](https://jira.ceh.ac.uk/browse/bsk-129){: .bsk-alert-link } for more information.
+{% endalert %}
 
 {% example html %}
-<p class="text-lowercase">De carne animata corpora quaeritis.</p>
-<p class="text-uppercase">De carne animata corpora quaeritis.</p>
-<p class="text-capitalize">De carne animata corpora quaeritis.</p>
+<p class="bsk-text-lowercase">De carne animata corpora quaeritis.</p>
+<p class="bsk-text-uppercase">De carne animata corpora quaeritis.</p>
+<p class="bsk-text-capitalize">De carne animata corpora quaeritis.</p>
 {% endexample %}

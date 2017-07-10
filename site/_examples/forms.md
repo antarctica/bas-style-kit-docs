@@ -17,20 +17,22 @@ This form shows common form controls, optional states and how these can be arran
 
 {% example html %}
 <form>
-  <fieldset class="form-group">
+  <fieldset class="bsk-form-group">
       <label for="basic-form-example-field1">Your name</label>
-      <input type="text" class="form-control" id="basic-form-example-field1" placeholder="Adam Smith">
+      <input type="text" class="bsk-form-control" id="basic-form-example-field1" placeholder="Adam Smith">
   </fieldset>
 
-  <fieldset class="form-group">
+  <fieldset class="bsk-form-group">
       <label for="basic-form-example-field2">Your email address</label>
-      <input type="email" class="form-control" id="basic-form-example-field2" placeholder="adam.smith@bas.ac.uk">
-      <small class="text-muted">We will only use this information for contacting you about your feedback.</small>
+      <input type="email" class="bsk-form-control" id="basic-form-example-field2" placeholder="adam.smith@bas.ac.uk">
+      <small class="bsk-help-text bsk-text-muted">
+        We will only use this information for contacting you about your feedback.
+      </small>
   </fieldset>
 
-  <fieldset class="form-group">
+  <fieldset class="bsk-form-group">
     <label for="basic-form-example-field3">Example select</label>
-    <select class="form-control" id="basic-form-example-field3">
+    <select class="bsk-form-control" id="basic-form-example-field3">
       <option value="1">Option 1</option>
       <option value="2" selected>Option 2</option>
       <option value="3">Option 3</option>
@@ -39,9 +41,9 @@ This form shows common form controls, optional states and how these can be arran
     </select>
   </fieldset>
 
-  <fieldset class="form-group">
+  <fieldset class="bsk-form-group">
     <label for="basic-form-example-field4">Example multiple select</label>
-    <select multiple class="form-control" id="basic-form-example-field4">
+    <select multiple class="bsk-form-control" id="basic-form-example-field4">
       <option value="1">Option 1</option>
       <option value="2">Option 2</option>
       <option value="3">Option 3</option>
@@ -50,30 +52,30 @@ This form shows common form controls, optional states and how these can be arran
     </select>
   </fieldset>
 
-  <fieldset class="form-group">
+  <fieldset class="bsk-form-group">
     <label for="basic-form-example-field5">Example textarea</label>
-    <textarea class="form-control" id="basic-form-example-field5" rows="3"></textarea>
+    <textarea class="bsk-form-control" id="basic-form-example-field5" rows="3"></textarea>
   </fieldset>
 
-  <fieldset class="form-group">
+  <fieldset class="bsk-form-group">
     <label for="basic-form-example-field6">File input</label>
-    <input type="file" class="form-control-file" id="basic-form-example-field6">
+    <input type="file" class="bsk-form-control-file" id="basic-form-example-field6">
   </fieldset>
 
-  <fieldset class="form-group">
-    <div class="radio">
+  <fieldset class="bsk-form-group">
+    <div class="bsk-radio">
       <label>
         <input type="radio" name="basic-form-example-field7" id="basic-form-example-field7-a" value="option1" checked>
         Option one
       </label>
     </div>
-    <div class="radio">
+    <div class="bsk-radio">
       <label>
         <input type="radio" name="basic-form-example-field7" id="basic-form-example-field7-b" value="option2">
         Option two
       </label>
     </div>
-    <div class="radio disabled">
+    <div class="bsk-radio bsk-disabled">
       <label>
         <input type="radio" name="basic-form-example-field7" id="basic-form-example-field7-c" value="option3" disabled>
         Option three is disabled
@@ -81,15 +83,15 @@ This form shows common form controls, optional states and how these can be arran
     </div>
   </fieldset>
 
-  <fieldset class="form-group">
-    <div class="checkbox">
+  <fieldset class="bsk-form-group">
+    <div class="bsk-checkbox">
       <label>
         <input type="checkbox"> Check me out
       </label>
     </div>
   </fieldset>
 
-  <button type="submit" class="btn btn-bsk btn-default">Submit</button>
+  <button type="submit" class="bsk-btn bsk-btn-default">Submit</button>
 </form>
 {% endexample %}
 
@@ -100,63 +102,64 @@ This form shows common form controls, optional states and how these can be arran
 
 This form shows the various types of form input supported by the Style Kit.
 
+{% alert info %}
 Support for newer input types such as datetime varies significantly between devices and browsers. It is still
-recommended use these newer types for forwards-compatibility, especially on mobile devices.
-{: .alert .alert-info }
+recommended to use these newer types for forwards-compatibility, especially on mobile devices.
+{% endalert %}
 
 {% example html %}
 <form>
-  <fieldset class="form-group">
+  <fieldset class="bsk-form-group">
     <label for="inputs-form-example-field1">Text input</label>
-    <input type="text" class="form-control" id="inputs-form-example-field1">
+    <input type="text" class="bsk-form-control" id="inputs-form-example-field1">
   </fieldset>
-  <fieldset class="form-group">
+  <fieldset class="bsk-form-group">
     <label for="inputs-form-example-field2">Password input</label>
-    <input type="password" class="form-control" id="inputs-form-example-field2">
+    <input type="password" class="bsk-form-control" id="inputs-form-example-field2">
   </fieldset>
-  <fieldset class="form-group">
+  <fieldset class="bsk-form-group">
     <label for="inputs-form-example-field3">Email input</label>
-    <input type="email" class="form-control" id="inputs-form-example-field3">
+    <input type="email" class="bsk-form-control" id="inputs-form-example-field3">
   </fieldset>
-  <fieldset class="form-group">
+  <fieldset class="bsk-form-group">
     <label for="inputs-form-example-field4">Number input</label>
-    <input type="number" class="form-control" id="inputs-form-example-field4">
+    <input type="number" class="bsk-form-control" id="inputs-form-example-field4">
   </fieldset>
-  <fieldset class="form-group">
+  <fieldset class="bsk-form-group">
     <label for="inputs-form-example-field5">Time input</label>
-    <input type="time" class="form-control" id="inputs-form-example-field5">
+    <input type="time" class="bsk-form-control" id="inputs-form-example-field5">
   </fieldset>
-  <fieldset class="form-group">
+  <fieldset class="bsk-form-group">
     <label for="inputs-form-example-field6">Date input</label>
-    <input type="date" class="form-control" id="inputs-form-example-field6">
+    <input type="date" class="bsk-form-control" id="inputs-form-example-field6">
   </fieldset>
-  <fieldset class="form-group">
+  <fieldset class="bsk-form-group">
     <label for="inputs-form-example-field7">Week input</label>
-    <input type="week" class="form-control" id="inputs-form-example-field7">
+    <input type="week" class="bsk-form-control" id="inputs-form-example-field7">
   </fieldset>
-  <fieldset class="form-group">
+  <fieldset class="bsk-form-group">
     <label for="inputs-form-example-field8">Month input</label>
-    <input type="month" class="form-control" id="inputs-form-example-field8">
+    <input type="month" class="bsk-form-control" id="inputs-form-example-field8">
   </fieldset>
-  <fieldset class="form-group">
+  <fieldset class="bsk-form-group">
     <label for="inputs-form-example-field9">Datetime local input</label>
-    <input type="datetime-local" class="form-control" id="inputs-form-example-field10">
+    <input type="datetime-local" class="bsk-form-control" id="inputs-form-example-field10">
   </fieldset>
-  <fieldset class="form-group">
+  <fieldset class="bsk-form-group">
     <label for="inputs-form-example-field10">URL input</label>
-    <input type="url" class="form-control" id="inputs-form-example-field10">
+    <input type="url" class="bsk-form-control" id="inputs-form-example-field10">
   </fieldset>
-  <fieldset class="form-group">
+  <fieldset class="bsk-form-group">
     <label for="inputs-form-example-field11">Search input</label>
-    <input type="search" class="form-control" id="inputs-form-example-field11">
+    <input type="search" class="bsk-form-control" id="inputs-form-example-field11">
   </fieldset>
-  <fieldset class="form-group">
+  <fieldset class="bsk-form-group">
     <label for="inputs-form-example-field12">Telephone (tel) input</label>
-    <input type="tel" class="form-control" id="inputs-form-example-field12">
+    <input type="tel" class="bsk-form-control" id="inputs-form-example-field12">
   </fieldset>
-  <fieldset class="form-group">
+  <fieldset class="bsk-form-group">
     <label for="inputs-form-example-field13">Colour (color) input</label>
-    <input type="color" class="form-control" id="inputs-form-example-field13">
+    <input type="color" class="bsk-form-control" id="inputs-form-example-field13">
   </fieldset>
 </form>
 {% endexample %}

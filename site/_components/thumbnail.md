@@ -20,19 +20,18 @@ sections:
   heading_level=2
 %}
 
-Use the `.thumbnail-bsk` and `.thumbnail` classes to highlight one or more media items, such as images, that are
-distinct from main content, but which is shown **within** it, usually as a grid of items.
+Use the `.bsk-thumbnail` classes to highlight one or more media items, such as images, that are distinct from main
+content, but which is shown **within** it, usually as a grid of items.
 
-You **must** pick a [variant]({{ '/components/thumbnail/#variants' | prepend: site.baseurl }}){: .alert-link } for each
-thumbnail, otherwise it will look strange. It is not enough to use `.thumbnail .thumbnail-bsk` on its own.
-{: .alert .alert-warning }
+{% alert warning style=solid %}
+You **must** pick a [variant]({{ '/components/thumbnail/#variants' | prepend: site.baseurl }}){: .bsk-alert-link }
+for each thumbnail, otherwise it will look strange. It is not enough to use `.bsk-thumbnail` on its own.
+{% endalert %}
 
-Always use the `.btn-thumbnail` and `.thumbnail` classes together so that Style Kit specific styles are applied.
-{: .alert .alert-info }
-
+{% alert info style=solid  %}
 Thumbnails are really only intended for media items. For more general purposes, use
-[Panel's]({{ '/components/panel' | prepend: site.baseurl }}){: .alert-link }.
-{: .alert .alert-info }
+[Panel's]({{ '/components/panel' | prepend: site.baseurl }}){: .bsk-alert-link }.
+{% endalert %}
 
 {% include snippets/topic-section-metadata.html
   title="Supported elements"
@@ -57,17 +56,17 @@ Thumbnail styles are designed for <code>&lt;div&gt;</code> or <code>&lt;a&gt;</c
   included="yes"
 %}
 
-Add the `.thumbnail-bsk-default` class for standard thumbnails.
+Add the `.bsk-thumbnail-default` class for standard thumbnails.
 
 {% example html %}
-<div class="row">
-  <div class="col-md-6">
-    <div class="thumbnail thumbnail-bsk thumbnail-bsk-default">
+<div class="bsk-row">
+  <div class="bsk-col-12-md-6">
+    <div class="bsk-thumbnail bsk-thumbnail-default">
       <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=Media%20Item&w=400&h=250" alt="thumbnail">
     </div>
   </div>
-  <div class="col-md-6">
-    <a href="#" class="thumbnail thumbnail-bsk thumbnail-bsk-default">
+  <div class="bsk-col-12-md-6">
+    <a href="#" class="bsk-thumbnail bsk-thumbnail-default">
       <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=Media%20Item&w=400&h=250" alt="thumbnail">
     </a>
   </div>
@@ -82,17 +81,17 @@ Add the `.thumbnail-bsk-default` class for standard thumbnails.
   included="yes"
 %}
 
-Add the `.thumbnail-bsk-inverse` class for an alternative thumbnail style. This has no semantic significance.
+Add the `.bsk-thumbnail-inverse` class for an alternative thumbnail style. This has no semantic significance.
 
 {% example html %}
-<div class="row">
-  <div class="col-md-6">
-    <div class="thumbnail thumbnail-bsk thumbnail-bsk-inverse">
+<div class="bsk-row">
+  <div class="bsk-col-12-md-6">
+    <div class="bsk-thumbnail bsk-thumbnail-inverse">
       <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=Media%20Item&w=400&h=250" alt="thumbnail">
     </div>
   </div>
-  <div class="col-md-6">
-    <a href="#" class="thumbnail thumbnail-bsk thumbnail-bsk-inverse">
+  <div class="bsk-col-12-md-6">
+    <a href="#" class="bsk-thumbnail bsk-thumbnail-inverse">
       <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=Media%20Item&w=400&h=250" alt="thumbnail">
     </a>
   </div>
@@ -112,33 +111,33 @@ Add the `.thumbnail-bsk-inverse` class for an alternative thumbnail style. This 
   included="yes"
 %}
 
-Use the `.caption` class on an element within a thumbnail to add additional information, such as a description.
+Use the `.bsk-caption` class on an element within a thumbnail to add additional information, such as a description.
 
 {% example html %}
-<div class="thumbnail thumbnail-bsk thumbnail-bsk-default">
+<div class="bsk-thumbnail bsk-thumbnail-default">
   <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=Media%20Item&w=800&h=500" alt="thumbnail">
-  <div class="caption">Thumbnail caption</div>
+  <div class="bsk-caption">Thumbnail caption</div>
 </div>
 {% endexample %}
 
 If using the inverted variant, the caption will be styled accordingly.
 
 {% example html %}
-<div class="thumbnail thumbnail-bsk thumbnail-bsk-inverse">
+<div class="bsk-thumbnail bsk-thumbnail-inverse">
   <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=Media%20Item&w=800&h=500" alt="thumbnail">
-  <div class="caption">Thumbnail caption</div>
+  <div class="bsk-caption">Thumbnail caption</div>
 </div>
 {% endexample %}
 
 Captions can also include more complex markup.
 
 {% example html %}
-<div class="thumbnail thumbnail-bsk thumbnail-bsk-default">
+<div class="bsk-thumbnail bsk-thumbnail-default">
   <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=Media%20Item&w=800&h=500" alt="thumbnail">
-  <div class="caption">
+  <div class="bsk-caption">
     <h3>Thumbnail caption heading</h3>
     <p>Thumbnail caption description</p>
-    <a href="#" class="btn btn-bsk btn-primary" role="button">Thumbnail caption action</a>
+    <a href="#" class="bsk-btn bsk-btn-primary" role="button">Thumbnail caption action</a>
   </div>
 </div>
 {% endexample %}

@@ -17,7 +17,8 @@ sections:
 Use the Bootstrap [carousel](http://getbootstrap.com/javascript/#carousel) plugin to create a cycle through elements,
 like a carousel.
 
-[View Carousel Plugin](http://getbootstrap.com/javascript/#carousel){:.btn .btn-bsk .btn-default }
+[View Carousel Plugin](http://getbootstrap.com/javascript/#carousel){:.bsk-btn .bsk-btn-default }
 
-All Bootstrap plugins require [jQuery](https://jquery.com){: .alert-link }.
-{: .alert .alert-warning }
+{% alert info %}
+All Bootstrap plugins require [jQuery](https://jquery.com){: .bsk-alert-link }.
+{% endalert %}

@@ -19,7 +19,9 @@ Use the Bootstrap [button](http://getbootstrap.com/javascript/#buttons) plugin w
 [button group component]({{ '/components/button-group' | prepend: site.baseurl }}) to control button states or create
 more advanced button toolbars.
 
-[View Button Plugin](http://getbootstrap.com/javascript/#buttons){:.btn .btn-bsk .btn-default }
+[View Button Plugin](http://getbootstrap.com/javascript/#buttons){:.bsk-btn .bsk-btn-default }
 
-All Bootstrap plugins require [jQuery](https://jquery.com){: .alert-link }.
-{: .alert .alert-warning }
+{% alert info %}
+All Bootstrap plugins require [jQuery](https://jquery.com){: .bsk-alert-link }.
+{% endalert %}
+

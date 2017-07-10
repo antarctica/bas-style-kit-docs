@@ -45,14 +45,14 @@ in the <code>&lt;head&gt;</code> element:
 The first file, `bootstrap-bsk.min.css`, is the customised version of [Bootstrap](https://www.getbootstrap.com). <br />
 The second, `bas-style-kit.min.css`, is the Style Kit itself.
 
-<i class="fa fa-fw fa-exclamation-triangle bsk-alert-icon" aria-hidden="true"></i>
+{% alert warning style=highlight %}
 The order of these files is important because of how CSS styles cascade.
-{: .bsk-alert .bsk-alert-highlight-warning .bsk-alert-icon }
+{% endalert %}
 
-<i class="fa fa-fw fa-info bsk-alert-icon" aria-hidden="true"></i>
+{% alert info style=highlight %}
 Other ways of including the Style Kit in a website or application are listed in the
 [distribution]({{ '/start/distribution' | prepend: site.baseurl }}){: .bsk-alert-link } documentation.
-{: .bsk-alert .bsk-alert-highlight-info .bsk-alert-icon }
+{% endalert %}
 
 {% include snippets/topic-section-metadata.html
   title="Starter template"
@@ -62,10 +62,10 @@ Other ways of including the Style Kit in a website or application are listed in 
 Below is the minimal HTML needed to use the BAS Style Kit, following recommended best practices, and ensuring
 compatibility with older web browsers.
 
-<i class="fa fa-fw fa-info bsk-alert-icon" aria-hidden="true"></i>
+{% alert info %}
 This [starter template]({{ '/examples/starter-template' | prepend: site.baseurl }}){: .bsk-alert-link } is also available
 as a standalone example.
-{: .bsk-alert .bsk-alert-outline-info .bsk-alert-icon }
+{% endalert %}
 
 {% highlight html %}
 <!DOCTYPE html>

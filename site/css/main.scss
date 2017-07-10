@@ -158,17 +158,6 @@ $screen-sm-min: 768px !default;
   border-bottom: none;
 }
 
-// Styles for displaying columns in grid system examples
-
-.bsk-docs-example .row.bsk-docs-grid-example>[class^=col-] {
-  padding-top: 10px;
-  padding-bottom: 10px;
-
-  background-color: rgba(195, 195, 195,.15);
-  border: 1px solid rgba(140, 140, 140,.2);
-  text-align: center;
-}
-
 // Styles for displaying content blocks in layout examples
 
 .bsk-docs-content-block {
@@ -179,7 +168,9 @@ $screen-sm-min: 768px !default;
   text-align: center;
 }
 
-.responsive-utilities-test {
+// Styles for visibility test
+
+.bsk-docs-responsive-utilities-test {
   margin-top: 25px;
   margin-bottom: 25px;
 }
@@ -187,7 +178,7 @@ $screen-sm-min: 768px !default;
 // Styles for collection index jumbotron's
 
 .bsk-docs-collection-masthead {
-  background-color: #006AAA;
+  background-color: #2B8CC4;
   color: #FFFFFF;
 }
 
@@ -195,7 +186,7 @@ $screen-sm-min: 768px !default;
 .bsk-docs-topic-index-divider {
   margin-top: 20px;
 
-  border-top: 5px solid #007ac3;
+  border-top: 5px solid #2B8CC4;
 }
 
 // Styles for fixing examples, such as fixed with footers and navbars,

@@ -24,14 +24,11 @@ sections:
   heading_level=2
 %}
 
-Use the `.jumbotron-bsk` and `.jumbotron` classes to showcase key content.
+Use the `.bsk-jumbotron` class to showcase key content.
 
-You **must** pick a [variant]({{ '/components/jumbotron/#variants' | prepend: site.baseurl }}){: .alert-link } for each
-jumbotron, otherwise it will look strange. It is not enough to use `.jumbotron .jumbotron-bsk` on its own.
-{: .alert .alert-warning }
-
-Always use the `.jumbotron-bsk` and `.jumbotron` classes together so that Style Kit specific styles are applied.
-{: .alert .alert-info }
+{% alert warning style=solid %}
+You **must** pick a [variant]({{ '/components/jumbotron/#variants' | prepend: site.baseurl }}){: .bsk-alert-link } for each jumbotron, otherwise it will look strange. It is not enough to use `.bsk-jumbotron` on its own.
+{% endalert %}
 
 {% include snippets/topic-section-metadata.html
   title="Variants"
@@ -46,13 +43,13 @@ Always use the `.jumbotron-bsk` and `.jumbotron` classes together so that Style 
   included="yes"
 %}
 
-Add the `.jumbotron-bsk-default` class for a standard jumbotron.
+Add the `.bsk-jumbotron-default` class for a standard jumbotron.
 
 {% example html %}
-<div class="jumbotron jumbotron-bsk jumbotron-bsk-default">
+<div class="bsk-jumbotron bsk-jumbotron-default">
   <h1>Don't Panic!</h1>
   <p>This should be something snappy, to highlight a message and with a possible call to action.</p>
-  <p><a class="btn btn-primary btn-lg btn-bsk btn-bsk-primary" href="#" role="button">Do something</a></p>
+  <p><a class="bsk-btn bsk-btn-primary bsk-btn-lg" href="#" role="button">Do something</a></p>
 </div>
 {% endexample %}
 
@@ -64,13 +61,13 @@ Add the `.jumbotron-bsk-default` class for a standard jumbotron.
   included="yes"
 %}
 
-Use the `.jumbotron-bsk-inverse` class to use a darker background for a jumbotron.
+Use the `.jumbotron-inverse` class to use a darker background for a jumbotron.
 
 {% example html %}
-<div class="jumbotron jumbotron-bsk jumbotron-bsk-inverse">
+<div class="bsk-jumbotron bsk-jumbotron-inverse">
   <h1>Don't Panic!</h1>
   <p>This should be something snappy, to highlight a message and with a possible call to action.</p>
-  <p><a class="btn btn-primary btn-lg btn-bsk btn-bsk-primary" href="#" role="button">Do something</a></p>
+  <p><a class="bsk-btn bsk-btn-primary bsk-btn-lg" href="#" role="button">Do something</a></p>
 </div>
 {% endexample %}
 
@@ -82,12 +79,12 @@ Use the `.jumbotron-bsk-inverse` class to use a darker background for a jumbotro
   included="yes"
 %}
 
-An image can also bed used as a background for a jumbotron.
+An image can also be used as a background for a jumbotron.
 
 Additional CSS rules will be needed to set a `background-image` property.
 
 {% example html %}
-<div class="jumbotron jumbotron-bsk jumbotron-image-example">
+<div class="bsk-jumbotron bsk-jumbotron-image-example">
 </div>
 {% endexample %}
 
@@ -104,11 +101,11 @@ Additional CSS rules will be needed to set a `background-image` property.
   included="yes"
 %}
 
-Use the `.text-overlay` class to add additional contrast around a jumbotron's title.
+Use the `.bsk-text-overlay` class to add additional contrast around a jumbotron's title.
 
 {% example html %}
-<div class="jumbotron jumbotron-bsk jumbotron-image-example">
-  <h1><span class="text-overlay">Jumbotron caption</span></h1>
+<div class="bsk-jumbotron bsk-jumbotron-image-example">
+  <h1><span class="bsk-text-overlay">Jumbotron caption</span></h1>
 </div>
 {% endexample %}
 
@@ -124,23 +121,23 @@ Add one of these classes to alter the size of a jumbotron:
 
 | Jumbotron Size | Jumbotron Size Class    |
 | -------------- | ----------------------- |
-| Extra-large    | `.jumbotron-xl`         |
-| Large          | `.jumbotron-lg`         |
-{: .table .table-responsive }
+| Extra-large    | `.bsk-jumbotron-xl`     |
+| Large          | `.bsk-jumbotron-lg`     |
+{: .bsk-table .bsk-table-responsive }
 
 {% example html %}
-<div class="jumbotron jumbotron-bsk jumbotron-bsk-default jumbotron-bsk-lg">
+<div class="bsk-jumbotron bsk-jumbotron-default bsk-jumbotron-lg">
   <h1>Don't Panic!</h1>
   <p>This should be something snappy, to highlight a message and with a possible call to action.</p>
-  <p><a class="btn btn-primary btn-lg btn-bsk btn-bsk-primary" href="#" role="button">Do something</a></p>
+  <p><a class="bsk-btn bsk-btn-primary bsk-btn-lg" href="#" role="button">Do something</a></p>
 </div>
 {% endexample %}
 
 {% example html %}
-<div class="jumbotron jumbotron-bsk jumbotron-bsk-default jumbotron-bsk-xl">
+<div class="bsk-jumbotron bsk-jumbotron-default bsk-jumbotron-xl">
   <h1>Don't Panic!</h1>
   <p>This should be something snappy, to highlight a message and with a possible call to action.</p>
-  <p><a class="btn btn-primary btn-lg btn-bsk btn-bsk-primary" href="#" role="button">Do something</a></p>
+  <p><a class="bsk-btn bsk-btn-primary bsk-btn-lg" href="#" role="button">Do something</a></p>
 </div>
 {% endexample %}
 
@@ -165,8 +162,8 @@ outside any containers, then place a container within the jumbotron.
 <!-- Content before the jumbotron, possibly in a container -->
 
 <!-- Jumbotron, not in a container -->
-<div class="jumbotron">
-  <div class="container">
+<div class="bsk-jumbotron">
+  <div class="bsk-container">
     <!-- Jumbotron contents only are contained in a fixed-width container -->
     Jumbotron contents
   </div>

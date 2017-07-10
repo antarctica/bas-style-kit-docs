@@ -1,11 +1,11 @@
 .bsk-docs-example {
-  .navbar-fixed-top,
-  .navbar-fixed-bottom,
-  .footer-bsk-fixed-bottom {
+  .bsk-navbar-fixed-top,
+  .bsk-navbar-fixed-bottom,
+  .bsk-footer-fixed-bottom {
     position: relative;
   }
 
-  .navbar-toggle-always {
+  .bsk-docs-navbar-toggle-always {
     position: relative;
     float: right;
     padding: 9px 10px;
@@ -26,19 +26,19 @@
       outline: 0;
     }
 
-    .icon-bar {
+    .bsk-icon-bar {
       display: block;
       width: 22px;
       height: 2px;
       border-radius: 1px;
       background-color: #fff;
     }
-    .icon-bar + .icon-bar {
+    .bsk-icon-bar + .bsk-icon-bar {
       margin-top: 4px;
     }
   }
 
-  .navbar-brand-bas-logo {
+  .bsk-docs-navbar-brand-bas-logo {
     padding-top: 7px;
 
     img {
@@ -46,7 +46,7 @@
     }
   }
 
-  .navbar-brand-bas-logo-lg {
+  .bsk-docs-navbar-brand-bas-logo-lg {
     padding-top: 14px;
 
     img {
@@ -54,8 +54,8 @@
     }
   }
 
-  .dropdown-bsk-docs-example {
-    .dropdown-menu {
+  .bsk-docs-dropdown-example {
+    .bsk-dropdown-menu {
       display: block;
       position: static;
       float: none;
@@ -63,12 +63,8 @@
     }
   }
 
-  .jumbotron-image-example,
-  .jumbotron-image-purchase-example {
+  .bsk-jumbotron-image-example,
+  .bsk-jumbotron-image-purchase-example {
     background-image: url('/img/site-masthead-tom-welsh.jpg');
-
-    .text-overlay {
-      color: #ffffff;
-    }
   }
 }

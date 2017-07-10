@@ -25,15 +25,15 @@ sections:
 
 Use **compiled** CSS styles in development environments, use **minified** CSS styles in production environments.
 
-[Source maps](http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/){: .alert-link } should loaded
+[Source maps](http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/){: .bsk-alert-link } should loaded
 automatically by compatible browsers when **minified** CSS styles are used.
 
 {% unless jekyll.environment == 'production' %}
-<i class="fa fa-fw fa-flask bsk-alert-icon" aria-hidden="true"></i> <span class="sr-only">Testing version</span>
+{% alert experimental %}
 These URLs refer to files in the latest development version of the Style Kit. Visit
 [style-kit.web.bas.ac.uk]({{ 'https://' | append: site.bsk_docs_production_url | append: '/start/distribution/#bas-cdn' }}){: .bsk-alert-link}
 for URLs to the latest stable version.
-{: .bsk-alert .bsk-alert-outline-experimental }
+{% endalert %}
 {% endunless %}
 
 <table class="bsk-table bsk-table-bordered">
@@ -59,9 +59,9 @@ for URLs to the latest stable version.
   </tbody>
 </table>
 
-<i class="fa fa-exclamation-triangle bsk-alert-icon" aria-hidden="true"></i>
+{% alert warning style=highlight %}
 Remember, the order CSS files are included matters. Include the custom bootstrap styles before the Style Kit styles.
-{: .bsk-alert .bsk-alert-highlight-warning .bsk-alert-icon }
+{% endalert %}
 
 {% include snippets/topic-section-metadata.html
   title="Web fonts"
@@ -85,11 +85,11 @@ Font files are made available from the BAS CDN in these formats:
 available for all CSS files served through the BAS CDN.
 
 {% unless jekyll.environment == 'production' %}
-<i class="fa fa-fw fa-flask bsk-alert-icon" aria-hidden="true"></i> <span class="sr-only">Testing version</span>
+{% alert experimental %}
 These URLs refer to files in the latest development version of the Style Kit. Visit
 [style-kit.web.bas.ac.uk]({{ 'https://' | append: site.bsk_docs_production_url | append: '/start/distribution/#bas-cdn' }}){: .bsk-alert-link}
 for URLs to the latest stable version.
-{: .bsk-alert .bsk-alert-outline-experimental }
+{% endalert %}
 {% endunless %}
 
 | Resource                    | SRI value                                                                                                                                                                                                                 |
@@ -134,18 +134,18 @@ A `.zip` archive of the Style Kit is available containing:
 * web fonts in `.eot`, `.ttf`, `.woff` and `.woff2` formats
 
 {% unless jekyll.environment == 'production' %}
-<i class="fa fa-fw fa-flask bsk-alert-icon" aria-hidden="true"></i> <span class="sr-only">Testing version</span>
+{% alert experimental %}
 This download is for the latest development version of the Style Kit. Visit
 [style-kit.web.bas.ac.uk]({{ 'https://' | append: site.bsk_docs_production_url | append: '/start/distribution/#bas-cdn' }}){: .bsk-alert-link}
 for latest stable version.
-{: .bsk-alert .bsk-alert-outline-experimental }
+{% endalert %}
 {% endunless %}
 
-<i class="fa fa-fw fa-exclamation-triangle bsk-alert-icon" aria-hidden="true"></i>
+{% alert warning style=solid %}
 It is **strongly** recommended to use the
 [BAS CDN]({{ '/start/distribution/#bas-cdn' | prepend: site.baseurl  }}){: .bsk-alert-link} rather than managing
 these files yourself to make upgrading to future releases of the Style Kit easier.
-{: .bsk-alert .bsk-alert-solid-warning .bsk-alert-icon }
+{% endalert %}
 
 [Download latest version]({% unless jekyll.environment == 'production' %}{{ site.bsk_package_base_production }}{% else %}{{ site.bsk_package_base_staging }}{% endunless %}/{% include snippets/bsk-version.html %}/bas-style-kit-{% include snippets/bsk-version.html %}.zip){: .bsk-btn .bsk-btn-default }
 
@@ -155,11 +155,11 @@ these files yourself to make upgrading to future releases of the Style Kit easie
 %}
 
 {% unless jekyll.environment == 'production' %}
-<i class="fa fa-fw fa-flask bsk-alert-icon" aria-hidden="true"></i> <span class="sr-only">Testing version</span>
+{% alert experimental %}
 There isn't a NodeJS package for the latest development version of the Style Kit. Visit
 [style-kit.web.bas.ac.uk]({{ 'https://' | append: site.bsk_docs_production_url | append: '/start/distribution/#bas-cdn' }}){: .bsk-alert-link}
 for latest stable version.
-{: .bsk-alert .bsk-alert-outline-experimental }
+{% endalert %}
 {% endunless %}
 
 {% if jekyll.environment == 'production' %}
@@ -169,9 +169,10 @@ Source files for the Style Kit are available as a [NodeJS](https://www.npmjs.com
 $ npm install --save bas-style-kit
 {% endhighlight %}
 
+{% alert info %}
 Using the Style Kit in this way requires you to compile the Style Kit's Sass files and perform other tasks yourself.
 <br /> This workflow is documented in the [core BAS Style Kit project]({{ site.bsk_source_code_url }}){: .alert-bsk-link}.
-{: .bsk-alert .bsk-alert-outline-info }
+{% endalert %}
 {% endif %}
 
 {% include snippets/topic-section-metadata.html
@@ -186,13 +187,13 @@ Stable releases of the Style Kit are [tagged]({{ site.bsk_source_code_url }}/rel
 $ git clone {{ site.bsk_source_code_url }}.git
 {% endhighlight %}
 
-<i class="fa fa-fw fa-info bsk-alert-icon" aria-hidden="true"></i>
+{% alert info %}
 Using the Style Kit in this way requires you to compile the Style Kit's Sass files and perform other tasks yourself.
 <br /> This workflow is documented in the [core BAS Style Kit project]({{ site.bsk_source_code_url }}){: .alert-bsk-link}.
-{: .bsk-alert .bsk-alert-outline-info .bsk-alert-icon }
+{% endalert %}
 
-<i class="fa fa-fw fa-exclamation-triangle bsk-alert-icon" aria-hidden="true"></i>
+{% alert warning style=solid %}
 It is **strongly** recommended to use the
 [NPM package]({{ '/start/distribution/#nodejs-package' | prepend: site.baseurl  }}){: .bsk-alert-link} rather than
 managing source files yourself to make upgrading to future releases of the Style Kit easier.
-{: .bsk-alert .bsk-alert-solid-warning .bsk-alert-icon }
+{% endalert %}

@@ -18,18 +18,18 @@ sections:
   heading_level=2
 %}
 
-Use the `.label` class to highlight something, such as a status or some other property.
+Use the `.bsk-label` class to highlight something, such as a status or some other property.
 
-You **must** pick a [variant]({{ '/components/label/#variants' | prepend: site.baseurl }}){: .alert-link } for each
-label, otherwise it will look strange. It is not enough to use `.label` on its own.
-{: .alert .alert-warning }
 
-**Heads up!** Label elements are not yet fully styled, but will be in the next version of the Style Kit.
-{: .alert .alert-info }
+{% alert warning style=solid %}
+You **must** pick a [variant]({{ '/components/label/#variants' | prepend: site.baseurl }}){: .bsk-alert-link } for each
+label, otherwise it will look strange. It is not enough to use `.bsk-label` on its own.
+{% endalert %}
 
-If you are highlighting a number, [Badges]({{ '/components/label' | prepend: site.baseurl }}){: .alert-link } can also
-be used.
-{: .alert .alert-info }
+{% alert info style=solid %}
+If you are highlighting a number, [Badges]({{ '/components/label' | prepend: site.baseurl }}){: .bsk-alert-link } can
+also be used.
+{% endalert %}
 
 {% include snippets/topic-section-metadata.html
   title="Variants"
@@ -44,11 +44,11 @@ be used.
   included="yes"
 %}
 
-Add the `label-default` class for a standard label. For added context you can use
+Add the `bsk-label-default` class for a standard label. For added context you can use
 [contextual colours]({{ '/components/label/#contextual-colours' | prepend: site.baseurl }}) instead.
 
 {% example html %}
-Something <span class="label label-default">Label</span>
+Something <span class="bsk-label bsk-label-default">Label</span>
 {% endexample %}
 
 {% include snippets/topic-section-metadata.html
@@ -64,17 +64,17 @@ used for context by adding these classes:
 
 | Standard Context | Label Contextual Class  |
 | ---------------- | ----------------------- |
-| Success          | `.label-success`        |
-| Warning          | `.label-warning`        |
-| Danger           | `.label-danger`         |
-| Info             | `.label-info`           |
-{: .table .table-responsive }
+| Success          | `.bsk-label-success`    |
+| Warning          | `.bsk-label-warning`    |
+| Danger           | `.bsk-label-danger`     |
+| Info             | `.bsk-label-info`       |
+{: .bsk-table .bsk-table-responsive }
 
 {% example html %}
-<span class="label label-success">Success label</span>
-<span class="label label-warning">Warning label</span>
-<span class="label label-danger">Dangerous label</span>
-<span class="label label-info">Info label</span>
+<span class="bsk-label bsk-label-success">Success label</span>
+<span class="bsk-label bsk-label-warning">Warning label</span>
+<span class="bsk-label bsk-label-danger">Dangerous label</span>
+<span class="bsk-label bsk-label-info">Info label</span>
 {% endexample %}
 
 {% include snippets/topic-section-metadata.html
@@ -88,7 +88,7 @@ used for context by adding these classes:
 Labels will scale with their parent element.
 
 {% example html %}
-<h1><span class="label label-default">Label</span></h1>
-<h2><span class="label label-default">Label</span></h2>
-<h3><span class="label label-default">Label</span></h3>
+<h1><span class="bsk-label bsk-label-default">Label</span></h1>
+<h2><span class="bsk-label bsk-label-default">Label</span></h2>
+<h3><span class="bsk-label bsk-label-default">Label</span></h3>
 {% endexample %}
