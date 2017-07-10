@@ -2,24 +2,26 @@
 layout: home
 ---
 
-<header id="site-content" class="bsk-jumbotron bsk-jumbotron-bsk-inverse bsk-text-center bsk-docs-masthead bsk-image-copyright" tabindex="-1">
+<header id="site-content" class="bsk-jumbotron bsk-jumbotron-bsk-inverse bsk-docs-masthead bsk-image-copyright" tabindex="-1">
     <div class="container">
 
-        <div class="bsk-docs-symbol"></div>
+        <div class="bsk-center-block bsk-docs-masthead-wrapper">
+          <div class="bsk-docs-masthead-symbol"></div>
+        </div>
 
-        <h1>
+        <h1 class="bsk-docs-masthead-title bsk-text-center">
           BAS Style Kit
-          {% if jekyll.environment != 'production' %}<i class="fa fa-fw fa-flask bsk-text-experimental" aria-hidden="true"></i> <span class="bsk-sr-only">Testing version</span>{% endif %}
+          {% unless jekyll.environment == 'production' %}<i class="fa fa-fw fa-flask bsk-text-experimental" aria-hidden="true"></i> <span class="bsk-sr-only">Testing version</span>{% endunless %}
         </h1>
-        <p>A collection of HTML, CSS, and JS components for developing web projects consistent with the BAS brand.</p>
-        <p>
+        <p class="bsk-docs-masthead-strapline bsk-text-center"><span class="bsk-jumbotron-overlay">A collection of HTML, CSS, and JS components for developing web projects consistent with the BAS brand</span></span></p>
+        <p class="bsk-text-center">
             <a href="{{ "/start/introduction/#quick-start" | prepend: site.baseurl }}" class="bsk-btn bsk-btn-default bsk-btn-lg">
                 Download the BAS Style Kit
             </a>
         </p>
-        <p>Version {% include snippets/bsk-version.html %}</p>
+        <p class="bsk-docs-masthead-version bsk-text-center">Version {% include snippets/bsk-version.html %}</p>
     </div>
-    <a href="#" class="bsk-image-copyright-attribution"><i class="fa fa-camera"></i> Sky at Halley VI research station | Tom Wales / BAS</a>
+    <div class="bsk-image-copyright-attribution"><i class="fa fa-camera"></i> Sky at Halley VI research station | Tom Wales / BAS</div>
 </header>
 
 <div class="bsk-container bsk-docs-home-sections">
@@ -32,13 +34,15 @@ layout: home
   <hr />
 
   <section class="bsk-row">
-    <div class="bsk-col-12-md-8 bsk-col-12-md-offset-2 bsk-text-center bsk-lead bsk-alert bsk-alert-outline-experimental">
-      <h2>This website is used for testing</h2>
+    <div class="bsk-col-12-md-8 bsk-col-12-md-offset-2 bsk-text-center bsk-alert bsk-alert-solid-experimental bsk-alert-icon bsk-alert-block bsk-docs-alert-block-lg">
+      <header class="bsk-alert-heading">
+        <h2><i class="fa fa-fw fa-flask bsk-alert-icon"></i>This website is used for testing</h2>
+      </header>
       <p>This site contains a preview of upcoming changes and other experiments. It isn't safe to rely on examples
-        from this website, as as they may not work, or be removed, at any time.</p>
-      <a href="https://{{ site.bsk_docs_production_url }}" class="bsk-btn bsk-btn-default bsk-btn-lg">
-        View the real documentation
-      </a>
+        from this website, as as they may not work, or be removed at any time.</p>
+      <div class="bsk-docs-spacer-md"></div>
+      <p><a href="https://{{ site.bsk_docs_production_url }}" class="bsk-btn bsk-btn-default bsk-btn-lg">
+      View the stable documentation</a></p>
     </div>
   </section>
 {% endif %}
@@ -60,11 +64,12 @@ layout: home
   <hr />
 
   <section class="bsk-row">
-      <div class="bsk-col-12-md-8 bsk-col-12-md-offset-2 bsk-text-center bsk-lead bsk-alert bsk-alert-solid-warning">
-          <h2>Parts of the BAS Style Kit are protected works</h2>
-          <p>This includes things like the BAS Logo, which may only be used in projects officially endorsed by
-          BAS, subject to certain conditions.</p>
-          <p>This will be explained in more detail wherever this applies.</p>
+      <div class="bsk-col-12-md-8 bsk-col-12-md-offset-2 bsk-text-center bsk-alert bsk-alert-solid-warning bsk-alert-icon bsk-alert-block bsk-docs-alert-block-lg">
+        <header class="bsk-alert-heading">
+          <h2><i class="fa fa-fw fa-exclamation-triangle bsk-alert-icon"></i>Parts of the BAS Style Kit are protected works</h2>
+        </header>
+        <p>This includes things like the BAS Logo, which may only be used in projects officially endorsed by BAS, subject to certain conditions.</p>
+        <p>This will be explained in more detail wherever this applies.</p>
       </div>
   </section>
 

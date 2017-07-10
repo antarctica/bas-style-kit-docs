@@ -76,25 +76,58 @@ $screen-sm-min: 768px !default;
   }
 }
 
-// Styles for BAS logo shown on homepage
-
-.bsk-docs-symbol {
-  display: inline-block;
-  height: 256px;
-  width: 256px;
-  background-image: url('{{ "/img/bas-logo-roundel-only.png" | prepend: site.baseurl }}');
-  background-repeat: no-repeat;
-  background-size: contain;
-  border: 3px solid #ffffff;
-  border-radius: 100%;
-}
-
-// Background image shown on homepage
+// Masthead on homepage
 
 .bsk-docs-masthead {
   background-image: url('{{ "/img/site-masthead-tom-welsh.jpg" | prepend: site.baseurl }}');
   background-repeat: no-repeat;
   background-size: cover;
+
+  .bsk-docs-masthead-wrapper {
+    width: 256px;
+  }
+
+  .bsk-docs-masthead-symbol {
+    display: inline-block;
+    background-image: url('https://cdn.web.bas.ac.uk/bas-style-kit/0.3.0-alpha/img/logos-symbols/bas-roundel-inverse-transparent-256.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 256px;
+    width: 256px;
+  }
+
+  .bsk-docs-masthead-title {
+    color: #fff;
+
+    .bsk-text-experimental {
+      color: #9FA1C9;
+    }
+  }
+
+  .bsk-docs-masthead-strapline {
+    margin-top: 60px;
+    margin-bottom: 40px;
+
+    .bsk-jumbotron-overlay {
+      padding: 15px;
+    }
+  }
+
+  .bsk-docs-masthead-version {
+    color: #fff;
+  }
+}
+
+// Styles for bigger alerts on the homepage
+.bsk-docs-alert-block-lg {
+  padding: 30px;
+}
+
+// Styles for spacing out paragraphs in alerts on the homepage
+.bsk-docs-spacer-md {
+  height: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 // Styles for sections on the homepage
