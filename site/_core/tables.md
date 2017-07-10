@@ -32,11 +32,11 @@ sections:
   included="yes"
 %}
 
-Use the `.table` class to apply basic table styles. This class is opt-in to ensure compatibility with tables managed by
-third party widgets or applications such as Apex.
+Use the `.bsk-table` class to apply basic table styles. This class is opt-in to ensure compatibility with tables
+managed by third party widgets or applications such as Apex.
 
 {% example html %}
-<table class="table">
+<table class="bsk-table">
   <thead>
     <tr>
       <th>Name</th>
@@ -68,13 +68,14 @@ third party widgets or applications such as Apex.
   included="yes"
 %}
 
-Add `.table-striped` to style alternate rows with the <code>&lt;tbody&gt;</code> of a table.
+Add `.bsk-table-striped` to style alternate rows with the <code>&lt;tbody&gt;</code> of a table.
 
+{% alert danger %}
 This won't work in Internet Explorer 8.
-{: .alert .alert-danger }
+{% endalert %}
 
 {% example html %}
-<table class="table table-striped">
+<table class="bsk-table bsk-table-striped">
   <thead>
     <tr>
       <th>Name</th>
@@ -106,10 +107,10 @@ This won't work in Internet Explorer 8.
   included="yes"
 %}
 
-Add `.table-bordered` to apply additional borders around the table and between cells.
+Add `.tbsk-able-bordered` to apply additional borders around the table and between cells.
 
 {% example html %}
-<table class="table table-bordered">
+<table class="bsk-table bsk-table-bordered">
   <thead>
     <tr>
       <th>Name</th>
@@ -141,10 +142,10 @@ Add `.table-bordered` to apply additional borders around the table and between c
   included="yes"
 %}
 
-Add `.table-hover` to highlight the row with focus within a table.
+Add `.bsk-table-hover` to highlight the row with focus within a table.
 
 {% example html %}
-<table class="table table-hover">
+<table class="bsk-table bsk-table-hover">
   <thead>
     <tr>
       <th>Name</th>
@@ -176,27 +177,28 @@ Add `.table-hover` to highlight the row with focus within a table.
   included="yes"
 %}
 
-The [standard contextual background classes]({{ '/core/colours/#standard-contextual-background-classes' | prepend: site.baseurl }}){: .alert-link }
+The [standard contextual background classes]({{ '/core/colours/#standard-contextual-background-classes' | prepend: site.baseurl }}){: .bsk-alert-link }
 can be used as the background of table rows using these classes:
 
 | Standard Contextual Background | Table Cell Contextual Background Class |
 | ------------------------------ | -------------------------------------- |
-| Success                        | `.success`                             |
-| Warning                        | `.warning`                             |
-| Danger                         | `.danger`                              |
-| Info                           | `.info`                                |
-{: .table .table-responsive }
+| Success                        | `.bsk-success`                         |
+| Warning                        | `.bsk-warning`                         |
+| Danger                         | `.bsk-danger`                          |
+| Info                           | `.bsk-info`                            |
+{: .bsk-table .bsk-table-responsive }
 
+{% alert warning %}
 These classes only work within tables. Use the
-[standard contextual background classes]({{ '/core/colours/#standard-contextual-background-colours' | prepend: site.baseurl }}){: .alert-link }
+[standard contextual background classes]({{ '/core/colours/#standard-contextual-background-colours' | prepend: site.baseurl }}){: .bsk-alert-link }
 to use them in other situations.
-{: .alert .alert-info }
+{% endalert %}
 
-You can also use the `.active` class to highlight a row as if it had focus when using the
+You can also use the `.bsk-active` class to highlight a row as if it had focus when using the
 [row hover]({{ '/core/tables/#hoverable-rows' | prepend: site.baseurl }}) styles.
 
 {% example html %}
-<table class="table">
+<table class="bsk-table">
   <thead>
     <tr>
       <th>Name</th>
@@ -204,23 +206,23 @@ You can also use the `.active` class to highlight a row as if it had focus when 
     </tr>
   </thead>
   <tbody>
-    <tr class="success">
+    <tr class="bsk-success">
       <td>Ny-Ålesund</td>
       <td>Svalbard, High Arctic</td>
     </tr>
-    <tr class="warning">
+    <tr class="bsk-warning">
       <td>Rothera</td>
       <td>Adelaide Island, Antarctica</td>
     </tr>
-    <tr class="danger">
+    <tr class="bsk-danger">
       <td>Halley VI</td>
       <td>Brunt Ice Shelf, Antarctica</td>
     </tr>
-    <tr class="info">
+    <tr class="bsk-info">
       <td>Bird Island</td>
       <td>Bird Island, South Georgia</td>
     </tr>
-    <tr class="active">
+    <tr class="bsk-active">
       <td>Signy</td>
       <td>Factory Cove, Borge Bay, Signy Island</td>
     </tr>
@@ -236,10 +238,10 @@ You can also use the `.active` class to highlight a row as if it had focus when 
   included="yes"
 %}
 
-Add `.table-condensed` to reduce padding within a table to make it more compact.
+Add `.bsk-table-condensed` to reduce padding within a table to make it more compact.
 
 {% example html %}
-<table class="table table-condensed">
+<table class="bsk-table bsk-table-condensed">
   <thead>
     <tr>
       <th>Name</th>
@@ -276,15 +278,16 @@ Add `.table-condensed` to reduce padding within a table to make it more compact.
   included="yes"
 %}
 
-Wrap a table with the `.table-responsive` class to make them scroll horizontally on smaller devices.
+Wrap a table with the `.bsk-table-responsive` class to make them scroll horizontally on smaller devices.
 
+{% alert warning %}
 Responsive tables may not be compatible with advanced mark-up such as drop-down menus and other widgets due to clipping
 caused by the use of `overflow-y: hidden`.
-{: .alert .alert-warning }
+{% endalert %}
 
 {% example html %}
-<div class="table-responsive">
-  <table class="table table-condensed">
+<div class="bsk-table-responsive">
+  <table class="bsk-table bsk-table-condensed">
     <thead>
       <tr>
         <th>Name</th>
@@ -309,9 +312,10 @@ caused by the use of `overflow-y: hidden`.
 </div>
 {% endexample %}
 
+{% alert danger %}
 Firefox requires some additional styles to fix a bug with <code>&lt;fieldset&gt;</code> elements which interferes with
 responsive tables. This can be fixed using the code below, but it **is not** included in the Style Kit by default.
-{: .alert .alert-danger }
+{% endalert %}
 
 ```css
 @-moz-document url-prefix() {

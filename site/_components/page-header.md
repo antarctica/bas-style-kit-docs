@@ -31,7 +31,7 @@ spacing.
 %}
 
 {% example html %}
-<header class="page-header">
+<header class="bsk-page-header">
   <h1>Example page header <small>Subtext for header</small></h1>
 </header>
 {% endexample %}

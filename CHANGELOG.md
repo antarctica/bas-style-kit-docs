@@ -5,6 +5,21 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ## [Unreleased][unreleased]
 
+### Added
+
+* New alert plugin for generating new style alerts with icons and various styles
+
+### Changed
+
+* Integrating 0.3.0-alpha version of the Style Kit
+* Checks for the site environment check if the site *isn't* production, rather than if it *is* staging
+* Changing 'Part of the British Antarctic Survey' to 'Part of British Antarctic Survey' account for the
+ larger navbar font size and breaking the navbar layout at smaller screen sizes
+
+### Removed
+
+* Unnecessary local styles that have been replaced by improvements or additions to the Style Kit
+
 ## v1.0.1 - 01/06/2017
 
 ### Added

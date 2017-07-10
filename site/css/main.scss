@@ -8,59 +8,42 @@ $screen-sm-min: 768px !default;
 
 // ==  Site specific styles
 
-// Styles for Better banner - these will be merged into a future version of the BAS Style Kit
-
-$beta-phase: #f47738;
-
-.bsk-docs-label-phase-beta {
-  background-color: $beta-phase;
-  border-radius: 0;
-}
-
-// Styles for Cookie banner - these will be merged into a future version of the BAS Style Kit
-
-.bsk-docs-alert-top-pin {
-  margin-bottom: 0;
-
-  border: none;
-  border-radius: 0;
-}
-
-.bsk-docs-alert-cookie-banner {
-  background-color: #006AAA;
-  color: white;
-
-  .alert-link {
-    color: white;
-  }
-
-  .close {
-    filter: alpha(opacity=70);
-    opacity: .7;
-    color: #E7EBF1;
-
-    &:focus, &:hover {
-      filter: alpha(opacity=100);
-      opacity: 1;
-    }
-  }
-}
-
-// Styles for main navigation
-
-.bsk-docs-main-navigation {
-  border-left: none;
-  border-right: none;
-
-  &.no-margin-bottom {
-      margin-bottom: 0;
-  }
-}
-
 // Styles for topic table of contents
 
 #markdown-toc {
   padding-left: 20px;
+}
+
+// Styles for cookie notice
+.bsk-docs-cookie-notice {
+  // Fix padding to align banner with navbar
+  .bsk-container {
+    padding-left: 0;
+  }
+}
+
+// Styles for navbar
+.bsk-docs-navbar-testing {
+  margin-bottom: 0;
+}
+
+// Styles for testing banner
+.bsk-docs-banner-testing {
+  // Fix padding to align banner with navbar
+  .bsk-container {
+    padding-left: 0;
+  }
+}
+
+// Styles for site development notice
+.bsk-docs-development-notice {
+  margin-top: 20px;
+
+  // These styles for using text alongside a label
+  .bsk-docs-text-with-label {
+    position: relative;
+    top: 3px;
+  }
 }
 
 // Styles for footer
@@ -93,41 +76,58 @@ $beta-phase: #f47738;
   }
 }
 
-// Styles for BAS logo shown on homepage
-
-.bsk-docs-symbol {
-  display: inline-block;
-  height: 256px;
-  width: 256px;
-  background-image: url('{{ "/img/bas-logo-roundel-only.png" | prepend: site.baseurl }}');
-  background-repeat: no-repeat;
-  background-size: contain;
-  border: 3px solid #ffffff;
-  border-radius: 100%;
-}
-
-// Background image shown on homepage
+// Masthead on homepage
 
 .bsk-docs-masthead {
   background-image: url('{{ "/img/site-masthead-tom-welsh.jpg" | prepend: site.baseurl }}');
   background-repeat: no-repeat;
   background-size: cover;
+
+  .bsk-docs-masthead-wrapper {
+    width: 256px;
+  }
+
+  .bsk-docs-masthead-symbol {
+    display: inline-block;
+    background-image: url('https://cdn.web.bas.ac.uk/bas-style-kit/0.3.0-alpha/img/logos-symbols/bas-roundel-inverse-transparent-256.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 256px;
+    width: 256px;
+  }
+
+  .bsk-docs-masthead-title {
+    color: #fff;
+
+    .bsk-text-experimental {
+      color: #9FA1C9;
+    }
+  }
+
+  .bsk-docs-masthead-strapline {
+    margin-top: 60px;
+    margin-bottom: 40px;
+
+    .bsk-jumbotron-overlay {
+      padding: 15px;
+    }
+  }
+
+  .bsk-docs-masthead-version {
+    color: #fff;
+  }
 }
 
-// Copyright notice shown in the bottom-right of images
-
-.bsk-docs-image-copyright-container {
-  display: block;
-  position: relative;
+// Styles for bigger alerts on the homepage
+.bsk-docs-alert-block-lg {
+  padding: 30px;
 }
 
-.bsk-docs-image-copyright-notice {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  padding: 3px 8px;
-  background-color: rgba(51, 51, 51, 0.8);
-  color: #FFFFFF;
+// Styles for spacing out paragraphs in alerts on the homepage
+.bsk-docs-spacer-md {
+  height: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 // Styles for sections on the homepage
@@ -177,6 +177,10 @@ $beta-phase: #f47738;
 
 // Styles for displaying rendered portions of examples
 
+.highlight {
+  font-size: 14px;
+}
+
 .bsk-docs-example {
   margin-left: 0;
   margin-right: 0;
@@ -185,17 +189,6 @@ $beta-phase: #f47738;
   padding: 25px;
   border: 2px solid #E7EBF1;
   border-bottom: none;
-}
-
-// Styles for displaying columns in grid system examples
-
-.bsk-docs-example .row.bsk-docs-grid-example>[class^=col-] {
-  padding-top: 10px;
-  padding-bottom: 10px;
-
-  background-color: rgba(195, 195, 195,.15);
-  border: 1px solid rgba(140, 140, 140,.2);
-  text-align: center;
 }
 
 // Styles for displaying content blocks in layout examples
@@ -208,7 +201,9 @@ $beta-phase: #f47738;
   text-align: center;
 }
 
-.responsive-utilities-test {
+// Styles for visibility test
+
+.bsk-docs-responsive-utilities-test {
   margin-top: 25px;
   margin-bottom: 25px;
 }
@@ -216,15 +211,15 @@ $beta-phase: #f47738;
 // Styles for collection index jumbotron's
 
 .bsk-docs-collection-masthead {
-  background-color: #006AAA;
+  background-color: #2B8CC4;
   color: #FFFFFF;
 }
 
 // Styles for topic dividers in collection indexes
-.topic-index-divider {
+.bsk-docs-topic-index-divider {
   margin-top: 20px;
 
-  border-top: 5px solid #007ac3;
+  border-top: 5px solid #2B8CC4;
 }
 
 // Styles for fixing examples, such as fixed with footers and navbars,
@@ -260,91 +255,4 @@ $beta-phase: #f47738;
     padding-right: 5px;
     padding-left: 5px;
   }
-}
-
-// Temporary styles for design phases (i.e. discovery, alpha, etc.)
-// These will be replaced with a proper set of label variants when the GDS colour scheme is integrated
-
-.label-phase {
-    border-radius: 0;
-
-    font-weight: normal;
-    text-transform: uppercase;
-  }
-
-  .label-phase-alpha {
-    background-color: #D53880;
-  }
-  .label-phase-beta {
-    background-color: #F47738;
-  }
-  .label-phase-live {
-    background-color: #85994B;
-  }
-  .label-phase-deprecated {
-    background-color: #6F777B;
-  }
-
-// Temporary styles for site version (i.e. highlights to indicate this is a staging/testing site)
-// These will be become a variant of the navbar component in the future
-
-// $testing-background-colour: #77ccff;  // blue
-// $testing-foreground-colour: #333333;
-
-// $testing-background-colour: #7cf7cf;  // aquamarine
-// $testing-foreground-colour: #333333;
-
-// $testing-background-colour: #6F72AF;  // purple - GDS mauve
-// $testing-foreground-colour: #ffffff;
-
-// $testing-background-colour: #E1BEE7;  // purple - MD purple
-// $testing-foreground-colour: #333333;
-
-$testing-background-colour: #D1C4E9;  // purple - MD deep purple
-$testing-foreground-colour: #311B92;
-$testing-border-colour: #B39DDB;
-
-$testing-link-foreground-colour: $testing-foreground-colour;
-
-.bsk-docs-navbar-testing {
-  border-bottom: 5px solid $testing-background-colour;
-}
-.bsk-docs-testing {
-  color: $testing-background-colour !important;
-}
-.bsk-docs-alert-testing {
-  border-radius: 0;
-  background-color: $testing-background-colour;
-  border-color: $testing-border-colour;
-  color: $testing-foreground-colour;
-
-  .alert-link {
-    color: $testing-link-foreground-colour;
-  }
-
-  // Enable for darker testing colours
-  /*
-  .close {
-    filter: alpha(opacity=100);
-    opacity: 1;
-
-    &:focus, &:hover {
-      color: #E7EBF1;
-    }
-  }
-  */
-
-  &.margin-top {
-    margin-top: 50px;
-    margin-bottom: 0;
-  }
-  &.margin-bottom {
-    margin-top: -20px;
-    margin-bottom: 20px;
-    border-bottom: 5px solid $testing-background-colour;
-  }
-}
-
-.bsk-docs-alert-no-border {
-  border: none;
 }

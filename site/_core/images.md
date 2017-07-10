@@ -17,10 +17,11 @@ sections:
   included="yes"
 %}
 
-Use the `.img-responsive` class to scale images nicely within their parent element. Use the [centred block]({{ '/core/layout/#centred-block' | prepend: site.baseurl }}) classes to centre a responsive image.
+Use the `.bsk-img-responsive` class to scale images nicely within their parent element. Use the
+[centred block]({{ '/core/layout/#centred-block' | prepend: site.baseurl }}) classes to centre a responsive image.
 
 {% example html %}
-<img class="img-responsive" src="{{ '/img/site-masthead-tom-welsh.jpg' | prepend: site.baseurl }}" alt="Sky at Halley VI research station">
+<img class="bsk-img-responsive" src="{{ '/img/site-masthead-tom-welsh.jpg' | prepend: site.baseurl }}" alt="Sky at Halley VI research station">
 {% endexample %}
 
 {% include snippets/topic-section-metadata.html
@@ -31,11 +32,12 @@ Use the `.img-responsive` class to scale images nicely within their parent eleme
   included="yes"
 %}
 
+{% alert danger %}
 Shapes with rounded edges won't work in Internet Explorer 8.
-{: .alert .alert-danger }
+{% endalert %}
 
 {% example html %}
-<img class="img-rounded" src="https://placeholdit.imgix.net/~text?txtsize=50&amp;w=140&amp;h=140" alt="Rounded image" >
-<img class="img-circle" src="https://placeholdit.imgix.net/~text?txtsize=50&amp;w=140&amp;h=140" alt="Circular image">
-<img class="img-thumbnail" src="https://placeholdit.imgix.net/~text?txtsize=50&amp;w=140&amp;h=140" alt="Thumbnail image">
+<img class="bsk-img-rounded" src="https://placeholdit.imgix.net/~text?txtsize=50&amp;w=140&amp;h=140" alt="Rounded image" >
+<img class="bsk-img-circle" src="https://placeholdit.imgix.net/~text?txtsize=50&amp;w=140&amp;h=140" alt="Circular image">
+<img class="bsk-img-thumbnail" src="https://placeholdit.imgix.net/~text?txtsize=50&amp;w=140&amp;h=140" alt="Thumbnail image">
 {% endexample %}

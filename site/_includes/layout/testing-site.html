@@ -1,7 +1,7 @@
-<div class="alert bsk-docs-alert-testing bsk-docs-alert-no-border {% if include.position == "before-footer" %}lead margin-top{% elsif include.position == "after-main-navigation" %}margin-bottom{% endif %}" role="alert">
-  <div class="container">
-    {% if include.position == "after-main-navigation" %}<button type="button" class="close" data-dismiss="alert" aria-label="Close"><i class="fa fa-fw fa-times-circle" aria-hidden="true"></i></button>{% endif %}
-    <i class="fa fa-fw fa-flask" aria-hidden="true"></i> <span class="sr-only">Testing version</span>
-    This website is used for testing - go to <a class="alert-link" href="https://{{ site.bsk_docs_production_url }}">{{ site.bsk_docs_production_url }}</a> for the latest stable version.
+<div class="bsk-alert bsk-alert-solid-experimental bsk-alert-static-top bsk-docs-banner-testing" role="alert">
+  <div class="bsk-container">
+    {% if include.position == "after-main-navigation" %}<button type="button" class="bsk-close" data-dismiss="alert" aria-label="Close"><i class="fa fa-fw fa-times-circle" aria-hidden="true"></i></button>{% endif %}
+    <i class="fa fa-fw fa-flask bsk-alert-icon" aria-hidden="true"></i> <span class="bsk-sr-only">Testing version</span>
+    This website is used for testing - go to <a class="bsk-alert-link" href="https://{{ site.bsk_docs_production_url }}">{{ site.bsk_docs_production_url }}</a> for the latest stable version
   </div>
 </div>

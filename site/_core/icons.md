@@ -27,14 +27,16 @@ sections:
 
 The BAS Style Kit includes version **3.6** of the [Font Awesome](http://fontawesome.io) icon web font.
 
+{% alert warning %}
 Font Awesome replaces, and removes, the Glyphicons icon font included by default in Bootstrap, its icons therefore
 won't work using the Style Kit.
-{: .alert .alert-warning }
+{% endalert %}
 
+{% alert info style=highlight %}
 For consistency, it is recommended to use the `.fa-fw` (fixed width) class with all icons.
-{: .alert .alert-info }
+{% endalert %}
 
-[View Available Icons](http://fontawesome.io/icons/){:.btn .btn-bsk .btn-default }
+[View Available Icons](http://fontawesome.io/icons/){:.bsk-btn .bsk-btn-default }
 
 {% include snippets/topic-section-metadata.html
   title="Caret icon"
@@ -44,13 +46,13 @@ For consistency, it is recommended to use the `.fa-fw` (fixed width) class with 
   included="yes"
 %}
 
-For menus, Bootstrap's `.caret` class should be used over the Font Awesome `.caret-` classes, as it will automatically
-rotate in drop up menus.
+For menus, Bootstrap's `.bsk-caret` class should be used over the Font Awesome `.fa-caret-` classes, as it will
+automatically rotate in drop up menus.
 
-In all other cases, Font Awesome's `.caret-` classes should be used instead.
+In all other cases, Font Awesome's `.fa-caret-` classes should be used instead.
 
 {% example html %}
-<span class="caret"></span>
+<span class="bsk-caret"></span>
 
 <br /><br />
 
@@ -72,14 +74,14 @@ For common actions or concepts, the Style Kit uses a set of conventional icons.
   included="yes"
 %}
 
-Use the `times-circle` icon wrapped in a `.close` element for indicating closing or dismissive things, such as
+Use the `fa-times-circle` icon wrapped in a `.bsk-close` element for indicating closing or dismissive things, such as
 [alerts]({{ '/components/alert' | prepend: site.baseurl }}).
 
 <div class="bsk-docs-icons-wrapper">
-  <div class="row">
-    <div class="col-md-3">
-      <div class="bsk-docs-icon"><i class="fa fa-4x fa-fw fa-times-circle" aria-hidden="true"></i></div>
-      <ul class="list-unstyled text-center bsk-docs-icons-details">
+  <div class="bsk-row">
+    <div class="bsk-col-12-md-3">
+      <div class="bsk-docs-icon"><i class="fa fa-fw fa-4x fa-times-circle" aria-hidden="true"></i></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Times Circle</li>
         <li class="bsk-docs-icon-reference">fa-times-circle</li>
         <li><code>&lt;i class="fa fa-fw fa-times-circle" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
@@ -89,11 +91,12 @@ Use the `times-circle` icon wrapped in a `.close` element for indicating closing
 </div>
 
 {% example html %}
-<button type="button" class="close" aria-label="Close"><i class="fa fa-fw fa-times-circle" aria-hidden="true"></i></button>
+<button type="button" class="bsk-close" aria-label="Close"><i class="fa fa-fw fa-times-circle" aria-hidden="true"></i></button>
 {% endexample %}
 
+{% alert info style=highlight %}
 **Hint** The close icon is aligned right.
-{: .alert .alert-info }
+{% endalert %}
 
 {% include snippets/topic-section-metadata.html
   title="Image purchase icon"
@@ -107,10 +110,10 @@ Use the `fa-camera` icon for indicating images and other media items available f
 Collection, such as the [image purchase]({{ '/components/image-purchase' | prepend: site.baseurl }}) component.
 
 <div class="bsk-docs-icons-wrapper">
-  <div class="row">
-    <div class="col-md-3">
-      <div class="bsk-docs-icon"><i class="fa fa-fw fa-4x fa-fw fa-camera" aria-hidden="true"></i></div>
-      <ul class="list-unstyled text-center bsk-docs-icons-details">
+  <div class="bsk-row">
+    <div class="bsk-col-12-md-3">
+      <div class="bsk-docs-icon"><i class="fa fa-fw fa-fw fa-4x fa-camera" aria-hidden="true"></i></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Camera</li>
         <li class="bsk-docs-icon-reference">fa-camera</li>
         <li><code>&lt;i class="fa fa-fw fa-camera" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
@@ -119,8 +122,9 @@ Collection, such as the [image purchase]({{ '/components/image-purchase' | prepe
   </div>
 </div>
 
+{% alert info style=highlight %}
 **Hint** The image purchase icon is aligned bottom right.
-{: .alert .alert-info }
+{% endalert %}
 
 {% include snippets/topic-section-metadata.html
   title="Standard contextual icons"
@@ -144,11 +148,12 @@ Danger
 
 Info
 : Indicates something neutral, or informative
-{: .dl-bsk }
+{: .bsk-dl-lg }
 
+{% alert warning %}
 You should ensure contextual icons are not the only means
- [context is conveyed to ensure those using assistive technologies are not excluded]({{ '/start/standards-accessibility/#conveying-context-without-colours-or-icons' | prepend: site.baseurl }}){: .alert-link }.
-{: .alert .alert-warning }
+ [context is conveyed to ensure those using assistive technologies are not excluded]({{ '/start/standards-accessibility/#conveying-context-without-colours-or-icons' | prepend: site.baseurl }}){: .bsk-alert-link }.
+{% endalert %}
 
 These icons can be used with core styles and components, such as:
 
@@ -157,34 +162,34 @@ These icons can be used with core styles and components, such as:
 * [alerts]({{ '/components/alert' | prepend: site.baseurl }})
 
 <div class="bsk-docs-icons-wrapper">
-  <div class="row">
-    <div class="col-md-3">
-      <div class="bsk-docs-icon"><i class="fa fa-4x fa-fw fa-check" aria-hidden="true"></i></div>
-      <ul class="list-unstyled text-center bsk-docs-icons-details">
+  <div class="bsk-row">
+    <div class="bsk-col-12-md-3">
+      <div class="bsk-docs-icon"><i class="fa fa-fw fa-4x fa-check" aria-hidden="true"></i></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Success</li>
         <li class="bsk-docs-icon-reference">fa-check</li>
         <li><code>&lt;i class="fa fa-fw fa-check" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
-    <div class="col-md-3">
-      <div class="bsk-docs-icon"><i class="fa fa-4x fa-fw fa-exclamation-triangle" aria-hidden="true"></i></div>
-      <ul class="list-unstyled text-center bsk-docs-icons-details">
+    <div class="bsk-col-12-md-3">
+      <div class="bsk-docs-icon"><i class="fa fa-fw fa-4x fa-exclamation-triangle" aria-hidden="true"></i></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Warning</li>
         <li class="bsk-docs-icon-reference">fa-exclamation-triangle</li>
         <li><code>&lt;i class="fa fa-fw fa-exclamation-triangle" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
-    <div class="col-md-3">
-      <div class="bsk-docs-icon"><i class="fa fa-4x fa-fw fa-exclamation-circle" aria-hidden="true"></i></div>
-      <ul class="list-unstyled text-center bsk-docs-icons-details">
+    <div class="bsk-col-12-md-3">
+      <div class="bsk-docs-icon"><i class="fa fa-fw fa-4x fa-exclamation-circle" aria-hidden="true"></i></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Danger</li>
         <li class="bsk-docs-icon-reference">fa-exclamation-circle</li>
         <li><code>&lt;i class="fa fa-fw fa-exclamation-circle" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
-    <div class="col-md-3">
-      <div class="bsk-docs-icon"><i class="fa fa-4x fa-fw fa-info" aria-hidden="true"></i></div>
-      <ul class="list-unstyled text-center bsk-docs-icons-details">
+    <div class="bsk-col-12-md-3">
+      <div class="bsk-docs-icon"><i class="fa fa-fw fa-4x fa-info" aria-hidden="true"></i></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Info</li>
         <li class="bsk-docs-icon-reference">fa-info</li>
         <li><code>&lt;i class="fa fa-fw fa-info" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
@@ -193,47 +198,48 @@ These icons can be used with core styles and components, such as:
   </div>
 </div>
 
+{% alert info %}
 It is recommended to use the
-[contextual text colour classes]({{ '/core/type/#contextual-colours' | prepend: site.baseurl }}){: .alert-link } with
+[contextual text colour classes]({{ '/core/type/#contextual-colours' | prepend: site.baseurl }}){: .bsk-alert-link } with
 these icons.
-{: .alert .alert-info }
+{% endalert %}
 
 <div class="bsk-docs-icons-wrapper">
-  <div class="row">
-    <div class="col-md-3">
-      <div class="bsk-docs-icon"><i class="fa fa-4x fa-fw fa-check text-success"
+  <div class="bsk-row">
+    <div class="bsk-col-12-md-3">
+      <div class="bsk-docs-icon"><i class="fa fa-fw fa-4x fa-check bsk-text-success"
       aria-hidden="true"></i></div>
-      <ul class="list-unstyled text-center bsk-docs-icons-details">
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Success</li>
         <li class="bsk-docs-icon-reference">fa-check</li>
-        <li><code>&lt;i class="fa fa-fw fa-check text-success" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+        <li><code>&lt;i class="fa fa-fw fa-check bsk-text-success" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
-    <div class="col-md-3">
-      <div class="bsk-docs-icon"><i class="fa fa-4x fa-fw fa-exclamation-triangle text-warning"
+    <div class="bsk-col-12-md-3">
+      <div class="bsk-docs-icon"><i class="fa fa-fw fa-4x fa-exclamation-triangle bsk-text-warning"
       aria-hidden="true"></i></div>
-      <ul class="list-unstyled text-center bsk-docs-icons-details">
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Warning</li>
         <li class="bsk-docs-icon-reference">fa-exclamation-triangle</li>
-        <li><code>&lt;i class="fa fa-fw fa-exclamation-triangle text-warning" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+        <li><code>&lt;i class="fa fa-fw fa-exclamation-triangle bsk-text-warning" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
-    <div class="col-md-3">
-      <div class="bsk-docs-icon"><i class="fa fa-4x fa-fw fa-exclamation-circle text-danger"
+    <div class="bsk-col-12-md-3">
+      <div class="bsk-docs-icon"><i class="fa fa-fw fa-4x fa-exclamation-circle bsk-text-danger"
       aria-hidden="true"></i></div>
-      <ul class="list-unstyled text-center bsk-docs-icons-details">
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Danger</li>
         <li class="bsk-docs-icon-reference">fa-exclamation-circle</li>
-        <li><code>&lt;i class="fa fa-fw fa-exclamation-circle text-danger" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+        <li><code>&lt;i class="fa fa-fw fa-exclamation-circle bsk-text-danger" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
-    <div class="col-md-3">
-      <div class="bsk-docs-icon"><i class="fa fa-4x fa-fw fa-info text-info"
+    <div class="bsk-col-12-md-3">
+      <div class="bsk-docs-icon"><i class="fa fa-fw fa-4x fa-info bsk-text-info"
       aria-hidden="true"></i></div>
-      <ul class="list-unstyled text-center bsk-docs-icons-details">
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Info</li>
         <li class="bsk-docs-icon-reference">fa-info</li>
-        <li><code>&lt;i class="fa fa-fw fa-info text-info" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+        <li><code>&lt;i class="fa fa-fw fa-info bsk-text-info" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
   </div>
@@ -250,44 +256,45 @@ these icons.
 By convention, and often recommendation by the relevant service, the Style Kit uses these icons for various external
 services.
 
+{% alert warning style=solid %}
 All brand assets trademarks of their respective owners, and subject to their respective licensing restrictions. <br />
-You must ensure that where you use these assets you comply with these restrictions.
-{: .alert .alert-warning }
+You **must** ensure that where you use these assets you comply with these restrictions.
+{% endalert %}
 
 These icons can be used with components such as:
 
 * [social media]({{ '/components/social-media' | prepend: site.baseurl }})
 
 <div class="bsk-docs-icons-wrapper">
-  <div class="row">
-    <div class="col-md-3">
-      <div class="bsk-docs-icon"><i class="fa fa-4x fa-fw fa-twitter-square" aria-hidden="true"></i></div>
-      <ul class="list-unstyled text-center bsk-docs-icons-details">
+  <div class="bsk-row">
+    <div class="bsk-col-12-md-3">
+      <div class="bsk-docs-icon"><i class="fa fa-fw fa-4x fa-twitter-square" aria-hidden="true"></i></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Twitter</li>
         <li class="bsk-docs-icon-reference">fa-twitter-square</li>
         <li><code>&lt;i class="fa fa-fw fa-twitter-square" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
-    <div class="col-md-3">
-      <div class="bsk-docs-icon"><i class="fa fa-4x fa-fw fa-facebook-square" aria-hidden="true"></i></div>
-      <ul class="list-unstyled text-center bsk-docs-icons-details">
+    <div class="bsk-col-12-md-3">
+      <div class="bsk-docs-icon"><i class="fa fa-fw fa-4x fa-facebook-square" aria-hidden="true"></i></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Facebook</li>
         <li class="bsk-docs-icon-reference">fa-facebook-square</li>
         <li><code>&lt;i class="fa fa-fw fa-facebook-square" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
-    <div class="col-md-3">
-      <div class="bsk-docs-icon"><i class="fa fa-4x fa-fw fa-youtube-square" aria-hidden="true"></i></div>
-      <ul class="list-unstyled text-center bsk-docs-icons-details">
+    <div class="bsk-col-12-md-3">
+      <div class="bsk-docs-icon"><i class="fa fa-fw fa-4x fa-youtube-square" aria-hidden="true"></i></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>YouTube</li>
         <li class="bsk-docs-icon-reference">fa-youtube-square</li>
         <li><code>&lt;i class="fa fa-fw fa-youtube-square" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
-    <div class="col-md-3">
-      <div class="bsk-docs-icon"><i class="fa fa-4x fa-fw fa-rss-square"
+    <div class="bsk-col-12-md-3">
+      <div class="bsk-docs-icon"><i class="fa fa-fw fa-4x fa-rss-square"
       aria-hidden="true"></i></div>
-      <ul class="list-unstyled text-center bsk-docs-icons-details">
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>RSS</li>
         <li class="bsk-docs-icon-reference">fa-rss-square</li>
         <li><code>&lt;i class="fa fa-fw fa-rss-square" aria-hidden="true"&gt;&lt;/i&gt;</code></li>

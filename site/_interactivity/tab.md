@@ -19,7 +19,8 @@ Use the Bootstrap [tabs](http://getbootstrap.com/javascript/#tabs) plugin with t
 [pills]({{ '/components/nav/#pill-navigation' | prepend: site.baseurl }}) and
 [tabs]({{ '/components/nav/#tab-navigation' | prepend: site.baseurl }}).
 
-[View Tabs Plugin](http://getbootstrap.com/javascript/#tabs){:.btn .btn-bsk .btn-default }
+[View Tabs Plugin](http://getbootstrap.com/javascript/#tabs){:.bsk-btn .bsk-btn-default }
 
-All Bootstrap plugins require [jQuery](https://jquery.com){: .alert-link }.
-{: .alert .alert-warning }
+{% alert info %}
+All Bootstrap plugins require [jQuery](https://jquery.com){: .bsk-alert-link }.
+{% endalert %}

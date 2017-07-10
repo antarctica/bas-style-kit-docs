@@ -26,8 +26,9 @@ sections:
 Use the <code>&lt;code&gt;</code> tag to denote snippets of code.
 Any angle brackets will need escaping with `&lt;` and `&gt;`.
 
-**Heads up!** Inline code elements are not yet fully styled, but will be in the next version of the Style Kit.
-{: .alert .alert-info }
+{% alert info %}
+**Heads up!** Inline code elements are not fully styled yet.
+{% endalert %}
 
 {% example html %}
 <code>var foo = 'bar';</code>
@@ -41,11 +42,9 @@ Any angle brackets will need escaping with `&lt;` and `&gt;`.
   included="yes"
 %}
 
-Use the <code>&lt;pre&gt;</code> tag to denote multiple lines of code, or where formatting need to be preserved.
-Any angle brackets will need escaping with `&lt;` and `&gt;`.
+Use the <code>&lt;pre&gt;</code> tag to denote multiple lines of code, or where formatting need to be preserved. Any angle brackets will need escaping with `&lt;` and `&gt;`.
 
-Use `.pre-scrollable` to fix the height of code block and add horizontal scrolling.
-{: .alert .alert-info }
+Use `.bsk-pre-scrollable` to fix the height of code block and add horizontal scrolling.
 
 {% example html %}
 <pre>

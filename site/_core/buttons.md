@@ -28,14 +28,12 @@ sections:
   heading_level=2
 %}
 
-Use the `.btn` and `.btn-bsk` classes to create clickable actions or links.
+Use the `.bsk-btn` class to create clickable actions or links.
 
-You **must** pick a [variant]({{ '/core/buttons/#variants' | prepend: site.baseurl }}){: .alert-link } for each button,
-otherwise it will look strange. It is not enough to use `.btn .btn-bsk` on its own.
-{: .alert .alert-warning }
-
-Always use the `.btn-bsk` and `.btn` classes together so that Style Kit specific styles are applied.
-{: .alert .alert-info }
+{% alert warning style=solid %}
+You **must** pick a [variant]({{ '/core/buttons/#variants' | prepend: site.baseurl }}){: .bsk-alert-link } for each
+button, otherwise it will look strange. It is not enough to use `.bsk-btn` on its own.
+{% endalert %}
 
 {% include snippets/topic-section-metadata.html
   title="Supported elements"
@@ -45,27 +43,28 @@ Always use the `.btn-bsk` and `.btn` classes together so that Style Kit specific
   included="yes"
 %}
 
-These styles are fully supported when used with these elements:
+These elements are fully supported:
 
 * <code>&lt;button&gt;</code>
 
-These styles are also supported, but to a lesser extent, when used with these elements:
+These elements are also supported, but to a lesser extent:
 
 * <code>&lt;a&gt;</code>
 * <code>&lt;input&gt;</code>
 
 Other elements may be used as well, but are not supported and may not look right.
 
+{% alert info %}
 Use `role="button"` for link elements which trigger in-page functionality (such as collapsing
 content) to give
-[proper context to assistive technologies]({{ '/start/standards-accessibility/#link-context-and-roles' | prepend: site.baseurl }}){: .alert-link }.
-{: .alert .alert-info }
+[proper context to assistive technologies]({{ '/start/standards-accessibility/#link-context-and-roles' | prepend: site.baseurl }}){: .bsk-alert-link }.
+{% endalert %}
 
 {% example html %}
-<button class="btn btn-bsk btn-default" type="submit">Button</button>
-<input class="btn btn-bsk btn-default" type="button" value="Input">
-<input class="btn btn-bsk btn-default" type="submit" value="Submit">
-<a class="btn btn-bsk btn-default" href="#" role="button">Link</a>
+<button class="bsk-btn bsk-btn-default" type="submit">Button</button>
+<input class="bsk-btn bsk-btn-default" type="button" value="Input">
+<input class="bsk-btn bsk-btn-default" type="submit" value="Submit">
+<a class="bsk-btn bsk-btn-default" href="#" role="button">Link</a>
 {% endexample %}
 
 {% include snippets/topic-section-metadata.html
@@ -81,11 +80,11 @@ content) to give
   included="yes"
 %}
 
-Add the `.btn-default` for standard or secondary buttons. For added context you can use
+Add the `.bsk-btn-default` class for standard or secondary buttons. For added context you can use
 [contextual colours]({{ '/core/buttons/#contextual-colours' | prepend: site.baseurl }}).
 
 {% example html %}
-<button class="btn btn-bsk btn-default" type="submit">Action</button>
+<button class="bsk-btn bsk-btn-default" type="submit">Action</button>
 {% endexample %}
 
 {% include snippets/topic-section-metadata.html
@@ -96,12 +95,10 @@ Add the `.btn-default` for standard or secondary buttons. For added context you 
   included="yes"
 %}
 
-**Heads up!** This class will be renamed `.btn-primary` in the next version of the Style Kit. See
-[BSK-130](https://jira.ceh.ac.uk/browse/bsk-130) for more information.
-{: .alert .alert-info }
+Add the `.bsk-btn-primary` class for the main call to action.
 
 {% example html %}
-<button class="btn btn-bsk btn-bsk-primary" type="submit">Primary Action</button>
+<button class="bsk-btn bsk-btn-primary" type="submit">Primary Action</button>
 {% endexample %}
 
 {% include snippets/topic-section-metadata.html
@@ -117,17 +114,17 @@ used for context by adding these classes:
 
 | Standard Context | Button Contextual Class |
 | ---------------- | ----------------------- |
-| Success          | `.btn-success`          |
-| Warning          | `.btn-warning`          |
-| Danger           | `.btn-danger`           |
-| Info             | `.btn-info`             |
-{: .table .table-responsive }
+| Success          | `.bsk-btn-success`      |
+| Warning          | `.bsk-btn-warning`      |
+| Danger           | `.bsk-btn-danger`       |
+| Info             | `.bsk-btn-info`         |
+{: .bsk-table .bsk-table-responsive }
 
 {% example html %}
-<button class="btn btn-bsk btn-success">Success Action</button>
-<button class="btn btn-bsk btn-warning">Warning Action</button>
-<button class="btn btn-bsk btn-danger">Dangerous Action</button>
-<button class="btn btn-bsk btn-info">Info Action</button>
+<button class="bsk-btn bsk-btn-success">Success Action</button>
+<button class="bsk-btn bsk-btn-warning">Warning Action</button>
+<button class="bsk-btn bsk-btn-danger">Dangerous Action</button>
+<button class="bsk-btn bsk-btn-info">Info Action</button>
 {% endexample %}
 
 {% include snippets/topic-section-metadata.html
@@ -138,15 +135,22 @@ used for context by adding these classes:
   included="yes"
 %}
 
-The [standard contextual icons]({{ '/core/icons/#standard-contextual-icons' | prepend: site.baseurl }}) can be
+The [standard contextual icons]({{ '/core/icons/#standard-contextual-icons' | prepend: site.baseurl }}) can also be
 used for adding context to buttons, usually with the
 [contextual colours]({{ '/core/buttons/#contextual-colours' | prepend: site.baseurl }}).
 
 {% example html %}
-<button class="btn btn-bsk btn-success"><i class="fa fa-fw fa-check" aria-hidden="true"></i> Success Action</button>
-<button class="btn btn-bsk btn-warning"><i class="fa fa-fw fa-exclamation-triangle" aria-hidden="true"></i> Warning Action</button>
-<button class="btn btn-bsk btn-danger"><i class="fa fa-fw fa-exclamation-circle" aria-hidden="true"></i> Dangerous Action</button>
-<button class="btn btn-bsk btn-info"><i class="fa fa-fw fa-info" aria-hidden="true"></i> Info Action</button>
+<button class="bsk-btn bsk-btn-default"><i class="fa fa-fw fa-check" aria-hidden="true"></i> Success Action</button>
+<button class="bsk-btn bsk-btn-default"><i class="fa fa-fw fa-exclamation-triangle" aria-hidden="true"></i> Warning Action</button>
+<button class="bsk-btn bsk-btn-default"><i class="fa fa-fw fa-exclamation-circle" aria-hidden="true"></i> Dangerous Action</button>
+<button class="bsk-btn bsk-btn-default"><i class="fa fa-fw fa-info" aria-hidden="true"></i> Info Action</button>
+{% endexample %}
+
+{% example html %}
+<button class="bsk-btn bsk-btn-success"><i class="fa fa-fw fa-check" aria-hidden="true"></i> Success Action</button>
+<button class="bsk-btn bsk-btn-warning"><i class="fa fa-fw fa-exclamation-triangle" aria-hidden="true"></i> Warning Action</button>
+<button class="bsk-btn bsk-btn-danger"><i class="fa fa-fw fa-exclamation-circle" aria-hidden="true"></i> Dangerous Action</button>
+<button class="bsk-btn bsk-btn-info"><i class="fa fa-fw fa-info" aria-hidden="true"></i> Info Action</button>
 {% endexample %}
 
 {% include snippets/topic-section-metadata.html
@@ -158,10 +162,10 @@ used for adding context to buttons, usually with the
 %}
 
 Use this variant to draw attention away from a button, but whilst still functioning like one. Useful for less common
-actions, or those you wish to guide users away from.
+actions, or those you don't want users to use without thinking (such as delete).
 
 {% example html %}
-<button class="btn btn-bsk btn-link" type="submit">Uncommon Action</button>
+<button class="bsk-btn bsk-btn-link" type="submit">Uncommon Action</button>
 {% endexample %}
 
 {% include snippets/topic-section-metadata.html
@@ -174,18 +178,18 @@ actions, or those you wish to guide users away from.
 
 Add one of these classes to alter the size of a button:
 
-| Button Size | Button Size Class |
-| ----------- | ----------------- |
-| Large       | `.btn-lg`         |
-| Small       | `.btn-sm`         |
-| Extra-small | `.btn-xl`         |
-{: .table .table-responsive }
+| Button Size | Button Size Class     |
+| ----------- | --------------------- |
+| Large       | `.bsk-btn-lg`         |
+| Small       | `.bsk-btn-sm`         |
+| Extra-small | `.bsk-btn-xl`         |
+{: .bsk-table .bsk-table-responsive }
 
 {% example html %}
-<p><button class="btn btn-bsk btn-default btn-lg">Large Button</button></p>
-<p><button class="btn btn-bsk btn-default">Regular Button</button></p>
-<p><button class="btn btn-bsk btn-default btn-sm">Small Button</button></p>
-<p><button class="btn btn-bsk btn-default btn-xs">Extra-Small Button</button></p>
+<p><button class="bsk-btn bsk-btn-default bsk-btn-lg">Large Button</button></p>
+<p><button class="bsk-btn bsk-btn-default">Regular Button</button></p>
+<p><button class="bsk-btn bsk-btn-default bsk-btn-sm">Small Button</button></p>
+<p><button class="bsk-btn bsk-btn-default bsk-btn-xs">Extra-Small Button</button></p>
 {% endexample %}
 
 {% include snippets/topic-section-metadata.html
@@ -196,12 +200,12 @@ Add one of these classes to alter the size of a button:
   included="yes"
 %}
 
-Add `.btn-block` for buttons to span the width of their parent.
+Add `.bsk-btn-block` for buttons to span the width of their parent.
 
 {% example html %}
-<div class="row">
-  <div class="col-md-6 col-md-offset-3">
-    <button class="btn btn-bsk btn-default btn-block" type="submit">Block Button</button>
+<div class="bsk-row">
+  <div class="bsk-col-12-md-6 bsk-col-12-md-offset-3">
+    <button class="bsk-btn bsk-btn-default bsk-btn-block" type="submit">Block Button</button>
   </div>
 </div>
 {% endexample %}
@@ -220,15 +224,16 @@ Add `.btn-block` for buttons to span the width of their parent.
 %}
 
 Active buttons appear *pressed* using a darker background, border and inset shadow. This state will be applied
-automatically when pressed, or forced by adding the `.active` class if needed.
+automatically when pressed, or forced by adding the `.bsk-active` class if needed.
 
+{% alert info %}
 Use `aria-pressed="true"` to give
-[proper context to assistive technologies]({{ '/start/standards-accessibility/#link-context-and-roles' | prepend: site.baseurl }}){: .alert-link }.
-{: .alert .alert-info }
+[proper context to assistive technologies]({{ '/start/standards-accessibility/#link-context-and-roles' | prepend: site.baseurl }}){: .alert-bsk-link }.
+{% endalert %}
 
 {% example html %}
-<button class="btn btn-bsk btn-default active">Active Action</button>
-<a class="btn btn-bsk btn-default active" href="#" role="button">Active Action</a>
+<button class="bsk-btn bsk-btn-default bsk-active">Active Action</button>
+<a class="bsk-btn bsk-btn-default bsk-active" href="#" role="button">Active Action</a>
 {% endexample %}
 
 {% include snippets/topic-section-metadata.html
@@ -239,10 +244,15 @@ Use `aria-pressed="true"` to give
   included="yes"
 %}
 
-**It is not safe to rely on this state to prevent users activating disabled actions**. <br>
-Browsers may not enforce these properties, or users may trivially edit the DOM. Server side protections **must**
-be used for dangerous actions.
-{: .alert .alert-danger }
+
+<div class="bsk-alert bsk-alert-solid-danger bsk-alert-block bsk-alert-icon">
+  <header class="bsk-alert-title">
+    <h4><i class="fa fa-fw fa-exclamation-circle bsk-alert-icon"></i>
+    It is not safe to rely on this state to prevent users activating disabled actions</h4>
+  </header>
+  <p>Browsers may not enforce these properties, or users may trivially edit the DOM. Server side protections
+   <strong>must</strong> be used for dangerous actions.</p>
+</div>
 
 {% include snippets/topic-section-metadata.html
   title="Disabled button elements"
@@ -252,7 +262,7 @@ be used for dangerous actions.
 Add the `disabled` attribute to indicate unavailable actions.
 
 {% example html %}
-<button class="btn btn-bsk btn-default" disabled>Disabled Action</button>
+<button class="bsk-btn bsk-btn-default" disabled>Disabled Action</button>
 {% endexample %}
 
 {% include snippets/topic-section-metadata.html
@@ -260,8 +270,8 @@ Add the `disabled` attribute to indicate unavailable actions.
   heading_level=4
 %}
 
-Add the `.disabled` class to indicate unavailable actions.
+Add the `.bsk-disabled` class to indicate unavailable actions.
 
 {% example html %}
-<a class="btn btn-bsk btn-default disabled" href="#" role="button">Disabled Action</a>
+<a class="bsk-btn bsk-btn-default bsk-disabled" href="#" role="button">Disabled Action</a>
 {% endexample %}

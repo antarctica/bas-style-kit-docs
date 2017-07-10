@@ -39,22 +39,20 @@ Include these two CSS files, in the order given and before any other of your pro
 in the <code>&lt;head&gt;</code> element:
 
 {% highlight html %}
-{% include snippets/link-css-bootstrap-bsk-min.html %}
-{% endhighlight %}
-
-{% highlight html %}
 {% include snippets/link-css-bas-style-kit-min.html %}
 {% endhighlight %}
 
 The first file, `bootstrap-bsk.min.css`, is the customised version of [Bootstrap](https://www.getbootstrap.com). <br />
 The second, `bas-style-kit.min.css`, is the Style Kit itself.
 
+{% alert warning style=highlight %}
 The order of these files is important because of how CSS styles cascade.
-{: .alert .alert-warning }
+{% endalert %}
 
+{% alert info style=highlight %}
 Other ways of including the Style Kit in a website or application are listed in the
-[distribution]({{ '/start/distribution' | prepend: site.baseurl }}){: .alert-link } documentation.
-{: .alert .alert-info }
+[distribution]({{ '/start/distribution' | prepend: site.baseurl }}){: .bsk-alert-link } documentation.
+{% endalert %}
 
 {% include snippets/topic-section-metadata.html
   title="Starter template"
@@ -64,9 +62,10 @@ Other ways of including the Style Kit in a website or application are listed in 
 Below is the minimal HTML needed to use the BAS Style Kit, following recommended best practices, and ensuring
 compatibility with older web browsers.
 
-This [starter template]({{ '/examples/starter-template' | prepend: site.baseurl }}){: .alert-link } is also available
+{% alert info %}
+This [starter template]({{ '/examples/starter-template' | prepend: site.baseurl }}){: .bsk-alert-link } is also available
 as a standalone example.
-{: .alert .alert-info }
+{% endalert %}
 
 {% highlight html %}
 <!DOCTYPE html>

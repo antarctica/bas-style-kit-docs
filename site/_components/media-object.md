@@ -14,11 +14,11 @@ sections:
   heading_level=2
 %}
 
-Use the `.media` class to show a left or right aligned image next to some text.
+Use the `.bsk-media` class to show a left or right aligned image next to some text.
 
-Use the `.media-object` class for the image of a media item.
+Use the `.bsk-media-object` class for the image of a media item.
 
-Use the `.media-body` class, with an optional `.media-header` element, for the text of a media item.
+Use the `.bsk-media-body` class, with an optional `.bsk-media-header` element, for the text of a media item.
 
 {% include snippets/topic-section-metadata.html
   title="Variants"
@@ -34,12 +34,12 @@ Use the `.media-body` class, with an optional `.media-header` element, for the t
 %}
 
 {% example html %}
-<div class="media">
-  <div class="media-left">
-    <a href="#"><img class="media-object" src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Avatar&w=64&h=64" alt="Avatar"></a>
+<div class="bsk-media">
+  <div class="bsk-media-left">
+    <a href="#"><img class="bsk-media-object" src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Avatar&w=64&h=64" alt="Avatar"></a>
   </div>
-  <div class="media-body">
-    <h4 class="media-heading">Media heading</h4>
+  <div class="bsk-media-body">
+    <h4 class="bsk-media-heading">Media heading</h4>
     Media body
   </div>
 </div>
@@ -53,26 +53,26 @@ Use the `.media-body` class, with an optional `.media-header` element, for the t
   included="yes"
 %}
 
-Use the `.media-list` class on a list where each list item is a media object.
+Use the `.bsk-media-list` class on a list where each list item is a media object.
 
 {% example html %}
-<ul class="media-list">
-  <li class="media">
-    <div class="media-left">
-      <a href="#"><img class="media-object" src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Avatar&w=64&h=64" alt="Avatar"></a>
+<ul class="bsk-media-list">
+  <li class="bsk-media">
+    <div class="bsk-media-left">
+      <a href="#"><img class="bsk-media-object" src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Avatar&w=64&h=64" alt="Avatar"></a>
     </div>
-    <div class="media-body">
-      <h4 class="media-heading">Media heading</h4>
+    <div class="bsk-media-body">
+      <h4 class="bsk-media-heading">Media heading</h4>
       Hundreds of thousands rich in heavy atoms shores of the cosmic ocean corpus callosum?
       The sky calls to us colonies, shores of the cosmic ocean? Bits of moving fluff.
     </div>
   </li>
-  <li class="media">
-    <div class="media-left">
-      <a href="#"><img class="media-object" src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Avatar&w=64&h=64" alt="Avatar"></a>
+  <li class="bsk-media">
+    <div class="bsk-media-left">
+      <a href="#"><img class="bsk-media-object" src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Avatar&w=64&h=64" alt="Avatar"></a>
     </div>
-    <div class="media-body">
-      <h4 class="media-heading">Media heading</h4>
+    <div class="bsk-media-body">
+      <h4 class="bsk-media-heading">Media heading</h4>
       Hundreds of thousands rich in heavy atoms shores of the cosmic ocean corpus callosum?
       The sky calls to us colonies, shores of the cosmic ocean? Bits of moving fluff.
     </div>
@@ -83,41 +83,41 @@ Use the `.media-list` class on a list where each list item is a media object.
 Media objects can also be nested.
 
 {% example html %}
-<ul class="media-list">
-  <li class="media">
-    <div class="media-left">
-      <a href="#"><img class="media-object" src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Avatar&w=64&h=64" alt="Avatar"></a>
+<ul class="bsk-media-list">
+  <li class="bsk-media">
+    <div class="bsk-media-left">
+      <a href="#"><img class="bsk-media-object" src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Avatar&w=64&h=64" alt="Avatar"></a>
     </div>
-    <div class="media-body">
-      <h4 class="media-heading">Media heading</h4>
+    <div class="bsk-media-body">
+      <h4 class="bsk-media-heading">Media heading</h4>
       Hundreds of thousands rich in heavy atoms shores of the cosmic ocean corpus callosum?
       The sky calls to us colonies, shores of the cosmic ocean? Bits of moving fluff.
     </div>
   </li>
-  <li class="media">
-    <div class="media-left">
-      <a href="#"><img class="media-object" src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Avatar&w=64&h=64" alt="Avatar"></a>
+  <li class="bsk-media">
+    <div class="bsk-media-left">
+      <a href="#"><img class="bsk-media-object" src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Avatar&w=64&h=64" alt="Avatar"></a>
     </div>
-    <div class="media-body">
-      <h4 class="media-heading">Media heading</h4>
+    <div class="bsk-media-body">
+      <h4 class="bsk-media-heading">Media heading</h4>
       Hundreds of thousands rich in heavy atoms shores of the cosmic ocean corpus callosum?
       The sky calls to us colonies, shores of the cosmic ocean? Bits of moving fluff.
       <!-- Nested media object -->
-      <div class="media">
-        <div class="media-left">
-          <a href="#"><img class="media-object" src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Avatar&w=64&h=64" alt="Avatar"></a>
+      <div class="bsk-media">
+        <div class="bsk-media-left">
+          <a href="#"><img class="bsk-media-object" src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Avatar&w=64&h=64" alt="Avatar"></a>
         </div>
         <!-- Nested media object -->
-        <div class="media-body">
-          <h4 class="media-heading">Media heading</h4>
+        <div class="bsk-media-body">
+          <h4 class="bsk-media-heading">Media heading</h4>
           Hundreds of thousands rich in heavy atoms shores of the cosmic ocean corpus callosum?
           The sky calls to us colonies, shores of the cosmic ocean? Bits of moving fluff.
-          <div class="media">
-            <div class="media-left">
-              <a href="#"><img class="media-object" src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Avatar&w=64&h=64" alt="Avatar"></a>
+          <div class="bsk-media">
+            <div class="bsk-media-left">
+              <a href="#"><img class="bsk-media-object" src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Avatar&w=64&h=64" alt="Avatar"></a>
             </div>
-            <div class="media-body">
-              <h4 class="media-heading">Media heading</h4>
+            <div class="bsk-media-body">
+              <h4 class="bsk-media-heading">Media heading</h4>
               Hundreds of thousands rich in heavy atoms shores of the cosmic ocean corpus callosum?
               The sky calls to us colonies, shores of the cosmic ocean? Bits of moving fluff.
             </div>
@@ -126,12 +126,12 @@ Media objects can also be nested.
       </div>
     </div>
   </li>
-  <li class="media">
-    <div class="media-left">
-      <a href="#"><img class="media-object" src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Avatar&w=64&h=64" alt="Avatar"></a>
+  <li class="bsk-media">
+    <div class="bsk-media-left">
+      <a href="#"><img class="bsk-media-object" src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Avatar&w=64&h=64" alt="Avatar"></a>
     </div>
-    <div class="media-body">
-      <h4 class="media-heading">Media heading</h4>
+    <div class="bsk-media-body">
+      <h4 class="bsk-media-heading">Media heading</h4>
       Hundreds of thousands rich in heavy atoms shores of the cosmic ocean corpus callosum?
       The sky calls to us colonies, shores of the cosmic ocean? Bits of moving fluff.
     </div>
@@ -156,18 +156,18 @@ Add one of these classes to align a media object horizontally:
 
 | Horizontal Alignment | Horizontal Alignment Class |
 | -------------------- | -------------------------- |
-| Left                 | `.media-left`              |
-| Right                | `.media-right`             |
-{: .table .table-responsive }
+| Left                 | `.bsk-media-left`          |
+| Right                | `.bsk-media-right`         |
+{: .bsk-table .bsk-table-responsive }
 
 {% example html %}
 <!-- Left aligned -->
-<div class="media">
-  <div class="media-left">
-    <a href="#"><img class="media-object" src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Avatar&w=64&h=64" alt="Avatar"></a>
+<div class="bsk-media">
+  <div class="bsk-media-left">
+    <a href="#"><img class="bsk-media-object" src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Avatar&w=64&h=64" alt="Avatar"></a>
   </div>
-  <div class="media-body">
-    <h4 class="media-heading">Media heading</h4>
+  <div class="bsk-media-body">
+    <h4 class="bsk-media-heading">Media heading</h4>
     Hundreds of thousands rich in heavy atoms shores of the cosmic ocean corpus callosum?
     The sky calls to us colonies, shores of the cosmic ocean? Bits of moving fluff.
   </div>
@@ -176,14 +176,14 @@ Add one of these classes to align a media object horizontally:
 <hr />
 
 <!-- Right aligned -->
-<div class="media">
-  <div class="media-body">
-    <h4 class="media-heading">Media heading</h4>
+<div class="bsk-media">
+  <div class="bsk-media-body">
+    <h4 class="bsk-media-heading">Media heading</h4>
     Hundreds of thousands rich in heavy atoms shores of the cosmic ocean corpus callosum?
     The sky calls to us colonies, shores of the cosmic ocean? Bits of moving fluff.
   </div>
-  <div class="media-right">
-    <a href="#"><img class="media-object" src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Avatar&w=64&h=64" alt="Avatar"></a>
+  <div class="bsk-media-right">
+    <a href="#"><img class="bsk-media-object" src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Avatar&w=64&h=64" alt="Avatar"></a>
   </div>
 </div>
 {% endexample %}
@@ -198,18 +198,18 @@ Add one of these classes to align a media object horizontally:
 
 | Vertical Alignment  | Vertical Alignment Class |
 | ------------------- | ------------------------ |
-| Middle              | `.media-middle`          |
-| Bottom              | `.media-bottom`          |
-{: .table .table-responsive }
+| Middle              | `.bsk-media-middle`      |
+| Bottom              | `.bsk-media-bottom`      |
+{: .bsk-table .bsk-table-responsive }
 
 {% example html %}
 <!-- Top aligned (default) -->
-<div class="media">
-  <div class="media-left">
-    <a href="#"><img class="media-object" src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Avatar&w=64&h=64" alt="Avatar"></a>
+<div class="bsk-media">
+  <div class="bsk-media-left">
+    <a href="#"><img class="bsk-media-object" src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Avatar&w=64&h=64" alt="Avatar"></a>
   </div>
-  <div class="media-body">
-    <h4 class="media-heading">Media heading</h4>
+  <div class="bsk-media-body">
+    <h4 class="bsk-media-heading">Media heading</h4>
     Hundreds of thousands rich in heavy atoms shores of the cosmic ocean corpus callosum?
     Trillion adipisci velit star stuff harvesting star light from which we spring network of wormholes eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
     Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit great turbulent clouds dream of the mind's eye Vangelis?
@@ -220,12 +220,12 @@ Add one of these classes to align a media object horizontally:
 <hr />
 
 <!-- Middle aligned -->
-<div class="media">
-  <div class="media-left media-middle">
-    <a href="#"><img class="media-object" src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Avatar&w=64&h=64" alt="Avatar"></a>
+<div class="bsk-media">
+  <div class="bsk-media-left bsk-media-middle">
+    <a href="#"><img class="bsk-media-object" src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Avatar&w=64&h=64" alt="Avatar"></a>
   </div>
-  <div class="media-body">
-    <h4 class="media-heading">Media heading</h4>
+  <div class="bsk-media-body">
+    <h4 class="bsk-media-heading">Media heading</h4>
     Hundreds of thousands rich in heavy atoms shores of the cosmic ocean corpus callosum?
     Trillion adipisci velit star stuff harvesting star light from which we spring network of wormholes eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
     Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit great turbulent clouds dream of the mind's eye Vangelis?
@@ -236,12 +236,12 @@ Add one of these classes to align a media object horizontally:
 <hr />
 
 <!-- Bottom aligned -->
-<div class="media">
-  <div class="media-left media-bottom">
-    <a href="#"><img class="media-object" src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Avatar&w=64&h=64" alt="Avatar"></a>
+<div class="bsk-media">
+  <div class="bsk-media-left bsk-media-bottom">
+    <a href="#"><img class="bsk-media-object" src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Avatar&w=64&h=64" alt="Avatar"></a>
   </div>
-  <div class="media-body">
-    <h4 class="media-heading">Media heading</h4>
+  <div class="bsk-media-body">
+    <h4 class="bsk-media-heading">Media heading</h4>
     Hundreds of thousands rich in heavy atoms shores of the cosmic ocean corpus callosum?
     Trillion adipisci velit star stuff harvesting star light from which we spring network of wormholes eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
     Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit great turbulent clouds dream of the mind's eye Vangelis?

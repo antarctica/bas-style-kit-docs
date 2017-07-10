@@ -3,17 +3,17 @@ layout: html
 ---
 
 <div id="site-top"></div>
-<a href="#site-content" class="sr-only sr-only-focusable">Skip to main content</a>
+<a href="#site-content" class="bsk-sr-only bsk-sr-only-focusable">Skip to main content</a>
 {% include layout/cookie-banner.html %}
 {% include layout/site-navigation.html %}
-{% if jekyll.environment != 'production' %}{% include layout/testing-site.html position="after-main-navigation" %}{% endif %}
+{% unless jekyll.environment == 'production' %}{% include layout/testing-site.html position="after-main-navigation" %}{% endunless %}
 {% include layout/beta-banner.html %}
 
-<main class="container">
+<main class="bsk-container">
     {{ content }}
 </main>
 
-{% if jekyll.environment != 'production' %}{% include layout/testing-site.html position="before-footer" %}{% endif %}
+{% unless jekyll.environment == 'production' %}{% include layout/testing-site.html position="before-footer" %}{% endunless %}
 {% include layout/site-footer.html %}
 
 {% include snippets/body-js.html %}

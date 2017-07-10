@@ -20,22 +20,21 @@ sections:
   heading_level=2
 %}
 
-Use the `.alert` class to highlight feedback about a user action, or some other event.
+Use the `.bsk-alert` class to highlight feedback about a user action, or some other event.
 
-You **must** pick a [variant]({{ '/components/alert/#variants' | prepend: site.baseurl }}){: .alert-link } for each
-alert, otherwise it will look strange. It is not enough to use `.alert` on its own.
-{: .alert .alert-warning }
-
-**Heads up!** Alert elements are not yet fully styled, but will be in the next version of the Style Kit.
-{: .alert .alert-info }
+{% alert warning style=solid %}
+You **must** pick a [variant]({{ '/components/alert/#variants' | prepend: site.baseurl }}){: .bsk-alert-link } for each
+alert, otherwise it will look strange. It is not enough to use `.bsk-alert` on its own.
+{% endalert %}
 
 {% include snippets/topic-section-metadata.html
   title="Variants"
   heading_level=2
 %}
 
+{% alert info %}
 There is no *default* alert variant, as a grey alert for example wouldn't make a lot of sense.
-{: .alert .alert-info }
+{% endalert %}
 
 {% include snippets/topic-section-metadata.html
   title="Contextual colours"
@@ -48,19 +47,19 @@ There is no *default* alert variant, as a grey alert for example wouldn't make a
 The [standard contextual colours]({{ '/core/colours/#standard-contextual-colours' | prepend: site.baseurl }}) can be
 used for context by adding these classes:
 
-| Standard Context | Label Contextual Class |
-| ---------------- | ---------------------- |
-| Success          | `.label-success`       |
-| Warning          | `.label-warning`       |
-| Danger           | `.label-danger`        |
-| Info             | `.label-info`          |
-{: .table .table-responsive }
+| Standard Context | Alert Contextual Class     |
+| ---------------- | -------------------------- |
+| Success          | `.bsk-alert-solid-success` |
+| Warning          | `.bsk-alert-solid-warning` |
+| Danger           | `.bsk-alert-solid-danger`  |
+| Info             | `.bsk-alert-solid-info`    |
+{: .bsk-table .bsk-table-responsive }
 
 {% example html %}
-<div class="alert alert-success" role="alert">Success alert</div>
-<div class="alert alert-warning" role="alert">Warning alert</div>
-<div class="alert alert-danger" role="alert">Danger alert</div>
-<div class="alert alert-info" role="alert">Info alert</div>
+<div class="bsk-alert bsk-alert-solid-success" role="alert">Success alert</div>
+<div class="bsk-alert bsk-alert-solid-warning" role="alert">Warning alert</div>
+<div class="bsk-alert bsk-alert-solid-danger" role="alert">Danger alert</div>
+<div class="bsk-alert bsk-alert-solid-info" role="alert">Info alert</div>
 {% endexample %}
 
 {% include snippets/topic-section-metadata.html
@@ -75,13 +74,20 @@ The [standard contextual icons]({{ '/core/icons/#standard-contextual-icons' | pr
 used for adding extra context to alerts.
 
 {% example html %}
-<div class="alert alert-success" role="alert"><i class="fa fa-fw fa-check text-success" aria-hidden="true"></i> Success alert</div>
-<div class="alert alert-warning" role="alert"><i class="fa fa-fw fa-exclamation-triangle text-warning" aria-hidden="true"></i> Warning alert</div>
-<div class="alert alert-danger" role="alert"><i class="fa fa-fw fa-exclamation-circle text-danger" aria-hidden="true"></i> Danger alert</div>
-<div class="alert alert-info" role="alert"><i class="fa fa-fw fa-info text-info" aria-hidden="true"></i> Info alert</div>
+<div class="bsk-alert bsk-alert-icon bsk-alert-solid-success" role="alert">
+  <i class="fa fa-fw fa-check bsk-alert-icon" aria-hidden="true"></i> Success alert
+</div>
+<div class="bsk-alert bsk-alert-icon bsk-alert-solid-warning" role="alert">
+  <i class="fa fa-fw fa-exclamation-triangle bsk-alert-icon" aria-hidden="true"></i> Warning alert
+</div>
+<div class="bsk-alert bsk-alert-icon bsk-alert-solid-danger" role="alert">
+  <i class="fa fa-fw fa-exclamation-circle bsk-alert-icon" aria-hidden="true"></i> Danger alert
+</div>
+<div class="bsk-alert bsk-alert-icon bsk-alert-solid-info" role="alert">
+  <i class="fa fa-fw fa-info bsk-alert-icon" aria-hidden="true"></i> Info alert
+</div>
 {% endexample %}
 
-## Components
 {: #{{ 'Components' | slugify }}}
 
 {% include snippets/topic-section-metadata.html
@@ -97,12 +103,12 @@ used for adding extra context to alerts.
   included="yes"
 %}
 
-Use the `.alert-link` class for any <code>&lt;a&gt;</code> elements within an alert.
+Use the `.bsk-alert-link` class for any <code>&lt;a&gt;</code> elements within an alert.
 
 {% example html %}
-<div class="alert alert-success" role="alert">Alert with a <a href="#" class="alert-link">link</a></div>
-<!-- This example doesn't include the '.alert-link' class for demonstration purposes -->
-<div class="alert alert-success" role="alert">Alert with a <a href="#">link</a></div>
+<div class="bsk-alert bsk-alert-solid-success" role="alert">Alert with a <a href="#" class="bsk-alert-link">link</a></div>
+<!-- This example doesn't include the '.bsk-alert-link' class for demonstration purposes -->
+<div class="bsk-alert bsk-alert-solid-success" role="alert">Alert with a <a href="#">link</a></div>
 {% endexample %}
 
 {% include snippets/topic-section-metadata.html
@@ -113,18 +119,20 @@ Use the `.alert-link` class for any <code>&lt;a&gt;</code> elements within an al
   included="yes"
 %}
 
-Add a `button` element using the [close icon]({{ '/core/icons/#close-icon' | prepend: site.baseurl }}), to create an ]
+Add a `button` element using the [close icon]({{ '/core/icons/#close-icon' | prepend: site.baseurl }}), to create an]
 alert that can be closed or dismissed.
 
-Dismissible alerts require the [alert]({{ '/interactivity/alert' | prepend: site.baseurl }}){: .alert-link }
+{% alert info style=solid %}
+Dismissible alerts require the [alert]({{ '/interactivity/alert' | prepend: site.baseurl }}){: .bsk-alert-link }
 JavaScript plugin, which is enabled on this site.
-{: .alert .alert-info }
+{% endalert %}
 
+{% alert danger style=highlight %}
 The close button element should use a `button` element, not a <code>&lt;a&gt;</code> element, for browser compatibility.
-{: .alert .alert-danger }
+{% endalert %}
 
 {% example html %}
-<div class="alert alert-success" role="alert">
+<div class="bsk-alert bsk-alert-solid-success" role="alert">
   <button type="button" class="close" data-dismiss="alert" aria-label="Close"><i class="fa times-circle" aria-hidden="true"></i></button>
   An alert
 </div>
