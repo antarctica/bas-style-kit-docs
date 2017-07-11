@@ -70,10 +70,6 @@ managed by third party widgets or applications such as Apex.
 
 Add `.bsk-table-striped` to style alternate rows with the <code>&lt;tbody&gt;</code> of a table.
 
-{% alert danger %}
-This won't work in Internet Explorer 8.
-{% endalert %}
-
 {% example html %}
 <table class="bsk-table bsk-table-striped">
   <thead>
