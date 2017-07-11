@@ -32,10 +32,6 @@ Use the `.bsk-img-responsive` class to scale images nicely within their parent e
   included="yes"
 %}
 
-{% alert danger %}
-Shapes with rounded edges won't work in Internet Explorer 8.
-{% endalert %}
-
 {% example html %}
 <img class="bsk-img-rounded" src="https://placeholdit.imgix.net/~text?txtsize=50&amp;w=140&amp;h=140" alt="Rounded image" >
 <img class="bsk-img-circle" src="https://placeholdit.imgix.net/~text?txtsize=50&amp;w=140&amp;h=140" alt="Circular image">

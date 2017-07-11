@@ -19,6 +19,8 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 ### Removed
 
 * Unnecessary local styles that have been replaced by improvements or additions to the Style Kit
+* HTML5 Shim and Respond.JS as the versions of Internet Explorer these were needed for are no longer supported
+* Warnings for styles incompatible with older versions of Internet Explorer as they are no longer supported
 
 ## v1.0.1 - 01/06/2017
 

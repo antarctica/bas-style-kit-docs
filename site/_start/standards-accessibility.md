@@ -44,12 +44,9 @@ In general, the BAS Style Kit aims to support all browsers supported by Bootstra
 
 This means the latest, stable, releases of all major browsers (subject to any caveats below) are supported.
 
-{% alert danger %}
-**Heads up!** Support for Internet Explorer 8 will be removed in the next Style Kit release.
+{% alert info style=highlight %}
+The Style Kit supports Internet Explorer 10 and above.
 {% endalert %}
-
-See the Bootstrap documentation on [browser support](http://getbootstrap.com/getting-started/#support)
-for more detailed information.
 
 {% include snippets/topic-section-metadata.html
   title="HTML5"

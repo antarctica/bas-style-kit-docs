@@ -24,11 +24,6 @@ Use the `.bsk-progress-bar` class to indicate the progress of some process or ac
 
 Use the `width` inline CSS property to set the progress of each progress bar.
 
-{% alert danger %}
-Some progress bar effects use CSS3 transitions and animations. These effects are not supported in Internet Explorer 9
-and below, older versions of Firefox or Opera 12.
-{% endalert %}
-
 {% alert warning %}
 Make sure to include the `aria-valuenow`, `aria-valuemin` and `aria-valuemax` attributes as well a
 `<span class="bsk-sr-only">` element. <br /> This provides a non-visual indication of the progress item, suitable for
