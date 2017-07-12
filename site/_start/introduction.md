@@ -47,7 +47,6 @@ in the <code>&lt;head&gt;</code> element:
 The first file, `bootstrap-bsk.min.css`, is the customised version of [Bootstrap](https://www.getbootstrap.com). <br />
 The second, `bas-style-kit.min.css`, is the Style Kit itself.
 
-{% alert warning style=highlight %}
 The order of these files is important because of how CSS styles cascade.
 {% alert info style=highlight %}
 See the [distribution]({{ '/start/distribution' | prepend: site.baseurl }}){: .bsk-alert-link } section for other ways
