@@ -20,7 +20,7 @@ sections:
 The BAS Style Kit is based on [Bootstrap](https://www.getbootstrap.com), the worlds most popular CSS framework.
 The Style Kit uses a customised version of Bootstrap to follow our design choices (such as not using rounded corners).
 
-The Style Kit is based on version <em>3.6.6</em> of the official
+The Style Kit is based on version <em>3.3.7</em> of the official
 [Bootstrap Sass port](https://github.com/twbs/bootstrap-sass).
 
 As well as Bootstrap, the BAS Style Kit takes influences from:
