@@ -7,6 +7,8 @@ sections:
   -
     title: Quick start
   -
+    title: Global prefix
+  -
     title: Starter template
 ---
 
@@ -49,9 +51,27 @@ The second, `bas-style-kit.min.css`, is the Style Kit itself.
 The order of these files is important because of how CSS styles cascade.
 {% endalert %}
 
+{% include snippets/topic-section-metadata.html
+  title="Global prefix"
+  heading_level=2
+%}
+
+To avoid clashes with other CSS styles and to provide a more uniform and predicatable structure, all classes within the
+Style Kit use a *Global Prefix* of <code>bsk-</code>.
+
 {% alert info style=highlight %}
 Other ways of including the Style Kit in a website or application are listed in the
 [distribution]({{ '/start/distribution' | prepend: site.baseurl }}){: .bsk-alert-link } documentation.
+I.e. use `bsk-btn bsk-btn-default` not `btn btn-default`.
+{% endalert %}
+
+There are some exceptions to this:
+
+* As an external library, [Font Awesome]({{ '/core/icons/#available-icons' | prepend: site.baseurl }}) classes are not
+prefixed (i.e. use `fa fa-star` not `bsk-fa bsk-fa-star`)
+
+{% alert warning %}
+Take care not to use default Bootstrap classes as they won't be styled correctly and may stop working without warning.
 {% endalert %}
 
 {% include snippets/topic-section-metadata.html
