@@ -25,7 +25,7 @@ sections:
   included="yes"
 %}
 
-The BAS Style Kit includes version **3.6** of the [Font Awesome](http://fontawesome.io) icon web font.
+The BAS Style Kit includes version **3.7** of the [Font Awesome](http://fontawesome.io) icon web font.
 
 {% alert warning %}
 Font Awesome replaces, and removes, the Glyphicons icon font included by default in Bootstrap, its icons therefore
