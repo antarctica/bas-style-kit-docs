@@ -190,8 +190,8 @@ Add the `.bsk-dl-lg` class to apply additional padding.
 Add the `.bsk-dl-horizontal-lg` class to extend the width of terms in horizontal
 definition lists.
 
-{% alert info %}
-This class depends on the `.bsk-dl-horizontal` classes as well.
+{% alert warning style=highlight %}
+This class depends on the `.bsk-dl-horizontal` class.
 {% endalert %}
 
 {% example html %}
@@ -244,12 +244,12 @@ This class is designed to be used with `.bsk-dl-lg` to ensure a suitable amount 
 
 The `.bsk-dl-striped` class can be combined with `.bsk-dl-horizontal`, or `.bsk-dl-horizontal-lg`.
 
-{% alert info style=highlight %}
-Remember, the `.bsk-dl-striped` class is designed to be used with `.bsk-dl-lg` to ensure a suitable amount of padding.
+{% alert warning style=highlight %}
+Remember, the `.bsk-dl-horizontal-lg` class depends on the `.bsk-dl-horizontal` class.
 {% endalert %}
 
 {% alert info style=highlight %}
-Remember, the `.bsk-dl-horizontal-lg` class depends on using `.bsk-dl-horizontal` as well.
+Remember, the `.bsk-dl-striped` class is designed to be used with `.bsk-dl-lg` to ensure a suitable amount of padding.
 {% endalert %}
 
 {% example html %}
