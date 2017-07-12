@@ -41,7 +41,7 @@ sections:
 
 These styles are applied globally, and are usually inherited by other styles, to give a consistent typographic base.
 
-* a default font size, `$font-size-base`, is set to `14px`
+* a default font size, `$font-size-base`, is set to `16px`
 * a default line height, `$line-height-base`, is set to `1.429`
 * a default font family, which applies to most elements, is set to `"Open Sans", "Helvetica Neue", Helvetica, Arial,
 sans-serif`
