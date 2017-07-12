@@ -496,12 +496,6 @@ Add one of these classes to alter the size of a jumbotron:
 </nav>
 {% endexample %}
 
-{% alert info %}
-Large navbars using a [brand image]({{ '/components/navbar/#brand-image' | prepend: site.baseurl }}){: .bsk-alert-link }
-need to use the `.bsk-navbar-brand-img-fix` class. <br />
-This adds the correct top-padding and makes the page layout look normal.
-{% endalert %}
-
 {% example html %}
 <nav class="bsk-navbar bsk-navbar-lg">
   <div class="bsk-container-fluid">
@@ -514,7 +508,7 @@ This adds the correct top-padding and makes the page layout look normal.
         <span class="bsk-icon-bar"></span>
       </button>
       <a class="bsk-navbar-brand bsk-docs-navbar-brand-bas-logo-lg" href="#">
-        <img class="bsk-fix-navbar-brand-img-txt" alt="British Antarctic Survey Logo" src="{{ '/img/bas-logo-full-white-transparent.png' | prepend: site.baseurl }}">
+        <img alt="British Antarctic Survey Logo" src="{{ '/img/bas-logo-full-white-transparent.png' | prepend: site.baseurl }}">
       </a>
     </div>
     <ul class="bsk-nav bsk-navbar-nav">

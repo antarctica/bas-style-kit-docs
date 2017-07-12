@@ -10,7 +10,7 @@ sections:
   -
     title: Image jumbotron
   -
-    title: Text overlay
+    title: Jumbotron overlay
   -
     title: Sizes
   -
@@ -94,18 +94,18 @@ Additional CSS rules will be needed to set a `background-image` property.
 %}
 
 {% include snippets/topic-section-metadata.html
-  title="Text overlay"
+  title="Jumbotron overlay"
   heading_level=3
   current_phase="live"
   current_version="0.1.0"
   included="yes"
 %}
 
-Use the `.bsk-text-overlay` class to add additional contrast around a jumbotron's title.
+Use the `.bsk-jumbotron-overlay` class to add additional contrast around a jumbotron's title.
 
 {% example html %}
 <div class="bsk-jumbotron bsk-jumbotron-image-example">
-  <h1><span class="bsk-text-overlay">Jumbotron caption</span></h1>
+  <h1><span class="bsk-jumbotron-overlay">Jumbotron caption</span></h1>
 </div>
 {% endexample %}
 
