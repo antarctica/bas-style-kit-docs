@@ -28,14 +28,14 @@ The Style Kit is based on version <em>3.3.7</em> of the official
 As well as Bootstrap, the BAS Style Kit takes influences from:
 
 * the [Government Digital Service (GDS)](https://gds.blog.gov.uk/about/)
-* other frameworks, organisations and other sources of best practice
+* other frameworks, organisations and sources of best practice
 
 {% include snippets/topic-section-metadata.html
   title="Quick start"
   heading_level=2
 %}
 
-The recommended, and quickest, way to include the BAS Style Kit in your website or application is to use the BAS CDN.
+The recommended, and quickest, way to include the BAS Style Kit in your website or service is to use the BAS CDN.
 
 Include these two CSS files, in the order given and before any other of your project's styles,
 in the <code>&lt;head&gt;</code> element:
@@ -49,6 +49,9 @@ The second, `bas-style-kit.min.css`, is the Style Kit itself.
 
 {% alert warning style=highlight %}
 The order of these files is important because of how CSS styles cascade.
+{% alert info style=highlight %}
+See the [distribution]({{ '/start/distribution' | prepend: site.baseurl }}){: .bsk-alert-link } section for other ways
+to use the Style Kit.
 {% endalert %}
 
 {% include snippets/topic-section-metadata.html
@@ -60,8 +63,6 @@ To avoid clashes with other CSS styles and to provide a more uniform and predica
 Style Kit use a *Global Prefix* of <code>bsk-</code>.
 
 {% alert info style=highlight %}
-Other ways of including the Style Kit in a website or application are listed in the
-[distribution]({{ '/start/distribution' | prepend: site.baseurl }}){: .bsk-alert-link } documentation.
 I.e. use `bsk-btn bsk-btn-default` not `btn btn-default`.
 {% endalert %}
 
@@ -82,7 +83,7 @@ Take care not to use default Bootstrap classes as they won't be styled correctly
 Below is the minimal HTML needed to use the BAS Style Kit, following recommended best practices, and ensuring
 compatibility with older web browsers.
 
-{% alert info %}
+{% alert info style=highlight %}
 This [starter template]({{ '/examples/starter-template' | prepend: site.baseurl }}){: .bsk-alert-link } is also available
 as a standalone example.
 {% endalert %}
@@ -91,28 +92,31 @@ as a standalone example.
 <!DOCTYPE html>
 <html lang="en-GB">
   <head>
-    <!-- Required meta tags always come first -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <!-- The above 3 meta tags *must* come first in the head -->
 
     <!-- Recommended meta tags for SEO -->
     <title>BAS Style Kit - Starter template</title>
     <meta name="description" content="A brief description of this page, or application">
 
-    <!-- Compiled and minified customised Bootstrap CSS for the BAS Style Kit -->
-    {% if jekyll.environment == 'staging' %}<link rel="stylesheet" href="{{ site.bsk_cdn_base_staging }}/{{ site.bsk_version_staging }}/css/bootstrap-bsk.min.css" integrity="{{ site.data.bsk_sri_base_staging['dist/css/bootstrap-bsk.min.css'] }}" crossorigin="anonymous">{% else %}
-    <link rel="stylesheet" href="{{ site.bsk_cdn_base_production }}/{{ site.bsk_version_production }}/css/bootstrap-bsk.min.css" integrity="{{ site.data.bsk_sri_base_production['dist/css/bootstrap-bsk.min.css'] }}" crossorigin="anonymous">{% endif %}
-    <!-- Compiled and minified BAS Style Kit CSS -->
-    {% if jekyll.environment == 'staging' %}<link rel="stylesheet" href="{{ site.bsk_cdn_base_staging }}/{{ site.bsk_version_staging }}/css/bas-style-kit.min.css" integrity="{{ site.data.bsk_sri_base_staging['dist/css/bas-style-kit.min.css'] }}" crossorigin="anonymous">{% else %}
-    <link rel="stylesheet" href="{{ site.bsk_cdn_base_production }}/{{ site.bsk_version_production }}/css/bas-style-kit.min.css" integrity="{{ site.data.bsk_sri_base_production['dist/css/bas-style-kit.min.css'] }}" crossorigin="anonymous">{% endif %}
+    <!-- Compiled and minified BAS Style Kit -->
+    <link rel="stylesheet" href="https://s3-eu-west-1.amazonaws.com/bas-cdn-dev/bas-style-kit/4e3aeaf/css/bas-style-kit.min.css">
 
-    <!-- Optionally - any additional CSS for your website or application -->
+    <!-- Site specific styles - optional -->
   </head>
   <body>
     <h1>Welcome to the starter template for the BAS Style Kit!</h1>
 
-    <!-- Optionally - any required JavaScript for your website or application, such as Google Analytics -->
+    <!-- jQuery (necessary for JavaScript plugins) -->
+    <script src="https://cdn.web.bas.ac.uk/js-libs/jquery-3.1.1.min.js"></script>
+    <!-- Cookie library used to persistently hide the cookie banner (slightly ironic we need a cookie to do this) -->
+    <script src="https://cdn.web.bas.ac.uk/js-libs/js.cookie-2.1.3.min.js"></script>
+    <!-- Compiled and minified JavaScript plugins provided by the Style Kit -->
+    <script src="https://cdn.web.bas.ac.uk/bas-style-kit/0.3.0-alpha/js/bas-style-kit.min.js"></script>
+
+    <!-- Site specific scripts - optional -->
   </body>
 </html>
 {% endhighlight %}

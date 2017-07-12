@@ -40,9 +40,8 @@ content is readable by those with accessibility requirements, such as screen rea
 
 {% include snippets/back-to-top.html %}
 
-In general, the BAS Style Kit aims to support all browsers supported by Bootstrap.
-
-This means the latest, stable, releases of all major browsers (subject to any caveats below) are supported.
+In general, the BAS Style Kit aims to support all browsers supported by Bootstrap. This means the latest, stable,
+releases of all major browsers (subject to any caveats below) are supported.
 
 {% alert info style=highlight %}
 The Style Kit supports Internet Explorer 10 and above.
@@ -54,9 +53,7 @@ The Style Kit supports Internet Explorer 10 and above.
 %}
 
 The BAS Style Kit is designed to work with the [HTML5](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5)
-document type.
-
-This is latest version of the HTML standard, supported by all major browsers, and includes new elements,
+document type. This is latest version of the HTML standard, supported by all major browsers, and includes new elements,
 attributes and technologies to provide better accessibility and enable new uses such as desktop like web applications.
 
 {% alert warning style=highlight %}
@@ -99,8 +96,8 @@ Responsiveness is enabled in the Style Kit using the `viewport` meta tag, as sho
 {% endhighlight %}
 
 {% alert info style=highlight %}
-If you use the [examples]({{ '/examples' | prepend: site.baseurl }}){: .bsk-alert-link } from this website, this meta tag
-will be included.
+If you use the [examples]({{ '/examples' | prepend: site.baseurl }}){: .bsk-alert-link } from this documentation, this
+meta tag will be included.
 {% endalert %}
 
 See the [responsive breakpoints]({{ '/core/layout/#responsive-breakpoints' | prepend: site.baseurl }}) section for more
@@ -203,7 +200,7 @@ correctly.
   <a href="#site-content" class="sr-only sr-only-focusable">Skip to main content</a>
   ...
   <div class="container" id="site-content" tabindex="-1">
-    <!-- The main page content -->
+    <!-- main content -->
   </div>
 </body>
 {% endhighlight %}
