@@ -37,17 +37,12 @@ As well as Bootstrap, the BAS Style Kit takes influences from:
 
 The recommended, and quickest, way to include the BAS Style Kit in your website or service is to use the BAS CDN.
 
-Include these two CSS files, in the order given and before any other of your project's styles,
-in the <code>&lt;head&gt;</code> element:
+Include this CSS file before any other of your project's styles, in the <code>&lt;head&gt;</code> element:
 
 {% highlight html %}
 {% include snippets/link-css-bas-style-kit-min.html %}
 {% endhighlight %}
 
-The first file, `bootstrap-bsk.min.css`, is the customised version of [Bootstrap](https://www.getbootstrap.com). <br />
-The second, `bas-style-kit.min.css`, is the Style Kit itself.
-
-The order of these files is important because of how CSS styles cascade.
 {% alert info style=highlight %}
 See the [distribution]({{ '/start/distribution' | prepend: site.baseurl }}){: .bsk-alert-link } section for other ways
 to use the Style Kit.
