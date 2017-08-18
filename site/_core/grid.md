@@ -47,26 +47,24 @@ alternate, interchangeable, grid with more columns.
   included="yes"
 %}
 
-There are two grids available, which can be mixed and nested if needed. They function in exactly the same way, other
-than the total number of columns.
-
-| Grid Name     | Total Columns | Class Prefix   |
-| ------------- | ------------- | -------------- |
-| Default       | 12            | `bsk-col-12`   |
-| BAS Style Kit | 24            | `bsk-col-24`   |
-{: .bsk-table .bsk-table-responsive }
-
-The extra columns in the BAS Style Kit grid are primarily intended for use in applications, where more complex or
-detailed layouts and interfaces are required.
+Two grids are available, which can be mixed and nested if needed. Other than the number of columns in each grid they
+function in the same way. The extra columns in the alternate grid are primarily intended for use in applications, where
+more complex or detailed layouts and interfaces are required.
 
 {% alert info %}
-Use the *default* grid if you are unsure which to use.
+Use the *standard* grid if you are unsure which to use.
 {% endalert %}
 
 {% alert info style=highlight %}
-You can use both default and BAS Style Kit grid classes for a single element, however the BAS Style Kit classes will
-override any default grid classes.
+If can apply both standard and alternate grid classes to an element the alternate grid classes will take affect as they
+are defined after the standard grid classes in the CSS file.
 {% endalert %}
+
+| Grid Name     | Total Columns | Class Prefix   |
+| ------------- | ------------- | -------------- |
+| Standard      | 12            | `bsk-col-12`   |
+| Alternate     | 24            | `bsk-col-24`   |
+{: .bsk-table .bsk-table-responsive }
 
 {% include snippets/topic-section-metadata.html
   title="Grid components"
