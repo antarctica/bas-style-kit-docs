@@ -94,6 +94,11 @@ There are five grid sizes for the
 Style Kit. Theses sizes are based on minimum widths, meaning they apply to that size, and all larger (wider) sizes,
 until the next minimum size is reached.
 
+{% alert info style=highlight %}
+This means that a map and accompanying text can be shown side by side on *medium* sized devices and above, or, can be
+shown full width, stacked one after the other, on smaller devices.
+{% endalert %}
+
 <table class="bsk-table">
   <thead>
     <tr>
@@ -120,7 +125,7 @@ until the next minimum size is reached.
       <td>1754px</td>
     </tr>
     <tr>
-      <th>Default Grid Class Prefix</th>
+      <th>Standard Grid Class Prefix</th>
       <td><code>.bsk-col-12-xs</code></td>
       <td><code>.bsk-col-12-sm</code></td>
       <td><code>.bsk-col-12-md</code></td>
@@ -128,7 +133,7 @@ until the next minimum size is reached.
       <td><code>.bsk-col-12-xl</code></td>
     </tr>
     <tr>
-      <th>BAS Style Kit Class Prefix</th>
+      <th>Alternate Grid Class Prefix</th>
       <td><code>.bsk-col-24-xs</code></td>
       <td><code>.bsk-col-24-sm</code></td>
       <td><code>.bsk-col-24-md</code></td>
@@ -149,13 +154,6 @@ until the next minimum size is reached.
     </tr>
   </tbody>
 </table>
-
-This means that a map and accompanying text can be shown side by side on *medium* sized devices, and above, or, can be
-shown full width, stacked one after the other, on smaller devices.
-
-{% alert info style=highlight %}
-The first example uses the *default* grid, the second uses the *BAS Style Kit* grid.
-{% endalert %}
 
 {% example html %}
 <div class="bsk-row">
@@ -183,10 +181,6 @@ Offset classes can be used to 'indent' columns within a row.
 
 For example `.bsk-col-12-md-offset-4` offsets a column by 4 grid columns, or `.bsk-col-24-md-offset-8` if using the BAS
 Style Kit grid.
-
-{% alert info style=highlight %}
-The first example uses the *default* grid, the second uses the *BAS Style Kit* grid.
-{% endalert %}
 
 {% example html %}
 <div class="bsk-row">
@@ -225,10 +219,10 @@ The first example uses the *default* grid, the second uses the *BAS Style Kit* g
 %}
 
 Rows can be used within a column to create a nested grid. Each nested grid has the same total number of grid columns,
-but you don't need to use all of them. You can also nest the BAS Style Kit grid within the default grid or vice versa.
+but you don't need to use all of them. You can also nest the alternate grid within the standard grid or vice versa.
 
-For example, a row has two columns, A and B, spanning 6 columns each in the default grid (12 columns). Column A has a
-row with three nested columns, each spanning 8 columns each of the BAS Style Kit grid.
+For example, a row has two columns, A and B, spanning 6 columns each in the standard grid (12 columns). Column A has a
+row with three nested columns, each spanning 8 columns each of the alternate grid.
 
 {% example html %}
 <div class="bsk-row">
@@ -261,10 +255,6 @@ row with three nested columns, each spanning 8 columns each of the BAS Style Kit
 %}
 
 Pull and push classes can be used to order columns within a row, though this is rarely needed.
-
-{% alert info style=highlight %}
-The first example uses the *default* grid, the second uses the *BAS Style Kit* grid.
-{% endalert %}
 
 {% example html %}
 <div class="bsk-row">
