@@ -27,9 +27,6 @@ sections:
 The BAS Style Kit inherits, and expands, the layout features provided by Bootstrap. **Compatibility with Bootstrap's
 layout classes is guaranteed.**
 
-The Style Kit's additions focus on extending the [grid system]({{ '/core/grid/' | prepend: site.baseurl }}), to include
-additional sizes (break-points), and an alternate, interchangeable, grid with more columns.
-
 {% include snippets/topic-section-metadata.html
   title="Containers"
   heading_level=2
@@ -42,7 +39,7 @@ Containers are the fundamental layout element and typically contains most of a p
 the [grid system]({{ '/core/grid/' | prepend: site.baseurl }}), or can be used independently for compatibility with
 other layout designs.
 
-Two containers are available, they can be mixed and nested if needed.
+Two containers are available, which can be mixed and nested if needed.
 
 {% alert info %}
 Use the *fixed-width container* if you are unsure which to use.

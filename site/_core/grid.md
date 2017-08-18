@@ -33,11 +33,7 @@ sections:
   included="yes"
 %}
 
-The BAS Style Kit inherits, and expands, the grid system provided by Bootstrap. **Compatibility with Bootstrap's
-grid system classes is guaranteed.**
-
-The Style Kit's additions focus on extending the grid system, to include extra sizes (break-points), and an
-alternate, interchangeable, grid with more columns.
+The BAS Style Kit inherits, and expands, the grid system provided by Bootstrap.
 
 {% include snippets/topic-section-metadata.html
   title="Available grids"
@@ -47,26 +43,24 @@ alternate, interchangeable, grid with more columns.
   included="yes"
 %}
 
-There are two grids available, which can be mixed and nested if needed. They function in exactly the same way, other
-than the total number of columns.
-
-| Grid Name     | Total Columns | Class Prefix   |
-| ------------- | ------------- | -------------- |
-| Default       | 12            | `bsk-col-12`   |
-| BAS Style Kit | 24            | `bsk-col-24`   |
-{: .bsk-table .bsk-table-responsive }
-
-The extra columns in the BAS Style Kit grid are primarily intended for use in applications, where more complex or
-detailed layouts and interfaces are required.
+Two grids are available, which can be mixed and nested if needed. Other than the number of columns in each grid they
+function in the same way. The extra columns in the alternate grid are primarily intended for use in applications, where
+more complex or detailed layouts and interfaces are required.
 
 {% alert info %}
-Use the *default* grid if you are unsure which to use.
+Use the *standard* grid if you are unsure which to use.
 {% endalert %}
 
 {% alert info style=highlight %}
-You can use both default and BAS Style Kit grid classes for a single element, however the BAS Style Kit classes will
-override any default grid classes.
+If can apply both standard and alternate grid classes to an element the alternate grid classes will take affect as they
+are defined after the standard grid classes in the CSS file.
 {% endalert %}
+
+| Grid Name     | Total Columns | Class Prefix   |
+| ------------- | ------------- | -------------- |
+| Standard      | 12            | `bsk-col-12`   |
+| Alternate     | 24            | `bsk-col-24`   |
+{: .bsk-table .bsk-table-responsive }
 
 {% include snippets/topic-section-metadata.html
   title="Grid components"
@@ -76,13 +70,14 @@ override any default grid classes.
 There are three main components within the grid system:
 
 1. **columns** - which contain content
-2. **rows** - which contain and aligns columns
+2. **rows** - which contain and align columns
 3. **containers** - which contain rows and is a
 [general purpose layout feature]({{ '/core/layout/#containers' | prepend: site.baseurl }})
 
 There are some rules for using the grid system:
 
-1. all rows must be wrapped in a container, but this doesn't need to be an direct parent
+1. all rows must be wrapped in a [container]({{ '/core/layout/#containers' | prepend: site.baseurl }}), but this
+doesn't need to be an direct parent
 2. only columns can be the direct children of rows
 3. each row can't span more more than the total number of columns for each grid (i.e. either 12 or 24)
 
@@ -96,7 +91,13 @@ There are some rules for using the grid system:
 
 There are five grid sizes for the
 [five responsive breakpoints]({{ '/core/layout/#responsive-breakpoints' | prepend: site.baseurl }}) available in the
-Style Kit. Theses sizes are based on minimum widths, meaning they apply to that size, and all larger (wider) sizes.
+Style Kit. Theses sizes are based on minimum widths, meaning they apply to that size, and all larger (wider) sizes,
+until the next minimum size is reached.
+
+{% alert info style=highlight %}
+This means that a map and accompanying text can be shown side by side on *medium* sized devices and above, or, can be
+shown full width, stacked one after the other, on smaller devices.
+{% endalert %}
 
 <table class="bsk-table">
   <thead>
@@ -107,59 +108,57 @@ Style Kit. Theses sizes are based on minimum widths, meaning they apply to that 
       <th>Medium</th>
       <th>Large</th>
       <th>Extra Large</th>
+      <th>Full HD</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>Grid Behaviour</th>
       <td>Horizontal at all times</td>
-      <td colspan="4">Collapsed to start, horizontal above breakpoints</td>
+      <td colspan="5">Collapsed to start, horizontal above breakpoints</td>
     </tr>
     <tr>
       <th><a href="{{ '/core/layout/#default-container' | prepend: site.baseurl }}">Default Container</a> Width</th>
       <td>None (auto)</td>
       <td>750px</td>
       <td>970px</td>
-      <td>1830px</td>
       <td>1170px</td>
+      <td>1754px</td>
+      <td>1840px</td>
     </tr>
     <tr>
-      <th>Default Grid Class Prefix</th>
+      <th>Standard Grid Class Prefix</th>
       <td><code>.bsk-col-12-xs</code></td>
       <td><code>.bsk-col-12-sm</code></td>
       <td><code>.bsk-col-12-md</code></td>
       <td><code>.bsk-col-12-lg</code></td>
       <td><code>.bsk-col-12-xl</code></td>
+      <td><code>.bsk-col-12-fhd</code></td>
     </tr>
     <tr>
-      <th>BAS Style Kit Class Prefix</th>
+      <th>Alternate Grid Class Prefix</th>
       <td><code>.bsk-col-24-xs</code></td>
       <td><code>.bsk-col-24-sm</code></td>
       <td><code>.bsk-col-24-md</code></td>
       <td><code>.bsk-col-24-lg</code></td>
       <td><code>.bsk-col-24-xl</code></td>
+      <td><code>.bsk-col-24-fhd</code></td>
     </tr>
     <tr>
       <th>Column Width</th>
       <td>Auto</td>
-      <td>-62px</td>
-      <td>-81px</td>
-      <td>-97px</td>
-      <td>-153px</td>
+      <td>~62px</td>
+      <td>~81px</td>
+      <td>~97px</td>
+      <td>~146px</td>
+      <td>~153px</td>
     </tr>
     <tr>
       <th>Gutter Width</th>
-      <td colspan="5">30px (15px on each side of a column)</td>
+      <td colspan="6">30px (15px on each side of a column)</td>
     </tr>
   </tbody>
 </table>
-
-This means that a map and accompanying text can be shown side by side on *medium* sized devices, and above, or, can be
-shown full width, stacked one after the other, on smaller devices.
-
-{% alert info style=highlight %}
-The first example uses the *default* grid, the second uses the *BAS Style Kit* grid.
-{% endalert %}
 
 {% example html %}
 <div class="bsk-row">
@@ -187,10 +186,6 @@ Offset classes can be used to 'indent' columns within a row.
 
 For example `.bsk-col-12-md-offset-4` offsets a column by 4 grid columns, or `.bsk-col-24-md-offset-8` if using the BAS
 Style Kit grid.
-
-{% alert info style=highlight %}
-The first example uses the *default* grid, the second uses the *BAS Style Kit* grid.
-{% endalert %}
 
 {% example html %}
 <div class="bsk-row">
@@ -229,10 +224,10 @@ The first example uses the *default* grid, the second uses the *BAS Style Kit* g
 %}
 
 Rows can be used within a column to create a nested grid. Each nested grid has the same total number of grid columns,
-but you don't need to use all of them. You can also nest the BAS Style Kit grid within the default grid or vice versa.
+but you don't need to use all of them. You can also nest the alternate grid within the standard grid or vice versa.
 
-For example, a row has two columns, A and B, spanning 6 columns each in the default grid (12 columns). Column A has a
-row with three nested columns, each spanning 8 columns each of the BAS Style Kit grid.
+For example, a row has two columns, A and B, spanning 6 columns each in the standard grid (12 columns). Column A has a
+row with three nested columns, each spanning 8 columns each of the alternate grid.
 
 {% example html %}
 <div class="bsk-row">
@@ -265,10 +260,6 @@ row with three nested columns, each spanning 8 columns each of the BAS Style Kit
 %}
 
 Pull and push classes can be used to order columns within a row, though this is rarely needed.
-
-{% alert info style=highlight %}
-The first example uses the *default* grid, the second uses the *BAS Style Kit* grid.
-{% endalert %}
 
 {% example html %}
 <div class="bsk-row">
