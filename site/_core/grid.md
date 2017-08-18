@@ -33,11 +33,7 @@ sections:
   included="yes"
 %}
 
-The BAS Style Kit inherits, and expands, the grid system provided by Bootstrap. **Compatibility with Bootstrap's
-grid system classes is guaranteed.**
-
-The Style Kit's additions focus on extending the grid system, to include extra sizes (break-points), and an
-alternate, interchangeable, grid with more columns.
+The BAS Style Kit inherits, and expands, the grid system provided by Bootstrap.
 
 {% include snippets/topic-section-metadata.html
   title="Available grids"
@@ -74,13 +70,14 @@ are defined after the standard grid classes in the CSS file.
 There are three main components within the grid system:
 
 1. **columns** - which contain content
-2. **rows** - which contain and aligns columns
+2. **rows** - which contain and align columns
 3. **containers** - which contain rows and is a
 [general purpose layout feature]({{ '/core/layout/#containers' | prepend: site.baseurl }})
 
 There are some rules for using the grid system:
 
-1. all rows must be wrapped in a container, but this doesn't need to be an direct parent
+1. all rows must be wrapped in a [container]({{ '/core/layout/#containers' | prepend: site.baseurl }}), but this
+doesn't need to be an direct parent
 2. only columns can be the direct children of rows
 3. each row can't span more more than the total number of columns for each grid (i.e. either 12 or 24)
 
@@ -94,7 +91,8 @@ There are some rules for using the grid system:
 
 There are five grid sizes for the
 [five responsive breakpoints]({{ '/core/layout/#responsive-breakpoints' | prepend: site.baseurl }}) available in the
-Style Kit. Theses sizes are based on minimum widths, meaning they apply to that size, and all larger (wider) sizes.
+Style Kit. Theses sizes are based on minimum widths, meaning they apply to that size, and all larger (wider) sizes,
+until the next minimum size is reached.
 
 <table class="bsk-table">
   <thead>
