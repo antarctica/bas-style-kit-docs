@@ -108,13 +108,14 @@ shown full width, stacked one after the other, on smaller devices.
       <th>Medium</th>
       <th>Large</th>
       <th>Extra Large</th>
+      <th>Full HD</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>Grid Behaviour</th>
       <td>Horizontal at all times</td>
-      <td colspan="4">Collapsed to start, horizontal above breakpoints</td>
+      <td colspan="5">Collapsed to start, horizontal above breakpoints</td>
     </tr>
     <tr>
       <th><a href="{{ '/core/layout/#default-container' | prepend: site.baseurl }}">Default Container</a> Width</th>
@@ -123,6 +124,7 @@ shown full width, stacked one after the other, on smaller devices.
       <td>970px</td>
       <td>1170px</td>
       <td>1754px</td>
+      <td>1840px</td>
     </tr>
     <tr>
       <th>Standard Grid Class Prefix</th>
@@ -131,6 +133,7 @@ shown full width, stacked one after the other, on smaller devices.
       <td><code>.bsk-col-12-md</code></td>
       <td><code>.bsk-col-12-lg</code></td>
       <td><code>.bsk-col-12-xl</code></td>
+      <td><code>.bsk-col-12-fhd</code></td>
     </tr>
     <tr>
       <th>Alternate Grid Class Prefix</th>
@@ -139,6 +142,7 @@ shown full width, stacked one after the other, on smaller devices.
       <td><code>.bsk-col-24-md</code></td>
       <td><code>.bsk-col-24-lg</code></td>
       <td><code>.bsk-col-24-xl</code></td>
+      <td><code>.bsk-col-24-fhd</code></td>
     </tr>
     <tr>
       <th>Column Width</th>
@@ -147,10 +151,11 @@ shown full width, stacked one after the other, on smaller devices.
       <td>~81px</td>
       <td>~97px</td>
       <td>~146px</td>
+      <td>~153px</td>
     </tr>
     <tr>
       <th>Gutter Width</th>
-      <td colspan="5">30px (15px on each side of a column)</td>
+      <td colspan="6">30px (15px on each side of a column)</td>
     </tr>
   </tbody>
 </table>

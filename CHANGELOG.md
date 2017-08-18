@@ -8,6 +8,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 ### Added
 
 * New alert plugin for generating new style alerts with icons and various styles
+* New grid breakpoint - Full HD (1920px)
 
 ### Fixed
 
