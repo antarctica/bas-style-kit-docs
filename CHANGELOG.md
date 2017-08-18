@@ -9,6 +9,9 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 * New alert plugin for generating new style alerts with icons and various styles
 
+### Fixed
+
+* Breakpoint information for the Extra Large breakpoint
 ### Changed
 
 * Integrating 0.3.0-alpha version of the Style Kit

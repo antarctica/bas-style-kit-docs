@@ -116,8 +116,8 @@ until the next minimum size is reached.
       <td>None (auto)</td>
       <td>750px</td>
       <td>970px</td>
-      <td>1830px</td>
       <td>1170px</td>
+      <td>1754px</td>
     </tr>
     <tr>
       <th>Default Grid Class Prefix</th>
@@ -141,7 +141,7 @@ until the next minimum size is reached.
       <td>-62px</td>
       <td>-81px</td>
       <td>-97px</td>
-      <td>-153px</td>
+      <td>~146px</td>
     </tr>
     <tr>
       <th>Gutter Width</th>
