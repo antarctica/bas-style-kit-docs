@@ -138,9 +138,9 @@ until the next minimum size is reached.
     <tr>
       <th>Column Width</th>
       <td>Auto</td>
-      <td>-62px</td>
-      <td>-81px</td>
-      <td>-97px</td>
+      <td>~62px</td>
+      <td>~81px</td>
+      <td>~97px</td>
       <td>~146px</td>
     </tr>
     <tr>

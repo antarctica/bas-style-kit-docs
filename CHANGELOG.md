@@ -12,6 +12,8 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 ### Fixed
 
 * Breakpoint information for the Extra Large breakpoint
+* Incorrect notation for grid column sizes for breakpoints (used `-` minus instead of `~` approximate)
+
 ### Changed
 
 * Integrating 0.3.0-alpha version of the Style Kit
