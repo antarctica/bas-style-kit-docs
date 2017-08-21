@@ -9,7 +9,8 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 * New alert plugin for generating new style alerts with icons and various styles
 * New grid breakpoint - Full HD (1920px)
-* Documentation for primary and development phase labels
+* Primary and development phase labels
+* Development phase colours
 
 ### Fixed
 
