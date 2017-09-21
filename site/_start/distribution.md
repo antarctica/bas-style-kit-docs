@@ -23,6 +23,7 @@ sections:
   heading_level=2
 %}
 
+The [BAS CDN](https://cdn.bas.ac.uk) is used to host production versions of the BAS Style Kit.
 
 {% alert success %}
 The BAS CDN is the recommended way to use the BAS Style Kit because it will use browser caching.
@@ -48,8 +49,8 @@ for URLs to the latest stable version.
 <table class="bsk-table bsk-table-bordered">
   <thead>
     <tr>
-      <th>Distribution Type</th>
-      <th>Distribution File URL</th>
+      <th>Name</th>
+      <th>URL</th>
     </tr>
   </thead>
   <tbody>
@@ -73,8 +74,9 @@ for URLs to the latest stable version.
   heading_level=2
 %}
 
-Web fonts used by the BAS Style Kit are declared in their respective `@font-face` declarations.
-Font files are made available from the BAS CDN in these formats:
+[Web fonts]({{ '/core/type/#font-families' | prepend: site.baseurl }}), including
+[icon fonts]({{ '/core/icons' | prepend: site.baseurl }}), used by the BAS Style Kit are declared in their respective
+`@font-face` declarations. Font files are made available from the BAS CDN in these formats:
 
 * `.eot`
 * `.ttf`
