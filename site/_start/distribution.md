@@ -82,6 +82,16 @@ Font files are made available from the BAS CDN in these formats:
 * `.woff2`
 
 {% include snippets/topic-section-metadata.html
+  title="Logos"
+  heading_level=2
+%}
+
+[Logos]({{ '/core/logos' | prepend: site.baseurl }}) used by the BAS Style Kit are made available from the BAS CDN in
+these formats:
+
+* `.png`
+
+{% include snippets/topic-section-metadata.html
   title="Sub-Resource Integrity (SRI) values"
   heading_level=2
 %}

@@ -71,7 +71,7 @@ This example, whilst quite complex, demonstrates the sort of information shown i
     <div role="separator" class="bsk-footer-divider"></div>
     <!-- Copyright & legal -->
     <div class="bsk-footer-ogl">
-      <a class="bsk-ogl-symbol" rel="license" href="http://www.nationalarchives.gov.uk/doc/open-government-licence/"><img alt="Open Government Licence logo" src="{{ '/img/ogl-symbol-white.png' | prepend: site.baseurl }}"></a>
+      <a class="bsk-ogl-symbol" rel="license" href="http://www.nationalarchives.gov.uk/doc/open-government-licence/"><img alt="Open Government Licence logo" src="{% unless jekyll.environment == 'production' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endunless %}/{% include snippets/bsk-version.html %}/img/logos-symbols/ogl-symbol-inverse-transparent-32.png"></a>
       <div class="bsk-ogl-text">All content is licensed under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/">Open Government Licence v3.0</a>, except where otherwise stated</div>
     </div>
     <div class="bsk-footer-policy-links">
@@ -118,14 +118,15 @@ Use the `.bsk-footer-divider` class on an element, to act as a horizontal rule w
   included="yes"
 %}
 
-Use the `.bsk-footer-ogl` class, `.bsk-ogl-symbol` and `.bsk-ogl-text` classes on elements to position and style the OGL
-logo and accompanying licensing statement.
+Use the `.bsk-footer-ogl` class, `.bsk-ogl-symbol` and `.bsk-ogl-text` classes on elements to position and style the
+[OGL Symbol]({{ '/core/logos/#open-government-license-symbol' | prepend: site.baseurl }}) and accompanying licensing
+statement.
 
 {% example html %}
 <footer class="bsk-footer bsk-footer-default">
   <div class="bsk-container-fluid">
     <div class="bsk-footer-ogl">
-      <a class="bsk-ogl-symbol" rel="license" href="http://www.nationalarchives.gov.uk/doc/open-government-licence/"><img alt="Open Government Licence logo" src="{{ '/img/ogl-symbol-white.png' | prepend: site.baseurl }}"></a>
+      <a class="bsk-ogl-symbol" rel="license" href="http://www.nationalarchives.gov.uk/doc/open-government-licence/"><img alt="Open Government Licence logo" src="{% unless jekyll.environment == 'production' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endunless %}/{% include snippets/bsk-version.html %}/img/logos-symbols/ogl-symbol-inverse-transparent-32.png"></a>
       <div class="bsk-ogl-text">All content is licensed under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/">Open Government Licence v3.0</a>, except where otherwise stated</div>
     </div>
   </div>
