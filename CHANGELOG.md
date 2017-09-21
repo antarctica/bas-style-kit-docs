@@ -8,6 +8,14 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 ### Added
 
 * New alert plugin for generating new style alerts with icons and various styles
+* New grid breakpoint - Full HD (1920px)
+* Primary and development phase labels
+* Development phase colours
+
+### Fixed
+
+* Breakpoint information for the Extra Large breakpoint
+* Incorrect notation for grid column sizes for breakpoints (used `-` minus instead of `~` approximate)
 
 ### Changed
 
@@ -15,6 +23,9 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * Checks for the site environment check if the site *isn't* production, rather than if it *is* staging
 * Changing 'Part of the British Antarctic Survey' to 'Part of British Antarctic Survey' account for the
  larger navbar font size and breaking the navbar layout at smaller screen sizes
+* Documenting updated CSS grid classes for the 'standard' (previously 'default') and 'alternate' (previously
+'BAS Style Kit') grids
+* Updated visiblity examples to include new Full HD breakpoint
 
 ### Removed
 

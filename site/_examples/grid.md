@@ -22,10 +22,6 @@ sections:
 Creates a basic grid system that starts out stacked on small devices before becoming horizontal on wider (medium)
 devices.
 
-{% alert info style=highlight %}
-The first example uses the *default* grid, the second uses the *BAS Style Kit* grid.
-{% endalert %}
-
 {% example html %}
 <div class="bsk-row">
   <div class="bsk-col-12-md-1 bsk-docs-content-block">.bsk-col-12-md-1</div>
@@ -122,10 +118,6 @@ increases with each grid size. For example, at the smallest grid size 2 items ma
 
 Usually it's best to let content at very small sizes stack naturally, however you can target the extra small grid size
 where you always want items to be side by side.
-
-{% alert info style=highlight %}
-The first example uses the *default* grid, the second uses the *BAS Style Kit* grid.
-{% endalert %}
 
 {% example html %}
 <!-- Columns are always 50% wide -->
@@ -267,10 +259,6 @@ The first example uses the *default* grid, the second uses the *BAS Style Kit* g
 If more than the total number of columns for each grid are placed within a single row, each group of extra columns
 will, as one unit, wrap onto a new line.
 
-{% alert info style=highlight %}
-The first example uses the *default* grid, the second uses the *BAS Style Kit* grid.
-{% endalert %}
-
 {% example html %}
 <div class="bsk-row">
   <div class="bsk-col-12-xs-9 bsk-docs-content-block">.col-xs-9</div>
@@ -297,10 +285,6 @@ The first example uses the *default* grid, the second uses the *BAS Style Kit* g
 {% include snippets/back-to-top.html %}
 
 Clear floats at specific breakpoints to prevent awkward wrapping with uneven content.
-
-{% alert info style=highlight %}
-The first example uses the *default* grid, the second uses the *BAS Style Kit* grid.
-{% endalert %}
 
 {% example html %}
 <div class="bsk-row">

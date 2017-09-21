@@ -16,6 +16,8 @@ sections:
   -
     title: Background contextual classes
   -
+    title: Development phase colours
+  -
     title: External service colours
 ---
 
@@ -362,6 +364,83 @@ used as the background of an element using these classes:
         <li>Info background</li>
         <li><code>$state-info-bg</code></li>
         <li class="bsk-docs-hex-reference">#B7D8EB</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+{% include snippets/topic-section-metadata.html
+  title="Development phase colours"
+  heading_level=2
+  current_phase="live"
+  current_version="0.3.0"
+  included="yes"
+%}
+
+To indicate the state of a service, project, feature, component or other aspect in its lifecycle, the Style Kit uses a
+set of development phases, which have associated colours. These phases and colours are defined by the Government
+Digital Service.
+
+Discovery
+: A phase before a aspect is started to find out whether users need it and is not already provided by another service
+
+Alpha
+: A development phase during which an aspect is prototyped and tested to demonstrate its feasiability and function
+
+Beta
+: A refinement phase following alpha where an aspect is tested and improved until it is suitable for general use
+
+Live
+: A phase where an aspect is generally available and recieving support for, improvements and fixes
+
+Retired
+: A phase for where an aspect is no longer needed, due to changing needs or replacement by another aspect
+{: .bsk-dl-lg }
+
+These colours can be used with many core styles and components, such as:
+
+* [labels]({{ '/components/label/#development-phases' | prepend: site.baseurl }})
+
+<div class="bsk-docs-swatch-wrapper">
+  <div class="bsk-row">
+    <div class="bsk-col-12-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-development-phase-discovery-base"></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
+        <li>Discovery base</li>
+        <li><code>$development-phase-discovery</code></li>
+        <li class="bsk-docs-hex-reference">#912B88</li>
+      </ul>
+    </div>
+    <div class="bsk-col-12-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-development-phase-alpha-base"></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
+        <li>Alpha base</li>
+        <li><code>$development-phase-alpha</code></li>
+        <li class="bsk-docs-hex-reference">#D53880</li>
+      </ul>
+    </div>
+    <div class="bsk-col-12-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-development-phase-beta-base"></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
+        <li>Beta base</li>
+        <li><code>$development-phase-beta</code></li>
+        <li class="bsk-docs-hex-reference">#F47738</li>
+      </ul>
+    </div>
+    <div class="bsk-col-12-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-development-phase-live-base"></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
+        <li>Live base</li>
+        <li><code>$development-phase-live</code></li>
+        <li class="bsk-docs-hex-reference">#AAB437</li>
+      </ul>
+    </div>
+    <div class="bsk-col-12-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-development-phase-retired-base"></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
+        <li>Retired base</li>
+        <li><code>$development-phase-retired</code></li>
+        <li class="bsk-docs-hex-reference">#555555</li>
       </ul>
     </div>
   </div>

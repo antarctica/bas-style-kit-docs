@@ -6,7 +6,11 @@ sections:
   -
     title: Default label
   -
+    title: Primary label
+  -
     title: Contextual colours
+  -
+    title: Development phases
   -
     title: Sizes
 ---
@@ -19,7 +23,6 @@ sections:
 %}
 
 Use the `.bsk-label` class to highlight something, such as a status or some other property.
-
 
 {% alert warning style=solid %}
 You **must** pick a [variant]({{ '/components/label/#variants' | prepend: site.baseurl }}){: .bsk-alert-link } for each
@@ -52,6 +55,20 @@ Something <span class="bsk-label bsk-label-default">Label</span>
 {% endexample %}
 
 {% include snippets/topic-section-metadata.html
+  title="Primary label"
+  heading_level=3
+  current_phase="live"
+  current_version="0.3.0"
+  included="yes"
+%}
+
+Add the `bsk-label-primary` class for a primary label.
+
+{% example html %}
+Something <span class="bsk-label bsk-label-primary">Label</span>
+{% endexample %}
+
+{% include snippets/topic-section-metadata.html
   title="Contextual colours"
   heading_level=3
   current_phase="live"
@@ -75,6 +92,34 @@ used for context by adding these classes:
 <span class="bsk-label bsk-label-warning">Warning label</span>
 <span class="bsk-label bsk-label-danger">Dangerous label</span>
 <span class="bsk-label bsk-label-info">Info label</span>
+{% endexample %}
+
+{% include snippets/topic-section-metadata.html
+  title="Development phases"
+  heading_level=3
+  current_phase="live"
+  current_version="0.3.0"
+  included="yes"
+%}
+
+The [development phase colours]({{ '/core/colours/#development-phase-colours' | prepend: site.baseurl }}) can be used
+where relevant by adding these classes:
+
+| Development Phase | Label Class                  |
+| ----------------- | ---------------------------- |
+| Discovery         | `.bsk-label-phase-discovery` |
+| Alpha             | `.bsk-label-phase-alpha`     |
+| Beta              | `.bsk-label-phase-beta`      |
+| Live              | `.bsk-label-phase-live`      |
+| Retired           | `.bsk-label-phase-retired`   |
+{: .bsk-table .bsk-table-responsive }
+
+{% example html %}
+<span class="bsk-label bsk-label-phase-discovery">Success label</span>
+<span class="bsk-label bsk-label-phase-alpha">Alpha label</span>
+<span class="bsk-label bsk-label-phase-beta">Warning label</span>
+<span class="bsk-label bsk-label-phase-live">Live phase</span>
+<span class="bsk-label bsk-label-phase-retired">Retired phase</span>
 {% endexample %}
 
 {% include snippets/topic-section-metadata.html
