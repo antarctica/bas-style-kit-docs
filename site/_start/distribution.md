@@ -23,6 +23,7 @@ sections:
   heading_level=2
 %}
 
+The [BAS CDN](https://cdn.bas.ac.uk) is used to host production versions of the BAS Style Kit.
 
 {% alert success %}
 The BAS CDN is the recommended way to use the BAS Style Kit because it will use browser caching.
@@ -48,22 +49,22 @@ for URLs to the latest stable version.
 <table class="bsk-table bsk-table-bordered">
   <thead>
     <tr>
-      <th>Distribution Type</th>
-      <th>Distribution File URL</th>
+      <th>Name</th>
+      <th>URL</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Compiled CSS</td>
-      <td class="highlight"><pre><code>{% unless jekyll.environment == 'production' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endunless %/{% include snippets/bsk-version.html %}/css/bas-style-kit.css</code></pre></td>
+      <td class="highlight"><pre><code>{% unless jekyll.environment == 'production' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endunless %}/{% include snippets/bsk-version.html %}/css/bas-style-kit.css</code></pre></td>
     </tr>
     <tr>
       <td>Compiled &amp; minified CSS</td>
-      <td class="highlight"><pre><code>{% unless jekyll.environment == 'production' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endunless %/{% include snippets/bsk-version.html %}/css/bas-style-kit.min.css</code></pre></td>
+      <td class="highlight"><pre><code>{% unless jekyll.environment == 'production' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endunless %}/{% include snippets/bsk-version.html %}/css/bas-style-kit.min.css</code></pre></td>
     </tr>
     <tr>
       <td>Minified CSS source-maps</td>
-      <td class="highlight"><pre><code>{% unless jekyll.environment == 'production' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endunless %/{% include snippets/bsk-version.html %}/css/maps/bas-style-kit.min.css.map</code></pre></td>
+      <td class="highlight"><pre><code>{% unless jekyll.environment == 'production' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endunless %}/{% include snippets/bsk-version.html %}/css/maps/bas-style-kit.min.css.map</code></pre></td>
     </tr>
   </tbody>
 </table>
@@ -73,13 +74,24 @@ for URLs to the latest stable version.
   heading_level=2
 %}
 
-Web fonts used by the BAS Style Kit are declared in their respective `@font-face` declarations.
-Font files are made available from the BAS CDN in these formats:
+[Web fonts]({{ '/core/type/#font-families' | prepend: site.baseurl }}), including
+[icon fonts]({{ '/core/icons' | prepend: site.baseurl }}), used by the BAS Style Kit are declared in their respective
+`@font-face` declarations. Font files are made available from the BAS CDN in these formats:
 
 * `.eot`
 * `.ttf`
 * `.woff`
 * `.woff2`
+
+{% include snippets/topic-section-metadata.html
+  title="Logos"
+  heading_level=2
+%}
+
+[Logos]({{ '/core/logos' | prepend: site.baseurl }}) used by the BAS Style Kit are made available from the BAS CDN in
+these formats:
+
+* `.png`
 
 {% include snippets/topic-section-metadata.html
   title="Sub-Resource Integrity (SRI) values"

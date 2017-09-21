@@ -247,9 +247,10 @@ Use the `.bsk-navbar-brand` class to indicate the name of the current website or
   included="yes"
 %}
 
-Use the same `.bsk-navbar-brand` class with a image to show a logo or other image.
+Use the same `.bsk-navbar-brand` class with a image to show the
+[BAS Logo]({{ '/core/logos/#bas-logo' | prepend: site.baseurl }}) or other image.
 
-You will likely need to create add a custom class wherever the `.bsk-navbar-brand` class is used to adjust padding.
+You will need to create add a custom class wherever the `.bsk-navbar-brand` class is used to adjust padding.
 
 The examples below use a `.bsk-docs-navbar-brand-bas-logo` class with the following styles:
 
@@ -267,7 +268,7 @@ The examples below use a `.bsk-docs-navbar-brand-bas-logo` class with the follow
   <div class="bsk-container-fluid">
     <div class="bsk-navbar-header">
       <a class="bsk-navbar-brand bsk-docs-navbar-brand-bas-logo" href="#">
-        <img alt="British Antarctic Survey Logo" src="{{ '/img/bas-logo-full-white-transparent.png' | prepend: site.baseurl }}">
+        <img alt="British Antarctic Survey Logo" src="{% unless jekyll.environment == 'production' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endunless %}/{% include snippets/bsk-version.html %}/img/logos-symbols/bas-logo-inverse-transparent-32.png">
       </a>
     </div>
     <ul class="bsk-nav bsk-navbar-nav">
@@ -284,7 +285,7 @@ Add the `.bsk-fix-navbar-brand-img-txt` class to a brand image to combine with b
   <div class="bsk-container-fluid">
     <div class="bsk-navbar-header">
       <a class="bsk-navbar-brand bsk-docs-navbar-brand-bas-logo" href="#">
-        <img class="bsk-fix-navbar-brand-img-txt" alt="British Antarctic Survey Logo" src="{{ '/img/bas-logo-full-white-transparent.png' | prepend: site.baseurl }}">
+        <img class="bsk-fix-navbar-brand-img-txt" alt="British Antarctic Survey Logo" src="{% unless jekyll.environment == 'production' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endunless %}/{% include snippets/bsk-version.html %}/img/logos-symbols/bas-logo-inverse-transparent-32.png">
         Site Name
       </a>
     </div>
@@ -508,7 +509,7 @@ Add one of these classes to alter the size of a jumbotron:
         <span class="bsk-icon-bar"></span>
       </button>
       <a class="bsk-navbar-brand bsk-docs-navbar-brand-bas-logo-lg" href="#">
-        <img alt="British Antarctic Survey Logo" src="{{ '/img/bas-logo-full-white-transparent.png' | prepend: site.baseurl }}">
+        <img alt="British Antarctic Survey Logo" src="{% unless jekyll.environment == 'production' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endunless %}/{% include snippets/bsk-version.html %}/img/logos-symbols/bas-logo-inverse-transparent-64.png">
       </a>
     </div>
     <ul class="bsk-nav bsk-navbar-nav">

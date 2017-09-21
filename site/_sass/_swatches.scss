@@ -1,5 +1,6 @@
 .bsk-docs-swatch-wrapper,
-.bsk-docs-icons-wrapper {
+.bsk-docs-icons-wrapper,
+.bsk-docs-logomark-wrapper {
   margin: 20px 0;
 }
 
@@ -13,7 +14,9 @@
 }
 
 .bsk-docs-swatch-details,
-.bsk-docs-icons-details {
+.bsk-docs-icons-details,
+.bsk-docs-logomark-details
+{
   li {
     margin-bottom: 5px;
 
@@ -21,6 +24,10 @@
       margin-bottom: 0;
     }
   }
+}
+
+.bsk-docs-logomark-details {
+  margin-top: 35px;
 }
 
 .bsk-docs-hex-reference,
@@ -35,6 +42,17 @@
   margin-bottom: 10px;
 
   text-align: center;
+}
+
+.bsk-docs-logomark {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.bsk-docs-logomark-inverse-background {
+  background-color: #555;
+  color: #EEE;
 }
 
 .bsk-docs-swatch-page-background {

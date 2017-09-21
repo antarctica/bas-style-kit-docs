@@ -16,7 +16,8 @@ sections:
 
 Use the `.bsk-header` class to create an element with the illusion of a
 [navbar]({{ '/components/navbar' | prepend: site.baseurl }}), but using simpler, self-contained styles, and which
-doesn't support navigation.
+doesn't support navigation. The [BAS Logo]({{ '/core/logos/#bas-logo' | prepend: site.baseurl }}) shoud be used in
+headers to reinforce the BAS brand.
 
 {% alert warning style=solid %}
 Headers should only be used where the [Navbar's]({{ '/components/navbar' | prepend: site.baseurl }}){: .bsk-alert-link }
@@ -49,7 +50,7 @@ Images in headers need to use the `.bsk-header-img-logo` class to prevent too mu
 <header class="bsk-header bsk-header-default">
   <div class="bsk-header-container-fluid">
     <a href="#">
-      <img class="bsk-header-img-logo" alt="British Antarctic Survey Logo" src="{{ '/img/bas-logo-full-white-transparent.png' | prepend: site.baseurl }}">
+      <img class="bsk-header-img-logo" alt="British Antarctic Survey Logo" src="{% unless jekyll.environment == 'production' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endunless %}/{% include snippets/bsk-version.html %}/img/logos-symbols/bas-logo-inverse-transparent-64.png">
     </a>
   </div>
 </header>

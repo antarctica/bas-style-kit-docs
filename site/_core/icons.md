@@ -122,10 +122,6 @@ Collection, such as the [image purchase]({{ '/components/image-purchase' | prepe
   </div>
 </div>
 
-{% alert info style=highlight %}
-**Hint** The image purchase icon is aligned bottom right.
-{% endalert %}
-
 {% include snippets/topic-section-metadata.html
   title="Standard contextual icons"
   heading_level=2
