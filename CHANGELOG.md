@@ -25,7 +25,8 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
  larger navbar font size and breaking the navbar layout at smaller screen sizes
 * Documenting updated CSS grid classes for the 'standard' (previously 'default') and 'alternate' (previously
 'BAS Style Kit') grids
-* Updated visiblity examples to include new Full HD breakpoint
+* Updated visibility examples to include new Full HD breakpoint
+* Updated URLs to reflect change in project location in GitHub (you may need to re-pull the project Docker image)
 
 ### Removed
 
