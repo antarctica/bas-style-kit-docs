@@ -1,7 +1,5 @@
 # BAS Style Kit Documentation
 
-[![build status](https://gitlab.data.bas.ac.uk/BSK/bas-style-kit-docs/badges/master/build.svg)](https://gitlab.data.bas.ac.uk/BSK/bas-style-kit-docs/commits/master)
-
 End-user documentation for the BAS Style Kit, documenting what it includes, and how to use it to build websites and
 web-applications.
 
@@ -72,13 +70,14 @@ $ docker-compose push app
 ## Continuous Integration
 
 The BAS GitLab instance is used for
-[Continuous Integration](https://gitlab.data.bas.ac.uk/BSK/bas-style-kit-docs/pipelines) using settings defined in
-`.gitlab-ci.yml`.
+[Continuous Integration](https://gitlab.data.bas.ac.uk/web-apps/bsk/bas-style-kit-docs/pipelines) using settings defined
+in `.gitlab-ci.yml`.
 
 ## Continuous Deployment
 
-The BAS GitLab instance is used for [Continuous Deployment](https://gitlab.data.bas.ac.uk/BSK/bas-style-kit-docs/builds)
-using settings defined in `.gitlab-ci.yml`.
+The BAS GitLab instance is used for
+[Continuous Deployment](https://gitlab.data.bas.ac.uk/web-apps/bsk/bas-style-kit-docs/builds) using settings defined in
+`.gitlab-ci.yml`.
 
 Changes pushed to the *master* branch will be available at: https://style-kit-testing.web.bas.ac.uk.
 
