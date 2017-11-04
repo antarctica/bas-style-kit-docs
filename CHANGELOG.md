@@ -11,6 +11,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * New grid breakpoint - Full HD (1920px)
 * Primary and development phase labels
 * Development phase colours
+* Alert logo styles, variants and layouts
 
 ### Fixed
 
