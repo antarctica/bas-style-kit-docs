@@ -8,8 +8,6 @@ sections:
   -
     title: Close icon
   -
-    title: Image purchase icon
-  -
     title: Standard contextual icons
   -
     title: External service icons
@@ -97,30 +95,6 @@ Use the `fa-times-circle` icon wrapped in a `.bsk-close` element for indicating 
 {% alert info style=highlight %}
 **Hint** The close icon is aligned right.
 {% endalert %}
-
-{% include snippets/topic-section-metadata.html
-  title="Image purchase icon"
-  heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
-  included="yes"
-%}
-
-Use the `fa-camera` icon for indicating images and other media items available for purchase from the BAS Image
-Collection, such as the [image purchase]({{ '/components/image-purchase' | prepend: site.baseurl }}) component.
-
-<div class="bsk-docs-icons-wrapper">
-  <div class="bsk-row">
-    <div class="bsk-col-12-md-3">
-      <div class="bsk-docs-icon"><i class="fa fa-fw fa-fw fa-4x fa-camera" aria-hidden="true"></i></div>
-      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
-        <li>Camera</li>
-        <li class="bsk-docs-icon-reference">fa-camera</li>
-        <li><code>&lt;i class="fa fa-fw fa-camera" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
-      </ul>
-    </div>
-  </div>
-</div>
 
 {% include snippets/topic-section-metadata.html
   title="Standard contextual icons"

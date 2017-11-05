@@ -30,6 +30,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * Updated visibility examples to include new Full HD breakpoint
 * Updated URLs to reflect change in project location in GitHub (you may need to re-pull the project Docker image)
 * Updated interactive plugins documentation where a Style Kit specific version exists
+* Image Purchase component replaced with Image Copyright component for greater flexibility
 
 ### Removed
 
