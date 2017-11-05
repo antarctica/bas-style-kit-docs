@@ -56,16 +56,22 @@ $screen-sm-min: 768px !default;
 
   .bsk-docs-site-build-info,
   .bsk-docs-site-back-to-top,
-  .footer-bsk-policy-links,
+  .bsk-footer-policy-links,
   .bsk-docs-site-licensing {
-    margin-top: 10px;
     text-align: center;
+    margin-top: 10px;
   }
 
   @media (min-width: $screen-sm-min) {
     .bsk-docs-site-back-to-top,
-    .footer-bsk-policy-links {
+    .bsk-footer-policy-links,
+    .bsk-docs-site-build-info,
+    .bsk-docs-site-licensing {
       margin-top: 0;
+    }
+
+    .bsk-docs-site-back-to-top,
+    .bsk-footer-policy-links {
       text-align: right;
     }
 
