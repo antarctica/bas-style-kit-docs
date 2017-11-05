@@ -6,6 +6,8 @@ sections:
   -
     title: Primary alert
   -
+    title: Experimental alert
+  -
     title: Contextual colours
   -
     title: Contextual icons
@@ -64,6 +66,20 @@ There is no *default* alert variant, as a grey alert for example wouldn't make a
 {% endexample %}
 
 {% include snippets/topic-section-metadata.html
+  title="Experimental alert"
+  heading_level=3
+  current_phase="live"
+  current_version="0.3.0"
+  included="yes"
+%}
+
+{% example html %}
+<div class="bsk-alert bsk-alert-solid-experimental" role="alert">
+  Experimental alert
+</div>
+{% endexample %}
+
+{% include snippets/topic-section-metadata.html
   title="Contextual colours"
   heading_level=3
   current_phase="live"
@@ -90,6 +106,27 @@ used for context by adding these classes:
 {% endexample %}
 
 {% include snippets/topic-section-metadata.html
+  title="Experimental icon"
+  heading_level=3
+  current_phase="live"
+  current_version="0.3.0"
+  included="yes"
+%}
+
+The [experimental standard conventional icon]({{ '/core/icons/#experimental-icon' | prepend: site.baseurl }}) can be
+used for adding extra context to alerts.
+
+{% alert info style=highlight %}
+Use the `.bsk-alert-icon` class to properly format an icon in an alert.
+{% endalert %}
+
+{% example html %}
+<div class="bsk-alert bsk-alert-solid-experimental" role="alert">
+  <i class="fa fa-fw fa-flask bsk-alert-icon" aria-hidden="true"></i> Experimental alert
+</div>
+{% endexample %}
+
+{% include snippets/topic-section-metadata.html
   title="Contextual icons"
   heading_level=3
   current_phase="live"
@@ -99,6 +136,10 @@ used for context by adding these classes:
 
 The [standard contextual icons]({{ '/core/icons/#standard-contextual-icons' | prepend: site.baseurl }}) can be
 used for adding extra context to alerts.
+
+{% alert info style=highlight %}
+Use the `.bsk-alert-icon` class to properly format an icon in an alert.
+{% endalert %}
 
 {% example html %}
 <div class="bsk-alert bsk-alert-icon bsk-alert-solid-success" role="alert">

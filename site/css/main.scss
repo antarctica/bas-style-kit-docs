@@ -22,6 +22,11 @@ $screen-sm-min: 768px !default;
   }
 }
 
+// Styles for experimental variant in some places
+.bsk-docs-text-experimental-light {
+  color: #9fa1c9;
+}
+
 // Styles for navbar
 .bsk-docs-navbar-testing {
   margin-bottom: 0;
@@ -104,10 +109,6 @@ $screen-sm-min: 768px !default;
 
   .bsk-docs-masthead-title {
     color: #fff;
-
-    .bsk-text-experimental {
-      color: #9FA1C9;
-    }
   }
 
   .bsk-docs-masthead-strapline {

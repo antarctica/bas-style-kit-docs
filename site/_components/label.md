@@ -8,6 +8,8 @@ sections:
   -
     title: Primary label
   -
+    title: Experimental label
+  -
     title: Contextual colours
   -
     title: Development phases
@@ -66,6 +68,20 @@ Add the `bsk-label-primary` class for a primary label.
 
 {% example html %}
 Something <span class="bsk-label bsk-label-primary">Label</span>
+{% endexample %}
+
+{% include snippets/topic-section-metadata.html
+  title="Experimental label"
+  heading_level=3
+  current_phase="live"
+  current_version="0.3.0"
+  included="yes"
+%}
+
+Add the `bsk-label-experimental` class for an experimental label.
+
+{% example html %}
+Something <span class="bsk-label bsk-label-experimental">Label</span>
 {% endexample %}
 
 {% include snippets/topic-section-metadata.html

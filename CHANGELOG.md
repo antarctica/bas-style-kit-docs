@@ -14,6 +14,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * Alert logo styles, variants and layouts
 * Javascript distribution information, including required JS libraries
 * Clarification on using right and vertical alignment classes for media objects
+* General purpose 'experimental' style and icon for use in buttons, text, alerts and labels
 
 ### Fixed
 

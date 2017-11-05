@@ -22,6 +22,10 @@ sections:
   -
     title: Addresses
   -
+    title: Primary text
+  -
+    title: Experimental text
+  -
     title: Contextual colours
   -
     title: Alignment
@@ -355,6 +359,30 @@ Provides formatting for addresses or contact information. Use <code>&lt;br&gt;</
   Head of Information Services<br>
   <i class="fa fa-fw fa-envelope" aria-hidden="true"></i> <abbr title="Email address">Email:</abbr> <a href="mailto:#">ajtate@bas.com</a>
 </address>
+{% endexample %}
+
+{% include snippets/topic-section-metadata.html
+  title="Primary text"
+  heading_level=2
+  current_phase="live"
+  current_version="0.1.0"
+  included="yes"
+%}
+
+{% example html %}
+<p class="bsk-text-primary">De carne animata corpora quaeritis.</p>
+{% endexample %}
+
+{% include snippets/topic-section-metadata.html
+  title="Experimental text"
+  heading_level=2
+  current_phase="live"
+  current_version="0.3.0"
+  included="yes"
+%}
+
+{% example html %}
+<p class="bsk-text-experimental">De carne animata corpora quaeritis.</p>
 {% endexample %}
 
 {% include snippets/topic-section-metadata.html
