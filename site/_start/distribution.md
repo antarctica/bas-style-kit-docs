@@ -29,13 +29,24 @@ The [BAS CDN](https://cdn.bas.ac.uk) is used to host production versions of the 
 The BAS CDN is the recommended way to use the BAS Style Kit because it will use browser caching.
 {% endalert %}
 
-{% alert info style=highlight %}
-Use **compiled** CSS styles in development environments, use **minified** CSS styles in production environments.
+{% alert info %}
+You only need to include the JavaScript files referenced below if you want to use any of the
+[Interactive components]({{ '/interactivity' | prepend: site.baseurl }}){: .bsk-alert-link } provided by the Style Kit.
+{% endalert %}
+
+{% alert warning %}
+If the BAS Style Kit JavaScript files are included, you will also need to include additional
+[JavaScript Libraries](#javascript-libraries)
 {% endalert %}
 
 {% alert info style=highlight %}
-[Source maps](http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/){: .bsk-alert-link } should loaded
-automatically by compatible browsers when **minified** CSS styles are used.
+Use **compiled** CSS and JavaScript in development environments, use **minified** CSS and JavaScript in production
+environments.
+{% endalert %}
+
+{% alert info style=highlight %}
+[Source maps](http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/){: .bsk-alert-link } should be loaded
+automatically by compatible browsers when **minified** CSS is used.
 {% endalert %}
 
 {% unless jekyll.environment == 'production' %}
@@ -59,8 +70,16 @@ for URLs to the latest stable version.
       <td class="highlight"><pre><code>{% unless jekyll.environment == 'production' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endunless %}/{% include snippets/bsk-version.html %}/css/bas-style-kit.css</code></pre></td>
     </tr>
     <tr>
+      <td>JavaScript</td>
+      <td class="highlight"><pre><code>{% unless jekyll.environment == 'production' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endunless %}/{% include snippets/bsk-version.html %}/js/bas-style-kit.js</code></pre></td>
+    </tr>
+    <tr>
       <td>Compiled &amp; minified CSS</td>
       <td class="highlight"><pre><code>{% unless jekyll.environment == 'production' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endunless %}/{% include snippets/bsk-version.html %}/css/bas-style-kit.min.css</code></pre></td>
+    </tr>
+    <tr>
+      <td>Minified JavaScript</td>
+      <td class="highlight"><pre><code>{% unless jekyll.environment == 'production' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endunless %}/{% include snippets/bsk-version.html %}/js/bas-style-kit.min.js</code></pre></td>
     </tr>
     <tr>
       <td>Minified CSS source-maps</td>
@@ -94,12 +113,51 @@ these formats:
 * `.png`
 
 {% include snippets/topic-section-metadata.html
+  title="JavaScript libraries"
+  heading_level=2
+%}
+
+{% alert info %}
+This section only applies if you are including the BAS Style Kit JavaScript files, which are required to use any of the
+[Interactive components]({{ '/interactivity' | prepend: site.baseurl }}){: .bsk-alert-link } provided by the Style Kit.
+{% endalert %}
+
+The BAS Style Kit JavaScript relies on the [jQuery](https://jquery.com) library.
+
+{% alert warning %}
+jQuery must be loaded before the Style Kit JavaScript to function correctly.
+{% endalert %}
+
+{% alert success style=highlight %}
+These libraries are also provided by the BAS CDN
+{% endalert %}
+
+<table class="bsk-table bsk-table-bordered">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>URL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Minified jQuery</td>
+      <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/js-libs/jquery-3.1.1.min.js</code></pre></td>
+    </tr>
+  </tbody>
+</table>
+
+{% alert danger style=highlight %}
+These libraries are not included in other distribution types
+{% endalert %}
+
+{% include snippets/topic-section-metadata.html
   title="Sub-Resource Integrity (SRI) values"
   heading_level=2
 %}
 
 [Sub-Resource Integrity (SRI)](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) values are
-available for all CSS files served through the BAS CDN.
+available for all CSS and JS files served through the BAS CDN.
 
 {% unless jekyll.environment == 'production' %}
 {% alert experimental %}
@@ -112,7 +170,9 @@ for URLs to the latest stable version.
 | Resource                    | SRI value                                                                                                                                                                                                                 |
 | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `css/bas-style-kit.css`     | `{% unless jekyll.environment == 'production' %}{{ site.data.bsk_sri_base_staging['dist/css/bas-style-kit.css'] }}{% else %}{{ site.data.bsk_sri_base_production['dist/css/bas-style-kit.css'] }}{% endunless %}`         |
+| `css/bas-style-kit.js`      | `{% unless jekyll.environment == 'production' %}{{ site.data.bsk_sri_base_staging['dist/js/bas-style-kit.js'] }}{% else %}{{ site.data.bsk_sri_base_production['dist/js/bas-style-kit.js'] }}{% endunless %}`             |
 | `css/bas-style-kit.min.css` | `{% unless jekyll.environment == 'production' %}{{ site.data.bsk_sri_base_staging['dist/css/bas-style-kit.min.css'] }}{% else %}{{ site.data.bsk_sri_base_production['dist/css/bas-style-kit.min.css'] }}{% endunless %}` |
+| `css/bas-style-kit.min.js`  | `{% unless jekyll.environment == 'production' %}{{ site.data.bsk_sri_base_staging['dist/js/bas-style-kit.min.js'] }}{% else %}{{ site.data.bsk_sri_base_production['dist/js/bas-style-kit.min.js'] }}{% endunless %}`     |
 {: .bsk-table .bsk-table-hover }
 
 These values are also available in a machine readable format from:
@@ -147,8 +207,11 @@ E.g.
 A `.zip` archive of the Style Kit is available containing:
 
 * compiled CSS
-* minified CSS with source maps
+* compiled and minified CSS with source maps
+* compiled JavaScript
+* compiled and minified JavaScript
 * web fonts in `.eot`, `.ttf`, `.woff` and `.woff2` formats
+* logos in `.png` formats
 
 {% alert warning style=solid %}
 It is **strongly** recommended to use the
@@ -187,8 +250,9 @@ $ npm install --save bas-style-kit
 {% endhighlight %}
 
 {% alert info %}
-Using the Style Kit in this way requires you to compile the Style Kit's Sass files and perform other tasks yourself.
-<br /> This workflow is documented in the [core BAS Style Kit project]({{ site.bsk_source_code_url }}){: .alert-bsk-link}.
+Using the Style Kit in this way requires you to compile the Style Kit's Sass and JavaScript yourself, as well as other
+tasks for fonts and logos. <br /> This workflow is documented in the
+[core BAS Style Kit project]({{ site.bsk_source_code_url }}){: .alert-bsk-link}.
 {% endalert %}
 {% endif %}
 
@@ -211,7 +275,7 @@ managing source files yourself to make upgrading to future releases of the Style
 {% endalert %}
 
 {% alert info %}
-Using the Style Kit in this way requires you to compile the Style Kit's Sass files and perform other tasks yourself.
-<br /> This workflow is documented in the [core BAS Style Kit project]({{ site.bsk_source_code_url }}){: .alert-bsk-link}.
+Using the Style Kit in this way requires you to compile the Style Kit's Sass and JavaScript yourself, as well as other
+tasks for fonts and logos. <br /> This workflow is documented in the
+[core BAS Style Kit project]({{ site.bsk_source_code_url }}){: .alert-bsk-link}.
 {% endalert %}
-

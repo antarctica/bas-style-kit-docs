@@ -12,6 +12,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * Primary and development phase labels
 * Development phase colours
 * Alert logo styles, variants and layouts
+* Javascript distribution information, including required JS libraries
 
 ### Fixed
 
@@ -28,6 +29,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 'BAS Style Kit') grids
 * Updated visibility examples to include new Full HD breakpoint
 * Updated URLs to reflect change in project location in GitHub (you may need to re-pull the project Docker image)
+* Updated interactive plugins documentation where a Style Kit specific version exists
 
 ### Removed
 

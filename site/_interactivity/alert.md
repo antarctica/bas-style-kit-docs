@@ -14,12 +14,14 @@ sections:
 ## Overview
 {: #{{ 'Overview' | slugify }}}
 
-Use the Bootstrap [alert](http://getbootstrap.com/javascript/#alerts) plugin with the Style Kit
-[alert component]({{ '/components/alert' | prepend: site.baseurl }}) to create
+The Style Kit includes a customised version of the Bootstrap [alert](http://getbootstrap.com/javascript/#alerts) plugin
+to be compatible with Style Kit specific classes. It's functionality and data API remain exactly the same.
+
+It can be used to create
 [dismissible alerts]({{ '/components/alert/#dismissible-alerts' | prepend: site.baseurl }}).
 
-[View Alert Plugin](http://getbootstrap.com/javascript/#alerts){:.bsk-btn .bsk-btn-default }
+[View Alert Plugin Documentation](http://getbootstrap.com/javascript/#alerts){:.bsk-btn .bsk-btn-default }
 
 {% alert info %}
-All Bootstrap plugins require [jQuery](https://jquery.com){: .bsk-alert-link }.
+All interactive plugins require [jQuery]({{ '/start/distribution#javascript-libraries' | prepend: site.baseurl }}){: .bsk-alert-link }.
 {% endalert %}
