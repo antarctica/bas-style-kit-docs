@@ -37,6 +37,8 @@ band, otherwise it will look strange. It is not enough to use `.band-bsk` on its
   heading_level=3
   current_phase="live"
   current_version="0.1.0"
+  future_phase="deprecated"
+  future_version="0.3.0"
   included="yes"
 %}
 
@@ -51,6 +53,8 @@ Add the `.band-bsk-default` class for standard bands.
   heading_level=3
   current_phase="live"
   current_version="0.1.0"
+  future_phase="deprecated"
+  future_version="0.3.0"
   included="yes"
 %}
 
@@ -65,6 +69,8 @@ Add the `.band-bsk-inverse` class for an alternative band style. This has no sem
   heading_level=2
   current_phase="live"
   current_version="0.1.0"
+  future_phase="deprecated"
+  future_version="0.3.0"
   included="yes"
 %}
 
