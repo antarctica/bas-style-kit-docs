@@ -36,6 +36,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * Updated URLs to reflect change in project location in GitHub (you may need to re-pull the project Docker image)
 * Updated interactive plugins documentation where a Style Kit specific version exists
 * Image Purchase component replaced with Image Copyright component for greater flexibility
+* Band component is now deprecated and will be removed in the 0.3.0 final release
 
 ### Removed
 
