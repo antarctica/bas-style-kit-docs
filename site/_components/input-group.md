@@ -160,7 +160,7 @@ instead of text.
   title="Button input group"
   heading_level=3
   current_phase="alpha"
-  future_phase="live"
+  future_phase="beta"
   current_version="0.1.0"
   future_version="0.2.0"
   included="yes"
@@ -168,6 +168,10 @@ instead of text.
 
 Use the `.bsk-input-group-btn` class, instead of `.bsk-input-group-addon`, as an element which contains a
 [button]({{ '/core/buttons' | prepend: site.baseurl }}).
+
+{% alert warning %}
+**Heads up!** Buttons in input groups are not yet fully supported.
+{% endalert %}
 
 {% example html %}
 <form>
@@ -197,8 +201,9 @@ Use the `.bsk-input-group-btn` class, instead of `.bsk-input-group-addon`, as an
 Use the `.bsk-input-group-btn` class, instead of `.bsk-input-group-addon`, as an element which contains a
 [button drop-down]({{ '/components/drop-down/#button-drop-down' | prepend: site.baseurl }}).
 
+{% alert warning %}
 **Heads up!** Button drop-downs in input groups are not yet fully supported.
-{: .alert .alert-warning }
+{% endalert %}
 
 {% example html %}
 <form>
