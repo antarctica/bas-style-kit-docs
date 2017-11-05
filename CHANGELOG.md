@@ -18,6 +18,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 * Breakpoint information for the Extra Large breakpoint
 * Incorrect notation for grid column sizes for breakpoints (used `-` minus instead of `~` approximate)
+* Adding correct warnings for using buttons in input groups (still not quite there)
 
 ### Changed
 
