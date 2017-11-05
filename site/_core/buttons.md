@@ -10,6 +10,8 @@ sections:
   -
     title: Primary button
   -
+    title: Experimental button
+  -
     title: Contextual colours
   -
     title: Contextual icons
@@ -99,6 +101,20 @@ Add the `.bsk-btn-primary` class for the main call to action.
 
 {% example html %}
 <button class="bsk-btn bsk-btn-primary" type="submit">Primary Action</button>
+{% endexample %}
+
+{% include snippets/topic-section-metadata.html
+  title="Experimental button"
+  heading_level=3
+  current_phase="live"
+  current_version="0.3.0"
+  included="yes"
+%}
+
+Add the `.bsk-btn-experimental` class for actions that are experimental or not yet fully supported.
+
+{% example html %}
+<button class="bsk-btn bsk-btn-experimental" type="submit">Experimental Action</button>
 {% endexample %}
 
 {% include snippets/topic-section-metadata.html

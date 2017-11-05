@@ -8,6 +8,8 @@ sections:
   -
     title: Close icon
   -
+    title: Experimental icon
+  -
     title: Standard contextual icons
   -
     title: External service icons
@@ -90,6 +92,33 @@ Use the `fa-times-circle` icon wrapped in a `.bsk-close` element for indicating 
 
 {% example html %}
 <button type="button" class="bsk-close" aria-label="Close"><i class="fa fa-fw fa-times-circle" aria-hidden="true"></i></button>
+{% endexample %}
+
+{% include snippets/topic-section-metadata.html
+  title="Experimental icon"
+  heading_level=3
+  current_phase="live"
+  current_version="0.3.0"
+  included="yes"
+%}
+
+Use the `fa-flask` icon for indicating things that are experimental or works in progress.
+
+<div class="bsk-docs-icons-wrapper">
+  <div class="bsk-row">
+    <div class="bsk-col-12-md-3">
+      <div class="bsk-docs-icon"><i class="fa fa-fw fa-4x fa-flask" aria-hidden="true"></i></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
+        <li>Flask</li>
+        <li class="bsk-docs-icon-reference">fa-flask</li>
+        <li><code>&lt;i class="fa fa-fw fa-flask" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+{% example html %}
+<button type="button" class="bsk-btn bsk-btn-experimental"><i class="fa fa-fw fa-flask" aria-hidden="true"></i> Experimental Action</button>
 {% endexample %}
 
 {% alert info style=highlight %}

@@ -181,6 +181,14 @@ A default link colour is applied to the `<body>` element.
         <li class="bsk-docs-hex-reference">#28A197</li>
       </ul>
     </div>
+    <div class="bsk-col-12-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-variant-experimental-base"></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
+        <li>Experimental variant base</li>
+        <li><code>$state-experimental-base</code></li>
+        <li class="bsk-docs-hex-reference">#6F72AF</li>
+      </ul>
+    </div>
   </div>
   <div class="bsk-row">
     <div class="bsk-col-12-md-2">
@@ -189,6 +197,14 @@ A default link colour is applied to the `<body>` element.
         <li>Primary variant text</li>
         <li><code>$state-primary-text</code></li>
         <li class="bsk-docs-hex-reference">#1B6C65</li>
+      </ul>
+    </div>
+    <div class="bsk-col-12-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-variant-experimental-text"></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
+        <li>Experimental variant text</li>
+        <li><code>$state-experimental-text</code></li>
+        <li class="bsk-docs-hex-reference">#4A4C75</li>
       </ul>
     </div>
   </div>
