@@ -247,28 +247,49 @@ Use the `.bsk-navbar-brand` class to indicate the name of the current website or
   included="yes"
 %}
 
-Use the same `.bsk-navbar-brand` class with a image to show the
-[BAS Logo]({{ '/core/logos/#bas-logo' | prepend: site.baseurl }}) or other image.
+Use the same `.bsk-navbar-brand` class with a image a logo or other image.
 
 You will need to create add a custom class wherever the `.bsk-navbar-brand` class is used to adjust padding.
 
-The examples below use a `.bsk-docs-navbar-brand-bas-logo` class with the following styles:
+To look right, scale the logo or image so that its height is one of these sizes.
 
-{% highlight css %}
-.bsk-docs-navbar-brand-bas-logo {
-  padding-top: 7px;
-}
-.bsk-docs-navbar-brand-bas-logo .img {
-  width: 150px;
-}
-{% endhighlight %}
+| Navbar Variant | Style       | Height (Px) |
+| -------------- | ----------- | ----------- |
+| Regular        | Regular     | 32          |
+| Regular        | Full height | 48          |
+| Large          | Regular     | 64          |
+| Large          | Full height | 96          |
+{: .bsk-table .bsk-table-responsive }
+
+{% alert info style=highlight %}
+You will need to use additional styles to correct the padding applied to brand images.
+{% endalert %}
+
+{% alert info style=highlight %}
+See the other [navbar sizes](#sizes) for other examples.
+{% endalert %}
 
 {% example html %}
 <nav class="bsk-navbar">
   <div class="bsk-container-fluid">
     <div class="bsk-navbar-header">
-      <a class="bsk-navbar-brand bsk-docs-navbar-brand-bas-logo" href="#">
-        <img alt="British Antarctic Survey Logo" src="{% unless jekyll.environment == 'production' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endunless %}/{% include snippets/bsk-version.html %}/img/logos-symbols/bas-logo-inverse-transparent-32.png">
+      <a class="bsk-navbar-brand bsk-docs-navbar-brand-image-32" href="#">
+        <img src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Logo&w=32&h=32">
+      </a>
+    </div>
+    <ul class="bsk-nav bsk-navbar-nav">
+      <li><a href="#">Item</a></li>
+    </ul>
+  </div><!-- /.bsk-container-fluid -->
+</nav>
+{% endexample %}
+
+{% example html %}
+<nav class="bsk-navbar">
+  <div class="bsk-container-fluid">
+    <div class="bsk-navbar-header">
+      <a class="bsk-navbar-brand bsk-docs-navbar-brand-image-48" href="#">
+        <img src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Logo&w=48&h=48">
       </a>
     </div>
     <ul class="bsk-nav bsk-navbar-nav">
@@ -284,9 +305,9 @@ Add the `.bsk-fix-navbar-brand-img-txt` class to a brand image to combine with b
 <nav class="bsk-navbar">
   <div class="bsk-container-fluid">
     <div class="bsk-navbar-header">
-      <a class="bsk-navbar-brand bsk-docs-navbar-brand-bas-logo" href="#">
-        <img class="bsk-fix-navbar-brand-img-txt" alt="British Antarctic Survey Logo" src="{% unless jekyll.environment == 'production' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endunless %}/{% include snippets/bsk-version.html %}/img/logos-symbols/bas-logo-inverse-transparent-32.png">
-        Site Name
+      <a class="bsk-navbar-brand bsk-docs-navbar-brand-image-32" href="#">
+        <img class="bsk-fix-navbar-brand-img-txt" src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Logo&w=32&h=32">
+        Site name
       </a>
     </div>
     <ul class="bsk-nav bsk-navbar-nav">
@@ -508,8 +529,30 @@ Add one of these classes to alter the size of a jumbotron:
         <span class="bsk-icon-bar"></span>
         <span class="bsk-icon-bar"></span>
       </button>
-      <a class="bsk-navbar-brand bsk-docs-navbar-brand-bas-logo-lg" href="#">
-        <img alt="British Antarctic Survey Logo" src="{% unless jekyll.environment == 'production' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endunless %}/{% include snippets/bsk-version.html %}/img/logos-symbols/bas-logo-inverse-transparent-64.png">
+      <a class="bsk-navbar-brand bsk-docs-navbar-brand-image-64" href="#">
+        <img src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Logo&w=64&h=64">
+      </a>
+    </div>
+    <ul class="bsk-nav bsk-navbar-nav">
+      <li><a href="#">Item</a></li>
+    </ul>
+  </div><!-- /.bsk-container-fluid -->
+</nav>
+{% endexample %}
+
+{% example html %}
+<nav class="bsk-navbar bsk-navbar-lg">
+  <div class="bsk-container-fluid">
+    <!-- Site name and toggle get grouped for better mobile display -->
+    <div class="bsk-navbar-header">
+      <button type="button" class="bsk-navbar-toggle bsk-collapsed" data-toggle="collapse" data-target="#bsk-example-navbar-collapse-1" aria-expanded="false">
+        <span class="bsk-sr-only">Toggle navigation</span>
+        <span class="bsk-icon-bar"></span>
+        <span class="bsk-icon-bar"></span>
+        <span class="bsk-icon-bar"></span>
+      </button>
+      <a class="bsk-navbar-brand bsk-docs-navbar-brand-image-96" href="#">
+        <img src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Logo&w=96&h=96">
       </a>
     </div>
     <ul class="bsk-nav bsk-navbar-nav">
