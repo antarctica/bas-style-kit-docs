@@ -160,6 +160,10 @@ Add one of these classes to align a media object horizontally:
 | Right                | `.bsk-media-right`         |
 {: .bsk-table .bsk-table-responsive }
 
+{% alert info %}
+When using right alignment, the `.bsk-media-body` needs to be before the `bsk-media-right` object.
+{% endalert %}
+
 {% example html %}
 <!-- Left aligned -->
 <div class="bsk-media">
@@ -202,10 +206,14 @@ Add one of these classes to align a media object horizontally:
 | Bottom              | `.bsk-media-bottom`      |
 {: .bsk-table .bsk-table-responsive }
 
+{% alert info %}
+Vertical alignment classes need a horizontal alignment class as well to function correctly.
+{% endalert %}
+
 {% example html %}
 <!-- Top aligned (default) -->
 <div class="bsk-media">
-  <div class="bsk-media-left">
+  <div class="bsk-media-left bsk-media-top">
     <a href="#"><img class="bsk-media-object" src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Avatar&w=64&h=64" alt="Avatar"></a>
   </div>
   <div class="bsk-media-body">
