@@ -21,6 +21,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * Incorrect notation for grid column sizes for breakpoints (used `-` minus instead of `~` approximate)
 * Adding correct warnings for using buttons in input groups (still not quite there)
 * Layout and alignment issues with site footer
+* Updating navbar brand image examples to be more generic and complete
 
 ### Changed
 
