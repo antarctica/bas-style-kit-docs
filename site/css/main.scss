@@ -264,9 +264,3 @@ $screen-sm-min: 768px !default;
   }
 }
 
-// Styles to fix issue with 'tabindex=-1'
-body {
-  [tabindex]:focus {
-    outline: none;
-  }
-}

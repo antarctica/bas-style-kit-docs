@@ -195,6 +195,13 @@ Due to browser bugs, the target of the skip navigation link **must** set the `ta
 correctly.
 {% endalert %}
 
+{% alert info style=highlight %}
+As a side effect of using the `tabindex` workaround recommended above, it is necessary to disable the outline that shows
+on interactive elements due to the browser inferring anything with a tab index is also interactive, which is not the case
+for elements such as <code>&lt;body&gt;</code>. The Style Kit disables this outline automatically on the
+<code>&lt;body&gt;</code> element, this just explains why we do so.
+{% endalert %}
+
 {% highlight html %}
 <body>
   <a href="#site-content" class="sr-only sr-only-focusable">Skip to main content</a>
