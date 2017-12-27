@@ -1,0 +1,15 @@
+// Workaround for cookie notice in fixed width container
+.site-alert-cookie-notice-wrapper {
+  background-color: #003a5d;
+
+  .bsk-container {
+    .bsk-alert-cookie-notice {
+      padding-left: 0;
+      padding-right: 0;
+
+      .bsk-close {
+        right: 15px;
+      }
+    }
+  }
+}

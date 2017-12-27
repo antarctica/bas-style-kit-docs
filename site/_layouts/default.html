@@ -4,16 +4,12 @@ layout: html
 
 <div id="site-top"></div>
 <a href="#site-content" class="bsk-sr-only bsk-sr-only-focusable">Skip to main content</a>
-{% include layout/cookie-banner.html %}
-{% include layout/site-navigation.html %}
-{% unless jekyll.environment == 'production' %}{% include layout/testing-site.html position="after-main-navigation" %}{% endunless %}
-{% include layout/beta-banner.html %}
+{% include layout/site-header.html %}
 
 <main class="bsk-container">
     {{ content }}
 </main>
 
-{% unless jekyll.environment == 'production' %}{% include layout/testing-site.html position="before-footer" %}{% endunless %}
 {% include layout/site-footer.html %}
 
 {% include snippets/body-js.html %}
