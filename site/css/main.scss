@@ -2,217 +2,24 @@
 ---
 @charset "utf-8";
 
-// == Copies of Bootstrap or BAS Style Kit variables
 // Styles for site design and layout
 @import 'site';
 
-$screen-sm-min: 768px !default;
 // Styles for specific pages
+@import 'homepage';
 @import 'feedback';
 
-// ==  Site specific styles
+// Styles for documentation elements
+@import 'documentation';
 
-// Styles for topic table of contents
-
-#markdown-toc {
-  padding-left: 20px;
-}
-
-// Styles for experimental variant in some places
-.bsk-docs-text-experimental-light {
-  color: #9fa1c9;
-}
-// Styles for footer
-// Some elements to be formalised
-
-.bsk-docs-site-footer {
-  &.no-margin {
-    margin-top: 0;
-  }
-
-  .bsk-docs-site-build-info,
-  .bsk-docs-site-back-to-top,
-  .bsk-footer-policy-links,
-  .bsk-docs-site-licensing {
-    text-align: center;
-    margin-top: 10px;
-  }
-
-  @media (min-width: $screen-sm-min) {
-    .bsk-docs-site-back-to-top,
-    .bsk-footer-policy-links,
-    .bsk-docs-site-build-info,
-    .bsk-docs-site-licensing {
-      margin-top: 0;
-    }
-
-    .bsk-docs-site-back-to-top,
-    .bsk-footer-policy-links {
-      text-align: right;
-    }
-
-    .bsk-docs-site-build-info,
-    .bsk-docs-site-licensing {
-      text-align: left;
-    }
-  }
-}
-
-// Masthead on homepage
-
-.bsk-docs-masthead {
-  background-image: url('{{ "/img/site-masthead-tom-welsh.jpg" | prepend: site.baseurl }}');
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  .bsk-docs-masthead-wrapper {
-    width: 256px;
-  }
-
-  .bsk-docs-masthead-symbol {
-    display: inline-block;
-    background-image: url('https://cdn.web.bas.ac.uk/bas-style-kit/0.3.0-alpha/img/logos-symbols/bas-roundel-inverse-transparent-256.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 256px;
-    width: 256px;
-  }
-
-  .bsk-docs-masthead-title {
-    color: #fff;
-  }
-
-  .bsk-docs-masthead-strapline {
-    margin-top: 60px;
-    margin-bottom: 40px;
-
-    .bsk-jumbotron-overlay {
-      padding: 15px;
-    }
-  }
-
-  .bsk-docs-masthead-version {
-    color: #fff;
-  }
-}
-
-// Styles for bigger alerts on the homepage
-.bsk-docs-alert-block-lg {
-  padding: 30px;
-}
-
-// Styles for spacing out paragraphs in alerts on the homepage
-.bsk-docs-spacer-md {
-  height: 5px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-// Styles for sections on the homepage
-
-.bsk-docs-home-sections {
-  section {
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-  h2 {
-    margin-bottom: 20px;
-  }
-
-  .btn {
-    margin-top: 20px;
-  }
-}
-
-// Styles for displaying pre blocks like code blocks where white-space needs preserving
-
-.bsk-docs-like-code {
-  padding: 2px 4px;
-  font-size: 90%;
-  background-color: #f9f2f4;
-  color: #c7254e;
-  border: none;
-}
-
-// Styles for displaying rendered portions of examples
-
-.highlight {
-  font-size: 14px;
-}
-
-.bsk-docs-example {
-  margin-left: 0;
-  margin-right: 0;
-  margin-bottom: 0;
-
-  padding: 25px;
-  border: 2px solid #E7EBF1;
-  border-bottom: none;
-}
-
-// Styles for displaying content blocks in layout examples
-
-.bsk-docs-content-block {
-  padding: 10px;
-
-  background-color: rgba(195, 195, 195,.15);
-  border: 1px solid rgba(140, 140, 140,.2);
-  text-align: center;
-}
-
-// Styles for visibility test
-
-.bsk-docs-responsive-utilities-test {
-  margin-top: 25px;
-  margin-bottom: 25px;
-}
-
-// Styles for collection index jumbotron's
-
-.bsk-docs-collection-masthead {
-  background-color: #2B8CC4;
-  color: #FFFFFF;
-}
-
-// Styles for topic dividers in collection indexes
-.bsk-docs-topic-index-divider {
-  margin-top: 20px;
-
-  border-top: 5px solid #2B8CC4;
-}
-
-// Styles for fixing examples, such as fixed with footers and navbars,
-// as these would normally spill out of their example containers.
-
+// Styles for fixing examples, such as fixed with footers and navbars, otherwise they would spill out of examples.
 @import 'example-fixes';
 
-// Styles for colour swatches - base classes may become a component in the future
-// These are also used for icon lists
-
+// Styles for colour swatches & icon lists - base classes may become a component in the future
 @import 'swatches';
 
 // Styles for simulating fonts, normally these are used inherently by relevant elements and components
-
 @import 'fonts';
 
 // Styles for syntax highlighting
-
 @import 'syntax-highlighting';
-
-// Styles for section metadata
-
-.bsk-docs-section-metadata {
-  margin-left: -5px;
-  margin-bottom: 25px;
-  padding-left: 0;
-
-  list-style: none;
-  color: #777777;
-
-  &> li {
-    display: inline-block;
-    padding-right: 5px;
-    padding-left: 5px;
-  }
-}
-

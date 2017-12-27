@@ -1,0 +1,68 @@
+// Styles for masthead
+.site-home-masthead {
+  background-image: url('/img/site-masthead-tom-welsh.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .site-home-masthead-wrapper {
+    width: 256px;
+  }
+
+  .site-home-masthead-symbol {
+    display: inline-block;
+    background-image: url('https://cdn.web.bas.ac.uk/bas-style-kit/0.3.0-beta/img/logos-symbols/bas-roundel-inverse-transparent-256.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 256px;
+    width: 256px;
+  }
+
+  .site-home-masthead-title {
+    color: #fff;
+  }
+
+  .site-home-masthead-strapline {
+    margin-top: 60px;
+    margin-bottom: 40px;
+
+    .bsk-jumbotron-overlay {
+      padding: 15px;
+    }
+  }
+
+  .site-home-masthead-version {
+    color: #fff;
+  }
+}
+
+// Styles for no margin after navbar to meet masthead without a gap
+.site-home-no-margin-bottom {
+  margin-bottom: 0;
+}
+
+// Styles for bigger alerts on the homepage
+.site-home-alert {
+  padding: 30px;
+}
+
+// Styles for spacing out paragraphs in alerts on the homepage
+.site-home-spacer-md {
+  height: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+// Styles for sections on the homepage
+.site-home-sections {
+  section {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  .btn {
+    margin-top: 20px;
+  }
+}

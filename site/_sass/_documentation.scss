@@ -1,0 +1,73 @@
+// Styles for topic table of contents
+#markdown-toc {
+  padding-left: 20px;
+}
+
+// Styles for section metadata
+.bsk-docs-section-metadata {
+  margin-left: -5px;
+  margin-bottom: 25px;
+  padding-left: 0;
+
+  list-style: none;
+  color: #777777;
+
+  &> li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+}
+
+// Styles for collection index jumbotron's
+.bsk-docs-collection-masthead {
+  background-color: #2B8CC4;
+  color: #FFFFFF;
+}
+
+// Styles for topic dividers in collection indexes
+.bsk-docs-topic-index-divider {
+  margin-top: 20px;
+
+  border-top: 5px solid #2B8CC4;
+}
+
+// Styles for displaying 'pre' blocks like code blocks where white-space needs preserving
+.bsk-docs-like-code {
+  padding: 2px 4px;
+  font-size: 90%;
+  background-color: #f9f2f4;
+  color: #c7254e;
+  border: none;
+}
+
+// Styles for displaying rendered portions of examples
+
+.highlight {
+  font-size: 14px;
+}
+
+.bsk-docs-example {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+
+  padding: 25px;
+  border: 2px solid #E7EBF1;
+  border-bottom: none;
+}
+
+// Styles for displaying content blocks in layout examples
+.bsk-docs-content-block {
+  padding: 10px;
+
+  background-color: rgba(195, 195, 195,.15);
+  border: 1px solid rgba(140, 140, 140,.2);
+  text-align: center;
+}
+
+// Styles for visibility tests
+.bsk-docs-responsive-utilities-test {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
