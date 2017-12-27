@@ -1,4 +1,4 @@
-<nav class="bsk-navbar bsk-docs-main-navigation {% unless jekyll.environment == 'production' %}bsk-docs-navbar-testing{% endunless %}{% if page.url == '/' %} no-margin-bottom{% endif %}">
+<nav class="bsk-navbar bsk-docs-main-navigation {% if page.url == '/' %} site-home-no-margin-bottom{% endif %}">
     <div class="bsk-container">
       <!-- Project and toggle get grouped for better mobile display -->
       <div class="bsk-navbar-header">
@@ -11,7 +11,7 @@
 
         <a class="bsk-navbar-brand" href="{{ "/" | prepend: site.baseurl }}">
           {{ site.title }}
-          {% if jekyll.environment != 'production' %}<i class="fa fa-fw fa-flask bsk-docs-text-experimental-light" aria-hidden="true"></i> <span class="bsk-sr-only">Testing version</span>{% endif %}
+          {% if jekyll.environment != 'production' %}<i class="fa fa-fw fa-flask site-text-experimental-light" aria-hidden="true"></i> <span class="bsk-sr-only">Testing version</span>{% endif %}
         </a>
       </div>
 
