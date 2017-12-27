@@ -8,7 +8,7 @@ title: Site Feedback
   <p class="lead">Use the form below to ask a question, report a problem or suggest an improvement we can make to this website.</p>
 </header>
 
-<form class="bsk-docs-feedback-form" action="https://o4eepn35pb.execute-api.eu-west-1.amazonaws.com/prod/feedback" accept-charset="UTF-8" method="post">
+<form class="site-feedback-form" action="https://o4eepn35pb.execute-api.eu-west-1.amazonaws.com/prod/feedback" accept-charset="UTF-8" method="post">
   <!-- Additional environment information -->
   <input type="hidden" id="feedbackEnvironmentSiteIdentifier" name="feedbackEnvironmentSiteIdentifier" value="{{ site.feedback_api_identifier }}"></input>
   <input type="hidden" id="feedbackEnvironmentSiteRevsion" name="feedbackEnvironmentSiteRevsion" value="{{ site.revision }}"></input>
@@ -20,140 +20,113 @@ title: Site Feedback
   <!-- Main form -->
   <fieldset>
     <legend>What is your feedback about?</legend>
-    <div class="form-group">
-      <div class="radio">
+    <div class="bsk-form-group">
+      <div class="bsk-radio">
         <label>
           <input type="radio" name="feedbackType" id="feebackTypeComment" value="comment" checked>
           General comment or question on the content of this website
         </label>
       </div>
-      <div class="radio">
+      <div class="bsk-radio">
         <label>
           <input type="radio" name="feedbackType" id="feedbackTypeBug" value="bug">
           A bug or technical issue with using this website (including security disclosures)
         </label>
       </div>
-      <div class="radio">
+      <div class="bsk-radio">
         <label>
           <input type="radio" name="feedbackType" id="feedbackTypeImprovement" value="improvement">
           A suggestion for an improvement
         </label>
       </div>
-      <span class="help-block margin-after">This helps us route your feedback to most relevant person or team.</span>
+      <span class="bsk-help-block bsk-margin-after">This helps us route your feedback to most relevant person or team.</span>
     </div>
   </fieldset><!-- /feedbackType -->
   <fieldset>
     <legend>What does your feedback apply to?</legend>
-    <div class="form-group">
-      <div class="radio">
+    <div class="bsk-form-group">
+      <div class="bsk-radio">
         <label>
           <input type="radio" name="feedbackScope" id="feebackScopeEverything" value="everything">
           The whole site
         </label>
       </div>
-      <div class="row">
-        <div class="col-md-2">
-          <div class="radio">
+      <div class="bsk-row">
+        <div class="bsk-col-12-md-2">
+          <div class="bsk-radio">
             <label>
               <input type="radio" name="feedbackScope" id="feebackScopeSpecific" value="specific" checked>
               A specific page
             </label>
           </div>
         </div>
-        <div class="col-md-10">
-          <label class="sr-only" for="feedbackScopeSpecificUrl">Specific page URL</label>
-          <input type="url" class="form-control" name="feedbackScopeSpecificUrl" id="feedbackScopeSpecificUrl" placeholder="https://www.example.com/index.html">
+        <div class="bsk-col-12-md-10">
+          <label class="bsk-sr-only" for="feedbackScopeSpecificUrl">Specific page URL</label>
+          <input type="url" class="bsk-form-control" name="feedbackScopeSpecificUrl" id="feedbackScopeSpecificUrl" placeholder="https://www.example.com/index.html">
         </div>
       </div>
-      <span class="help-block margin-after">If there are multiple pages please select <em>The whole site</em>.</span>
+      <span class="bsk-help-block bsk-margin-after">If there are multiple pages please select <em>The whole site</em>.</span>
     </div>
   </fieldset><!-- /feedbackScope -->
   <fieldset>
     <legend>Can you provide any more information?</legend>
-    <span class="help-block margin-before"><strong>Do not any include any sensitive or personal information.</strong></span>
-    <div class="form-group">
-      <label class="sr-only" for="feedbackDetails">Feedback details</label>
-      <textarea name="feedbackDetails" id="feedbackDetails" class="form-control" rows="8"></textarea>
+    <span class="bsk-help-block bsk-margin-before"><strong>Do not any include any sensitive or personal information.</strong></span>
+    <div class="bsk-form-group">
+      <label class="bsk-sr-only" for="feedbackDetails">Feedback details</label>
+      <textarea name="feedbackDetails" id="feedbackDetails" class="bsk-form-control" rows="8"></textarea>
     </div>
   </fieldset><!-- /feedbackDetails -->
   <fieldset>
     <legend>Would you like a reply?</legend>
-    <div class="form-group">
-      <span class="help-block margin-before">If you would like a reply please enter your contact details, we may not reply straight away.</span>
-      <div class="form-horizontal">
-        <div class="form-group">
-          <label class="col-sm-2 control-label">Your name</label>
-          <div class="col-sm-10">
-            <input type="text" class="form-control" name="feedbackContactName" id="feedbackContactName" placeholder="Adam Smith">
+    <div class="bsk-form-group">
+      <span class="bsk-help-block bsk-margin-before">If you would like a reply please enter your contact details, we may not reply straight away.</span>
+      <div class="bsk-form-horizontal">
+        <div class="bsk-form-group">
+          <label class="bsk-col-12-md-2 bsk-control-label">Your name</label>
+          <div class="bsk-col-12-md-10">
+            <input type="text" class="bsk-form-control" name="feedbackContactName" id="feedbackContactName" placeholder="Adam Smith">
           </div>
         </div>
-        <div class="form-group">
-          <label class="col-sm-2 control-label">Your email address</label>
-          <div class="col-sm-10">
-            <input type="email" class="form-control" name="feedbackContactEmail" id="feedbackContactEmail" placeholder="adam.smith@bas.ac.uk">
+        <div class="bsk-form-group">
+          <label class="bsk-col-12-md-2 bsk-control-label">Your email address</label>
+          <div class="bsk-col-12-md-10">
+            <input type="email" class="bsk-form-control" name="feedbackContactEmail" id="feedbackContactEmail" placeholder="adam.smith@bas.ac.uk">
           </div>
         </div>
       </div>
-      <span class="help-block margin-after">We will only use this information for contacting you about your feedback.</span>
+      <span class="bsk-help-block bsk-margin-after">We will only use this information for contacting you about your feedback.</span>
     </div>
   </fieldset><!-- /feedbackContact -->
   <fieldset>
     <legend>Additional information collected</legend>
-    <span class="help-block margin-before">
+    <span class="bsk-help-block bsk-margin-before">
       Some additional information which is useful for troubleshooting problems will be automatically included with your feedback.
       <br /> <strong>This information can not be used to personally identify you.</strong>
     </span>
-    <button id="feedbackEnvironmentContainerTrigger" class="btn btn-bsk btn-default" type="button" data-toggle="collapse" data-target="#feedbackEnvironmentContainer" aria-expanded="false" aria-controls="feedbackEnvironmentContainer" disabled>Show additional information</button>
-
-    <div id="feedbackEnvironmentContainer" class="collapse form-horizontal">
-        <div class="form-group">
-          <label class="col-sm-2 control-label">Site identifier</label>
-          <div class="col-sm-10">
-            <p id="feedbackEnvironmentOutputSiteIdentifier" class="form-control-static">{{ site.feedback_api_identifier }}</p>
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="col-sm-2 control-label">Site version</label>
-          <div class="col-sm-10">
-            <p id="feedbackEnvironmentOutputSiteRevsion" class="form-control-static">
-              {% include snippets/bsk-docs-revision.html %}
-            </p>
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="col-sm-2 control-label">BAS Style Kit version</label>
-          <div class="col-sm-10">
-            <p id="feedbackEnvironmentOutputBSKVersion" class="form-control-static">
-              {% include snippets/bsk-version.html %}
-            </p>
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="col-sm-2 control-label">JavaScript available</label>
-          <div class="col-sm-10">
-            <p id="feedbackEnvironmentOutputJSAvailable" class="form-control-static">No</p>
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="col-sm-2 control-label">User-agent</label>
-          <div class="col-sm-10">
-            <p id="feedbackEnvironmentOutputUA" class="form-control-static">Unknown</p>
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="col-sm-2 control-label">Screen size (w x h)</label>
-          <div class="col-sm-10">
-            <p id="feedbackEnvironmentOutputBrowserSize" class="form-control-static">Unknown</p>
-          </div>
-        </div>
+    <button id="feedbackEnvironmentContainerTrigger" class="bsk-btn bsk-btn-default" type="button" data-toggle="collapse" data-target="#feedbackEnvironmentContainer" aria-expanded="false" aria-controls="feedbackEnvironmentContainer" disabled>Show additional information</button>
+    <div id="feedbackEnvironmentContainer">
+      <dl class="bsk-dl-horizontal bsk-dl-horizontal-lg">
+        <dt>Site identifier</dt>
+          <dd id="feedbackEnvironmentOutputSiteIdentifier">{{ site.feedback_api_identifier }}</dd>
+        <dt>Site version</dt>
+          <dd id="feedbackEnvironmentOutputSiteRevsion">{% include snippets/bsk-docs-revision.html %}</dd>
+        <dt>BAS Style Kit version</dt>
+          <dd id="feedbackEnvironmentOutputBSKVersion">{% include snippets/bsk-version.html %}</dd>
+        <dt>JavaScript available</dt>
+          <dd id="feedbackEnvironmentOutputJSAvailable">Unknown</dd>
+        <dt>User-agent</dt>
+          <dd id="feedbackEnvironmentOutputUA">Unknown</dd>
+        <dt>Screen size (w x h)</dt>
+          <dd id="feedbackEnvironmentOutputBrowserSize">Unknown</dd>
+      </dl>
     </div>
   </fieldset><!-- /feedbackEnvironment -->
   <fieldset>
-    <button type="submit" class="btn btn-lg btn-bsk btn-bsk-primary">Send Feedback</button>
+    <button type="submit" class="bsk-btn bsk-btn-lg bsk-btn-primary">Send Feedback</button>
   </fieldset>
 </form>
 
 <hr />
 
-<p class="text-muted">If this form isn't working you can leave feedback directly by contacting the
-<a href="mailto:webapps@bas.ac.uk">BAS Web &amp; Applications Team</a>. <br > Powered by the BAS Feedback Service.</p>
+<p class="bsk-text-muted">If this form isn't working you can leave feedback directly by contacting the
+<a href="mailto:webapps@bas.ac.uk">BAS Web &amp; Applications Team</a>.</p>

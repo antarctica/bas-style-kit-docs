@@ -7,6 +7,8 @@
 @import 'site';
 
 $screen-sm-min: 768px !default;
+// Styles for specific pages
+@import 'feedback';
 
 // ==  Site specific styles
 
@@ -118,25 +120,6 @@ $screen-sm-min: 768px !default;
   }
 
   .btn {
-    margin-top: 20px;
-  }
-}
-
-// Styles for feedback form
-
-.bsk-docs-feedback-form {
-  fieldset {
-    margin-top: 40px;
-  }
-
-  .help-block.margin-before {
-    margin-bottom: 20px;
-  }
-  .help-block.margin-after {
-    margin-top: 20px;
-  }
-
-  .collapse {
     margin-top: 20px;
   }
 }
