@@ -55,33 +55,17 @@ The BAS Logo can be used with components such as:
   <strong>does not cover</strong> non-BAS projects, including personal projects of BAS Staff.</p>
 </div>
 
-{% alert warning %}
-The logo text MUST NOT be used on its own.
-{% endalert %}
-
-{% alert warning %}
-Personal projects of BAS staff are not considered as official unless explicitly agreed.
-{% endalert %}
-
-{% alert warning %}
-The colour of the roundel and logo text MUST NOT be changed
-{% endalert %}
-
-{% alert warning %}
-The font used for the logo text MUST NOT be changed (i.e. from the BAS brand font)
-{% endalert %}
-
-{% alert warning %}
-The text of the logo text MUST NOT changed (i.e. abbreivaated or reformatted)
-{% endalert %}
-
-{% alert warning %}
-For the full logo, the relationship between the roundel and logo text MUST NOT be changed.
-{% endalert %}
-
-{% alert info %}
-Contact the BAS Communications Team if you have any questions around the use of the BAS logo.
-{% endalert %}
+<div class="bsk-alert bsk-alert-outline bsk-alert-warning bsk-alert-block bsk-alert-icon">
+  <ul>
+    <li>The logo text MUST NOT be used on its own</li>
+    <li>Personal projects of BAS staff are not considered as official unless explicitly agreed.</li>
+    <li>The colour of the roundel and logo text MUST NOT be changed</li>
+    <li>The font used for the logo text MUST NOT be changed (i.e. from the BAS brand font)</li>
+    <li>The text of the logo text MUST NOT changed (i.e. abbreivaated or reformatted)</li>
+    <li>For the full logo, the relationship between the roundel and logo text MUST NOT be changed.</li>
+    <li>Contact the BAS Communications Team if you have any questions around the use of the BAS logo.</li>
+  </ul>
+</div>
 
 {% include snippets/topic-section-metadata.html
   title="Variants (BAS Logo)"
