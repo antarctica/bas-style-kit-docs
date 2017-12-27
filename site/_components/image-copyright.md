@@ -4,7 +4,7 @@ sections:
   -
     title: Overview
   -
-    title: Basic
+    title: Figure
   -
     title: Thumbnail
   -
@@ -25,7 +25,7 @@ Use the `.bsk-image-copyright-image` class on the image or media item.
 Use the `.bsk-image-copyright-attribution` class to specify the attribution information for the image or media item.
 
 {% alert info style=highlight %}
-This attribution can also include a link to purchase an image from the BAS Image Collection for example.
+This attribution can also include a link, for example to purchase an image from the BAS Image Collection
 {% endalert %}
 
 {% include snippets/topic-section-metadata.html
@@ -37,31 +37,38 @@ These elements are supported for use with the image copyright component. Other e
 supported and may not look right.
 
 {% include snippets/topic-section-metadata.html
-  title="Basic"
+  title="Figure"
   heading_level=3
   current_phase="live"
   current_version="0.1.0"
   included="yes"
 %}
 
-Add the `.bsk-image-copyright` class to a <code>&lt;div&gt;</code> element, containing an <code>&lt;img&gt;</code> with
-the `bsk-image-copyright-image` class and another <code>&lt;div&gt;</code> element for the attribution with the
-`bsk-image-copyright-attribution` class.
+Use a <code>&lt;figure&gt;</code> element with the `.bsk-image-copyright` class containing:
+<ul>
+  <li>an <code>&lt;img&gt;</code> element with the `.bsk-image-copyright-image` class for the image</li>
+  <li>a <code>&lt;figcaption&gt;</code> element with the `.bsk-image-copyright-attribution` class for the attribution</li>
+</ul>
+
+{% alert info style=highlight %}
+If a <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> don't make semantic sense use
+<code>&lt;div&gt;</code>'s instead.
+{% endalert %}
 
 {% example html %}
-<div class="bsk-image-copyright">
+<figure class="bsk-image-copyright">
   <img class="bsk-image-copyright-image" src="https://placeholdit.imgix.net/~text?txtsize=38&txt=Media%20Item&w=800&h=500" alt="placeholder image">
-  <div class="bsk-image-copyright-attribution">Copyright holder</div>
-</div>
+  <figcaption class="bsk-image-copyright-attribution">Copyright holder</figcaption>
+</figure>
 {% endexample %}
 
 Optionally the attribution information can be a link.
 
 {% example html %}
-<div class="bsk-image-copyright">
+<figure class="bsk-image-copyright">
   <img class="bsk-image-copyright-image" src="https://placeholdit.imgix.net/~text?txtsize=38&txt=Media%20Item&w=800&h=500" alt="placeholder image">
-  <a href="https://www.example.com" class="bsk-image-copyright-attribution">Copyright holder</a>
-</div>
+  <figcaption class="bsk-image-copyright-attribution"><a href="https://www.example.com">Copyright holder</a></figcaption>
+</figure>
 {% endexample %}
 
 {% include snippets/topic-section-metadata.html
@@ -127,7 +134,7 @@ Add the `.bsk-image-copyright` class to a [jumbotron]({{ '/components/jumbotron'
 
 Use the `background-image` CSS property to set the image, or other media item, as its background.
 
-Use a <code>&lt;div&gt;</code> element for the attribution with the `bsk-image-copyright-attribution` class.
+Use a <code>&lt;div&gt;</code> element for the attribution with the `.bsk-image-copyright-attribution` class.
 
 {% example html %}
 <div class="bsk-jumbotron bsk-jumbotron-default bsk-image-copyright">
