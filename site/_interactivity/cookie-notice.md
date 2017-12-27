@@ -19,8 +19,9 @@ sections:
 Use the Style Kit cookie notice plugin to hide a site cookie notice for 30 days. This plugin builds upon functionality
 provided by the [alert]({{ '/interactivity/alert' | prepend: site.baseurl }}) plugin.
 
-{% alert warning style=highlight %}
-This plugin is not designed for any other purpose.
+{% alert info style=highlight %}
+It is recommended to use the
+[cookie notice alert variant]({{ '/components/alert/#cookie-notice-alert' | prepend: site.baseurl }}) with this plugin.
 {% endalert %}
 
 ## Usage

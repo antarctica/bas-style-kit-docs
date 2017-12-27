@@ -8,6 +8,8 @@ sections:
   -
     title: Experimental alert
   -
+    title: Cookie notice alert
+  -
     title: Contextual colours
   -
     title: Contextual icons
@@ -78,6 +80,23 @@ There is no *default* alert variant, as a grey alert for example wouldn't make a
 {% example html %}
 <div class="bsk-alert bsk-alert-solid bsk-alert-experimental" role="alert">
   Experimental alert
+</div>
+{% endexample %}
+
+{% include snippets/topic-section-metadata.html
+  title="Cookie notice alert"
+  heading_level=3
+  current_phase="live"
+  current_version="0.3.0"
+  included="yes"
+%}
+
+This variant is only intended for displaying a cookie notice. It can be used with the
+[cookie notice]({{ '/interactivity/cookie-notice' | prepend: site.baseurl }}) plugin.
+
+{% example html %}
+<div class="bsk-alert bsk-alert-solid bsk-alert-cookie-notice" role="alert">
+This website uses cookies to help us make it better - <a href="#" class="bsk-alert-link">find out more</a>.
 </div>
 {% endexample %}
 
