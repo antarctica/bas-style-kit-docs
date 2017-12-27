@@ -55,7 +55,11 @@
   color: #EEE;
 }
 
-.bsk-docs-swatch-page-background {
+.bsk-docs-swatch-html-background {
+  background-color: #333333;
+  border: 1px solid #333333;
+}
+.bsk-docs-swatch-body-background {
   background-color: #FFFFFF;
   border: 1px solid #EEEEEE;
 }
@@ -138,6 +142,9 @@
   background-color: #B7D8EB;
 }
 
+.bsk-docs-swatch-development-phase-backlog-base {
+  background-color: #2E358B;
+}
 .bsk-docs-swatch-development-phase-discovery-base {
   background-color: #912B88;
 }

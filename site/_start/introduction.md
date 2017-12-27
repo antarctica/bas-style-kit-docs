@@ -96,7 +96,7 @@ as a standalone example.
     <meta name="description" content="A brief description of this page, or application">
 
     <!-- Compiled and minified BAS Style Kit -->
-    <link rel="stylesheet" href="https://s3-eu-west-1.amazonaws.com/bas-cdn-dev/bas-style-kit/4e3aeaf/css/bas-style-kit.min.css">
+    <link rel="stylesheet" href="{{ site.bsk_cdn_base_staging }}/{{ site.bsk_version_staging }}/css/bas-style-kit.min.css" integrity="{{ site.data.bsk_sri_base_staging['dist/css/bas-style-kit.min.css'] }}" crossorigin="anonymous">
 
     <!-- Site specific styles - optional -->
   </head>

@@ -54,13 +54,24 @@ If you do use other colours, ensure this complies with the
 
 A default background colour is applied to the `<body>` element.
 
+A default background colour is also applied to the parent `<html>` element to account for shorter pages where a white
+space would be shown after the [footer]({{ '/components/footer' | prepend: site.baseurl }}) component.
+
 <div class="bsk-docs-swatch-wrapper">
   <div class="bsk-row">
     <div class="bsk-col-12-md-2">
-      <div class="bsk-docs-swatch-colour bsk-docs-swatch-page-background"></div>
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-html-background"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
-        <li>Page background</li>
-        <li><code>$page-background</code></li>
+        <li>HTML background</li>
+        <li><code>$html-bg</code></li>
+        <li class="bsk-docs-hex-reference">#333333</li>
+      </ul>
+    </div>
+    <div class="bsk-col-12-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-body-background"></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
+        <li>Body background</li>
+        <li><code>$body-bg </code></li>
         <li class="bsk-docs-hex-reference">#FFFFFF</li>
       </ul>
     </div>
@@ -397,6 +408,9 @@ To indicate the state of a service, project, feature, component or other aspect 
 set of development phases, which have associated colours. These phases and colours are defined by the Government
 Digital Service.
 
+Backlog
+: A phase for concepts that are yet to be evaluated, or deliberately held for review in the future
+
 Discovery
 : A phase before a aspect is started to find out whether users need it and is not already provided by another service
 
@@ -419,6 +433,14 @@ These colours can be used with many core styles and components, such as:
 
 <div class="bsk-docs-swatch-wrapper">
   <div class="bsk-row">
+    <div class="bsk-col-12-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-development-phase-backlog-base"></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
+        <li>Backlog base</li>
+        <li><code>$development-phase-backlog</code></li>
+        <li class="bsk-docs-hex-reference">#2E358B</li>
+      </ul>
+    </div>
     <div class="bsk-col-12-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-development-phase-discovery-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">

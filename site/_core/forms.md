@@ -688,8 +688,8 @@ Use the `disabled` attribute to mark a form field as disabled. This will prevent
 'not-allowed', and alter the field's appearance. In most browsers, setting the `disabled` attribute on a
 <code>&lt;fieldset&gt;</code> will disable all of the fields it contains.
 
-<div class="bsk-alert bsk-alert-solid-danger bsk-alert-block bsk-alert-icon">
-  <header class="bsk-alert-title">
+<div class="bsk-alert bsk-alert-solid bsk-alertdanger bsk-alert-block bsk-alert-icon">
+  <header class="bsk-alert-heading">
     <h4><i class="fa fa-fw fa-exclamation-circle bsk-alert-icon"></i>
     It is not safe to rely on this state to prevent users activating disabled actions</h4>
   </header>
@@ -742,7 +742,7 @@ this, either apply the `disabled` attribute on links directly, or use JavaScript
 Use the `readonly` attribute to some form fields as read-only. This will prevent interaction and alter the field's
 appearance, but won't change the cursor.
 
-<div class="bsk-alert bsk-alert-block bsk-alert-outline-warning bsk-alert-icon">
+<div class="bsk-alert bsk-alert-block bsk-alert-outline bsk-alert-warning bsk-alert-icon">
   <header class="bsk-alert-heading">
     <h4><i class="fa fa-fw fa-exclamation-triangle bsk-alert-icon" aria-hidden="true"></i>
     Not all form elements support this value</h4>

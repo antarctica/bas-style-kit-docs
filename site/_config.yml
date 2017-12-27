@@ -41,7 +41,7 @@ feedback_api_identifier: style-kit-docs
 
 # Note: If changing these version variables - ensure you also change the jekyll_get URLs
 
-bsk_version_staging: 0.3.0-alpha
+bsk_version_staging: 0.3.0-beta
 bsk_version_production: 0.2.0
 
 bsk_cdn_base_staging: https://cdn.web.bas.ac.uk/bas-style-kit

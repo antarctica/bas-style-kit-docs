@@ -38,29 +38,6 @@
     }
   }
 
-  .bsk-docs-navbar-brand-image-32 {
-    padding-top: 10px;
-  }
-  .bsk-docs-navbar-brand-image-48 {
-    padding-top: 1px;
-  }
-  .bsk-docs-navbar-brand-image-64 {
-    padding-top: 18px;
-
-    img {
-      // Override to fix forced width (bug)
-      width: 64px;
-    }
-  }
-  .bsk-docs-navbar-brand-image-96 {
-    padding-top: 2px;
-
-    img {
-      // Override to fix forced width (bug)
-      width: 96px;
-    }
-  }
-
   .bsk-docs-dropdown-example {
     .bsk-dropdown-menu {
       display: block;
