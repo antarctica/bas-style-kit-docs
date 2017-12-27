@@ -18,6 +18,12 @@ Use the Bootstrap [modal](http://getbootstrap.com/javascript/#modal) plugin to c
 
 [View Modal Plugin](http://getbootstrap.com/javascript/#modal){:.bsk-btn .bsk-btn-default }
 
-{% alert info %}
-All Bootstrap plugins require [jQuery](https://jquery.com){: .bsk-alert-link }.
+## Dependencies
+{: #{{ 'dependencies' | slugify }}}
+
+This plugin depends upon [jQuery](https://jquery.com).
+
+{% alert info style=highlight %}
+See [distribution]({{ '/start/distribution/#javaScript-libraries' | prepend: site.baseurl }}){: .bsk-alert-link} for
+how to include these dependencies
 {% endalert %}
