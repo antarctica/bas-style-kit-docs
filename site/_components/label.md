@@ -123,6 +123,7 @@ where relevant by adding these classes:
 
 | Development Phase | Label Class                  |
 | ----------------- | ---------------------------- |
+| Backlog           | `.bsk-label-phase-backlog`   |
 | Discovery         | `.bsk-label-phase-discovery` |
 | Alpha             | `.bsk-label-phase-alpha`     |
 | Beta              | `.bsk-label-phase-beta`      |
@@ -132,6 +133,7 @@ where relevant by adding these classes:
 
 {% example html %}
 <span class="bsk-label bsk-label-phase-discovery">Success label</span>
+<span class="bsk-label bsk-label-phase-backlog">Backlog label</span>
 <span class="bsk-label bsk-label-phase-alpha">Alpha label</span>
 <span class="bsk-label bsk-label-phase-beta">Warning label</span>
 <span class="bsk-label bsk-label-phase-live">Live phase</span>
