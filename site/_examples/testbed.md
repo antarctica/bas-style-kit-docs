@@ -25,4 +25,4 @@ which are intentionally designed not to work.
 {% endalert %}
 
 The testbed for the `master` branch of the BAS Style Kit can be found at:
-[bas-style-kit-testbed.s3-website-eu-west-1.amazonaws.com](bas-style-kit-testbed.s3-website-eu-west-1.amazonaws.com/master/testbed/).
+[bas-style-kit-testbed.s3-website-eu-west-1.amazonaws.com](http://bas-style-kit-testbed.s3-website-eu-west-1.amazonaws.com/master/testbed/).
