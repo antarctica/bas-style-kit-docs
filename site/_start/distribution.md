@@ -135,13 +135,20 @@ jQuery must be loaded before the Style Kit JavaScript to function correctly.
   <thead>
     <tr>
       <th>Name</th>
+      <th>Version</th>
       <th>URL</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>Minified jQuery</td>
+      <td>3.1.1</td>
       <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/js-libs/jquery-3.1.1.min.js</code></pre></td>
+    </tr>
+    <tr>
+      <td>js-cookie</td>
+      <td>2.1.3</td>
+      <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/js-libs/js.cookie-2.1.3.min.js</code></pre></td>
     </tr>
   </tbody>
 </table>

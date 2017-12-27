@@ -22,6 +22,12 @@ It can be used to create
 
 [View Alert Plugin Documentation](http://getbootstrap.com/javascript/#alerts){:.bsk-btn .bsk-btn-default }
 
-{% alert info %}
-All interactive plugins require [jQuery]({{ '/start/distribution#javascript-libraries' | prepend: site.baseurl }}){: .bsk-alert-link }.
+## Dependencies
+{: #{{ 'dependencies' | slugify }}}
+
+This plugin depends upon [jQuery](https://jquery.com).
+
+{% alert info style=highlight %}
+See [distribution]({{ '/start/distribution/#javaScript-libraries' | prepend: site.baseurl }}){: .bsk-alert-link} for
+how to include these dependencies
 {% endalert %}
