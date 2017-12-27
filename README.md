@@ -147,7 +147,7 @@ The vast majority of this project is based on the [Bootstrap](http://getbootstra
 90% of any credit for this project should go to Bootstrap's [authors and contributors](http://getbootstrap.com/about/).
 
 The original Bootstrap licensing statement is shown below,
-see their original `LICENSE-BOOTSTRAP-MIT` further licensing information.
+see their original `LICENSE-BOOTSTRAP-MIT` for further licensing information.
 
 > Code and documentation copyright 2011-2015 Twitter, Inc. Code released under
 [the MIT license](https://github.com/twbs/bootstrap/blob/master/LICENSE).
@@ -159,7 +159,18 @@ The authors of this project are incredibly grateful for their work.
 
 Copyright 2017 NERC BAS.
 
-Unless stated otherwise, all documentation is licensed under the Creative Commons Public License - version 3.
-All code is licensed under the MIT license.
+Except where otherwise stated, the materials that make up this website are subject to copyright, and are owned by the
+Natural Environment Research Council (NERC), of which the British Antarctic Survey (BAS) is a component body.
+
+Except where otherwise stated, content published on this website is made available under the
+[Creative Commons Public License (version 3)](https://creativecommons.org/licenses/by/3.0/) and can be reproduced
+subject to the terms of that license.
+
+The underlying BAS Style Kit code is made available under the [MIT License](https://opensource.org/licenses/MIT) and
+can be reproduced subject to the terms of that license.
+
+Except where otherwise stated, please attribute the use of any content as:
+
+> Contains British Antarctic Survey materials, copyright NERC [Year].
 
 Copies of these licenses are included within this project.
