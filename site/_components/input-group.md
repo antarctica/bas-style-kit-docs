@@ -160,9 +160,9 @@ instead of text.
   title="Button input group"
   heading_level=3
   current_phase="alpha"
-  future_phase="beta"
+  future_phase="alpha"
   current_version="0.1.0"
-  future_version="0.2.0"
+  future_version="0.3.0"
   included="yes"
 %}
 
@@ -170,7 +170,8 @@ Use the `.bsk-input-group-btn` class, instead of `.bsk-input-group-addon`, as an
 [button]({{ '/core/buttons' | prepend: site.baseurl }}).
 
 {% alert warning %}
-**Heads up!** Buttons in input groups are not yet fully supported.
+**Heads up!** Buttons in input groups are not yet supported. If you need this feature please
+[vote](https://trello.com/c/qyW9R5wo){: .bsk-alert-link} for it.
 {% endalert %}
 
 {% example html %}
@@ -192,9 +193,9 @@ Use the `.bsk-input-group-btn` class, instead of `.bsk-input-group-addon`, as an
   title="Drop-down button input group"
   heading_level=3
   current_phase="alpha"
-  future_phase="beta"
+  future_phase="alpha"
   current_version="0.1.0"
-  future_version="0.2.0"
+  future_version="0.3.0"
   included="yes"
 %}
 
@@ -202,7 +203,8 @@ Use the `.bsk-input-group-btn` class, instead of `.bsk-input-group-addon`, as an
 [button drop-down]({{ '/components/drop-down/#button-drop-down' | prepend: site.baseurl }}).
 
 {% alert warning %}
-**Heads up!** Button drop-downs in input groups are not yet fully supported.
+**Heads up!** Button drop-downs in input groups are not yet fully supported. If you need this feature please
+[vote](https://trello.com/c/Kd0Oq1Ng){: .bsk-alert-link} for it.
 {% endalert %}
 
 {% example html %}
