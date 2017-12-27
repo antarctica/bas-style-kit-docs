@@ -1,19 +1,19 @@
-<footer class="bsk-footer bsk-footer-default bsk-hidden-print bsk-docs-site-footer {% if jekyll.environment != 'production' %}no-margin{% endif %}">
+<footer class="bsk-footer bsk-footer-default bsk-hidden-print site-footer">
   <div class="bsk-container">
     <!-- main content -->
     <div class="bsk-row">
-      <div class="bsk-col-12-md-6 bsk-docs-site-build-info">
+      <div class="bsk-col-12-md-6 site-build-info">
         BAS Style Kit version {% include snippets/bsk-version.html %} <br />
         Site build {% include snippets/bsk-docs-revision.html %} built {{ site.time | date: "%-d %b %Y" }}
       </div>
-      <div class="bsk-col-12-md-6 bsk-docs-site-back-to-top">
+      <div class="bsk-col-12-md-6 site-back-to-top">
         {% include snippets/back-to-top.html %}
       </div>
     </div>
     <div role="separator" class="bsk-footer-divider"></div>
     <!-- Copyright & legal -->
     <div class="bsk-row">
-      <div class="bsk-col-12-md-6 bsk-docs-site-licensing">
+      <div class="bsk-col-12-md-6 site-licensing">
         Except where otherwise stated, the BAS Style Kit is licensed under the
         <a rel="license" href="{{ site.bsk_source_code_url }}/blob/master/LICENSE.md"> MIT License</a>, and this
         documentation, the <a rel="license" href="{{ site.bsk_docs_source_code_url }}/blob/master/LICENSE.md">CC BY
@@ -35,7 +35,7 @@
 
   <p>
     BAS Style Kit version {% include snippets/bsk-version.html %} <br />
-    Site build {% include snippets/bsk-docs-revision.html %} built {{ site.time | date: "%-d %b %Y" }}
+    Site build {% include snippets/bsk-docs-revision.html %}, built {{ site.time | date: "%-d %b %Y" }}
   </p>
 
   <p>
