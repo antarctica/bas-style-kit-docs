@@ -132,10 +132,10 @@ where relevant by adding these classes:
 {: .bsk-table .bsk-table-responsive }
 
 {% example html %}
-<span class="bsk-label bsk-label-phase-discovery">Success label</span>
 <span class="bsk-label bsk-label-phase-backlog">Backlog label</span>
+<span class="bsk-label bsk-label-phase-discovery">Discovery label</span>
 <span class="bsk-label bsk-label-phase-alpha">Alpha label</span>
-<span class="bsk-label bsk-label-phase-beta">Warning label</span>
+<span class="bsk-label bsk-label-phase-beta">Beta label</span>
 <span class="bsk-label bsk-label-phase-live">Live phase</span>
 <span class="bsk-label bsk-label-phase-retired">Retired phase</span>
 {% endexample %}
