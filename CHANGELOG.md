@@ -26,7 +26,14 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ### Changed
 
+* Integrating 0.3.0-beta version of the Style Kit
 * Integrating 0.3.0-alpha version of the Style Kit
+* Refactoring site styles into separate files
+* Refactoring site header components (cookie notice, main navigation and development phase)
+* Adopting navbar brand image classes
+* Adopting elements used for image copyright component
+* Documenting body/html background colours
+* Updating to latest alert classes
 * Checks for the site environment check if the site *isn't* production, rather than if it *is* staging
 * Changing 'Part of the British Antarctic Survey' to 'Part of British Antarctic Survey' account for the
  larger navbar font size and breaking the navbar layout at smaller screen sizes
@@ -37,12 +44,15 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * Updated interactive plugins documentation where a Style Kit specific version exists
 * Image Purchase component replaced with Image Copyright component for greater flexibility
 * Band component is now deprecated and will be removed in the 0.3.0 final release
+* Updated feedback page to use new styles
 
 ### Removed
 
 * Unnecessary local styles that have been replaced by improvements or additions to the Style Kit
 * HTML5 Shim and Respond.JS as the versions of Internet Explorer these were needed for are no longer supported
 * Warnings for styles incompatible with older versions of Internet Explorer as they are no longer supported
+* Site testing banner (header/footer) but not icon in main navigation and home page
+* Workaround for tabindex -1 accessibility workaround
 
 ## v1.0.1 - 01/06/2017
 

@@ -404,27 +404,27 @@ used as the background of an element using these classes:
   included="yes"
 %}
 
-To indicate the state of a service, project, feature, component or other aspect in its lifecycle, the Style Kit uses a
-set of development phases, which have associated colours. These phases and colours are defined by the Government
-Digital Service.
+To indicate the state of a service, project, feature, component or other concept in its life-cycle, the Style Kit uses
+a set of development phases, which have associated colours. These phases and colours are defined by the Government
+Digital Service (except *Backlog*).
 
 Backlog
 : A phase for concepts that are yet to be evaluated, or deliberately held for review in the future
 
 Discovery
-: A phase before a aspect is started to find out whether users need it and is not already provided by another service
+: A phase before a concept is started to find out whether users need it and is not already provided by another service
 
 Alpha
-: A development phase during which an aspect is prototyped and tested to demonstrate its feasiability and function
+: A development phase during which a concept is prototyped and tested to demonstrate its feasibility and function
 
 Beta
-: A refinement phase following alpha where an aspect is tested and improved until it is suitable for general use
+: A refinement phase following alpha where a concept is tested and improved until it is suitable for general use
 
 Live
-: A phase where an aspect is generally available and recieving support for, improvements and fixes
+: A phase where a concept is generally available and receiving support for, improvements and fixes
 
 Retired
-: A phase for where an aspect is no longer needed, due to changing needs or replacement by another aspect
+: A phase for where a concept is no longer needed, due to changing needs or replacement by another concept
 {: .bsk-dl-lg }
 
 These colours can be used with many core styles and components, such as:
@@ -634,7 +634,7 @@ Some base colours are choosen for specific reasons:
 Aircraft Red
 : The colour of BAS aircraft
 
-BAS
+Blue
 : The BAS brand colour used in the colour roundel and logo
 
 NERC Green

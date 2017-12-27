@@ -47,8 +47,8 @@ bsk_version_production: 0.2.0
 bsk_cdn_base_staging: https://cdn.web.bas.ac.uk/bas-style-kit
 bsk_cdn_base_production: https://cdn.web.bas.ac.uk/bas-style-kit
 
-bsk_package_base_staging: https://s3-eu-west-1.amazonaws.com/bas-packages-dev/zip/bas-style-kit
-bsk_package_base_production: https://packages.web.bas.ac.uk/zip/bas-style-kit
+bsk_package_base_staging: https://packages.data.bas.ac.uk/zips/apps/bas-style-kit/releases
+bsk_package_base_production: https://packages.data.bas.ac.uk/zips/apps/bas-style-kit/releases
 
 collections:
   start:
