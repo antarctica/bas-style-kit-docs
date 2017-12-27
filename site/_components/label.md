@@ -49,7 +49,7 @@ also be used.
   included="yes"
 %}
 
-Add the `bsk-label-default` class for a standard label. For added context you can use
+Add the `.bsk-label-default` class for a standard label. For added context you can use
 [contextual colours]({{ '/components/label/#contextual-colours' | prepend: site.baseurl }}) instead.
 
 {% example html %}
@@ -64,7 +64,7 @@ Something <span class="bsk-label bsk-label-default">Label</span>
   included="yes"
 %}
 
-Add the `bsk-label-primary` class for a primary label.
+Add the `.bsk-label-primary` class for a primary label.
 
 {% example html %}
 Something <span class="bsk-label bsk-label-primary">Label</span>
@@ -78,7 +78,7 @@ Something <span class="bsk-label bsk-label-primary">Label</span>
   included="yes"
 %}
 
-Add the `bsk-label-experimental` class for an experimental label.
+Add the `.bsk-label-experimental` class for an experimental label.
 
 {% example html %}
 Something <span class="bsk-label bsk-label-experimental">Label</span>

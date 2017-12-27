@@ -57,13 +57,13 @@ To avoid clashes with other CSS styles and to provide a more uniform and predica
 Style Kit use a *Global Prefix* of <code>bsk-</code>.
 
 {% alert info style=highlight %}
-I.e. use `bsk-btn bsk-btn-default` not `btn btn-default`.
+I.e. use `.bsk-btn bsk-btn-default` not `.btn .btn-default`.
 {% endalert %}
 
 There are some exceptions to this:
 
 * As an external library, [Font Awesome]({{ '/core/icons/#available-icons' | prepend: site.baseurl }}) classes are not
-prefixed (i.e. use `fa fa-star` not `bsk-fa bsk-fa-star`)
+prefixed (i.e. use `fa fa-star` not `.bsk-fa .bsk-fa-star`)
 
 {% alert warning %}
 Take care not to use default Bootstrap classes as they won't be styled correctly and may stop working without warning.

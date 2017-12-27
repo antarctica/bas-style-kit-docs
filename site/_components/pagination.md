@@ -96,7 +96,7 @@ Add one of these classes to alter the size of a pagination instance:
 
 | Pagination Size | Pagination Group Size Class |
 | --------------- | --------------------------- |
-| Large           | `bsk-pagination-lg`         |
+| Large           | `.bsk-pagination-lg`        |
 | Small           | `.bsk-pagination-sm`        |
 {: .bsk-table .bsk-table-responsive }
 

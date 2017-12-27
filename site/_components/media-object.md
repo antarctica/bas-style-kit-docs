@@ -161,7 +161,7 @@ Add one of these classes to align a media object horizontally:
 {: .bsk-table .bsk-table-responsive }
 
 {% alert info %}
-When using right alignment, the `.bsk-media-body` needs to be before the `bsk-media-right` object.
+When using right alignment, the `.bsk-media-body` needs to be before the `.bsk-media-right` object.
 {% endalert %}
 
 {% example html %}

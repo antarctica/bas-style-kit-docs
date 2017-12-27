@@ -80,10 +80,10 @@ Optionally the attribution information can be a link.
 %}
 
 Add the `.bsk-image-copyright` class to a [thumbnail]({{ '/components/thumbnail' | prepend: site.baseurl }}),
-containing an <code>&lt;img&gt;</code> with the `bsk-image-copyright-image` class.
+containing an <code>&lt;img&gt;</code> with the `.bsk-image-copyright-image` class.
 
 If the thumbnail has a caption, include a <code>&lt;div&gt;</code> element for the attribution with the
-`bsk-image-copyright-attribution` and `.bsk-pull-right` classes.
+`.bsk-image-copyright-attribution` and `.bsk-pull-right` classes.
 
 {% example html %}
 <!-- Thumbnail using a div element with a caption -->
@@ -106,7 +106,7 @@ If the thumbnail has a caption, include a <code>&lt;div&gt;</code> element for t
 {% endexample %}
 
 If the thumbnail doesn't have a caption, use a <code>&lt;div&gt;</code> element for the attribution with the
-`bsk-image-copyright-attribution` class.
+`.bsk-image-copyright-attribution` class.
 
 {% example html %}
 <!-- Thumbnail using a div element without a caption -->

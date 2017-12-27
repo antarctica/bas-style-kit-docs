@@ -36,7 +36,7 @@ You only need to include the JavaScript files referenced below if you want to us
 
 {% alert warning %}
 If the BAS Style Kit JavaScript files are included, you will also need to include additional
-[JavaScript Libraries](#javascript-libraries)
+[JavaScript Libraries](#javascript-libraries).
 {% endalert %}
 
 {% alert info style=highlight %}
@@ -81,10 +81,6 @@ for URLs to the latest stable version.
       <td>Minified JavaScript</td>
       <td class="highlight"><pre><code>{% unless jekyll.environment == 'production' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endunless %}/{% include snippets/bsk-version.html %}/js/bas-style-kit.min.js</code></pre></td>
     </tr>
-    <tr>
-      <td>Minified CSS source-maps</td>
-      <td class="highlight"><pre><code>{% unless jekyll.environment == 'production' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endunless %}/{% include snippets/bsk-version.html %}/css/maps/bas-style-kit.min.css.map</code></pre></td>
-    </tr>
   </tbody>
 </table>
 
@@ -95,41 +91,44 @@ for URLs to the latest stable version.
 
 [Web fonts]({{ '/core/type/#font-families' | prepend: site.baseurl }}), including
 [icon fonts]({{ '/core/icons' | prepend: site.baseurl }}), used by the BAS Style Kit are declared in their respective
-`@font-face` declarations. Font files are made available from the BAS CDN in these formats:
+`@font-face` declarations in these formats:
 
 * `.eot`
 * `.ttf`
 * `.woff`
 * `.woff2`
 
+{% alert success style=highlight %}
+These fonts are loaded from the BAS CDN automatically
+{% endalert %}
+
 {% include snippets/topic-section-metadata.html
   title="Logos"
   heading_level=2
 %}
 
-[Logos]({{ '/core/logos' | prepend: site.baseurl }}) used by the BAS Style Kit are made available from the BAS CDN in
-these formats:
+[Logos]({{ '/core/logos' | prepend: site.baseurl }}) used by the BAS Style Kit are made available in these formats:
 
 * `.png`
+
+{% alert success style=highlight %}
+These logos are hosted by the BAS CDN
+{% endalert %}
 
 {% include snippets/topic-section-metadata.html
   title="JavaScript libraries"
   heading_level=2
 %}
 
+The BAS Style Kit JavaScript relies on the [jQuery](https://jquery.com) library.
+
 {% alert info %}
 This section only applies if you are including the BAS Style Kit JavaScript files, which are required to use any of the
 [Interactive components]({{ '/interactivity' | prepend: site.baseurl }}){: .bsk-alert-link } provided by the Style Kit.
 {% endalert %}
 
-The BAS Style Kit JavaScript relies on the [jQuery](https://jquery.com) library.
-
 {% alert warning %}
 jQuery must be loaded before the Style Kit JavaScript to function correctly.
-{% endalert %}
-
-{% alert success style=highlight %}
-These libraries are also provided by the BAS CDN
 {% endalert %}
 
 <table class="bsk-table bsk-table-bordered">
@@ -146,6 +145,10 @@ These libraries are also provided by the BAS CDN
     </tr>
   </tbody>
 </table>
+
+{% alert success style=highlight %}
+These libraries are hosted by the BAS CDN
+{% endalert %}
 
 {% alert danger style=highlight %}
 These libraries are not included in other distribution types
@@ -173,7 +176,7 @@ for URLs to the latest stable version.
 | `css/bas-style-kit.js`      | `{% unless jekyll.environment == 'production' %}{{ site.data.bsk_sri_base_staging['dist/js/bas-style-kit.js'] }}{% else %}{{ site.data.bsk_sri_base_production['dist/js/bas-style-kit.js'] }}{% endunless %}`             |
 | `css/bas-style-kit.min.css` | `{% unless jekyll.environment == 'production' %}{{ site.data.bsk_sri_base_staging['dist/css/bas-style-kit.min.css'] }}{% else %}{{ site.data.bsk_sri_base_production['dist/css/bas-style-kit.min.css'] }}{% endunless %}` |
 | `css/bas-style-kit.min.js`  | `{% unless jekyll.environment == 'production' %}{{ site.data.bsk_sri_base_staging['dist/js/bas-style-kit.min.js'] }}{% else %}{{ site.data.bsk_sri_base_production['dist/js/bas-style-kit.min.js'] }}{% endunless %}`     |
-{: .bsk-table .bsk-table-hover }
+{: .bsk-table .bsk-table-hover .bsk-table-bordered }
 
 These values are also available in a machine readable format from:
 
@@ -227,7 +230,7 @@ for latest stable version.
 {% endalert %}
 {% endunless %}
 
-[Download latest version]({% unless jekyll.environment == 'production' %}{{ site.bsk_package_base_production }}{% else %}{{ site.bsk_package_base_staging }}{% endunless %}/{% include snippets/bsk-version.html %}/bas-style-kit-{% include snippets/bsk-version.html %}.zip){: .bsk-btn .bsk-btn-default }
+[Download latest version]({% unless jekyll.environment == 'production' %}{{ site.bsk_package_base_production }}{% else %}{{ site.bsk_package_base_staging }}{% endunless %}/{% include snippets/bsk-version.html %}.zip){: .bsk-btn .bsk-btn-default }
 
 {% include snippets/topic-section-metadata.html
   title="NodeJS package"
