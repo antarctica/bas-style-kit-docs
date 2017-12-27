@@ -13,4 +13,16 @@
   .collapse {
     margin-top: 20px;
   }
+
+  dl.additional-information {
+    margin-top: 20px;
+
+    dt {
+      margin-bottom: 10px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }
 }
