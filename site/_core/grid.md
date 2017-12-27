@@ -58,8 +58,8 @@ are defined after the standard grid classes in the CSS file.
 
 | Grid Name     | Total Columns | Class Prefix   |
 | ------------- | ------------- | -------------- |
-| Standard      | 12            | `bsk-col-12`   |
-| Alternate     | 24            | `bsk-col-24`   |
+| Standard      | 12            | `.bsk-col-12`  |
+| Alternate     | 24            | `.bsk-col-24`  |
 {: .bsk-table .bsk-table-responsive }
 
 {% include snippets/topic-section-metadata.html

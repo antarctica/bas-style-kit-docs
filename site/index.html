@@ -2,45 +2,45 @@
 layout: home
 ---
 
-<header id="site-content" class="bsk-jumbotron bsk-jumbotron-bsk-inverse bsk-docs-masthead bsk-image-copyright" tabindex="-1">
+<header id="site-content" class="bsk-jumbotron bsk-jumbotron-bsk-inverse site-home-masthead bsk-image-copyright" tabindex="-1">
     <div class="container">
 
-        <div class="bsk-center-block bsk-docs-masthead-wrapper">
-          <div class="bsk-docs-masthead-symbol"></div>
+        <div class="bsk-center-block site-home-masthead-wrapper">
+          <div class="site-home-masthead-symbol"></div>
         </div>
 
-        <h1 class="bsk-docs-masthead-title bsk-text-center">
+        <h1 class="site-home-masthead-title bsk-text-center">
           BAS Style Kit
-          {% unless jekyll.environment == 'production' %}<i class="fa fa-fw fa-flask bsk-docs-text-experimental-light" aria-hidden="true"></i> <span class="bsk-sr-only">Testing version</span>{% endunless %}
+          {% unless jekyll.environment == 'production' %}<i class="fa fa-fw fa-flask site-text-experimental-light" aria-hidden="true"></i> <span class="bsk-sr-only">Testing version</span>{% endunless %}
         </h1>
-        <p class="bsk-docs-masthead-strapline bsk-text-center"><span class="bsk-jumbotron-overlay">A collection of HTML, CSS, and JS components for developing web projects consistent with the BAS brand</span></span></p>
+        <p class="site-home-masthead-strapline bsk-text-center"><span class="bsk-jumbotron-overlay">A collection of HTML, CSS, and JS components for developing web projects consistent with the BAS brand</span></span></p>
         <p class="bsk-text-center">
             <a href="{{ "/start/introduction/#quick-start" | prepend: site.baseurl }}" class="bsk-btn bsk-btn-default bsk-btn-lg">
                 Download the BAS Style Kit
             </a>
         </p>
-        <p class="bsk-docs-masthead-version bsk-text-center">Version {% include snippets/bsk-version.html %}</p>
+        <p class="site-home-masthead-version bsk-text-center">Version {% include snippets/bsk-version.html %}</p>
     </div>
-    <div class="bsk-image-copyright-attribution"><i class="fa fa-camera"></i> Sky at Halley VI research station | Tom Wales / BAS</div>
+    <div class="bsk-image-copyright-attribution">Sky at Halley VI research station | Tom Wales / BAS</div>
 </header>
 
-<div class="bsk-container bsk-docs-home-sections">
+<div class="bsk-container site-home-sections">
   <section class="bsk-lead bsk-text-center">
     <span class="bsk-label bsk-label-phase-beta"><strong>BETA</strong></span>
-    <span class="bsk-docs-text-with-label">This website is being rebuilt – your <a href="{{ "/feedback.html" | prepend: site.baseurl }}">feedback</a> will help us to improve it.</span>
+    <span>This website is being rebuilt – your <a href="{{ "/feedback.html" | prepend: site.baseurl }}">feedback</a> will help us to improve it.</span>
   </section>
 {% if jekyll.environment != 'production' %}
 
   <hr />
 
   <section class="bsk-row">
-    <div class="bsk-col-12-md-8 bsk-col-12-md-offset-2 bsk-text-center bsk-alert bsk-alert-solid-experimental bsk-alert-icon bsk-alert-block bsk-docs-alert-block-lg">
+    <div class="bsk-col-12-md-8 bsk-col-12-md-offset-2 bsk-text-center bsk-alert bsk-alert-solid bsk-alert-experimental bsk-alert-icon bsk-alert-block site-home-alert">
       <header class="bsk-alert-heading">
         <h2><i class="fa fa-fw fa-flask bsk-alert-icon"></i>This website is used for testing</h2>
       </header>
       <p>This site contains a preview of upcoming changes and other experiments. It isn't safe to rely on examples
         from this website, as as they may not work, or be removed at any time.</p>
-      <div class="bsk-docs-spacer-md"></div>
+      <div class="site-home-spacer-md"></div>
       <p><a href="https://{{ site.bsk_docs_production_url }}" class="bsk-btn bsk-btn-default bsk-btn-lg">
       View the stable documentation</a></p>
     </div>
@@ -64,7 +64,7 @@ layout: home
   <hr />
 
   <section class="bsk-row">
-      <div class="bsk-col-12-md-8 bsk-col-12-md-offset-2 bsk-text-center bsk-alert bsk-alert-solid-warning bsk-alert-icon bsk-alert-block bsk-docs-alert-block-lg">
+      <div class="bsk-col-12-md-8 bsk-col-12-md-offset-2 bsk-text-center bsk-alert bsk-alert-solid bsk-alert-warning bsk-alert-icon bsk-alert-block site-home-alert">
         <header class="bsk-alert-heading">
           <h2><i class="fa fa-fw fa-exclamation-triangle bsk-alert-icon"></i>Parts of the BAS Style Kit are protected works</h2>
         </header>
