@@ -134,7 +134,7 @@ This example, whilst quite complex, demonstrates the sort of items shown in a ty
       <ul class="bsk-nav bsk-navbar-nav bsk-navbar-right">
         <li class="bsk-dropdown">
           <a href="#" class="bsk-dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-          Part of the British Antarctic Survey <span class="bsk-caret"></span></a>
+          Part of British Antarctic Survey <span class="bsk-caret"></span></a>
           <ul class="bsk-dropdown-menu">
             <li><a href="https://www.bas.ac.uk">BAS Home</a></li>
             <li><a href="#">Another link</a></li>
@@ -503,7 +503,7 @@ Add one of these classes to alter the size of a jumbotron:
       <ul class="bsk-nav bsk-navbar-nav bsk-navbar-right">
         <li class="bsk-dropdown">
           <a href="#" class="bsk-dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-          Part of the British Antarctic Survey <span class="bsk-caret"></span></a>
+          Part of British Antarctic Survey <span class="bsk-caret"></span></a>
           <ul class="bsk-dropdown-menu">
             <li><a href="https://www.bas.ac.uk">BAS Home</a></li>
             <li><a href="#">Another link</a></li>
