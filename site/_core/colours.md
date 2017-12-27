@@ -14,11 +14,11 @@ sections:
   -
     title: Standard contextual colours
   -
-    title: Background contextual classes
-  -
     title: Development phase colours
   -
-    title: External service colours
+    title: Standard colours
+  -
+    title: Extended colours
 ---
 
 {% include snippets/table-of-contents.md %}
@@ -28,19 +28,31 @@ sections:
   heading_level=2
 %}
 
-To promote consistency, the Style Kit defines and uses a set of colours. It consists of both a colour and
-greyscale colour scheme.
+The Style Kit defines two sets of colours:
+
+1. [standard colours](#standard-colours) - consisting of a general colour and greyscale schemes, used by almost all page
+elements and recommended for general use
+2. [extended colours](#standard-colours) - consisting of highly specific colours for particular purposes such as branding
+
+The standard colour scheme is designed to be general enough to avoid other colours being needed.
 
 Some colours have been chosen for specific purposes (the BAS blue for example) or to follow established convention
-(links being blue for example). Both schemes aim to offer enough variety to suit a wide range of uses, such as
-conveying context or assigning colours to categories.
+(links being blue for example) but not at the sake of having broad and general application, such as conveying context
+(i.e. red = danger) or as categories (i.e. green = HR).
 
-{% alert info style=highlight %}
-To promote consistency, it is strongly recommended not to use other colours (including shades) in websites or services.
+The extended colours should effectively be ignored unless you are specifically recommended to use them. They are used
+for specific purposes such as meeting [external service]({{ '#external-services' }})  branding requirements or to give
+sufficient contrast within a component.
+
+They are not intended to compliment, or compete with, standard colours and may look too similar to other colours.
+
+{% alert info %}
+To promote consistency, it is strongly recommended not to use non-standard colours (including shades) in websites or
+services, unless specifically recommended to use an alternative.
 {% endalert %}
 
 {% alert warning %}
-If you do use other colours, ensure this complies with the
+If you do use non-standard colours (including extended colours) you must ensure this complies with the
 [recommended minimum colour contrast]({{ '/start/standards-accessibility/#colour-contrast' | prepend: site.baseurl }}){: .alert-bsk-link }.
 {% endalert %}
 
@@ -499,6 +511,11 @@ These colours can be used with components such as:
 
 * [social media]({{ '/components/social-media' | prepend: site.baseurl }})
 
+{% alert info style=highlight %}
+These colours are part of the extended colour set and should not be used except for representing their respective
+service
+{% endalert %}
+
 <div class="bsk-docs-swatch-wrapper">
   <div class="bsk-row">
     <div class="bsk-col-12-md-2">
@@ -543,6 +560,8 @@ These colours can be used with components such as:
   current_version="0.3.0"
   included="yes"
 %}
+
+This section lists all the greyscale colours in the standard colour set.
 
 These colours are defined by mixing black with a white base, they do not use a colour tint.
 
@@ -616,6 +635,8 @@ These colours are defined by mixing black with a white base, they do not use a c
   current_version="0.3.0"
   included="yes"
 %}
+
+This section lists all the colours in the standard colour set.
 
 Each standard colour consists of a *base* colour defined as part of a colour pallet. These bases are then mixed with
 black and white to produce variants, two lighter and two darker, using a consistent process.
@@ -1407,4 +1428,93 @@ NERC Green
       </ul>
     </div>
   </div>
+</div>
+
+{% include snippets/topic-section-metadata.html
+  title="Extended colours"
+  heading_level=2
+  current_phase="beta"
+  current_version="0.3.0"
+  included="yes"
+%}
+
+This section lists all the colours in the extended colour set.
+
+{% alert alert %}
+These colours should not be used for any other purpose. They do not compete with or replace
+[standard colours]({{ '#standard-colours' }}).
+{% endalert %}
+
+{% include snippets/topic-section-metadata.html
+  title="Contrast"
+  heading_level=3
+%}
+
+These colours are required to give additional contrast to Style Kit components.
+
+Table component
+: `grey-light-lighter`
+
+Navbar component
+: `grey-darker-dark`
+
+Inline code component
+: `sky-blue-lighter-light`
+{: .bsk-dl-lg }
+
+<div class="bsk-docs-swatch-wrapper">
+  <div class="bsk-row">
+    <div class="bsk-col-12-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-ext-grey-light-lighter"></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
+        <li>Grey light lighter</li>
+        <li><code>$bsk-colour-tst-grey-light-lighter</code></li>
+        <li class="bsk-docs-hex-reference">#F7F7F7</li>
+      </ul>
+    </div>
+    <div class="bsk-col-12-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-ext-grey-darker-dark"></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
+        <li>Grey darker dark</li>
+        <li><code>$bsk-colour-tst-grey-darker-dark</code></li>
+        <li class="bsk-docs-hex-reference">#222222</li>
+      </ul>
+    </div>
+    <div class="bsk-col-12-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-ext-sky-blue-lighter-light"></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
+        <li>Sky blue lighter light</li>
+        <li><code>$bsk-colour-tst-sky-blue-lighter-light</code></li>
+        <li class="bsk-docs-hex-reference">#E6F1F8</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+{% include snippets/topic-section-metadata.html
+  title="External services"
+  heading_level=3
+%}
+
+See [external service colours]({{ '#external-service-colours' }}).
+
+{% include snippets/topic-section-metadata.html
+  title="Development phases"
+  heading_level=3
+%}
+
+The *backlog* development phase is not included in the Government Digital Service scheme, and therefore isn't included
+in their colour scheme (incorporated into the [standard colours]({{ '#standard-colours' }})). This colour is defined by
+the (UK Government) Department of Work and Pensions (DWP).
+
+<div class="bsk-docs-swatch-wrapper">
+  <div class="bsk-row">
+    <div class="bsk-col-12-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-ext-purple-base"></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
+        <li>Purple base</li>
+        <li><code>$bsk-colour-tst-purple-base</code></li>
+        <li class="bsk-docs-hex-reference">#2E358B</li>
+      </ul>
+    </div>
 </div>
