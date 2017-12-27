@@ -46,8 +46,8 @@ The BAS Logo can be used with components such as:
 * [headers]({{ '/components/header' | prepend: site.baseurl }})
 * [navbars]({{ '/components/navbar/#brand-image' | prepend: site.baseurl }})
 
-<div class="bsk-alert bsk-alert-solid-warning bsk-alert-block bsk-alert-icon">
-  <header class="bsk-alert-title">
+<div class="bsk-alert bsk-alert-solid bsk-alert-warning bsk-alert-block bsk-alert-icon">
+  <header class="bsk-alert-heading">
     <h4><i class="fa fa-fw fa-exclamation-triangle bsk-alert-icon"></i>
     The BAS Logo is a trademark of the Natural Environment Research Council and may not be used without a license</h4>
   </header>

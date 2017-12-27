@@ -63,7 +63,8 @@ module Jekyll
       def make_alert(content)
         classes = []
         classes << 'bsk-alert'
-        classes << "bsk-alert-#{@options[:style]}-#{@options[:variant]}"
+        classes << "bsk-alert-#{@options[:style]}"
+        classes << "bsk-alert-#{@options[:variant]}"
 
         alert_content = content
 

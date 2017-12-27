@@ -18,7 +18,9 @@ sections:
   -
     title: Dismissible alerts
   -
-    title: block alerts
+    title: Block alerts
+  -
+    title: Sizes
   -
     title: Layouts
 ---
@@ -60,7 +62,7 @@ There is no *default* alert variant, as a grey alert for example wouldn't make a
 %}
 
 {% example html %}
-<div class="bsk-alert bsk-alert-solid-primary" role="alert">
+<div class="bsk-alert bsk-alert-solid bsk-alert-primary" role="alert">
   Primary alert
 </div>
 {% endexample %}
@@ -74,7 +76,7 @@ There is no *default* alert variant, as a grey alert for example wouldn't make a
 %}
 
 {% example html %}
-<div class="bsk-alert bsk-alert-solid-experimental" role="alert">
+<div class="bsk-alert bsk-alert-solid bsk-alert-experimental" role="alert">
   Experimental alert
 </div>
 {% endexample %}
@@ -90,19 +92,19 @@ There is no *default* alert variant, as a grey alert for example wouldn't make a
 The [standard contextual colours]({{ '/core/colours/#standard-contextual-colours' | prepend: site.baseurl }}) can be
 used for context by adding these classes:
 
-| Standard Context | Alert Contextual Class       | Example Alert Contextual Class |
-| ---------------- | ---------------------------- | ------------------------------ |
-| Success          | `.bsk-alert-[style]-success` | `.bsk-alert-solid-success`     |
-| Warning          | `.bsk-alert-[style]-warning` | `.bsk-alert-solid-warning`     |
-| Danger           | `.bsk-alert-[style]-danger`  | `.bsk-alert-solid-danger`      |
-| Info             | `.bsk-alert-[style]-info`    | `.bsk-alert-solid-info`        |
+| Standard Context | Alert Contextual Class |
+| ---------------- | ---------------------- |
+| Success          | `.bsk-alert-success`   |
+| Warning          | `.bsk-alert-warning`   |
+| Danger           | `.bsk-alert-danger`    |
+| Info             | `.bsk-alert-info`      |
 {: .bsk-table .bsk-table-responsive }
 
 {% example html %}
-<div class="bsk-alert bsk-alert-solid-success" role="alert">Success alert</div>
-<div class="bsk-alert bsk-alert-solid-warning" role="alert">Warning alert</div>
-<div class="bsk-alert bsk-alert-solid-danger" role="alert">Danger alert</div>
-<div class="bsk-alert bsk-alert-solid-info" role="alert">Info alert</div>
+<div class="bsk-alert bsk-alert-solid bsk-alert-success" role="alert">Success alert</div>
+<div class="bsk-alert bsk-alert-solid bsk-alert-warning" role="alert">Warning alert</div>
+<div class="bsk-alert bsk-alert-solid bsk-alert-danger" role="alert">Danger alert</div>
+<div class="bsk-alert bsk-alert-solid bsk-alert-info" role="alert">Info alert</div>
 {% endexample %}
 
 {% include snippets/topic-section-metadata.html
@@ -121,7 +123,7 @@ Use the `.bsk-alert-icon` class to properly format an icon in an alert.
 {% endalert %}
 
 {% example html %}
-<div class="bsk-alert bsk-alert-solid-experimental" role="alert">
+<div class="bsk-alert bsk-alert-solid bsk-alert-experimental" role="alert">
   <i class="fa fa-fw fa-flask bsk-alert-icon" aria-hidden="true"></i> Experimental alert
 </div>
 {% endexample %}
@@ -142,16 +144,16 @@ Use the `.bsk-alert-icon` class to properly format an icon in an alert.
 {% endalert %}
 
 {% example html %}
-<div class="bsk-alert bsk-alert-icon bsk-alert-solid-success" role="alert">
+<div class="bsk-alert bsk-alert-icon bsk-alert-solid bsk-alert-success" role="alert">
   <i class="fa fa-fw fa-check bsk-alert-icon" aria-hidden="true"></i> Success alert
 </div>
-<div class="bsk-alert bsk-alert-icon bsk-alert-solid-warning" role="alert">
+<div class="bsk-alert bsk-alert-icon bsk-alert-solid bsk-alert-warning" role="alert">
   <i class="fa fa-fw fa-exclamation-triangle bsk-alert-icon" aria-hidden="true"></i> Warning alert
 </div>
-<div class="bsk-alert bsk-alert-icon bsk-alert-solid-danger" role="alert">
+<div class="bsk-alert bsk-alert-icon bsk-alert-solid bsk-alert-danger" role="alert">
   <i class="fa fa-fw fa-exclamation-circle bsk-alert-icon" aria-hidden="true"></i> Danger alert
 </div>
-<div class="bsk-alert bsk-alert-icon bsk-alert-solid-info" role="alert">
+<div class="bsk-alert bsk-alert-icon bsk-alert-solid bsk-alert-info" role="alert">
   <i class="fa fa-fw fa-info bsk-alert-icon" aria-hidden="true"></i> Info alert
 </div>
 {% endexample %}
@@ -160,10 +162,6 @@ Use the `.bsk-alert-icon` class to properly format an icon in an alert.
   title="Styles"
   heading_level=2
 %}
-
-{% alert info %}
-Currently Styles are an inherent part of the relevant *variant* class. There is no *default* alert style.
-{% endalert %}
 
 {% include snippets/topic-section-metadata.html
   title="Solid"
@@ -174,7 +172,7 @@ Currently Styles are an inherent part of the relevant *variant* class. There is 
 %}
 
 {% example html %}
-<div class="bsk-alert bsk-alert-solid-success" role="alert">
+<div class="bsk-alert bsk-alert-solid bsk-alert-success" role="alert">
   Solid (success) alert
 </div>
 {% endexample %}
@@ -188,7 +186,7 @@ Currently Styles are an inherent part of the relevant *variant* class. There is 
 %}
 
 {% example html %}
-<div class="bsk-alert bsk-alert-outline-success" role="alert">
+<div class="bsk-alert bsk-alert-outline bsk-alert-success" role="alert">
   Outline (success) alert
 </div>
 {% endexample %}
@@ -202,7 +200,7 @@ Currently Styles are an inherent part of the relevant *variant* class. There is 
 %}
 
 {% example html %}
-<div class="bsk-alert bsk-alert-highlight-success" role="alert">
+<div class="bsk-alert bsk-alert-highlight bsk-alert-success" role="alert">
   Highlight (success) alert
 </div>
 {% endexample %}
@@ -225,9 +223,7 @@ Currently Styles are an inherent part of the relevant *variant* class. There is 
 Use the `.bsk-alert-link` class for any <code>&lt;a&gt;</code> elements within an alert.
 
 {% example html %}
-<div class="bsk-alert bsk-alert-solid-success" role="alert">Alert with a <a href="#" class="bsk-alert-link">link</a></div>
-<!-- This example doesn't include the '.bsk-alert-link' class for demonstration purposes -->
-<div class="bsk-alert bsk-alert-solid-success" role="alert">Alert with a <a href="#">link</a></div>
+<div class="bsk-alert bsk-alert-solid bsk-alert-success" role="alert">Alert with a <a href="#" class="bsk-alert-link">link</a></div>
 {% endexample %}
 
 {% include snippets/topic-section-metadata.html
@@ -238,8 +234,8 @@ Use the `.bsk-alert-link` class for any <code>&lt;a&gt;</code> elements within a
   included="yes"
 %}
 
-Add a `button` element using the [close icon]({{ '/core/icons/#close-icon' | prepend: site.baseurl }}), to create an]
-alert that can be closed or dismissed.
+Add a <code>&lt;button&gt;</code> element using the [close icon]({{ '/core/icons/#close-icon' | prepend: site.baseurl }})
+, to create an alert that can be closed or dismissed.
 
 {% alert info style=solid %}
 Dismissible alerts require the [alert]({{ '/interactivity/alert' | prepend: site.baseurl }}){: .bsk-alert-link }
@@ -247,12 +243,13 @@ JavaScript plugin, which is enabled on this site.
 {% endalert %}
 
 {% alert danger style=highlight %}
-The close button element should use a `button` element, not a <code>&lt;a&gt;</code> element, for browser compatibility.
+The close button element should use a <code>&lt;button&gt;</code> element, not a <code>&lt;a&gt;</code> element, for
+browser compatibility.
 {% endalert %}
 
 {% example html %}
-<div class="bsk-alert bsk-alert-solid-success bsk-alert-dismissible" role="alert">
-  <button type="button" class="bsk-close" data-dismiss="alert" aria-label="Close"><i class="fa fa-times-circle" aria-hidden="true"></i></button>
+<div class="bsk-alert bsk-alert-solid bsk-alert-success bsk-alert-dismissible" role="alert">
+  <button type="button" class="bsk-close" data-dismiss="alert" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button>
   A dismissible alert
 </div>
 {% endexample %}
@@ -265,13 +262,22 @@ The close button element should use a `button` element, not a <code>&lt;a&gt;</c
   included="yes"
 %}
 
-Where an alert will contain lots of text use `.bsk-alert-block`, which will reduce the text size.
+Where an alert will contain more than just text, such as lists or buttons, etc. add the `.bsk-alert-block` class to
+ensure compatibility and correct formatting.
+
+{% alert warning style=highlight %}
+Using an alert with more than just text without this class is not supported and may not look right.
+{% endalert %}
 
 {% example html %}
-<div class="bsk-alert bsk-alert-block bsk-alert-solid-success" role="alert">
-  Longer success text - De carne animata corpora quaeritis. De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium.
-  <br />
-  The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Aenean a dolor plan et terror soulless vulnerum contagium accedunt, mortui iam vivam unlife. Qui tardius moveri, brid eof reanimator sed in magna copia sint terribiles undeath legionis.
+<div class="bsk-alert bsk-alert-block bsk-alert-solid bsk-alert-success" role="alert">
+  <p>Longer success text - De carne animata corpora quaeritis. De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium.</p>
+  <ul>
+    <li>the voodoo sacerdos flesh eater</li>
+    <li>suscitat mortuos comedere carnem virus</li>
+    <li>aenean a dolor plan et terror soulless vulnerum contagium accedunt</li>
+    <li>mortui iam vivam unlife</li>
+  </ul>
 </div>
 {% endexample %}
 
@@ -285,14 +291,47 @@ Where an alert will contain lots of text use `.bsk-alert-block`, which will redu
 
 A heading can be added to a block alert using a `.bsk-alert-heading` header and `h4` heading.
 
+The alert body should use the `.bsk-alert-body` class for proper formatting.
+
+{% alert warning style=highlight %}
+Other headings may be used, but are not supported and may not look right.
+{% endalert %}
+
 {% example html %}
-<div class="bsk-alert bsk-alert-block bsk-alert-solid-success" role="alert">
+<div class="bsk-alert bsk-alert-block bsk-alert-solid bsk-alert-success" role="alert">
   <header class="bsk-alert-heading">
     <h4>Success alert header</h4>
   </header>
-  De carne animata corpora quaeritis. De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium.
-  <br />
-  The voodoo sacerdos flesh eater, suscitat mortuos comedere carnem virus. Aenean a dolor plan et terror soulless vulnerum contagium accedunt, mortui iam vivam unlife. Qui tardius moveri, brid eof reanimator sed in magna copia sint terribiles undeath legionis.
+  <div class="bsk-alert-body">
+    <p>Longer success text - De carne animata corpora quaeritis. De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium.</p>
+    <ul>
+      <li>the voodoo sacerdos flesh eater</li>
+      <li>suscitat mortuos comedere carnem virus</li>
+      <li>aenean a dolor plan et terror soulless vulnerum contagium accedunt</li>
+      <li>mortui iam vivam unlife</li>
+    </ul>
+  </div>
+</div>
+{% endexample %}
+
+{% include snippets/topic-section-metadata.html
+  title="Sizes"
+  heading_level=2
+%}
+
+Add one of these classes to alter the size of an alert:
+
+| Alert Size | Alert Size Class |
+| ---------- | ---------------- |
+| Large      | `.bsk-alert-lg`  |
+{: .bsk-table .bsk-table-responsive }
+
+{% example html %}
+<div class="bsk-alert bsk-alert-lg bsk-alert-solid bsk-alert-success" role="alert">
+  Large (success) alert
+</div>
+<div class="bsk-alert bsk-alert-solid bsk-alert-success" role="alert">
+  Regular (success) alert
 </div>
 {% endexample %}
 
@@ -313,7 +352,7 @@ Add the `.bsk-alert-static-top` class and include a [container]({{ 'core/layout/
 to create a full-width alert that scrolls with the page.
 
 {% example html %}
-<div class="bsk-alert bsk-alert-static-top bsk-alert-solid-success" role="alert">
+<div class="bsk-alert bsk-alert-static-top bsk-alert-solid bsk-alert-success" role="alert">
   Alert static top
 </div>
 {% endexample %}

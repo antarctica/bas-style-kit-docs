@@ -107,8 +107,8 @@ For each family, a series of variants are defined for styles such as italics and
 The BAS *brand* font, Gill Sans, is the BAS official font. It is included in the BAS Style Kit to integrate the font
 into official BAS websites and applications, in high impact areas such as headings and top-level navigation.
 
-<div class="bsk-alert bsk-alert-solid-warning bsk-alert-block bsk-alert-icon">
-  <header class="bsk-alert-title">
+<div class="bsk-alert bsk-alert-solid bsk-alert-warning bsk-alert-block bsk-alert-icon">
+  <header class="bsk-alert-heading">
     <h4><i class="fa fa-fw fa-exclamation-triangle bsk-alert-icon"></i>
     Gill Sans is a licensed work and may not be used without a license</h4>
   </header>
