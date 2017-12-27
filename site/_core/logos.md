@@ -4,7 +4,7 @@ sections:
   -
     title: Overview
   -
-    title: BAS Logo
+    title: BAS logo
   -
     title: Open Government License Symbol
 ---
@@ -24,7 +24,7 @@ Logos are protected works and MUST only be used according to the terms of their 
 {% endalert %}
 
 {% include snippets/topic-section-metadata.html
-  title="BAS Logo"
+  title="BAS logo"
   heading_level=2
   current_phase="alpha"
   current_version="0.3.0"
@@ -41,7 +41,7 @@ These may be used in one of two forms:
 1. the BAS roundel only
 2. the BAS roundel and logo text (the full logo)
 
-The BAS Logo can be used with components such as:
+The BAS logo can be used with components such as:
 
 * [headers]({{ '/components/header' | prepend: site.baseurl }})
 * [navbars]({{ '/components/navbar/#brand-image' | prepend: site.baseurl }})
@@ -49,7 +49,7 @@ The BAS Logo can be used with components such as:
 <div class="bsk-alert bsk-alert-solid bsk-alert-warning bsk-alert-block bsk-alert-icon">
   <header class="bsk-alert-heading">
     <h4><i class="fa fa-fw fa-exclamation-triangle bsk-alert-icon"></i>
-    The BAS Logo is a trademark of the Natural Environment Research Council and may not be used without a license</h4>
+    The BAS logo is a trademark of the Natural Environment Research Council and may not be used without a license</h4>
   </header>
   <p>BAS has a license to use its logo for its official websites and applications. This license
   <strong>does not cover</strong> non-BAS projects, including personal projects of BAS Staff.</p>
@@ -68,7 +68,7 @@ The BAS Logo can be used with components such as:
 </div>
 
 {% include snippets/topic-section-metadata.html
-  title="Variants (BAS Logo)"
+  title="Variants (BAS logo)"
   heading_level=3
 %}
 
@@ -127,7 +127,7 @@ Use the *default* variant if you are unsure which to use.
 </div>
 
 {% include snippets/topic-section-metadata.html
-  title="Sizes (BAS Logo)"
+  title="Sizes (BAS logo)"
   heading_level=3
 %}
 
