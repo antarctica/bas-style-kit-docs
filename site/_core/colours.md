@@ -522,7 +522,7 @@ service
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-external-service-twitter-background"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Twitter</li>
-        <li><code>$brands-twitter-primary</code></li>
+        <li><code>$bsk-colour-spc-twitter-base</code></li>
         <li class="bsk-docs-hex-reference">#55ACEE</li>
       </ul>
     </div>
@@ -530,7 +530,7 @@ service
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-external-service-facebook-background"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Facebook</li>
-        <li><code>$brands-facebook-primary</code></li>
+        <li><code>$bsk-colour-spc-facebook-base</code></li>
         <li class="bsk-docs-hex-reference">#3B5998</li>
       </ul>
     </div>
@@ -538,7 +538,7 @@ service
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-external-service-youtube-background"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>YouTube</li>
-        <li><code>$brands-youtube-primary</code></li>
+        <li><code>$bsk-colour-spc-youtube-base</code></li>
         <li class="bsk-docs-hex-reference">#CD201F</li>
       </ul>
     </div>
@@ -546,7 +546,7 @@ service
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-external-service-rss-background"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>RSS</li>
-        <li><code>$brands-rss-primary</code></li>
+        <li><code>$bsk-colour-spc-rss-base</code></li>
         <li class="bsk-docs-hex-reference">#F26522</li>
       </ul>
     </div>
