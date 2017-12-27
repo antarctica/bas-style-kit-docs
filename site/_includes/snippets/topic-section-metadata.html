@@ -1,5 +1,5 @@
 {% for i in (1..include.heading_level) %}#{% endfor %} {{ include.title }}
-{: #{{ include.title | slugify }} }
+{: #{{ include.title | slugify }} .bsk-docs-section-title }
 
 {: .bsk-docs-section-metadata }
 {% case include.current_phase %}
