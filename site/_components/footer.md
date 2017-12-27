@@ -66,17 +66,25 @@ This example, whilst quite complex, demonstrates the sort of information shown i
 <footer class="bsk-footer bsk-footer-default">
   <div class="bsk-container-fluid">
     <!-- main content -->
-    <h2>Footer content</h2>
-    Footer content with a <a href="#">link</a>
+    <div class="bsk-row">
+      <div class="bsk-col-12-md-6">
+        Footer content with a <a href="#">link</a>
+      </div>
+      <div class="bsk-col-12-md-6">
+        <div class="bsk-text-right"><a class="back-to-top" href="#site-top"><i class="fa fa-fw fa-chevron-up" aria-hidden="true"></i> Back to top</a></div>
+      </div>
+    </div>
     <div role="separator" class="bsk-footer-divider"></div>
     <!-- Copyright & legal -->
     <div class="bsk-footer-ogl">
-      <a class="bsk-ogl-symbol" rel="license" href="http://www.nationalarchives.gov.uk/doc/open-government-licence/"><img alt="Open Government Licence logo" src="{% unless jekyll.environment == 'production' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endunless %}/{% include snippets/bsk-version.html %}/img/logos-symbols/ogl-symbol-inverse-transparent-32.png"></a>
-      <div class="bsk-ogl-text">All content is licensed under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/">Open Government Licence v3.0</a>, except where otherwise stated</div>
+      <a class="bsk-ogl-symbol" rel="license" href="http://www.nationalarchives.gov.uk/doc/open-government-licence"><img alt="Open Government Licence logo" src="{% unless jekyll.environment == 'production' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endunless %}/{% include snippets/bsk-version.html %}/img/logos-symbols/ogl-symbol-inverse-transparent-32.png"></a>
+      <div class="bsk-ogl-text">
+      This website is licensed under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence">Open Government Licence v3.0</a>, except where otherwise stated</div>
     </div>
     <div class="bsk-footer-policy-links">
       © (Year) NERC BAS
       <ul class="bsk-list-inline">
+        <li><a href="#">Cookies</a></li>
         <li><a href="#">Copyright</a></li>
         <li><a href="#">Privacy</a></li>
       </ul>
@@ -150,6 +158,7 @@ statements.
     <div class="bsk-footer-policy-links">
       © (Year) NERC BAS
       <ul class="bsk-list-inline">
+        <li><a href="#">Cookies</a></li>
         <li><a href="#">Copyright</a></li>
         <li><a href="#">Privacy</a></li>
       </ul>
