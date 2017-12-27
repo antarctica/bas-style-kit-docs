@@ -28,8 +28,8 @@ sections:
 The BAS Style Kit includes version **3.7** of the [Font Awesome](http://fontawesome.io) icon web font.
 
 {% alert warning %}
-Font Awesome replaces, and removes, the Glyphicons icon font included by default in Bootstrap, its icons therefore
-won't work using the Style Kit.
+Font Awesome replaces, and removes, the Glyphicons icon font included by default in Bootstrap, its icons won't work
+using the Style Kit.
 {% endalert %}
 
 {% alert info style=highlight %}
@@ -74,24 +74,24 @@ For common actions or concepts, the Style Kit uses a set of conventional icons.
   included="yes"
 %}
 
-Use the `fa-times-circle` icon wrapped in a `.bsk-close` element for indicating closing or dismissive things, such as
+Use the `fa-times` icon wrapped in a `.bsk-close` element for indicating closing or dismissive things, such as
 [alerts]({{ '/components/alert' | prepend: site.baseurl }}).
 
 <div class="bsk-docs-icons-wrapper">
   <div class="bsk-row">
     <div class="bsk-col-12-md-3">
-      <div class="bsk-docs-icon"><i class="fa fa-fw fa-4x fa-times-circle" aria-hidden="true"></i></div>
+      <div class="bsk-docs-icon"><i class="fa fa-fw fa-4x fa-times" aria-hidden="true"></i></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
-        <li>Times Circle</li>
-        <li class="bsk-docs-icon-reference">fa-times-circle</li>
-        <li><code>&lt;i class="fa fa-fw fa-times-circle" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+        <li>Times</li>
+        <li class="bsk-docs-icon-reference">fa-times</li>
+        <li><code>&lt;i class="fa fa-fw fa-times" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
   </div>
 </div>
 
 {% example html %}
-<button type="button" class="bsk-close" aria-label="Close"><i class="fa fa-fw fa-times-circle" aria-hidden="true"></i></button>
+<button type="button" class="bsk-close" aria-label="Close"><i class="fa fa-fw fa-times" aria-hidden="true"></i></button>
 {% endexample %}
 
 {% include snippets/topic-section-metadata.html
