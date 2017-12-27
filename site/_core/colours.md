@@ -54,13 +54,24 @@ If you do use other colours, ensure this complies with the
 
 A default background colour is applied to the `<body>` element.
 
+A default background colour is also applied to the parent `<html>` element to account for shorter pages where a white
+space would be shown after the [footer]({{ '/components/footer' | prepend: site.baseurl }}) component.
+
 <div class="bsk-docs-swatch-wrapper">
   <div class="bsk-row">
     <div class="bsk-col-12-md-2">
-      <div class="bsk-docs-swatch-colour bsk-docs-swatch-page-background"></div>
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-html-background"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
-        <li>Page background</li>
-        <li><code>$page-background</code></li>
+        <li>HTML background</li>
+        <li><code>$html-bg</code></li>
+        <li class="bsk-docs-hex-reference">#333333</li>
+      </ul>
+    </div>
+    <div class="bsk-col-12-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-body-background"></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
+        <li>Body background</li>
+        <li><code>$body-bg </code></li>
         <li class="bsk-docs-hex-reference">#FFFFFF</li>
       </ul>
     </div>
