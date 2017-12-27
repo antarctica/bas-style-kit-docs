@@ -15,15 +15,16 @@
     <div class="bsk-row">
       <div class="bsk-col-12-md-6 site-licensing">
         Except where otherwise stated, the BAS Style Kit is licensed under the
-        <a rel="license" href="{{ site.bsk_source_code_url }}/blob/master/LICENSE.md"> MIT License</a>, and this
-        documentation, the <a rel="license" href="{{ site.bsk_docs_source_code_url }}/blob/master/LICENSE.md">CC BY
+        <a rel="license" href="{{ '/legal/mit-license' | prepend: site.baseurl }}"> MIT License</a>, and this
+        documentation, the <a rel="license" href="https://creativecommons.org/licenses/by/3.0/">CC BY
         v3.0 License.</a>
       </div>
       <div class="bsk-col-12-md-6 bsk-footer-policy-links">
         © {{site.time | date: "%Y"}} NERC BAS
         <ul class="bsk-list-inline">
-          <li><a href="https://www.bas.ac.uk/about-this-site/copyright-statement/">Copyright</a></li>
-          <li><a href="https://www.bas.ac.uk/about-this-site/privacy-cookie-policy/">Privacy</a></li>
+          <li><a href="{{ '/legal/cookies' | prepend: site.baseurl }}">Cookies</a></li>
+          <li><a href="{{ '/legal/copyright' | prepend: site.baseurl }}">Copyright</a></li>
+          <li><a href="{{ '/legal/privacy' | prepend: site.baseurl }}">Privacy</a></li>
         </ul>
       </div>
     </div>
@@ -39,14 +40,15 @@
   </p>
 
   <p>
-    Except where otherwise stated, the BAS Style Kit is licensed under the
-    <a rel="license" href="https://hackpad.com/BAS-Style-Kit-License-tYBcBNjApkJ">MIT License</a>, and this
-    documentation, the <a rel="license" href="https://creativecommons.org/licenses/by/3.0/">CC BY v3.0 License.</a>
+    Except where otherwise stated, the BAS Style Kit is licensed under the <br />
+    MIT License: {{ '/legal/mit-license' | prepend: site.baseurl }} <br />
+    CC BY v3.0 License: https://creativecommons.org/licenses/by/3.0/
   </p>
 
   <p>
-    © {{site.time | date: "%Y"}} NERC BAS -
-    <a href="https://www.bas.ac.uk/about-this-site/copyright-statement/">Copyright:</a>
-    <a href="https://www.bas.ac.uk/about-this-site/privacy-cookie-policy/">Privacy:</a>
+    © {{site.time | date: "%Y"}} NERC BAS <br />
+    Cookies: {{ '/legal/cookies' | prepend: site.baseurl }}
+    Copyright: {{ '/legal/copyright' | prepend: site.baseurl }} <br />
+    Privacy: {{ '/legal/privacy' | prepend: site.baseurl }}
   </p>
 </footer>

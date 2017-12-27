@@ -1,6 +1,11 @@
-# License
+---
+layout: default
+title: Copyright notice
+---
 
-Copyright 2017 NERC BAS.
+<header id="site-content" class="bsk-page-header" tabindex="-1">
+    <h1>Copyright notice</h1>
+</header>
 
 Except where otherwise stated, the materials that make up this website are subject to copyright, and are owned by the
 Natural Environment Research Council (NERC), of which the British Antarctic Survey (BAS) is a component body.
@@ -16,4 +21,10 @@ Except where otherwise stated, please attribute the use of any content as:
 
 > Contains British Antarctic Survey materials, copyright NERC [Year].
 
-Copies of these licenses are included within this project.
+----
+
+## Changes to this policy
+
+### 16th June 2016
+
+* initial policy
