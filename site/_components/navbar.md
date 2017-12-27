@@ -249,20 +249,19 @@ Use the `.bsk-navbar-brand` class to indicate the name of the current website or
 
 Use the same `.bsk-navbar-brand` class with a image a logo or other image.
 
-You will need to create add a custom class wherever the `.bsk-navbar-brand` class is used to adjust padding.
+To look right, scale the logo or image so that its height is one of these sizes and use the corresponding
+`.bsk-navbar-brand-image-{size}` class on the same element as `.bsk-navbar-brand`.
 
-To look right, scale the logo or image so that its height is one of these sizes.
-
-| Navbar Variant | Style       | Height (Px) |
-| -------------- | ----------- | ----------- |
-| Regular        | Regular     | 32          |
-| Regular        | Full height | 48          |
-| Large          | Regular     | 64          |
-| Large          | Full height | 96          |
+| Navbar Variant | Relative Image Size | Height (Px) | Navbar Brand Image Class     |
+| -------------- | ------------------- | ----------- | ---------------------------- |
+| Regular        | Regular             | 32          | `.bsk-navbar-brand-image-32` |
+| Regular        | Full height         | 48          | `.bsk-navbar-brand-image-48` |
+| Large          | Regular             | 64          | `.bsk-navbar-brand-image-64` |
+| Large          | Full height         | 96          | `.bsk-navbar-brand-image-96` |
 {: .bsk-table .bsk-table-responsive }
 
 {% alert info style=highlight %}
-You will need to use additional styles to correct the padding applied to brand images.
+If you need to use a specific size not in this list you will need to use your own classes to add suitable padding
 {% endalert %}
 
 {% alert info style=highlight %}
@@ -273,7 +272,7 @@ See the other [navbar sizes](#sizes) for other examples.
 <nav class="bsk-navbar">
   <div class="bsk-container-fluid">
     <div class="bsk-navbar-header">
-      <a class="bsk-navbar-brand bsk-docs-navbar-brand-image-32" href="#">
+      <a class="bsk-navbar-brand bsk-navbar-brand-image-32" href="#">
         <img src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Logo&w=32&h=32">
       </a>
     </div>
@@ -288,7 +287,7 @@ See the other [navbar sizes](#sizes) for other examples.
 <nav class="bsk-navbar">
   <div class="bsk-container-fluid">
     <div class="bsk-navbar-header">
-      <a class="bsk-navbar-brand bsk-docs-navbar-brand-image-48" href="#">
+      <a class="bsk-navbar-brand bsk-navbar-brand-image-48" href="#">
         <img src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Logo&w=48&h=48">
       </a>
     </div>
@@ -305,7 +304,7 @@ Add the `.bsk-fix-navbar-brand-img-txt` class to a brand image to combine with b
 <nav class="bsk-navbar">
   <div class="bsk-container-fluid">
     <div class="bsk-navbar-header">
-      <a class="bsk-navbar-brand bsk-docs-navbar-brand-image-32" href="#">
+      <a class="bsk-navbar-brand bsk-navbar-brand-image-32" href="#">
         <img class="bsk-fix-navbar-brand-img-txt" src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Logo&w=32&h=32">
         Site name
       </a>
@@ -529,7 +528,7 @@ Add one of these classes to alter the size of a jumbotron:
         <span class="bsk-icon-bar"></span>
         <span class="bsk-icon-bar"></span>
       </button>
-      <a class="bsk-navbar-brand bsk-docs-navbar-brand-image-64" href="#">
+      <a class="bsk-navbar-brand bsk-navbar-brand-image-64" href="#">
         <img src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Logo&w=64&h=64">
       </a>
     </div>
@@ -551,7 +550,7 @@ Add one of these classes to alter the size of a jumbotron:
         <span class="bsk-icon-bar"></span>
         <span class="bsk-icon-bar"></span>
       </button>
-      <a class="bsk-navbar-brand bsk-docs-navbar-brand-image-96" href="#">
+      <a class="bsk-navbar-brand bsk-navbar-brand-image-96" href="#">
         <img src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Logo&w=96&h=96">
       </a>
     </div>
