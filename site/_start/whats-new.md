@@ -27,7 +27,7 @@ See the relevant project change log for this information:
   heading_level=2
 %}
 
-The latest version of the BAS Style Kit is **0.3.0-alpha**.
+The latest version of the BAS Style Kit is **0.3.0-beta**.
 
 The latest stable version of the BAS Style Kit is **0.2.0**.
 

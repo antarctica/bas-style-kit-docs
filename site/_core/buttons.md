@@ -261,7 +261,6 @@ Use `aria-pressed="true"` to give
   included="yes"
 %}
 
-
 <div class="bsk-alert bsk-alert-solid bsk-alert-danger bsk-alert-block bsk-alert-icon">
   <header class="bsk-alert-heading">
     <h4><i class="fa fa-fw fa-exclamation-circle bsk-alert-icon"></i>
