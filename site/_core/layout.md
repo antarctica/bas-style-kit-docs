@@ -119,23 +119,24 @@ considered extra small. This slightly strange situation is resolved in the next 
 included in future versions of the Style Kit when this is released.
 {% endalert %}
 
-{% alert info %}
+{% alert info style=highlight %}
 The *extra large* size is custom to the BAS Style Kit, and is used to target larger displays to improve the use of
 space for internal, data rich, applications. It is not recommended for use in general websites.
 {% endalert %}
 
-{% alert info %}
-**Heads up!** Responsive breakpoints are changing in the next version of the Style Kit. See
-[BSK-111](https://jira.ceh.ac.uk/browse/bsk-111) for more information.
+{% alert info style=highlight %}
+The *full HD* size is custom to the BAS Style Kit, and is used to target displays such as Televisions for digital
+signage applications. It is not recommended for use in general websites.
 {% endalert %}
 
-| Size        | Class Name | Example Device <small class="bsk-text-muted">Orientation</small> | Minimum Width (px)                      | Min Width Variable | Core Bootstrap                                                                                             |
-| ----------- | ---------- | ---------------------------------------------------------------- | --------------------------------------- | ------------------ | ---------------------------------------------------------------------------------------------------------- |
-| Extra Small | `xs`       | Phone <small class="bsk-text-muted">portrait</small>             | 480 ([see note](#xs-min-width-note))    | `$screen-xs-min`   | <i class="fa fa-fw fa-check" aria-hidden="true"></i> Yes                                                   |
-| Small       | `sm`       | Phone <small class="bsk-text-muted">landscape</small>            | 768                                     | `$screen-sm-min`   | <i class="fa fa-fw fa-check" aria-hidden="true"></i> Yes                                                   |
-| Medium      | `md`       | Tablets                                                          | 992                                     | `$screen-md-min`   | <i class="fa fa-fw fa-check" aria-hidden="true"></i> Yes                                                   |
-| Large       | `lg`       | Computers                                                        | 1200                                    | `$screen-lg-min`   | <i class="fa fa-fw fa-check" aria-hidden="true"></i> Yes                                                   |
-| Extra Large | `xl`       | Large desktop computers                                          | 1800                                    | `$screen-xl-min`   | <span class="bsk-text-danger"><i class="fa fa-fw fa-exclamation-circle" aria-hidden="true"></i> No</span>  |
+| Size        | Class Name | Example Device <small class="bsk-text-muted">Orientation</small> | Minimum Width (px)                      | Min Width Variable  | Core Bootstrap                                                                                             |
+| ----------- | ---------- | ---------------------------------------------------------------- | --------------------------------------- | ------------------- | ---------------------------------------------------------------------------------------------------------- |
+| Extra Small | `xs`       | Phone <small class="bsk-text-muted">portrait</small>             | 480 ([see note](#xs-min-width-note))    | `$screen-xs-min`    | <i class="fa fa-fw fa-check" aria-hidden="true"></i> Yes                                                   |
+| Small       | `sm`       | Phone <small class="bsk-text-muted">landscape</small>            | 768                                     | `$screen-sm-min`    | <i class="fa fa-fw fa-check" aria-hidden="true"></i> Yes                                                   |
+| Medium      | `md`       | Tablets                                                          | 992                                     | `$screen-md-min`    | <i class="fa fa-fw fa-check" aria-hidden="true"></i> Yes                                                   |
+| Large       | `lg`       | Computers                                                        | 1200                                    | `$screen-lg-min`    | <i class="fa fa-fw fa-check" aria-hidden="true"></i> Yes                                                   |
+| Extra Large | `xl`       | Large desktop computers                                          | 1800                                    | `$screen-xl-min`    | <span class="bsk-text-danger"><i class="fa fa-fw fa-exclamation-circle" aria-hidden="true"></i> No</span>  |
+| Full HD     | `fhd`      | Televisions                                                      | 1920                                    | `$screen-fhd-min`   | <span class="bsk-text-danger"><i class="fa fa-fw fa-exclamation-circle" aria-hidden="true"></i> No</span>  |
 {: .bsk-table .bsk-table-responsive }
 
 {% include snippets/topic-section-metadata.html
@@ -156,7 +157,8 @@ calculated as the next minimum width size minus `1px`. There is no maximum width
 | Small       | 991                | `$screen-sm-max`   |
 | Medium      | 1199               | `$screen-md-max`   |
 | Large       | 1799               | `$screen-lg-max`   |
-| Extra Large | N/A                | N/A                |
+| Extra Large | 1919               | `$screen-xl-max`   |
+| Full HD     | N/A                | N/A                |
 {: .bsk-table .bsk-table-responsive }
 
 {% include snippets/topic-section-metadata.html
@@ -197,8 +199,8 @@ Use the `.bsk-pull-left` and `.bsk-pull-right` classes to float content. The `!i
 specificity issues.
 
 {% alert warning %}
-Do not use these classes in [navbars]({{ '/components/navbar' | prepend: site.baseurl }}), `.bsk-navbar-left` and
-`.bsk-navbar-right` classes should be used instead.
+Do not use these classes in [navbars]({{ '/components/navbar' | prepend: site.baseurl }}){: .bsk-alert-link},
+`.bsk-navbar-left` and `.bsk-navbar-right` classes should be used instead.
 {% endalert %}
 
 {% example html %}
@@ -292,7 +294,7 @@ Screen readers only
 page layout
 
 {% include snippets/topic-section-metadata.html
-  title="General visibiliy classes"
+  title="General visibility classes"
   heading_level=2
   phase="live"
   initial_version="0.1.0"
@@ -315,7 +317,7 @@ Both classes and mixins are available for setting these states generally (i.e. u
 {% include snippets/back-to-top.html %}
 
 {% include snippets/topic-section-metadata.html
-  title="Responsive visibiliy classes"
+  title="Responsive visibility classes"
   heading_level=2
   phase="beta"
   initial_version="0.1.0"
@@ -341,13 +343,14 @@ Unlike grid columns for example, visibility does not flow upwards grid sizes. If
 *extra small* grid size, it will become visible again at the *small* size.
 {% endalert %}
 
-| Size        | Visible Classes                                                                               | Hidden Class     |
-| ----------- | --------------------------------------------------------------------------------------------- |----------------- |
-| Extra Small | `.bsk-visible-xs-block` <br /> `.bsk-visible-xs-inline` <br /> `.bsk-visible-xs-inline-block` | `.bsk-hidden-xs` |
-| Small       | `.bsk-visible-sm-block` <br /> `.bsk-visible-sm-inline` <br /> `.bsk-visible-sm-inline-block` | `.bsk-hidden-sm` |
-| Medium      | `.bsk-visible-md-block` <br /> `.bsk-visible-md-inline` <br /> `.bsk-visible-md-inline-block` | `.bsk-hidden-md` |
-| Large       | `.bsk-visible-lg-block` <br /> `.bsk-visible-lg-inline` <br /> `.bsk-visible-lg-inline-block` | `.bsk-hidden-lg` |
-| Extra Large | `.bsk-visible-xl-block` <br /> `.bsk-visible-xl-inline` <br /> `.bsk-visible-xl-inline-block` | `.bsk-hidden-xl` |
+| Size        | Visible Classes                                                                                  | Hidden Class      |
+| ----------- | ------------------------------------------------------------------------------------------------ |------------------ |
+| Extra Small | `.bsk-visible-xs-block` <br /> `.bsk-visible-xs-inline` <br /> `.bsk-visible-xs-inline-block`    | `.bsk-hidden-xs`  |
+| Small       | `.bsk-visible-sm-block` <br /> `.bsk-visible-sm-inline` <br /> `.bsk-visible-sm-inline-block`    | `.bsk-hidden-sm`  |
+| Medium      | `.bsk-visible-md-block` <br /> `.bsk-visible-md-inline` <br /> `.bsk-visible-md-inline-block`    | `.bsk-hidden-md`  |
+| Large       | `.bsk-visible-lg-block` <br /> `.bsk-visible-lg-inline` <br /> `.bsk-visible-lg-inline-block`    | `.bsk-hidden-lg`  |
+| Extra Large | `.bsk-visible-xl-block` <br /> `.bsk-visible-xl-inline` <br /> `.bsk-visible-xl-inline-block`    | `.bsk-hidden-xl`  |
+| Full HD     | `.bsk-visible-fhd-block` <br /> `.bsk-visible-fhd-inline` <br /> `.bsk-visible-fhd-inline-block` | `.bsk-hidden-fhd` |
 {: .bsk-table .bsk-table-responsive }
 
 {% include snippets/topic-section-metadata.html
