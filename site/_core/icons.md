@@ -119,6 +119,29 @@ Use the `fa-flask` icon for indicating things that are experimental or works in 
   </div>
 </div>
 
+{% include snippets/topic-section-metadata.html
+  title="Back to top icon"
+  heading_level=3
+  phase="beta"
+  initial_version="0.3.0"
+  included="yes"
+%}
+
+Use the `fa-chevron-up` icon for indicating a link that will return the user to the top of the page
+
+<div class="bsk-docs-icons-wrapper">
+  <div class="bsk-row">
+    <div class="bsk-col-12-md-3">
+      <div class="bsk-docs-icon"><i class="fa fa-fw fa-4x fa-chevron-up" aria-hidden="true"></i></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
+        <li>Chevron Up</li>
+        <li class="bsk-docs-icon-reference">fa-chevron-up</li>
+        <li><code>&lt;i class="fa fa-fw fa-chevron-up" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
 {% example html %}
 <button type="button" class="bsk-btn bsk-btn-experimental"><i class="fa fa-fw fa-flask" aria-hidden="true"></i> Experimental Action</button>
 {% endexample %}
