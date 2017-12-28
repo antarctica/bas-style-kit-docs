@@ -4,9 +4,9 @@ sections:
   -
     title: Basic table
   -
-    title: Striped table
+    title: Striped rows
   -
-    title: Bordered table
+    title: Bordered rows
   -
     title: Hoverable rows
   -
