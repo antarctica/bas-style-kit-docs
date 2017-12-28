@@ -48,8 +48,8 @@ Use the `aria-label` element so assistive technologies can tell each pagination 
 {% include snippets/topic-section-metadata.html
   title="Default pagination"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -70,8 +70,8 @@ Use the `aria-label` element so assistive technologies can tell each pagination 
 {% include snippets/topic-section-metadata.html
   title="Simple pager"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -87,8 +87,8 @@ Use the `aria-label` element so assistive technologies can tell each pagination 
 {% include snippets/topic-section-metadata.html
   title="Sizes"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -148,8 +148,8 @@ These classes don't apply to the pager.
 {% include snippets/topic-section-metadata.html
   title="Active item"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -175,8 +175,8 @@ The active state doesn't apply to the pager.
 {% include snippets/topic-section-metadata.html
   title="Disabled item"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -222,8 +222,8 @@ Add the `.bsk-disabled` class to indicate unavailable items or actions.
 {% include snippets/topic-section-metadata.html
   title="Pager alignment"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 

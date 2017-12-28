@@ -40,8 +40,8 @@ For assistive technologies, all button groups and toolbars should use a `aria-la
 {% include snippets/topic-section-metadata.html
   title="Default button group"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -58,8 +58,8 @@ Groups contain buttons.
 {% include snippets/topic-section-metadata.html
   title="Default button toolbar"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -139,8 +139,8 @@ Individual buttons will inherit the size of each button group.
 {% include snippets/topic-section-metadata.html
   title="Nested button group"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -166,8 +166,8 @@ Button groups can be nested to include drop-down menus with buttons in a group.
 {% include snippets/topic-section-metadata.html
   title="Vertical button group"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -197,8 +197,8 @@ Split button drop-downs and button toolbars are not supported in vertical button
 {% include snippets/topic-section-metadata.html
   title="Justified button group"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 

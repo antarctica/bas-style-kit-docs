@@ -20,8 +20,9 @@ sections:
 {% include snippets/topic-section-metadata.html
   title="Available icons"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="beta"
+  initial_version="0.1.0"
+  revised_version="0.3.0"
   included="yes"
 %}
 
@@ -41,8 +42,8 @@ For consistency, it is recommended to use the `.fa-fw` (fixed width) class with 
 {% include snippets/topic-section-metadata.html
   title="Caret icon"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -69,8 +70,9 @@ For common actions or concepts, the Style Kit uses a set of conventional icons.
 {% include snippets/topic-section-metadata.html
   title="Close icon"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="beta"
+  initial_version="0.1.0"
+  revised_version="0.3.0"
   included="yes"
 %}
 
@@ -97,8 +99,8 @@ Use the `fa-times` icon wrapped in a `.bsk-close` element for indicating closing
 {% include snippets/topic-section-metadata.html
   title="Experimental icon"
   heading_level=3
-  current_phase="live"
-  current_version="0.3.0"
+  phase="beta"
+  initial_version="0.3.0"
   included="yes"
 %}
 
@@ -128,8 +130,8 @@ Use the `fa-flask` icon for indicating things that are experimental or works in 
 {% include snippets/topic-section-metadata.html
   title="Standard contextual icons"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -247,8 +249,8 @@ these icons.
 {% include snippets/topic-section-metadata.html
   title="External service icons"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 

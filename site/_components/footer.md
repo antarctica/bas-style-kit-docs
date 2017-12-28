@@ -47,8 +47,8 @@ strongly recommended to use a [container]({{ '/core/layout/#containers' | prepen
 {% include snippets/topic-section-metadata.html
   title="Default footer"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -101,8 +101,8 @@ This example, whilst quite complex, demonstrates the sort of information shown i
 {% include snippets/topic-section-metadata.html
   title="Divider"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -121,8 +121,8 @@ Use the `.bsk-footer-divider` class on an element, to act as a horizontal rule w
 {% include snippets/topic-section-metadata.html
   title="Open Government License"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -144,8 +144,8 @@ statement.
 {% include snippets/topic-section-metadata.html
   title="Legal policy links"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -176,7 +176,8 @@ statements.
   title="Fixed to bottom"
   heading_level=3
   current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -208,8 +209,8 @@ The example below would normally use absolute positioning. It is disabled here t
 {% include snippets/topic-section-metadata.html
   title="Static bottom"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 

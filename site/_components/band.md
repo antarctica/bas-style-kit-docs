@@ -35,10 +35,8 @@ band, otherwise it will look strange. It is not enough to use `.band-bsk` on its
 {% include snippets/topic-section-metadata.html
   title="Default well"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
-  future_phase="deprecated"
-  future_version="0.3.0"
+  phase="deprecated"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -51,10 +49,8 @@ Add the `.band-bsk-default` class for standard bands.
 {% include snippets/topic-section-metadata.html
   title="Inverse band"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
-  future_phase="deprecated"
-  future_version="0.3.0"
+  phase="deprecated"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -67,10 +63,8 @@ Add the `.band-bsk-inverse` class for an alternative band style. This has no sem
 {% include snippets/topic-section-metadata.html
   title="Sizes"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
-  future_phase="deprecated"
-  future_version="0.3.0"
+  phase="deprecated"
+  initial_version="0.1.0"
   included="yes"
 %}
 

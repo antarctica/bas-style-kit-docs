@@ -28,8 +28,8 @@ Use the `.bsk-media-body` class, with an optional `.bsk-media-header` element, f
 {% include snippets/topic-section-metadata.html
   title="Default media object item"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -48,8 +48,8 @@ Use the `.bsk-media-body` class, with an optional `.bsk-media-header` element, f
 {% include snippets/topic-section-metadata.html
   title="Media object list"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -147,8 +147,8 @@ Media objects can also be nested.
 {% include snippets/topic-section-metadata.html
   title="Horizontal alignment"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -195,8 +195,8 @@ When using right alignment, the `.bsk-media-body` needs to be before the `.bsk-m
 {% include snippets/topic-section-metadata.html
   title="Vertical alignment"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 

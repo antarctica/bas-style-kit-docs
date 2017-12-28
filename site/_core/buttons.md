@@ -40,8 +40,9 @@ button, otherwise it will look strange. It is not enough to use `.bsk-btn` on it
 {% include snippets/topic-section-metadata.html
   title="Supported elements"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
+  revised_version="0.2.0"
   included="yes"
 %}
 
@@ -77,8 +78,8 @@ content) to give
 {% include snippets/topic-section-metadata.html
   title="Default button"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -92,8 +93,8 @@ Add the `.bsk-btn-default` class for standard or secondary buttons. For added co
 {% include snippets/topic-section-metadata.html
   title="Primary button"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -106,8 +107,8 @@ Add the `.bsk-btn-primary` class for the main call to action.
 {% include snippets/topic-section-metadata.html
   title="Experimental button"
   heading_level=3
-  current_phase="live"
-  current_version="0.3.0"
+  phase="beta"
+  initial_version="0.3.0"
   included="yes"
 %}
 
@@ -120,8 +121,8 @@ Add the `.bsk-btn-experimental` class for actions that are experimental or not y
 {% include snippets/topic-section-metadata.html
   title="Contextual colours"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -146,8 +147,8 @@ used for context by adding these classes:
 {% include snippets/topic-section-metadata.html
   title="Contextual icons"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -172,8 +173,8 @@ used for adding context to buttons, usually with the
 {% include snippets/topic-section-metadata.html
   title="Link"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -187,8 +188,8 @@ actions, or those you don't want users to use without thinking (such as delete).
 {% include snippets/topic-section-metadata.html
   title="Sizes"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -211,8 +212,8 @@ Add one of these classes to alter the size of a button:
 {% include snippets/topic-section-metadata.html
   title="Block level buttons"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -234,8 +235,8 @@ Add `.bsk-btn-block` for buttons to span the width of their parent.
 {% include snippets/topic-section-metadata.html
   title="Active state"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -255,8 +256,8 @@ Use `aria-pressed="true"` to give
 {% include snippets/topic-section-metadata.html
   title="Disabled state"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 

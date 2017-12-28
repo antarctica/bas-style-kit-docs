@@ -38,8 +38,8 @@ You **must** pick a [variant]({{ '/components/jumbotron/#variants' | prepend: si
 {% include snippets/topic-section-metadata.html
   title="Default jumbotron"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -56,8 +56,8 @@ Add the `.bsk-jumbotron-default` class for a standard jumbotron.
 {% include snippets/topic-section-metadata.html
   title="Inverse jumbotron"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -74,8 +74,8 @@ Use the `.jumbotron-inverse` class to use a darker background for a jumbotron.
 {% include snippets/topic-section-metadata.html
   title="Image jumbotron"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -96,8 +96,9 @@ Additional CSS rules will be needed to set a `background-image` property.
 {% include snippets/topic-section-metadata.html
   title="Jumbotron overlay"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="beta"
+  initial_version="0.1.0"
+  revised_version="0.3.0"
   included="yes"
 %}
 
@@ -112,8 +113,8 @@ Use the `.bsk-jumbotron-overlay` class to add additional contrast around a jumbo
 {% include snippets/topic-section-metadata.html
   title="Sizes"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -149,8 +150,8 @@ Add one of these classes to alter the size of a jumbotron:
 {% include snippets/topic-section-metadata.html
   title="Full-width jumbotron"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 

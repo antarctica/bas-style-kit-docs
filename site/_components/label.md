@@ -44,8 +44,8 @@ also be used.
 {% include snippets/topic-section-metadata.html
   title="Default label"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -59,8 +59,8 @@ Something <span class="bsk-label bsk-label-default">Label</span>
 {% include snippets/topic-section-metadata.html
   title="Primary label"
   heading_level=3
-  current_phase="live"
-  current_version="0.3.0"
+  phase="beta"
+  initial_version="0.3.0"
   included="yes"
 %}
 
@@ -73,8 +73,8 @@ Something <span class="bsk-label bsk-label-primary">Label</span>
 {% include snippets/topic-section-metadata.html
   title="Experimental label"
   heading_level=3
-  current_phase="live"
-  current_version="0.3.0"
+  phase="beta"
+  initial_version="0.3.0"
   included="yes"
 %}
 
@@ -87,8 +87,8 @@ Something <span class="bsk-label bsk-label-experimental">Label</span>
 {% include snippets/topic-section-metadata.html
   title="Contextual colours"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -113,8 +113,8 @@ used for context by adding these classes:
 {% include snippets/topic-section-metadata.html
   title="Development phases"
   heading_level=3
-  current_phase="live"
-  current_version="0.3.0"
+  phase="beta"
+  initial_version="0.3.0"
   included="yes"
 %}
 
@@ -143,8 +143,8 @@ where relevant by adding these classes:
 {% include snippets/topic-section-metadata.html
   title="Sizes"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 

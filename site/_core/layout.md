@@ -30,8 +30,8 @@ layout classes is guaranteed.**
 {% include snippets/topic-section-metadata.html
   title="Containers"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -48,8 +48,8 @@ Use the *fixed-width container* if you are unsure which to use.
 {% include snippets/topic-section-metadata.html
   title="Fixed-width container"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -70,8 +70,8 @@ this site's layout.
 {% include snippets/topic-section-metadata.html
   title="Fluid container"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -91,8 +91,9 @@ certain types of content, such as mapping.
 {% include snippets/topic-section-metadata.html
   title="Responsive breakpoints"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="beta"
+  initial_version="0.1.0"
+  revised_version="0.3.0"
   included="yes"
 %}
 
@@ -140,8 +141,9 @@ space for internal, data rich, applications. It is not recommended for use in ge
 {% include snippets/topic-section-metadata.html
   title="Maximum width"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="beta"
+  initial_version="0.1.0"
+  revised_version="0.3.0"
   included="yes"
 %}
 
@@ -160,8 +162,8 @@ calculated as the next minimum width size minus `1px`. There is no maximum width
 {% include snippets/topic-section-metadata.html
   title="Unit responsive breakpoints"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -186,8 +188,8 @@ or, in cases where you are integrating with existing code or a third party syste
 {% include snippets/topic-section-metadata.html
   title="Floated blocks"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -221,8 +223,8 @@ Alternatively, mixins can be used:
 {% include snippets/topic-section-metadata.html
   title="Centred blocks"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -245,8 +247,8 @@ Alternatively, a mixin can be used:
 {% include snippets/topic-section-metadata.html
   title="Clearfix"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -268,8 +270,8 @@ Alternatively, a mixin can be used:
 {% include snippets/topic-section-metadata.html
   title="Visibility"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -292,8 +294,8 @@ page layout
 {% include snippets/topic-section-metadata.html
   title="General visibiliy classes"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -315,8 +317,9 @@ Both classes and mixins are available for setting these states generally (i.e. u
 {% include snippets/topic-section-metadata.html
   title="Responsive visibiliy classes"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="beta"
+  initial_version="0.1.0"
+  revised_version="0.3.0"
   included="yes"
 %}
 
@@ -350,8 +353,8 @@ Unlike grid columns for example, visibility does not flow upwards grid sizes. If
 {% include snippets/topic-section-metadata.html
   title="Print visibility classes"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 

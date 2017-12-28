@@ -37,8 +37,8 @@ All input groups should have a label to make sure they can be understood by assi
 {% include snippets/topic-section-metadata.html
   title="Supported elements"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -65,8 +65,8 @@ container: 'body';
 {% include snippets/topic-section-metadata.html
   title="Basic input group"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -122,8 +122,8 @@ Icons can be used as well.
 {% include snippets/topic-section-metadata.html
   title="Checkbox and radio input group"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -159,10 +159,9 @@ instead of text.
 {% include snippets/topic-section-metadata.html
   title="Button input group"
   heading_level=3
-  current_phase="alpha"
-  future_phase="alpha"
-  current_version="0.1.0"
-  future_version="0.3.0"
+  phase="alpha"
+  initial_version="0.1.0"
+  revised_version="0.3.0"
   included="yes"
 %}
 
@@ -192,10 +191,9 @@ Use the `.bsk-input-group-btn` class, instead of `.bsk-input-group-addon`, as an
 {% include snippets/topic-section-metadata.html
   title="Drop-down button input group"
   heading_level=3
-  current_phase="alpha"
-  future_phase="alpha"
-  current_version="0.1.0"
-  future_version="0.3.0"
+  phase="alpha"
+  initial_version="0.1.0"
+  revised_version="0.3.0"
   included="yes"
 %}
 
@@ -233,10 +231,9 @@ Use the `.bsk-input-group-btn` class, instead of `.bsk-input-group-addon`, as an
 {% include snippets/topic-section-metadata.html
   title="Split-button drop-down input group"
   heading_level=3
-  current_phase="alpha"
-  future_phase="beta"
-  current_version="0.1.0"
-  future_version="0.2.0"
+  phase="beta"
+  initial_version="0.1.0"
+  revised_version="0.2.0"
   included="yes"
 %}
 

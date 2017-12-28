@@ -17,8 +17,8 @@ sections:
 {% include snippets/topic-section-metadata.html
   title="Unordered Links"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -36,8 +36,8 @@ sections:
 {% include snippets/topic-section-metadata.html
   title="Ordered Links"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -52,8 +52,8 @@ sections:
 {% include snippets/topic-section-metadata.html
   title="Unstyled Links"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -92,8 +92,8 @@ This only applies to immediate list items. I.e. this style won't be used by any 
 {% include snippets/topic-section-metadata.html
   title="Inline Links"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -109,8 +109,8 @@ Use the `.bsk-list-inline` class to place all list items on a single line, with 
 {% include snippets/topic-section-metadata.html
   title="Definition Lists"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -159,8 +159,8 @@ Terms which are too long will be truncated.
 {% include snippets/topic-section-metadata.html
   title="Large definition Lists"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -182,8 +182,9 @@ Add the `.bsk-dl-lg` class to apply additional padding.
 {% include snippets/topic-section-metadata.html
   title="Large horizontal definition Lists"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
+  revised_version="0.2.0"
   included="yes"
 %}
 
@@ -210,8 +211,8 @@ This class depends on the `.bsk-dl-horizontal` class.
 {% include snippets/topic-section-metadata.html
   title="Striped definition Lists"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -237,8 +238,9 @@ This class is designed to be used with `.bsk-dl-lg` to ensure a suitable amount 
 {% include snippets/topic-section-metadata.html
   title="Striped horizontal definition Lists"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
+  revised_version="0.2.0"
   included="yes"
 %}
 

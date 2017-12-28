@@ -10,15 +10,14 @@ Each (sub-)section **MUST** use the `topic-section-metadata.html` snippet to ins
 
 The options accepted by this snippet are:
 
-| Option            | Required | Description                                             | Valid Values                        | Notes                                                  |
-| ----------------- | -------- | ------------------------------------------------------- | ----------------------------------- | ------------------------------------------------------ |
-| `title`           | Yes      | Name of the section, used for the title and link anchor | String beginning with a letter      | Must start with a letter                               |
-| `heading_level`   | Yes      | Heading level (i.e. `h1` to `h6`) of the section        | One of 1, 2, 3, 4, 5, 6             | -                                                      |
-| `current_phase`   | No       | Phase of development for the section                    | One of the *section phases* [1]     | -                                                      |
-| `current_version` | No       | Version the `current_phase` was reached                 | String, ideally a Style Kit version | i.e. section live as of version 1.2.3                  |
-| `future_phase`    | No       | Phase of future development for the section             | One of the *section phases* [1]     | i.e. section is live currently, but will be deprecated |
-| `future_version`  | No       | Version the `future_phase` will be reached              | String, ideally a Style Kit version | i.e. section will be deprecated as of version 2.3.4    |
-| `included`        | No       | whether the section is included in the core Style Kit   | `yes` or `no`                       | i.e. rarely used styles may be optional                |
+| Option            | Required | Description                                             | Valid Values                    | Notes                                                  |
+| ----------------- | -------- | ------------------------------------------------------- | ------------------------------- | ------------------------------------------------------ |
+| `title`           | Yes      | Name of the section, used for the title and link anchor | String beginning with a letter  | Must start with a letter                               |
+| `heading_level`   | Yes      | Heading level (i.e. `h1` to `h6`) of the section        | One of 1, 2, 3, 4, 5, 6         | -                                                      |
+| `phase`           | No       | Phase of development for the section                    | One of the *section phases* [1] | Based on the initial version unless a revised version is set |                                                    |
+| `initial_version` | No       | Version when the section was first introduced           | A Style Kit version             | This won't change for the life of the section          |
+| `revised_version` | No       | Version when the section was last updated               | A Style Kit version             | This will change each time the section is updated      |
+| `included`        | No       | whether the section is included in the core Style Kit   | `yes` or `no`                   | i.e. rarely used styles may be optional                |
 
 E.g.
 
@@ -42,21 +41,17 @@ The following phases can be used:
 * `deprecated` - where a style/component is no longer needed and will be removed in a future version
 
 A style/component is expected to move through these phases, but may loop through the Alpha-Beta-Live phases numerous
-times. A style/component may be multiple phases, providing these are in different versions.
+times.
 
-E.g. A component *Foo* is developed as part of version `0.2.0`, and then updated with a new design in version `0.3.0`
+E.g. A component *Foo* is developed as part of version `0.2.0`, and then updated in versions `0.3.0` and `0.4.0`:
 
-* When the component is first developed its `current_phase` will be `alpha`
-* As the component is further refined `current_phase` will move to `beta`
-* When the component is fully developed and released `current_phase` will move to `live`
-* Sometime later, enhancements are made to the component, `current_phase` will still be `live`, but `future_phase` will
-now be set to `alpha`
-* The enhancements are developed further, `current_phase` will still be `live`, `future_phase` will now be set to `beta`
-* The enhanced component is released, `future_phase` is unset
+* when the component is first added its *phase* will be `alpha` and its *initial_version* `0.2.0`
+* the *phase* then moves through `beta` and then `live`
+* a change is made to the component in the next version, the *phase* returns to `alpha` and the *revised_version* is set
+to the next version (i.e. `0.3.0`)
+* the *phase* then moves through `beta` and then back to `live`
+* another change is made in the next version (i.e. `0.4.0`), the *phase* returns to `alpha` and the *revised_version* is
+set to the new next version (i.e. `0.4.0`)
+* this then repeats until the component is eventually deprecated by setting its *phase* to `deprecated`
 
-The `current_phase` only moves through its phases once. `future_phase` will move through the `alpha`, `beta` and
-`deprecated` phases as changes are made.
-
-The `current_version` will change each time the component is re-released,
-though his makes it look like the component was only ever available since the increasing version number, this is
-technically true. The updated component was only available, in the form that's documented, since the updated version.
+Notably the `initial_version` is never changed.

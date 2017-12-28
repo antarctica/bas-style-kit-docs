@@ -59,8 +59,9 @@ If you do use non-standard colours (including extended colours) you must ensure 
 {% include snippets/topic-section-metadata.html
   title="Page background"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="beta"
+  initial_version="0.1.0"
+  revised_version="0.3.0"
   included="yes"
 %}
 
@@ -93,8 +94,8 @@ space would be shown after the [footer]({{ '/components/footer' | prepend: site.
 {% include snippets/topic-section-metadata.html
   title="Typography"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -126,8 +127,8 @@ A default link colour is applied to the `<body>` element.
 {% include snippets/topic-section-metadata.html
   title="Components"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -189,8 +190,8 @@ A default link colour is applied to the `<body>` element.
 {% include snippets/topic-section-metadata.html
   title="Variants"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -236,8 +237,8 @@ A default link colour is applied to the `<body>` element.
 {% include snippets/topic-section-metadata.html
   title="Standard contextual colours"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -355,8 +356,8 @@ which can be used alongside these classes.
 {% include snippets/topic-section-metadata.html
   title="Standard contextual background colours"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -411,8 +412,8 @@ used as the background of an element using these classes:
 {% include snippets/topic-section-metadata.html
   title="Development phase colours"
   heading_level=2
-  current_phase="live"
-  current_version="0.3.0"
+  phase="beta"
+  initial_version="0.3.0"
   included="yes"
 %}
 
@@ -499,8 +500,8 @@ These colours can be used with many core styles and components, such as:
 {% include snippets/topic-section-metadata.html
   title="External service colours"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -556,8 +557,9 @@ service
 {% include snippets/topic-section-metadata.html
   title="Standard greyscale colours"
   heading_level=2
-  current_phase="alpha"
-  current_version="0.3.0"
+  phase="beta"
+  initial_version="0.1.0"
+  revised_version="0.3.0"
   included="yes"
 %}
 
@@ -631,8 +633,9 @@ These colours are defined by mixing black with a white base, they do not use a c
 {% include snippets/topic-section-metadata.html
   title="Standard colours"
   heading_level=2
-  current_phase="alpha"
-  current_version="0.3.0"
+  phase="beta"
+  initial_version="0.1.0"
+  revised_version="0.3.0"
   included="yes"
 %}
 
@@ -1433,8 +1436,8 @@ NERC Green
 {% include snippets/topic-section-metadata.html
   title="Extended colours"
   heading_level=2
-  current_phase="beta"
-  current_version="0.3.0"
+  phase="beta"
+  initial_version="0.3.0"
   included="yes"
 %}
 

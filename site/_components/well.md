@@ -29,8 +29,8 @@ Use the `.well` class to show an element as indented.
 {% include snippets/topic-section-metadata.html
   title="Default well"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -43,8 +43,8 @@ Use the `.well` class to show an element as indented.
 {% include snippets/topic-section-metadata.html
   title="Sizes"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 

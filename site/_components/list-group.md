@@ -37,8 +37,8 @@ Use the `.bsk-list-group-item` for items within a list group, see the details of
 {% include snippets/topic-section-metadata.html
   title="Supported elements"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -53,8 +53,8 @@ supporting elements, as documented. Other elements may be used, but are not supp
 {% include snippets/topic-section-metadata.html
   title="Basic list group"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -72,8 +72,8 @@ Use the `.bsk-list-group-item` class with <code>&lt;li&gt;</code> elements.
 {% include snippets/topic-section-metadata.html
   title="Linked list group"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -91,8 +91,8 @@ Use the `.bsk-list-group-item` class with <code>&lt;a&gt;</code> elements.
 {% include snippets/topic-section-metadata.html
   title="Contextual colours"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -119,8 +119,8 @@ used for context by adding these classes:
 {% include snippets/topic-section-metadata.html
   title="Button list group"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -143,8 +143,8 @@ Use the `.bsk-list-group-item` class with <code>&lt;button&gt;</code> elements.
 {% include snippets/topic-section-metadata.html
   title="Active item"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -180,8 +180,8 @@ This provides a non-visual indication of the currently active item, suitable for
 {% include snippets/topic-section-metadata.html
   title="Disabled item"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -224,8 +224,8 @@ Add the `.bsk-disabled` class to list group items which cannot be used.
 {% include snippets/topic-section-metadata.html
   title="Badges"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 

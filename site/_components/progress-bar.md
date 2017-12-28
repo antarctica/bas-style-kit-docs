@@ -42,8 +42,8 @@ assistive technologies.
 {% include snippets/topic-section-metadata.html
   title="Default progress bar"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -58,8 +58,8 @@ assistive technologies.
 {% include snippets/topic-section-metadata.html
   title="Progress bar with label"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -96,8 +96,8 @@ Where the current progress value is too low to fit visually, add a `minimum-widt
 {% include snippets/topic-section-metadata.html
   title="Contextual colours"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -138,8 +138,8 @@ used for context by adding these classes:
 {% include snippets/topic-section-metadata.html
   title="Stacked progress bar"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 

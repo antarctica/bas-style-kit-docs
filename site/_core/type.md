@@ -38,8 +38,9 @@ sections:
 {% include snippets/topic-section-metadata.html
   title="Typographic base"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="beta"
+  initial_version="0.1.0"
+  revised_version="0.3.0"
   included="yes"
 %}
 
@@ -53,8 +54,8 @@ sans-serif`
 {% include snippets/topic-section-metadata.html
   title="Font families"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -99,8 +100,8 @@ For each family, a series of variants are defined for styles such as italics and
 {% include snippets/topic-section-metadata.html
   title="BAS brand font"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -134,8 +135,8 @@ The brand font is applied to these elements:
 {% include snippets/topic-section-metadata.html
   title="Headings"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -161,8 +162,8 @@ De carne animata corpora quaeritis.
 {% include snippets/topic-section-metadata.html
   title="Secondary header text"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -186,8 +187,8 @@ De carne animata corpora quaeritis.
 {% include snippets/topic-section-metadata.html
   title="Paragraphs"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -203,8 +204,8 @@ regions.</p>
 {% include snippets/topic-section-metadata.html
   title="Lead paragraphs"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -219,8 +220,8 @@ regions.</p>
 {% include snippets/topic-section-metadata.html
   title="Links"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -232,8 +233,8 @@ These styles are applied globally, and are usually inherited by other styles, to
 {% include snippets/topic-section-metadata.html
   title="Inline text elements"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -257,8 +258,8 @@ The <code>&lt;i&gt;</code> tag is also recommended for icons.
 {% include snippets/topic-section-metadata.html
   title="Abbreviations"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -272,8 +273,8 @@ global problems.
 {% include snippets/topic-section-metadata.html
   title="Blockquotes"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -291,8 +292,8 @@ Use for quotes, or highlighting portions of an article (pull-quotes).
 {% include snippets/topic-section-metadata.html
   title="Blockquotes with a source"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -313,8 +314,8 @@ Use a <code>&lt;cite&gt;</code> wrapped in a <code>&lt;footer&gt;</code> to add 
 {% include snippets/topic-section-metadata.html
   title="Reversed blockquotes"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -335,8 +336,8 @@ Blockquotes can be aligned right using `.bsk-blockquote-reverse`.
 {% include snippets/topic-section-metadata.html
   title="Addresses"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -364,8 +365,8 @@ Provides formatting for addresses or contact information. Use <code>&lt;br&gt;</
 {% include snippets/topic-section-metadata.html
   title="Primary text"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="beta"
+  initial_version="0.3.0"
   included="yes"
 %}
 
@@ -376,8 +377,8 @@ Provides formatting for addresses or contact information. Use <code>&lt;br&gt;</
 {% include snippets/topic-section-metadata.html
   title="Experimental text"
   heading_level=2
-  current_phase="live"
-  current_version="0.3.0"
+  phase="beta"
+  initial_version="0.3.0"
   included="yes"
 %}
 
@@ -388,8 +389,8 @@ Provides formatting for addresses or contact information. Use <code>&lt;br&gt;</
 {% include snippets/topic-section-metadata.html
   title="Contextual colours"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -419,8 +420,8 @@ should fix this.
 {% include snippets/topic-section-metadata.html
   title="Alignment"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -440,8 +441,8 @@ should fix this.
 {% include snippets/topic-section-metadata.html
   title="Transformations"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 

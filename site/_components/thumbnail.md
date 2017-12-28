@@ -36,8 +36,8 @@ Thumbnails are really only intended for media items. For more general purposes, 
 {% include snippets/topic-section-metadata.html
   title="Supported elements"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -51,8 +51,8 @@ Thumbnail styles are designed for <code>&lt;div&gt;</code> or <code>&lt;a&gt;</c
 {% include snippets/topic-section-metadata.html
   title="Default thumbnail"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -76,8 +76,8 @@ Add the `.bsk-thumbnail-default` class for standard thumbnails.
 {% include snippets/topic-section-metadata.html
   title="Inverse thumbnail"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -106,8 +106,8 @@ Add the `.bsk-thumbnail-inverse` class for an alternative thumbnail style. This 
 {% include snippets/topic-section-metadata.html
   title="Caption"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 

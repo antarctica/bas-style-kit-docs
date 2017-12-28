@@ -18,8 +18,9 @@ sections:
 {% include snippets/topic-section-metadata.html
   title="Inline code"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="beta"
+  initial_version="0.1.0"
+  revised_version="0.3.0"
   included="yes"
 %}
 
@@ -37,8 +38,8 @@ Any angle brackets will need escaping with `&lt;` and `&gt;`.
 {% include snippets/topic-section-metadata.html
   title="Code block"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -56,8 +57,8 @@ var baz = foo;
 {% include snippets/topic-section-metadata.html
   title="Variables"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -70,8 +71,8 @@ Use the <code>&lt;var&gt;</code> tag for indicating variables.
 {% include snippets/topic-section-metadata.html
   title="User input"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -84,8 +85,8 @@ Type <kbd>ls</kbd> to list he contents of the current directory.
 {% include snippets/topic-section-metadata.html
   title="Sample output"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 

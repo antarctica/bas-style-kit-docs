@@ -58,8 +58,8 @@ There is no *default* alert variant, as a grey alert for example wouldn't make a
 {% include snippets/topic-section-metadata.html
   title="Primary alert"
   heading_level=3
-  current_phase="live"
-  current_version="0.3.0"
+  phase="beta"
+  initial_version="0.3.0"
   included="yes"
 %}
 
@@ -72,8 +72,8 @@ There is no *default* alert variant, as a grey alert for example wouldn't make a
 {% include snippets/topic-section-metadata.html
   title="Experimental alert"
   heading_level=3
-  current_phase="live"
-  current_version="0.3.0"
+  phase="beta"
+  initial_version="0.3.0"
   included="yes"
 %}
 
@@ -86,8 +86,8 @@ There is no *default* alert variant, as a grey alert for example wouldn't make a
 {% include snippets/topic-section-metadata.html
   title="Cookie notice alert"
   heading_level=3
-  current_phase="live"
-  current_version="0.3.0"
+  phase="beta"
+  initial_version="0.3.0"
   included="yes"
 %}
 
@@ -103,8 +103,8 @@ This website uses cookies to help us make it better - <a href="#" class="bsk-ale
 {% include snippets/topic-section-metadata.html
   title="Contextual colours"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -129,8 +129,8 @@ used for context by adding these classes:
 {% include snippets/topic-section-metadata.html
   title="Experimental icon"
   heading_level=3
-  current_phase="live"
-  current_version="0.3.0"
+  phase="beta"
+  initial_version="0.3.0"
   included="yes"
 %}
 
@@ -150,8 +150,8 @@ Use the `.bsk-alert-icon` class to properly format an icon in an alert.
 {% include snippets/topic-section-metadata.html
   title="Contextual icons"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -185,8 +185,8 @@ Use the `.bsk-alert-icon` class to properly format an icon in an alert.
 {% include snippets/topic-section-metadata.html
   title="Solid"
   heading_level=3
-  current_phase="live"
-  current_version="0.3.0"
+  phase="beta"
+  initial_version="0.3.0"
   included="yes"
 %}
 
@@ -199,8 +199,8 @@ Use the `.bsk-alert-icon` class to properly format an icon in an alert.
 {% include snippets/topic-section-metadata.html
   title="Outline"
   heading_level=3
-  current_phase="live"
-  current_version="0.3.0"
+  phase="beta"
+  initial_version="0.3.0"
   included="yes"
 %}
 
@@ -213,8 +213,8 @@ Use the `.bsk-alert-icon` class to properly format an icon in an alert.
 {% include snippets/topic-section-metadata.html
   title="Highlight"
   heading_level=3
-  current_phase="live"
-  current_version="0.3.0"
+  phase="beta"
+  initial_version="0.3.0"
   included="yes"
 %}
 
@@ -234,8 +234,8 @@ Use the `.bsk-alert-icon` class to properly format an icon in an alert.
 {% include snippets/topic-section-metadata.html
   title="Alert links"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -248,8 +248,9 @@ Use the `.bsk-alert-link` class for any <code>&lt;a&gt;</code> elements within a
 {% include snippets/topic-section-metadata.html
   title="Dismissible alerts"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="beta"
+  initial_version="0.1.0"
+  revised_version="0.3.0"
   included="yes"
 %}
 
@@ -276,8 +277,8 @@ browser compatibility.
 {% include snippets/topic-section-metadata.html
   title="Block alerts"
   heading_level=3
-  current_phase="live"
-  current_version="0.3.0"
+  phase="beta"
+  initial_version="0.3.0"
   included="yes"
 %}
 
@@ -303,8 +304,8 @@ Using an alert with more than just text without this class is not supported and 
 {% include snippets/topic-section-metadata.html
   title="Block alert headings"
   heading_level=3
-  current_phase="live"
-  current_version="0.3.0"
+  phase="beta"
+  initial_version="0.3.0"
   included="yes"
 %}
 
@@ -362,8 +363,8 @@ Add one of these classes to alter the size of an alert:
 {% include snippets/topic-section-metadata.html
   title="Static top"
   heading_level=3
-  current_phase="live"
-  current_version="0.3.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 

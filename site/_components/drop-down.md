@@ -52,8 +52,8 @@ not look right.
 {% include snippets/topic-section-metadata.html
   title="Button drop-down"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -72,8 +72,8 @@ not look right.
 {% include snippets/topic-section-metadata.html
   title="Split-button drop-down"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -94,8 +94,8 @@ not look right.
 {% include snippets/topic-section-metadata.html
   title="Navbar item drop-down"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -110,8 +110,8 @@ in Navbar items.
 {% include snippets/topic-section-metadata.html
   title="Default drop-down"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -130,8 +130,8 @@ in Navbar items.
 {% include snippets/topic-section-metadata.html
   title="Reverse drop-down"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -157,8 +157,8 @@ Use the `.bsk-dropup` class, rather than `.bsk-dropdown` to have the drop-down m
 {% include snippets/topic-section-metadata.html
   title="Link"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -174,8 +174,8 @@ Use the `.bsk-dropup` class, rather than `.bsk-dropdown` to have the drop-down m
 {% include snippets/topic-section-metadata.html
   title="Divider"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -195,8 +195,8 @@ Use the `.dropdown-divider` class on a drop-down item.
 {% include snippets/topic-section-metadata.html
   title="Header"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -220,8 +220,8 @@ Use the `.bsk-dropdown-header` class on a drop-down item.
 {% include snippets/topic-section-metadata.html
   title="Active item"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -248,8 +248,8 @@ This provides a non-visual indication of the currently active item, suitable for
 {% include snippets/topic-section-metadata.html
   title="Disabled item"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -274,16 +274,16 @@ This provides a non-visual indication of the currently active item, suitable for
 {% include snippets/topic-section-metadata.html
   title="Layouts"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
 {% include snippets/topic-section-metadata.html
   title="Drop-down alignment"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 

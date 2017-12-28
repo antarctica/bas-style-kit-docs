@@ -57,8 +57,8 @@ media items that are distinct from main content, but which is shown **within** i
 {% include snippets/topic-section-metadata.html
   title="Default panel"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="beta"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -89,8 +89,8 @@ A more typical example includes a [header]({{ '/components/panel/#header' | prep
 {% include snippets/topic-section-metadata.html
   title="Primary panel"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="beta"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -110,8 +110,8 @@ Add the `.bsk-panel-primary` class for the most important panel, where there is 
 {% include snippets/topic-section-metadata.html
   title="Contextual colours"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="beta"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -172,8 +172,8 @@ used for context by adding these classes:
 {% include snippets/topic-section-metadata.html
   title="Body"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="beta"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -190,8 +190,8 @@ Use `.bsk-panel-body` class on a <code>&lt;main&gt;</code> element within a pane
 {% include snippets/topic-section-metadata.html
   title="Header"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="beta"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -220,8 +220,8 @@ style links within panel headings.
 {% include snippets/topic-section-metadata.html
   title="Footer"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="beta"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -251,8 +251,8 @@ foreground.
 {% include snippets/topic-section-metadata.html
   title="Table"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="beta"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -323,8 +323,8 @@ as they may lookstrange.
 {% include snippets/topic-section-metadata.html
   title="List group"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="beta"
+  initial_version="0.1.0"
   included="yes"
 %}
 
