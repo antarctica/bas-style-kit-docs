@@ -12,8 +12,8 @@ sections:
 {% include snippets/topic-section-metadata.html
   title="Responsive images"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -27,8 +27,9 @@ Use the `.bsk-img-responsive` class to scale images nicely within their parent e
 {% include snippets/topic-section-metadata.html
   title="Image shapes"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
+  revised_version="0.2.0"
   included="yes"
 %}
 

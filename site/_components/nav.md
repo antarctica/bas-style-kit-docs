@@ -44,8 +44,8 @@ JavaScript plugin, which is enabled on this site.
 {% include snippets/topic-section-metadata.html
   title="Pill navigation"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -64,8 +64,8 @@ Add the `.bsk-nav-pills` class to create a minimalist navigation element.
 {% include snippets/topic-section-metadata.html
   title="Tab navigation"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -89,8 +89,8 @@ Add the `.bsk-nav-tabs` class to create a more structured navigation element.
 {% include snippets/topic-section-metadata.html
   title="Drop-down menus"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -140,8 +140,8 @@ Add the `.bsk-nav-tabs` class to create a more structured navigation element.
 {% include snippets/topic-section-metadata.html
   title="Active item"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -214,8 +214,8 @@ This can also be used within [drop-down]({{ '/components/drop-down/#active' | pr
 {% include snippets/topic-section-metadata.html
   title="Disabled item"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -258,8 +258,8 @@ Add the `.bsk-disabled` class to indicate unavailable navigation items.
 {% include snippets/topic-section-metadata.html
   title="Stacked pills"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -281,8 +281,8 @@ Stacked tabs are not supported.
 {% include snippets/topic-section-metadata.html
   title="Justified pills/tabs"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 

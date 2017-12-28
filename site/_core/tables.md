@@ -27,8 +27,8 @@ sections:
 {% include snippets/topic-section-metadata.html
   title="Basic table"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -63,8 +63,8 @@ managed by third party widgets or applications such as Apex.
 {% include snippets/topic-section-metadata.html
   title="Striped rows"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -98,8 +98,8 @@ Add `.bsk-table-striped` to style alternate rows with the <code>&lt;tbody&gt;</c
 {% include snippets/topic-section-metadata.html
   title="Bordered table"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -133,8 +133,8 @@ Add `.tbsk-able-bordered` to apply additional borders around the table and betwe
 {% include snippets/topic-section-metadata.html
   title="Hoverable rows"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -168,8 +168,8 @@ Add `.bsk-table-hover` to highlight the row with focus within a table.
 {% include snippets/topic-section-metadata.html
   title="Contextual rows"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -229,8 +229,8 @@ You can also use the `.bsk-active` class to highlight a row as if it had focus w
 {% include snippets/topic-section-metadata.html
   title="Small table"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -269,8 +269,8 @@ Add `.bsk-table-condensed` to reduce padding within a table to make it more comp
 {% include snippets/topic-section-metadata.html
   title="Responsive table"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 

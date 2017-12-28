@@ -32,8 +32,8 @@ Badges are only designed for numbers. For more general purposes, including other
 {% include snippets/topic-section-metadata.html
   title="Default badge"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 

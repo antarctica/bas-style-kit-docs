@@ -30,8 +30,8 @@ You **must** ensure that where you use these assets you comply with these restri
 {% include snippets/topic-section-metadata.html
   title="Supported services"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -59,8 +59,8 @@ service.
 {% include snippets/topic-section-metadata.html
   title="Static symbols"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -84,8 +84,8 @@ Use the `.bsk-social-media-static` class with the relevant class for each servic
 {% include snippets/topic-section-metadata.html
   title="Linked symbols"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -112,8 +112,8 @@ Use the `.bsk-social-media-link` class with the relevant class for each service,
 {% include snippets/topic-section-metadata.html
   title="List of symbols"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 

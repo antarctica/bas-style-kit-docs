@@ -28,8 +28,6 @@ sections:
 {% include snippets/topic-section-metadata.html
   title="Overview"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
   included="yes"
 %}
 
@@ -38,8 +36,9 @@ The BAS Style Kit inherits, and expands, the grid system provided by Bootstrap.
 {% include snippets/topic-section-metadata.html
   title="Available grids"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
+  revised_version="0.2.0"
   included="yes"
 %}
 
@@ -84,8 +83,9 @@ doesn't need to be an direct parent
 {% include snippets/topic-section-metadata.html
   title="Grid sizes"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="beta"
+  initial_version="0.1.0"
+  revised_version="0.3.0"
   included="yes"
 %}
 
@@ -177,8 +177,9 @@ shown full width, stacked one after the other, on smaller devices.
 {% include snippets/topic-section-metadata.html
   title="Offsetting columns"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
+  revised_version="0.2.0"
   included="yes"
 %}
 
@@ -218,8 +219,9 @@ Style Kit grid.
 {% include snippets/topic-section-metadata.html
   title="Nesting columns"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
+  revised_version="0.2.0"
   included="yes"
 %}
 
@@ -254,8 +256,9 @@ row with three nested columns, each spanning 8 columns each of the alternate gri
 {% include snippets/topic-section-metadata.html
   title="Ordering columns"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
+  revised_version="0.2.0"
   included="yes"
 %}
 
@@ -278,8 +281,6 @@ Pull and push classes can be used to order columns within a row, though this is 
 {% include snippets/topic-section-metadata.html
   title="Examples"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
   included="yes"
 %}
 

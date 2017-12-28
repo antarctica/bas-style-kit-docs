@@ -78,8 +78,8 @@ sizes to ensure things work correctly.
 {% include snippets/topic-section-metadata.html
   title="Default navbar"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -156,8 +156,8 @@ This example, whilst quite complex, demonstrates the sort of items shown in a ty
 {% include snippets/topic-section-metadata.html
   title="Item"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -176,8 +176,8 @@ Use a list of <code>&lt;a&gt;</code> elements within a navigation menu using the
 {% include snippets/topic-section-metadata.html
   title="Hidden items menu"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -220,8 +220,8 @@ any screen size (for demonstration purposes).
 {% include snippets/topic-section-metadata.html
   title="Brand text"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -240,10 +240,9 @@ Use the `.bsk-navbar-brand` class to indicate the name of the current website or
 {% include snippets/topic-section-metadata.html
   title="Brand image"
   heading_level=3
-  current_phase="live"
-  future_phase="live"
-  current_version="0.1.0"
-  future_version="0.2.0"
+  phase="beta"
+  initial_version="0.2.0"
+  revised_version="0.3.0"
   included="yes"
 %}
 
@@ -319,8 +318,8 @@ Add the `.bsk-fix-navbar-brand-img-txt` class to a brand image to combine with b
 {% include snippets/topic-section-metadata.html
   title="Text"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -337,8 +336,8 @@ Use the `.bsk-navbar-text` class to correctly position and colour any text eleme
 {% include snippets/topic-section-metadata.html
   title="Buttons"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -359,8 +358,9 @@ Using the `.bsk-btn` class with an <code>&lt;a&gt;</code> element, within a navi
 {% include snippets/topic-section-metadata.html
   title="Forms"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="beta"
+  initial_version="0.1.0"
+  revised_version="0.3.0"
   included="yes"
 %}
 
@@ -406,8 +406,8 @@ It is recommended to use this feature sparingly until support improves.
 {% include snippets/topic-section-metadata.html
   title="Drop-down menus"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -433,8 +433,8 @@ It is recommended to use this feature sparingly until support improves.
 {% include snippets/topic-section-metadata.html
   title="Non-navigation links"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -456,8 +456,8 @@ Typically this will be used within elements using the
 {% include snippets/topic-section-metadata.html
   title="Sizes"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -569,8 +569,8 @@ Add one of these classes to alter the size of a jumbotron:
 {% include snippets/topic-section-metadata.html
   title="bsk-active item"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -622,8 +622,8 @@ This can also be used within [drop-down]({{ '/components/drop-down/#active' | pr
 {% include snippets/topic-section-metadata.html
   title="Hidden items"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -678,8 +678,8 @@ The example below will only behave correctly at small screen sizes.
 {% include snippets/topic-section-metadata.html
   title="Item alignment"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -708,8 +708,8 @@ Multiple right aligned elements are not currently supported and won't look right
 {% include snippets/topic-section-metadata.html
   title="Fixed to top"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -749,8 +749,8 @@ body {
 {% include snippets/topic-section-metadata.html
   title="Fixed to bottom item"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -786,8 +786,8 @@ body {
 {% include snippets/topic-section-metadata.html
   title="Static top"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 

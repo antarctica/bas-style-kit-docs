@@ -35,8 +35,8 @@ You don't need to include `frameborder="0"` on embedded items, as the Style Kit 
 {% include snippets/topic-section-metadata.html
   title="Supported elements"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -55,8 +55,8 @@ This component is supported when used with these elements:
 {% include snippets/topic-section-metadata.html
   title="Responsive embed 16:9"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -75,8 +75,8 @@ This component is supported when used with these elements:
 {% include snippets/topic-section-metadata.html
   title="Responsive embed 4:3"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 

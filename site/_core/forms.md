@@ -24,8 +24,8 @@ sections:
 {% include snippets/topic-section-metadata.html
   title="Form fields"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -55,8 +55,8 @@ structurally separate each form field.
 {% include snippets/topic-section-metadata.html
   title="Inputs"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -107,8 +107,8 @@ See [this MDN page](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/in
 {% include snippets/topic-section-metadata.html
   title="Textareas"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -131,8 +131,8 @@ The height of a text area can be set using the `rows` attribute
 {% include snippets/topic-section-metadata.html
   title="Selects"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -172,8 +172,8 @@ Select elements have quite stubborn browser styling, such as rounded corners, wh
 {% include snippets/topic-section-metadata.html
   title="File inputs"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -195,8 +195,8 @@ Field input elements have quite stubborn browser styling, such as rounded corner
 {% include snippets/topic-section-metadata.html
   title="Radio options and checkboxes"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -259,8 +259,8 @@ Style Kit.
 {% include snippets/topic-section-metadata.html
   title="Inline radio options and checkboxes"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -321,8 +321,8 @@ the Style Kit.
 {% include snippets/topic-section-metadata.html
   title="Form buttons"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -338,8 +338,8 @@ Form buttons, such as the form submission button, are styled the same way as
 {% include snippets/topic-section-metadata.html
   title="Static control"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -368,8 +368,8 @@ Static controls can be used to represent pre-computed, or locked values within a
 {% include snippets/topic-section-metadata.html
   title="Form groups and fieldsets"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -404,8 +404,8 @@ Where a form field is standalone, use a <code>&lt;fieldset&gt;</code>. For a gro
 {% include snippets/topic-section-metadata.html
   title="Horizontal forms"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -498,8 +498,8 @@ inner <code>&lt;div&gt;</code> to prevent the <code>&lt;legend&gt;</code> from a
 {% include snippets/topic-section-metadata.html
   title="Inline forms"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -593,8 +593,8 @@ Labels **should** always be visible for checkboxes and radio options, to indicat
 {% include snippets/topic-section-metadata.html
   title="Width"
   heading_level=4
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -636,8 +636,8 @@ Make sure to use `.control-label` to ensure all labels are virtually aligned.
 {% include snippets/topic-section-metadata.html
   title="Form control sizing"
   heading_level=4
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -671,16 +671,16 @@ Add one of these classes to alter the size of a form control:
 {% include snippets/topic-section-metadata.html
   title="Element states"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
 {% include snippets/topic-section-metadata.html
   title="Disabled state"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -734,8 +734,8 @@ this, either apply the `disabled` attribute on links directly, or use JavaScript
 {% include snippets/topic-section-metadata.html
   title="Readonly state"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -781,8 +781,8 @@ appearance, but won't change the cursor.
 {% include snippets/topic-section-metadata.html
   title="Help text"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -820,8 +820,8 @@ to inform assistive technologies, such as screen readers.
 {% include snippets/topic-section-metadata.html
   title="Validation"
   heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 

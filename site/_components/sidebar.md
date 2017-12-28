@@ -39,8 +39,8 @@ that is distinct from main content, but which is shown **within** it.
 {% include snippets/topic-section-metadata.html
   title="Default sidebar"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -139,8 +139,8 @@ This adds the same top margin applied to headings and makes the page layout look
 {% include snippets/topic-section-metadata.html
   title="Inverted sidebar"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
@@ -172,8 +172,8 @@ Use the `.bsk-sidebar-inverse` class to use a darker background for a sidebar. E
 {% include snippets/topic-section-metadata.html
   title="Large sidebar"
   heading_level=3
-  current_phase="live"
-  current_version="0.1.0"
+  phase="live"
+  initial_version="0.1.0"
   included="yes"
 %}
 
