@@ -3,50 +3,34 @@ sort_index: 2
 title: Distribution
 sections:
   -
-    title: BAS CDN
+    title: CSS & JS
+  -
+    title: Web fonts
+  -
+    title: Logos
+  -
+    title: JavaScript Libraries
   -
     title: SRI
-  -
-    title: CORS
-  -
-    title: Direct download
-  -
-    title: NodeJS package
-  -
-    title: Source files
 ---
 
 {% include snippets/table-of-contents.md %}
 
 {% include snippets/topic-section-metadata.html
-  title="BAS CDN"
+  title="CSS & JS"
   heading_level=2
 %}
 
-The [BAS CDN](https://cdn.bas.ac.uk) is used to host production versions of the BAS Style Kit.
+The Style Kit consists of a CSS file and optionally a JavaScript file for the Style Kit's
+[Interactive components]({{ '/interactivity' | prepend: site.baseurl }}).
 
-{% alert success %}
-The BAS CDN is the recommended way to use the BAS Style Kit because it will use browser caching.
-{% endalert %}
+These files are available in two forms:
 
-{% alert info %}
-You only need to include the JavaScript files referenced below if you want to use any of the
-[Interactive components]({{ '/interactivity' | prepend: site.baseurl }}){: .bsk-alert-link } provided by the Style Kit.
-{% endalert %}
-
-{% alert warning %}
-If the BAS Style Kit JavaScript files are included, you will also need to include additional
-[JavaScript Libraries](#javascript-libraries).
-{% endalert %}
+* **default/normal** - designed for testing and human readable with whitespace and full variable names
+* **minified** - is intended for production use with optimisations to reduce the file size (such as no whitespace)
 
 {% alert info style=highlight %}
-Use **compiled** CSS and JavaScript in development environments, use **minified** CSS and JavaScript in production
-environments.
-{% endalert %}
-
-{% alert info style=highlight %}
-[Source maps](http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/){: .bsk-alert-link } should be loaded
-automatically by compatible browsers when **minified** CSS is used.
+Both forms work exactly the same way and include all of the Style Kit, the only difference is their readability by humans
 {% endalert %}
 
 {% unless jekyll.environment == 'production' %}
@@ -66,7 +50,7 @@ for URLs to the latest stable version.
   </thead>
   <tbody>
     <tr>
-      <td>Compiled CSS</td>
+      <td>CSS</td>
       <td class="highlight"><pre><code>{% unless jekyll.environment == 'production' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endunless %}/{% include snippets/bsk-version.html %}/css/bas-style-kit.css</code></pre></td>
     </tr>
     <tr>
@@ -74,15 +58,25 @@ for URLs to the latest stable version.
       <td class="highlight"><pre><code>{% unless jekyll.environment == 'production' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endunless %}/{% include snippets/bsk-version.html %}/js/bas-style-kit.js</code></pre></td>
     </tr>
     <tr>
-      <td>Compiled &amp; minified CSS</td>
+      <td>CSS (minified)</td>
       <td class="highlight"><pre><code>{% unless jekyll.environment == 'production' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endunless %}/{% include snippets/bsk-version.html %}/css/bas-style-kit.min.css</code></pre></td>
     </tr>
     <tr>
-      <td>Minified JavaScript</td>
+      <td>JavaScript (minified)</td>
       <td class="highlight"><pre><code>{% unless jekyll.environment == 'production' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endunless %}/{% include snippets/bsk-version.html %}/js/bas-style-kit.min.js</code></pre></td>
     </tr>
   </tbody>
 </table>
+
+{% alert success style=highlight %}
+These files are hosted by the [BAS CDN](https://cdn.bas.ac.uk){: .bsk-alert-link } and is the recommended way to include
+the Style Kit in a website or application
+{% endalert %}
+
+{% alert warning style=highlight %}
+If the BAS Style Kit JavaScript files are included, you will also need to include additional
+[JavaScript Libraries](#javascript-libraries){: .bsk-alert-link }
+{% endalert %}
 
 {% include snippets/topic-section-metadata.html
   title="Web fonts"
@@ -99,7 +93,7 @@ for URLs to the latest stable version.
 * `.woff2`
 
 {% alert success style=highlight %}
-These fonts are loaded from the BAS CDN automatically
+The Style Kit will load these fonts from the BAS CDN automatically
 {% endalert %}
 
 {% include snippets/topic-section-metadata.html
@@ -112,7 +106,7 @@ These fonts are loaded from the BAS CDN automatically
 * `.png`
 
 {% alert success style=highlight %}
-These logos are hosted by the BAS CDN
+These logos are available from the BAS CDN and is the recommended way to include them in a website or application
 {% endalert %}
 
 {% include snippets/topic-section-metadata.html
@@ -120,16 +114,13 @@ These logos are hosted by the BAS CDN
   heading_level=2
 %}
 
-The BAS Style Kit JavaScript relies on the [jQuery](https://jquery.com) library.
-
 {% alert info %}
-This section only applies if you are including the BAS Style Kit JavaScript files, which are required to use any of the
-[Interactive components]({{ '/interactivity' | prepend: site.baseurl }}){: .bsk-alert-link } provided by the Style Kit.
+This section only applies if you are including the BAS Style Kit's
+[Interactive components]({{ '/interactivity' | prepend: site.baseurl }}){: .bsk-alert-link }
 {% endalert %}
 
-{% alert warning %}
-jQuery must be loaded before the Style Kit JavaScript to function correctly.
-{% endalert %}
+Each component will list the libraries it depends upon (in the dependencies section). These libraries are not included
+within the Style Kit and need to loaded **before** the Style Kit to function correctly.
 
 <table class="bsk-table bsk-table-bordered">
   <thead>
@@ -154,11 +145,12 @@ jQuery must be loaded before the Style Kit JavaScript to function correctly.
 </table>
 
 {% alert success style=highlight %}
-These libraries are hosted by the BAS CDN
+For convenience, these libraries are hosted by the BAS CDN and is the recommended way to include them in a website or
+application
 {% endalert %}
 
 {% alert danger style=highlight %}
-These libraries are not included in other distribution types
+These libraries are not included in other distribution types and will need to be sourced separately
 {% endalert %}
 
 {% include snippets/topic-section-metadata.html
@@ -225,8 +217,8 @@ A `.zip` archive of the Style Kit is available containing:
 
 {% alert warning style=solid %}
 It is **strongly** recommended to use the
-[BAS CDN]({{ '/start/distribution/#bas-cdn' | prepend: site.baseurl  }}){: .bsk-alert-link} rather than managing
-these files yourself to make upgrading to future releases of the Style Kit easier.
+[BAS CDN]({{ '/start/distribution/#css-js' | prepend: site.baseurl  }}){: .bsk-alert-link} rather than managing these
+files yourself to make upgrading to future Style Kit releases easier.
 {% endalert %}
 
 {% unless jekyll.environment == 'production' %}
@@ -271,8 +263,9 @@ tasks for fonts and logos. <br /> This workflow is documented in the
   heading_level=2
 %}
 
-Source files for the Style Kit are available as a [Git repository]({{ site.bsk_source_code_url }}).
-Stable releases of the Style Kit are [tagged]({{ site.bsk_source_code_url }}/releases).
+Source files for the Style Kit are available from the Git repository of the
+[core BAS Style Kit project]({{ site.bsk_source_code_url }}). Stable releases of the Style Kit are also tagged as
+[releases]({{ site.bsk_source_code_url }}/releases).
 
 {% highlight shell %}
 $ git clone {{ site.bsk_source_code_url }}.git
@@ -281,7 +274,7 @@ $ git clone {{ site.bsk_source_code_url }}.git
 {% alert warning style=solid %}
 It is **strongly** recommended to use the
 [NPM package]({{ '/start/distribution/#nodejs-package' | prepend: site.baseurl  }}){: .bsk-alert-link} rather than
-managing source files yourself to make upgrading to future releases of the Style Kit easier.
+managing these files yourself to make upgrading to future Style Kit releases easier.
 {% endalert %}
 
 {% alert info %}
