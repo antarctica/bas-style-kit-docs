@@ -1,22 +1,6 @@
 // Copies of Bootstrap or BAS Style Kit variables
 $screen-sm-min: 768px !default;
 
-// Workaround for cookie notice in fixed width container
-.site-alert-cookie-notice-wrapper {
-  background-color: #003a5d;
-
-  .bsk-container {
-    .bsk-alert-cookie-notice {
-      padding-left: 0;
-      padding-right: 0;
-
-      .bsk-close {
-        right: 15px;
-      }
-    }
-  }
-}
-
 // Some elements to be formalised
 .site-footer {
   .site-build-info,
