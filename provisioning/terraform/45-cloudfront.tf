@@ -91,8 +91,9 @@ resource "aws_cloudfront_distribution" "bas-style-kit-docs-stage" {
   # In this configuration a certificate previously uploaded to the IAM certificate store is used
   viewer_certificate {
     ssl_support_method       = "sni-only"
-    minimum_protocol_version = "TLSv1"
-    iam_certificate_id       = "${data.terraform_remote_state.BAS-AWS.BAS-AWS-CERT-STAR-WEB-BAS-AC-UK-ID}"
+    minimum_protocol_version = "TLSv1.1_2016"
+    #iam_certificate_id       = "${data.terraform_remote_state.BAS-AWS.BAS-AWS-CERT-STAR-WEB-BAS-AC-UK-ID}"
+    iam_certificate_id       = "ASCAI2DP6HFRKYD4DUWFU"
   }
 }
 
@@ -185,8 +186,9 @@ resource "aws_cloudfront_distribution" "bas-style-kit-docs-prod" {
   # In this configuration a certificate previously uploaded to the IAM certificate store is used
   viewer_certificate {
     ssl_support_method       = "sni-only"
-    minimum_protocol_version = "TLSv1"
-    iam_certificate_id       = "${data.terraform_remote_state.BAS-AWS.BAS-AWS-CERT-STAR-WEB-BAS-AC-UK-ID}"
+    minimum_protocol_version = "TLSv1.1_2016"
+    #iam_certificate_id       = "${data.terraform_remote_state.BAS-AWS.BAS-AWS-CERT-STAR-WEB-BAS-AC-UK-ID}"
+    iam_certificate_id       = "ASCAI2DP6HFRKYD4DUWFU"
   }
 }
 
