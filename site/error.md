@@ -8,7 +8,3 @@ title: Page not found
 </header>
 
 If you entered a web address please check it was correct.
-
-{% alert info style=highlight %}
-You can also browse from the [homepage]({{ '/' | prepend: site.baseurl }}) to find the information you need.
-{% endalert %}
