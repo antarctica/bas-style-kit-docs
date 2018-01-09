@@ -18,7 +18,7 @@ sections:
 {% include snippets/topic-section-metadata.html
   title="Inline code"
   heading_level=2
-  phase="beta"
+  phase="live"
   initial_version="0.1.0"
   revised_version="0.3.0"
   included="yes"

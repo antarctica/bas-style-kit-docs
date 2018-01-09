@@ -91,7 +91,7 @@ certain types of content, such as mapping.
 {% include snippets/topic-section-metadata.html
   title="Responsive breakpoints"
   heading_level=2
-  phase="beta"
+  phase="live"
   initial_version="0.1.0"
   revised_version="0.3.0"
   included="yes"
@@ -142,7 +142,7 @@ signage applications. It is not recommended for use in general websites.
 {% include snippets/topic-section-metadata.html
   title="Maximum width"
   heading_level=2
-  phase="beta"
+  phase="live"
   initial_version="0.1.0"
   revised_version="0.3.0"
   included="yes"
@@ -319,7 +319,7 @@ Both classes and mixins are available for setting these states generally (i.e. u
 {% include snippets/topic-section-metadata.html
   title="Responsive visibility classes"
   heading_level=2
-  phase="beta"
+  phase="live"
   initial_version="0.1.0"
   revised_version="0.3.0"
   included="yes"

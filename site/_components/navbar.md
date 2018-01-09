@@ -240,7 +240,7 @@ Use the `.bsk-navbar-brand` class to indicate the name of the current website or
 {% include snippets/topic-section-metadata.html
   title="Brand image"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.2.0"
   revised_version="0.3.0"
   included="yes"
@@ -358,7 +358,7 @@ Using the `.bsk-btn` class with an <code>&lt;a&gt;</code> element, within a navi
 {% include snippets/topic-section-metadata.html
   title="Forms"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.1.0"
   revised_version="0.3.0"
   included="yes"

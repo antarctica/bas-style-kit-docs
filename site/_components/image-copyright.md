@@ -39,7 +39,7 @@ supported and may not look right.
 {% include snippets/topic-section-metadata.html
   title="Figure"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.1.0"
   revised_version="0.3.0"
   included="yes"
@@ -75,7 +75,7 @@ Optionally the attribution information can be a link.
 {% include snippets/topic-section-metadata.html
   title="Thumbnail"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.1.0"
   revised_version="0.3.0"
   included="yes"
@@ -127,7 +127,7 @@ If the thumbnail doesn't have a caption, use a <code>&lt;div&gt;</code> element 
 {% include snippets/topic-section-metadata.html
   title="Jumbotron"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.1.0"
   revised_version="0.3.0"
   included="yes"

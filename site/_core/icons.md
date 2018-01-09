@@ -20,7 +20,7 @@ sections:
 {% include snippets/topic-section-metadata.html
   title="Available icons"
   heading_level=2
-  phase="beta"
+  phase="live"
   initial_version="0.1.0"
   revised_version="0.3.0"
   included="yes"
@@ -70,7 +70,7 @@ For common actions or concepts, the Style Kit uses a set of conventional icons.
 {% include snippets/topic-section-metadata.html
   title="Close icon"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.1.0"
   revised_version="0.3.0"
   included="yes"
@@ -99,7 +99,7 @@ Use the `fa-times` icon wrapped in a `.bsk-close` element for indicating closing
 {% include snippets/topic-section-metadata.html
   title="Experimental icon"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.3.0"
   included="yes"
 %}
@@ -122,7 +122,7 @@ Use the `fa-flask` icon for indicating things that are experimental or works in 
 {% include snippets/topic-section-metadata.html
   title="Back to top icon"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.3.0"
   included="yes"
 %}

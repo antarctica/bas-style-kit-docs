@@ -59,7 +59,7 @@ Something <span class="bsk-label bsk-label-default">Label</span>
 {% include snippets/topic-section-metadata.html
   title="Primary label"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.3.0"
   included="yes"
 %}
@@ -73,7 +73,7 @@ Something <span class="bsk-label bsk-label-primary">Label</span>
 {% include snippets/topic-section-metadata.html
   title="Experimental label"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.3.0"
   included="yes"
 %}
@@ -113,7 +113,7 @@ used for context by adding these classes:
 {% include snippets/topic-section-metadata.html
   title="Development phases"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.3.0"
   included="yes"
 %}
