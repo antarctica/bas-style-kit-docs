@@ -27,18 +27,14 @@ See the relevant project change log for this information:
   heading_level=2
 %}
 
-The latest version of the BAS Style Kit is **0.3.0-beta**.
+The latest version of the BAS Style Kit is **0.3.0**.
 
-The latest stable version of the BAS Style Kit is **0.2.0**.
+The latest stable version of the BAS Style Kit is **0.3.0**.
 
 {% include snippets/topic-section-metadata.html
   title="v0.3.0"
   heading_level=2
 %}
-
-{% alert info style=highlight %}
-This version has not yet been released
-{% endalert %}
 
 Key changes in this version:
 
@@ -47,11 +43,12 @@ Key changes in this version:
 * all styles are now [distributed]({{ '/start/distribution#bas-cdn' | prepend: site.baseurl }}) together, rather than
 as two separate files
 * refactoring [grid classes]({{ '/core/grid#available-grids' | prepend: site.baseurl }})
-* [colours]({{ '/core/colours#standard-colours' | prepend: site.baseurl }}) have been updated with a full standardised
-colour pallet
-* the [base font size]({{ '/core/type#typographic-base' | prepend: site.baseurl }}) is increased from 14 pixels to 16 pixels
-* the Image Purchase component replaced by new [Image Copyright]({{ '/components/image-copyright' | prepend: site.baseurl }})
-component
+* [colours]({{ '/core/colours#standard-colours' | prepend: site.baseurl }}) have been updated with standard and extended
+colour pallets
+* the [base font size]({{ '/core/type#typographic-base' | prepend: site.baseurl }}) is increased from 14 pixels to 16
+pixels
+* the Image Purchase component replaced by new
+[Image Copyright]({{ '/components/image-copyright' | prepend: site.baseurl }}) component
 * older Internet Explorer versions (I.E. 8 and 9) are
 [no longer officially supported]({{ '/start/standards-accessibility#browser-support' | prepend: site.baseurl }})
 * logos for the [BAS logo and roundel]({{ '/core/logos#bas-logo' | prepend: site.baseurl }}) and the
