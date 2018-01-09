@@ -681,7 +681,7 @@ NERC Green
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Orange</li>
         <li><code>$bsk-colour-std-orange-base</code></li>
-        <li class="bsk-docs-hex-reference">#FFBF47</li>
+        <li class="bsk-docs-hex-reference">#F47738</li>
       </ul>
     </div>
     <div class="bsk-col-12-md-2">
@@ -689,7 +689,7 @@ NERC Green
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Aircraft-red</li>
         <li><code>$bsk-colour-std-aircraft-red-base</code></li>
-        <li class="bsk-docs-hex-reference">#F47738</li>
+        <li class="bsk-docs-hex-reference">#CC0033</li>
       </ul>
     </div>
     <div class="bsk-col-12-md-2">
@@ -697,7 +697,7 @@ NERC Green
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>red</li>
         <li><code>$bsk-colour-std-red-base</code></li>
-        <li class="bsk-docs-hex-reference">#CC0033</li>
+        <li class="bsk-docs-hex-reference">#B10E1E</li>
       </ul>
     </div>
     <div class="bsk-col-12-md-2">
@@ -705,7 +705,7 @@ NERC Green
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Baby pink</li>
         <li><code>$bsk-colour-std-baby-pink-base</code></li>
-        <li class="bsk-docs-hex-reference">#B10E1E</li>
+        <li class="bsk-docs-hex-reference">#F499BE</li>
       </ul>
     </div>
     <div class="bsk-col-12-md-2">
@@ -713,7 +713,7 @@ NERC Green
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Pink</li>
         <li><code>$bsk-colour-std-pink-base</code></li>
-        <li class="bsk-docs-hex-reference">#F499BE</li>
+        <li class="bsk-docs-hex-reference">#D53880</li>
       </ul>
     </div>
   </div>
@@ -723,7 +723,7 @@ NERC Green
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Fuschia</li>
         <li><code>$bsk-colour-std-fuschia-base</code></li>
-        <li class="bsk-docs-hex-reference">#D53880</li>
+        <li class="bsk-docs-hex-reference">#912B88</li>
       </ul>
     </div>
     <div class="bsk-col-12-md-2">
@@ -731,7 +731,7 @@ NERC Green
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Mauve</li>
         <li><code>$bsk-colour-std-mauve-base</code></li>
-        <li class="bsk-docs-hex-reference">#912B88</li>
+        <li class="bsk-docs-hex-reference">#6F72AF</li>
       </ul>
     </div>
     <div class="bsk-col-12-md-2">
@@ -739,7 +739,7 @@ NERC Green
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Sky blue</li>
         <li><code>$bsk-colour-std-sky-blue-base</code></li>
-        <li class="bsk-docs-hex-reference">#6F72AF</li>
+        <li class="bsk-docs-hex-reference">#2B8CC4</li>
       </ul>
     </div>
     <div class="bsk-col-12-md-2">
