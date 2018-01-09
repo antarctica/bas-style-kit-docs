@@ -96,7 +96,7 @@ Additional CSS rules will be needed to set a `background-image` property.
 {% include snippets/topic-section-metadata.html
   title="Jumbotron overlay"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.1.0"
   revised_version="0.3.0"
   included="yes"

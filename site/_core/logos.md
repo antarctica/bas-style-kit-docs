@@ -26,7 +26,7 @@ Logos are protected works and MUST only be used according to the terms of their 
 {% include snippets/topic-section-metadata.html
   title="BAS logo"
   heading_level=2
-  phase="beta"
+  phase="live"
   initial_version="0.3.0"
   included="yes"
 %}
@@ -306,7 +306,7 @@ These files are exports of vector images, do not resize them. Contact the BAS Co
 {% include snippets/topic-section-metadata.html
   title="Open Government License Symbol"
   heading_level=2
-  phase="beta"
+  phase="live"
   initial_version="0.3.0"
   included="yes"
 %}

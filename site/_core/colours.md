@@ -59,7 +59,7 @@ If you do use non-standard colours (including extended colours) you must ensure 
 {% include snippets/topic-section-metadata.html
   title="Page background"
   heading_level=2
-  phase="beta"
+  phase="live"
   initial_version="0.1.0"
   revised_version="0.3.0"
   included="yes"
@@ -412,7 +412,7 @@ used as the background of an element using these classes:
 {% include snippets/topic-section-metadata.html
   title="Development phase colours"
   heading_level=2
-  phase="beta"
+  phase="live"
   initial_version="0.3.0"
   included="yes"
 %}
@@ -557,7 +557,7 @@ service
 {% include snippets/topic-section-metadata.html
   title="Standard greyscale colours"
   heading_level=2
-  phase="beta"
+  phase="live"
   initial_version="0.1.0"
   revised_version="0.3.0"
   included="yes"
@@ -633,7 +633,7 @@ These colours are defined by mixing black with a white base, they do not use a c
 {% include snippets/topic-section-metadata.html
   title="Standard colours"
   heading_level=2
-  phase="beta"
+  phase="live"
   initial_version="0.1.0"
   revised_version="0.3.0"
   included="yes"
@@ -1436,7 +1436,7 @@ NERC Green
 {% include snippets/topic-section-metadata.html
   title="Extended colours"
   heading_level=2
-  phase="beta"
+  phase="live"
   initial_version="0.3.0"
   included="yes"
 %}

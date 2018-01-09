@@ -107,7 +107,7 @@ Add the `.bsk-btn-primary` class for the main call to action.
 {% include snippets/topic-section-metadata.html
   title="Experimental button"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.3.0"
   included="yes"
 %}
