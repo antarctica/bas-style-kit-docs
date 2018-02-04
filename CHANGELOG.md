@@ -5,6 +5,10 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ## [Unreleased][unreleased]
 
+### Fixed
+
+* SRI machine-readable link fixed to remove space in URL
+
 ## v1.1.0 - 09/02/2018
 
 ### Added
