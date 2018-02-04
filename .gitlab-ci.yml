@@ -31,8 +31,6 @@
 
 stages:
   - build
-  - package
-  - deploy
 
 image: docker-registry.data.bas.ac.uk/web-apps/bsk/bas-style-kit-docs:2017-07-07-alpine
 
