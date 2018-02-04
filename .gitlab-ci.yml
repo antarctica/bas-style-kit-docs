@@ -31,6 +31,8 @@
 
 stages:
   - build
+  - package
+  - deploy
 
 image: docker-registry.data.bas.ac.uk/web-apps/bsk/bas-style-kit-docs:2017-07-07-alpine
 
@@ -44,12 +46,43 @@ variables:
 
 # == Jobs ==
 
+jekyll-build-develop:
+  stage: build
+  except:
+    - master
+    - tags
+  variables:
+    JEKYLL_ENV: develop
+  before_script:
+    - "cd site"
+  script: "jekyll build"
+  artifacts:
+    name: "$CI_BUILD_TOKEN-content"
+    paths:
+      - site/_site
+    expire_in: 1 day
+
 jekyll-build-staging:
   stage: build
   only:
     - master
   variables:
     JEKYLL_ENV: staging
+  before_script:
+    - "cd site"
+  script: "jekyll build"
+  artifacts:
+    name: "$CI_BUILD_TOKEN-content"
+    paths:
+      - site/_site
+    expire_in: 1 day
+
+jekyll-build-production:
+  stage: build
+  only:
+    - tags
+  variables:
+    JEKYLL_ENV: production
   before_script:
     - "cd site"
   script: "jekyll build"
