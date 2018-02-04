@@ -47,7 +47,7 @@ variables:
 # == Jobs ==
 
 jekyll-build-staging:
-  image: build
+  stage: build
   only:
     - master
   variables:
@@ -62,7 +62,7 @@ jekyll-build-staging:
     expire_in: 1 day
 
 jekyll-build-production:
-  image: build
+  stage: build
   only:
     - tags
   variables:
