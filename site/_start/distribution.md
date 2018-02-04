@@ -69,8 +69,8 @@ for URLs to the latest stable version.
 </table>
 
 {% alert success style=highlight %}
-These files are hosted by the [BAS CDN](https://cdn.bas.ac.uk){: .bsk-alert-link } and is the recommended way to include
-the Style Kit in a website or application
+These files are hosted by the [BAS CDN](https://cdn.web.bas.ac.uk){: .bsk-alert-link } and is the recommended way to
+include the Style Kit in a website or application
 {% endalert %}
 
 {% alert warning style=highlight %}
@@ -93,7 +93,7 @@ If the BAS Style Kit JavaScript files are included, you will also need to includ
 * `.woff2`
 
 {% alert success style=highlight %}
-The Style Kit will load these fonts from the BAS CDN automatically
+The Style Kit will load these fonts from the [BAS CDN](https://cdn.web.bas.ac.uk){: .bsk-alert-link } automatically
 {% endalert %}
 
 {% include snippets/topic-section-metadata.html
@@ -106,7 +106,8 @@ The Style Kit will load these fonts from the BAS CDN automatically
 * `.png`
 
 {% alert success style=highlight %}
-These logos are available from the BAS CDN and is the recommended way to include them in a website or application
+These logos are available from the [BAS CDN](https://cdn.web.bas.ac.uk){: .bsk-alert-link } and is the recommended way
+to include them in a website or application
 {% endalert %}
 
 {% include snippets/topic-section-metadata.html
@@ -145,8 +146,8 @@ within the Style Kit and need to loaded **before** the Style Kit to function cor
 </table>
 
 {% alert success style=highlight %}
-For convenience, these libraries are hosted by the BAS CDN and is the recommended way to include them in a website or
-application
+For convenience, these libraries are hosted by the [BAS CDN](https://cdn.web.bas.ac.uk){: .bsk-alert-link } and is the
+recommended way to include them in a website or application
 {% endalert %}
 
 {% alert danger style=highlight %}
@@ -159,7 +160,8 @@ These libraries are not included in other distribution types and will need to be
 %}
 
 [Sub-Resource Integrity (SRI)](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) values are
-available for all CSS and JS files served through the BAS CDN.
+available for all CSS and JS files served through the
+[BAS CDN]({{ '/start/distribution/#css-js' | prepend: site.baseurl }}).
 
 {% unless jekyll.environment == 'production' %}
 {% alert experimental %}
@@ -189,11 +191,12 @@ https://{% unless jekyll.environment == 'production' %}{{ site.bsk_docs_testing_
 %}
 
 [Cross Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS) is
-supported for all files served through the the BAS CDN using a wildcard (`*`) allowed origin value.
+supported for all files served through the the [BAS CDN]({{ '/start/distribution/#css-js' | prepend: site.baseurl }})
+using a wildcard (`*`) allowed origin value.
 
-CORS authentication is not supported by the BAS CDN, and files should be accessed *anonymously*. This is the default
-policy in most cases, however it is a best practice to state this explicitly by including the `crossorigin="anonymous"`
-attribute in <code>&lt;link&gt;</code> and <code>&lt;script&gt;</code> elements.
+CORS authentication is not supported by the [BAS CDN](https://cdn.web.bas.ac.uk), and files should be accessed
+*anonymously*. This is the default policy in most cases, however it is a best practice to state this explicitly by
+including the `crossorigin="anonymous"` attribute in <code>&lt;link&gt;</code> and <code>&lt;script&gt;</code> elements.
 
 E.g.
 
@@ -217,7 +220,7 @@ A `.zip` archive of the Style Kit is available containing:
 
 {% alert warning style=solid %}
 It is **strongly** recommended to use the
-[BAS CDN]({{ '/start/distribution/#css-js' | prepend: site.baseurl  }}){: .bsk-alert-link} rather than managing these
+[BAS CDN]({{ '/start/distribution/#css-js' | prepend: site.baseurl }}){: .bsk-alert-link} rather than managing these
 files yourself to make upgrading to future Style Kit releases easier.
 {% endalert %}
 
@@ -273,12 +276,12 @@ $ git clone {{ site.bsk_source_code_url }}.git
 
 {% alert warning style=solid %}
 It is **strongly** recommended to use the
-[NPM package]({{ '/start/distribution/#nodejs-package' | prepend: site.baseurl  }}){: .bsk-alert-link} rather than
+[NPM package]({{ '/start/distribution/#nodejs-package' | prepend: site.baseurl }}){: .bsk-alert-link} rather than
 managing these files yourself to make upgrading to future Style Kit releases easier.
 {% endalert %}
 
 {% alert info %}
 Using the Style Kit in this way requires you to compile the Style Kit's Sass and JavaScript yourself, as well as other
 tasks for fonts and logos. <br /> This workflow is documented in the
-[core BAS Style Kit project]({{ site.bsk_source_code_url }}){: .alert-bsk-link}.
+[core BAS Style Kit project]({{ site.bsk_source_code_url }}){: .bsk-alert-link}.
 {% endalert %}
