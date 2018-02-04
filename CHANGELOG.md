@@ -5,6 +5,10 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ## [Unreleased][unreleased]
 
+### Added
+
+* Transparent background for logo examples
+
 ### Fixed
 
 * SRI machine-readable link fixed to remove space in URL
