@@ -91,3 +91,19 @@ jekyll-build-production:
     paths:
       - site/_site
     expire_in: 1 day
+
+package-site-content:
+  stage: package
+  image:
+    name: kramos/alpine-zip:latest
+    entrypoint: [""]
+  before_script:
+    - "export CI_BUILD_REF_SHORT=`echo $CI_BUILD_REF | cut -c1-7`"
+    - "export DATETIME_INSTANT=`date --utc -Iseconds`"
+    - "cd site/_site"
+  script: "zip -r ../../$CI_BUILD_REF_SHORT-$DATETIME_INSTANT.zip *"
+  artifacts:
+    name: "$CI_BUILD_TOKEN-zip"
+    paths:
+      - "*.zip"
+    expire_in: 1 day
