@@ -5,6 +5,8 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ## [Unreleased][unreleased]
 
+## v1.2.0 - 04/02/2018
+
 ### Added
 
 * Transparent background for logo examples
@@ -24,8 +26,9 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * Switching to latest jQuery version (3.3.1)
 * Refactoring and updating Terraform configuration to use new conventions
 * Refactoring and updating CI/CD jobs
+* Correcting change log
 
-## v1.1.0 - 09/02/2018
+## v1.1.0 - 09/01/2018
 
 ### Added
 
