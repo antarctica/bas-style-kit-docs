@@ -58,7 +58,7 @@ jekyll-build-staging:
   artifacts:
     name: "$CI_BUILD_TOKEN-content"
     paths:
-      - site/_site
+      - site
     expire_in: 1 day
 
 jekyll-build-production:
@@ -73,7 +73,7 @@ jekyll-build-production:
   artifacts:
     name: "$CI_BUILD_TOKEN-content"
     paths:
-      - site/_site
+      - site
     expire_in: 1 day
 
 package-site-content:
