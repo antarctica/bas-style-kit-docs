@@ -58,7 +58,7 @@ If a <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> don't make 
 
 {% example html %}
 <figure class="bsk-image-copyright">
-  <img class="bsk-image-copyright-image" src="https://placeholdit.imgix.net/~text?txtsize=38&txt=Media%20Item&w=800&h=500" alt="placeholder image">
+  <img class="bsk-image-copyright-image" src="{{ '/img/placeholder-800-600.png' | prepend: site.baseurl }}" alt="placeholder image">
   <figcaption class="bsk-image-copyright-attribution">Copyright holder</figcaption>
 </figure>
 {% endexample %}
@@ -67,7 +67,7 @@ Optionally the attribution information can be a link.
 
 {% example html %}
 <figure class="bsk-image-copyright">
-  <img class="bsk-image-copyright-image" src="https://placeholdit.imgix.net/~text?txtsize=38&txt=Media%20Item&w=800&h=500" alt="placeholder image">
+  <img class="bsk-image-copyright-image" src="{{ '/img/placeholder-800-600.png' | prepend: site.baseurl }}" alt="placeholder image">
   <figcaption class="bsk-image-copyright-attribution"><a href="https://www.example.com">Copyright holder</a></figcaption>
 </figure>
 {% endexample %}
@@ -90,7 +90,7 @@ If the thumbnail has a caption, include a <code>&lt;div&gt;</code> element for t
 {% example html %}
 <!-- Thumbnail using a div element with a caption -->
 <div class="bsk-thumbnail bsk-thumbnail-default bsk-image-copyright">
-  <img class="bsk-image-copyright-image" src="https://placeholdit.imgix.net/~text?txtsize=38&txt=Media%20Item&w=800&h=500" alt="thumbnail">
+  <img class="bsk-image-copyright-image" src="{{ '/img/placeholder-800-600.png' | prepend: site.baseurl }}" alt="thumbnail">
   <div class="bsk-caption">
     Thumbnail caption
     <div class="bsk-image-copyright-attribution bsk-pull-right">Copyright holder</div>
@@ -99,7 +99,7 @@ If the thumbnail has a caption, include a <code>&lt;div&gt;</code> element for t
 
 <!-- Thumbnail using a div element with a caption and linked attribution -->
 <div class="bsk-thumbnail bsk-thumbnail-default bsk-image-copyright">
-  <img class="bsk-image-copyright-image" src="https://placeholdit.imgix.net/~text?txtsize=38&txt=Media%20Item&w=800&h=500" alt="thumbnail">
+  <img class="bsk-image-copyright-image" src="{{ '/img/placeholder-800-600.png' | prepend: site.baseurl }}" alt="thumbnail">
   <div class="bsk-caption">
     Thumbnail caption
     <a href="https://www.example.com" class="bsk-image-copyright-attribution bsk-pull-right">Copyright holder</a>
@@ -113,13 +113,13 @@ If the thumbnail doesn't have a caption, use a <code>&lt;div&gt;</code> element 
 {% example html %}
 <!-- Thumbnail using a div element without a caption -->
 <div class="bsk-thumbnail bsk-thumbnail-default bsk-image-copyright">
-  <img class="bsk-image-copyright-image" src="https://placeholdit.imgix.net/~text?txtsize=38&txt=Media%20Item&w=800&h=500" alt="placeholder image">
+  <img class="bsk-image-copyright-image" src="{{ '/img/placeholder-800-600.png' | prepend: site.baseurl }}" alt="placeholder image">
   <div class="bsk-image-copyright-attribution">Copyright holder</div>
 </div>
 
 <!-- Thumbnail using a div element without a caption but with a linked attribution -->
 <div class="bsk-thumbnail bsk-thumbnail-default bsk-image-copyright">
-  <img class="bsk-image-copyright-image" src="https://placeholdit.imgix.net/~text?txtsize=38&txt=Media%20Item&w=800&h=500" alt="placeholder image">
+  <img class="bsk-image-copyright-image" src="{{ '/img/placeholder-800-600.png' | prepend: site.baseurl }}" alt="placeholder image">
   <a href="https://www.example.com" class="bsk-image-copyright-attribution">Copyright holder</a>
 </div>
 {% endexample %}

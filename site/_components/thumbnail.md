@@ -62,12 +62,12 @@ Add the `.bsk-thumbnail-default` class for standard thumbnails.
 <div class="bsk-row">
   <div class="bsk-col-12-md-6">
     <div class="bsk-thumbnail bsk-thumbnail-default">
-      <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=Media%20Item&w=400&h=250" alt="thumbnail">
+      <img src="{{ '/img/placeholder-256.png' | prepend: site.baseurl }}" alt="thumbnail">
     </div>
   </div>
   <div class="bsk-col-12-md-6">
     <a href="#" class="bsk-thumbnail bsk-thumbnail-default">
-      <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=Media%20Item&w=400&h=250" alt="thumbnail">
+      <img src="{{ '/img/placeholder-256.png' | prepend: site.baseurl }}" alt="thumbnail">
     </a>
   </div>
 </div>
@@ -87,12 +87,12 @@ Add the `.bsk-thumbnail-inverse` class for an alternative thumbnail style. This 
 <div class="bsk-row">
   <div class="bsk-col-12-md-6">
     <div class="bsk-thumbnail bsk-thumbnail-inverse">
-      <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=Media%20Item&w=400&h=250" alt="thumbnail">
+      <img src="{{ '/img/placeholder-256.png' | prepend: site.baseurl }}" alt="thumbnail">
     </div>
   </div>
   <div class="bsk-col-12-md-6">
     <a href="#" class="bsk-thumbnail bsk-thumbnail-inverse">
-      <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=Media%20Item&w=400&h=250" alt="thumbnail">
+      <img src="{{ '/img/placeholder-256.png' | prepend: site.baseurl }}" alt="thumbnail">
     </a>
   </div>
 </div>
@@ -115,7 +115,7 @@ Use the `.bsk-caption` class on an element within a thumbnail to add additional 
 
 {% example html %}
 <div class="bsk-thumbnail bsk-thumbnail-default">
-  <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=Media%20Item&w=800&h=500" alt="thumbnail">
+  <img src="{{ '/img/placeholder-800-600.png' | prepend: site.baseurl }}" alt="thumbnail">
   <div class="bsk-caption">Thumbnail caption</div>
 </div>
 {% endexample %}
@@ -124,7 +124,7 @@ If using the inverted variant, the caption will be styled accordingly.
 
 {% example html %}
 <div class="bsk-thumbnail bsk-thumbnail-inverse">
-  <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=Media%20Item&w=800&h=500" alt="thumbnail">
+  <img src="{{ '/img/placeholder-800-600.png' | prepend: site.baseurl }}" alt="thumbnail">
   <div class="bsk-caption">Thumbnail caption</div>
 </div>
 {% endexample %}
@@ -133,7 +133,7 @@ Captions can also include more complex markup.
 
 {% example html %}
 <div class="bsk-thumbnail bsk-thumbnail-default">
-  <img src="https://placeholdit.imgix.net/~text?txtsize=38&txt=Media%20Item&w=800&h=500" alt="thumbnail">
+  <img src="{{ '/img/placeholder-800-600.png' | prepend: site.baseurl }}" alt="thumbnail">
   <div class="bsk-caption">
     <h3>Thumbnail caption heading</h3>
     <p>Thumbnail caption description</p>

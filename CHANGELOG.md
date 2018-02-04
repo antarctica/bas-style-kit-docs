@@ -16,6 +16,10 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * Removed invalid (old) deprecation warnings
 * Correcting links to the BAS CDN
 
+### Changed
+
+* Switching to self-hosted placeholder images
+
 ## v1.1.0 - 09/02/2018
 
 ### Added

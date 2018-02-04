@@ -36,7 +36,7 @@ Use the `.bsk-media-body` class, with an optional `.bsk-media-header` element, f
 {% example html %}
 <div class="bsk-media">
   <div class="bsk-media-left">
-    <a href="#"><img class="bsk-media-object" src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Avatar&w=64&h=64" alt="Avatar"></a>
+    <a href="#"><img class="bsk-media-object" src="{{ '/img/placeholder-64.png' | prepend: site.baseurl }}" alt="Avatar"></a>
   </div>
   <div class="bsk-media-body">
     <h4 class="bsk-media-heading">Media heading</h4>
@@ -59,7 +59,7 @@ Use the `.bsk-media-list` class on a list where each list item is a media object
 <ul class="bsk-media-list">
   <li class="bsk-media">
     <div class="bsk-media-left">
-      <a href="#"><img class="bsk-media-object" src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Avatar&w=64&h=64" alt="Avatar"></a>
+      <a href="#"><img class="bsk-media-object" src="{{ '/img/placeholder-64.png' | prepend: site.baseurl }}" alt="Avatar"></a>
     </div>
     <div class="bsk-media-body">
       <h4 class="bsk-media-heading">Media heading</h4>
@@ -69,7 +69,7 @@ Use the `.bsk-media-list` class on a list where each list item is a media object
   </li>
   <li class="bsk-media">
     <div class="bsk-media-left">
-      <a href="#"><img class="bsk-media-object" src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Avatar&w=64&h=64" alt="Avatar"></a>
+      <a href="#"><img class="bsk-media-object" src="{{ '/img/placeholder-64.png' | prepend: site.baseurl }}" alt="Avatar"></a>
     </div>
     <div class="bsk-media-body">
       <h4 class="bsk-media-heading">Media heading</h4>
@@ -86,7 +86,7 @@ Media objects can also be nested.
 <ul class="bsk-media-list">
   <li class="bsk-media">
     <div class="bsk-media-left">
-      <a href="#"><img class="bsk-media-object" src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Avatar&w=64&h=64" alt="Avatar"></a>
+      <a href="#"><img class="bsk-media-object" src="{{ '/img/placeholder-64.png' | prepend: site.baseurl }}" alt="Avatar"></a>
     </div>
     <div class="bsk-media-body">
       <h4 class="bsk-media-heading">Media heading</h4>
@@ -96,7 +96,7 @@ Media objects can also be nested.
   </li>
   <li class="bsk-media">
     <div class="bsk-media-left">
-      <a href="#"><img class="bsk-media-object" src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Avatar&w=64&h=64" alt="Avatar"></a>
+      <a href="#"><img class="bsk-media-object" src="{{ '/img/placeholder-64.png' | prepend: site.baseurl }}" alt="Avatar"></a>
     </div>
     <div class="bsk-media-body">
       <h4 class="bsk-media-heading">Media heading</h4>
@@ -105,7 +105,7 @@ Media objects can also be nested.
       <!-- Nested media object -->
       <div class="bsk-media">
         <div class="bsk-media-left">
-          <a href="#"><img class="bsk-media-object" src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Avatar&w=64&h=64" alt="Avatar"></a>
+          <a href="#"><img class="bsk-media-object" src="{{ '/img/placeholder-64.png' | prepend: site.baseurl }}" alt="Avatar"></a>
         </div>
         <!-- Nested media object -->
         <div class="bsk-media-body">
@@ -114,7 +114,7 @@ Media objects can also be nested.
           The sky calls to us colonies, shores of the cosmic ocean? Bits of moving fluff.
           <div class="bsk-media">
             <div class="bsk-media-left">
-              <a href="#"><img class="bsk-media-object" src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Avatar&w=64&h=64" alt="Avatar"></a>
+              <a href="#"><img class="bsk-media-object" src="{{ '/img/placeholder-64.png' | prepend: site.baseurl }}" alt="Avatar"></a>
             </div>
             <div class="bsk-media-body">
               <h4 class="bsk-media-heading">Media heading</h4>
@@ -128,7 +128,7 @@ Media objects can also be nested.
   </li>
   <li class="bsk-media">
     <div class="bsk-media-left">
-      <a href="#"><img class="bsk-media-object" src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Avatar&w=64&h=64" alt="Avatar"></a>
+      <a href="#"><img class="bsk-media-object" src="{{ '/img/placeholder-64.png' | prepend: site.baseurl }}" alt="Avatar"></a>
     </div>
     <div class="bsk-media-body">
       <h4 class="bsk-media-heading">Media heading</h4>
@@ -168,7 +168,7 @@ When using right alignment, the `.bsk-media-body` needs to be before the `.bsk-m
 <!-- Left aligned -->
 <div class="bsk-media">
   <div class="bsk-media-left">
-    <a href="#"><img class="bsk-media-object" src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Avatar&w=64&h=64" alt="Avatar"></a>
+    <a href="#"><img class="bsk-media-object" src="{{ '/img/placeholder-64.png' | prepend: site.baseurl }}" alt="Avatar"></a>
   </div>
   <div class="bsk-media-body">
     <h4 class="bsk-media-heading">Media heading</h4>
@@ -187,7 +187,7 @@ When using right alignment, the `.bsk-media-body` needs to be before the `.bsk-m
     The sky calls to us colonies, shores of the cosmic ocean? Bits of moving fluff.
   </div>
   <div class="bsk-media-right">
-    <a href="#"><img class="bsk-media-object" src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Avatar&w=64&h=64" alt="Avatar"></a>
+    <a href="#"><img class="bsk-media-object" src="{{ '/img/placeholder-64.png' | prepend: site.baseurl }}" alt="Avatar"></a>
   </div>
 </div>
 {% endexample %}
@@ -214,7 +214,7 @@ Vertical alignment classes need a horizontal alignment class as well to function
 <!-- Top aligned (default) -->
 <div class="bsk-media">
   <div class="bsk-media-left bsk-media-top">
-    <a href="#"><img class="bsk-media-object" src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Avatar&w=64&h=64" alt="Avatar"></a>
+    <a href="#"><img class="bsk-media-object" src="{{ '/img/placeholder-64.png' | prepend: site.baseurl }}" alt="Avatar"></a>
   </div>
   <div class="bsk-media-body">
     <h4 class="bsk-media-heading">Media heading</h4>
@@ -230,7 +230,7 @@ Vertical alignment classes need a horizontal alignment class as well to function
 <!-- Middle aligned -->
 <div class="bsk-media">
   <div class="bsk-media-left bsk-media-middle">
-    <a href="#"><img class="bsk-media-object" src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Avatar&w=64&h=64" alt="Avatar"></a>
+    <a href="#"><img class="bsk-media-object" src="{{ '/img/placeholder-64.png' | prepend: site.baseurl }}" alt="Avatar"></a>
   </div>
   <div class="bsk-media-body">
     <h4 class="bsk-media-heading">Media heading</h4>
@@ -246,7 +246,7 @@ Vertical alignment classes need a horizontal alignment class as well to function
 <!-- Bottom aligned -->
 <div class="bsk-media">
   <div class="bsk-media-left bsk-media-bottom">
-    <a href="#"><img class="bsk-media-object" src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Avatar&w=64&h=64" alt="Avatar"></a>
+    <a href="#"><img class="bsk-media-object" src="{{ '/img/placeholder-64.png' | prepend: site.baseurl }}" alt="Avatar"></a>
   </div>
   <div class="bsk-media-body">
     <h4 class="bsk-media-heading">Media heading</h4>
