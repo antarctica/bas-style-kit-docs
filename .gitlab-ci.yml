@@ -107,3 +107,38 @@ package-site-content:
     paths:
       - "*.zip"
     expire_in: 1 day
+
+s3-snapshot-staging:
+  <<: *job_template_s3_sync
+  stage: deploy
+  only:
+    - master
+  script: "aws s3 cp $CI_BUILD_REF_SHORT-*.zip s3://$PACKAGES_BUCKET/$PACKAGES_BUCKET_PATH/$APP_NAME/snapshots/"
+
+
+s3-snapshot-production:
+  <<: *job_template_s3_sync
+  stage: deploy
+  only:
+    - tags
+  script: "aws s3 cp $CI_BUILD_REF_SHORT-*.zip s3://$PACKAGES_BUCKET/$PACKAGES_BUCKET_PATH/$APP_NAME/releases/$CDN_PROJECT_VERSION.zip"
+
+s3-website-staging:
+  <<: *job_template_s3_sync
+  stage: deploy
+  only:
+    - master
+  script: "aws s3 sync --delete site/_site s3://$S3_DEPLOYMENT_BUCKET_STAGE/"
+  environment:
+    name: staging
+    url: https://style-kit-testing.web.bas.ac.uk
+
+s3-website-production:
+  <<: *job_template_s3_sync
+  stage: deploy
+  only:
+    - tags
+  script: "aws s3 sync --delete site/_site s3://$S3_DEPLOYMENT_BUCKET_PROD/"
+  environment:
+    name: production
+    url: https://style-kit.web.bas.ac.uk
