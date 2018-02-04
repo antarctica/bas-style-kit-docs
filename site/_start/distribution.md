@@ -180,7 +180,7 @@ for URLs to the latest stable version.
 These values are also available in a machine readable format from:
 
 {% highlight html %}
-https://{% unless jekyll.environment == 'production' %}{{ site.bsk_docs_testing_url }}{% else %}{{ site.bsk_docs_production_url }} {% endunless %}/data/bsk-sri.json
+https://{% unless jekyll.environment == 'production' %}{{ site.bsk_docs_testing_url }}{% else %}{{ site.bsk_docs_production_url }}{% endunless %}/data/bsk-sri.json
 {% endhighlight %}
 
 {% include snippets/topic-section-metadata.html

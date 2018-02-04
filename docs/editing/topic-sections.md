@@ -23,12 +23,12 @@ E.g.
 
 ```markdown
 {% include snippets/topic-section-metadata.html
-  title="Page background"
-  heading_level=2
-  current_phase="live"
-  current_version="0.1.0"
+  title="Default button group"
+  heading_level=3
+  phase="live"
+  initial_version="0.1.0"
+  revised_version="0.3.0"
   included="yes"
-%}
 ```
 
 #### Section phases
