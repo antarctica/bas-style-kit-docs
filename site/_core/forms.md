@@ -842,11 +842,6 @@ where there is a validation warning or failure.
 | Invalid             | `.bsk-has-error`     | Danger                      |
 {: .bsk-table .bsk-table-responsive }
 
-{% alert info %}
-**Heads up!** The validation class for invalid fields is changing from `.has-error` to `.has-danger` in the next version
-of the Style Kit. See [BSK-135](https://jira.ceh.ac.uk/browse/bsk-135) for more information.
-{% endalert %}
-
 {% example html %}
 <form>
   <fieldset class="bsk-form-group bsk-has-success">

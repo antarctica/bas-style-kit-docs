@@ -425,11 +425,6 @@ should fix this.
   included="yes"
 %}
 
-{% alert warning %}
-**Heads up!** These classes may be removed in the next version of the Style Kit. See
-[BSK-129](https://jira.ceh.ac.uk/browse/bsk-129){: .bsk-alert-link } for more information.
-{% endalert %}
-
 {% example html %}
 <p class="bsk-text-left">De carne animata corpora quaeritis.</p>
 <p class="bsk-text-center">De carne animata corpora quaeritis.</p>
@@ -445,11 +440,6 @@ should fix this.
   initial_version="0.1.0"
   included="yes"
 %}
-
-{% alert warning %}
-**Heads up!** These classes may be removed in the next version of the Style Kit. See
-[BSK-129](https://jira.ceh.ac.uk/browse/bsk-129){: .bsk-alert-link } for more information.
-{% endalert %}
 
 {% example html %}
 <p class="bsk-text-lowercase">De carne animata corpora quaeritis.</p>
