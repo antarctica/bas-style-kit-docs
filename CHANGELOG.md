@@ -8,6 +8,8 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 ### Added
 
 * Transparent background for logo examples
+* SRI values for JavaScript libraries
+* using SRI checks for JavaScript libraries
 
 ### Fixed
 
@@ -19,6 +21,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 ### Changed
 
 * Switching to self-hosted placeholder images
+* Switching to latest jQuery version (3.3.1)
 
 ## v1.1.0 - 09/02/2018
 
