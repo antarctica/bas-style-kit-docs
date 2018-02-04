@@ -264,7 +264,7 @@ If you need to use a specific size not in this list you will need to use your ow
 {% endalert %}
 
 {% alert info style=highlight %}
-See the other [navbar sizes](#sizes) for other examples.
+See the other [navbar sizes](#sizes){: .bsk-alert-link} for other examples.
 {% endalert %}
 
 {% example html %}
@@ -272,7 +272,7 @@ See the other [navbar sizes](#sizes) for other examples.
   <div class="bsk-container-fluid">
     <div class="bsk-navbar-header">
       <a class="bsk-navbar-brand bsk-navbar-brand-image-32" href="#">
-        <img src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Logo&w=32&h=32">
+        <img src="{{ '/img/placeholder-32.png' | prepend: site.baseurl }}">
       </a>
     </div>
     <ul class="bsk-nav bsk-navbar-nav">
@@ -287,7 +287,7 @@ See the other [navbar sizes](#sizes) for other examples.
   <div class="bsk-container-fluid">
     <div class="bsk-navbar-header">
       <a class="bsk-navbar-brand bsk-navbar-brand-image-48" href="#">
-        <img src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Logo&w=48&h=48">
+        <img src="{{ '/img/placeholder-48.png' | prepend: site.baseurl }}">
       </a>
     </div>
     <ul class="bsk-nav bsk-navbar-nav">
@@ -304,7 +304,7 @@ Add the `.bsk-fix-navbar-brand-img-txt` class to a brand image to combine with b
   <div class="bsk-container-fluid">
     <div class="bsk-navbar-header">
       <a class="bsk-navbar-brand bsk-navbar-brand-image-32" href="#">
-        <img class="bsk-fix-navbar-brand-img-txt" src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Logo&w=32&h=32">
+        <img class="bsk-fix-navbar-brand-img-txt" src="{{ '/img/placeholder-32.png' | prepend: site.baseurl }}">
         Site name
       </a>
     </div>
@@ -529,7 +529,7 @@ Add one of these classes to alter the size of a jumbotron:
         <span class="bsk-icon-bar"></span>
       </button>
       <a class="bsk-navbar-brand bsk-navbar-brand-image-64" href="#">
-        <img src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Logo&w=64&h=64">
+        <img src="{{ '/img/placeholder-64.png' | prepend: site.baseurl }}">
       </a>
     </div>
     <ul class="bsk-nav bsk-navbar-nav">
@@ -551,7 +551,7 @@ Add one of these classes to alter the size of a jumbotron:
         <span class="bsk-icon-bar"></span>
       </button>
       <a class="bsk-navbar-brand bsk-navbar-brand-image-96" href="#">
-        <img src="https://placeholdit.imgix.net/~text?txtsize=15&txt=Logo&w=96&h=96">
+        <img src="{{ '/img/placeholder-96.png' | prepend: site.baseurl }}">
       </a>
     </div>
     <ul class="bsk-nav bsk-navbar-nav">
