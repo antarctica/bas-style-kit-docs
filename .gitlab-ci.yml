@@ -52,6 +52,9 @@ jekyll-build-staging:
     - master
   variables:
     JEKYLL_ENV: staging
+  before_script:
+    - "cd site"
+  script: "jekyll build"
   artifacts:
     name: "$CI_BUILD_TOKEN-content"
     paths:
@@ -64,6 +67,9 @@ jekyll-build-production:
     - tags
   variables:
     JEKYLL_ENV: production
+  before_script:
+    - "cd site"
+  script: "jekyll build"
   artifacts:
     name: "$CI_BUILD_TOKEN-content"
     paths:
