@@ -14,21 +14,23 @@ Include the following snippet immediately after the front matter of a topic page
 
 ### Topic sorting
 
-For some collections sorting is used to control the order in which topics are presented in topic indexes, and the drop
+For some collections, sorting is used to control the order in which topics are presented in topic indexes, and the drop
 down navigation. By default collections sort topics in file order (i.e. `1-numbers`, `and-then-letters`).
 
 Collections using topic sorting:
 
 * Start
 
-A property `sort_index`, defined as front-matter, is used to control the order of topics, with `0` being first.
-Any topic without this property are listed first, therefore all topics **must** define this property.
+A `sort_index` property, defined as front-matter, is used to control the order of sorted topics, with `0` being first.
+Any topic without this property will be listed first, therefore all topics **MUST** define this property.
 
 Example front-matter:
 
-```
+```markdown
 ---
 sort_index: 2
 title: Foo
 ---
+
+Page content
 ```
