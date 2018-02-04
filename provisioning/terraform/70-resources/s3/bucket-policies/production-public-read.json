@@ -7,7 +7,7 @@
             "Effect": "Allow",
             "Principal": "*",
             "Action": "s3:GetObject",
-            "Resource": "arn:aws:s3:::bas-style-kit-docs-prod/*"
+            "Resource": "arn:aws:s3:::style-kit.web.bas.ac.uk/*"
         }
     ]
 }
