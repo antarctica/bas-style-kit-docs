@@ -1,9 +1,10 @@
 <!-- jQuery (necessary for JavaScript plugins) -->
-<script src="https://cdn.web.bas.ac.uk/js-libs/jquery-3.1.1.min.js"></script>
+<script src="https://cdn.web.bas.ac.uk/js-libs/jquery-3.1.1.min.js" integrity="sha256-iS/MJJubD9bocndB0h1c3VR0I4MnuhFjCLXfrW3f0b0=" crossorigin="anonymous"></script>
 <!-- Cookie library used to persistently hide the cookie banner (slightly ironic we need a cookie to do this) -->
-<script src="https://cdn.web.bas.ac.uk/js-libs/js.cookie-2.1.3.min.js"></script>
+<script src="https://cdn.web.bas.ac.uk/js-libs/js.cookie-2.1.3.min.js" integrity="sha256-EareStqgZTnMUqLWtDkCa3SldvB8NPBY8u5C6ZUMWRc=" crossorigin="anonymous"></script>
 <!-- Compiled and minified JavaScript plugins provided by the Style Kit -->
-<script src="https://cdn.web.bas.ac.uk/bas-style-kit/0.3.0-beta/js/bas-style-kit.min.js"></script>
+<script src="{{ site.bsk_cdn_base_production }}/{{ site.bsk_version_production }}/js/bas-style-kit.min.js" integrity="{{ site.data.bsk_sri_base_production['dist/js/bas-style-kit.min.js'] }}" crossorigin="anonymous"></script>
+
 {% if page.url == "/feedback.html" %}
 <!-- Code for gathering user agent, etc. for feedback form -->
 <script src="{{ "/js/feedback-environment.js" | prepend: site.baseurl }}"></script>

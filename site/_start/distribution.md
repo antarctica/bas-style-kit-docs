@@ -129,6 +129,7 @@ within the Style Kit and need to loaded **before** the Style Kit to function cor
       <th>Name</th>
       <th>Version</th>
       <th>URL</th>
+      <th>Status</th>
     </tr>
   </thead>
   <tbody>
@@ -136,11 +137,19 @@ within the Style Kit and need to loaded **before** the Style Kit to function cor
       <td>Minified jQuery</td>
       <td>3.1.1</td>
       <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/js-libs/jquery-3.1.1.min.js</code></pre></td>
+      <td><div class="bsk-label bsk-label-phase-retired">Retired</div></td>
+    </tr>
+    <tr>
+      <td>Minified jQuery</td>
+      <td>3.3.1</td>
+      <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/js-libs/jquery-3.3.1.min.js</code></pre></td>
+      <td><div class="bsk-label bsk-label-phase-live">Live</div></td>
     </tr>
     <tr>
       <td>js-cookie</td>
       <td>2.1.3</td>
       <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/js-libs/js.cookie-2.1.3.min.js</code></pre></td>
+      <td><div class="bsk-label bsk-label-phase-live">Live</div></td>
     </tr>
   </tbody>
 </table>
@@ -184,6 +193,16 @@ These values are also available in a machine readable format from:
 {% highlight html %}
 https://{% unless jekyll.environment == 'production' %}{{ site.bsk_docs_testing_url }}{% else %}{{ site.bsk_docs_production_url }}{% endunless %}/data/bsk-sri.json
 {% endhighlight %}
+
+SRI values are also available for [JavaScript libraries]({{ '/start/distribution/#css-js' | prepend: site.baseurl }})
+the Style Kit depends upon.
+
+| Resource                 | SRI value                                                                                                                                                                                                                 |
+| ------------------------ | ----------------------------------------------------- |
+| `jquery-3.1.1.min.js`    | `sha256-iS/MJJubD9bocndB0h1c3VR0I4MnuhFjCLXfrW3f0b0=` |
+| `jquery-3.3.1.min.js`    | `sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=` |
+| `js.cookie-2.1.3.min.js` | `sha256-EareStqgZTnMUqLWtDkCa3SldvB8NPBY8u5C6ZUMWRc=` |
+{: .bsk-table .bsk-table-hover .bsk-table-bordered }
 
 {% include snippets/topic-section-metadata.html
   title="CORS"
