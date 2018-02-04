@@ -50,9 +50,13 @@
   display: block;
 }
 
-.bsk-docs-logomark-inverse-background {
-  background-color: #555;
-  color: #EEE;
+.bsk-docs-logomark-transparent-background {
+  background: #FFFFFF url('/img/transparent-grid.png') repeat;
+}
+
+.bsk-docs-logomark-transparent-background-dark {
+  background: #999999 url('/img/transparent-grid-dark.png') repeat;
+  color: #FFFFFF;
 }
 
 .bsk-docs-swatch-html-background {

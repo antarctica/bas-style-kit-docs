@@ -87,42 +87,54 @@ Use the *default* variant if you are unsure which to use.
 
 <div class="bsk-row bsk-docs-logomark-wrapper">
   <div class="bsk-col-12-md-4">
+    <div class="bsk-docs-logomark-transparent-background">
       <img src="{% unless jekyll.environment == 'production' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endunless %}/{% include snippets/bsk-version.html %}/img/logos-symbols/bas-roundel-default-transparent-64.png" class="bsk-docs-logomark bsk-center-block">
-    <ul class="bsk-list-unstyled bsk-text-center bsk-docs-logomark-details">
-      <li>Default roundel</li>
-    </ul>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-logomark-details">
+        <li>Default roundel</li>
+      </ul>
+    </div>
   </div>
   <div class="bsk-col-12-md-4">
-    <img src="{% unless jekyll.environment == 'production' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endunless %}/{% include snippets/bsk-version.html %}/img/logos-symbols/bas-roundel-mono-transparent-64.png" class="bsk-docs-logomark bsk-center-block">
-    <ul class="bsk-list-unstyled bsk-text-center bsk-docs-logomark-details">
-      <li>Monochrome roundel</li>
-    </ul>
+    <div class="bsk-docs-logomark-transparent-background">
+      <img src="{% unless jekyll.environment == 'production' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endunless %}/{% include snippets/bsk-version.html %}/img/logos-symbols/bas-roundel-mono-transparent-64.png" class="bsk-docs-logomark bsk-center-block">
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-logomark-details">
+        <li>Monochrome roundel</li>
+      </ul>
+    </div>
   </div>
-  <div class="bsk-col-12-md-4 bsk-docs-logomark-inverse-background">
-    <img src="{% unless jekyll.environment == 'production' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endunless %}/{% include snippets/bsk-version.html %}/img/logos-symbols/bas-roundel-inverse-transparent-64.png" class="bsk-docs-logomark bsk-center-block">
-    <ul class="bsk-list-unstyled bsk-text-center bsk-docs-logomark-details">
-      <li>Inverse monochrome roundel</li>
-    </ul>
+  <div class="bsk-col-12-md-4">
+    <div class="bsk-docs-logomark-transparent-background-dark">
+      <img src="{% unless jekyll.environment == 'production' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endunless %}/{% include snippets/bsk-version.html %}/img/logos-symbols/bas-roundel-inverse-transparent-64.png" class="bsk-docs-logomark bsk-center-block">
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-logomark-details">
+        <li>Inverse monochrome roundel</li>
+      </ul>
+    </div>
   </div>
 </div>
 <div class="bsk-row bsk-docs-logomark-wrapper">
   <div class="bsk-col-12-md-4">
-    <img src="{% unless jekyll.environment == 'production' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endunless %}/{% include snippets/bsk-version.html %}/img/logos-symbols/bas-logo-default-transparent-64.png" class="bsk-docs-logomark bsk-center-block">
-    <ul class="bsk-list-unstyled bsk-text-center bsk-docs-logomark-details">
-      <li>Default full logo</li>
-    </ul>
+    <div class="bsk-docs-logomark-transparent-background">
+      <img src="{% unless jekyll.environment == 'production' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endunless %}/{% include snippets/bsk-version.html %}/img/logos-symbols/bas-logo-default-transparent-64.png" class="bsk-docs-logomark bsk-center-block">
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-logomark-details">
+        <li>Default full logo</li>
+      </ul>
+    </div>
   </div>
   <div class="bsk-col-12-md-4">
-    <img src="{% unless jekyll.environment == 'production' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endunless %}/{% include snippets/bsk-version.html %}/img/logos-symbols/bas-logo-mono-transparent-64.png" class="bsk-docs-logomark bsk-center-block">
-    <ul class="bsk-list-unstyled bsk-text-center bsk-docs-logomark-details">
-      <li>Monochrome full logo</li>
-    </ul>
+    <div class="bsk-docs-logomark-transparent-background">
+      <img src="{% unless jekyll.environment == 'production' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endunless %}/{% include snippets/bsk-version.html %}/img/logos-symbols/bas-logo-mono-transparent-64.png" class="bsk-docs-logomark bsk-center-block">
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-logomark-details">
+        <li>Monochrome full logo</li>
+      </ul>
+    </div>
   </div>
-  <div class="bsk-col-12-md-4 bsk-docs-logomark-inverse-background">
-    <img src="{% unless jekyll.environment == 'production' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endunless %}/{% include snippets/bsk-version.html %}/img/logos-symbols/bas-logo-inverse-transparent-64.png" class="bsk-docs-logomark bsk-center-block">
-    <ul class="bsk-list-unstyled bsk-text-center bsk-docs-logomark-details">
-      <li>Inverse monochrome full logo</li>
-    </ul>
+  <div class="bsk-col-12-md-4">
+    <div class="bsk-docs-logomark-transparent-background-dark">
+      <img src="{% unless jekyll.environment == 'production' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endunless %}/{% include snippets/bsk-version.html %}/img/logos-symbols/bas-logo-inverse-transparent-64.png" class="bsk-docs-logomark bsk-center-block">
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-logomark-details">
+        <li>Inverse monochrome full logo</li>
+      </ul>
+    </div>
   </div>
 </div>
 
@@ -323,7 +335,7 @@ The OGL Symbol can be used with components such as:
 
 * [footers]({{ '/components/footer/#open-government-license' | prepend: site.baseurl }})
 
-{% alert info %}
+{% alert info style=solid %}
 Contact the Web &amp; Applications Team, or the BAS Archives Service, for advice over when to use this license, or
 whether an alternative would be more suitable.
 {% endalert %}
@@ -360,16 +372,20 @@ Use the *default* variant if you are unsure which to use.
 
 <div class="bsk-row bsk-docs-logomark-wrapper">
   <div class="bsk-col-12-md-4">
+    <div class="bsk-docs-logomark-transparent-background">
       <img src="{% unless jekyll.environment == 'production' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endunless %}/{% include snippets/bsk-version.html %}/img/logos-symbols/ogl-symbol-default-transparent-64.png" class="bsk-docs-logomark bsk-center-block">
-    <ul class="bsk-list-unstyled bsk-text-center bsk-docs-logomark-details">
-      <li>Default symbol</li>
-    </ul>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-logomark-details">
+        <li>Default symbol</li>
+      </ul>
+    </div>
   </div>
   <div class="bsk-col-12-md-4 bsk-docs-logomark-inverse-background">
-    <img src="{% unless jekyll.environment == 'production' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endunless %}/{% include snippets/bsk-version.html %}/img/logos-symbols/ogl-symbol-inverse-transparent-64.png" class="bsk-docs-logomark bsk-center-block">
-    <ul class="bsk-list-unstyled bsk-text-center bsk-docs-logomark-details">
-      <li>Inverse symbol</li>
-    </ul>
+    <div class="bsk-docs-logomark-transparent-background-dark">
+      <img src="{% unless jekyll.environment == 'production' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endunless %}/{% include snippets/bsk-version.html %}/img/logos-symbols/ogl-symbol-inverse-transparent-64.png" class="bsk-docs-logomark bsk-center-block">
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-logomark-details">
+        <li>Inverse symbol</li>
+      </ul>
+    </div>
   </div>
 </div>
 
