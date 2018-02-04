@@ -10,6 +10,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * SRI machine-readable link fixed to remove space in URL
 * URL to testbed
 * Removed invalid (old) deprecation warnings
+* Correcting links to the BAS CDN
 
 ## v1.1.0 - 09/02/2018
 
