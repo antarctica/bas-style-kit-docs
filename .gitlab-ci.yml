@@ -34,7 +34,9 @@ stages:
   - package
   - deploy
 
-image: docker-registry.data.bas.ac.uk/web-apps/bsk/bas-style-kit-docs:2017-07-07-alpine
+image:
+  name: docker-registry.data.bas.ac.uk/web-apps/bsk/bas-style-kit-docs:2018-02-28-alpine-develop
+  entrypoint: [""]
 
 variables:
   AWS_DEFAULT_REGION: eu-west-1
