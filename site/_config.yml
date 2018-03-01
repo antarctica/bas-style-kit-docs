@@ -23,7 +23,7 @@ defaults:
       # an empty string here means all files in the project
       path: ""
     values:
-      layout: "bas-style-kit/bsk--standard"
+      layout: "bas-style-kit/bsk--standard-page"
 
 # Theme settings
 #

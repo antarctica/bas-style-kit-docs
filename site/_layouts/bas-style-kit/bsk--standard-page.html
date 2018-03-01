@@ -1,0 +1,14 @@
+---
+layout: bas-style-kit/bsk--standard
+---
+<div class="bsk-row">
+  <div class="bsk-col-12-sm-12 bsk-col-12-md-3 bsk-col-12-lg-3">
+    <aside class="bsk-sidebar bsk-sidebar-default">
+      <h2>Contents</h2>
+      {% include toc.html html=content %}
+    </aside>
+  </div>
+  <div class="bsk-col-12-sm-12 bsk-col-12-md-9">
+    {{ content }}
+  </div>
+</div>
