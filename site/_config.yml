@@ -2,6 +2,9 @@
 #
 
 markdown: kramdown
+kramdown:
+  auto_ids: false
+
 theme: jekyll-theme-bas-style-kit
 
 # Server settings
@@ -39,11 +42,13 @@ bas_style_kit_jekyll_theme:
     head_title:
       # Used when `page.title` isn't set
       default: 'BAS Style Kit'
-    head_description: 'Documentation for the BAS Style Kit'
+    head_description: 'A collection of HTML, CSS, and JS components for developing web projects consistent with the BAS brand.'
     site_brand:
         text: 'BAS Style Kit'
         href: '/'
     site_development_phase: 'experimental'
+    site_analytics:
+      id: UA-64130716-27
     site_styles:
         -
           href: '/css/main.css'
