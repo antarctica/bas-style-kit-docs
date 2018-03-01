@@ -44,3 +44,7 @@ bas_style_kit_jekyll_theme:
         text: 'BAS Style Kit'
         href: '/'
     site_development_phase: 'experimental'
+    site_styles:
+        -
+          href: '/css/main.css'
+          type: 'local'
