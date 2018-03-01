@@ -1,0 +1,8 @@
+cdn_base: https://cdn.web.bas.ac.uk/bas-style-kit
+bsk_package_base: https://packages.data.bas.ac.uk/zips/apps/bas-style-kit/releases
+
+docs_site_staging: 'style-kit-testing.web.bas.ac.uk'
+docs_site_production: 'style-kit.web.bas.ac.uk'
+
+bsk_version_staging: 0.3.0
+bsk_version_production: 0.3.0

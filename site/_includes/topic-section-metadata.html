@@ -1,0 +1,32 @@
+{% for i in (1..include.heading_level) %}#{% endfor %} {{ include.title }}
+{: #{{ include.title | slugify }} .bsk-docs-section-title }
+
+{: .bsk-docs-section-metadata }
+{% case include.phase %}
+  {% when 'alpha' %}
+* <span class=" bsk-label bsk-label-phase-alpha">Alpha</span>
+  {% when 'beta' %}
+* <span class="bsk-label bsk-label-phase-beta">Beta</span>
+  {% when 'live' %}
+* <span class="bsk-label bsk-label-phase-live">Live</span>
+  {% when 'deprecated' %}
+* <span class="bsk-label bsk-label-phase-retired">Deprecated</span>
+{% endcase %}
+
+{% if include.initial_version %}
+* Added in version **{{ include.initial_version }}**
+{% endif %}
+
+{% if include.revised_version %}
+* Last updated in version **{{ include.revised_version }}**
+{% endif %}
+
+{% if include.included == "yes" %}
+* <i class="fa fa-fw fa-check" aria-hidden="true"></i> Included in Core Style Kit
+{% elsif include.included == "no" %}
+* {: .text-danger } <i class="fa fa-fw fa-exclamation-circle" aria-hidden="true"></i> Not included in Core Style Kit
+{% endif %}
+
+* {% include bas-style-kit/bsk-snippet--back-to-top.html %}
+
+* <a href="#{{ include.title | slugify }}"><i class="fa fa-fw fa-link" aria-hidden="true"></i> Link to this section</a>

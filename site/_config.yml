@@ -25,6 +25,11 @@ defaults:
     values:
       layout: "bas-style-kit/bsk--standard-page"
 
+collections:
+  start:
+    output: true
+    permalink: /:collection/:slug/
+
 # Theme settings
 #
 
