@@ -1,0 +1,7 @@
+---
+layout: bas-style-kit/blank
+---
+{
+    "revision": "{{ site.revision }}",
+    "branch": "{{ site.branch }}"
+}
