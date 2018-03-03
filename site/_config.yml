@@ -38,6 +38,12 @@ collections:
   components:
     output: true
     permalink: /:collection/:slug/
+  interactivity:
+    output: true
+    permalink: /:collection/:slug/
+  examples:
+    output: true
+    permalink: /:collection/:slug/
 
 # Theme settings
 #
