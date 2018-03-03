@@ -49,11 +49,15 @@ collections:
 #
 
 bas_style_kit_jekyll_theme:
+  feature_flags:
+    standard_footer:
+      divider: true
   attributes:
     container: fixed
     head_title:
       # Used when `page.title` isn't set
       default: 'BAS Style Kit'
+      appended: ' - BAS Style Kit'
     head_description: 'A collection of HTML, CSS, and JS components for developing web projects consistent with the BAS brand.'
     site_brand:
         text: 'BAS Style Kit'
