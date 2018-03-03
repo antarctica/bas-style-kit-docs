@@ -51,7 +51,7 @@ collections:
 bas_style_kit_jekyll_theme:
   feature_flags:
     standard_footer:
-      divider: true
+      divider: false
   attributes:
     container: fixed
     head_title:
