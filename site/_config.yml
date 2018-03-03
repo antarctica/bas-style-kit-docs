@@ -69,3 +69,8 @@ bas_style_kit_jekyll_theme:
         -
           href: '/css/main.css'
           type: 'local'
+    site_footer:
+      legal_policies:
+        copyright_href: '/legal/copyright'
+        cookies_href: '/legal/cookies'
+        privacy_href: '/legal/privacy'
