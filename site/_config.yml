@@ -27,6 +27,10 @@ defaults:
       path: ""
     values:
       layout: "bas-style-kit/bsk--standard-page"
+      bas_style_kit_jekyll_theme:
+        feature_flags:
+          page:
+            toc: true
 
 collections:
   start:
