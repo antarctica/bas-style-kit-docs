@@ -1,0 +1,38 @@
+---
+title: Page header
+menus:
+  primary_components:
+    weight: 18
+sections:
+  -
+    title: Overview
+  -
+    title: Default page header
+---
+
+{% include topic-section-metadata.html
+  title="Overview"
+  heading_level=2
+%}
+
+Use the `.page-header` class to title a page, or section within a page, using a more prominent heading with extra
+spacing.
+
+{% include topic-section-metadata.html
+  title="Variants"
+  heading_level=2
+%}
+
+{% include topic-section-metadata.html
+  title="Default page header"
+  heading_level=3
+  phase="live"
+  initial_version="0.1.0"
+  included="yes"
+%}
+
+{% example html %}
+<header class="bsk-page-header">
+  <h1>Example page header <small>Subtext for header</small></h1>
+</header>
+{% endexample %}

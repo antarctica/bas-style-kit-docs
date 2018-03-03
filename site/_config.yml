@@ -35,6 +35,9 @@ collections:
   core:
     output: true
     permalink: /:collection/:slug/
+  components:
+    output: true
+    permalink: /:collection/:slug/
 
 # Theme settings
 #
