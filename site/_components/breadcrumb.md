@@ -1,5 +1,8 @@
 ---
 title: Breadcrumb
+menus:
+  primary_components:
+    weight: 5
 sections:
   -
     title: Overview
@@ -9,9 +12,7 @@ sections:
     title: States
 ---
 
-{% include snippets/table-of-contents.md %}
-
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Overview"
   heading_level=2
 %}
@@ -21,17 +22,22 @@ hierarchy.
 
 Each navigation item **must** use an <code>&lt;a&gt;</code> element, **except** for the last item.
 
-{% alert warning %}
+{% capture alert_content %}
 For assistive technologies, all navigation elements should use a `role=navigation` attribute on an element which wraps
 around the element using the `.bsk-nav` class.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Variants"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Default breadcrumb"
   heading_level=3
   phase="live"
@@ -49,12 +55,12 @@ around the element using the `.bsk-nav` class.
 </nav>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="States"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Active item"
   heading_level=3
   phase="live"
@@ -64,10 +70,15 @@ around the element using the `.bsk-nav` class.
 
 Add the `.bsk-active` class to the drop-down menu item currently active, to highlight where the end user is in the site.
 
-{% alert warning %}
+{% capture alert_content %}
 Make sure to include a `<span class="bsk-sr-only">(current)</span>` element as well. <br />
 This provides a non-visual indication of the currently active item, suitable for assistive technologies.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
 {% example html %}
 <nav role="navigation">

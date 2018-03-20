@@ -1,5 +1,8 @@
 ---
 title: Badge
+menus:
+  primary_components:
+    weight: 3
 sections:
   -
     title: Overview
@@ -9,9 +12,7 @@ sections:
     title: Sizes
 ---
 
-{% include snippets/table-of-contents.md %}
-
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Overview"
   heading_level=2
 %}
@@ -19,17 +20,22 @@ sections:
 Use the `.bsk-badge` class to highlight a count, such as items needing further attention. An empty badge will
 automatically collapse and be hidden.
 
-{% alert warning %}
+{% capture alert_content %}
 Badges are only designed for numbers. For more general purposes, including other types of indicators, use
 [Label's]({{ '/components/label' | prepend: site.baseurl }}){: .bsk-alert-link }.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Variants"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Default badge"
   heading_level=3
   phase="live"
@@ -43,7 +49,7 @@ Badges are only designed for numbers. For more general purposes, including other
 <p><a href="#">Unread notifications <span class="bsk-badge"></span></a></p>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Sizes"
   heading_level=2
 %}

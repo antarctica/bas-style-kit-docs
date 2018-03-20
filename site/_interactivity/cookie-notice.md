@@ -1,5 +1,8 @@
 ---
 title: Cookie Notice
+menus:
+  primary_interactivity:
+    weight: 7
 sections:
   -
     title: Overview
@@ -7,22 +10,21 @@ sections:
     title: Usage
 ---
 
-## Contents
-{:.no_toc #{{ 'Contents' | slugify }}}
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
-
 ## Overview
 {: #{{ 'Overview' | slugify }}}
 
 Use the Style Kit cookie notice plugin to hide a site cookie notice for 30 days. This plugin builds upon functionality
 provided by the [alert]({{ '/interactivity/alert' | prepend: site.baseurl }}) plugin.
 
-{% alert info style=highlight %}
+{% capture alert_content %}
 It is recommended to use the
 [cookie notice alert variant]({{ '/components/alert/#cookie-notice-alert' | prepend: site.baseurl }}) with this plugin.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 ## Usage
 {: #{{ 'Usage' | slugify }}}
@@ -38,9 +40,14 @@ Specifically, when the `close.bs.alert` event is triggered on an element with th
 data attribute a cookie named `bsk_cookie_notice_seen` is set on the client to expire 30 days from the current time.
 The cookie is set at the sub-domain level (i.e. `foo.example.com` is considered different to `bar.example.com`).
 
-{% alert info %}
+{% capture alert_content %}
 Using this plugin to target multiple elements (i.e. multiple cookie notices) is not supported.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="outline"
+  content=alert_content
+%}
 
 ## Dependencies
 {: #{{ 'dependencies' | slugify }}}
@@ -48,7 +55,12 @@ Using this plugin to target multiple elements (i.e. multiple cookie notices) is 
 This plugin depends upon [jQuery](https://jquery.com) and [js-cookie](https://github.com/js-cookie/js-cookie) library
 and the [alert]({{ '/interactivity/alert' | prepend: site.baseurl }}) plugin.
 
-{% alert info style=highlight %}
+{% capture alert_content %}
 See [distribution]({{ '/start/distribution/#javaScript-libraries' | prepend: site.baseurl }}){: .bsk-alert-link} for
-how to include these dependencies
-{% endalert %}
+how to include these dependencies.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}

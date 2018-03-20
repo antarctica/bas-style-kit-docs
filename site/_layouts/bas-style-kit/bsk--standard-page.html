@@ -1,0 +1,24 @@
+---
+layout: bas-style-kit/bsk--standard
+---
+
+<div class="bsk-row">
+    <div class="bsk-col-12-sm-12 bsk-col-12-md-9 bsk-col-12-md-offset-3">
+      <header class="bsk-page-header">
+        <h1>{{ page.title }}</h1>
+      </header>
+    </div>
+  </div>
+  <div class="bsk-row">
+    {% if page.bas_style_kit_jekyll_theme.feature_flags.page.toc == true %}
+      <div class="bsk-col-12-sm-12 bsk-col-12-md-3 bsk-col-12-lg-3">
+        <aside class="bsk-sidebar bsk-sidebar-default">
+          <h2>Contents</h2>
+          {% include toc.html html=content h_min=2 %}
+        </aside>
+      </div>
+    {% endif %}
+    <div class="bsk-col-12-sm-12 bsk-col-12-md-9 {% unless page.bas_style_kit_jekyll_theme.feature_flags.page.toc == true %}bsk-col-12-md-offset-3{% endunless %}">
+      {{ content }}
+    </div>
+  </div>

@@ -1,11 +1,6 @@
 ---
-layout: default
 title: Cookie policy
 ---
-
-<header id="site-content" class="bsk-page-header" tabindex="-1">
-    <h1>Cookie policy</h1>
-</header>
 
 This website puts small files, known as cookies, onto your computer to collect information about how you browse the
 site.

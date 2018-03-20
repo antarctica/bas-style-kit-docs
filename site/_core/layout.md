@@ -1,5 +1,8 @@
 ---
 title: Layout
+menus:
+  primary_core:
+    weight: 9
 sections:
   -
     title: Overview
@@ -17,17 +20,14 @@ sections:
     title: Visibility
 ---
 
-{% include snippets/table-of-contents.md %}
-
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Overview"
   heading_level=2
 %}
 
-The BAS Style Kit inherits, and expands, the layout features provided by Bootstrap. **Compatibility with Bootstrap's
-layout classes is guaranteed.**
+The BAS Style Kit inherits, and expands, the layout features provided by Bootstrap.
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Containers"
   heading_level=2
   phase="live"
@@ -41,11 +41,16 @@ other layout designs.
 
 Two containers are available, which can be mixed and nested if needed.
 
-{% alert info %}
+{% capture alert_content %}
 Use the *fixed-width container* if you are unsure which to use.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="outline"
+  content=alert_content
+%}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Fixed-width container"
   heading_level=3
   phase="live"
@@ -56,10 +61,15 @@ Use the *fixed-width container* if you are unsure which to use.
 Use the `.bsk-container` class for a responsive and fixed-width container. This means its `max-width` changes at each
 [responsive breakpoint]({{ '/core/layout/#responsive-breakpoints' | prepend: site.baseurl }}).
 
-{% alert info style=highlight %}
+{% capture alert_content %}
 The container in the example will appear broken, this is because it is already placed within a container as part of
 this site's layout.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 {% example html %}
 <div class="bsk-container">
@@ -67,7 +77,7 @@ this site's layout.
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Fluid container"
   heading_level=3
   phase="live"
@@ -77,10 +87,15 @@ this site's layout.
 
 Use the `.bsk-container-fluid` class for a full-width container, meaning it spans the entire width of the viewport.
 
-{% alert info %}
+{% capture alert_content %}
 You might need to use this container where you are integrating the Style Kit with existing or third party code, or for
 certain types of content, such as mapping.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="outline"
+  content=alert_content
+%}
 
 {% example html %}
 <div class="bsk-container-fluid">
@@ -88,7 +103,7 @@ certain types of content, such as mapping.
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Responsive breakpoints"
   heading_level=2
   phase="live"
@@ -108,38 +123,58 @@ implement this design. They check if the current browser width is greater than t
 These queries are reapplied whenever the browser size changes, for example when switching from landscape to portrait
 orientation on a phone.
 
-{% alert info %}
+{% capture alert_content %}
 These queries are based on the browser width only. We don't use query string sniffing, or other related techniques,
 to identify the type of device being used. If this information is needed consider using an analytics service.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="outline"
+  content=alert_content
+%}
 
-{% alert info %}
+{% capture alert_content %}
 No media-query is used for the *extra small* size, therefore devices smaller than the extra small minimum will still be
 considered extra small. This slightly strange situation is resolved in the next Bootstrap version (v4) and will be
 included in future versions of the Style Kit when this is released.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="outline"
+  content=alert_content
+%}
 
-{% alert info style=highlight %}
+{% capture alert_content %}
 The *extra large* size is custom to the BAS Style Kit, and is used to target larger displays to improve the use of
 space for internal, data rich, applications. It is not recommended for use in general websites.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
-{% alert info style=highlight %}
+{% capture alert_content %}
 The *full HD* size is custom to the BAS Style Kit, and is used to target displays such as Televisions for digital
 signage applications. It is not recommended for use in general websites.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 | Size        | Class Name | Example Device <small class="bsk-text-muted">Orientation</small> | Minimum Width (px)                      | Min Width Variable  | Core Bootstrap                                                                                             |
 | ----------- | ---------- | ---------------------------------------------------------------- | --------------------------------------- | ------------------- | ---------------------------------------------------------------------------------------------------------- |
-| Extra Small | `xs`       | Phone <small class="bsk-text-muted">portrait</small>             | 480 ([see note](#xs-min-width-note))    | `$screen-xs-min`    | <i class="fa fa-fw fa-check" aria-hidden="true"></i> Yes                                                   |
-| Small       | `sm`       | Phone <small class="bsk-text-muted">landscape</small>            | 768                                     | `$screen-sm-min`    | <i class="fa fa-fw fa-check" aria-hidden="true"></i> Yes                                                   |
-| Medium      | `md`       | Tablets                                                          | 992                                     | `$screen-md-min`    | <i class="fa fa-fw fa-check" aria-hidden="true"></i> Yes                                                   |
-| Large       | `lg`       | Computers                                                        | 1200                                    | `$screen-lg-min`    | <i class="fa fa-fw fa-check" aria-hidden="true"></i> Yes                                                   |
+| Extra Small | `xs`       | Phone <small class="bsk-text-muted">portrait</small>             | 480 ([see note](#xs-min-width-note))    | `$screen-xs-min`    | <span class="bsk-text-success"><i class="fa fa-fw fa-check" aria-hidden="true"></i> Yes</span>             |
+| Small       | `sm`       | Phone <small class="bsk-text-muted">landscape</small>            | 768                                     | `$screen-sm-min`    | <span class="bsk-text-success"><i class="fa fa-fw fa-check" aria-hidden="true"></i> Yes</span>             |
+| Medium      | `md`       | Tablets                                                          | 992                                     | `$screen-md-min`    | <span class="bsk-text-success"><i class="fa fa-fw fa-check" aria-hidden="true"></i> Yes</span>             |
+| Large       | `lg`       | Computers                                                        | 1200                                    | `$screen-lg-min`    | <span class="bsk-text-success"><i class="fa fa-fw fa-check" aria-hidden="true"></i> Yes</span>             |
 | Extra Large | `xl`       | Large desktop computers                                          | 1800                                    | `$screen-xl-min`    | <span class="bsk-text-danger"><i class="fa fa-fw fa-exclamation-circle" aria-hidden="true"></i> No</span>  |
 | Full HD     | `fhd`      | Televisions                                                      | 1920                                    | `$screen-fhd-min`   | <span class="bsk-text-danger"><i class="fa fa-fw fa-exclamation-circle" aria-hidden="true"></i> No</span>  |
 {: .bsk-table .bsk-table-responsive }
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Maximum width"
   heading_level=2
   phase="live"
@@ -161,7 +196,7 @@ calculated as the next minimum width size minus `1px`. There is no maximum width
 | Full HD     | N/A                | N/A                |
 {: .bsk-table .bsk-table-responsive }
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Unit responsive breakpoints"
   heading_level=2
   phase="live"
@@ -187,7 +222,7 @@ or, in cases where you are integrating with existing code or a third party syste
 }
 {% endhighlight %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Floated blocks"
   heading_level=2
   phase="live"
@@ -198,17 +233,22 @@ or, in cases where you are integrating with existing code or a third party syste
 Use the `.bsk-pull-left` and `.bsk-pull-right` classes to float content. The `!important` modifier is used to prevent
 specificity issues.
 
-{% alert warning %}
+{% capture alert_content %}
 Do not use these classes in [navbars]({{ '/components/navbar' | prepend: site.baseurl }}){: .bsk-alert-link},
 `.bsk-navbar-left` and `.bsk-navbar-right` classes should be used instead.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
 {% example html %}
-<div class="bsk-pull-left"></div>
+<div class="bsk-pull-left">...</div>
 {% endexample %}
 
 {% example html %}
-<div class="bsk-pull-right"></div>
+<div class="bsk-pull-right">...</div>
 {% endexample %}
 
 Alternatively, mixins can be used:
@@ -222,7 +262,7 @@ Alternatively, mixins can be used:
 }
 {% endhighlight %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Centred blocks"
   heading_level=2
   phase="live"
@@ -233,9 +273,7 @@ Alternatively, mixins can be used:
 Use the `.bsk-center-block` class to align a block using CSS margins.
 
 {% example html %}
-<div class="bsk-center-block">
-  <!-- TODO: Add example blocks -->
-</div>
+<div class="bsk-center-block bsk-docs-content-block">...</div>
 {% endexample %}
 
 Alternatively, a mixin can be used:
@@ -246,7 +284,7 @@ Alternatively, a mixin can be used:
 }
 {% endhighlight %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Clearfix"
   heading_level=2
   phase="live"
@@ -269,7 +307,7 @@ Alternatively, a mixin can be used:
 }
 {% endhighlight %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Visibility"
   heading_level=2
   phase="live"
@@ -292,8 +330,9 @@ Invisible
 Screen readers only
 : An element which can only be seen by assistive technologies such as screen readers, and which does not affect the
 page layout
+{: .bsk-dl-lg }
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="General visibility classes"
   heading_level=2
   phase="live"
@@ -314,9 +353,9 @@ Both classes and mixins are available for setting these states generally (i.e. u
 ### Responsive visibility classes
 {: #{{ 'Responsive visibility classes' | slugify }} }
 
-{% include snippets/back-to-top.html %}
+{% include bas-style-kit/bsk-snippet--back-to-top.html %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Responsive visibility classes"
   heading_level=2
   phase="live"
@@ -328,20 +367,35 @@ Both classes and mixins are available for setting these states generally (i.e. u
 As an alternative to the general classes, it's possible to control an elements visibility at each responsive breakpoint.
 Any of these classes can be mixed and matched for each size.
 
-{% alert warning %}
+{% capture alert_content %}
 These classes **should not** be used to display completely different content at different breakpoints. Rather these
 classes **should** be targeted to specific areas or features, generally to hide non-essential information on smaller
 devices.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
-{% alert info %}
+{% capture alert_content %}
 The Invisible and Screen Reader only states doesn't depend on the screen size and so have no per-breakpoint classes.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="outline"
+  content=alert_content
+%}
 
-{% alert info %}
+{% capture alert_content %}
 Unlike grid columns for example, visibility does not flow upwards grid sizes. If you hide an element at the
 *extra small* grid size, it will become visible again at the *small* size.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="outline"
+  content=alert_content
+%}
 
 | Size        | Visible Classes                                                                                  | Hidden Class      |
 | ----------- | ------------------------------------------------------------------------------------------------ |------------------ |
@@ -353,7 +407,7 @@ Unlike grid columns for example, visibility does not flow upwards grid sizes. If
 | Full HD     | `.bsk-visible-fhd-block` <br /> `.bsk-visible-fhd-inline` <br /> `.bsk-visible-fhd-inline-block` | `.bsk-hidden-fhd` |
 {: .bsk-table .bsk-table-responsive }
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Print visibility classes"
   heading_level=2
   phase="live"
@@ -366,7 +420,7 @@ to show content when printing.
 
 Conversely, the `.bsk-hidden-print` class can be used to hide content.
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Test cases"
   heading_level=2
 %}

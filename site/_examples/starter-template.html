@@ -1,5 +1,9 @@
 ---
-title: Starter template
+layout: bas-style-kit/bsk--base
+title: Basic template
+menus:
+  primary_examples:
+    weight: 6
 ---
 
 <!DOCTYPE html>
@@ -11,13 +15,19 @@ title: Starter template
     <!-- The above 3 meta tags *must* come first in the head -->
 
     <!-- Recommended meta tags for SEO -->
-    <title>BAS Style Kit - Starter template</title>
+    <title>BAS Style Kit - Basic template</title>
     <meta name="description" content="A brief description of this page, or application">
 
     <!-- Compiled and minified BAS Style Kit -->
-    {% include snippets/link-css-bas-style-kit-min.html %}
+    <link rel="stylesheet" href="{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/css/bas-style-kit.min.css" integrity="
+  {%- unless jekyll.environment == 'production' -%}
+    {{ site.data.bsk_sri_base_staging['dist/css/bas-style-kit.min.css'] }}
+  {%- else -%}
+    {{ site.data.bsk_sri_base_production['dist/css/bas-style-kit.min.css'] }}
+  {%- endunless -%}" crossorigin="anonymous">
 
     <!-- Site specific styles - optional -->
+    <link rel="stylesheet" href="https://www.example.com/styles.css">
   </head>
   <body>
     <h1>Welcome to the starter template for the BAS Style Kit!</h1>
@@ -29,6 +39,7 @@ title: Starter template
     <!-- Compiled and minified JavaScript plugins provided by the Style Kit -->
     <script src="https://cdn.web.bas.ac.uk/bas-style-kit/0.3.0-alpha/js/bas-style-kit.min.js"></script>
 
-    <!-- Site specific scripts - optionally -->
+    <!-- Site specific scripts - optional -->
+    <script src="https://www.example.com/script.js"></script>
   </body>
 </html>

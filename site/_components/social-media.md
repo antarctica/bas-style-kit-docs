@@ -1,5 +1,8 @@
 ---
 title: Social media
+menus:
+  primary_components:
+    weight: 24
 sections:
   -
     title: Overview
@@ -11,9 +14,7 @@ sections:
     title: Layouts
 ---
 
-{% include snippets/table-of-contents.md %}
-
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Overview"
   heading_level=2
 %}
@@ -22,12 +23,17 @@ Use this component to consistently display links to the social media services BA
 
 Where possible, the BAS Style Kit uses officially provided assets for social media services, such as logos.
 
-{% alert warning style=solid %}
+{% capture alert_content %}
 All brand assets trademarks of their respective owners, and subject to their respective licensing restrictions. <br />
 You **must** ensure that where you use these assets you comply with these restrictions.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="solid"
+  content=alert_content
+%}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Supported services"
   heading_level=2
   phase="live"
@@ -47,16 +53,21 @@ You **must** ensure that where you use these assets you comply with these restri
 [Icon]({{ '/core/icons/#external-service-icons' | prepend: site.baseurl }}) are defined for each supported social media
 service.
 
-{% alert info style=highlight %}
+{% capture alert_content %}
 [Send feedback]({{ "/feedback.html" | prepend: site.baseurl }}){: .bsk-alert-link } if you require other services.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="States"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Static symbols"
   heading_level=3
   phase="live"
@@ -81,7 +92,7 @@ Use the `.bsk-social-media-static` class with the relevant class for each servic
 <div class="bsk-social-media-static bsk-rss"><i class="fa fa-fw fa-3x fa-rss-square"></i><span class="bsk-sr-only">Follow us with RSS</span></div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Linked symbols"
   heading_level=3
   phase="live"
@@ -109,7 +120,7 @@ Use the `.bsk-social-media-link` class with the relevant class for each service,
 ## Layouts
 {: #{{ 'Layouts' | slugify }} }
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="List of symbols"
   heading_level=3
   phase="live"

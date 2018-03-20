@@ -1,5 +1,8 @@
 ---
 title: Reboot
+menus:
+  primary_core:
+    weight: 12
 sections:
   -
     title: Overview
@@ -7,9 +10,7 @@ sections:
     title: Normalise.css
 ---
 
-{% include snippets/table-of-contents.md %}
-
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Overview"
   heading_level=2
 %}
@@ -28,7 +29,7 @@ Other styles which are used in a global fashion, and which are described elsewhe
 
 * the default [font size, family and line spacing]({{ '/core/typography/#typographic base' | prepend: site.baseurl }})
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Normalise.css"
   heading_level=2
 %}

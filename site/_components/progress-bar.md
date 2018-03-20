@@ -1,5 +1,8 @@
 ---
 title: Progress bar
+menus:
+  primary_components:
+    weight: 21
 sections:
   -
     title: Overview
@@ -13,9 +16,7 @@ sections:
     title: Stacked progress bar
 ---
 
-{% include snippets/table-of-contents.md %}
-
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Overview"
   heading_level=2
 %}
@@ -24,22 +25,32 @@ Use the `.bsk-progress-bar` class to indicate the progress of some process or ac
 
 Use the `width` inline CSS property to set the progress of each progress bar.
 
-{% alert warning %}
+{% capture alert_content %}
 Make sure to include the `aria-valuenow`, `aria-valuemin` and `aria-valuemax` attributes as well a
 `<span class="bsk-sr-only">` element. <br /> This provides a non-visual indication of the progress item, suitable for
 assistive technologies.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
-{% alert info %}
+{% capture alert_content %}
 **Heads up!** Progress bar elements are not yet fully styled, but will be in the next version of the Style Kit.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="outline"
+  content=alert_content
+%}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Variants"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Default progress bar"
   heading_level=3
   phase="live"
@@ -55,7 +66,7 @@ assistive technologies.
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Progress bar with label"
   heading_level=3
   phase="live"
@@ -65,9 +76,14 @@ assistive technologies.
 
 Add the progress directly within the progress bar to display the progress as an exact value.
 
-{% alert info style=highlight %}
+{% capture alert_content %}
 You don't need to use a `<span class="bsk-sr-only">` element with an explicit label.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 {% example html %}
 <div class="bsk-progress">
@@ -93,7 +109,7 @@ Where the current progress value is too low to fit visually, add a `minimum-widt
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Contextual colours"
   heading_level=3
   phase="live"
@@ -135,7 +151,7 @@ used for context by adding these classes:
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Stacked progress bar"
   heading_level=3
   phase="live"

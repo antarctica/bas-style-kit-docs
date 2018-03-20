@@ -1,11 +1,6 @@
 ---
-layout: default
 title: Privacy policy
 ---
-
-<header id="site-content" class="bsk-page-header" tabindex="-1">
-    <h1>Privacy policy</h1>
-</header>
 
 We collect information or data about you when you use this website.
 

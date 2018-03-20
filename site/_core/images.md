@@ -1,5 +1,8 @@
 ---
 title: Images
+menus:
+  primary_core:
+    weight: 8
 sections:
   -
     title: Responsive images
@@ -7,9 +10,7 @@ sections:
     title: Image shapes
 ---
 
-{% include snippets/table-of-contents.md %}
-
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Responsive images"
   heading_level=2
   phase="live"
@@ -24,7 +25,7 @@ Use the `.bsk-img-responsive` class to scale images nicely within their parent e
 <img class="bsk-img-responsive" src="{{ '/img/site-masthead-tom-welsh.jpg' | prepend: site.baseurl }}" alt="Sky at Halley VI research station">
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Image shapes"
   heading_level=2
   phase="live"

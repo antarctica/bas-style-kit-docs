@@ -1,5 +1,8 @@
 ---
 title: Forms
+menus:
+  primary_core:
+    weight: 5
 sections:
   -
     title: Form controls
@@ -19,9 +22,7 @@ sections:
     title: Examples
 ---
 
-{% include snippets/table-of-contents.md %}
-
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Form fields"
   heading_level=2
   phase="live"
@@ -32,27 +33,42 @@ sections:
 A form field is made up of a form control (such as an input or textarea) with an accompanying label to explain what
 each field is for.
 
-{% alert warning %}
+{% capture alert_content %}
 All form fields should have a label to make sure they can be understood by assistive technologies.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
-{% alert info %}
+{% capture alert_content %}
 For styling across devices and browsers, form controls should use the `.form-control` class and labels `.control-label`.
 Each form field should be be wrapped in a
 [from group]({{ '/core/forms/#form-groups-and-fieldsets' | prepend: site.baseurl }}){: .bsk-alert-link } to
 structurally separate each form field.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="outline"
+  content=alert_content
+%}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Form controls"
   heading_level=2
 %}
 
-{% alert info %}
+{% capture alert_content %}
 **Heads up!** Form control elements are not yet fully styled, but will be in the next version of the Style Kit.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="outline"
+  content=alert_content
+%}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Inputs"
   heading_level=3
   phase="live"
@@ -79,16 +95,26 @@ Form inputs are the most common form control. Supported types are listed below a
 * tel
 * color
 
-{% alert warning %}
+{% capture alert_content %}
 It is a requirement of the HTML5 specification to declare a type for every form input, even if it's just a text input.
 Form elements won't be styled correctly without a supported type.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
-{% alert info style=highlight %}
+{% capture alert_content %}
 Support for newer input types such as datetime varies significantly between devices and browsers. It is still
 recommended use these newer types for forwards-compatibility, especially on mobile devices.
-See [this MDN page](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) for more information.
-{% endalert %}
+See [this guidance](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input) for more information.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 {% example html %}
 <form>
@@ -104,7 +130,7 @@ See [this MDN page](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/in
 </form>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Textareas"
   heading_level=3
   phase="live"
@@ -128,7 +154,7 @@ The height of a text area can be set using the `rows` attribute
 </form>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Selects"
   heading_level=3
   phase="live"
@@ -141,9 +167,14 @@ Select elements allow one option to be chosen by default, add the `multiple` att
 For single selects, the first option will be selected by default. Set the `selected` attribute on another option to
 change this.
 
-{% alert info style=highlight %}
+{% capture alert_content %}
 Select elements have quite stubborn browser styling, such as rounded corners, which is difficult to override.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 {% example html %}
 <form>
@@ -169,7 +200,7 @@ Select elements have quite stubborn browser styling, such as rounded corners, wh
 </form>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="File inputs"
   heading_level=3
   phase="live"
@@ -179,9 +210,14 @@ Select elements have quite stubborn browser styling, such as rounded corners, wh
 
 For file inputs use `.bsk-form-control-file` instead of `.bsk-form-control`.
 
-{% alert info style=highlight %}
+{% capture alert_content %}
 Field input elements have quite stubborn browser styling, such as rounded corners, which are difficult to override.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 {% example html %}
 <form>
@@ -192,7 +228,7 @@ Field input elements have quite stubborn browser styling, such as rounded corner
 </form>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Radio options and checkboxes"
   heading_level=3
   phase="live"
@@ -205,10 +241,15 @@ Checkboxes allow multiple options to be chosen, radio options allow only one. Us
 
 To pre-select an option set the `checked` attribute.
 
-{% alert info %}
+{% capture alert_content %}
 **Heads up!** Radio options and checkbox elements are not yet fully styled, but will be in the next version of the
 Style Kit.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="outline"
+  content=alert_content
+%}
 
 {% example html %}
 <form>
@@ -256,7 +297,7 @@ Style Kit.
 </form>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Inline radio options and checkboxes"
   heading_level=3
   phase="live"
@@ -267,10 +308,15 @@ Style Kit.
 Radio options and checkboxes can be shown inline (i.e. side-by-side rather than stacked) using the
 `.bsk-checkbox-inline` and `.bsk-radio-inline` classes **instead** of the standard classes.
 
-{% alert info %}
+{% capture alert_content %}
 **Heads up!** Inline radio options and checkbox elements are not yet fully styled, but will be in the next version of
 the Style Kit.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="outline"
+  content=alert_content
+%}
 
 {% example html %}
 <form>
@@ -318,7 +364,7 @@ the Style Kit.
 </form>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Form buttons"
   heading_level=3
   phase="live"
@@ -335,7 +381,7 @@ Form buttons, such as the form submission button, are styled the same way as
 </form>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Static control"
   heading_level=3
   phase="live"
@@ -354,18 +400,18 @@ Static controls can be used to represent pre-computed, or locked values within a
     </div>
     <div class="bsk-form-group">
       <label class="bsk-control-label" for="form-static-example-2">Reporter email</label>
-      <p class="bsk-form-control-static" id="form-static-example-2">admin.smith@bas.ac.uk</p>
+      <p class="bsk-form-control-static" id="form-static-example-2">john.smith@example.co.uk</p>
     </div>
   </fieldset>
 </form>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Form layouts"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Form groups and fieldsets"
   heading_level=3
   phase="live"
@@ -394,14 +440,14 @@ Where a form field is standalone, use a <code>&lt;fieldset&gt;</code>. For a gro
     </div>
     <div class="bsk-form-group">
       <label class="bsk-control-label" for="form-group-example-3">Your email address</label>
-      <input type="email" class="bsk-form-control" id="form-group-example-3" placeholder="adam.smith@bas.ac.uk">
+      <input type="email" class="bsk-form-control" id="form-group-example-3" placeholder="john.smith@example.co.uk">
       <p class="bsk-help-block bsk-text-muted">We will only use this information for contacting you about your feedback.</p>
     </div>
   </fieldset>
 </form>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Horizontal forms"
   heading_level=3
   phase="live"
@@ -413,10 +459,15 @@ Use the `.bsk-form-horizontal` class to display labels and controls side-by-side
 [grid system]({{ '/core/grid/' | prepend: site.baseurl }}). Ensure all labels use the `.control-label` class for best
 results.
 
-{% alert info %}
+{% capture alert_content %}
 When using a <code>&lt;fieldset&gt;</code> with a <code>&lt;legend&gt;</code>, apply the `.bsk-form-group` class to an
 inner <code>&lt;div&gt;</code> to prevent the <code>&lt;legend&gt;</code> from appearing to overflow horizontally.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="outline"
+  content=alert_content
+%}
 
 {% example html %}
 <form class="bsk-form-horizontal">
@@ -481,13 +532,13 @@ inner <code>&lt;div&gt;</code> to prevent the <code>&lt;legend&gt;</code> from a
     <div class="bsk-form-group">
       <label class="bsk-control-label bsk-col-12-md-2" for="form-horizontal-example-3">Your name</label>
       <div class="bsk-col-12-md-10">
-        <input type="text" class="bsk-form-control" id="form-horizontal-example-3" placeholder="Adam Smith">
+        <input type="text" class="bsk-form-control" id="form-horizontal-example-3" placeholder="John Smith">
       </div>
     </div>
     <div class="bsk-form-group">
       <label class="bsk-control-label bsk-col-12-md-2" for="form-horizontal-example-4">Your email address</label>
       <div class="bsk-col-12-md-10">
-        <input type="email" class="bsk-form-control" id="form-horizontal-example-4" placeholder="adam.smith@bas.ac.uk">
+        <input type="email" class="bsk-form-control" id="form-horizontal-example-4" placeholder="john.smith@example.co.uk">
         <p class="bsk-help-block bsk-text-muted">We will only use this information for contacting you about your feedback.</p>
       </div>
     </div>
@@ -495,7 +546,7 @@ inner <code>&lt;div&gt;</code> to prevent the <code>&lt;legend&gt;</code> from a
 </form>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Inline forms"
   heading_level=3
   phase="live"
@@ -505,15 +556,25 @@ inner <code>&lt;div&gt;</code> to prevent the <code>&lt;legend&gt;</code> from a
 
 Use the `.bsk-form-inline` class to display labels and controls in a single horizontal row.
 
-{% alert warning %}
+{% capture alert_content %}
 Some manual sizing may be needed for inline forms, ensure thorough testing at a range of grid sizes.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
-{% alert info %}
+{% capture alert_content %}
 On small devices (smaller than 768 pixels) form fields will always stack.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="outline"
+  content=alert_content
+%}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Visible labels"
   heading_level=4
 %}
@@ -523,7 +584,7 @@ On small devices (smaller than 768 pixels) form fields will always stack.
   <fieldset>
     <div class="bsk-form-group">
       <label class="bsk-control-label" for="form-inline-example-1">Username</label>
-      <input type="text" class="bsk-form-control" id="form-inline-example-1" placeholder="adam.smith@bas.ac.uk">
+      <input type="text" class="bsk-form-control" id="form-inline-example-1" placeholder="john.smith@example.co.uk">
     </div>
     <div class="bsk-form-group">
       <label class="bsk-control-label" for="form-inline-example-2">Password</label>
@@ -542,7 +603,7 @@ On small devices (smaller than 768 pixels) form fields will always stack.
 </form>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Invisible labels"
   heading_level=4
 %}
@@ -550,21 +611,31 @@ On small devices (smaller than 768 pixels) form fields will always stack.
 It is strongly recommended to include visible labels for each form field (the `placeholder` attribute is not
 universally supported yet for example).
 
-{% alert warning %}
+{% capture alert_content %}
 Where labels are hidden, the `.bsk-sr-only` class **should** always be used to ensure assistive technologies can
 understand forms. Alternatively, you can use the `aria-label`, `aria-labelledby` or `title` attributes.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
-{% alert warning %}
+{% capture alert_content %}
 Labels **should** always be visible for checkboxes and radio options, to indicate what they do.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
 {% example html %}
 <form class="bsk-form-inline">
   <fieldset>
     <div class="bsk-form-group">
       <label class="bsk-sr-only" for="form-inline-example-1">Username</label>
-      <input type="text" class="bsk-form-control" id="form-inline-example-1" placeholder="adam.smith@bas.ac.uk">
+      <input type="text" class="bsk-form-control" id="form-inline-example-1" placeholder="john.smith@example.co.uk">
     </div>
     <div class="bsk-form-group">
       <label class="bsk-sr-only" for="form-inline-example-2">Password</label>
@@ -585,12 +656,12 @@ Labels **should** always be visible for checkboxes and radio options, to indicat
 
 {: #{{ 'Form sizing' | slugify }} }
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Form sizing"
   heading_level=3
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Width"
   heading_level=4
   phase="live"
@@ -602,13 +673,23 @@ The width of each form field, control or label can all be controlled using the
 [grid system]({{ '/core/grid' | prepend: site.baseurl }}), as demonstrated by the
 [horizontal form layout]({{ '/core/forms/#horizontal-forms' | prepend: site.baseurl }}).
 
-{% alert warning %}
+{% capture alert_content %}
 Don't apply grid classes directly to form controls, instead wrap them in a <code>&lt;div&gt;</code> element.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
-{% alert info %}
+{% capture alert_content %}
 Make sure to use `.control-label` to ensure all labels are virtually aligned.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="outline"
+  content=alert_content
+%}
 
 {% example html %}
 <form>
@@ -633,7 +714,7 @@ Make sure to use `.control-label` to ensure all labels are virtually aligned.
 </form>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Form control sizing"
   heading_level=4
   phase="live"
@@ -668,7 +749,7 @@ Add one of these classes to alter the size of a form control:
 </form>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Element states"
   heading_level=2
   phase="live"
@@ -676,7 +757,7 @@ Add one of these classes to alter the size of a form control:
   included="yes"
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Disabled state"
   heading_level=3
   phase="live"
@@ -688,25 +769,37 @@ Use the `disabled` attribute to mark a form field as disabled. This will prevent
 'not-allowed', and alter the field's appearance. In most browsers, setting the `disabled` attribute on a
 <code>&lt;fieldset&gt;</code> will disable all of the fields it contains.
 
-<div class="bsk-alert bsk-alert-solid bsk-alertdanger bsk-alert-block bsk-alert-icon">
+<div class="bsk-alert bsk-alert-solid bsk-alert-danger bsk-alert-block bsk-alert-icon">
   <header class="bsk-alert-heading">
-    <h4><i class="fa fa-fw fa-exclamation-circle bsk-alert-icon"></i>
-    It is not safe to rely on this state to prevent users activating disabled actions</h4>
+    <div class="bsk-h4">
+      <i class="fa fa-fw fa-exclamation-circle bsk-alert-icon"></i>
+      It is not safe to rely on this state to prevent users activating disabled actions
+    </div>
   </header>
   <p>Browsers may not enforce these properties, or users may trivially edit the DOM. Server side protections
    <strong>must</strong> be used for dangerous actions.</p>
 </div>
 
-{% alert danger %}
+{% capture alert_content %}
 Not all browsers fully support setting the `disabled` attribute on a
 <code>&lt;fieldset&gt;</code>. To work around this, either apply the `disabled` attribute on form fields directly, or
 use JavaScript to disable them.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="danger"
+  style="outline"
+  content=alert_content
+%}
 
-{% alert danger %}
+{% capture alert_content %}
 Links, including links styled as buttons, within disabled fieldsets may not be enforced by all browsers. To work around
 this, either apply the `disabled` attribute on links directly, or use JavaScript to disable them.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="danger"
+  style="outline"
+  content=alert_content
+%}
 
 {% example html %}
 <form>
@@ -731,7 +824,7 @@ this, either apply the `disabled` attribute on links directly, or use JavaScript
 </form>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Readonly state"
   heading_level=3
   phase="live"
@@ -744,8 +837,10 @@ appearance, but won't change the cursor.
 
 <div class="bsk-alert bsk-alert-block bsk-alert-outline bsk-alert-warning bsk-alert-icon">
   <header class="bsk-alert-heading">
-    <h4><i class="fa fa-fw fa-exclamation-triangle bsk-alert-icon" aria-hidden="true"></i>
-    Not all form elements support this value</h4>
+    <div class="bsk-h4">
+      <i class="fa fa-fw fa-exclamation-triangle bsk-alert-icon" aria-hidden="true"></i>
+      Not all form elements support this value
+    </div>
   </header>
   <ul>
     <p>Exceptions include:</p>
@@ -778,7 +873,7 @@ appearance, but won't change the cursor.
 </form>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Help text"
   heading_level=2
   phase="live"
@@ -789,11 +884,16 @@ appearance, but won't change the cursor.
 Add context or other guidance to form fields, or more generally to sections of a form, using a combination of
 `.bsk-help-block` and `.bsk-text-muted`.
 
-{% alert warning %}
+{% capture alert_content %}
 Where help text relates to a specific form field,
 [the `aria-describedby` attribute should be used]({{ '/start/standards-accessibility/#contextual-help-text' | prepend: site.baseurl }}){: .bsk-alert-link }
 to inform assistive technologies, such as screen readers.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
 {% example html %}
 <form>
@@ -810,14 +910,14 @@ to inform assistive technologies, such as screen readers.
     </div>
     <div class="bsk-form-group">
         <label class="bsk-control-label" for="form-help-example-2">Your email address</label>
-        <input type="email" class="bsk-form-control" id="form-help-example-2" placeholder="adam.smith@bas.ac.uk">
+        <input type="email" class="bsk-form-control" id="form-help-example-2" placeholder="john.smith@example.co.uk">
         <p class="bsk-help-block bsk-text-muted">We will only use this information for contacting you about your feedback.</p>
     </div>
   </fieldset>
 </form>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Validation"
   heading_level=2
   phase="live"
@@ -829,11 +929,16 @@ The Style Kit includes validation classes, based on the
 [standard contextual colours]({{ '/core/colours/#standard-contextual-colours'}}). Apply to the parent of form fields,
 such as `.bsk-form-group`, for best effect.
 
-{% alert info %}
+{% capture alert_content %}
 It is strongly recommended to include a validation message, with the appropriate
 [standard contextual icon]({{ '/core/icons/#standard-contextual-icons' | prepend: site.baseurl }}){: .bsk-alert-link }
 where there is a validation warning or failure.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="outline"
+  content=alert_content
+%}
 
 | Validation State    | Validation Class     | Associated Standard Context |
 | ------------------- | -------------------- | --------------------------- |
@@ -846,29 +951,36 @@ where there is a validation warning or failure.
 <form>
   <fieldset class="bsk-form-group bsk-has-success">
       <label class="bsk-control-label" for="form-validation-example-1">Your email address</label>
-      <input type="email" class="bsk-form-control" id="form-validation-example-1" value="adam.smith@bas.ac.uk">
-      <p class="bsk-help-block bsk-text-muted">We will only use this information for contacting you about your feedback.</p>
+      <input type="email" class="bsk-form-control" id="form-validation-example-1" value="john.smith@example.co.uk">
+      <p class="bsk-help-block bsk-text-muted">
+        We will only use this information for contacting you about your feedback.
+      </p>
   </fieldset>
 
   <fieldset class="bsk-form-group bsk-has-warning">
       <label class="bsk-control-label" for="form-validation-example-2">Your email address</label>
-      <input type="email" class="bsk-form-control" id="form-validation-example-2" value="adam.smith@bas.acc.uk">
-      <p class="bsk-help-block bsk-text-muted">We will only use this information for contacting you about your feedback.</p>
-      <p class="bsk-help-block bsk-text-muted"><i class="fa fa-fw fa-exclamation-triangle" aria-hidden="true"></i> Did you mean
-      <em>adam.smith@bas.<strong>ac</strong>.uk</em>, rather than <em>adam.smith@bas.<strong>acc</strong>.uk</em>?</p>
+      <input type="email" class="bsk-form-control" id="form-validation-example-2" value="john.smith@example.c.uk">
+      <p class="bsk-help-block bsk-text-muted">
+        We will only use this information for contacting you about your feedback.
+      </p>
+      <p class="bsk-help-block bsk-text-muted">
+        <i class="fa fa-fw fa-exclamation-triangle" aria-hidden="true"></i>
+        Did you mean <em>john.smith@example.<strong>co</strong>.uk</em>,
+        rather than <em>john.smith@bas.<strong>c</strong>.uk</em>?
+      </p>
   </fieldset>
 
   <fieldset class="bsk-form-group bsk-has-error">
       <label class="bsk-control-label" for="form-validation-example-3">Your email address</label>
-      <input type="email" class="bsk-form-control" id="form-validation-example-3" value="adam.smith" aria-invalid="true">
+      <input type="email" class="bsk-form-control" id="form-validation-example-3" value="john.smith" aria-invalid="true">
       <p class="bsk-help-block bsk-text-muted">We will only use this information for contacting you about your feedback.</p>
-      <p class="bsk-help-block bsk-text-muted"><i class="fa fa-fw fa-exclamation-circle" aria-hidden="true"></i> <em>adam.smith</em>,
+      <p class="bsk-help-block bsk-text-muted"><i class="fa fa-fw fa-exclamation-circle" aria-hidden="true"></i> <em>john.smith</em>,
       is not a valid email address.</p>
   </fieldset>
 </form>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Examples"
   heading_level=2
 %}

@@ -1,6 +1,9 @@
 ---
 sort_index: 3
 title: Standards and Accessibility
+menus:
+  primary_start:
+    weight: 4
 sections:
   -
     title: Browser support
@@ -20,9 +23,7 @@ sections:
     title: Useful resources
 ---
 
-{% include snippets/table-of-contents.md %}
-
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Overview"
   heading_level=2
 %}
@@ -33,21 +34,24 @@ possible.
 This is best achieved by properly structuring content and following industry best practices. This ensures our
 content is readable by those with accessibility requirements, such as screen readers, and by search engines.
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Browser support"
   heading_level=2
 %}
 
-{% include snippets/back-to-top.html %}
-
 In general, the BAS Style Kit aims to support all browsers supported by Bootstrap. This means the latest, stable,
 releases of all major browsers (subject to any caveats below) are supported.
 
-{% alert info style=highlight %}
+{% capture alert_content %}
 The Style Kit supports Internet Explorer 10 and above.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="HTML5"
   heading_level=2
 %}
@@ -56,11 +60,16 @@ The BAS Style Kit is designed to work with the [HTML5](https://developer.mozilla
 document type. This is latest version of the HTML standard, supported by all major browsers, and includes new elements,
 attributes and technologies to provide better accessibility and enable new uses such as desktop like web applications.
 
-{% alert warning style=highlight %}
+{% capture alert_content %}
 Whilst the use of this document type is technically optional, no support is offered for other doc types.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="highlight"
+  content=alert_content
+%}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="CSS3"
   heading_level=2
 %}
@@ -73,7 +82,7 @@ It is supported by all major browsers, and includes new layout options, such as
 for [rounded corners](https://developer.mozilla.org/en/docs/Web/CSS/border-radius) and
 [animations](https://developer.mozilla.org/en/docs/Web/CSS/animation) for example.
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Responsiveness and Mobile First"
   heading_level=2
 %}
@@ -95,15 +104,20 @@ Responsiveness is enabled in the Style Kit using the `viewport` meta tag, as sho
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 {% endhighlight %}
 
-{% alert info style=highlight %}
+{% capture alert_content %}
 If you use the [examples]({{ '/examples' | prepend: site.baseurl }}){: .bsk-alert-link } from this documentation, this
 meta tag will be included.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 See the [responsive breakpoints]({{ '/core/layout/#responsive-breakpoints' | prepend: site.baseurl }}) section for more
 information.
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Colour contrast"
   heading_level=2
 %}
@@ -111,12 +125,12 @@ information.
 The colour contrast for text and any interactive elements **should** be at least *4:5:1*, as recommended by GDS and the
 [W3C](http://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html).
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Providing context"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Conveying context without colours or icons"
   heading_level=3
 %}
@@ -132,7 +146,7 @@ Ideally [contextual colours]({{ '/core/colours/#standard-contextual-colours' | p
 [icons]({{ '/core/icons/#standard-contextual-icons' | prepend: site.baseurl }}) should only be needed for reinforcing
 meaning that is already present in text or other markup.
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Link context and roles"
   heading_level=3
 %}
@@ -143,7 +157,7 @@ content, make sure to add `role="button"` to provide suitable context to assisti
 Where a button (whether an actual button or a link element styled as such) uses the `.bsk-active` state, add
 `aria-pressed="true"` as well to convey this context to assistive technologies.
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Contextual help text"
   heading_level=3
 %}
@@ -160,7 +174,7 @@ used as well.
 
 See the [form help text]({{ '/core/forms/#help-text' | prepend: site.baseurl }}) section for an example.
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Validation stages"
   heading_level=3
 %}
@@ -180,7 +194,7 @@ For forms, where a form field is invalid, the `aria-invalid` attribute should be
 
 See the [form validation]({{ '/core/forms/#validation' | prepend: site.baseurl }}) section for an example.
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Skip navigation context and roles"
   heading_level=2
 %}
@@ -190,17 +204,27 @@ Where a page begins with many navigation links, such as a navbar, a link to skip
 This link can be hidden to non-screen readers using the `.sr-only` class, and requires a page structure such as the one
 shown below.
 
-{% alert warning %}
+{% capture alert_content %}
 Due to browser bugs, the target of the skip navigation link **must** set the `tabindex` attribute to `-1` to work
 correctly.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
-{% alert info style=highlight %}
+{% capture alert_content %}
 As a side effect of using the `tabindex` workaround recommended above, it is necessary to disable the outline that shows
 on interactive elements due to the browser inferring anything with a tab index is also interactive, which is not the case
 for elements such as <code>&lt;body&gt;</code>. The Style Kit disables this outline automatically on the
 <code>&lt;body&gt;</code> element, this just explains why we do so.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 {% highlight html %}
 <body>
@@ -214,7 +238,7 @@ for elements such as <code>&lt;body&gt;</code>. The Style Kit disables this outl
 
 For more information, see [this article](http://a11yproject.com/posts/skip-nav-links/) from the A11Y Project.
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Useful resources"
   heading_level=2
 %}

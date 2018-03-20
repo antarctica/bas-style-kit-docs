@@ -1,5 +1,8 @@
 ---
 title: Drop down
+menus:
+  primary_components:
+    weight: 7
 sections:
   -
     title: Overview
@@ -23,9 +26,7 @@ sections:
     title: Drop-down alignment
 ---
 
-{% include snippets/table-of-contents.md %}
-
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Overview"
   heading_level=2
 %}
@@ -36,12 +37,17 @@ Use the `.bsk-dropdown` class to create a menu that appears when triggered by a
 Drop-down menus are `ul` list elements, containing a set of links and other
 [components]({{ '/components/drop-down/#components' | prepend: site.baseurl }}).
 
-{% alert info style=solid %}
+{% capture alert_content %}
 Interactive drop-downs require the [drop-down]({{ '/interactivity/drop-down' | prepend: site.baseurl }}){: .bsk-alert-link }
 JavaScript plugin, which is enabled on this site.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="solid"
+  content=alert_content
+%}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Supported elements"
   heading_level=2
 %}
@@ -49,7 +55,7 @@ JavaScript plugin, which is enabled on this site.
 These elements are supported for triggering a drop-down menu. Other elements may be used, but are not supported and may
 not look right.
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Button drop-down"
   heading_level=3
   phase="live"
@@ -69,7 +75,7 @@ not look right.
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Split-button drop-down"
   heading_level=3
   phase="live"
@@ -91,7 +97,7 @@ not look right.
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Navbar item drop-down"
   heading_level=3
   phase="live"
@@ -102,12 +108,12 @@ not look right.
 See the [navbar]({{ '/components/navbar/#drop-down-menus' | prepend: site.baseurl }}) documentation for using drop-downs
 in Navbar items.
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Variants"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Default drop-down"
   heading_level=3
   phase="live"
@@ -127,7 +133,7 @@ in Navbar items.
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Reverse drop-down"
   heading_level=3
   phase="live"
@@ -149,12 +155,12 @@ Use the `.bsk-dropup` class, rather than `.bsk-dropdown` to have the drop-down m
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Components"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Link"
   heading_level=3
   phase="live"
@@ -171,7 +177,7 @@ Use the `.bsk-dropup` class, rather than `.bsk-dropdown` to have the drop-down m
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Divider"
   heading_level=3
   phase="live"
@@ -192,7 +198,7 @@ Use the `.dropdown-divider` class on a drop-down item.
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Header"
   heading_level=3
   phase="live"
@@ -212,12 +218,12 @@ Use the `.bsk-dropdown-header` class on a drop-down item.
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="States"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Active item"
   heading_level=3
   phase="live"
@@ -232,9 +238,14 @@ Make sure to include a `<span class="bsk-sr-only">(current)</span>` element as w
 This provides a non-visual indication of the currently active item, suitable for assistive technologies.
 {: .alert .alert-warning }
 
-{% alert info style=highlight %}
+{% capture alert_content %}
 **Heads up!** Active drop-down item elements are not yet fully styled, but will be in the next version of the Style Kit.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
 {% example html %}
 <div class="bsk-dropdown bsk-docs-dropdown-example">
@@ -245,7 +256,7 @@ This provides a non-visual indication of the currently active item, suitable for
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Disabled item"
   heading_level=3
   phase="live"
@@ -271,7 +282,7 @@ This provides a non-visual indication of the currently active item, suitable for
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Layouts"
   heading_level=3
   phase="live"
@@ -279,7 +290,7 @@ This provides a non-visual indication of the currently active item, suitable for
   included="yes"
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Drop-down alignment"
   heading_level=3
   phase="live"

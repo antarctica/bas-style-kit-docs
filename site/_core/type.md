@@ -1,5 +1,8 @@
 ---
 title: Typography
+menus:
+  primary_core:
+    weight: 14
 sections:
   -
     title: Typographic base
@@ -33,9 +36,16 @@ sections:
     title: Transformations
 ---
 
-{% include snippets/table-of-contents.md %}
+{% capture alert_content %}
+The table of contents for this page will appear broken as it includes headings used in examples.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="outline"
+  content=alert_content
+%}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Typographic base"
   heading_level=2
   phase="live"
@@ -51,7 +61,7 @@ These styles are applied globally, and are usually inherited by other styles, to
 * a default font family, which applies to most elements, is set to `"Open Sans", "Helvetica Neue", Helvetica, Arial,
 sans-serif`
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Font families"
   heading_level=2
   phase="live"
@@ -74,9 +84,14 @@ For each family, a series of fall-back fonts are defined where the primary fonts
 | Monotype    | Menlo        | Monaco, Consolas, "Courier New", *monospace*     |
 {: .bsk-table .bsk-table-responsive }
 
-{% alert info %}
+{% capture alert_content %}
 Fall-back fonts shown in *italics* will depend on the browser and operating system used.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="outline"
+  content=alert_content
+%}
 
 For each family, a series of variants are defined for styles such as italics and bold.
 
@@ -97,7 +112,7 @@ For each family, a series of variants are defined for styles such as italics and
 | Monotype (Menlo)    | Regular | Regular     | <span>Menlo regular regular</span>{: .bsk-docs-font-sample-menlo-regular }         |
 {: .bsk-table .bsk-table-responsive }
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="BAS brand font"
   heading_level=3
   phase="live"
@@ -110,17 +125,24 @@ into official BAS websites and applications, in high impact areas such as headin
 
 <div class="bsk-alert bsk-alert-solid bsk-alert-warning bsk-alert-block bsk-alert-icon">
   <header class="bsk-alert-heading">
-    <h4><i class="fa fa-fw fa-exclamation-triangle bsk-alert-icon"></i>
-    Gill Sans is a licensed work and may not be used without a license</h4>
+    <div class="bsk-h4">
+      <i class="fa fa-fw fa-exclamation-triangle bsk-alert-icon"></i>
+      Gill Sans is a licensed work and may not be used without a license
+    </div>
   </header>
   <p>BAS has a license to use this font its official websites and applications. This license
   <strong>does not cover</strong> non-BAS projects, including personal projects of BAS Staff.</p>
 </div>
 
-{% alert info %}
-If you are unsure whether a website or application can use the BAS license, contact the
-[Web & Applications Team](mailto:webapps@bas.ac.uk){: .bsk-alert-link }.
-{% endalert %}
+{% capture alert_content %}
+Contact the [Web & Applications Team](mailto:servicedesk@bas.ac.uk){: .bsk-alert-link } if you are unsure whether a
+website or application can use the BAS license.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 The brand font is applied to these elements:
 
@@ -132,7 +154,7 @@ The brand font is applied to these elements:
 | [Headings]({{ '/core/type/#headings' | prepend: site.baseurl }}) | `h1, h2, h3, h4, h5, h6, .bsk-h1, .bsk-h2, .bsk-h3, .bsk-h4, .bsk-h5, .bsk-h6` | Gill Sans Book  | *N/A*             |
 {: .bsk-table .bsk-table-responsive }
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Headings"
   heading_level=2
   phase="live"
@@ -140,9 +162,14 @@ The brand font is applied to these elements:
   included="yes"
 %}
 
-{% alert info style=highlight %}
+{% capture alert_content %}
 In addition to heading elements, you can also use `.bsk-h1` - `.bsk-h6` classes for styling other elements as headings.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 {% example html %}
 <h1>Heading 1</h1>
@@ -159,7 +186,7 @@ De carne animata corpora quaeritis.
 De carne animata corpora quaeritis.
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Secondary header text"
   heading_level=3
   phase="live"
@@ -184,7 +211,7 @@ De carne animata corpora quaeritis.
 De carne animata corpora quaeritis.
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Paragraphs"
   heading_level=2
   phase="live"
@@ -201,7 +228,7 @@ that enables scientists from the UK, and colleagues from many nations, to work s
 regions.</p>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Lead paragraphs"
   heading_level=3
   phase="live"
@@ -217,7 +244,7 @@ that enables scientists from the UK, and colleagues from many nations, to work s
 regions.</p>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Links"
   heading_level=2
   phase="live"
@@ -230,7 +257,7 @@ These styles are applied globally, and are usually inherited by other styles, to
 * a [default link colour]({{ '/core/colours/#typography' | prepend: site.baseurl }}), `$link-color`, is set
 * an underline is applied on hover
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Inline text elements"
   heading_level=2
   phase="live"
@@ -251,11 +278,16 @@ These styles are applied globally, and are usually inherited by other styles, to
 <p>Use the <code>&lt;em&gt;</code> tag for <em>italicised text</em>.</p>
 {% endexample %}
 
-{% alert info style=highlight %}
+{% capture alert_content %}
 The <code>&lt;i&gt;</code> tag is also recommended for icons.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Abbreviations"
   heading_level=2
   phase="live"
@@ -270,7 +302,7 @@ Use to explain/expand abbreviations and acronyms. Additional styles will be appl
 global problems.
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Blockquotes"
   heading_level=2
   phase="live"
@@ -289,7 +321,7 @@ Use for quotes, or highlighting portions of an article (pull-quotes).
 </blockquote>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Blockquotes with a source"
   heading_level=3
   phase="live"
@@ -311,7 +343,7 @@ Use a <code>&lt;cite&gt;</code> wrapped in a <code>&lt;footer&gt;</code> to add 
 </blockquote>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Reversed blockquotes"
   heading_level=3
   phase="live"
@@ -333,7 +365,7 @@ Blockquotes can be aligned right using `.bsk-blockquote-reverse`.
 </blockquote>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Addresses"
   heading_level=2
   phase="live"
@@ -356,13 +388,13 @@ Provides formatting for addresses or contact information. Use <code>&lt;br&gt;</
 </address>
 
 <address>
-  <strong>Alex Tate</strong><br>
-  Head of Information Services<br>
-  <i class="fa fa-fw fa-envelope" aria-hidden="true"></i> <abbr title="Email address">Email:</abbr> <a href="mailto:#">ajtate@bas.com</a>
+  <strong>Connie Watson</strong><br>
+  Atmospheric Chemist<br>
+  <i class="fa fa-fw fa-envelope" aria-hidden="true"></i> <abbr title="Email address">Email:</abbr> <a href="mailto:#">conwat@bas.com</a>
 </address>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Primary text"
   heading_level=2
   phase="live"
@@ -374,7 +406,7 @@ Provides formatting for addresses or contact information. Use <code>&lt;br&gt;</
 <p class="bsk-text-primary">De carne animata corpora quaeritis.</p>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Experimental text"
   heading_level=2
   phase="live"
@@ -386,7 +418,7 @@ Provides formatting for addresses or contact information. Use <code>&lt;br&gt;</
 <p class="bsk-text-experimental">De carne animata corpora quaeritis.</p>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Contextual colours"
   heading_level=2
   phase="live"
@@ -405,10 +437,15 @@ used to apply context to text using these classes:
 | Info             | `.bsk-text-info`          |
 {: .bsk-table .bsk-table-responsive }
 
-{% alert warning %}
+{% capture alert_content %}
 In some edge cases these styles will be over-ridden by other styles, wrapping text in a <code>&lt;span&gt;</code>
 should fix this.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
 {% example html %}
 <p class="bsk-text-success">De carne animata corpora quaeritis.</p>
@@ -417,7 +454,7 @@ should fix this.
 <p class="bsk-text-info">De carne animata corpora quaeritis.</p>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Alignment"
   heading_level=2
   phase="live"
@@ -433,7 +470,7 @@ should fix this.
 <p class="bsk-text-nowrap">De carne animata corpora quaeritis.</p>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Transformations"
   heading_level=2
   phase="live"

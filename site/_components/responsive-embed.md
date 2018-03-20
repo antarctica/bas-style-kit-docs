@@ -1,5 +1,8 @@
 ---
 title: Responsive embed
+menus:
+  primary_components:
+    weight: 22
 sections:
   -
     title: Overview
@@ -11,9 +14,7 @@ sections:
     title: Responsive embed 4:3
 ---
 
-{% include snippets/table-of-contents.md %}
-
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Overview"
   heading_level=2
 %}
@@ -23,16 +24,26 @@ them.
 
 Use the `.bsk-embed-responsive-item` class for the video or other meida item itself.
 
-{% alert warning style=solid %}
+{% capture alert_content %}
 You **must** pick a [variant]({{ '/core/responsive-embed/#variants' | prepend: site.baseurl }}){: .bsk-alert-link } for
 each responsive embed, otherwise it will look strange. It is not enough to use `.bsk-embed-responsive` on its own.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="solid"
+  content=alert_content
+%}
 
-{% alert info style=highlight %}
+{% capture alert_content %}
 You don't need to include `frameborder="0"` on embedded items, as the Style Kit will add this for you.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Supported elements"
   heading_level=3
   phase="live"
@@ -47,12 +58,12 @@ This component is supported when used with these elements:
 * <code>&lt;video&gt;</code>
 * <code>&lt;object&gt;</code>
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Variants"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Responsive embed 16:9"
   heading_level=3
   phase="live"
@@ -72,7 +83,7 @@ This component is supported when used with these elements:
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Responsive embed 4:3"
   heading_level=3
   phase="live"

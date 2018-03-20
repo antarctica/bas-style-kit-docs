@@ -1,6 +1,8 @@
 ---
-layout: topic
 title: Visibility examples
+menus:
+  primary_examples:
+    weight: 4
 sections:
   -
     title: Current breakpoint
@@ -8,12 +10,10 @@ sections:
     title: Visible classes
 ---
 
-{% include snippets/table-of-contents.md %}
-
 ## Current breakpoint
 {: #{{ 'Current breakpoint' | slugify }} }
 
-{% include snippets/back-to-top.html %}
+{% include bas-style-kit/bsk-snippet--back-to-top.html %}
 
 Using the
 [responsive visibility classes]({{ '/core/layout/#responsive-visibility-classes' | prepend: site.baseurl }}), the active
@@ -68,7 +68,7 @@ breakpoint is shown in <span class="bsk-text-success">green</span> below. Resize
 ## Visible classes
 {: #{{ 'Visible classes' | slugify }} }
 
-{% include snippets/back-to-top.html %}
+{% include bas-style-kit/bsk-snippet--back-to-top.html %}
 
 The table below shows which `.bsk-visible-` classes are visible at each responsive breakpoint. Visible combinations are
 shown in <span class="bsk-text-success">green</span>. The active breakpoint is also indicated in the table header.
@@ -185,7 +185,7 @@ shown in <span class="bsk-text-success">green</span>. The active breakpoint is a
 ## Hidden classes
 {: #{{ 'Hidden classes' | slugify }} }
 
-{% include snippets/back-to-top.html %}
+{% include bas-style-kit/bsk-snippet--back-to-top.html %}
 
 The table below shows which `.bsk-hidden-` classes are hidden at each responsive breakpoint. Hidden combinations are
 shown in <span class="bsk-text-success">green</span>. The active breakpoint is also indicated in the table header.

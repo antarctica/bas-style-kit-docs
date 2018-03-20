@@ -1,5 +1,8 @@
 ---
 title: Header
+menus:
+  primary_components:
+    weight: 9
 sections:
   -
     title: Overview
@@ -7,9 +10,7 @@ sections:
     title: Default header
 ---
 
-{% include snippets/table-of-contents.md %}
-
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Overview"
   heading_level=2
 %}
@@ -19,17 +20,22 @@ Use the `.bsk-header` class to create an element with the illusion of a
 doesn't support navigation. The [BAS Logo]({{ '/core/logos/#bas-logo' | prepend: site.baseurl }}) shoud be used in
 headers to reinforce the BAS brand.
 
-{% alert warning style=solid %}
+{% capture alert_content %}
 Headers should only be used where the [Navbar's]({{ '/components/navbar' | prepend: site.baseurl }}){: .bsk-alert-link }
 component is unsuitable, for example within external systems.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="solid"
+  content=alert_content
+%}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Variants"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Default header"
   heading_level=3
   phase="live"
@@ -37,20 +43,30 @@ component is unsuitable, for example within external systems.
   included="yes"
 %}
 
-{% alert info style=solid %}
+{% capture alert_content %}
 Headers need to use `.bsk-header-container-fluid`, instead of `.bsk-container-fluid`. The same styles are applied, but
 in a form that is self-contained for compatibility with other styles.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="solid"
+  content=alert_content
+%}
 
-{% alert info %}
+{% capture alert_content %}
 Images in headers need to use the `.bsk-header-img-logo` class to prevent too much padding.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="outline"
+  content=alert_content
+%}
 
 {% example html %}
 <header class="bsk-header bsk-header-default">
   <div class="bsk-header-container-fluid">
     <a href="#">
-      <img class="bsk-header-img-logo" alt="British Antarctic Survey Logo" src="{% unless jekyll.environment == 'production' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endunless %}/{% include snippets/bsk-version.html %}/img/logos-symbols/bas-logo-inverse-transparent-64.png">
+      <img class="bsk-header-img-logo" alt="British Antarctic Survey Logo" src="{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/img/logos-symbols/bas-logo-inverse-transparent-64.png">
     </a>
   </div>
 </header>

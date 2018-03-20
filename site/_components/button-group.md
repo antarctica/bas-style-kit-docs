@@ -1,5 +1,8 @@
 ---
 title: Button group
+menus:
+  primary_components:
+    weight: 6
 sections:
   -
     title: Overview
@@ -17,9 +20,7 @@ sections:
     title: Justified button group
 ---
 
-{% include snippets/table-of-contents.md %}
-
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Overview"
   heading_level=2
 %}
@@ -27,17 +28,22 @@ sections:
 Use the `.bsk-btn-group` class to combine buttons together into groups. Use the `.bsk-btn-toolbar` class to combine
 groups together into toolbars.
 
-{% alert warning %}
+{% capture alert_content %}
 For assistive technologies, all button groups and toolbars should use a `aria-label` or `aria-labelledby` and
 `role=group` or `role=toolbar` attribute to describe themselves.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Variants"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Default button group"
   heading_level=3
   phase="live"
@@ -55,7 +61,7 @@ Groups contain buttons.
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Default button toolbar"
   heading_level=3
   phase="live"
@@ -80,7 +86,7 @@ Toolbars contain groups.
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Sizes"
   heading_level=2
 %}
@@ -94,9 +100,14 @@ Add one of these classes to alter the size of a button group:
 | Extra-small       | `.bsk-btn-group-xl`     |
 {: .bsk-table .bsk-table-responsive }
 
-{% alert info style=highlight %}
+{% capture alert_content %}
 Individual buttons will inherit the size of each button group.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 {% example html %}
 <!-- Large button group -->
@@ -131,12 +142,12 @@ Individual buttons will inherit the size of each button group.
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Layouts"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Nested button group"
   heading_level=3
   phase="live"
@@ -163,7 +174,7 @@ Button groups can be nested to include drop-down menus with buttons in a group.
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Vertical button group"
   heading_level=3
   phase="live"
@@ -173,9 +184,14 @@ Button groups can be nested to include drop-down menus with buttons in a group.
 
 Use the `.bsk-btn-group-vertical` class **instead** of `.bsk-btn-group` to stack buttons vertically.
 
-{% alert danger %}
+{% capture alert_content %}
 Split button drop-downs and button toolbars are not supported in vertical button groups.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="danger"
+  style="outline"
+  content=alert_content
+%}
 
 {% example html %}
 <div class="bsk-btn-group-vertical" role="group" aria-label="Button group example 6">
@@ -194,7 +210,7 @@ Split button drop-downs and button toolbars are not supported in vertical button
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Justified button group"
   heading_level=3
   phase="live"

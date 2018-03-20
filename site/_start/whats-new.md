@@ -1,6 +1,9 @@
 ---
 sort_index: 4
 title: What's new
+menus:
+  primary_start:
+    weight: 5
 sections:
   -
     title: Latest version
@@ -12,26 +15,24 @@ sections:
     title: v0.1.0
 ---
 
-{% include snippets/table-of-contents.md %}
-
 This page lists changes made to the BAS Style Kit and this documentation. Technical changes to areas such as the build
 process are not included here.
 
 See the relevant project change log for this information:
 
-* [BAS Style Kit change log](https://gitlab.data.bas.ac.uk/web-apps/bsk/bas-style-kit/blob/master/CHANGELOG.md)
-* [BAS Style Kit documentation change log](https://gitlab.data.bas.ac.uk/web-apps/bsk/bas-style-kit-docs/blob/master/CHANGELOG.md)
+* [BAS Style Kit change log]({{ site.data.variables.source_code_url }}/blob/master/CHANGELOG.md)
+* [BAS Style Kit documentation change log]({{ site.data.variables.docs_source_code_url }}/blob/master/CHANGELOG.md)
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Latest version"
   heading_level=2
 %}
 
-The latest version of the BAS Style Kit is **0.3.0**.
+The latest stable version of the BAS Style Kit is **{{ site.data.variables.bsk_version_production }}**.
 
-The latest stable version of the BAS Style Kit is **0.3.0**.
+The latest development version of the BAS Style Kit is **{{ site.data.variables.bsk_version_staging }}**.
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="v0.3.0"
   heading_level=2
 %}
@@ -61,7 +62,18 @@ pixels
 [alerts]({{ '/components/alert#experimental-alert' | prepend: site.baseurl }}) and
 [labels]({{ '/components/label#experimental-label' | prepend: site.baseurl }}))
 
-{% include snippets/topic-section-metadata.html
+{% capture alert_content %}
+View the
+[complete v0.3.0 change log]({{ site.data.variables.source_code_url }}/blob/v0.3.0/CHANGELOG.md){: .bsk-alert-link }
+for more information.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
+
+{% include topic-section-metadata.html
   title="v0.2.0"
   heading_level=2
 %}
@@ -74,23 +86,38 @@ have rounded edges
 * [input group buttons]({{ '/components/input-group/#button-input-group' | prepend: site.baseurl }}) - are now styled
 correctly - **note** this does not apply to input group drop-downs or input group split-button drop-downs
 
-{% alert info style=highlight %}
+{% capture alert_content %}
 View the
-[complete v0.2.0 change log](https://gitlab.data.bas.ac.uk/web-apps/bsk/bas-style-kit/blob/master/CHANGELOG.md#020-2017-04-17)
+[complete v0.2.0 change log]({{ site.data.variables.source_code_url }}/blob/v0.2.0/CHANGELOG.md){: .bsk-alert-link }
 for more information.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="v0.1.0"
   heading_level=2
 %}
 
-{% alert info style=highlight %}
+{% capture alert_content %}
 This was the first official release of the BAS Style Kit.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
-{% alert info style=highlight %}
+{% capture alert_content %}
 View the
-[complete v0.1.0 change log](https://gitlab.data.bas.ac.uk/web-apps/bsk/bas-style-kit/blob/master/CHANGELOG.md#010-2015-10-27)
+[complete v0.1.0 change log]({{ site.data.variables.source_code_url }}/blob/v0.1.0/CHANGELOG.md){: .bsk-alert-link }
 for more information.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}

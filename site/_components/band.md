@@ -1,5 +1,8 @@
 ---
 title: Band
+menus:
+  primary_components:
+    weight: 4
 sections:
   -
     title: Overview
@@ -11,28 +14,32 @@ sections:
     title: Sizes
 ---
 
-{% include snippets/table-of-contents.md %}
-
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Overview"
   heading_level=2
 %}
 
 Use the `.band-bsk` class to add visual space between elements.
 
+{% capture alert_content %}
 **Heads up!** This component will be removed in the next version of the Style Kit.
-{: .alert .alert-warning }
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="danger"
+  style="outline"
+  content=alert_content
+%}
 
 You **must** pick a [variant]({{ '/components/band/#variants' | prepend: site.baseurl }}){: .bsk-alert-link } for each
 band, otherwise it will look strange. It is not enough to use `.band-bsk` on its own.
 {: .alert .alert-warning }
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Variants"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Default well"
   heading_level=3
   phase="deprecated"
@@ -46,7 +53,7 @@ Add the `.band-bsk-default` class for standard bands.
 <div class="band-bsk band-bsk-default"></div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Inverse band"
   heading_level=3
   phase="deprecated"
@@ -60,7 +67,7 @@ Add the `.band-bsk-inverse` class for an alternative band style. This has no sem
 <div class="band-bsk band-bsk-inverse"></div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Sizes"
   heading_level=2
   phase="deprecated"

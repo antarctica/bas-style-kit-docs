@@ -1,5 +1,8 @@
 ---
 title: Navigation
+menus:
+  primary_components:
+    weight: 16
 sections:
   -
     title: Overview
@@ -15,9 +18,7 @@ sections:
     title: Layouts
 ---
 
-{% include snippets/table-of-contents.md %}
-
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Overview"
   heading_level=2
 %}
@@ -26,22 +27,32 @@ Use the `.bsk-nav` class to create secondary navigation elements, for splitting 
 
 Each navigation item **must** use an <code>&lt;a&gt;</code> element.
 
-{% alert warning %}
+{% capture alert_content %}
 For assistive technologies, all navigation elements should use a `role=navigation` attribute on an element which wraps
 around the element using the `.bsk-nav` class.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
-{% alert info style=solid %}
+{% capture alert_content %}
 Interactive tabs and pills require the [tabs]({{ '/interactivity/tab' | prepend: site.baseurl }}){: .bsk-alert-link }
 JavaScript plugin, which is enabled on this site.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="solid"
+  content=alert_content
+%}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Variants"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Pill navigation"
   heading_level=3
   phase="live"
@@ -61,7 +72,7 @@ Add the `.bsk-nav-pills` class to create a minimalist navigation element.
 </nav>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Tab navigation"
   heading_level=3
   phase="live"
@@ -81,12 +92,12 @@ Add the `.bsk-nav-tabs` class to create a more structured navigation element.
 </nav>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Components"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Drop-down menus"
   heading_level=3
   phase="live"
@@ -132,12 +143,12 @@ Add the `.bsk-nav-tabs` class to create a more structured navigation element.
 </nav>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="States"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Active item"
   heading_level=3
   phase="live"
@@ -147,10 +158,15 @@ Add the `.bsk-nav-tabs` class to create a more structured navigation element.
 
 Add the `.bsk-active` class to the navigation item currently active, to highlight where the end user is in the site.
 
-{% alert warning %}
+{% capture alert_content %}
 Make sure to include a `<span class="bsk-sr-only">(current)</span>` element as well. <br />
 This provides a non-visual indication of the currently active item, suitable for assistive technologies.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
 {% example html %}
 <!-- Pills -->
@@ -211,7 +227,7 @@ This can also be used within [drop-down]({{ '/components/drop-down/#active' | pr
 </nav>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Disabled item"
   heading_level=3
   phase="live"
@@ -250,12 +266,12 @@ Add the `.bsk-disabled` class to indicate unavailable navigation items.
 </nav>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Layouts"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Stacked pills"
   heading_level=3
   phase="live"
@@ -265,9 +281,14 @@ Add the `.bsk-disabled` class to indicate unavailable navigation items.
 
 Add the `.bsk-nav-stacked` class to arrange pills vertically.
 
-{% alert danger %}
+{% capture alert_content %}
 Stacked tabs are not supported.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="danger"
+  style="outline"
+  content=alert_content
+%}
 
 {% example html %}
 <nav role="navigation">
@@ -278,7 +299,7 @@ Stacked tabs are not supported.
 </nav>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Justified pills/tabs"
   heading_level=3
   phase="live"

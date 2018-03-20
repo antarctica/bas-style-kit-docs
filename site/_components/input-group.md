@@ -1,5 +1,8 @@
 ---
 title: Input group
+menus:
+  primary_components:
+    weight: 11
 sections:
   -
     title: Overview
@@ -11,9 +14,7 @@ sections:
     title: Sizing
 ---
 
-{% include snippets/table-of-contents.md %}
-
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Overview"
   heading_level=2
 %}
@@ -21,20 +22,35 @@ sections:
 Use the `.bsk-input-group` class with the `.bsk-input-group-addon` class to place text/icons, buttons, and even other
 form elements, before or a after a control in a [form field]({{ '/core/forms/#form-fields' | prepend: site.baseurl }}).
 
-{% alert warning %}
+{% capture alert_content %}
 Multiple input group add-ons are not supported on a single side (i.e. 2 add-ons on the left).
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
-{% alert warning %}
+{% capture alert_content %}
 Multiple [form controls]({{ '/core/forms/#form-controls' | prepend: site.baseurl }}) used in a single input group are
 not supported.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
-{% alert warning %}
+{% capture alert_content %}
 All input groups should have a label to make sure they can be understood by assistive technologies.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Supported elements"
   heading_level=2
   phase="live"
@@ -57,12 +73,12 @@ such as the example below, to avoid side effects, and may not otherwise look rig
 container: 'body';
 {% endhighlight %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Variants"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Basic input group"
   heading_level=3
   phase="live"
@@ -119,7 +135,7 @@ Icons can be used as well.
 </form>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Checkbox and radio input group"
   heading_level=3
   phase="live"
@@ -156,7 +172,7 @@ instead of text.
 </form>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Button input group"
   heading_level=3
   phase="alpha"
@@ -168,10 +184,15 @@ instead of text.
 Use the `.bsk-input-group-btn` class, instead of `.bsk-input-group-addon`, as an element which contains a
 [button]({{ '/core/buttons' | prepend: site.baseurl }}).
 
-{% alert warning %}
+{% capture alert_content %}
 **Heads up!** Buttons in input groups are not yet supported. If you need this feature please
 [vote](https://trello.com/c/qyW9R5wo){: .bsk-alert-link} for it.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
 {% example html %}
 <form>
@@ -188,7 +209,7 @@ Use the `.bsk-input-group-btn` class, instead of `.bsk-input-group-addon`, as an
 </form>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Drop-down button input group"
   heading_level=3
   phase="alpha"
@@ -200,10 +221,15 @@ Use the `.bsk-input-group-btn` class, instead of `.bsk-input-group-addon`, as an
 Use the `.bsk-input-group-btn` class, instead of `.bsk-input-group-addon`, as an element which contains a
 [button drop-down]({{ '/components/drop-down/#button-drop-down' | prepend: site.baseurl }}).
 
-{% alert warning %}
+{% capture alert_content %}
 **Heads up!** Button drop-downs in input groups are not yet fully supported. If you need this feature please
 [vote](https://trello.com/c/Kd0Oq1Ng){: .bsk-alert-link} for it.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
 {% example html %}
 <form>
@@ -228,7 +254,7 @@ Use the `.bsk-input-group-btn` class, instead of `.bsk-input-group-addon`, as an
 </form>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Split-button drop-down input group"
   heading_level=3
   phase="beta"
@@ -240,8 +266,14 @@ Use the `.bsk-input-group-btn` class, instead of `.bsk-input-group-addon`, as an
 Use the `.bsk-input-group-btn` class, instead of `.bsk-input-group-addon`, as an element which contains a
 [split-button drop-down]({{ '/components/drop-down/#split-button-drop-down' | prepend: site.baseurl }}).
 
+{% capture alert_content %}
 **Heads up!** Split-button drop-down's in input groups are not yet fully supported.
-{: .alert .alert-warning }
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
 {% example html %}
 <form>
@@ -268,7 +300,7 @@ Use the `.bsk-input-group-btn` class, instead of `.bsk-input-group-addon`, as an
 </form>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Sizing"
   heading_level=2
 %}

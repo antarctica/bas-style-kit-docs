@@ -1,5 +1,8 @@
 ---
 title: Panel
+menus:
+  primary_components:
+    weight: 20
 sections:
   -
     title: Overview
@@ -21,40 +24,58 @@ sections:
     title: List group
 ---
 
-{% include snippets/table-of-contents.md %}
-
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Overview"
   heading_level=2
 %}
 
 Use the `.bsk-panel` class to display information that is distinct from main content, but which is shown **within** it.
 
-{% alert warning style=solid %}
+{% capture alert_content %}
 You **must** pick a [variant]({{ '/components/panel/#variants' | prepend: site.baseurl }}){: .bsk-alert-link } for each
 panel, otherwise it will look strange. It is not enough to use `.bsk-panel` on its own.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
-{% alert info %}
+{% capture alert_content %}
 **Heads up!** Panel elements are not yet fully styled, but will be in the next version of the Style Kit.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
-{% alert info style=solid %}
+{% capture alert_content %}
 See the [Sidebar]({{ '/components/sidebar' | prepend: site.baseurl }}){: .bsk-alert-link } component to display
 information that is distinct from main content, but which is shown **next to** it.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="solid"
+  content=alert_content
+%}
 
-{% alert info style=solid %}
+{% capture alert_content %}
 See the [Thumbnail]({{ '/components/thumbnail' | prepend: site.baseurl }}){: .bsk-alert-link } component to display
 media items that are distinct from main content, but which is shown **within** it.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="solid"
+  content=alert_content
+%}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Variants"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Default panel"
   heading_level=3
   phase="beta"
@@ -86,7 +107,7 @@ A more typical example includes a [header]({{ '/components/panel/#header' | prep
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Primary panel"
   heading_level=3
   phase="beta"
@@ -107,7 +128,7 @@ Add the `.bsk-panel-primary` class for the most important panel, where there is 
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Contextual colours"
   heading_level=3
   phase="beta"
@@ -164,12 +185,12 @@ used for context by adding these classes:
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Components"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Body"
   heading_level=3
   phase="beta"
@@ -187,7 +208,7 @@ Use `.bsk-panel-body` class on a <code>&lt;main&gt;</code> element within a pane
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Header"
   heading_level=3
   phase="beta"
@@ -217,7 +238,7 @@ style links within panel headings.
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Footer"
   heading_level=3
   phase="beta"
@@ -248,7 +269,7 @@ foreground.
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Table"
   heading_level=3
   phase="beta"
@@ -260,10 +281,15 @@ foreground.
 used they will look seamless, a dividing border will be added automatically if a
 [panel body]({{ '/components/panel/#body' | prepend: site.baseurl }}) is used.
 
-{% alert warning %}
+{% capture alert_content %}
 Don't put tables **within** [panel bodies]({{ '/components/panel/#body' | prepend: site.baseurl }}){: .bsk-alert-link },
-as they may lookstrange.
-{% endalert %}
+as they may look strange.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
 {% example html %}
 <div class="bsk-panel bsk-panel-default">
@@ -320,7 +346,7 @@ as they may lookstrange.
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="List group"
   heading_level=3
   phase="beta"
@@ -331,10 +357,15 @@ as they may lookstrange.
 [List groups]({{ '/components/list-group' | prepend: site.baseurl }}) can be added to panels directly. A dividing border
 will be added automatically if a [panel body]({{ '/components/panel/#body' | prepend: site.baseurl }}) is used.
 
-{% alert warning %}
+{% capture alert_content %}
 Don't put list groups **within**
-[panel bodies]({{ '/components/panel/#body' | prepend: site.baseurl }}){: .alert-bsk-link }, as they may look strange.
-{% endalert %}
+[panel bodies]({{ '/components/panel/#body' | prepend: site.baseurl }}){: .bsk-alert-link }, as they may look strange.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
 {% example html %}
 <div class="bsk-panel bsk-panel-default">

@@ -1,6 +1,8 @@
 ---
-layout: topic
 title: Grid system examples
+menus:
+  primary_examples:
+    weight: 3
 sections:
   -
     title: Stacked to horizontal
@@ -12,12 +14,10 @@ sections:
     title: Responsive column resets
 ---
 
-{% include snippets/table-of-contents.md %}
-
 ## Example: Stacked to horizontal
 {: #{{ 'stacked to horizontal' | slugify }} }
 
-{% include snippets/back-to-top.html %}
+{% include bas-style-kit/bsk-snippet--back-to-top.html %}
 
 Creates a basic grid system that starts out stacked on small devices before becoming horizontal on wider (medium)
 devices.
@@ -111,7 +111,7 @@ devices.
 ## Example: Grid sizes
 {: #{{ 'Grid sizes' | slugify }} }
 
-{% include snippets/back-to-top.html %}
+{% include bas-style-kit/bsk-snippet--back-to-top.html %}
 
 Using the various grid size classes its possible layout a grid of items such that the number of items in each row
 increases with each grid size. For example, at the smallest grid size 2 items may be shown per row, then 4, then 6, etc.
@@ -254,7 +254,7 @@ where you always want items to be side by side.
 ## Example: Column wrapping
 {: #{{ 'Column wrapping' | slugify }} }
 
-{% include snippets/back-to-top.html %}
+{% include bas-style-kit/bsk-snippet--back-to-top.html %}
 
 If more than the total number of columns for each grid are placed within a single row, each group of extra columns
 will, as one unit, wrap onto a new line.
@@ -282,7 +282,7 @@ will, as one unit, wrap onto a new line.
 ## Example: Responsive column resets
 {: #{{ 'Responsive column resets' | slugify }} }
 
-{% include snippets/back-to-top.html %}
+{% include bas-style-kit/bsk-snippet--back-to-top.html %}
 
 Clear floats at specific breakpoints to prevent awkward wrapping with uneven content.
 

@@ -1,17 +1,17 @@
 ---
-layout: topic
 title: Testbed
+menus:
+  primary_examples:
+    weight: 10
 sections:
   -
     title: Style Kit Testbed
 ---
 
-{% include snippets/table-of-contents.md %}
-
 ## BAS Style Kit Testbed
 {: #{{ 'Style Kit Testbed' | slugify }} }
 
-{% include snippets/back-to-top.html %}
+{% include bas-style-kit/bsk-snippet--back-to-top.html %}
 
 A separate resource is used for developing the BAS Style Kit, known as the Testbed. This contains a number of different
 *samples* designed to test specific parts of the Style Kit in isolation.
@@ -19,10 +19,15 @@ A separate resource is used for developing the BAS Style Kit, known as the Testb
 This allows new features to be tested more easily, and prevents this documentation being misused as an enumeration of
 all of the possible ways the Style Kit could be used - which would not be useful.
 
-{% alert warning style=solid %}
+{% capture alert_content %}
 The Testbed is not designed for end-users and does supplement or replace this documentation. It will include examples
 which are intentionally designed not to work.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="solid"
+  content=alert_content
+%}
 
 The testbed for the `master` branch of the BAS Style Kit can be found at:
 [style-kit-testbed.web.bas.ac.uk/master](https://style-kit-testbed.web.bas.ac.uk/master/).

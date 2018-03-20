@@ -1,6 +1,8 @@
 ---
-layout: topic
 title: Markdown for static websites
+menus:
+  primary_examples:
+    weight: 5
 sections:
   -
     title: The basics
@@ -14,16 +16,9 @@ sections:
     title: Code
 ---
 
-<h2 id="contents">Contents</h2>
-<ul>
-  <li><a href="#the-basics">The basics</a></li>
-  <li><a href="#tables">Tables</a></li>
-  <li><a href="#images">Images</a></li>
-  <li><a href="#block-quotes-pull-outs">Block quotes / pull-outs</a></li>
-  <li><a href="#code">Code</a></li>
-</ul>
-
 <h2 id="{{ 'The basics' | slugify }}">The basics</h2>
+
+{% include bas-style-kit/bsk-snippet--back-to-top.html %}
 
 <table class="bsk-table bsk-table-responsive">
   <thead>
@@ -37,32 +32,32 @@ sections:
     <tr>
       <td>Heading 1 (biggest)</td>
       <td><code># Heading 1</code></td>
-      <td><h1>Heading 1</h1></td>
+      <td><div class="bsk-h1">Heading 1</div></td>
     </tr>
     <tr>
       <td>Heading 2</td>
       <td><code>## Heading 2</code></td>
-      <td><h2>Heading 2</h2></td>
+      <td><dkv class="bsk-h2">Heading 2</div></td>
     </tr>
     <tr>
       <td>Heading 3</td>
       <td><code>### Heading 3</code></td>
-      <td><h3>Heading 3</h3></td>
+      <td><dkv class="bsk-h3">Heading 3</div></td>
     </tr>
     <tr>
       <td>Heading 4</td>
       <td><code>#### Heading 4</code></td>
-      <td><h4>Heading 4</h4></td>
+      <td><dkv class="bsk-h4">Heading 4</div></td>
     </tr>
     <tr>
       <td>Heading 5</td>
       <td><code>##### Heading 5</code></td>
-      <td><h5>Heading 5</h5></td>
+      <td><dkv class="bsk-h5">Heading 5</div></td>
     </tr>
     <tr>
       <td>Heading 6 (smallest)</td>
       <td><code>###### Heading 6</code></td>
-      <td><h6>Heading 6</h6></td>
+      <td><dkv class="bsk-h6">Heading 6</div></td>
     </tr>
     <tr>
       <td>Italics</td>
@@ -130,7 +125,19 @@ sections:
   </tbody>
 </table>
 
+{% capture alert_content %}
+The example headings used above use classes rather than header elements to prevent breaking the table of contents on
+this page. When the syntax given is used, heading elements will be produced.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
+
 <h2 id="{{ 'Tables' | slugify }}">Tables</h2>
+
+{% include bas-style-kit/bsk-snippet--back-to-top.html %}
 
 <table class="bsk-table bsk-table-responsive">
   <thead>
@@ -251,6 +258,8 @@ sections:
 
 <h2 id="{{ 'Images' | slugify }}">Images</h2>
 
+{% include bas-style-kit/bsk-snippet--back-to-top.html %}
+
 <table class="bsk-table bsk-table-responsive">
   <thead>
     <tr>
@@ -262,28 +271,30 @@ sections:
   <tbody>
     <tr>
       <td>Standard image - from the same website</td>
-      <td><code>![Image description...]({% raw %}{{'/img/example-image-64.png' | prepend: site.baseurl }}{% endraw %})</code></td>
-      <td><img src="{{ '/img/example-image-64.png' | prepend: site.baseurl }}" /></td>
+      <td><code>![Image description...]({% raw %}{{'/img/placeholder-64.png' | prepend: site.baseurl }}{% endraw %})</code></td>
+      <td><img src="{{ '/img/placeholder-64.png' | prepend: site.baseurl }}" /></td>
     </tr>
     <tr>
       <td>Linked image - from the same website</td>
-      <td><code>[![Image description...]({% raw %}{{ '/img/example-image-64.png' | prepend: site.baseurl }}{% endraw %})](https://www.bas.ac.uk)</code></td>
-      <td><a href="https://www.bas.ac.uk"><img src="{{ '/img/example-image-64.png' | prepend: site.baseurl }}" /></a></td>
+      <td><code>[![Image description...]({% raw %}{{ '/img/placeholder-64.png' | prepend: site.baseurl }}{% endraw %})](https://www.bas.ac.uk)</code></td>
+      <td><a href="https://www.bas.ac.uk"><img src="{{ '/img/placeholder-64.png' | prepend: site.baseurl }}" /></a></td>
     </tr>
     <tr>
       <td>Standard image - from another website</td>
-      <td><code>![Image description...](http://placehold.it/64x64)</code></td>
-      <td><img src="http://placehold.it/64x64" /></td>
+      <td><code>![Image description...](https://style-kit.web.bas.ac.uk/img/placeholder-64.png)</code></td>
+      <td><img src="https://style-kit.web.bas.ac.uk/img/placeholder-64.png" /></td>
     </tr>
     <tr>
       <td>Linked image - from another website</td>
-      <td><code>[![Image description...](http://placehold.it/64x64)](https://www.bas.ac.uk)</code></td>
-      <td><a href="https://www.bas.ac.uk"><img src="http://placehold.it/64x64" /></a></td>
+      <td><code>[![Image description...](https://style-kit.web.bas.ac.uk/img/placeholder-64.png)](https://www.bas.ac.uk)</code></td>
+      <td><a href="https://www.bas.ac.uk"><img src="https://style-kit.web.bas.ac.uk/img/placeholder-64.png" /></a></td>
     </tr>
   </tbody>
 </table>
 
 <h2 id="{{ 'Block quotes / pull-outs' | slugify }}">Block quotes / pull-outs</h2>
+
+{% include bas-style-kit/bsk-snippet--back-to-top.html %}
 
 <table class="bsk-table bsk-table-responsive">
   <thead>
@@ -318,6 +329,8 @@ sections:
 </table>
 
 <h2 id="{{ 'Code' | slugify }}">Code</h2>
+
+{% include bas-style-kit/bsk-snippet--back-to-top.html %}
 
 <table class="bsk-table bsk-table-responsive">
   <thead>

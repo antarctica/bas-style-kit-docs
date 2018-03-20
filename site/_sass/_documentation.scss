@@ -7,6 +7,10 @@
 
 .bsk-docs-section-title {
   padding-top: 30px;
+
+  &:first-of-type {
+    padding-top: 0;
+  }
 }
 
 .bsk-docs-section-metadata {

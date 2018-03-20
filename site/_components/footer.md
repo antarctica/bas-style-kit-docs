@@ -1,5 +1,8 @@
 ---
 title: Footer
+menus:
+  primary_components:
+    weight: 8
 sections:
   -
     title: Overview
@@ -15,9 +18,7 @@ sections:
     title: Layouts
 ---
 
-{% include snippets/table-of-contents.md %}
-
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Overview"
   heading_level=2
 %}
@@ -29,22 +30,32 @@ Whereas [navbar's]({{ '/components/navbar' | prepend: site.baseurl }}) contain o
 name of a project/service and navigation links, footers typically contain important or additional information, but that
 isn't vital to show straight away, such as copyright and privacy links.
 
-{% alert warning style=solid %}
+{% capture alert_content %}
 You **must** pick a [variant]({{ '/core/buttons/#variants' | prepend: site.baseurl }}){: .bsk-alert-link } for each
 button, otherwise it will look strange. It is not enough to use `.bsk-btn` on its own.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="solid"
+  content=alert_content
+%}
 
-{% alert info style=solid %}
+{% capture alert_content %}
 The footer component is designed to be compatible with almost all other components and core styles, however it is
 strongly recommended to use a [container]({{ '/core/layout/#containers' | prepend: site.baseurl }}){: .bsk-alert-link }.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="solid"
+  content=alert_content
+%}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Variants"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Default footer"
   heading_level=3
   phase="live"
@@ -77,7 +88,7 @@ This example, whilst quite complex, demonstrates the sort of information shown i
     <div role="separator" class="bsk-footer-divider"></div>
     <!-- Copyright & legal -->
     <div class="bsk-footer-ogl">
-      <a class="bsk-ogl-symbol" rel="license" href="http://www.nationalarchives.gov.uk/doc/open-government-licence"><img alt="Open Government Licence logo" src="{% unless jekyll.environment == 'production' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endunless %}/{% include snippets/bsk-version.html %}/img/logos-symbols/ogl-symbol-inverse-transparent-32.png"></a>
+      <a class="bsk-ogl-symbol" rel="license" href="http://www.nationalarchives.gov.uk/doc/open-government-licence"><img alt="Open Government Licence logo" src="{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/img/logos-symbols/ogl-symbol-inverse-transparent-32.png"></a>
       <div class="bsk-ogl-text">
       This website is licensed under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence">Open Government Licence v3.0</a>, except where otherwise stated</div>
     </div>
@@ -93,12 +104,12 @@ This example, whilst quite complex, demonstrates the sort of information shown i
 </footer>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Components"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Divider"
   heading_level=3
   phase="live"
@@ -118,7 +129,7 @@ Use the `.bsk-footer-divider` class on an element, to act as a horizontal rule w
 </footer>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Open Government License"
   heading_level=3
   phase="live"
@@ -134,14 +145,14 @@ statement.
 <footer class="bsk-footer bsk-footer-default">
   <div class="bsk-container-fluid">
     <div class="bsk-footer-ogl">
-      <a class="bsk-ogl-symbol" rel="license" href="http://www.nationalarchives.gov.uk/doc/open-government-licence/"><img alt="Open Government Licence logo" src="{% unless jekyll.environment == 'production' %}{{ site.bsk_cdn_base_staging }}{% else %}{{ site.bsk_cdn_base_production }}{% endunless %}/{% include snippets/bsk-version.html %}/img/logos-symbols/ogl-symbol-inverse-transparent-32.png"></a>
+      <a class="bsk-ogl-symbol" rel="license" href="http://www.nationalarchives.gov.uk/doc/open-government-licence/"><img alt="Open Government Licence logo" src="{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/img/logos-symbols/ogl-symbol-inverse-transparent-32.png"></a>
       <div class="bsk-ogl-text">All content is licensed under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/">Open Government Licence v3.0</a>, except where otherwise stated</div>
     </div>
   </div>
 </footer>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Legal policy links"
   heading_level=3
   phase="live"
@@ -167,12 +178,12 @@ statements.
 </footer>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Layouts"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Fixed to bottom"
   heading_level=3
   current_phase="live"
@@ -183,14 +194,24 @@ statements.
 
 Add the `.bsk-footer-fixed-bottom` class to fix a footer to the bottom of the page.
 
-{% alert warning %}
+{% capture alert_content %}
 Fixed styles require additional padding on the `body` element. Otherwise the footer will cover up other page content.
 The Style Kit doesn't provide styles for this, as it depends on the height of the footer in question.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
-{% alert info style=highlight %}
+{% capture alert_content %}
 The example below would normally use absolute positioning. It is disabled here to avoid breaking the site layout.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 {% example html %}
 <footer class="bsk-footer bsk-footer-default bsk-footer-fixed-bottom">
@@ -206,7 +227,7 @@ The example below would normally use absolute positioning. It is disabled here t
 </footer>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Static bottom"
   heading_level=3
   phase="live"
@@ -216,9 +237,14 @@ The example below would normally use absolute positioning. It is disabled here t
 
 Add the `.bsk-footer-static-bottom` class to create a full-width footer that scrolls away with the page.
 
-{% alert info style=highlight %}
+{% capture alert_content %}
 Unlike with fixed footers, you do not need to change any padding on the `body` element with a static footer.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 {% example html %}
 <footer class="bsk-footer bsk-footer-default bsk-footer-static-bottom">

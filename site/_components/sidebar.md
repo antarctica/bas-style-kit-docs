@@ -1,5 +1,8 @@
 ---
 title: Sidebar
+menus:
+  primary_components:
+    weight: 23
 sections:
   -
     title: Overview
@@ -11,9 +14,7 @@ sections:
     title: Inverted Sidebar
 ---
 
-{% include snippets/table-of-contents.md %}
-
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Overview"
   heading_level=2
 %}
@@ -21,22 +22,32 @@ sections:
 Use the `.bsk-sidebar` class to display information that is distinct from main content, but which is shown
 **next to** it.
 
-{% alert warning style=solid %}
+{% capture alert_content %}
 You **must** pick a [variant]({{ '/components/sidebar/#variants' | prepend: site.baseurl }}){: .bsk-alert-link } for each
 sidebar, otherwise it will look strange. I.e. it is not enough to use `.bsk-sidebar` on its own.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="solid"
+  content=alert_content
+%}
 
-{% alert info style=solid %}
+{% capture alert_content %}
 See the [Panel]({{ '/components/panel' | prepend: site.baseurl }}){: .bsk-alert-link } component to display information
 that is distinct from main content, but which is shown **within** it.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="solid"
+  content=alert_content
+%}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Variants"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Default sidebar"
   heading_level=3
   phase="live"
@@ -80,10 +91,15 @@ Add the `.bsk-sidebar-default` class a for standard sidebar.
 </div>
 {% endexample %}
 
-{% alert warning %}
+{% capture alert_content %}
 Sidebars without a header, next to content with a header, need to use the `.bsk-sidebar-no-heading` class. <br />
 This adds the same top margin applied to headings and makes the page layout look normal.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
 {% example html %}
 <div class="bsk-row">
@@ -136,7 +152,7 @@ This adds the same top margin applied to headings and makes the page layout look
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Inverted sidebar"
   heading_level=3
   phase="live"
@@ -164,12 +180,12 @@ Use the `.bsk-sidebar-inverse` class to use a darker background for a sidebar. E
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Sizes"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Large sidebar"
   heading_level=3
   phase="live"

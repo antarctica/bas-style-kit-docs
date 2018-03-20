@@ -1,5 +1,8 @@
 ---
 title: Thumbnail
+menus:
+  primary_components:
+    weight: 25
 sections:
   -
     title: Overview
@@ -13,9 +16,7 @@ sections:
     title: Caption
 ---
 
-{% include snippets/table-of-contents.md %}
-
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Overview"
   heading_level=2
 %}
@@ -23,17 +24,27 @@ sections:
 Use the `.bsk-thumbnail` classes to highlight one or more media items, such as images, that are distinct from main
 content, but which is shown **within** it, usually as a grid of items.
 
-{% alert warning style=solid %}
+{% capture alert_content %}
 You **must** pick a [variant]({{ '/components/thumbnail/#variants' | prepend: site.baseurl }}){: .bsk-alert-link }
 for each thumbnail, otherwise it will look strange. It is not enough to use `.bsk-thumbnail` on its own.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="solid"
+  content=alert_content
+%}
 
-{% alert info style=solid  %}
+{% capture alert_content %}
 Thumbnails are really only intended for media items. For more general purposes, use
 [Panel's]({{ '/components/panel' | prepend: site.baseurl }}){: .bsk-alert-link }.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="solid"
+  content=alert_content
+%}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Supported elements"
   heading_level=2
   phase="live"
@@ -43,12 +54,12 @@ Thumbnails are really only intended for media items. For more general purposes, 
 
 Thumbnail styles are designed for <code>&lt;div&gt;</code> or <code>&lt;a&gt;</code> elements.
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Variants"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Default thumbnail"
   heading_level=3
   phase="live"
@@ -73,7 +84,7 @@ Add the `.bsk-thumbnail-default` class for standard thumbnails.
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Inverse thumbnail"
   heading_level=3
   phase="live"
@@ -98,12 +109,12 @@ Add the `.bsk-thumbnail-inverse` class for an alternative thumbnail style. This 
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Components"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Caption"
   heading_level=3
   phase="live"

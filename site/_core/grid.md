@@ -1,5 +1,8 @@
 ---
 title: Grid system
+menus:
+  primary_core:
+    weight: 6
 sections:
   -
     title: Overview
@@ -23,9 +26,7 @@ sections:
     title: Examples
 ---
 
-{% include snippets/table-of-contents.md %}
-
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Overview"
   heading_level=2
   included="yes"
@@ -33,7 +34,7 @@ sections:
 
 The BAS Style Kit inherits, and expands, the grid system provided by Bootstrap.
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Available grids"
   heading_level=2
   phase="live"
@@ -46,14 +47,24 @@ Two grids are available, which can be mixed and nested if needed. Other than the
 function in the same way. The extra columns in the alternate grid are primarily intended for use in applications, where
 more complex or detailed layouts and interfaces are required.
 
-{% alert info %}
+{% capture alert_content %}
 Use the *standard* grid if you are unsure which to use.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="outline"
+  content=alert_content
+%}
 
-{% alert info style=highlight %}
-If can apply both standard and alternate grid classes to an element the alternate grid classes will take affect as they
-are defined after the standard grid classes in the CSS file.
-{% endalert %}
+{% capture alert_content %}
+If you apply both standard and alternate grid classes to an element, the alternate grid classes will take affect as
+they are defined after the standard grid classes in the CSS file.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 | Grid Name     | Total Columns | Class Prefix   |
 | ------------- | ------------- | -------------- |
@@ -61,7 +72,7 @@ are defined after the standard grid classes in the CSS file.
 | Alternate     | 24            | `.bsk-col-24`  |
 {: .bsk-table .bsk-table-responsive }
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Grid components"
   heading_level=2
 %}
@@ -80,7 +91,7 @@ doesn't need to be an direct parent
 2. only columns can be the direct children of rows
 3. each row can't span more more than the total number of columns for each grid (i.e. either 12 or 24)
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Grid sizes"
   heading_level=2
   phase="live"
@@ -94,10 +105,15 @@ There are five grid sizes for the
 Style Kit. Theses sizes are based on minimum widths, meaning they apply to that size, and all larger (wider) sizes,
 until the next minimum size is reached.
 
-{% alert info style=highlight %}
+{% capture alert_content %}
 This means that a map and accompanying text can be shown side by side on *medium* sized devices and above, or, can be
 shown full width, stacked one after the other, on smaller devices.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 <table class="bsk-table">
   <thead>
@@ -174,7 +190,7 @@ shown full width, stacked one after the other, on smaller devices.
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Offsetting columns"
   heading_level=2
   phase="live"
@@ -216,7 +232,7 @@ Style Kit grid.
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Nesting columns"
   heading_level=2
   phase="live"
@@ -230,6 +246,15 @@ but you don't need to use all of them. You can also nest the alternate grid with
 
 For example, a row has two columns, A and B, spanning 6 columns each in the standard grid (12 columns). Column A has a
 row with three nested columns, each spanning 8 columns each of the alternate grid.
+
+{% capture alert_content %}
+The nested columns in this example will appear to escape their parent column, this is an artefact of the site layout.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 {% example html %}
 <div class="bsk-row">
@@ -253,7 +278,7 @@ row with three nested columns, each spanning 8 columns each of the alternate gri
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Ordering columns"
   heading_level=2
   phase="live"
@@ -278,7 +303,7 @@ Pull and push classes can be used to order columns within a row, though this is 
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Examples"
   heading_level=2
   included="yes"

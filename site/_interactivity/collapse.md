@@ -1,15 +1,12 @@
 ---
 title: Collapse
+menus:
+  primary_interactivity:
+    weight: 6
 sections:
   -
     title: Overview
 ---
-
-## Contents
-{:.no_toc #{{ 'Contents' | slugify }}}
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
 
 ## Overview
 {: #{{ 'Overview' | slugify }}}
@@ -24,7 +21,12 @@ as [navbars]({{ '/components/navbar' | prepend: site.baseurl }})
 
 This plugin depends upon [jQuery](https://jquery.com).
 
-{% alert info style=highlight %}
+{% capture alert_content %}
 See [distribution]({{ '/start/distribution/#javaScript-libraries' | prepend: site.baseurl }}){: .bsk-alert-link} for
-how to include these dependencies
-{% endalert %}
+how to include these dependencies.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}

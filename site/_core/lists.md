@@ -1,5 +1,8 @@
 ---
 title: Lists
+menus:
+  primary_core:
+    weight: 10
 sections:
   -
     title: Lists
@@ -7,14 +10,12 @@ sections:
     title: Definition lists
 ---
 
-{% include snippets/table-of-contents.md %}
-
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Lists"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Unordered Links"
   heading_level=3
   phase="live"
@@ -33,7 +34,7 @@ sections:
 </ul>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Ordered Links"
   heading_level=3
   phase="live"
@@ -49,7 +50,7 @@ sections:
 </ol>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Unstyled Links"
   heading_level=3
   phase="live"
@@ -60,9 +61,14 @@ sections:
 Use the `.bsk-list-unstyled` class to remove the default `list-style` and margin left margin. Useful for things which
 semantically are lists, but shouldn't be styled as such.
 
-{% alert info style=highlight %}
+{% capture alert_content %}
 This only applies to immediate list items. I.e. this style won't be used by any nested lists.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 {% example html %}
 <ul class="bsk-list-unstyled">
@@ -89,7 +95,7 @@ This only applies to immediate list items. I.e. this style won't be used by any 
 </ul>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Inline Links"
   heading_level=3
   phase="live"
@@ -106,7 +112,7 @@ Use the `.bsk-list-inline` class to place all list items on a single line, with 
 </ul>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Definition Lists"
   heading_level=2
   phase="live"
@@ -129,7 +135,7 @@ A list of terms with associated definitions.
 </dl>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Horizontal Definition Lists"
   heading_level=3
   current_phase="live"
@@ -139,9 +145,14 @@ A list of terms with associated definitions.
 
 Add the `.bsk-dl-horizontal` class to show terms and definitions side-by-side (or stacked at smaller sizes).
 
-{% alert info %}
+{% capture alert_content %}
 Terms which are too long will be truncated.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="outline"
+  content=alert_content
+%}
 
 {% example html %}
 <dl class="bsk-dl-horizontal">
@@ -156,7 +167,7 @@ Terms which are too long will be truncated.
 </dl>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Large definition Lists"
   heading_level=3
   phase="live"
@@ -179,7 +190,7 @@ Add the `.bsk-dl-lg` class to apply additional padding.
 </dl>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Large horizontal definition Lists"
   heading_level=3
   phase="live"
@@ -191,9 +202,14 @@ Add the `.bsk-dl-lg` class to apply additional padding.
 Add the `.bsk-dl-horizontal-lg` class to extend the width of terms in horizontal
 definition lists.
 
-{% alert warning style=highlight %}
+{% capture alert_content %}
 This class depends on the `.bsk-dl-horizontal` class.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="highlight"
+  content=alert_content
+%}
 
 {% example html %}
 <dl class="bsk-dl-horizontal bsk-dl-horizontal-lg">
@@ -208,7 +224,7 @@ This class depends on the `.bsk-dl-horizontal` class.
 </dl>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Striped definition Lists"
   heading_level=3
   phase="live"
@@ -218,9 +234,14 @@ This class depends on the `.bsk-dl-horizontal` class.
 
 Add `.bsk-dl-striped` to apply additional styling to terms.
 
-{% alert info style=highlight %}
+{% capture alert_content %}
 This class is designed to be used with `.bsk-dl-lg` to ensure a suitable amount of padding.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 {% example html %}
 <dl class="bsk-dl-lg bsk-dl-striped">
@@ -235,7 +256,7 @@ This class is designed to be used with `.bsk-dl-lg` to ensure a suitable amount 
 </dl>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Striped horizontal definition Lists"
   heading_level=3
   phase="live"
@@ -246,13 +267,23 @@ This class is designed to be used with `.bsk-dl-lg` to ensure a suitable amount 
 
 The `.bsk-dl-striped` class can be combined with `.bsk-dl-horizontal`, or `.bsk-dl-horizontal-lg`.
 
-{% alert warning style=highlight %}
+{% capture alert_content %}
 Remember, the `.bsk-dl-horizontal-lg` class depends on the `.bsk-dl-horizontal` class.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="highlight"
+  content=alert_content
+%}
 
-{% alert info style=highlight %}
+{% capture alert_content %}
 Remember, the `.bsk-dl-striped` class is designed to be used with `.bsk-dl-lg` to ensure a suitable amount of padding.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 {% example html %}
 <dl class="bsk-dl-lg bsk-dl-striped bsk-dl-horizontal">

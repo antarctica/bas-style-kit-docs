@@ -1,5 +1,8 @@
 ---
 title: Jumbotron
+menus:
+  primary_components:
+    weight: 12
 sections:
   -
     title: Overview
@@ -17,25 +20,28 @@ sections:
     title: Full-width jumbotron
 ---
 
-{% include snippets/table-of-contents.md %}
-
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Overview"
   heading_level=2
 %}
 
 Use the `.bsk-jumbotron` class to showcase key content.
 
-{% alert warning style=solid %}
+{% capture alert_content %}
 You **must** pick a [variant]({{ '/components/jumbotron/#variants' | prepend: site.baseurl }}){: .bsk-alert-link } for each jumbotron, otherwise it will look strange. It is not enough to use `.bsk-jumbotron` on its own.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="solid"
+  content=alert_content
+%}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Variants"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Default jumbotron"
   heading_level=3
   phase="live"
@@ -53,7 +59,7 @@ Add the `.bsk-jumbotron-default` class for a standard jumbotron.
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Inverse jumbotron"
   heading_level=3
   phase="live"
@@ -71,7 +77,7 @@ Use the `.jumbotron-inverse` class to use a darker background for a jumbotron.
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Image jumbotron"
   heading_level=3
   phase="live"
@@ -88,12 +94,12 @@ Additional CSS rules will be needed to set a `background-image` property.
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Components"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Jumbotron overlay"
   heading_level=3
   phase="live"
@@ -110,7 +116,7 @@ Use the `.bsk-jumbotron-overlay` class to add additional contrast around a jumbo
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Sizes"
   heading_level=2
   phase="live"
@@ -142,12 +148,12 @@ Add one of these classes to alter the size of a jumbotron:
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Layouts"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Full-width jumbotron"
   heading_level=3
   phase="live"
@@ -163,7 +169,7 @@ outside any containers, then place a container within the jumbotron.
 <!-- Content before the jumbotron, possibly in a container -->
 
 <!-- Jumbotron, not in a container -->
-<div class="bsk-jumbotron">
+<div class="bsk-jumbotron bsk-jumbotron-default">
   <div class="bsk-container">
     <!-- Jumbotron contents only are contained in a fixed-width container -->
     Jumbotron contents

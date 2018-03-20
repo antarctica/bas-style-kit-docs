@@ -1,17 +1,17 @@
 ---
-layout: topic
 title: Form examples
+menus:
+  primary_examples:
+    weight: 2
 sections:
   -
     title: Basic form
 ---
 
-{% include snippets/table-of-contents.md %}
-
 ## Example: Basic form
 {: #{{ 'Basic form' | slugify }} }
 
-{% include snippets/back-to-top.html %}
+{% include bas-style-kit/bsk-snippet--back-to-top.html %}
 
 This form shows common form controls, optional states and how these can be arranged using the default form layout.
 
@@ -19,12 +19,12 @@ This form shows common form controls, optional states and how these can be arran
 <form>
   <fieldset class="bsk-form-group">
       <label for="basic-form-example-field1">Your name</label>
-      <input type="text" class="bsk-form-control" id="basic-form-example-field1" placeholder="Adam Smith">
+      <input type="text" class="bsk-form-control" id="basic-form-example-field1" placeholder="John Smith">
   </fieldset>
 
   <fieldset class="bsk-form-group">
       <label for="basic-form-example-field2">Your email address</label>
-      <input type="email" class="bsk-form-control" id="basic-form-example-field2" placeholder="adam.smith@bas.ac.uk">
+      <input type="email" class="bsk-form-control" id="basic-form-example-field2" placeholder="john.smith@example.co.uk">
       <small class="bsk-help-text bsk-text-muted">
         We will only use this information for contacting you about your feedback.
       </small>
@@ -98,14 +98,19 @@ This form shows common form controls, optional states and how these can be arran
 ## Example: Form inputs
 {: #{{ 'Form inputs' | slugify }} }
 
-{% include snippets/back-to-top.html %}
+{% include bas-style-kit/bsk-snippet--back-to-top.html %}
 
 This form shows the various types of form input supported by the Style Kit.
 
-{% alert info style=highlight %}
+{% capture alert_content %}
 Support for newer input types such as datetime varies significantly between devices and browsers. It is still
 recommended to use these newer types for forwards-compatibility, especially on mobile devices.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 {% example html %}
 <form>

@@ -1,5 +1,8 @@
 ---
 title: Well
+menus:
+  primary_components:
+    weight: 26
 sections:
   -
     title: Overview
@@ -9,24 +12,28 @@ sections:
     title: Sizes
 ---
 
-{% include snippets/table-of-contents.md %}
-
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Overview"
   heading_level=2
 %}
 
 Use the `.well` class to show an element as indented.
 
+{% capture alert_content %}
 **Heads up!** This component will be removed in the next version of the Style Kit.
-{: .alert .alert-warning }
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="danger"
+  style="outline"
+  content=alert_content
+%}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Variants"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Default well"
   heading_level=3
   phase="live"
@@ -40,7 +47,7 @@ Use the `.well` class to show an element as indented.
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Sizes"
   heading_level=2
   phase="live"

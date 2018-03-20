@@ -2,13 +2,6 @@
 ---
 @charset "utf-8";
 
-// Styles for site design and layout
-@import 'site';
-
-// Styles for specific pages
-@import 'homepage';
-@import 'feedback';
-
 // Styles for documentation elements
 @import 'documentation';
 
@@ -23,3 +16,7 @@
 
 // Styles for syntax highlighting
 @import 'syntax-highlighting';
+
+// Styles for specific pages
+@import 'homepage';
+@import 'feedback_page';

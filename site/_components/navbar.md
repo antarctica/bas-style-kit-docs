@@ -1,5 +1,8 @@
 ---
 title: Navbar
+menus:
+  primary_components:
+    weight: 17
 sections:
   -
     title: Overview
@@ -33,9 +36,7 @@ sections:
     title: Layouts
 ---
 
-{% include snippets/table-of-contents.md %}
-
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Overview"
   heading_level=2
 %}
@@ -47,21 +48,31 @@ They can contain links, drop-down menus, forms and other
 Navbars are designed to scale with screen size. At small sizes key items will be shown normally, with less important
 items shown in a hidden menu, which can be toggled with a button. At larger sizes, all elements are shown directly.
 
-{% alert info style=solid %}
+{% capture alert_content %}
 Navbars are relatively *heavy* elements, requiring significant markup and JavaScript plugins to work correctly. Where
 this isn't possible, or suitable, the [header]({{ '/components/header' | prepend: site.baseurl }}){: .bsk-alert-link }
 component can be used instead.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="solid"
+  content=alert_content
+%}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Overflowing content"
   heading_level=3
 %}
 
-{% alert warning %}
+{% capture alert_content %}
 The navbar component is not aware of the width of items that sit within it. This means it is possible for items to
 *overflow* onto a second level, breaking the page layout and looking bad.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
 This problem worsens as the screen size narrows, and worst just before the
 [small grid size]({{ 'core/grid/#grid-sizes' | prepend: site.baseurl }}). Past this point, the navbar will hide
@@ -70,12 +81,12 @@ elements and so reduce pressure on the number of items that need to be shown.
 There is no way to automatically detect when this overflow happens, and so requires manual testing at multiple screen
 sizes to ensure things work correctly.
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Variants"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Default navbar"
   heading_level=3
   phase="live"
@@ -148,12 +159,12 @@ This example, whilst quite complex, demonstrates the sort of items shown in a ty
 </nav>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Components"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Item"
   heading_level=3
   phase="live"
@@ -173,7 +184,7 @@ Use a list of <code>&lt;a&gt;</code> elements within a navigation menu using the
 </nav>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Hidden items menu"
   heading_level=3
   phase="live"
@@ -217,7 +228,7 @@ any screen size (for demonstration purposes).
 </nav>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Brand text"
   heading_level=3
   phase="live"
@@ -237,7 +248,7 @@ Use the `.bsk-navbar-brand` class to indicate the name of the current website or
 </nav>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Brand image"
   heading_level=3
   phase="live"
@@ -259,13 +270,23 @@ To look right, scale the logo or image so that its height is one of these sizes 
 | Large          | Full height         | 96          | `.bsk-navbar-brand-image-96` |
 {: .bsk-table .bsk-table-responsive }
 
-{% alert info style=highlight %}
+{% capture alert_content %}
 If you need to use a specific size not in this list you will need to use your own classes to add suitable padding
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
-{% alert info style=highlight %}
+{% capture alert_content %}
 See the other [navbar sizes](#sizes){: .bsk-alert-link} for other examples.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 {% example html %}
 <nav class="bsk-navbar">
@@ -315,7 +336,7 @@ Add the `.bsk-fix-navbar-brand-img-txt` class to a brand image to combine with b
 </nav>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Text"
   heading_level=3
   phase="live"
@@ -333,7 +354,7 @@ Use the `.bsk-navbar-text` class to correctly position and colour any text eleme
 </nav>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Buttons"
   heading_level=3
   phase="live"
@@ -343,9 +364,14 @@ Use the `.bsk-navbar-text` class to correctly position and colour any text eleme
 
 Add the `.bsk-navbar-btn` class to correctly position any button elements, unless the button is inside a `form` element.
 
-{% alert warning %}
+{% capture alert_content %}
 Using the `.bsk-btn` class with an <code>&lt;a&gt;</code> element, within a navigation menu using the `.bsk-navbar-nav` class, is not supported.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
 {% example html %}
 <nav class="bsk-navbar">
@@ -355,7 +381,7 @@ Using the `.bsk-btn` class with an <code>&lt;a&gt;</code> element, within a navi
 </nav>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Forms"
   heading_level=3
   phase="live"
@@ -366,28 +392,48 @@ Using the `.bsk-btn` class with an <code>&lt;a&gt;</code> element, within a navi
 
 Add the `.bsk-navbar-form` class to correctly position any form elements.
 
-{% alert info style=highlight %}
+{% capture alert_content %}
 The [navbar alignment classes]({{ '/components/navbar/#item-alignment' | prepend: site.baseurl }}){: .bsk-alert-link }
 can be used to further control form elements.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 It is strongly recommended to include visible labels for each form field (the `placeholder` attribute is not yet
 universally supported).
 
-{% alert warning %}
+{% capture alert_content %}
 Where labels are hidden, the `.bsk-sr-only` class **should** always be used to ensure assistive technologies can
 understand forms. Alternatively, you can use the `aria-label`, `aria-labelledby` or `title` attributes.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
-{% alert warning %}
+{% capture alert_content %}
 Some form controls, like [input groups]({{ '/components/input-group' | prepend: site.baseurl }}){: .bsk-alert-link },
 may require fixed widths to be show up properly within a navbar.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
-{% alert warning %}
+{% capture alert_content %}
 Support for form controls in navbars at small sizes, such as mobile, is limited.
 It is recommended to use this feature sparingly until support improves.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
 {% example html %}
 <nav class="bsk-navbar">
@@ -403,7 +449,7 @@ It is recommended to use this feature sparingly until support improves.
 </nav>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Drop-down menus"
   heading_level=3
   phase="live"
@@ -430,7 +476,7 @@ It is recommended to use this feature sparingly until support improves.
 </nav>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Non-navigation links"
   heading_level=3
   phase="live"
@@ -440,10 +486,15 @@ It is recommended to use this feature sparingly until support improves.
 
 Add the `.bsk-navbar-link` class to correctly colour any link elements that are not part of the navigation menu.
 
-{% alert info style=highlight %}
+{% capture alert_content %}
 Typically this will be used within elements using the
 [navbar text]({{ '/components/#text' | prepend: site.baseurl }}){: .bsk-alert-link } class.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 {% example html %}
 <nav class="bsk-navbar">
@@ -453,7 +504,7 @@ Typically this will be used within elements using the
 </nav>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Sizes"
   heading_level=2
   phase="live"
@@ -561,12 +612,12 @@ Add one of these classes to alter the size of a jumbotron:
 </nav>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="States"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="bsk-active item"
   heading_level=3
   phase="live"
@@ -576,10 +627,15 @@ Add one of these classes to alter the size of a jumbotron:
 
 Add the `.bsk-active` class to the navbar item currently active, to highlight where the end user is in the site.
 
-{% alert warning %}
+{% capture alert_content %}
 Make sure to include a `<span class="bsk-sr-only">(current)</span>` element as well. <br />
 This provides a non-visual indication of the currently active item, suitable for assistive technologies.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
 {% example html %}
 <nav class="bsk-navbar">
@@ -592,9 +648,14 @@ This provides a non-visual indication of the currently active item, suitable for
 </nav>
 {% endexample %}
 
-{% alert info style=highlight %}
+{% capture alert_content %}
 This can also be used within [drop-down]({{ '/components/drop-down/#active' | prepend: site.baseurl }}) menus if needed.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 {% example html %}
 <nav class="bsk-navbar">
@@ -614,12 +675,12 @@ This can also be used within [drop-down]({{ '/components/drop-down/#active' | pr
 </nav>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Layouts"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Hidden items"
   heading_level=3
   phase="live"
@@ -631,18 +692,28 @@ Wrap navbar items to be hidden in the menu in an element with the `.bsk-navbar-c
 The [hidden items menu]({{ '/components/navbar/#hidden-items-menu' | prepend: site.baseurl }}) is used to show and hide
 this menu.
 
-{% alert info style=solid %}
+{% capture alert_content %}
 The navbar component requires the [collapse]({{ '/interactivity/collapse' | prepend: site.baseurl }}){: .bsk-alert-link }
 JavaScript plugin, which is enabled on this site.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="solid"
+  content=alert_content
+%}
 
 When the screen size narrows past the [small grid size]({{ 'core/grid/#grid-sizes' | prepend: site.baseurl }}), items
 will be hidden using CSS classes to be shown in a menu. The collapse JavaScript plugin is used to control this menu.
 Without this plugin, these items can never be shown, until the screen size increases past the small grid size.
 
-{% alert info style=highlight %}
+{% capture alert_content %}
 The example below will only behave correctly at small screen sizes.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 {% example html %}
 <nav class="bsk-navbar">
@@ -675,7 +746,7 @@ The example below will only behave correctly at small screen sizes.
 </nav>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Item alignment"
   heading_level=3
   phase="live"
@@ -688,9 +759,14 @@ menus, text, buttons etc.
 
 To align navigation links and drop-downs wrap them in a `ul` element with the relevant alignment class.
 
-{% alert warning %}
+{% capture alert_content %}
 Multiple right aligned elements are not currently supported and won't look right.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
 {% example html %}
 <nav class="bsk-navbar">
@@ -705,7 +781,7 @@ Multiple right aligned elements are not currently supported and won't look right
 </nav>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Fixed to top"
   heading_level=3
   phase="live"
@@ -716,15 +792,25 @@ Multiple right aligned elements are not currently supported and won't look right
 Add the `.bsk-navbar-fixed-top` class and include a [container]({{ 'core/layout/#containers' | prepend: site.baseurl }})
 to fix a navbar to the top of the page.
 
-{% alert warning %}
+{% capture alert_content %}
 Fixed styles require additional padding on the `body` element. Otherwise the navbar will cover up other page content.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
 The Style Kit doesn’t provide styles for this, however the class below can be used as a starting point
 
-{% alert info style=highlight %}
+{% capture alert_content %}
 The example below would normally use absolute positioning. It is disabled here to avoid breaking the site layout.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 {% highlight css %}
 body {
@@ -746,7 +832,7 @@ body {
 </nav>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Fixed to bottom item"
   heading_level=3
   phase="live"
@@ -757,9 +843,14 @@ body {
 Add the `.bsk-navbar-fixed-bottom` class and include a
 [container]({{ 'core/layout/#containers' | prepend: site.baseurl }}) to fix a navbar to the bottom of the page.
 
-{% alert warning %}
+{% capture alert_content %}
 Fixed styles require additional padding on the `body` element. Otherwise the navbar will cover up other page content.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
 The Style Kit doesn’t provide styles for this, however the class below can be used as a starting point
 
@@ -783,7 +874,7 @@ body {
 </nav>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Static top"
   heading_level=3
   phase="live"
@@ -794,9 +885,14 @@ body {
 Add the `.bsk-navbar-static-top` class and include a [container]({{ 'core/layout/#containers' | prepend: site.baseurl }})
 to create a full-width navbar that scrolls with the page.
 
-{% alert info style=highlight %}
+{% capture alert_content %}
 Unlike the `.bsk-navbar-fixed-*` classes, you do not need to change any padding on the body.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 {% example html %}
 <nav class="bsk-navbar navbar-static-top">

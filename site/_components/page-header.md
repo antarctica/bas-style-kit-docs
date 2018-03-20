@@ -1,5 +1,8 @@
 ---
 title: Page header
+menus:
+  primary_components:
+    weight: 18
 sections:
   -
     title: Overview
@@ -7,9 +10,7 @@ sections:
     title: Default page header
 ---
 
-{% include snippets/table-of-contents.md %}
-
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Overview"
   heading_level=2
 %}
@@ -17,12 +18,12 @@ sections:
 Use the `.page-header` class to title a page, or section within a page, using a more prominent heading with extra
 spacing.
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Variants"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Default page header"
   heading_level=3
   phase="live"

@@ -1,5 +1,8 @@
 ---
 title: Colours
+menus:
+  primary_core:
+    weight: 4
 sections:
   -
     title: Overview
@@ -21,9 +24,7 @@ sections:
     title: Extended colours
 ---
 
-{% include snippets/table-of-contents.md %}
-
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Overview"
   heading_level=2
 %}
@@ -46,17 +47,27 @@ sufficient contrast within a component.
 
 They are not intended to compliment, or compete with, standard colours and may look too similar to other colours.
 
-{% alert info %}
+{% capture alert_content %}
 To promote consistency, it is strongly recommended not to use non-standard colours (including shades) in websites or
 services, unless specifically recommended to use an alternative.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="outline"
+  content=alert_content
+%}
 
-{% alert warning %}
+{% capture alert_content %}
 If you do use non-standard colours (including extended colours) you must ensure this complies with the
 [recommended minimum colour contrast]({{ '/start/standards-accessibility/#colour-contrast' | prepend: site.baseurl }}){: .alert-bsk-link }.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Page background"
   heading_level=2
   phase="live"
@@ -91,7 +102,7 @@ space would be shown after the [footer]({{ '/components/footer' | prepend: site.
   </div>
 </div>
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Typography"
   heading_level=2
   phase="live"
@@ -124,7 +135,7 @@ A default link colour is applied to the `<body>` element.
   </div>
 </div>
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Components"
   heading_level=2
   phase="live"
@@ -187,7 +198,7 @@ A default link colour is applied to the `<body>` element.
   </div>
 </div>
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Variants"
   heading_level=2
   phase="live"
@@ -234,7 +245,7 @@ A default link colour is applied to the `<body>` element.
   </div>
 </div>
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Standard contextual colours"
   heading_level=2
   phase="live"
@@ -271,16 +282,26 @@ These colours can be used with many core styles and components, such as:
 * [text, lists, etc.]({{ '/core/type/#contextual-colours' | prepend: site.baseurl }})
 * etc.
 
-{% alert warning %}
+{% capture alert_content %}
 You should ensure contextual colours are not the only means
  [context is conveyed to ensure those using assistive technologies are not excluded]({{ '/start/standards-accessibility/#conveying-context-without-colours-or-icons' | prepend: site.baseurl }}){: .bsk-alert-link }.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
-{% alert info %}
+{% capture alert_content %}
 There are accompanying
 [standard contextual icons]({{ '/core/icons/#standard-contextual-icons' | prepend: site.baseurl }}){: .bsk-alert-link }
 which can be used alongside these classes.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="outline"
+  content=alert_content
+%}
 
 <div class="bsk-docs-swatch-wrapper">
   <div class="bsk-row">
@@ -353,7 +374,7 @@ which can be used alongside these classes.
   </div>
 </div>
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Standard contextual background colours"
   heading_level=2
   phase="live"
@@ -409,7 +430,7 @@ used as the background of an element using these classes:
   </div>
 </div>
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Development phase colours"
   heading_level=2
   phase="live"
@@ -497,7 +518,7 @@ These colours can be used with many core styles and components, such as:
   </div>
 </div>
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="External service colours"
   heading_level=2
   phase="live"
@@ -512,10 +533,15 @@ These colours can be used with components such as:
 
 * [social media]({{ '/components/social-media' | prepend: site.baseurl }})
 
-{% alert info style=highlight %}
+{% capture alert_content %}
 These colours are part of the extended colour set and should not be used except for representing their respective
-service
-{% endalert %}
+service.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 <div class="bsk-docs-swatch-wrapper">
   <div class="bsk-row">
@@ -554,7 +580,7 @@ service
   </div>
 </div>
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Standard greyscale colours"
   heading_level=2
   phase="live"
@@ -630,7 +656,7 @@ These colours are defined by mixing black with a white base, they do not use a c
   </div>
 </div>
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Standard colours"
   heading_level=2
   phase="live"
@@ -1433,7 +1459,7 @@ NERC Green
   </div>
 </div>
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Extended colours"
   heading_level=2
   phase="live"
@@ -1443,12 +1469,17 @@ NERC Green
 
 This section lists all the colours in the extended colour set.
 
-{% alert alert %}
+{% capture alert_content %}
 These colours should not be used for any other purpose. They do not compete with or replace
 [standard colours]({{ '#standard-colours' }}).
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Contrast"
   heading_level=3
 %}
@@ -1494,14 +1525,14 @@ Inline code component
   </div>
 </div>
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="External services"
   heading_level=3
 %}
 
 See [external service colours]({{ '#external-service-colours' }}).
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Development phases"
   heading_level=3
 %}

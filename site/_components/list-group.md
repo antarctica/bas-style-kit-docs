@@ -1,5 +1,8 @@
 ---
 title: List group
+menus:
+  primary_components:
+    weight: 14
 sections:
   -
     title: Overview
@@ -19,9 +22,7 @@ sections:
     title: Badges
 ---
 
-{% include snippets/table-of-contents.md %}
-
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Overview"
   heading_level=2
 %}
@@ -30,11 +31,16 @@ Use the `.bsk-list-group` class for displaying stacked content, either as a mini
 
 Use the `.bsk-list-group-item` for items within a list group, see the details of each.
 
-{% alert info %}
+{% capture alert_content %}
 **Heads up!** List group elements are not yet fully styled, but will be in the next version of the Style Kit.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Supported elements"
   heading_level=2
   phase="live"
@@ -45,12 +51,12 @@ Use the `.bsk-list-group-item` for items within a list group, see the details of
 Different [variants]({{ '/components/list-group/#variants' | prepend: site.baseurl }}) are designed for different
 supporting elements, as documented. Other elements may be used, but are not supported and may not look right.
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Variants"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Basic list group"
   heading_level=3
   phase="live"
@@ -69,7 +75,7 @@ Use the `.bsk-list-group-item` class with <code>&lt;li&gt;</code> elements.
 </ul>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Linked list group"
   heading_level=3
   phase="live"
@@ -88,7 +94,7 @@ Use the `.bsk-list-group-item` class with <code>&lt;a&gt;</code> elements.
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Contextual colours"
   heading_level=3
   phase="live"
@@ -116,7 +122,7 @@ used for context by adding these classes:
 </ul>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Button list group"
   heading_level=3
   phase="live"
@@ -135,12 +141,12 @@ Use the `.bsk-list-group-item` class with <code>&lt;button&gt;</code> elements.
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="States"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Active item"
   heading_level=3
   phase="live"
@@ -150,12 +156,17 @@ Use the `.bsk-list-group-item` class with <code>&lt;button&gt;</code> elements.
 
 Add the `.bsk-active` class to the list group item currently active, to highlight where the end user is in the site.
 
-{% alert warning %}
+{% capture alert_content %}
 Make sure to include a `<span class="bsk-sr-only">(current)</span>` element as well. <br />
 This provides a non-visual indication of the currently active item, suitable for assistive technologies.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
-{% include snippets/back-to-top.html %}
+{% include bas-style-kit/bsk-snippet--back-to-top.html %}
 
 {% example html %}
 <!-- Basic list group -->
@@ -177,7 +188,7 @@ This provides a non-visual indication of the currently active item, suitable for
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Disabled item"
   heading_level=3
   phase="live"
@@ -216,12 +227,12 @@ Add the `.bsk-disabled` class to list group items which cannot be used.
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Components"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Badges"
   heading_level=3
   phase="live"

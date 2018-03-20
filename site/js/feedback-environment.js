@@ -1,5 +1,4 @@
 jQuery(function($){
-
   // JS is available if this script can run
   jQuery('#feedbackEnvironmentJSAvailable').val('true');
   jQuery('#feedbackEnvironmentOutputJSAvailable').text('Yes');

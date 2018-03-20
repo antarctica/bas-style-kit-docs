@@ -1,5 +1,8 @@
 ---
 title: Tables
+menus:
+  primary_core:
+    weight: 13
 sections:
   -
     title: Basic table
@@ -17,14 +20,12 @@ sections:
     title: Responsive table
 ---
 
-{% include snippets/table-of-contents.md %}
-
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Variations"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Basic table"
   heading_level=3
   phase="live"
@@ -60,7 +61,7 @@ managed by third party widgets or applications such as Apex.
 </table>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Striped rows"
   heading_level=3
   phase="live"
@@ -95,7 +96,7 @@ Add `.bsk-table-striped` to style alternate rows with the <code>&lt;tbody&gt;</c
 </table>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Bordered table"
   heading_level=3
   phase="live"
@@ -130,7 +131,7 @@ Add `.tbsk-able-bordered` to apply additional borders around the table and betwe
 </table>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Hoverable rows"
   heading_level=3
   phase="live"
@@ -165,7 +166,7 @@ Add `.bsk-table-hover` to highlight the row with focus within a table.
 </table>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Contextual rows"
   heading_level=3
   phase="live"
@@ -184,11 +185,16 @@ can be used as the background of table rows using these classes:
 | Info                           | `.bsk-info`                            |
 {: .bsk-table .bsk-table-responsive }
 
-{% alert warning %}
+{% capture alert_content %}
 These classes only work within tables. Use the
 [standard contextual background classes]({{ '/core/colours/#standard-contextual-background-colours' | prepend: site.baseurl }}){: .bsk-alert-link }
 to use them in other situations.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
 You can also use the `.bsk-active` class to highlight a row as if it had focus when using the
 [row hover]({{ '/core/tables/#hoverable-rows' | prepend: site.baseurl }}) styles.
@@ -226,7 +232,7 @@ You can also use the `.bsk-active` class to highlight a row as if it had focus w
 </table>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Small table"
   heading_level=3
   phase="live"
@@ -261,12 +267,12 @@ Add `.bsk-table-condensed` to reduce padding within a table to make it more comp
 </table>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Layouts"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Responsive table"
   heading_level=3
   phase="live"
@@ -276,10 +282,15 @@ Add `.bsk-table-condensed` to reduce padding within a table to make it more comp
 
 Wrap a table with the `.bsk-table-responsive` class to make them scroll horizontally on smaller devices.
 
-{% alert warning %}
+{% capture alert_content %}
 Responsive tables may not be compatible with advanced mark-up such as drop-down menus and other widgets due to clipping
 caused by the use of `overflow-y: hidden`.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
 {% example html %}
 <div class="bsk-table-responsive">
@@ -308,10 +319,15 @@ caused by the use of `overflow-y: hidden`.
 </div>
 {% endexample %}
 
-{% alert danger %}
+{% capture alert_content %}
 Firefox requires some additional styles to fix a bug with <code>&lt;fieldset&gt;</code> elements which interferes with
 responsive tables. This can be fixed using the code below, but it **is not** included in the Style Kit by default.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="danger"
+  style="outline"
+  content=alert_content
+%}
 
 ```css
 @-moz-document url-prefix() {

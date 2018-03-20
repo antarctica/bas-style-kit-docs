@@ -1,11 +1,6 @@
 ---
-layout: default
 title: Copyright notice
 ---
-
-<header id="site-content" class="bsk-page-header" tabindex="-1">
-    <h1>Copyright notice</h1>
-</header>
 
 Except where otherwise stated, the materials that make up this website are subject to copyright, and are owned by the
 Natural Environment Research Council (NERC), of which the British Antarctic Survey (BAS) is a component body.

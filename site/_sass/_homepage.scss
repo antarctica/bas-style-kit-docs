@@ -1,11 +1,18 @@
+// Styles for no margin after navbar to meet masthead without a gap
+.site-home-navbar {
+  margin-bottom: 0;
+}
+
 // Styles for masthead
 .site-home-masthead {
+  margin-bottom: 40px;
   background-image: url('/img/site-masthead-tom-welsh.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 
   .site-home-masthead-wrapper {
     width: 256px;
+    padding-top: 30px;
   }
 
   .site-home-masthead-symbol {
@@ -33,11 +40,6 @@
   .site-home-masthead-version {
     color: #fff;
   }
-}
-
-// Styles for no margin after navbar to meet masthead without a gap
-.site-home-no-margin-bottom {
-  margin-bottom: 0;
 }
 
 // Styles for bigger alerts on the homepage

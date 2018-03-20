@@ -1,5 +1,8 @@
 ---
 title: Alert
+menus:
+  primary_components:
+    weight: 2
 sections:
   -
     title: Overview
@@ -27,35 +30,48 @@ sections:
     title: Layouts
 ---
 
-{% include snippets/table-of-contents.md %}
-
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Overview"
   heading_level=2
 %}
 
 Use the `.bsk-alert` class to highlight feedback about a user action, or some other event.
 
-{% alert warning style=solid %}
+{% capture alert_content %}
 You **must** pick a [variant]({{ '/components/alert/#variants' | prepend: site.baseurl }}){: .bsk-alert-link } for each
 alert, otherwise it will look strange. It is not enough to use `.bsk-alert` on its own.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="solid"
+  content=alert_content
+%}
 
-{% alert warning style=solid %}
+{% capture alert_content %}
 You **must** pick a [style]({{ '/components/alert/#styles' | prepend: site.baseurl }}){: .bsk-alert-link } for each
 alert, otherwise it will look strange. It is not enough to use `.bsk-alert` on its own.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="solid"
+  content=alert_content
+%}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Variants"
   heading_level=2
 %}
 
-{% alert info %}
+{% capture alert_content %}
 There is no *default* alert variant, as a grey alert for example wouldn't make a lot of sense.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="outline"
+  content=alert_content
+%}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Primary alert"
   heading_level=3
   phase="live"
@@ -69,7 +85,7 @@ There is no *default* alert variant, as a grey alert for example wouldn't make a
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Experimental alert"
   heading_level=3
   phase="live"
@@ -83,7 +99,7 @@ There is no *default* alert variant, as a grey alert for example wouldn't make a
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Cookie notice alert"
   heading_level=3
   phase="live"
@@ -107,10 +123,15 @@ design:
 [fixed-width container]({{ '/core/layout/#fixed-width-container' | prepend: site.baseurl }})
 * wrap the container in a <code>&lt;div&gt;</code> with the `.bsk-fix-alert-static-top-fixed-container-wrapper` class
 
-{% alert info style=highlight %}
+{% capture alert_content %}
 The cookie notice in the example will appear broken, this is because it is already placed within a container as part of
 this site's layout.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 {% example html %}
 <div class="bsk-fix-alert-static-top-fixed-container-wrapper">
@@ -134,7 +155,7 @@ this site's layout.
 </nav>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Contextual colours"
   heading_level=3
   phase="live"
@@ -160,7 +181,7 @@ used for context by adding these classes:
 <div class="bsk-alert bsk-alert-solid bsk-alert-info" role="alert">Info alert</div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Experimental icon"
   heading_level=3
   phase="live"
@@ -171,9 +192,14 @@ used for context by adding these classes:
 The [experimental standard conventional icon]({{ '/core/icons/#experimental-icon' | prepend: site.baseurl }}) can be
 used for adding extra context to alerts.
 
-{% alert info style=highlight %}
+{% capture alert_content %}
 Use the `.bsk-alert-icon` class to properly format an icon in an alert.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 {% example html %}
 <div class="bsk-alert bsk-alert-solid bsk-alert-experimental" role="alert">
@@ -181,7 +207,7 @@ Use the `.bsk-alert-icon` class to properly format an icon in an alert.
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Contextual icons"
   heading_level=3
   phase="live"
@@ -192,9 +218,14 @@ Use the `.bsk-alert-icon` class to properly format an icon in an alert.
 The [standard contextual icons]({{ '/core/icons/#standard-contextual-icons' | prepend: site.baseurl }}) can be
 used for adding extra context to alerts.
 
-{% alert info style=highlight %}
+{% capture alert_content %}
 Use the `.bsk-alert-icon` class to properly format an icon in an alert.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 {% example html %}
 <div class="bsk-alert bsk-alert-icon bsk-alert-solid bsk-alert-success" role="alert">
@@ -211,12 +242,12 @@ Use the `.bsk-alert-icon` class to properly format an icon in an alert.
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Styles"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Solid"
   heading_level=3
   phase="live"
@@ -230,7 +261,7 @@ Use the `.bsk-alert-icon` class to properly format an icon in an alert.
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Outline"
   heading_level=3
   phase="live"
@@ -244,7 +275,7 @@ Use the `.bsk-alert-icon` class to properly format an icon in an alert.
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Highlight"
   heading_level=3
   phase="live"
@@ -260,12 +291,12 @@ Use the `.bsk-alert-icon` class to properly format an icon in an alert.
 
 {: #{{ 'Components' | slugify }}}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Components"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Alert links"
   heading_level=3
   phase="live"
@@ -279,7 +310,7 @@ Use the `.bsk-alert-link` class for any <code>&lt;a&gt;</code> elements within a
 <div class="bsk-alert bsk-alert-solid bsk-alert-success" role="alert">Alert with a <a href="#" class="bsk-alert-link">link</a></div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Dismissible alerts"
   heading_level=3
   phase="live"
@@ -291,15 +322,25 @@ Use the `.bsk-alert-link` class for any <code>&lt;a&gt;</code> elements within a
 Add a <code>&lt;button&gt;</code> element using the [close icon]({{ '/core/icons/#close-icon' | prepend: site.baseurl }})
 , to create an alert that can be closed or dismissed.
 
-{% alert info style=solid %}
+{% capture alert_content %}
 Dismissible alerts require the [alert]({{ '/interactivity/alert' | prepend: site.baseurl }}){: .bsk-alert-link }
 JavaScript plugin, which is enabled on this site.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="solid"
+  content=alert_content
+%}
 
-{% alert danger style=highlight %}
+{% capture alert_content %}
 The close button element should use a <code>&lt;button&gt;</code> element, not a <code>&lt;a&gt;</code> element, for
 browser compatibility.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="danger"
+  style="highlight"
+  content=alert_content
+%}
 
 {% example html %}
 <div class="bsk-alert bsk-alert-solid bsk-alert-success bsk-alert-dismissible" role="alert">
@@ -308,7 +349,7 @@ browser compatibility.
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Block alerts"
   heading_level=3
   phase="live"
@@ -319,9 +360,14 @@ browser compatibility.
 Where an alert will contain more than just text, such as lists or buttons, etc. add the `.bsk-alert-block` class to
 ensure compatibility and correct formatting.
 
-{% alert warning style=highlight %}
+{% capture alert_content %}
 Using an alert with more than just text without this class is not supported and may not look right.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="highlight"
+  content=alert_content
+%}
 
 {% example html %}
 <div class="bsk-alert bsk-alert-block bsk-alert-solid bsk-alert-success" role="alert">
@@ -335,7 +381,7 @@ Using an alert with more than just text without this class is not supported and 
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Block alert headings"
   heading_level=3
   phase="live"
@@ -347,9 +393,14 @@ A heading can be added to a block alert using a `.bsk-alert-heading` header and 
 
 The alert body should use the `.bsk-alert-body` class for proper formatting.
 
-{% alert warning style=highlight %}
+{% capture alert_content %}
 Other headings may be used, but are not supported and may not look right.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="highlight"
+  content=alert_content
+%}
 
 {% example html %}
 <div class="bsk-alert bsk-alert-block bsk-alert-solid bsk-alert-success" role="alert">
@@ -368,7 +419,7 @@ Other headings may be used, but are not supported and may not look right.
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Sizes"
   heading_level=2
 %}
@@ -389,12 +440,12 @@ Add one of these classes to alter the size of an alert:
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Layouts"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Static top"
   heading_level=3
   phase="live"

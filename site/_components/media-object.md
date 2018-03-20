@@ -1,5 +1,8 @@
 ---
 title: Media object
+menus:
+  primary_components:
+    weight: 15
 sections:
   -
     title: Media object
@@ -7,9 +10,7 @@ sections:
     title: Default well
 ---
 
-{% include snippets/table-of-contents.md %}
-
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Overview"
   heading_level=2
 %}
@@ -20,12 +21,12 @@ Use the `.bsk-media-object` class for the image of a media item.
 
 Use the `.bsk-media-body` class, with an optional `.bsk-media-header` element, for the text of a media item.
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Variants"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Default media object item"
   heading_level=3
   phase="live"
@@ -45,7 +46,7 @@ Use the `.bsk-media-body` class, with an optional `.bsk-media-header` element, f
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Media object list"
   heading_level=3
   phase="live"
@@ -139,12 +140,12 @@ Media objects can also be nested.
 </ul>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Layout"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Horizontal alignment"
   heading_level=3
   phase="live"
@@ -160,9 +161,14 @@ Add one of these classes to align a media object horizontally:
 | Right                | `.bsk-media-right`         |
 {: .bsk-table .bsk-table-responsive }
 
-{% alert info %}
+{% capture alert_content %}
 When using right alignment, the `.bsk-media-body` needs to be before the `.bsk-media-right` object.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="outline"
+  content=alert_content
+%}
 
 {% example html %}
 <!-- Left aligned -->
@@ -192,7 +198,7 @@ When using right alignment, the `.bsk-media-body` needs to be before the `.bsk-m
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Vertical alignment"
   heading_level=3
   phase="live"
@@ -206,9 +212,14 @@ When using right alignment, the `.bsk-media-body` needs to be before the `.bsk-m
 | Bottom              | `.bsk-media-bottom`      |
 {: .bsk-table .bsk-table-responsive }
 
-{% alert info %}
+{% capture alert_content %}
 Vertical alignment classes need a horizontal alignment class as well to function correctly.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="outline"
+  content=alert_content
+%}
 
 {% example html %}
 <!-- Top aligned (default) -->

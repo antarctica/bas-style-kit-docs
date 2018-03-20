@@ -1,15 +1,12 @@
 ---
 title: Pop-Over
+menus:
+  primary_interactivity:
+    weight: 10
 sections:
   -
     title: Overview
 ---
-
-## Contents
-{:.no_toc #{{ 'Contents' | slugify }}}
-
-* Will be replaced with the ToC, excluding the "Contents" header
-{:toc}
 
 ## Overview
 {: #{{ 'Overview' | slugify }}}
@@ -24,7 +21,12 @@ for providing secondary information.
 
 This plugin depends upon [jQuery](https://jquery.com).
 
-{% alert info style=highlight %}
+{% capture alert_content %}
 See [distribution]({{ '/start/distribution/#javaScript-libraries' | prepend: site.baseurl }}){: .bsk-alert-link} for
-how to include these dependencies
-{% endalert %}
+how to include these dependencies.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}

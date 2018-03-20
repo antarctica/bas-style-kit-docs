@@ -1,5 +1,8 @@
 ---
 title: Label
+menus:
+  primary_components:
+    weight: 13
 sections:
   -
     title: Overview
@@ -17,31 +20,39 @@ sections:
     title: Sizes
 ---
 
-{% include snippets/table-of-contents.md %}
-
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Overview"
   heading_level=2
 %}
 
 Use the `.bsk-label` class to highlight something, such as a status or some other property.
 
-{% alert warning style=solid %}
+{% capture alert_content %}
 You **must** pick a [variant]({{ '/components/label/#variants' | prepend: site.baseurl }}){: .bsk-alert-link } for each
 label, otherwise it will look strange. It is not enough to use `.bsk-label` on its own.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="solid"
+  content=alert_content
+%}
 
-{% alert info style=solid %}
+{% capture alert_content %}
 If you are highlighting a number, [Badges]({{ '/components/label' | prepend: site.baseurl }}){: .bsk-alert-link } can
 also be used.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="solid"
+  content=alert_content
+%}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Variants"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Default label"
   heading_level=3
   phase="live"
@@ -56,7 +67,7 @@ Add the `.bsk-label-default` class for a standard label. For added context you c
 Something <span class="bsk-label bsk-label-default">Label</span>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Primary label"
   heading_level=3
   phase="live"
@@ -70,7 +81,7 @@ Add the `.bsk-label-primary` class for a primary label.
 Something <span class="bsk-label bsk-label-primary">Label</span>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Experimental label"
   heading_level=3
   phase="live"
@@ -84,7 +95,7 @@ Add the `.bsk-label-experimental` class for an experimental label.
 Something <span class="bsk-label bsk-label-experimental">Label</span>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Contextual colours"
   heading_level=3
   phase="live"
@@ -110,7 +121,7 @@ used for context by adding these classes:
 <span class="bsk-label bsk-label-info">Info label</span>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Development phases"
   heading_level=3
   phase="live"
@@ -140,7 +151,7 @@ where relevant by adding these classes:
 <span class="bsk-label bsk-label-phase-retired">Retired phase</span>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Sizes"
   heading_level=2
   phase="live"

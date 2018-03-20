@@ -1,5 +1,5 @@
 ---
-layout: blank
+layout: bas-style-kit/blank
 ---
 {
     "css/bas-style-kit.css": "{% if jekyll.environment == 'staging' %}{{ site.data.bsk_sri_base_staging['dist/css/bas-style-kit.css'] }}{% else %}{{ site.data.bsk_sri_base_production['dist/css/bas-style-kit.css'] }}{% endif %}",

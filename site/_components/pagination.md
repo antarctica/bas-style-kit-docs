@@ -1,5 +1,8 @@
 ---
 title: Pagination
+menus:
+  primary_components:
+    weight: 19
 sections:
   -
     title: Overview
@@ -17,9 +20,7 @@ sections:
     title: Pager alignment
 ---
 
-{% include snippets/table-of-contents.md %}
-
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Overview"
   heading_level=2
 %}
@@ -32,20 +33,30 @@ Use the `.bsk-pager` class as a simpler alternative to pagination.
 This component does not provide pagination or paging functions itself, only styled elements for use with a pagination
 or paging implementation. For example [data-tables](https://datatables.net) or [list.js](http://listjs.com).
 
-{% alert warning %}
+{% capture alert_content %}
 Use the `aria-label` element so assistive technologies can tell each pagination or pager instance apart.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
-{% alert info %}
+{% capture alert_content %}
 **Heads up!** Pagination and pager elements are not yet fully styled, but will be in the next version of the Style Kit.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="outline"
+  content=alert_content
+%}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Variants"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Default pagination"
   heading_level=3
   phase="live"
@@ -67,7 +78,7 @@ Use the `aria-label` element so assistive technologies can tell each pagination 
 </nav>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Simple pager"
   heading_level=3
   phase="live"
@@ -84,7 +95,7 @@ Use the `aria-label` element so assistive technologies can tell each pagination 
 </nav>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Sizes"
   heading_level=2
   phase="live"
@@ -100,9 +111,14 @@ Add one of these classes to alter the size of a pagination instance:
 | Small           | `.bsk-pagination-sm`        |
 {: .bsk-table .bsk-table-responsive }
 
-{% alert warning %}
+{% capture alert_content %}
 These classes don't apply to the pager.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
 
 {% example html %}
 <nav aria-label="pagination-example-2">
@@ -140,12 +156,12 @@ These classes don't apply to the pager.
 </nav>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="States"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Active item"
   heading_level=3
   phase="live"
@@ -172,7 +188,7 @@ The active state doesn't apply to the pager.
 </nav>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Disabled item"
   heading_level=3
   phase="live"
@@ -184,8 +200,10 @@ Add the `.bsk-disabled` class to indicate unavailable items or actions.
 
 <div class="bsk-alert bsk-alert-solid bsk-alert-danger bsk-alert-block bsk-alert-icon">
   <header class="bsk-alert-heading">
-    <h4><i class="fa fa-fw fa-exclamation-circle bsk-alert-icon"></i>
-    It is not safe to rely on this state to prevent users activating disabled actions</h4>
+    <div class="bsk-h4">
+      <i class="fa fa-fw fa-exclamation-circle bsk-alert-icon"></i>
+      It is not safe to rely on this state to prevent users activating disabled actions
+    </div>
   </header>
   <p>Browsers may not enforce these properties, or users may trivially edit the DOM. Server side protections
    <strong>must</strong> be used for dangerous actions.</p>
@@ -214,12 +232,12 @@ Add the `.bsk-disabled` class to indicate unavailable items or actions.
 </nav>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Layouts"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Pager alignment"
   heading_level=3
   phase="live"

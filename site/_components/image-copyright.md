@@ -1,5 +1,8 @@
 ---
 title: Image copyright
+menus:
+  primary_components:
+    weight: 10
 sections:
   -
     title: Overview
@@ -11,9 +14,7 @@ sections:
     title: Jumbotron
 ---
 
-{% include snippets/table-of-contents.md %}
-
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Overview"
   heading_level=2
 %}
@@ -24,11 +25,16 @@ Use the `.bsk-image-copyright-image` class on the image or media item.
 
 Use the `.bsk-image-copyright-attribution` class to specify the attribution information for the image or media item.
 
-{% alert info style=highlight %}
+{% capture alert_content %}
 This attribution can also include a link, for example to purchase an image from the BAS Image Collection
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Supported elements"
   heading_level=2
 %}
@@ -36,7 +42,7 @@ This attribution can also include a link, for example to purchase an image from 
 These elements are supported for use with the image copyright component. Other elements may be used, but are not
 supported and may not look right.
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Figure"
   heading_level=3
   phase="live"
@@ -51,10 +57,15 @@ Use a <code>&lt;figure&gt;</code> element with the `.bsk-image-copyright` class 
   <li>a <code>&lt;figcaption&gt;</code> element with the `.bsk-image-copyright-attribution` class for the attribution</li>
 </ul>
 
-{% alert info style=highlight %}
+{% capture alert_content %}
 If a <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> don't make semantic sense use
 <code>&lt;div&gt;</code>'s instead.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 {% example html %}
 <figure class="bsk-image-copyright">
@@ -72,7 +83,7 @@ Optionally the attribution information can be a link.
 </figure>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Thumbnail"
   heading_level=3
   phase="live"
@@ -124,7 +135,7 @@ If the thumbnail doesn't have a caption, use a <code>&lt;div&gt;</code> element 
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Jumbotron"
   heading_level=3
   phase="live"

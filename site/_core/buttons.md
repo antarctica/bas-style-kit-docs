@@ -1,5 +1,8 @@
 ---
 title: Buttons
+menus:
+  primary_core:
+    weight: 2
 sections:
   -
     title: Overview
@@ -23,21 +26,24 @@ sections:
     title: States
 ---
 
-{% include snippets/table-of-contents.md %}
-
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Overview"
   heading_level=2
 %}
 
 Use the `.bsk-btn` class to create clickable actions or links.
 
-{% alert warning style=solid %}
+{% capture alert_content %}
 You **must** pick a [variant]({{ '/core/buttons/#variants' | prepend: site.baseurl }}){: .bsk-alert-link } for each
 button, otherwise it will look strange. It is not enough to use `.bsk-btn` on its own.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="solid"
+  content=alert_content
+%}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Supported elements"
   heading_level=2
   phase="live"
@@ -57,11 +63,16 @@ These elements are also supported, but to a lesser extent:
 
 Other elements may be used as well, but are not supported and may not look right.
 
-{% alert info %}
+{% capture alert_content %}
 Use `role="button"` for link elements which trigger in-page functionality (such as collapsing
 content) to give
 [proper context to assistive technologies]({{ '/start/standards-accessibility/#link-context-and-roles' | prepend: site.baseurl }}){: .bsk-alert-link }.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="outline"
+  content=alert_content
+%}
 
 {% example html %}
 <button class="bsk-btn bsk-btn-default" type="submit">Button</button>
@@ -70,12 +81,12 @@ content) to give
 <a class="bsk-btn bsk-btn-default" href="#" role="button">Link</a>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Variants"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Default button"
   heading_level=3
   phase="live"
@@ -90,7 +101,7 @@ Add the `.bsk-btn-default` class for standard or secondary buttons. For added co
 <button class="bsk-btn bsk-btn-default" type="submit">Action</button>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Primary button"
   heading_level=3
   phase="live"
@@ -104,7 +115,7 @@ Add the `.bsk-btn-primary` class for the main call to action.
 <button class="bsk-btn bsk-btn-primary" type="submit">Primary Action</button>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Experimental button"
   heading_level=3
   phase="live"
@@ -118,7 +129,7 @@ Add the `.bsk-btn-experimental` class for actions that are experimental or not y
 <button class="bsk-btn bsk-btn-experimental" type="submit">Experimental Action</button>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Contextual colours"
   heading_level=3
   phase="live"
@@ -144,7 +155,7 @@ used for context by adding these classes:
 <button class="bsk-btn bsk-btn-info">Info Action</button>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Contextual icons"
   heading_level=3
   phase="live"
@@ -170,7 +181,7 @@ used for adding context to buttons, usually with the
 <button class="bsk-btn bsk-btn-info"><i class="fa fa-fw fa-info" aria-hidden="true"></i> Info Action</button>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Link"
   heading_level=3
   phase="live"
@@ -185,7 +196,7 @@ actions, or those you don't want users to use without thinking (such as delete).
 <button class="bsk-btn bsk-btn-link" type="submit">Uncommon Action</button>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Sizes"
   heading_level=2
   phase="live"
@@ -209,7 +220,7 @@ Add one of these classes to alter the size of a button:
 <p><button class="bsk-btn bsk-btn-default bsk-btn-xs">Extra-Small Button</button></p>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Block level buttons"
   heading_level=3
   phase="live"
@@ -227,12 +238,12 @@ Add `.bsk-btn-block` for buttons to span the width of their parent.
 </div>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="States"
   heading_level=2
 %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Active state"
   heading_level=3
   phase="live"
@@ -243,17 +254,22 @@ Add `.bsk-btn-block` for buttons to span the width of their parent.
 Active buttons appear *pressed* using a darker background, border and inset shadow. This state will be applied
 automatically when pressed, or forced by adding the `.bsk-active` class if needed.
 
-{% alert info %}
+{% capture alert_content %}
 Use `aria-pressed="true"` to give
 [proper context to assistive technologies]({{ '/start/standards-accessibility/#link-context-and-roles' | prepend: site.baseurl }}){: .alert-bsk-link }.
-{% endalert %}
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="outline"
+  content=alert_content
+%}
 
 {% example html %}
 <button class="bsk-btn bsk-btn-default bsk-active">Active Action</button>
 <a class="bsk-btn bsk-btn-default bsk-active" href="#" role="button">Active Action</a>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Disabled state"
   heading_level=3
   phase="live"
@@ -263,14 +279,16 @@ Use `aria-pressed="true"` to give
 
 <div class="bsk-alert bsk-alert-solid bsk-alert-danger bsk-alert-block bsk-alert-icon">
   <header class="bsk-alert-heading">
-    <h4><i class="fa fa-fw fa-exclamation-circle bsk-alert-icon"></i>
-    It is not safe to rely on this state to prevent users activating disabled actions</h4>
+    <div class="bsk-h4">
+      <i class="fa fa-fw fa-exclamation-circle bsk-alert-icon"></i>
+      It is not safe to rely on this state to prevent users activating disabled actions
+    </div>
   </header>
   <p>Browsers may not enforce these properties, or users may trivially edit the DOM. Server side protections
    <strong>must</strong> be used for dangerous actions.</p>
 </div>
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Disabled button elements"
   heading_level=4
 %}
@@ -281,7 +299,7 @@ Add the `disabled` attribute to indicate unavailable actions.
 <button class="bsk-btn bsk-btn-default" disabled>Disabled Action</button>
 {% endexample %}
 
-{% include snippets/topic-section-metadata.html
+{% include topic-section-metadata.html
   title="Disabled link elements"
   heading_level=4
 %}
