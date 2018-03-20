@@ -24,6 +24,8 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 ### Removed
 
 * Back to top, Is something wrong and build information from footer, these elements may be re-added later
+* Trailing new line in cookies policy
+
 ## v1.2.0 - 04/02/2018
 
 ### Added

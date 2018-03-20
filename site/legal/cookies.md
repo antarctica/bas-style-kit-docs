@@ -66,4 +66,3 @@ Our cookie banner sets the following cookies:
 ### 16th June 2016
 
 * initial policy
-
