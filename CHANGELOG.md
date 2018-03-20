@@ -5,6 +5,27 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ## [Unreleased][unreleased]
 
+### Changed [BREAKING]
+
+* Site rebuilt using the BAS Style Kit Jekyll Theme
+* Alert plugin rewritten as an include
+
+### Changed
+
+* ToC include switched to a liquid implementation rather than karmadown as this can be used in layouts
+* Topics updated to use a narrower page-width
+* Code and page structure for feedback page simplified
+* Code for section indexes simplified
+* Jekyll Menu plugin used to define navigation menu
+* Simplified homepage content and styles
+* Simplified site data and includes as staging and production both use the same CDN endpoint
+* Simplified and reduced site styles
+
+### Removed
+
+* Back to top, Is something wrong and build information from footer, these elements may be re-added later
+* Trailing new line in cookies policy
+
 ## v1.2.0 - 04/02/2018
 
 ### Added
