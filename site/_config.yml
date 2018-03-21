@@ -71,6 +71,9 @@ bas_style_kit_jekyll_theme:
       id: UA-64130716-27
     site_styles:
         -
+          href: 'https://cdn.web.bas.ac.uk/bas-style-kit/0.4.0-alpha/css/bas-style-kit.min.css'
+          type: 'remote'
+        -
           href: '/css/main.css'
           type: 'local'
     site_footer:
