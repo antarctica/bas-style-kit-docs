@@ -1,0 +1,6 @@
+{% for style in site.bas_style_kit_jekyll_theme.attributes.site_styles %}
+    <link rel="stylesheet" {% if style.type == 'remote' %}href="{{ style.href }}"{% elsif style.type == 'local' %}href="{{ style.href | prepend: site.baseurl }}"{% endif %} {% if style.integrity %}integrity="{{ style.integrity }}" crossorigin="anonymous"{% endif %}>
+{% endfor %}
+{% for style in page.body_css_files %}
+    <link rel="stylesheet" {% if style.type == 'remote' %}href="{{ style.href }}"{% elsif style.type == 'local' %}href="{{ style.href | prepend: site.baseurl }}"{% endif %} {% if style.integrity %}integrity="{{ style.integrity }}" crossorigin="anonymous"{% endif %}>
+{% endfor %}
