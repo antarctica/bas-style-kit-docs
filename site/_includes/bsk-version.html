@@ -1,5 +1,5 @@
-{%- unless jekyll.environment == 'production' -%}
+{%- if jekyll.environment == 'production' -%}
   {{ site.data.variables.bsk_version_production }}
 {%- else -%}
   {{ site.data.variables.bsk_version_staging }}
-{%- endunless -%}
+{%- endif -%}

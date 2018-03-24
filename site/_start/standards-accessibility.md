@@ -43,7 +43,7 @@ In general, the BAS Style Kit aims to support all browsers supported by Bootstra
 releases of all major browsers (subject to any caveats below) are supported.
 
 {% capture alert_content %}
-The Style Kit supports Internet Explorer 10 and above.
+The Style Kit supports Internet Explorer 11, future support will be limited to Microsoft Edge.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="info"
