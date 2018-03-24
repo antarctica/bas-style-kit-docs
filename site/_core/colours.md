@@ -549,7 +549,7 @@ service.
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-external-service-twitter-background"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Twitter</li>
-        <li><code>$bsk-colour-spc-twitter-base</code></li>
+        <li><code>$bsk-colour-ext-twitter-base</code></li>
         <li class="bsk-docs-hex-reference">#55ACEE</li>
       </ul>
     </div>
@@ -557,7 +557,7 @@ service.
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-external-service-facebook-background"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Facebook</li>
-        <li><code>$bsk-colour-spc-facebook-base</code></li>
+        <li><code>$bsk-colour-ext-facebook-base</code></li>
         <li class="bsk-docs-hex-reference">#3B5998</li>
       </ul>
     </div>
@@ -565,7 +565,7 @@ service.
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-external-service-youtube-background"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>YouTube</li>
-        <li><code>$bsk-colour-spc-youtube-base</code></li>
+        <li><code>$bsk-colour-ext-youtube-base</code></li>
         <li class="bsk-docs-hex-reference">#CD201F</li>
       </ul>
     </div>
@@ -573,7 +573,7 @@ service.
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-external-service-rss-background"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>RSS</li>
-        <li><code>$bsk-colour-spc-rss-base</code></li>
+        <li><code>$bsk-colour-ext-rss-base</code></li>
         <li class="bsk-docs-hex-reference">#F26522</li>
       </ul>
     </div>
@@ -1502,7 +1502,7 @@ Inline code component
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-ext-grey-light-lighter"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Grey light lighter</li>
-        <li><code>$bsk-colour-tst-grey-light-lighter</code></li>
+        <li><code>$bsk-colour-ext-grey-light-lighter</code></li>
         <li class="bsk-docs-hex-reference">#F7F7F7</li>
       </ul>
     </div>
@@ -1510,7 +1510,7 @@ Inline code component
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-ext-grey-darker-dark"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Grey darker dark</li>
-        <li><code>$bsk-colour-tst-grey-darker-dark</code></li>
+        <li><code>$bsk-colour-ext-grey-darker-dark</code></li>
         <li class="bsk-docs-hex-reference">#222222</li>
       </ul>
     </div>
@@ -1518,7 +1518,7 @@ Inline code component
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-ext-sky-blue-lighter-light"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Sky blue lighter light</li>
-        <li><code>$bsk-colour-tst-sky-blue-lighter-light</code></li>
+        <li><code>$bsk-colour-ext-sky-blue-lighter-light</code></li>
         <li class="bsk-docs-hex-reference">#E6F1F8</li>
       </ul>
     </div>
@@ -1547,7 +1547,7 @@ the (UK Government) Department of Work and Pensions (DWP).
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-ext-purple-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Purple base</li>
-        <li><code>$bsk-colour-tst-purple-base</code></li>
+        <li><code>$bsk-colour-ext-purple-base</code></li>
         <li class="bsk-docs-hex-reference">#2E358B</li>
       </ul>
     </div>
