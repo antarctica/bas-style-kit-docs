@@ -291,7 +291,6 @@ E.g.
 A `.zip` archive of the Style Kit is available containing:
 
 * compiled CSS
-* compiled and minified CSS with source maps
 * compiled JavaScript
 * compiled and minified JavaScript
 * web fonts in `.eot`, `.ttf`, `.woff` and `.woff2` formats
