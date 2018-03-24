@@ -155,6 +155,35 @@ this site's layout.
 </nav>
 {% endexample %}
 
+If using a cookie notice with a [navbar]({{ '/components/navbar' | prepend: site.baseurl }}) as part of fluid-width
+design:
+
+* wrap the cookie notice in a
+[fluid-width container]({{ '/core/layout/#fluid-width-container' | prepend: site.baseurl }})
+* wrap the container in a <code>&lt;div&gt;</code> with the `.bsk-fix-alert-static-top-fluid-container-wrapper` class
+
+{% example html %}
+<div class="bsk-fix-alert-static-top-fluid-container-wrapper">
+  <div class="bsk-container-fluid">
+    <div class="bsk-alert bsk-alert-static-top bsk-alert-dismissible bsk-alert-solid bsk-alert-cookie-notice" role="alert" data-bsk-role="cookie-notice">
+      <button type="button" class="bsk-close" data-dismiss="alert" aria-label="Close">
+        <i class="fa fa-times" aria-hidden="true"></i>
+      </button>
+      This website uses cookies to help us make it better -
+      <a href="#" class="bsk-alert-link">find out more</a>.
+    </div>
+  </div>
+</div>
+
+<nav class="bsk-navbar">
+  <div class="bsk-container-fluid">
+    <div class="bsk-navbar-header">
+      <a class="bsk-navbar-brand" href="#">Site Name</a>
+    </div>
+  </div><!-- /.bsk-container -->
+</nav>
+{% endexample %}
+
 {% include topic-section-metadata.html
   title="Contextual colours"
   heading_level=3
