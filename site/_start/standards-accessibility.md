@@ -51,6 +51,33 @@ The Style Kit supports Internet Explorer 11, future support will be limited to M
   content=alert_content
 %}
 
+To reduce compatibility errors with Internet Explorer, the
+[X-UA-Compatible](https://docs.microsoft.com/en-us/previous-versions/windows/internet-explorer/ie-developer/compatibility/jj676915(v=vs.85))
+header should be used to select the latest standards mode.
+
+{% highlight html %}
+<meta http-equiv="x-ua-compatible" content="IE=edge">
+{% endhighlight %}
+
+{% capture alert_content %}
+*Edge* in this context does not relate to the Microsoft *Edge* web browser.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
+
+{% capture alert_content %}
+If you use the [examples]({{ '/examples' | prepend: site.baseurl }}){: .bsk-alert-link } from this documentation, this
+meta tag will be included.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
+
 {% include topic-section-metadata.html
   title="HTML5"
   heading_level=2
