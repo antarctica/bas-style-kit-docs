@@ -16,7 +16,7 @@ sections:
 %}
 
 {% include topic-section-metadata.html
-  title="Unordered Links"
+  title="Unordered list"
   heading_level=3
   phase="live"
   initial_version="0.1.0"
@@ -35,7 +35,7 @@ sections:
 {% endexample %}
 
 {% include topic-section-metadata.html
-  title="Ordered Links"
+  title="Ordered list"
   heading_level=3
   phase="live"
   initial_version="0.1.0"
@@ -51,7 +51,7 @@ sections:
 {% endexample %}
 
 {% include topic-section-metadata.html
-  title="Unstyled Links"
+  title="Unstyled list"
   heading_level=3
   phase="live"
   initial_version="0.1.0"
@@ -96,7 +96,7 @@ This only applies to immediate list items. I.e. this style won't be used by any 
 {% endexample %}
 
 {% include topic-section-metadata.html
-  title="Inline Links"
+  title="Inline list"
   heading_level=3
   phase="live"
   initial_version="0.1.0"
@@ -113,7 +113,7 @@ Use the `.bsk-list-inline` class to place all list items on a single line, with 
 {% endexample %}
 
 {% include topic-section-metadata.html
-  title="Definition Lists"
+  title="Definition List"
   heading_level=2
   phase="live"
   initial_version="0.1.0"
@@ -136,7 +136,7 @@ A list of terms with associated definitions.
 {% endexample %}
 
 {% include topic-section-metadata.html
-  title="Horizontal Definition Lists"
+  title="Horizontal definition list"
   heading_level=3
   current_phase="live"
   current_version="0.1.0"
@@ -168,7 +168,7 @@ Terms which are too long will be truncated.
 {% endexample %}
 
 {% include topic-section-metadata.html
-  title="Large definition Lists"
+  title="Large definition list"
   heading_level=3
   phase="live"
   initial_version="0.1.0"
@@ -191,7 +191,7 @@ Add the `.bsk-dl-lg` class to apply additional padding.
 {% endexample %}
 
 {% include topic-section-metadata.html
-  title="Large horizontal definition Lists"
+  title="Large horizontal definition list"
   heading_level=3
   phase="live"
   initial_version="0.1.0"
@@ -225,7 +225,7 @@ This class depends on the `.bsk-dl-horizontal` class.
 {% endexample %}
 
 {% include topic-section-metadata.html
-  title="Striped definition Lists"
+  title="Striped definition list"
   heading_level=3
   phase="live"
   initial_version="0.1.0"
@@ -257,7 +257,7 @@ This class is designed to be used with `.bsk-dl-lg` to ensure a suitable amount 
 {% endexample %}
 
 {% include topic-section-metadata.html
-  title="Striped horizontal definition Lists"
+  title="Striped horizontal definition list"
   heading_level=3
   phase="live"
   initial_version="0.1.0"
