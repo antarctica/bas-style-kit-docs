@@ -20,8 +20,8 @@ This allows new features to be tested more easily, and prevents this documentati
 all of the possible ways the Style Kit could be used - which would not be useful.
 
 {% capture alert_content %}
-The Testbed is not designed for end-users and does supplement or replace this documentation. It will include examples
-which are intentionally designed not to work.
+The Testbed is **not** designed for end-users and does not supplement or replace this documentation. It includes
+examples intentionally designed not to work or for testing.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="info"
@@ -29,5 +29,4 @@ which are intentionally designed not to work.
   content=alert_content
 %}
 
-The testbed for the `master` branch of the BAS Style Kit can be found at:
-[style-kit-testbed.web.bas.ac.uk/master](https://style-kit-testbed.web.bas.ac.uk/master/).
+[View the testbed](https://style-kit-testbed.web.bas.ac.uk/master/){: .bsk-btn .bsk-btn-lg .bsk-btn-default }

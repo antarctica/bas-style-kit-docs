@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ### Changed [BREAKING]
 
+* Starter template replaced with basic and standard templates
 * Site rebuilt using the BAS Style Kit Jekyll Theme
 * Alert plugin rewritten as an include
 * Project relicensed under the OGL
@@ -36,6 +37,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * Simplified homepage content and styles
 * Simplified site data and includes as staging and production both use the same CDN endpoint
 * Simplified and reduced site styles
+* Updated testbed documentation
 
 ### Removed
 
