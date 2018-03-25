@@ -9,11 +9,25 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 * Site rebuilt using the BAS Style Kit Jekyll Theme
 * Alert plugin rewritten as an include
+* Project relicensed under the OGL
+
+### Added
+
+* 'Back to top' and 'Is something wrong' footer links
+* How to use Cookie Notice alerts with a fluid container
+* Guidance on using IE standards mode headers
+
+### Fixed
+
+* Documentation typos
 
 ### Changed
 
-* header image classes updated
-* navbar brand image examples updated
+* Header image classes updated
+* Navbar brand image examples updated
+* Browser support section updated
+* Updating colour scheme references
+* Site development phase updated to Live
 * ToC include switched to a liquid implementation rather than karmadown as this can be used in layouts
 * Topics updated to use a narrower page-width
 * Code and page structure for feedback page simplified
@@ -26,6 +40,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 ### Removed
 
 * Band component
+* References to Source Maps
 * Back to top, Is something wrong and build information from footer, these elements may be re-added later
 * Trailing new line in cookies policy
 
