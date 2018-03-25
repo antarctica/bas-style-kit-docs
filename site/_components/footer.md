@@ -15,6 +15,10 @@ sections:
   -
     title: Legal policy links
   -
+    title: Is something wrong link
+  -
+    title: Back to top link
+  -
     title: Layouts
 ---
 
@@ -71,7 +75,7 @@ strongly recommended to use a [container]({{ '/core/layout/#containers' | prepen
 </footer>
 {% endexample %}
 
-This example, whilst quite complex, demonstrates the sort of information shown in a typical footer.
+This example, whilst more complex, demonstrates the sort of information shown in a typical footer.
 
 {% example html %}
 <footer class="bsk-footer bsk-footer-default">
@@ -81,9 +85,12 @@ This example, whilst quite complex, demonstrates the sort of information shown i
       <div class="bsk-col-12-md-6">
         Footer content with a <a href="#">link</a>
       </div>
-      <div class="bsk-col-12-md-6">
-        <div class="bsk-text-right"><a class="back-to-top" href="#site-top"><i class="fa fa-fw fa-chevron-up" aria-hidden="true"></i> Back to top</a></div>
-      </div>
+    </div>
+    <div class="bsk-footer-back-to-top">
+      <a href="#site-top"><i class="fa fa-fw fa-chevron-up" aria-hidden="true"></i> Back to top</a>
+    </div>
+    <div class="bsk-footer-is-something-wrong">
+      <a href="#">Is something wrong with this page?</a>
     </div>
     <div role="separator" class="bsk-footer-divider"></div>
     <!-- Copyright & legal -->
@@ -173,6 +180,46 @@ statements.
         <li><a href="#">Copyright</a></li>
         <li><a href="#">Privacy</a></li>
       </ul>
+    </div>
+  </div>
+</footer>
+{% endexample %}
+
+{% include topic-section-metadata.html
+  title="Is something wrong link"
+  heading_level=3
+  phase="alpha"
+  initial_version="0.4.0"
+  included="yes"
+%}
+
+Use the `.bsk-footer-is-something-wrong` class to position and style a link to give site feedback.
+
+{% example html %}
+<footer class="bsk-footer bsk-footer-default">
+  <div class="bsk-container-fluid">
+    <div class="bsk-footer-is-something-wrong">
+      <a href="#">Is something wrong with this page?</a>
+    </div>
+  </div>
+</footer>
+{% endexample %}
+
+{% include topic-section-metadata.html
+  title="Back to top link"
+  heading_level=3
+  phase="alpha"
+  initial_version="0.4.0"
+  included="yes"
+%}
+
+Use the `.bsk-footer-back-to-top` class to position and style a link to the top of the current page.
+
+{% example html %}
+<footer class="bsk-footer bsk-footer-default">
+  <div class="bsk-container-fluid">
+    <div class="bsk-footer-back-to-top">
+      <a href="#site-top"><i class="fa fa-fw fa-chevron-up" aria-hidden="true"></i> Back to top</a>
     </div>
   </div>
 </footer>
