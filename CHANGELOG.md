@@ -36,6 +36,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * Simplified homepage content and styles
 * Simplified site data and includes as staging and production both use the same CDN endpoint
 * Simplified and reduced site styles
+* Updated testbed documentation
 
 ### Removed
 
