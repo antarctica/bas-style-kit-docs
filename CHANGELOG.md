@@ -13,6 +13,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 ### Changed
 
 * header image classes updated
+* navbar brand image examples updated
 * ToC include switched to a liquid implementation rather than karmadown as this can be used in layouts
 * Topics updated to use a narrower page-width
 * Code and page structure for feedback page simplified
