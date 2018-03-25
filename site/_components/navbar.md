@@ -262,12 +262,12 @@ Use the same `.bsk-navbar-brand` class with a image a logo or other image.
 To look right, scale the logo or image so that its height is one of these sizes and use the corresponding
 `.bsk-navbar-brand-image-{size}` class on the same element as `.bsk-navbar-brand`.
 
-| Navbar Variant | Relative Image Size | Height (Px) | Navbar Brand Image Class     |
-| -------------- | ------------------- | ----------- | ---------------------------- |
-| Regular        | Regular             | 32          | `.bsk-navbar-brand-image-32` |
-| Regular        | Full height         | 48          | `.bsk-navbar-brand-image-48` |
-| Large          | Regular             | 64          | `.bsk-navbar-brand-image-64` |
-| Large          | Full height         | 96          | `.bsk-navbar-brand-image-96` |
+| Navbar Variant | Relative Image Size | Absolute Image Height (Px) | Navbar Brand Image Class     |
+| -------------- | ------------------- | -------------------------- | ---------------------------- |
+| Regular        | Regular             | 32                         | `.bsk-navbar-brand-image-32` |
+| Regular        | Full height         | 48                         | `.bsk-navbar-brand-image-48` |
+| Large          | Regular             | 64                         | `.bsk-navbar-brand-image-64` |
+| Large          | Full height         | 96                         | `.bsk-navbar-brand-image-96` |
 {: .bsk-table .bsk-table-responsive }
 
 {% capture alert_content %}

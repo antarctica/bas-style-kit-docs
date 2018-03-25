@@ -43,22 +43,22 @@ component is unsuitable, for example within external systems.
   included="yes"
 %}
 
-{% capture alert_content %}
 Headers need to use `.bsk-header-container-fluid`, instead of `.bsk-container-fluid`. The same styles are applied, but
 in a form that is self-contained for compatibility with other styles.
-{% endcapture %}
-{% include bas-style-kit/bsk-snippet--alert.html
-  variant="info"
-  style="solid"
-  content=alert_content
-%}
+
+To look right, scale the logo or image in the header so that its height is one of these sizes and use the corresponding `.bsk-header-image-{size}` class on the same element.
+
+| Absolute Image Height (Px) | Header Image Class   |
+| -------------------------- | -------------------- |
+| 64                         | .bsk-header-image-64 |
+{: .bsk-table .bsk-table-responsive }
 
 {% capture alert_content %}
-Images in headers need to use the `.bsk-header-img-logo` class to prevent too much padding.
+If you need to use a specific size not in this list you will need to use your own classes to add suitable padding
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="info"
-  style="outline"
+  style="highlight"
   content=alert_content
 %}
 
@@ -66,7 +66,7 @@ Images in headers need to use the `.bsk-header-img-logo` class to prevent too mu
 <header class="bsk-header bsk-header-default">
   <div class="bsk-header-container-fluid">
     <a href="#">
-      <img class="bsk-header-img-logo" alt="British Antarctic Survey Logo" src="{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/img/logos-symbols/bas-logo-inverse-transparent-64.png">
+      <img class="bsk-header-image-64" alt="British Antarctic Survey Logo" src="{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/img/logos-symbols/bas-logo-inverse-transparent-64.png">
     </a>
   </div>
 </header>

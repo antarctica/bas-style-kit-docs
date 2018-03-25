@@ -33,6 +33,23 @@ The latest stable version of the BAS Style Kit is **{{ site.data.variables.bsk_v
 The latest development version of the BAS Style Kit is **{{ site.data.variables.bsk_version_staging }}**.
 
 {% include topic-section-metadata.html
+  title="v0.4.0"
+  heading_level=2
+%}
+
+Key changes in this version:
+
+* CSS files are ~50% smaller in size due to refactoring the Style Kit build pipeline and removing duplication
+* this documentation site has been rebuilt to use the BAS Style Kit Jekyll theme
+* all original code (i.e. not part of Bootstrap) is now licensed under the Open Government License
+* [colours]({{ '/core/colours' | prepend: site.baseurl }}) are now part of a Standard or Extended colour scheme
+* the [testbed]({{ '/examples/testbed' | prepend: site.baseurl }}) has been rebuilt to avoid unsupported technologies
+* new footer elements for [back to top]({{ '/components/footer/#back-to-top-link' | prepend: site.baseurl }}) and
+[site feedback]({{ '/components/footer/#is-something-wrong-link' | prepend: site.baseurl }}) links
+* the class used for images in [headers]({{ '/components/header/' | prepend: site.baseurl }}) have been changed
+* the previously deprecated *band* component has been removed
+
+{% include topic-section-metadata.html
   title="v0.3.0"
   heading_level=2
 %}
