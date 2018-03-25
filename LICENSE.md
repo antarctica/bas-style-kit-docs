@@ -1,19 +1,40 @@
 # License
 
-Copyright 2017 NERC BAS.
+This project is a derivative of the [Bootstrap framework](http://getbootstrap.com) and includes additional code unique
+to this project.
 
-Except where otherwise stated, the materials that make up this website are subject to copyright, and are owned by the
-Natural Environment Research Council (NERC), of which the British Antarctic Survey (BAS) is a component body.
+All original code is licensed under the *Boostrap license*. All other code is licensed under the *Project license*.
 
-Except where otherwise stated, content published on this website is made available under the
-[Creative Commons Public License (version 3)](https://creativecommons.org/licenses/by/3.0/) and can be reproduced
-subject to the terms of that license.
+## Bootstrap license
 
-The underlying BAS Style Kit code is made available under the [MIT License](https://opensource.org/licenses/MIT) and
-can be reproduced subject to the terms of that license.
+The MIT License (MIT)
 
-Except where otherwise stated, please attribute the use of any content as:
+Copyright (c) 2011-2018 Twitter, Inc.
+Copyright (c) 2011-2018 The Bootstrap Authors
 
-> Contains British Antarctic Survey materials, copyright NERC [Year].
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-Copies of these licenses are included within this project.
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+## Project license
+
+© Natural Environment Research Council (NERC), 2018, British Antarctic Survey.
+
+You may use and re-use this software and associated documentation files free of charge in any format or medium, under
+the terms of the Open Government Licence v3.0.
+
+You may obtain a copy of the Open Government Licence at http://www.nationalarchives.gov.uk/doc/open-government-licence/
