@@ -42,6 +42,8 @@ Key changes in this version:
 * CSS files are ~50% smaller in size due to refactoring the Style Kit build pipeline and removing duplication
 * this documentation site has been rebuilt to use the BAS Style Kit Jekyll theme
 * all original code (i.e. not part of Bootstrap) is now licensed under the Open Government License
+* the starter template has been replaced with [basic]({{ '/examples/basic-template' | prepend: site.baseurl }}) and
+[standard]({{ '/examples/standard-template' | prepend: site.baseurl }}) templates
 * [colours]({{ '/core/colours' | prepend: site.baseurl }}) are now part of a Standard or Extended colour scheme
 * the [testbed]({{ '/examples/testbed' | prepend: site.baseurl }}) has been rebuilt to avoid unsupported technologies
 * new footer elements for [back to top]({{ '/components/footer/#back-to-top-link' | prepend: site.baseurl }}) and

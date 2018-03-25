@@ -94,4 +94,15 @@ Take care not to use default Bootstrap classes as they won't be styled correctly
   heading_level=2
 %}
 
-<mark>TODO - Add updated starter template (basic vs. standard)</mark>
+Two example templates/layouts are available to help integrate the Style Kit into your website or application. Different
+templates are provided to meet different use cases.
+
+The *basic* template provides the minimum recommended to implement the Style Kit (i.e. its styles and scripts). It is
+intended for uses such as applications or non-standard websites where a greater flexibility in layout is needed.
+
+The *standard* template builds on the basic template, providing a complete layout designed to 'typical' content, with
+elements such as a header, navigation and a footer.
+
+[View the basic template]({{ '/examples/basic-template' | prepend: site.baseurl }}){: .bsk-btn .bsk-btn-default }
+
+[View the standard template]({{ '/examples/standard-template' | prepend: site.baseurl }}){: .bsk-btn .bsk-btn-default }
