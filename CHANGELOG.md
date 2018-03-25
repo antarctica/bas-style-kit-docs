@@ -24,6 +24,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ### Removed
 
+* Band component
 * Back to top, Is something wrong and build information from footer, these elements may be re-added later
 * Trailing new line in cookies policy
 
