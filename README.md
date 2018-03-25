@@ -145,24 +145,13 @@ The maintainer of this project is the BAS Web & Applications Team, they can be c
 
 ## Acknowledgements
 
-The original inspiration/source for this project came form the [Bootstrap](http://getbootstrap.com) project.
+The vast majority of this project is based on the [Bootstrap](http://getbootstrap.com) project.
+
+50% of any credit for this project should go to Boostrap's [authors and contributors](http://getbootstrap.com/about/).
 
 ## Licence
 
-Copyright 2017 NERC BAS.
+This project is a derivative of the [Bootstrap framework](http://getbootstrap.com) and includes additional code unique
+to this project.
 
-Except where otherwise stated, the materials that make up this website are subject to copyright, and are owned by the
-Natural Environment Research Council (NERC), of which the British Antarctic Survey (BAS) is a component body.
-
-Except where otherwise stated, content published on this website is made available under the
-[Creative Commons Public License (version 3)](https://creativecommons.org/licenses/by/3.0/) and can be reproduced
-subject to the terms of that license.
-
-The underlying BAS Style Kit code is made available under the [MIT License](https://opensource.org/licenses/MIT) and
-can be reproduced subject to the terms of that license.
-
-Except where otherwise stated, please attribute the use of any content as:
-
-> Contains British Antarctic Survey materials, copyright NERC [Year].
-
-Copies of these licenses are included within this project.
+See [Licence.md](/license.md) for more information.
