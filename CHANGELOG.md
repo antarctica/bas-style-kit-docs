@@ -24,6 +24,9 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ### Changed
 
+* Updated to Jekyll 3.8.3
+* Updated to BAS Jekyll Docker image 0.4.0
+* Updated to BAS Style Kit Jekyll Theme 0.4.0
 * Header image classes updated
 * Navbar brand image examples updated
 * Browser support section updated
@@ -38,6 +41,8 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * Simplified site data and includes as staging and production both use the same CDN endpoint
 * Simplified and reduced site styles
 * Updated testbed documentation
+* Updated copyright holder from NERC to UKRI
+* Refactoring and updating README
 
 ### Removed
 
