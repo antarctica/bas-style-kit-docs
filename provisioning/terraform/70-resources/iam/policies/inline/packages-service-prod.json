@@ -8,7 +8,7 @@
                 "s3:PutObject"
             ],
             "Resource": [
-                "arn:aws:s3:::bas-package-service-prod/zips/apps/bas-style-kit-docs/*"
+                "arn:aws:s3:::packages.data.bas.ac.uk/zips/apps/bas-style-kit-docs/*"
             ]
         }
     ]
