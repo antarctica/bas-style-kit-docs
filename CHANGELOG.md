@@ -42,6 +42,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * Simplified and reduced site styles
 * Updated testbed documentation
 * Updated copyright holder from NERC to UKRI
+* Refactoring and updating README
 
 ### Removed
 
