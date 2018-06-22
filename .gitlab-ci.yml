@@ -40,7 +40,7 @@ image:
 
 variables:
   AWS_DEFAULT_REGION: eu-west-1
-  PACKAGES_BUCKET: bas-package-service-prod
+  PACKAGES_BUCKET: packages.data.bas.ac.uk
   PACKAGES_BUCKET_PATH: zips/apps
   S3_DEPLOYMENT_BUCKET_STAGE: style-kit-testing.web.bas.ac.uk
   S3_DEPLOYMENT_BUCKET_PROD: style-kit.web.bas.ac.uk
