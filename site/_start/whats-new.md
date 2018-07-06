@@ -43,14 +43,16 @@ Key changes in this version:
 * this website has been rebuilt to use the BAS Style Kit
   [Jekyll theme]({{ '/start/distribution/#jekyll-theme' | prepend: site.baseurl }})
 * all original code (i.e. not part of Bootstrap) is now licensed under the Open Government License
-* the starter template has been replaced with [basic]({{ '/examples/basic-template' | prepend: site.baseurl }}) and
-[standard]({{ '/examples/standard-template' | prepend: site.baseurl }}) templates
-* [colours]({{ '/core/colours' | prepend: site.baseurl }}) are now part of a Standard or Extended colour scheme
+* the starter template has been removed until this can done properly
+* [colours]({{ '/core/colours' | prepend: site.baseurl }}) are now divided into a Standard or Extended colour scheme
 * the [testbed]({{ '/examples/testbed' | prepend: site.baseurl }}) has been rebuilt to avoid unsupported technologies
-* new footer elements for [back to top]({{ '/components/footer/#back-to-top-link' | prepend: site.baseurl }}) and
-[site feedback]({{ '/components/footer/#is-something-wrong-link' | prepend: site.baseurl }}) links
-* the class used for images in [headers]({{ '/components/header/' | prepend: site.baseurl }}) have been changed
+* footers have been updated with a new layout and elements for
+  [back to top]({{ '/components/footer/#back-to-top-link' | prepend: site.baseurl }}) links,
+  [site feedback]({{ '/components/footer/#is-something-wrong-link' | prepend: site.baseurl }}) links and
+  [governance]({{ '/components/footer/#governance' | prepend: site.baseurl }}) information
+* the class used for images in [headers]({{ '/components/header/' | prepend: site.baseurl }}) has been changed
 * the previously deprecated *band* component has been removed
+* this website has been updated to reflect the formation of UKRI
 
 {% include topic-section-metadata.html
   title="v0.3.0"
