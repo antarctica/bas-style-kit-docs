@@ -1,9 +1,12 @@
 # BAS Style Kit Documentation
 
-End-user documentation for the BAS Style Kit, documenting what it includes and how to use it to build websites and
-web-applications. Built using Jekyll as a static website.
+End-user documentation for the BAS Style Kit.
 
-## Editing
+Details what it is and how to use it to build websites and applications. Built as a static website using Jekyll.
+
+## Usage
+
+### Editing
 
 See the relevant documentation for how documentation is organised and managed:
 
@@ -11,12 +14,9 @@ See the relevant documentation for how documentation is organised and managed:
 * [topics](docs/editing/topics.md)
 * [topic sections](docs/editing/topic-sections.md)
 
-## Usage
-
 ### Docker Compose
 
-[Git](https://git-scm.com), [Docker](https://www.docker.com/community-edition) and
-[Docker Compose](https://docs.docker.com/compose/) are required to build this project locally.
+These instructions show how to setup a development environment for the Style Kit documentation.
 
 Source code is available from two repositories:
 
@@ -35,18 +35,13 @@ $ docker-compose up
 To create a local development environment using the *GitHub* repository:
 
 ```
-$ git clone https://github.com/antarctica/bas-style-kit-doc.git
+$ git clone https://github.com/antarctica/bas-style-kit-docs.git
 $ cd bas-style-kit-docs/
 $ docker-compose build
 $ docker-compose up
 ```
 
-This will launch a single container to build the site using `jekyll serve`.
-
-Incremental building is enabled, meaning single files are re-generated when changed. If editing a file has other
-side-effects (such as changing global menu items), a full site re-build will be needed by re-launching the container.
-
-When finished, exit the Docker container using `ctrl` + `c`, then run bring down Docker Compose, `docker-compose down`.
+This will launch a single container to build the site using `jekyll serve`, with incremental building enabled.
 
 Visit [localhost:9000](http://localhost:9000) to access a local version of the documentation site.
 
@@ -59,7 +54,7 @@ $ docker login docker-registry.data.bas.ac.uk
 
 ### Simulating production environment
 
-To simulate a production build of the documentation site add this environment variable to the `app` service in
+To simulate a production build of the documentation site, add this environment variable to the `app` service in
 `docker-compose.yml`:
 
 ```yaml
@@ -69,13 +64,11 @@ version: '2'
 services:
   app:
     ...
-    ports:
-      - "9000:9000"
     environment:
       - JEKYLL_ENV=production
 ```
 
-**Note:** You will need to delete `site/_site/` as incremental building is used by default.
+**Note:** You will need to delete `site/_site/` to force a global site rebuild, as incremental building is enabled.
 
 ## Developing
 
@@ -88,7 +81,7 @@ The current date is used as part of the project Docker image tag to ensure the l
 Before rebuilding this image you **MUST** update this tag value in `docker-compose.yml` and `.gitlab-ci.yml` first.
 
 ```
-$ git clone https://github.com/antarctica/bas-style-kit-doc.git
+$ git clone https://github.com/antarctica/bas-style-kit-docs.git
 $ cd bas-style-kit-docs/
 $ docker-compose build app
 $ docker-compose push app
@@ -131,14 +124,11 @@ This triggers the relevant deployment tasks to release a new version.
 
 ## Provisioning
 
-[Git](https://git-scm.com), [Docker](https://www.docker.com/community-edition) and
-[Docker Compose](https://docs.docker.com/compose/) are required to provision this project.
-
- will also need access to the [BAS AWS](https://bitbucket.org/antarctica/bas-aws) and
-[BAS Core Domains](https://bitbucket.org/antarctica/bas-core-domains) projects. Contact the [BAS Web & Applications Team](mailto:servicedesk@bas.ac.uk) if you don't yet have access.
+[Git](https://git-scm.com), [Terraform](https://terrafrom.io) and permissions to the
+[BAS AWS](https://gitlab.data.bas.ac.uk/WSF/bas-aws) environment are required to provision resources for this project.
 
 ```
-$ git clone https://github.com/antarctica/bas-style-kit-doc.git
+$ git clone https://github.com/antarctica/bas-style-kit-docs.git
 $ cd bas-style-kit-docs/provisioning/terraform
 $ docker-compose run terraform
 $ terraform init
@@ -150,9 +140,9 @@ $ docker-compose down
 ```
 
 During provisioning, an AWS IAM user will be created with least-privilege permissions to enable Continuous Deployment.
-Access credentials for this user will need to generated manually through the AWS Console and set as secret variables.
 
-See the `.gitlab-ci.yml` file for specifics on which user to generate credentials for, and what to name them.
+Access credentials for this user will need to generated manually through the AWS Console and set as secret variables
+within GitLab. See the `.gitlab-ci.yml` file for specifics on how to do this.
 
 **Note:** Commit all Terraform state files to this repository.
 
