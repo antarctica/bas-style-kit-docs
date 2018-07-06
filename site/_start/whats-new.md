@@ -40,7 +40,8 @@ The latest development version of the BAS Style Kit is **{{ site.data.variables.
 Key changes in this version:
 
 * CSS files are ~50% smaller in size due to refactoring the Style Kit build pipeline and removing duplication
-* this documentation site has been rebuilt to use the BAS Style Kit Jekyll theme
+* this website has been rebuilt to use the BAS Style Kit
+  [Jekyll theme]({{ '/start/distribution/#jekyll-theme' | prepend: site.baseurl }})
 * all original code (i.e. not part of Bootstrap) is now licensed under the Open Government License
 * the starter template has been replaced with [basic]({{ '/examples/basic-template' | prepend: site.baseurl }}) and
 [standard]({{ '/examples/standard-template' | prepend: site.baseurl }}) templates
