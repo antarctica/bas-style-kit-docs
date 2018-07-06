@@ -9,15 +9,17 @@ sections:
   -
     title: Default footer
   -
+    title: Spacer
+  -
     title: Divider
-  -
-    title: Open Government License
-  -
-    title: Legal policy links
   -
     title: Is something wrong link
   -
     title: Back to top link
+  -
+    title: Governance
+  -
+    title: Legal policy links
   -
     title: Layouts
 ---
@@ -80,32 +82,33 @@ This example, whilst more complex, demonstrates the sort of information shown in
 {% example html %}
 <footer class="bsk-footer bsk-footer-default">
   <div class="bsk-container-fluid">
-    <!-- main content -->
-    <div class="bsk-row">
-      <div class="bsk-col-12-md-6">
-        Footer content with a <a href="#">link</a>
-      </div>
-    </div>
     <div class="bsk-footer-back-to-top">
       <a href="#site-top"><i class="fa fa-fw fa-chevron-up" aria-hidden="true"></i> Back to top</a>
     </div>
     <div class="bsk-footer-is-something-wrong">
       <a href="#">Is something wrong with this page?</a>
     </div>
+    <div role="separator" class="bsk-footer-spacer"></div>
+    <!-- main content -->
+    <div class="bsk-row">
+      <div class="bsk-col-12-md-6">
+        Footer content with a <a href="#">link</a>
+      </div>
+    </div>
     <div role="separator" class="bsk-footer-divider"></div>
     <!-- Copyright & legal -->
-    <div class="bsk-footer-ogl">
-      <a class="bsk-ogl-symbol" rel="license" href="http://www.nationalarchives.gov.uk/doc/open-government-licence"><img alt="Open Government Licence logo" src="{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/img/logos-symbols/ogl-symbol-inverse-transparent-32.png"></a>
-      <div class="bsk-ogl-text">
-      This website is licensed under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence">Open Government Licence v3.0</a>, except where otherwise stated</div>
+    <div class="bsk-footer-governance">
+      The <a href="https://www.bas.ac.uk">British Antarctic Survey</a> (BAS) is part of <a href="https://www.ukri.org">UK Research and Innovation</a> (UKRI)
+      <div class="bsk-footer-ogl"><div class="bsk-ogl-symbol"><a href="http://www.nationalarchives.gov.uk/doc/open-government-licence" rel="license"><span class="bsk-ogl-symbol">Open Government Licence</span></a></div>
+      All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence" rel="license">Open Government Licence v3.0</a>, except where otherwise stated</div>
     </div>
     <div class="bsk-footer-policy-links">
-      © (Year) NERC BAS
       <ul class="bsk-list-inline">
         <li><a href="#">Cookies</a></li>
         <li><a href="#">Copyright</a></li>
         <li><a href="#">Privacy</a></li>
       </ul>
+      © (Year) British Antarctic Survey
     </div>
   </div>
 </footer>
@@ -117,6 +120,26 @@ This example, whilst more complex, demonstrates the sort of information shown in
 %}
 
 {% include topic-section-metadata.html
+  title="Spacer"
+  heading_level=3
+  phase="beta"
+  initial_version="0.4.0"
+  included="yes"
+%}
+
+Use the `.bsk-footer-spacer` class on an element, to give additional padding.
+
+{% example html %}
+<footer class="bsk-footer bsk-footer-default">
+  <div class="bsk-container-fluid">
+    Footer content above
+    <div role="separator" class="bsk-footer-spacer"></div>
+    Footer content below
+  </div>
+</footer>
+{% endexample %}
+
+{% include topic-section-metadata.html
   title="Divider"
   heading_level=3
   phase="live"
@@ -124,7 +147,7 @@ This example, whilst more complex, demonstrates the sort of information shown in
   included="yes"
 %}
 
-Use the `.bsk-footer-divider` class on an element, to act as a horizontal rule with additional padding.
+Use the `.bsk-footer-divider` class on an element, give additional padding and a horizontal line.
 
 {% example html %}
 <footer class="bsk-footer bsk-footer-default">
@@ -137,23 +160,65 @@ Use the `.bsk-footer-divider` class on an element, to act as a horizontal rule w
 {% endexample %}
 
 {% include topic-section-metadata.html
-  title="Open Government License"
+  title="Is something wrong link"
   heading_level=3
-  phase="live"
-  initial_version="0.1.0"
+  phase="beta"
+  initial_version="0.4.0"
   included="yes"
 %}
 
-Use the `.bsk-footer-ogl` class, `.bsk-ogl-symbol` and `.bsk-ogl-text` classes on elements to position and style the
-[OGL Symbol]({{ '/core/logos/#open-government-license-symbol' | prepend: site.baseurl }}) and accompanying licensing
-statement.
+Use the `.bsk-footer-is-something-wrong` class to position and style a link to give site feedback.
 
 {% example html %}
 <footer class="bsk-footer bsk-footer-default">
   <div class="bsk-container-fluid">
-    <div class="bsk-footer-ogl">
-      <a class="bsk-ogl-symbol" rel="license" href="http://www.nationalarchives.gov.uk/doc/open-government-licence/"><img alt="Open Government Licence logo" src="{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/img/logos-symbols/ogl-symbol-inverse-transparent-32.png"></a>
-      <div class="bsk-ogl-text">All content is licensed under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence/">Open Government Licence v3.0</a>, except where otherwise stated</div>
+    <div class="bsk-footer-is-something-wrong">
+      <a href="#">Is something wrong with this page?</a>
+    </div>
+  </div>
+</footer>
+{% endexample %}
+
+{% include topic-section-metadata.html
+  title="Back to top link"
+  heading_level=3
+  phase="beta"
+  initial_version="0.4.0"
+  included="yes"
+%}
+
+Use the `.bsk-footer-back-to-top` class to position and style a link to the top of the current page.
+
+{% example html %}
+<footer class="bsk-footer bsk-footer-default">
+  <div class="bsk-container-fluid">
+    <div class="bsk-footer-back-to-top">
+      <a href="#site-top"><i class="fa fa-fw fa-chevron-up" aria-hidden="true"></i> Back to top</a>
+    </div>
+  </div>
+</footer>
+{% endexample %}
+
+{% include topic-section-metadata.html
+  title="Governance"
+  heading_level=3
+  phase="beta"
+  initial_version="0.1.0"
+  revised_version="0.4.0"
+  included="yes"
+%}
+
+Use the `.bsk-footer-governance` and `.bsk-footer-ogl`, `.bsk-footer-ogl-symbol` classes to position and format a
+statement explaining BAS is part of UKRI, and that content is licensed under the Open Government License using the
+[OGL Symbol]({{ '/core/logos/#open-government-license-symbol' | prepend: site.baseurl }}).
+
+{% example html %}
+<footer class="bsk-footer bsk-footer-default">
+  <div class="bsk-container-fluid">
+    <div class="bsk-footer-governance">
+      The <a href="https://www.bas.ac.uk">British Antarctic Survey</a> (BAS) is part of <a href="https://www.ukri.org">UK Research and Innovation</a> (UKRI)
+      <div class="bsk-footer-ogl"><div class="bsk-ogl-symbol"><a href="http://www.nationalarchives.gov.uk/doc/open-government-licence" rel="license"><span class="bsk-ogl-symbol">Open Government Licence</span></a></div>
+      All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence" rel="license">Open Government Licence v3.0</a>, except where otherwise stated</div>
     </div>
   </div>
 </footer>
@@ -174,52 +239,12 @@ statements.
 <footer class="bsk-footer bsk-footer-default">
   <div class="bsk-container-fluid">
     <div class="bsk-footer-policy-links">
-      © (Year) NERC BAS
       <ul class="bsk-list-inline">
         <li><a href="#">Cookies</a></li>
         <li><a href="#">Copyright</a></li>
         <li><a href="#">Privacy</a></li>
       </ul>
-    </div>
-  </div>
-</footer>
-{% endexample %}
-
-{% include topic-section-metadata.html
-  title="Is something wrong link"
-  heading_level=3
-  phase="alpha"
-  initial_version="0.4.0"
-  included="yes"
-%}
-
-Use the `.bsk-footer-is-something-wrong` class to position and style a link to give site feedback.
-
-{% example html %}
-<footer class="bsk-footer bsk-footer-default">
-  <div class="bsk-container-fluid">
-    <div class="bsk-footer-is-something-wrong">
-      <a href="#">Is something wrong with this page?</a>
-    </div>
-  </div>
-</footer>
-{% endexample %}
-
-{% include topic-section-metadata.html
-  title="Back to top link"
-  heading_level=3
-  phase="alpha"
-  initial_version="0.4.0"
-  included="yes"
-%}
-
-Use the `.bsk-footer-back-to-top` class to position and style a link to the top of the current page.
-
-{% example html %}
-<footer class="bsk-footer bsk-footer-default">
-  <div class="bsk-container-fluid">
-    <div class="bsk-footer-back-to-top">
-      <a href="#site-top"><i class="fa fa-fw fa-chevron-up" aria-hidden="true"></i> Back to top</a>
+      © (Year) British Antarctic Survey
     </div>
   </div>
 </footer>
