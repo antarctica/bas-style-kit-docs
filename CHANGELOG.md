@@ -12,6 +12,10 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * Alert plugin rewritten as an include
 * Project relicensed under the OGL
 
+### Removed [BREAKING!]
+
+* Basic and standard templates removed as these didn't really work well in the way they're currently presented
+
 ### Added
 
 * 'Back to top' and 'Is something wrong' footer links
