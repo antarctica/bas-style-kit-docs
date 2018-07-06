@@ -15,6 +15,8 @@ sections:
     title: JavaScript Libraries
   -
     title: SRI
+  -
+    title: Jekyll theme
 ---
 
 {% include topic-section-metadata.html
@@ -392,3 +394,17 @@ tasks for fonts and logos. This workflow is documented in the
   style="outline"
   content=alert_content
 %}
+
+{% include topic-section-metadata.html
+  title="Jekyll theme"
+  heading_level=2
+%}
+
+For static websites the Style Kit is available as a [Jekyll](https://jekyllrb.com) theme.
+
+The theme loads the Style Kit from the [BAS CDN]({{ '/start/distribution/#css-js' | prepend: site.baseurl }}) with
+pre-designed *layouts* to make using the Style Kit quicker and easier.
+
+Where needed the theme can be customised using *variables* or whole sections can be changed by overriding the relevant *include(s)*.
+
+[View Jekyll theme documentation](https://github.com/antarctica/bas-style-kit-jekyll-theme){: .bsk-btn .bsk-btn-default }
