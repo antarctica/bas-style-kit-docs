@@ -25,6 +25,8 @@ sections:
   -
     title: Addresses
   -
+    title: Horizontal rule
+  -
     title: Primary text
   -
     title: Experimental text
@@ -392,6 +394,25 @@ Provides formatting for addresses or contact information. Use <code>&lt;br&gt;</
   Atmospheric Chemist<br>
   <i class="fa fa-fw fa-envelope" aria-hidden="true"></i> <abbr title="Email address">Email:</abbr> <a href="mailto:#">conwat@bas.com</a>
 </address>
+{% endexample %}
+
+{% include topic-section-metadata.html
+  title="Horizontal rule"
+  heading_level=2
+  phase="live"
+  initial_version="0.1.0"
+  revised_version="0.4.0"
+  included="yes"
+%}
+
+Use to separate content. Add the `.bsk-hr-dashed` class for an alternative style.
+
+{% example html %}
+<hr/>
+{% endexample %}
+
+{% example html %}
+<hr class="bsk-hr-dashed" />
 {% endexample %}
 
 {% include topic-section-metadata.html
