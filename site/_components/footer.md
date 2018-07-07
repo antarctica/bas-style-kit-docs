@@ -122,7 +122,7 @@ This example, whilst more complex, demonstrates the sort of information shown in
 {% include topic-section-metadata.html
   title="Spacer"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.4.0"
   included="yes"
 %}
@@ -162,7 +162,7 @@ Use the `.bsk-footer-divider` class on an element, give additional padding and a
 {% include topic-section-metadata.html
   title="Is something wrong link"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.4.0"
   included="yes"
 %}
@@ -182,7 +182,7 @@ Use the `.bsk-footer-is-something-wrong` class to position and style a link to g
 {% include topic-section-metadata.html
   title="Back to top link"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.4.0"
   included="yes"
 %}
@@ -202,7 +202,7 @@ Use the `.bsk-footer-back-to-top` class to position and style a link to the top 
 {% include topic-section-metadata.html
   title="Governance"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.1.0"
   revised_version="0.4.0"
   included="yes"

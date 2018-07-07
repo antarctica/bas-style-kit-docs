@@ -17,7 +17,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ### Added
 
-* 'Back to top' and 'Is something wrong' footer links
+* guidance for Style Kit 0.4.0 changes and additions
 * How to use Cookie Notice alerts with a fluid container
 * Guidance on using IE standards mode headers
 
@@ -30,7 +30,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 * Updated to Jekyll 3.8.3
 * Updated to BAS Jekyll Docker image 0.4.0
-* Updated to BAS Style Kit Jekyll Theme 0.4.0
+* Updated to BAS Style Kit Jekyll Theme 0.5.0
 * Updated to Terraform 11.3
 * Updated to use per-domain ACM certificates for CloudFront distributions
 * Header image classes updated

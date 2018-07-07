@@ -43,7 +43,7 @@ Key changes in this version:
 * this website has been rebuilt to use the BAS Style Kit
   [Jekyll theme]({{ '/start/distribution/#jekyll-theme' | prepend: site.baseurl }})
 * all original code (i.e. not part of Bootstrap) is now licensed under the Open Government License
-* the starter template has been removed until this can done properly
+* the starter template has been removed until this can be done properly
 * [colours]({{ '/core/colours' | prepend: site.baseurl }}) are now divided into a Standard or Extended colour scheme
 * the [testbed]({{ '/examples/testbed' | prepend: site.baseurl }}) has been rebuilt to avoid unsupported technologies
 * footers have been updated with a new layout and elements for

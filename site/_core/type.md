@@ -25,6 +25,8 @@ sections:
   -
     title: Addresses
   -
+    title: Horizontal rule
+  -
     title: Primary text
   -
     title: Experimental text
@@ -395,6 +397,25 @@ Provides formatting for addresses or contact information. Use <code>&lt;br&gt;</
 {% endexample %}
 
 {% include topic-section-metadata.html
+  title="Horizontal rule"
+  heading_level=2
+  phase="live"
+  initial_version="0.1.0"
+  revised_version="0.4.0"
+  included="yes"
+%}
+
+Use to separate content. Add the `.bsk-hr-dashed` class for an alternative style.
+
+{% example html %}
+<hr/>
+{% endexample %}
+
+{% example html %}
+<hr class="bsk-hr-dashed" />
+{% endexample %}
+
+{% include topic-section-metadata.html
   title="Primary text"
   heading_level=2
   phase="live"
@@ -438,7 +459,7 @@ used to apply context to text using these classes:
 {: .bsk-table .bsk-table-responsive }
 
 {% capture alert_content %}
-In some edge cases these styles will be over-ridden by other styles, wrapping text in a <code>&lt;span&gt;</code>
+In some edge cases these styles will be overridden by other styles, wrapping text in a <code>&lt;span&gt;</code>
 should fix this.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
