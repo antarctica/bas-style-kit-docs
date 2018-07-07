@@ -17,7 +17,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ### Added
 
-* 'Back to top' and 'Is something wrong' footer links
+* guidance for Style Kit 0.4.0 changes and additions
 * How to use Cookie Notice alerts with a fluid container
 * Guidance on using IE standards mode headers
 
