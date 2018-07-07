@@ -181,13 +181,13 @@ within the Style Kit and need to loaded **before** the Style Kit to function cor
   </thead>
   <tbody>
     <tr>
-      <td>Minified jQuery</td>
+      <td>jQuery</td>
       <td>3.1.1</td>
       <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/js-libs/jquery-3.1.1.min.js</code></pre></td>
       <td><div class="bsk-label bsk-label-phase-retired">Retired</div></td>
     </tr>
     <tr>
-      <td>Minified jQuery</td>
+      <td>jQuery</td>
       <td>3.3.1</td>
       <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/js-libs/jquery-3.3.1.min.js</code></pre></td>
       <td><div class="bsk-label bsk-label-phase-live">Live</div></td>
@@ -332,10 +332,6 @@ files yourself to make upgrading to future Style Kit releases easier.
 Source files for the Style Kit are available as a
 [NodeJS](https://www.npmjs.com/package/{{ site.data.variables.npm_package_name }}) package.
 
-{% highlight shell %}
-$ npm install --save bas-style-kit
-{% endhighlight %}
-
 {% unless jekyll.environment == 'production' %}
   {% capture alert_content %}
   There isn't a NodeJS package for the latest development version of the Style Kit. Visit
@@ -347,6 +343,10 @@ $ npm install --save bas-style-kit
     style="outline"
     content=alert_content
   %}
+{% else %}
+  {% highlight shell %}
+  $ npm install --save bas-style-kit
+  {% endhighlight %}
 {% endunless %}
 
 {% capture alert_content %}
