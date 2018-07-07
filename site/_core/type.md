@@ -459,7 +459,7 @@ used to apply context to text using these classes:
 {: .bsk-table .bsk-table-responsive }
 
 {% capture alert_content %}
-In some edge cases these styles will be over-ridden by other styles, wrapping text in a <code>&lt;span&gt;</code>
+In some edge cases these styles will be overridden by other styles, wrapping text in a <code>&lt;span&gt;</code>
 should fix this.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
