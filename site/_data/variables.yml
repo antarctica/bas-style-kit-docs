@@ -9,5 +9,5 @@ docs_source_code_url: 'https://github.com/antarctica/bas-style-kit-docs'
 
 docs_feedback_api_identifier: style-kit-docs
 
-bsk_version_production: 0.3.0
 bsk_version_staging: 0.4.0
+bsk_version_production: 0.4.0

@@ -5,6 +5,8 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ## [Unreleased][unreleased]
 
+## v1.3.0 - 07/07/2018
+
 ### Changed [BREAKING]
 
 * Site rebuilt using the BAS Style Kit Jekyll Theme
