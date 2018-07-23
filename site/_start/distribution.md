@@ -16,7 +16,7 @@ sections:
   -
     title: SRI
   -
-    title: Jekyll theme
+    title: Themes and templates
 ---
 
 {% include topic-section-metadata.html
@@ -396,11 +396,13 @@ tasks for fonts and logos. This workflow is documented in the
 %}
 
 {% include topic-section-metadata.html
-  title="Jekyll theme"
+  title="Themes and templates"
   heading_level=2
 %}
 
 For static websites the Style Kit is available as a [Jekyll](https://jekyllrb.com) theme.
+The Style Kit provides integrations for a limited number of applications and template languages. See the
+[introduction]({{ '/start/introduction' | prepend: site.baseurl }}){: .bsk-alert-link } section for supported options.
 
 The theme loads the Style Kit from the [BAS CDN]({{ '/start/distribution/#css-js' | prepend: site.baseurl }}) with
 pre-designed *layouts* to make using the Style Kit quicker and easier.

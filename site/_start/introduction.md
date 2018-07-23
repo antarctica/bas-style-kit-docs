@@ -10,6 +10,8 @@ sections:
   -
     title: Quick start
   -
+    title: Themes and Templates
+  -
     title: Global prefix
 ---
 
@@ -53,6 +55,25 @@ to use the Style Kit.
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="info"
   style="highlight"
+  content=alert_content
+%}
+
+{% include topic-section-metadata.html
+  title="Themes and Templates"
+  heading_level=2
+%}
+
+The Style Kit provides integrations with a limited number of applications and template languages. These integrations
+will automatically include the Style Kit and its dependencies into your website or service, and may provide other
+features to reduce having to write extra code.
+
+{% capture alert_content %}
+Although these integrations are officially supported, they may be out of step with the core BAS Style Kit project. Take
+care to check which Style Kit version they support, and any caveats or known issues, when reading this documentation.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
   content=alert_content
 %}
 

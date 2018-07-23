@@ -5,6 +5,10 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ## [Unreleased][unreleased]
 
+### Added
+
+* More formal, visible, information on integrations of the Style Kit as themes or templates
+
 ## v1.3.0 - 07/07/2018
 
 ### Changed [BREAKING]
