@@ -47,6 +47,21 @@ The simplest way to use the Style Kit is to include it's CSS file, before any ot
   {%- endunless -%}" crossorigin="anonymous">
 {% endhighlight %}
 
+To use any of the Style Kit's [interactive features]({{ '/interactivity' | prepend: site.baseurl }}), you will also need
+to add the Style Kit's JS file and its dependencies, usually just before the end of the <code>&lt;body&gt;</code>
+element.
+
+{% highlight html %}
+<script src="{{ site.data.variables.cdn_base_libs }}/jquery/3.3.1/jquery-3.3.1.min.js" integrity="{{ site.data.bas_cdn_libs_sri['libs/jquery/3.3.1/jquery-3.3.1.min.js'] }}" crossorigin="anonymous"></script>
+<script src="{{ site.data.variables.cdn_base_libs }}/js-cookie/2.1.3/js.cookie-2.1.3.min.js" integrity="{{ site.data.bas_cdn_libs_sri['libs/js-cookie/2.1.3/js.cookie-2.1.3.min.js'] }}" crossorigin="anonymous"></script>
+<script src="{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/js/bas-style-kit.min.js" integrity="
+  {%- unless jekyll.environment == 'production' -%}
+    {{ site.data.bsk_sri_base_staging['dist/js/bas-style-kit.min.js'] }}
+  {%- else -%}
+    {{ site.data.bsk_sri_base_production['dist/js/bas-style-kit.min.js'] }}
+  {%- endunless -%}" crossorigin="anonymous"></script>
+{% endhighlight %}
+
 {% capture alert_content %}
 See the [distribution]({{ '/start/distribution' | prepend: site.baseurl }}){: .bsk-alert-link } section for other ways
 to include the Style Kit.
