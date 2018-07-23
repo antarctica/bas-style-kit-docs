@@ -1,4 +1,5 @@
 cdn_base: 'https://cdn.web.bas.ac.uk/bas-style-kit'
+cdn_base_libs: 'https://cdn.web.bas.ac.uk/libs'
 package_base: 'https://packages.data.bas.ac.uk/zips/apps/bas-style-kit/releases'
 npm_package_name: 'bas-style-kit'
 source_code_url: 'https://github.com/antarctica/bas-style-kit'

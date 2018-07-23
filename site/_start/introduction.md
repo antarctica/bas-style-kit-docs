@@ -10,6 +10,8 @@ sections:
   -
     title: Quick start
   -
+    title: Themes and Templates
+  -
     title: Global prefix
 ---
 
@@ -33,9 +35,8 @@ As well as Bootstrap, the BAS Style Kit takes influences from:
   heading_level=2
 %}
 
-The recommended, and quickest, way to include the BAS Style Kit in your website or service is to use the BAS CDN.
-
-Include this CSS file before any other of your project's styles, in the <code>&lt;head&gt;</code> element:
+The simplest way to use the Style Kit is to include it's CSS file, before any other of your project's styles, in the
+<code>&lt;head&gt;</code> element of your website or service.
 
 {% highlight html %}
 <link rel="stylesheet" href="{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/css/bas-style-kit.min.css" integrity="
@@ -46,15 +47,59 @@ Include this CSS file before any other of your project's styles, in the <code>&l
   {%- endunless -%}" crossorigin="anonymous">
 {% endhighlight %}
 
+To use any of the Style Kit's [interactive features]({{ '/interactivity' | prepend: site.baseurl }}), you will also need
+to add the Style Kit's JS file and its dependencies, usually just before the end of the <code>&lt;body&gt;</code>
+element.
+
+{% highlight html %}
+<script src="{{ site.data.variables.cdn_base_libs }}/jquery/3.3.1/jquery-3.3.1.min.js" integrity="{{ site.data.bas_cdn_libs_sri['libs/jquery/3.3.1/jquery-3.3.1.min.js'] }}" crossorigin="anonymous"></script>
+<script src="{{ site.data.variables.cdn_base_libs }}/js-cookie/2.1.3/js.cookie-2.1.3.min.js" integrity="{{ site.data.bas_cdn_libs_sri['libs/js-cookie/2.1.3/js.cookie-2.1.3.min.js'] }}" crossorigin="anonymous"></script>
+<script src="{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/js/bas-style-kit.min.js" integrity="
+  {%- unless jekyll.environment == 'production' -%}
+    {{ site.data.bsk_sri_base_staging['dist/js/bas-style-kit.min.js'] }}
+  {%- else -%}
+    {{ site.data.bsk_sri_base_production['dist/js/bas-style-kit.min.js'] }}
+  {%- endunless -%}" crossorigin="anonymous"></script>
+{% endhighlight %}
+
 {% capture alert_content %}
 See the [distribution]({{ '/start/distribution' | prepend: site.baseurl }}){: .bsk-alert-link } section for other ways
-to use the Style Kit.
+to include the Style Kit.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="info"
   style="highlight"
   content=alert_content
 %}
+
+{% include topic-section-metadata.html
+  title="Themes and Templates"
+  heading_level=2
+%}
+
+The Style Kit provides integrations with a limited number of applications and template languages. These integrations
+will automatically include the Style Kit and its dependencies into your website or service, and may provide other
+features to reduce having to write extra code.
+
+{% capture alert_content %}
+Although these integrations are officially supported, they may be out of step with the core BAS Style Kit project. Take
+care to check which Style Kit version they support, and any caveats or known issues, when reading this documentation.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
+
+{% include topic-section-metadata.html
+  title="Jekyll"
+  heading_level=3
+%}
+
+[Jekyll](https://jekyllrb.com) is an static site generator for creating websites and blogs, such as this documentation
+site. A BAS Style Kit Jekyll theme is available to use the Style Kit within a Jekyll site.
+
+[Jekyll theme documentation](https://github.com/antarctica/bas-style-kit-jekyll-theme){: .bsk-btn .bsk-btn-default }
 
 {% include topic-section-metadata.html
   title="Global prefix"

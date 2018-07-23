@@ -16,7 +16,7 @@ sections:
   -
     title: SRI
   -
-    title: Jekyll theme
+    title: Themes and templates
 ---
 
 {% include topic-section-metadata.html
@@ -352,7 +352,7 @@ Source files for the Style Kit are available as a
 {% capture alert_content %}
 Using the Style Kit in this way requires you to compile the Style Kit's Sass and JavaScript yourself, as well as other
 tasks for fonts and logos. This workflow is documented in the
-[core BAS Style Kit project]({{ site.data.variables.source_code_url }}){: .alert-bsk-link}.
+[core BAS Style Kit project]({{ site.data.variables.source_code_url }}){: .bsk-alert-link} .
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="info"
@@ -396,15 +396,43 @@ tasks for fonts and logos. This workflow is documented in the
 %}
 
 {% include topic-section-metadata.html
-  title="Jekyll theme"
+  title="Themes and templates"
   heading_level=2
 %}
 
-For static websites the Style Kit is available as a [Jekyll](https://jekyllrb.com) theme.
+The Style Kit provides integrations for a limited number of applications and template languages. See the
+[introduction]({{ '/start/introduction' | prepend: site.baseurl }}){: .bsk-alert-link } section for supported options.
 
-The theme loads the Style Kit from the [BAS CDN]({{ '/start/distribution/#css-js' | prepend: site.baseurl }}) with
-pre-designed *layouts* to make using the Style Kit quicker and easier.
+{% include topic-section-metadata.html
+  title="Jekyll"
+  heading_level=3
+%}
 
-Where needed the theme can be customised using *variables* or whole sections can be changed by overriding the relevant *include(s)*.
+A [Jekyll](https://jekyllrb.com) theme is available for the Style Kit.
 
-[View Jekyll theme documentation](https://github.com/antarctica/bas-style-kit-jekyll-theme){: .bsk-btn .bsk-btn-default }
+{% unless jekyll.environment == 'production' %}
+  {% capture alert_content %}
+  The Jekyll theme doesn't support the latest development version of the Style Kit. Visit
+  [style-kit.web.bas.ac.uk]({{ 'https://' | append: site.bsk_docs_production_url | append: '/start/distribution/#bas-cdn' }}){: .bsk-alert-link}
+  for latest supported version.
+  {% endcapture %}
+  {% include bas-style-kit/bsk-snippet--alert.html
+    variant="experimental"
+    style="outline"
+    content=alert_content
+  %}
+{% else %}
+  1. add `gem "jekyll-theme-bas-style-kit"` to your Jekyll site's `Gemfile` file
+  2. run the `bundle` command
+  3. and `theme: jekyll-theme-bas-style-kit` to your Jekyll site's `_config.yml` file
+{% endunless %}
+
+{% capture alert_content %}
+See the [Jekyll theme documentation](https://github.com/antarctica/bas-style-kit-jekyll-theme){: .bsk-alert-link} for
+more information.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}

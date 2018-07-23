@@ -5,6 +5,19 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ## [Unreleased][unreleased]
 
+### Added
+
+* More formal, visible, information on integrations of the Style Kit as themes or templates
+
+### Fixed
+
+* Fixing class typo on alert link in distribution page
+
+### Changed
+
+* Improving getting started information to include JS files
+* Reworking existing Jekyll theme information into new themes and template sections
+
 ## v1.3.0 - 07/07/2018
 
 ### Changed [BREAKING]
