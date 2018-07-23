@@ -78,6 +78,16 @@ care to check which Style Kit version they support, and any caveats or known iss
 %}
 
 {% include topic-section-metadata.html
+  title="Jekyll"
+  heading_level=3
+%}
+
+[Jekyll](https://jekyllrb.com) is an static site generator for creating websites and blogs, such as this documentation
+site. A BAS Style Kit Jekyll theme is available to use the Style Kit within a Jekyll site.
+
+[Jekyll theme documentation](https://github.com/antarctica/bas-style-kit-jekyll-theme){: .bsk-btn .bsk-btn-default }
+
+{% include topic-section-metadata.html
   title="Global prefix"
   heading_level=2
 %}
