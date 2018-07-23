@@ -50,7 +50,7 @@ Include this CSS file before any other of your project's styles, in the <code>&l
 
 {% capture alert_content %}
 See the [distribution]({{ '/start/distribution' | prepend: site.baseurl }}){: .bsk-alert-link } section for other ways
-to use the Style Kit.
+to include the Style Kit.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="info"

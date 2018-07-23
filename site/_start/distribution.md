@@ -352,7 +352,7 @@ Source files for the Style Kit are available as a
 {% capture alert_content %}
 Using the Style Kit in this way requires you to compile the Style Kit's Sass and JavaScript yourself, as well as other
 tasks for fonts and logos. This workflow is documented in the
-[core BAS Style Kit project]({{ site.data.variables.source_code_url }}){: .alert-bsk-link}.
+[core BAS Style Kit project]({{ site.data.variables.source_code_url }}){: .bsk-alert-link} .
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="info"
