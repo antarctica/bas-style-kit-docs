@@ -11,9 +11,9 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ### Fixed
 
-* Fixing class typo on alert links in distribution and colours pages
-* Fixing class example for the global prefix
 * License instead of Licence typo
+* Class typo on alert links in distribution and colours pages
+* Class example for the global prefix
 * Links to production documentation site using the wrong variable
 * Formatting for NPM package and Jekyll theme installation instructions
 
