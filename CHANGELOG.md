@@ -11,7 +11,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ### Fixed
 
-* Fixing class typo on alert link in distribution page
+* Fixing class typo on alert links in distribution and colours pages
 
 ### Changed
 

@@ -49,8 +49,8 @@ To promote consistency, it is strongly recommended to only use
 %}
 
 {% capture alert_content %}
-If you do use non-standard colours (including extended colours) you must ensure this complies with the
-[recommended minimum colour contrast]({{ '/start/standards-accessibility/#colour-contrast' | prepend: site.baseurl }}){: .alert-bsk-link }.
+If you do use other colours (including [extended colours](#standard-colours){: .bsk-alert-link }) you must ensure this
+complies with the [recommended minimum colour contrast]({{ '/start/standards-accessibility/#colour-contrast' | prepend: site.baseurl }}){: .bsk-alert-link }.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="warning"
