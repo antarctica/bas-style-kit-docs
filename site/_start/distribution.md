@@ -312,7 +312,7 @@ files yourself to make upgrading to future Style Kit releases easier.
 {% unless jekyll.environment == 'production' %}
   {% capture alert_content %}
   This download is for the latest development version of the Style Kit. Visit
-  [style-kit.web.bas.ac.uk]({{ 'https://' | append: site.bsk_docs_production_url | append: '/start/distribution/#bas-cdn' }}){: .bsk-alert-link}
+  [style-kit.web.bas.ac.uk]({{ 'https://' | append: site.data.variables.docs_site_production | append: '/start/distribution/#direct-download' }}){: .bsk-alert-link}
   for latest stable version.
   {% endcapture %}
   {% include bas-style-kit/bsk-snippet--alert.html
@@ -335,7 +335,7 @@ Source files for the Style Kit are available as a
 {% unless jekyll.environment == 'production' %}
   {% capture alert_content %}
   There isn't a NodeJS package for the latest development version of the Style Kit. Visit
-  [style-kit.web.bas.ac.uk]({{ 'https://' | append: site.bsk_docs_production_url | append: '/start/distribution/#bas-cdn' }}){: .bsk-alert-link}
+  [style-kit.web.bas.ac.uk]({{ 'https://' | append: site.data.variables.docs_site_production | append: '/start/distribution/#nodejs-package' }}){: .bsk-alert-link}
   for latest stable version.
   {% endcapture %}
   {% include bas-style-kit/bsk-snippet--alert.html
@@ -413,7 +413,7 @@ A [Jekyll](https://jekyllrb.com) theme is available for the Style Kit.
 {% unless jekyll.environment == 'production' %}
   {% capture alert_content %}
   The Jekyll theme doesn't support the latest development version of the Style Kit. Visit
-  [style-kit.web.bas.ac.uk]({{ 'https://' | append: site.bsk_docs_production_url | append: '/start/distribution/#bas-cdn' }}){: .bsk-alert-link}
+  [style-kit.web.bas.ac.uk]({{ 'https://' | append: site.data.variables.docs_site_production | append: '/start/distribution/#jekyll' }}){: .bsk-alert-link}
   for latest supported version.
   {% endcapture %}
   {% include bas-style-kit/bsk-snippet--alert.html
