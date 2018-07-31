@@ -8,6 +8,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 ### Added
 
 * More formal, visible, information on integrations of the Style Kit as themes or templates
+* Documentation on Pug templates
 
 ### Fixed
 

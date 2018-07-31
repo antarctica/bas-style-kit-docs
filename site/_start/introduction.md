@@ -102,6 +102,20 @@ site. A BAS Style Kit Jekyll theme is available to use the Style Kit within a Je
 [Jekyll theme documentation](https://github.com/antarctica/bas-style-kit-jekyll-theme){: .bsk-btn .bsk-btn-default }
 
 {% include topic-section-metadata.html
+  title="Pug"
+  heading_level=3
+%}
+
+[Pug](https://pugjs.org) is a JavaScript template engine, formally known as 'Jade'. Pug supports a concise/abbreviated
+form of HTML that makes it ideal for prototyping. A set of templates (layouts, includes and mixins) are available to
+use the Style Kit with Pug.
+
+Pug is not a static site generator, and requires other tools to feed in to be compiled and place content in a structure
+for viewing. These tools can include task runners such as [Gulp](https://gulpjs.com/) or a static site generator.
+
+[Pug templates documentation](https://github.com/antarctica/bas-style-kit-pug-templates){: .bsk-btn .bsk-btn-default }
+
+{% include topic-section-metadata.html
   title="Global prefix"
   heading_level=2
 %}

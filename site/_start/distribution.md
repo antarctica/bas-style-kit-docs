@@ -436,3 +436,37 @@ more information.
   style="highlight"
   content=alert_content
 %}
+
+{% include topic-section-metadata.html
+  title="Pug"
+  heading_level=3
+%}
+
+A set of [Pug](https://pugjs.org) (AKA Jade) templates are available for the Style Kit.
+
+{% unless jekyll.environment == 'production' %}
+{% capture alert_content %}
+The Pug templates don't support the latest development version of the Style Kit. Visit
+[style-kit.web.bas.ac.uk]({{ 'https://' | append: site.data.variables.docs_site_production | append: '/start/distribution/#pug' }}){: .bsk-alert-link}
+for latest supported version.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="experimental"
+  style="outline"
+  content=alert_content
+%}
+{% else %}
+{% highlight shell %}
+$ npm i bas-style-kit-pug-templates
+{% endhighlight %}
+{% endunless %}
+
+{% capture alert_content %}
+See the [Pug templates documentation](https://github.com/antarctica/bas-style-kit-pug-templates){: .bsk-alert-link} for
+more information.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
