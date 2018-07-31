@@ -35,21 +35,12 @@ The Style Kit defines two sets of colours:
 elements and recommended for general use
 2. [extended colours](#standard-colours) - consisting of highly specific colours for particular purposes such as branding
 
-The standard colour scheme is designed to be general enough to avoid other colours being needed.
-
-Some colours have been chosen for specific purposes (the BAS blue for example) or to follow established convention
-(links being blue for example) but not at the sake of having broad and general application, such as conveying context
-(i.e. red = danger) or as categories (i.e. green = HR).
-
-The extended colours should effectively be ignored unless you are specifically recommended to use them. They are used
-for specific purposes such as meeting [external service]({{ '#external-services' }})  branding requirements or to give
-sufficient contrast within a component.
-
-They are not intended to compliment, or compete with, standard colours and may look too similar to other colours.
+The extended colours are used for specific purposes such as meeting [external service]({{ '#external-services' }})
+branding requirements or to give sufficient contrast within a component, they should not be used generally.
 
 {% capture alert_content %}
-To promote consistency, it is strongly recommended not to use non-standard colours (including shades) in websites or
-services, unless specifically recommended to use an alternative.
+To promote consistency, it is strongly recommended to only use
+[standard colours](#standard-colours){: .bsk-alert-link }, unless specifically recommended to use an alternative.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="info"
