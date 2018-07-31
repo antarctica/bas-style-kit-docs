@@ -21,6 +21,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 ### Changed
 
 * Improved overview text for colours
+* Improved SRI value information to clarify which files need a SRI value specified
 * Improving getting started information to include JS files
 * Reworking existing Jekyll theme information into new themes and template sections
 

@@ -226,8 +226,18 @@ These libraries are not included in other distribution types and will need to be
 %}
 
 [Sub-Resource Integrity (SRI)](https://developer.mozilla.org/en-US/docs/Web/Security/Subresource_Integrity) values are
-available for all CSS and JS files served through the
+available for all Style Kit CSS and JS files served through the
 [BAS CDN]({{ '/start/distribution/#css-js' | prepend: site.baseurl }}).
+
+{% capture alert_content %}
+You only need to include SRI values for files you directly include, you don't need to worry about any resources
+referenced within them, such as fonts.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+    variant="info"
+    style="highlight"
+    content=alert_content
+  %}
 
 {% unless jekyll.environment == 'production' %}
   {% capture alert_content %}
