@@ -9,7 +9,7 @@ sections:
   -
     title: BAS logo
   -
-    title: Open Government License Symbol
+    title: Open Government Licence Symbol
 ---
 
 {% include topic-section-metadata.html
@@ -56,10 +56,10 @@ The BAS logo can be used with components such as:
   <header class="bsk-alert-heading">
     <div class="bsk-h4">
       <i class="fa fa-fw fa-exclamation-triangle bsk-alert-icon"></i>
-      The BAS logo is a trademark of the Natural Environment Research Council and may not be used without a license
+      The BAS logo is a trademark of the Natural Environment Research Council and may not be used without a licence
     </div>
   </header>
-  <p>BAS has a license to use its logo for its official websites and applications. This license
+  <p>BAS has a licence to use its logo for its official websites and applications. This licence
   <strong>does not</strong> cover non-BAS projects, including personal projects of BAS Staff.</p>
 </div>
 
@@ -330,7 +330,7 @@ These files are exports of vector images, do not resize them. Contact the BAS Co
 </table>
 
 {% include topic-section-metadata.html
-  title="Open Government License Symbol"
+  title="Open Government Licence Symbol"
   heading_level=2
   phase="live"
   initial_version="0.3.0"
@@ -343,14 +343,14 @@ is the default licensing policy used by the Government, including arms-length bo
 
 The
 [OGL Symbol](http://www.nationalarchives.gov.uk/information-management/re-using-public-sector-information/uk-government-licensing-framework/open-government-licence/copyright-notices-attribution-statements/how-to-use-the-ogl-symbol/)
-is used to indicate where content is available under this license, and should be used in this way wherever appropriate.
+is used to indicate where content is available under this licence, and should be used in this way wherever appropriate.
 
 The OGL Symbol can be used with components such as:
 
-* [footers]({{ '/components/footer/#open-government-license' | prepend: site.baseurl }})
+* [footers]({{ '/components/footer/#open-government-licence' | prepend: site.baseurl }})
 
 {% capture alert_content %}
-Contact the Web &amp; Applications Team, or the BAS Archives Service, for advice over when to use this license, or
+Contact the Web &amp; Applications Team, or the BAS Archives Service, for advice over when to use this licence, or
 whether an alternative would be more suitable.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
