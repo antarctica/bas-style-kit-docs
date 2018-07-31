@@ -344,9 +344,9 @@ Source files for the Style Kit are available as a
     content=alert_content
   %}
 {% else %}
-  {% highlight shell %}
-  $ npm install --save bas-style-kit
-  {% endhighlight %}
+{% highlight shell %}
+$ npm i bas-style-kit
+{% endhighlight %}
 {% endunless %}
 
 {% capture alert_content %}
@@ -422,9 +422,9 @@ A [Jekyll](https://jekyllrb.com) theme is available for the Style Kit.
     content=alert_content
   %}
 {% else %}
-  1. add `gem "jekyll-theme-bas-style-kit"` to your Jekyll site's `Gemfile` file
-  2. run the `bundle` command
-  3. and `theme: jekyll-theme-bas-style-kit` to your Jekyll site's `_config.yml` file
+1. add `gem "jekyll-theme-bas-style-kit"` to your Jekyll site's `Gemfile` file
+2. run the `bundle` command
+3. and `theme: jekyll-theme-bas-style-kit` to your Jekyll site's `_config.yml` file
 {% endunless %}
 
 {% capture alert_content %}
