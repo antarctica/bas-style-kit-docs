@@ -110,7 +110,7 @@ To avoid clashes with other CSS styles and to provide a more uniform and predict
 Style Kit use a *Global Prefix* of `bsk-`.
 
 {% capture alert_content %}
-I.e. use `.bsk-btn bsk-btn-default` not `.btn .btn-default`.
+I.e. use `.bsk-btn .bsk-btn-default` not `.btn .btn-default`.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="info"
