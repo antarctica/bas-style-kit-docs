@@ -19,6 +19,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * Class example for the global prefix
 * Links to production documentation site using the wrong variable
 * Formatting for NPM package and Jekyll theme installation instructions
+* URLs to dependencies
 
 ### Changed
 

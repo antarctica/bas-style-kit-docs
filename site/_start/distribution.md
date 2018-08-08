@@ -183,19 +183,19 @@ within the Style Kit and need to loaded **before** the Style Kit to function cor
     <tr>
       <td>jQuery</td>
       <td>3.1.1</td>
-      <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/js-libs/jquery-3.1.1.min.js</code></pre></td>
+      <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/libs/jquery/3.1.1/jquery-3.1.1.min.js</code></pre></td>
       <td><div class="bsk-label bsk-label-phase-retired">Retired</div></td>
     </tr>
     <tr>
       <td>jQuery</td>
       <td>3.3.1</td>
-      <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/js-libs/jquery-3.3.1.min.js</code></pre></td>
+      <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/libs/jquery/3.3.1/jquery-3.3.1.min.js</code></pre></td>
       <td><div class="bsk-label bsk-label-phase-live">Live</div></td>
     </tr>
     <tr>
       <td>js-cookie</td>
       <td>2.1.3</td>
-      <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/js-libs/js.cookie-2.1.3.min.js</code></pre></td>
+      <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/libs/js-cookie/2.1.3/js.cookie-2.1.3.min.js</code></pre></td>
       <td><div class="bsk-label bsk-label-phase-live">Live</div></td>
     </tr>
   </tbody>
