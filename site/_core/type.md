@@ -122,8 +122,7 @@ For each family, a series of variants are defined for styles such as italics and
   included="yes"
 %}
 
-The BAS *brand* font, Gill Sans, is the BAS official font. It is included in the BAS Style Kit to integrate the font
-into official BAS websites and applications, in high impact areas such as headings and top-level navigation.
+Gill Sans is the BAS logo font used for high impact areas such as headings and top-level navigation.
 
 <div class="bsk-alert bsk-alert-solid bsk-alert-warning bsk-alert-block bsk-alert-icon">
   <header class="bsk-alert-heading">
@@ -165,7 +164,8 @@ The brand font is applied to these elements:
 %}
 
 {% capture alert_content %}
-In addition to heading elements, you can also use `.bsk-h1` - `.bsk-h6` classes for styling other elements as headings.
+In addition to heading elements, you can also use `.bsk-h1` - `.bsk-h6` classes for styling other elements to look like
+headings.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="info"
@@ -196,7 +196,7 @@ De carne animata corpora quaeritis.
   included="yes"
 %}
 
-Use the `&lt;small&gt;` element or the `.bsk-small` class for adding secondary text to any header.
+Use the `<small>` element or the `.bsk-small` class for adding secondary text to any header.
 
 {% example html %}
 <div class="bsk-h1">Heading 1 <small>secondary text</small></div>
