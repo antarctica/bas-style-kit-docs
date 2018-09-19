@@ -35,7 +35,7 @@ Use the `.bsk-list-group-item` for items within a list group, see the details of
 **Heads up!** List group elements are not yet fully styled, but will be in the next version of the Style Kit.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
-  variant="warning"
+  variant="info"
   style="outline"
   content=alert_content
 %}
