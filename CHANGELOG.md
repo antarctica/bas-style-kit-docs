@@ -5,6 +5,11 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ## [Unreleased][unreleased]
 
+### Fixed
+
+* Changing headers used in examples to use header classes to prevent being added to the page table of contents
+* Changing headers used in block alerts to use header classes to prevent being added to the page table of contents
+
 ## v1.4.0 - 31/07/2018
 
 ### Added

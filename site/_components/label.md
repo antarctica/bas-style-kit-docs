@@ -162,7 +162,16 @@ where relevant by adding these classes:
 Labels will scale with their parent element.
 
 {% example html %}
-<h1><span class="bsk-label bsk-label-default">Label</span></h1>
-<h2><span class="bsk-label bsk-label-default">Label</span></h2>
-<h3><span class="bsk-label bsk-label-default">Label</span></h3>
+<div class="bsk-h1"><span class="bsk-label bsk-label-default">Label</span></div>
+<div class="bsk-h2"><span class="bsk-label bsk-label-default">Label</span></div>
+<div class="bsk-h3"><span class="bsk-label bsk-label-default">Label</span></div>
 {% endexample %}
+
+{% capture alert_content %}
+This example uses header classes instead of elements to avoid issues with the automatic table of contents.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}

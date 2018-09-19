@@ -199,19 +199,28 @@ De carne animata corpora quaeritis.
 Use the `&lt;small&gt;` element or the `.bsk-small` class for adding secondary text to any header.
 
 {% example html %}
-<h1>Heading 1 <small>secondary text</small></h1>
+<div class="bsk-h1">Heading 1 <small>secondary text</small></div>
 De carne animata corpora quaeritis.
-<h2>Heading 2 <small>secondary text</small></h2>
+<div class="bsk-h2">Heading 2 <small>secondary text</small></div>
 De carne animata corpora quaeritis.
-<h3>Heading 3 <small>secondary text</small></h3>
+<div class="bsk-h3">Heading 3 <small>secondary text</small></div>
 De carne animata corpora quaeritis.
-<h4>Heading 4 <small>secondary text</small></h4>
+<div class="bsk-h4">Heading 4 <small>secondary text</small></div>
 De carne animata corpora quaeritis.
-<h5>Heading 5 <small>secondary text</small></h5>
+<div class="bsk-h5">Heading 5 <small>secondary text</small></div>
 De carne animata corpora quaeritis.
-<h6>Heading 6 <small>secondary text</small></h6>
+<div class="bsk-h6">Heading 6 <small>secondary text</small></div>
 De carne animata corpora quaeritis.
 {% endexample %}
+
+{% capture alert_content %}
+This example uses header classes instead of elements to avoid issues with the automatic table of contents.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 {% include topic-section-metadata.html
   title="Paragraphs"

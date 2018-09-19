@@ -239,8 +239,10 @@ Add the `.bsk-disabled` class to indicate unavailable navigation items.
 
 <div class="bsk-alert bsk-alert-solid bsk-alert-danger bsk-alert-block bsk-alert-icon">
   <header class="bsk-alert-heading">
-    <h4><i class="fa fa-fw fa-exclamation-circle bsk-alert-icon"></i>
-    It is not safe to rely on this state to prevent users activating disabled actions</h4>
+    <div class="bsk-h4">
+      <i class="fa fa-fw fa-exclamation-circle bsk-alert-icon"></i>
+      It is not safe to rely on this state to prevent users activating disabled actions
+    </div>
   </header>
   <p>Browsers may not enforce these properties, or users may trivially edit the DOM. Server side protections
    <strong>must</strong> be used for dangerous actions.</p>
