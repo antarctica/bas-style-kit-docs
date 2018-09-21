@@ -3,7 +3,6 @@ FROM docker-registry.data.bas.ac.uk/web-apps/infrastructure/bdi/jekyll-image:0.4
 LABEL maintainer = "Felix Fennell <felnne@bas.ac.uk>"
 
 # Setup project
-VOLUME ["/usr/src/app"]
 WORKDIR /usr/src/app
 
 # Setup dependencies

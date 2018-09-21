@@ -10,6 +10,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * Changing headers used in examples to use header classes to prevent being added to the page table of contents
 * Changing headers used in block alerts to use header classes to prevent being added to the page table of contents
 * Improving internal consistency of alerts
+* Improving Dockerfile
 
 ### Removed
 
