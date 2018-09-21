@@ -5,6 +5,10 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ## [Unreleased][unreleased]
 
+### Added
+
+* Updating to Style Kit Jekyll theme 0.6.0 and Style Kit 0.5.0-alpha
+
 ### Fixed
 
 * Changing headers used in examples to use header classes to prevent being added to the page table of contents
