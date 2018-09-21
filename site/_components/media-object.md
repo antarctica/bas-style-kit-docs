@@ -5,9 +5,11 @@ menus:
     weight: 15
 sections:
   -
-    title: Media object
+    title: Default media object item
   -
-    title: Default well
+    title: Horizontal alignment
+  -
+    title: Vertical alignment
 ---
 
 {% include topic-section-metadata.html
