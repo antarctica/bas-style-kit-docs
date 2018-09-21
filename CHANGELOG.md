@@ -8,6 +8,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 ### Added
 
 * Updating to Style Kit Jekyll theme 0.6.0 and Style Kit 0.5.0-alpha
+* Updating navigation launcher to include link to Style Kit Testbed
 
 ### Fixed
 

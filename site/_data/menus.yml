@@ -1,0 +1,14 @@
+---
+# The name of this file is a convention set by the Jekyll Menus plugin
+# Source: https://github.com/forestryio/jekyll-menus
+
+site_navigation_launcher:
+  - url: 'https://www.bas.ac.uk'
+    title: BAS Home
+    weight: 1
+  - url: 'https://data.bas.ac.uk'
+    title: Discover BAS Data
+    weight: 2
+  - url: 'https://style-kit-testbed.web.bas.ac.uk'
+    title: BAS Style Kit Testbed
+    weight: 3
