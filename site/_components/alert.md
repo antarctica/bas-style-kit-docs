@@ -434,7 +434,7 @@ Other headings may be used, but are not supported and may not look right.
 {% example html %}
 <div class="bsk-alert bsk-alert-block bsk-alert-solid bsk-alert-success" role="alert">
   <header class="bsk-alert-heading">
-    <h4>Success alert header</h4>
+    <div class="bsk-h4">Success alert header</div>
   </header>
   <div class="bsk-alert-body">
     <p>Longer success text - De carne animata corpora quaeritis. De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella viventium.</p>
@@ -447,6 +447,15 @@ Other headings may be used, but are not supported and may not look right.
   </div>
 </div>
 {% endexample %}
+
+{% capture alert_content %}
+This example uses header classes instead of elements to avoid issues with the automatic table of contents.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 {% include topic-section-metadata.html
   title="Sizes"

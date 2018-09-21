@@ -37,16 +37,7 @@ panel, otherwise it will look strange. It is not enough to use `.bsk-panel` on i
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="warning"
-  style="outline"
-  content=alert_content
-%}
-
-{% capture alert_content %}
-**Heads up!** Panel elements are not yet fully styled, but will be in the next version of the Style Kit.
-{% endcapture %}
-{% include bas-style-kit/bsk-snippet--alert.html
-  variant="warning"
-  style="outline"
+  style="solid"
   content=alert_content
 %}
 
@@ -67,6 +58,15 @@ media items that are distinct from main content, but which is shown **within** i
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="info"
   style="solid"
+  content=alert_content
+%}
+
+{% capture alert_content %}
+**Heads up!** Panel elements are not yet fully styled, but will be in the next version of the Style Kit.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="outline"
   content=alert_content
 %}
 

@@ -32,8 +32,8 @@ Multiple input group add-ons are not supported on a single side (i.e. 2 add-ons 
 %}
 
 {% capture alert_content %}
-Multiple [form controls]({{ '/core/forms/#form-controls' | prepend: site.baseurl }}) used in a single input group are
-not supported.
+Multiple [form controls]({{ '/core/forms/#form-controls' | prepend: site.baseurl }}){: .bsk-alert-link } used in a
+single input group are not supported.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="warning"

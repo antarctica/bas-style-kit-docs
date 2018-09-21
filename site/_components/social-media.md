@@ -41,6 +41,9 @@ You **must** ensure that where you use these assets you comply with these restri
   included="yes"
 %}
 
+[Colours]({{ '/core/colours/#external-service-colours' | prepend: site.baseurl }}) and
+[Icons]({{ '/core/icons/#external-service-icons' | prepend: site.baseurl }}) are defined for each supported service.
+
 | Social Media Service | Social Media Service Class |
 | -------------------- | -------------------------- |
 | Twitter              | `.bsk-twitter`             |
@@ -49,12 +52,8 @@ You **must** ensure that where you use these assets you comply with these restri
 | RSS                  | `.bsk-rss`                 |
 {: .bsk-table .bsk-table-responsive }
 
-[Colours]({{ '/core/colours/#external-service-colours' | prepend: site.baseurl }}) and
-[Icon]({{ '/core/icons/#external-service-icons' | prepend: site.baseurl }}) are defined for each supported social media
-service.
-
 {% capture alert_content %}
-[Send feedback]({{ "/feedback.html" | prepend: site.baseurl }}){: .bsk-alert-link } if you require other services.
+[Get in touch]({{ "/feedback.html" | prepend: site.baseurl }}){: .bsk-alert-link } if you require other services.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="info"

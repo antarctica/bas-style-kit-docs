@@ -40,11 +40,20 @@ Use the `.bsk-media-body` class, with an optional `.bsk-media-header` element, f
     <a href="#"><img class="bsk-media-object" src="{{ '/img/placeholder-64.png' | prepend: site.baseurl }}" alt="Avatar"></a>
   </div>
   <div class="bsk-media-body">
-    <h4 class="bsk-media-heading">Media heading</h4>
+    <div class="bsk-h4 bsk-media-heading">Media heading</div>
     Media body
   </div>
 </div>
 {% endexample %}
+
+{% capture alert_content %}
+This example uses header classes instead of elements to avoid issues with the automatic table of contents.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 {% include topic-section-metadata.html
   title="Media object list"
@@ -63,7 +72,7 @@ Use the `.bsk-media-list` class on a list where each list item is a media object
       <a href="#"><img class="bsk-media-object" src="{{ '/img/placeholder-64.png' | prepend: site.baseurl }}" alt="Avatar"></a>
     </div>
     <div class="bsk-media-body">
-      <h4 class="bsk-media-heading">Media heading</h4>
+      <div class="bsk-h4 bsk-media-heading">Media heading</div>
       Hundreds of thousands rich in heavy atoms shores of the cosmic ocean corpus callosum?
       The sky calls to us colonies, shores of the cosmic ocean? Bits of moving fluff.
     </div>
@@ -73,13 +82,22 @@ Use the `.bsk-media-list` class on a list where each list item is a media object
       <a href="#"><img class="bsk-media-object" src="{{ '/img/placeholder-64.png' | prepend: site.baseurl }}" alt="Avatar"></a>
     </div>
     <div class="bsk-media-body">
-      <h4 class="bsk-media-heading">Media heading</h4>
+      <div class="bsk-h4 bsk-media-heading">Media heading</div>
       Hundreds of thousands rich in heavy atoms shores of the cosmic ocean corpus callosum?
       The sky calls to us colonies, shores of the cosmic ocean? Bits of moving fluff.
     </div>
   </li>
 </ul>
 {% endexample %}
+
+{% capture alert_content %}
+This example uses header classes instead of elements to avoid issues with the automatic table of contents.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 Media objects can also be nested.
 
@@ -90,7 +108,7 @@ Media objects can also be nested.
       <a href="#"><img class="bsk-media-object" src="{{ '/img/placeholder-64.png' | prepend: site.baseurl }}" alt="Avatar"></a>
     </div>
     <div class="bsk-media-body">
-      <h4 class="bsk-media-heading">Media heading</h4>
+      <div class="bsk-h4 bsk-media-heading">Media heading</div>
       Hundreds of thousands rich in heavy atoms shores of the cosmic ocean corpus callosum?
       The sky calls to us colonies, shores of the cosmic ocean? Bits of moving fluff.
     </div>
@@ -100,7 +118,7 @@ Media objects can also be nested.
       <a href="#"><img class="bsk-media-object" src="{{ '/img/placeholder-64.png' | prepend: site.baseurl }}" alt="Avatar"></a>
     </div>
     <div class="bsk-media-body">
-      <h4 class="bsk-media-heading">Media heading</h4>
+      <div class="bsk-h4 bsk-media-heading">Media heading</div>
       Hundreds of thousands rich in heavy atoms shores of the cosmic ocean corpus callosum?
       The sky calls to us colonies, shores of the cosmic ocean? Bits of moving fluff.
       <!-- Nested media object -->
@@ -110,7 +128,7 @@ Media objects can also be nested.
         </div>
         <!-- Nested media object -->
         <div class="bsk-media-body">
-          <h4 class="bsk-media-heading">Media heading</h4>
+          <div class="bsk-h4 bsk-media-heading">Media heading</div>
           Hundreds of thousands rich in heavy atoms shores of the cosmic ocean corpus callosum?
           The sky calls to us colonies, shores of the cosmic ocean? Bits of moving fluff.
           <div class="bsk-media">
@@ -118,7 +136,7 @@ Media objects can also be nested.
               <a href="#"><img class="bsk-media-object" src="{{ '/img/placeholder-64.png' | prepend: site.baseurl }}" alt="Avatar"></a>
             </div>
             <div class="bsk-media-body">
-              <h4 class="bsk-media-heading">Media heading</h4>
+              <div class="bsk-h4 bsk-media-heading">Media heading</div>
               Hundreds of thousands rich in heavy atoms shores of the cosmic ocean corpus callosum?
               The sky calls to us colonies, shores of the cosmic ocean? Bits of moving fluff.
             </div>
@@ -132,13 +150,22 @@ Media objects can also be nested.
       <a href="#"><img class="bsk-media-object" src="{{ '/img/placeholder-64.png' | prepend: site.baseurl }}" alt="Avatar"></a>
     </div>
     <div class="bsk-media-body">
-      <h4 class="bsk-media-heading">Media heading</h4>
+      <div class="bsk-h4 bsk-media-heading">Media heading</div>
       Hundreds of thousands rich in heavy atoms shores of the cosmic ocean corpus callosum?
       The sky calls to us colonies, shores of the cosmic ocean? Bits of moving fluff.
     </div>
   </li>
 </ul>
 {% endexample %}
+
+{% capture alert_content %}
+This example uses header classes instead of elements to avoid issues with the automatic table of contents.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 {% include topic-section-metadata.html
   title="Layout"
@@ -177,7 +204,7 @@ When using right alignment, the `.bsk-media-body` needs to be before the `.bsk-m
     <a href="#"><img class="bsk-media-object" src="{{ '/img/placeholder-64.png' | prepend: site.baseurl }}" alt="Avatar"></a>
   </div>
   <div class="bsk-media-body">
-    <h4 class="bsk-media-heading">Media heading</h4>
+    <div class="bsk-h4 bsk-media-heading">Media heading</div>
     Hundreds of thousands rich in heavy atoms shores of the cosmic ocean corpus callosum?
     The sky calls to us colonies, shores of the cosmic ocean? Bits of moving fluff.
   </div>
@@ -188,7 +215,7 @@ When using right alignment, the `.bsk-media-body` needs to be before the `.bsk-m
 <!-- Right aligned -->
 <div class="bsk-media">
   <div class="bsk-media-body">
-    <h4 class="bsk-media-heading">Media heading</h4>
+    <div class="bsk-h4 bsk-media-heading">Media heading</div>
     Hundreds of thousands rich in heavy atoms shores of the cosmic ocean corpus callosum?
     The sky calls to us colonies, shores of the cosmic ocean? Bits of moving fluff.
   </div>
@@ -197,6 +224,15 @@ When using right alignment, the `.bsk-media-body` needs to be before the `.bsk-m
   </div>
 </div>
 {% endexample %}
+
+{% capture alert_content %}
+This example uses header classes instead of elements to avoid issues with the automatic table of contents.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 {% include topic-section-metadata.html
   title="Vertical alignment"
@@ -228,7 +264,7 @@ Vertical alignment classes need a horizontal alignment class as well to function
     <a href="#"><img class="bsk-media-object" src="{{ '/img/placeholder-64.png' | prepend: site.baseurl }}" alt="Avatar"></a>
   </div>
   <div class="bsk-media-body">
-    <h4 class="bsk-media-heading">Media heading</h4>
+    <div class="bsk-h4 bsk-media-heading">Media heading</div>
     Hundreds of thousands rich in heavy atoms shores of the cosmic ocean corpus callosum?
     Trillion adipisci velit star stuff harvesting star light from which we spring network of wormholes eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
     Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit great turbulent clouds dream of the mind's eye Vangelis?
@@ -244,7 +280,7 @@ Vertical alignment classes need a horizontal alignment class as well to function
     <a href="#"><img class="bsk-media-object" src="{{ '/img/placeholder-64.png' | prepend: site.baseurl }}" alt="Avatar"></a>
   </div>
   <div class="bsk-media-body">
-    <h4 class="bsk-media-heading">Media heading</h4>
+    <div class="bsk-h4 bsk-media-heading">Media heading</div>
     Hundreds of thousands rich in heavy atoms shores of the cosmic ocean corpus callosum?
     Trillion adipisci velit star stuff harvesting star light from which we spring network of wormholes eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
     Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit great turbulent clouds dream of the mind's eye Vangelis?
@@ -260,7 +296,7 @@ Vertical alignment classes need a horizontal alignment class as well to function
     <a href="#"><img class="bsk-media-object" src="{{ '/img/placeholder-64.png' | prepend: site.baseurl }}" alt="Avatar"></a>
   </div>
   <div class="bsk-media-body">
-    <h4 class="bsk-media-heading">Media heading</h4>
+    <div class="bsk-h4 bsk-media-heading">Media heading</div>
     Hundreds of thousands rich in heavy atoms shores of the cosmic ocean corpus callosum?
     Trillion adipisci velit star stuff harvesting star light from which we spring network of wormholes eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
     Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit great turbulent clouds dream of the mind's eye Vangelis?
@@ -268,3 +304,12 @@ Vertical alignment classes need a horizontal alignment class as well to function
   </div>
 </div>
 {% endexample %}
+
+{% capture alert_content %}
+This example uses header classes instead of elements to avoid issues with the automatic table of contents.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}

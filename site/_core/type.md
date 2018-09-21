@@ -122,8 +122,7 @@ For each family, a series of variants are defined for styles such as italics and
   included="yes"
 %}
 
-The BAS *brand* font, Gill Sans, is the BAS official font. It is included in the BAS Style Kit to integrate the font
-into official BAS websites and applications, in high impact areas such as headings and top-level navigation.
+Gill Sans is the BAS logo font used for high impact areas such as headings and top-level navigation.
 
 <div class="bsk-alert bsk-alert-solid bsk-alert-warning bsk-alert-block bsk-alert-icon">
   <header class="bsk-alert-heading">
@@ -165,7 +164,8 @@ The brand font is applied to these elements:
 %}
 
 {% capture alert_content %}
-In addition to heading elements, you can also use `.bsk-h1` - `.bsk-h6` classes for styling other elements as headings.
+In addition to heading elements, you can also use `.bsk-h1` - `.bsk-h6` classes for styling other elements to look like
+headings.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="info"
@@ -196,22 +196,31 @@ De carne animata corpora quaeritis.
   included="yes"
 %}
 
-Use the `&lt;small&gt;` element or the `.bsk-small` class for adding secondary text to any header.
+Use the `<small>` element or the `.bsk-small` class for adding secondary text to any header.
 
 {% example html %}
-<h1>Heading 1 <small>secondary text</small></h1>
+<div class="bsk-h1">Heading 1 <small>secondary text</small></div>
 De carne animata corpora quaeritis.
-<h2>Heading 2 <small>secondary text</small></h2>
+<div class="bsk-h2">Heading 2 <small>secondary text</small></div>
 De carne animata corpora quaeritis.
-<h3>Heading 3 <small>secondary text</small></h3>
+<div class="bsk-h3">Heading 3 <small>secondary text</small></div>
 De carne animata corpora quaeritis.
-<h4>Heading 4 <small>secondary text</small></h4>
+<div class="bsk-h4">Heading 4 <small>secondary text</small></div>
 De carne animata corpora quaeritis.
-<h5>Heading 5 <small>secondary text</small></h5>
+<div class="bsk-h5">Heading 5 <small>secondary text</small></div>
 De carne animata corpora quaeritis.
-<h6>Heading 6 <small>secondary text</small></h6>
+<div class="bsk-h6">Heading 6 <small>secondary text</small></div>
 De carne animata corpora quaeritis.
 {% endexample %}
+
+{% capture alert_content %}
+This example uses header classes instead of elements to avoid issues with the automatic table of contents.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 {% include topic-section-metadata.html
   title="Paragraphs"
