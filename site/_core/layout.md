@@ -197,7 +197,7 @@ calculated as the next minimum width size minus `1px`. There is no maximum width
 {: .bsk-table .bsk-table-responsive }
 
 {% include topic-section-metadata.html
-  title="Unit responsive breakpoints"
+  title="Using responsive breakpoints"
   heading_level=2
   phase="live"
   initial_version="0.1.0"

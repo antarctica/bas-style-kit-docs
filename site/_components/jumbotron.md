@@ -94,7 +94,7 @@ background-image: url("/img/site-masthead-tom-welsh.jpg");
 {% endhighlight %}
 
 {% example html %}
-<div class="bsk-jumbotron bsk-jumbotron-image-example">
+<div class="bsk-jumbotron bsk-jumbotron-default bsk-jumbotron-image-example">
 </div>
 {% endexample %}
 
@@ -115,7 +115,7 @@ background-image: url("/img/site-masthead-tom-welsh.jpg");
 Use the `.bsk-jumbotron-overlay` class to add additional contrast around a jumbotron's title.
 
 {% example html %}
-<div class="bsk-jumbotron bsk-jumbotron-image-example">
+<div class="bsk-jumbotron bsk-jumbotron-default bsk-jumbotron-image-example">
   <h1><span class="bsk-jumbotron-overlay">Jumbotron caption</span></h1>
 </div>
 {% endexample %}

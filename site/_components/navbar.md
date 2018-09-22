@@ -527,7 +527,7 @@ Typically this will be used within elements using the
   included="yes"
 %}
 
-Add one of these classes to alter the size of a jumbotron:
+Add one of these classes to alter the size of a navbar:
 
 | Navbar Size | Navbar Size Class |
 | ----------- | ----------------- |
