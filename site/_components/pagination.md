@@ -30,9 +30,6 @@ Use the `.bsk-pagination` class for navigating within large collections of items
 
 Use the `.bsk-pager` class as a simpler alternative to pagination.
 
-This component does not provide pagination or paging functions itself, only styled elements for use with a pagination
-or paging implementation. For example [data-tables](https://datatables.net) or [list.js](http://listjs.com).
-
 {% capture alert_content %}
 Use the `aria-label` element so assistive technologies can tell each pagination or pager instance apart.
 {% endcapture %}
