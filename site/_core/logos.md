@@ -55,7 +55,7 @@ The BAS logo can be used with components such as:
 <div class="bsk-alert bsk-alert-solid bsk-alert-warning bsk-alert-block bsk-alert-icon">
   <header class="bsk-alert-heading">
     <div class="bsk-h4">
-      <i class="fa fa-fw fa-exclamation-triangle bsk-alert-icon"></i>
+      <i class="far fa-fw fa-exclamation-triangle bsk-alert-icon"></i>
       The BAS logo is a trademark of the Natural Environment Research Council and may not be used without a licence
     </div>
   </header>

@@ -769,7 +769,7 @@ Use the `disabled` attribute to mark a form field as disabled. This will prevent
 <div class="bsk-alert bsk-alert-solid bsk-alert-danger bsk-alert-block bsk-alert-icon">
   <header class="bsk-alert-heading">
     <div class="bsk-h4">
-      <i class="fa fa-fw fa-exclamation-circle bsk-alert-icon"></i>
+      <i class="fas fa-fw fa-exclamation-circle bsk-alert-icon"></i>
       It is not safe to rely on this state to prevent users activating disabled actions
     </div>
   </header>
@@ -835,7 +835,7 @@ appearance, but won't change the cursor.
 <div class="bsk-alert bsk-alert-block bsk-alert-outline bsk-alert-warning bsk-alert-icon">
   <header class="bsk-alert-heading">
     <div class="bsk-h4">
-      <i class="fa fa-fw fa-exclamation-triangle bsk-alert-icon" aria-hidden="true"></i>
+      <i class="far fa-fw fa-exclamation-triangle bsk-alert-icon" aria-hidden="true"></i>
       Not all form elements support this value
     </div>
   </header>
@@ -961,7 +961,7 @@ where there is a validation warning or failure.
         We will only use this information for contacting you about your feedback.
       </p>
       <p class="bsk-help-block bsk-text-muted">
-        <i class="fa fa-fw fa-exclamation-triangle" aria-hidden="true"></i>
+        <i class="far fa-fw fa-exclamation-triangle" aria-hidden="true"></i>
         Did you mean <em>john.smith@example.<strong>co</strong>.uk</em>,
         rather than <em>john.smith@bas.<strong>c</strong>.uk</em>?
       </p>
@@ -971,7 +971,7 @@ where there is a validation warning or failure.
       <label class="bsk-control-label" for="form-validation-example-3">Your email address</label>
       <input type="email" class="bsk-form-control" id="form-validation-example-3" value="john.smith" aria-invalid="true">
       <p class="bsk-help-block bsk-text-muted">We will only use this information for contacting you about your feedback.</p>
-      <p class="bsk-help-block bsk-text-muted"><i class="fa fa-fw fa-exclamation-circle" aria-hidden="true"></i> <em>john.smith</em>,
+      <p class="bsk-help-block bsk-text-muted"><i class="fas fa-fw fa-exclamation-circle" aria-hidden="true"></i> <em>john.smith</em>,
       is not a valid email address.</p>
   </fieldset>
 </form>

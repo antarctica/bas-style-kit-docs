@@ -12,7 +12,9 @@ sections:
   -
     title: Logos
   -
-    title: JavaScript Libraries
+    title: JavaScript dependencies
+  -
+    title: Optional components
   -
     title: SRI
   -
@@ -101,7 +103,7 @@ include the Style Kit in a website or application.
 
 {% capture alert_content %}
 If the BAS Style Kit JavaScript files are included, you will also need to include additional
-[JavaScript Libraries](#javascript-libraries){: .bsk-alert-link }.
+[JavaScript dependencies](#javascript-dependencies){: .bsk-alert-link }.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="warning"
@@ -152,12 +154,12 @@ to include them in a website or application.
 
 
 {% include topic-section-metadata.html
-  title="JavaScript libraries"
+  title="JavaScript dependencies"
   heading_level=2
 %}
 
 {% capture alert_content %}
-This section only applies if you are including the BAS Style Kit's
+This section only applies if you are using the BAS Style Kit's
 [Interactive components]({{ '/interactivity' | prepend: site.baseurl }}){: .bsk-alert-link }.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
@@ -167,7 +169,7 @@ This section only applies if you are including the BAS Style Kit's
 %}
 
 Each component will list the libraries it depends upon (in the dependencies section). These libraries are not included
-within the Style Kit and need to loaded **before** the Style Kit to function correctly.
+in the Style Kit and need to loaded **before** the Style Kit to function correctly.
 
 <table class="bsk-table bsk-table-bordered">
   <thead>
@@ -212,6 +214,63 @@ recommended way to include them in a website or application.
 
 {% capture alert_content %}
 These libraries are not included in other distribution types and will need to be sourced separately.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="danger"
+  style="highlight"
+  content=alert_content
+%}
+
+{% include topic-section-metadata.html
+  title="Optional components"
+  heading_level=2
+%}
+
+{% capture alert_content %}
+These components are not part of the Style Kit but can be included to enable extra features.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="outline"
+  content=alert_content
+%}
+
+Each optional component will list the libraries or other files it depends upon. These files are not included in the
+Style Kit.
+
+<table class="bsk-table bsk-table-bordered">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Version</th>
+      <th>URL</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="{{ '/core/icons/#font-awesome' | prepend: site.baseurl }}">Font Awesome Pro</a></td>
+      <td>CSS</td>
+      <td>5.3.1</td>
+      <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/libs/font-awesome-pro/5.3.1/css/all.min.css</code></pre></td>
+      <td><div class="bsk-label bsk-label-phase-live">Live</div></td>
+    </tr>
+  </tbody>
+</table>
+
+{% capture alert_content %}
+For convenience, these files are hosted by the [BAS CDN](https://cdn.web.bas.ac.uk){: .bsk-alert-link } and is the
+recommended way to include them in a website or application.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="success"
+  style="highlight"
+  content=alert_content
+%}
+
+{% capture alert_content %}
+These files are not included in other distribution types and will need to be sourced separately.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="danger"
@@ -265,14 +324,22 @@ These values are also available in a machine readable format from:
 https://{% unless jekyll.environment == 'production' %}{{ site.data.variables.docs_site_staging }}{% else %}{{ site.data.variables.docs_site_production }}{% endunless %}/data/bsk-sri.json
 {% endhighlight %}
 
-SRI values are also available for [JavaScript libraries]({{ '/start/distribution/#css-js' | prepend: site.baseurl }})
-the Style Kit depends upon.
+SRI values are also available for Style Kit's
+[JavaScript dependencies]({{ '/start/distribution/#javascript-dependencies' | prepend: site.baseurl }}).
 
-| Resource                 | SRI value                                             |
-| ------------------------ | ----------------------------------------------------- |
-| `jquery-3.1.1.min.js`    | `sha256-iS/MJJubD9bocndB0h1c3VR0I4MnuhFjCLXfrW3f0b0=` |
-| `jquery-3.3.1.min.js`    | `sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=` |
-| `js.cookie-2.1.3.min.js` | `sha256-EareStqgZTnMUqLWtDkCa3SldvB8NPBY8u5C6ZUMWRc=` |
+| Resource                                      | SRI value                                             |
+| --------------------------------------------- | ----------------------------------------------------- |
+| `libs/jquery/3.1.1/jquery-3.1.1.min.js`       | `sha256-iS/MJJubD9bocndB0h1c3VR0I4MnuhFjCLXfrW3f0b0=` |
+| `libs/jquery/3.3.1/jquery-3.3.1.min.js`       | `sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=` |
+| `libs/js-cookie/2.1.3/js.cookie-2.1.3.min.js` | `sha256-EareStqgZTnMUqLWtDkCa3SldvB8NPBY8u5C6ZUMWRc=` |
+{: .bsk-table .bsk-table-hover .bsk-table-bordered }
+
+SRI values are also available for Style Kit's
+[Optional components]({{ '/start/distribution/#optional-components' | prepend: site.baseurl }}).
+
+| Resource                                      | SRI value                                             |
+| --------------------------------------------- | ----------------------------------------------------- |
+| `libs/font-awesome-pro/5.3.1/css/all.min.css` | `sha256-dmYY0yByM18KPaizF7sJXlVB3j4gBovN0xzGOEePAYg=` |
 {: .bsk-table .bsk-table-hover .bsk-table-bordered }
 
 {% include topic-section-metadata.html

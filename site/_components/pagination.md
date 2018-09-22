@@ -198,7 +198,7 @@ Add the `.bsk-disabled` class to indicate unavailable items or actions.
 <div class="bsk-alert bsk-alert-solid bsk-alert-danger bsk-alert-block bsk-alert-icon">
   <header class="bsk-alert-heading">
     <div class="bsk-h4">
-      <i class="fa fa-fw fa-exclamation-circle bsk-alert-icon"></i>
+      <i class="fas fa-fw fa-exclamation-circle bsk-alert-icon"></i>
       It is not safe to rely on this state to prevent users activating disabled actions
     </div>
   </header>

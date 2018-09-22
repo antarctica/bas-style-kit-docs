@@ -258,7 +258,7 @@ Use the `.bsk-alert-icon` class to properly format an icon in an alert.
 
 {% example html %}
 <div class="bsk-alert bsk-alert-solid bsk-alert-experimental" role="alert">
-  <i class="fa fa-fw fa-flask bsk-alert-icon" aria-hidden="true"></i> Experimental alert
+  <i class="fas fa-fw fa-flask bsk-alert-icon" aria-hidden="true"></i> Experimental alert
 </div>
 {% endexample %}
 
@@ -284,16 +284,16 @@ Use the `.bsk-alert-icon` class to properly format an icon in an alert.
 
 {% example html %}
 <div class="bsk-alert bsk-alert-icon bsk-alert-solid bsk-alert-success" role="alert">
-  <i class="fa fa-fw fa-check bsk-alert-icon" aria-hidden="true"></i> Success alert
+  <i class="far fa-fw fa-check bsk-alert-icon" aria-hidden="true"></i> Success alert
 </div>
 <div class="bsk-alert bsk-alert-icon bsk-alert-solid bsk-alert-warning" role="alert">
-  <i class="fa fa-fw fa-exclamation-triangle bsk-alert-icon" aria-hidden="true"></i> Warning alert
+  <i class="far fa-fw fa-exclamation-triangle bsk-alert-icon" aria-hidden="true"></i> Warning alert
 </div>
 <div class="bsk-alert bsk-alert-icon bsk-alert-solid bsk-alert-danger" role="alert">
-  <i class="fa fa-fw fa-exclamation-circle bsk-alert-icon" aria-hidden="true"></i> Danger alert
+  <i class="fas fa-fw fa-exclamation-circle bsk-alert-icon" aria-hidden="true"></i> Danger alert
 </div>
 <div class="bsk-alert bsk-alert-icon bsk-alert-solid bsk-alert-info" role="alert">
-  <i class="fa fa-fw fa-info bsk-alert-icon" aria-hidden="true"></i> Info alert
+  <i class="far fa-fw fa-info-square bsk-alert-icon" aria-hidden="true"></i> Info alert
 </div>
 {% endexample %}
 
