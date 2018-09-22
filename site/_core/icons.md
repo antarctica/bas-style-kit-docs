@@ -5,7 +5,7 @@ menus:
     weight: 7
 sections:
   -
-    title: Available icons
+    title: Overview
   -
     title: Caret icon
   -
@@ -19,19 +19,28 @@ sections:
 ---
 
 {% include topic-section-metadata.html
-  title="Available icons"
+  title="Overview"
   heading_level=2
-  phase="live"
+  phase="alpha"
   initial_version="0.1.0"
-  revised_version="0.3.0"
+  revised_version="0.5.0"
   included="yes"
 %}
 
-The BAS Style Kit includes version **3.7** of the [Font Awesome](http://fontawesome.io) icon web font.
+The core BAS Style Kit uses a limited set of textual icons to represent actions such as <em>close</em>.
 
 {% capture alert_content %}
-Font Awesome replaces, and removes, the Glyphicons icon font included by default in Bootstrap, its icons won't work
-using the Style Kit.
+Previous versions of the Style Kit included the Font Awesome icon font. This was removed following the release of Font
+Awesome 5, due to licensing restrictions with the <em>pro</em> version.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="solid"
+  content=alert_content
+%}
+
+{% capture alert_content %}
+The Glyphicons icon font, included by default in Bootstrap, is not included in the Style Kit, its icons will not work.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="warning"
@@ -39,36 +48,19 @@ using the Style Kit.
   content=alert_content
 %}
 
-{% capture alert_content %}
-For consistency, it is recommended to use the `.fa-fw` (fixed width) class with all icons.
-{% endcapture %}
-{% include bas-style-kit/bsk-snippet--alert.html
-  variant="info"
-  style="highlight"
-  content=alert_content
-%}
-
-[View Available Icons](http://fontawesome.io/icons/){:.bsk-btn .bsk-btn-default }
-
 {% include topic-section-metadata.html
   title="Caret icon"
   heading_level=2
-  phase="live"
+  phase="alpha"
   initial_version="0.1.0"
+  revised_version="0.5.0"
   included="yes"
 %}
 
-For menus, Bootstrap's `.bsk-caret` class should be used over the Font Awesome `.fa-caret-` classes, as it will
-automatically rotate in drop up menus.
+Use `.bsk-caret` for things like [drop-down menus]({{ '/components/drop-down' | prepend: site.baseurl }}).
 
 {% example html %}
 <span class="bsk-caret"></span>
-{% endexample %}
-
-In all other cases, Font Awesome's `.fa-caret-` classes should be used instead.
-
-{% example html %}
-<a href="#">Move right <i class="fa fa-fw fa-caret-right" aria-hidden="true"></i></a>
 {% endexample %}
 
 {% include topic-section-metadata.html
@@ -80,24 +72,22 @@ For common actions or concepts, the Style Kit uses a set of conventional icons.
 
 {% include topic-section-metadata.html
   title="Close icon"
-  heading_level=3
-  phase="live"
+  heading_level=2
+  phase="alpha"
   initial_version="0.1.0"
-  revised_version="0.3.0"
+  revised_version="0.5.0"
   included="yes"
 %}
 
-Use the `fa-times` icon wrapped in a `.bsk-close` element for indicating closing or dismissive things, such as
+Use the `&times;` HTML entity wrapped in a `.bsk-close` element for indicating closing or dismissive things, such as
 [alerts]({{ '/components/alert' | prepend: site.baseurl }}).
 
 <div class="bsk-docs-icons-wrapper">
   <div class="bsk-row">
     <div class="bsk-col-12-md-3">
-      <div class="bsk-docs-icon"><i class="fa fa-fw fa-4x fa-times" aria-hidden="true"></i></div>
+      <div class="bsk-docs-icon">&times;</div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Times</li>
-        <li class="bsk-docs-icon-reference">fa-times</li>
-        <li><code>&lt;i class="fa fa-fw fa-times" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
   </div>
@@ -113,7 +103,7 @@ Use the `fa-times` icon wrapped in a `.bsk-close` element for indicating closing
 %}
 
 {% example html %}
-<button type="button" class="bsk-close" aria-label="Close"><i class="fa fa-fw fa-times" aria-hidden="true"></i></button>
+<button type="button" class="bsk-close" aria-label="Close">&times;</button>
 {% endexample %}
 
 {% include topic-section-metadata.html

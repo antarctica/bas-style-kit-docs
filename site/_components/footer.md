@@ -64,8 +64,9 @@ strongly recommended to use a [container]({{ '/core/layout/#containers' | prepen
 {% include topic-section-metadata.html
   title="Default footer"
   heading_level=3
-  phase="live"
+  phase="alpha"
   initial_version="0.1.0"
+  revised_version="0.5.0"
   included="yes"
 %}
 
@@ -83,7 +84,7 @@ This example, whilst more complex, demonstrates the sort of information shown in
 <footer class="bsk-footer bsk-footer-default">
   <div class="bsk-container-fluid">
     <div class="bsk-footer-back-to-top">
-      <a href="#site-top"><i class="fa fa-fw fa-chevron-up" aria-hidden="true"></i> Back to top</a>
+      <a href="#site-top">Back to top</a>
     </div>
     <div class="bsk-footer-is-something-wrong">
       <a href="#">Is something wrong with this page?</a>
@@ -182,8 +183,9 @@ Use the `.bsk-footer-is-something-wrong` class to position and style a link to g
 {% include topic-section-metadata.html
   title="Back to top link"
   heading_level=3
-  phase="live"
+  phase="alpha"
   initial_version="0.4.0"
+  revised_version="0.5.0"
   included="yes"
 %}
 
@@ -193,7 +195,7 @@ Use the `.bsk-footer-back-to-top` class to position and style a link to the top 
 <footer class="bsk-footer bsk-footer-default">
   <div class="bsk-container-fluid">
     <div class="bsk-footer-back-to-top">
-      <a href="#site-top"><i class="fa fa-fw fa-chevron-up" aria-hidden="true"></i> Back to top</a>
+      <a href="#site-top">Back to top</a>
     </div>
   </div>
 </footer>

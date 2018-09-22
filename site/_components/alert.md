@@ -102,8 +102,9 @@ There is no *default* alert variant, as a grey alert for example wouldn't make a
 {% include topic-section-metadata.html
   title="Cookie notice alert"
   heading_level=3
-  phase="live"
+  phase="alpha"
   initial_version="0.3.0"
+  revised_version="0.5.0"
   included="yes"
 %}
 
@@ -147,11 +148,8 @@ this site's layout.
 <div class="bsk-fix-alert-static-top-fixed-container-wrapper">
   <div class="bsk-container">
     <div class="bsk-alert bsk-alert-static-top bsk-alert-dismissible bsk-alert-solid bsk-alert-cookie-notice" role="alert" data-bsk-role="cookie-notice">
-      <button type="button" class="bsk-close" data-dismiss="alert" aria-label="Close">
-        <i class="fa fa-times" aria-hidden="true"></i>
-      </button>
-      This website uses cookies to help us make it better -
-      <a href="#" class="bsk-alert-link">find out more</a>.
+      <button type="button" class="bsk-close" data-dismiss="alert" aria-label="Close">&times;</button>
+      This website uses cookies to help us make it better - <a href="#" class="bsk-alert-link">find out more</a>.
     </div>
   </div>
 </div>
@@ -370,14 +368,14 @@ Use the `.bsk-alert-link` class for any <code>&lt;a&gt;</code> elements within a
 {% include topic-section-metadata.html
   title="Dismissible alerts"
   heading_level=3
-  phase="live"
+  phase="alpha"
   initial_version="0.1.0"
-  revised_version="0.3.0"
+  revised_version="0.5.0"
   included="yes"
 %}
 
-Add a <code>&lt;button&gt;</code> element using the [close icon]({{ '/core/icons/#close-icon' | prepend: site.baseurl }})
-, to create an alert that can be closed or dismissed.
+Add a <code>&lt;button&gt;</code> element using the [close icon]({{ '/core/icons/#close-icon' | prepend: site.baseurl }}
+), to create an alert that can be closed or dismissed.
 
 {% capture alert_content %}
 Dismissible alerts require the [alert]({{ '/interactivity/alert' | prepend: site.baseurl }}){: .bsk-alert-link }
@@ -401,7 +399,7 @@ browser compatibility.
 
 {% example html %}
 <div class="bsk-alert bsk-alert-solid bsk-alert-success bsk-alert-dismissible" role="alert">
-  <button type="button" class="bsk-close" data-dismiss="alert" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button>
+  <button type="button" class="bsk-close" data-dismiss="alert" aria-label="Close">&times;</button>
   A dismissible alert
 </div>
 {% endexample %}

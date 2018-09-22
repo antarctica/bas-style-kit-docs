@@ -114,9 +114,8 @@ If the BAS Style Kit JavaScript files are included, you will also need to includ
   heading_level=2
 %}
 
-[Web fonts]({{ '/core/type/#font-families' | prepend: site.baseurl }}), including
-[icon fonts]({{ '/core/icons' | prepend: site.baseurl }}), used by the BAS Style Kit are declared in their respective
-`@font-face` declarations in these formats:
+[Web fonts]({{ '/core/type/#font-families' | prepend: site.baseurl }}) used by the BAS Style Kit are declared in their
+respective `@font-face` declarations in these formats:
 
 * `.eot`
 * `.ttf`
