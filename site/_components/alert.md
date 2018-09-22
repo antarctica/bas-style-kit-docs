@@ -165,6 +165,15 @@ this site's layout.
 </nav>
 {% endexample %}
 
+{% capture alert_content %}
+The required `data-bsk-role="cookie-notice"` attribute is missing from this example so that it's visible.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="outline"
+  content=alert_content
+%}
+
 If using a cookie notice with a [navbar]({{ '/components/navbar' | prepend: site.baseurl }}) as part of fluid-width
 design:
 
@@ -193,6 +202,15 @@ design:
   </div><!-- /.bsk-container -->
 </nav>
 {% endexample %}
+
+{% capture alert_content %}
+The required `data-bsk-role="cookie-notice"` attribute is missing from this example so that it's visible.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="outline"
+  content=alert_content
+%}
 
 {% include topic-section-metadata.html
   title="Contextual colours"

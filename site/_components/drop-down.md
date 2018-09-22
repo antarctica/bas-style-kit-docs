@@ -52,9 +52,6 @@ JavaScript plugin, which is enabled on this site.
   heading_level=2
 %}
 
-These elements are supported for triggering a drop-down menu. Other elements may be used, but are not supported and may
-not look right.
-
 {% include topic-section-metadata.html
   title="Button drop-down"
   heading_level=3
@@ -100,9 +97,6 @@ not look right.
 {% include topic-section-metadata.html
   title="Navbar item drop-down"
   heading_level=3
-  phase="live"
-  initial_version="0.1.0"
-  included="yes"
 %}
 
 See the [navbar]({{ '/components/navbar/#drop-down-menus' | prepend: site.baseurl }}) documentation for using drop-downs

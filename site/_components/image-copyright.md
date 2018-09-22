@@ -39,9 +39,6 @@ This attribution can also include a link, for example to purchase an image from 
   heading_level=2
 %}
 
-These elements are supported for use with the image copyright component. Other elements may be used, but are not
-supported and may not look right.
-
 {% include topic-section-metadata.html
   title="Figure"
   heading_level=3

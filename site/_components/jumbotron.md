@@ -67,7 +67,7 @@ Add the `.bsk-jumbotron-default` class for a standard jumbotron.
   included="yes"
 %}
 
-Use the `.jumbotron-inverse` class to use a darker background for a jumbotron.
+Add the `.jumbotron-inverse` class to use a darker background for a jumbotron.
 
 {% example html %}
 <div class="bsk-jumbotron bsk-jumbotron-inverse">

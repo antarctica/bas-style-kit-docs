@@ -104,7 +104,7 @@ sizes to ensure things work correctly.
       <li class="bsk-active"><a href="#">Home <span class="bsk-sr-only">(current)</span></a></li>
       <li><a href="#">About</a></li>
     </ul>
-  </div><!-- /.bsk-container-fluid -->
+  </div>
 </nav>
 {% endexample %}
 
@@ -154,8 +154,8 @@ This example, whilst quite complex, demonstrates the sort of items shown in a ty
         </li>
         <li><a href="#">Feedback</a></li>
       </ul>
-    </div><!-- /.bsk-navbar-collapse -->
-  </div><!-- /.bsk-container-fluid -->
+    </div>
+  </div>
 </nav>
 {% endexample %}
 
@@ -180,7 +180,7 @@ Use a list of <code>&lt;a&gt;</code> elements within a navigation menu using the
     <ul class="bsk-nav bsk-navbar-nav">
       <li><a href="#">Item</a></li>
     </ul>
-  </div><!-- /.bsk-container-fluid -->
+  </div>
 </nav>
 {% endexample %}
 
@@ -192,25 +192,16 @@ Use a list of <code>&lt;a&gt;</code> elements within a navigation menu using the
   included="yes"
 %}
 
-At small screen sizes, a button is shown to open and close the menu of navbar items.
+At small screen sizes, a button is used to show or hide extra navbar items in a [vertical menu]({{ 'components/navbar/#hidden-items-menu' | prepend: site.baseurl }}).
 
-The first example below will only show the menu button at small screen sizes. The second example shows the button at
-any screen size (for demonstration purposes).
-
-{% example html %}
-<nav class="bsk-navbar">
-  <div class="bsk-container-fluid">
-    <div class="bsk-navbar-header">
-      <button type="button" class="bsk-navbar-toggle bsk-collapsed" data-toggle="collapse" data-target="#bsk-example-navbar-collapse-2" aria-expanded="false">
-        <span class="bsk-sr-only">Toggle navigation</span>
-        <span class="bsk-icon-bar"></span>
-        <span class="bsk-icon-bar"></span>
-        <span class="bsk-icon-bar"></span>
-      </button>
-    </div>
-  </div><!-- /.bsk-container-fluid -->
-</nav>
-{% endexample %}
+{% capture alert_content %}
+This example simulates the menu button at all sizes.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 {% example html %}
 <nav class="bsk-navbar">
@@ -224,7 +215,31 @@ any screen size (for demonstration purposes).
         <span class="bsk-icon-bar"></span>
       </button>
     </div>
-  </div><!-- /.bsk-container-fluid -->
+  </div>
+</nav>
+{% endexample %}
+
+{% capture alert_content %}
+This example is real but will only work at small screen sizes.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
+
+{% example html %}
+<nav class="bsk-navbar">
+  <div class="bsk-container-fluid">
+    <div class="bsk-navbar-header">
+      <button type="button" class="bsk-navbar-toggle bsk-collapsed" data-toggle="collapse" data-target="#bsk-example-navbar-collapse-2" aria-expanded="false">
+        <span class="bsk-sr-only">Toggle navigation</span>
+        <span class="bsk-icon-bar"></span>
+        <span class="bsk-icon-bar"></span>
+        <span class="bsk-icon-bar"></span>
+      </button>
+    </div>
+  </div>
 </nav>
 {% endexample %}
 
@@ -244,7 +259,7 @@ Use the `.bsk-navbar-brand` class to indicate the name of the current website or
     <div class="bsk-navbar-header">
       <a class="bsk-navbar-brand" href="#">Site Name</a>
     </div>
-  </div><!-- /.bsk-container-fluid -->
+  </div>
 </nav>
 {% endexample %}
 
@@ -299,7 +314,7 @@ See the other [navbar sizes](#sizes){: .bsk-alert-link} for other examples.
     <ul class="bsk-nav bsk-navbar-nav">
       <li><a href="#">Item</a></li>
     </ul>
-  </div><!-- /.bsk-container-fluid -->
+  </div>
 </nav>
 {% endexample %}
 
@@ -314,7 +329,7 @@ See the other [navbar sizes](#sizes){: .bsk-alert-link} for other examples.
     <ul class="bsk-nav bsk-navbar-nav">
       <li><a href="#">Item</a></li>
     </ul>
-  </div><!-- /.bsk-container-fluid -->
+  </div>
 </nav>
 {% endexample %}
 
@@ -332,7 +347,7 @@ Add the `.bsk-fix-navbar-brand-img-txt` class to a brand image to combine with b
     <ul class="bsk-nav bsk-navbar-nav">
       <li><a href="#">Item</a></li>
     </ul>
-  </div><!-- /.bsk-container-fluid -->
+  </div>
 </nav>
 {% endexample %}
 
@@ -350,7 +365,7 @@ Use the `.bsk-navbar-text` class to correctly position and colour any text eleme
 <nav class="bsk-navbar">
   <div class="bsk-container-fluid">
     <p class="bsk-navbar-text">Some text</p>
-  </div><!-- /.bsk-container-fluid -->
+  </div>
 </nav>
 {% endexample %}
 
@@ -377,7 +392,7 @@ Using the `.bsk-btn` class with an <code>&lt;a&gt;</code> element, within a navi
 <nav class="bsk-navbar">
   <div class="bsk-container-fluid">
     <button class="bsk-btn bsk-btn-default bsk-navbar-btn">Action</button>
-  </div><!-- /.bsk-container-fluid -->
+  </div>
 </nav>
 {% endexample %}
 
@@ -445,7 +460,7 @@ It is recommended to use this feature sparingly until support improves.
       </div>
       <button type="submit" class="bsk-btn bsk-btn-default bsk-navbar-btn">Submit</button>
     </form>
-  </div><!-- /.bsk-container-fluid -->
+  </div>
 </nav>
 {% endexample %}
 
@@ -472,7 +487,7 @@ It is recommended to use this feature sparingly until support improves.
         </ul>
       </li>
     </ul>
-  </div><!-- /.bsk-container-fluid -->
+  </div>
 </nav>
 {% endexample %}
 
@@ -500,7 +515,7 @@ Typically this will be used within elements using the
 <nav class="bsk-navbar">
   <div class="bsk-container-fluid">
     <p class="bsk-navbar-text">Some text with a <a href="#" class="bsk-navbar-link">link</a></p>
-  </div><!-- /.bsk-container-fluid -->
+  </div>
 </nav>
 {% endexample %}
 
@@ -563,8 +578,8 @@ Add one of these classes to alter the size of a jumbotron:
         </li>
         <li><a href="#">Feedback</a></li>
       </ul>
-    </div><!-- /.bsk-navbar-collapse -->
-  </div><!-- /.bsk-container-fluid -->
+    </div>
+  </div>
 </nav>
 {% endexample %}
 
@@ -586,7 +601,7 @@ Add one of these classes to alter the size of a jumbotron:
     <ul class="bsk-nav bsk-navbar-nav">
       <li><a href="#">Item</a></li>
     </ul>
-  </div><!-- /.bsk-container-fluid -->
+  </div>
 </nav>
 {% endexample %}
 
@@ -608,7 +623,7 @@ Add one of these classes to alter the size of a jumbotron:
     <ul class="bsk-nav bsk-navbar-nav">
       <li><a href="#">Item</a></li>
     </ul>
-  </div><!-- /.bsk-container-fluid -->
+  </div>
 </nav>
 {% endexample %}
 
@@ -644,18 +659,11 @@ This provides a non-visual indication of the currently active item, suitable for
       <li class="bsk-active"><a href="#">Active item <span class="bsk-sr-only">(current)</span></a></li>
       <li><a href="#">Another item</a></li>
     </ul>
-  </div><!-- /.bsk-container-fluid -->
+  </div>
 </nav>
 {% endexample %}
 
-{% capture alert_content %}
-This can also be used within [drop-down]({{ '/components/drop-down/#active' | prepend: site.baseurl }}) menus if needed.
-{% endcapture %}
-{% include bas-style-kit/bsk-snippet--alert.html
-  variant="info"
-  style="highlight"
-  content=alert_content
-%}
+This can also be used within [drop-down]({{ '/components/drop-down/#active' | prepend: site.baseurl }}) menus.
 
 {% example html %}
 <nav class="bsk-navbar">
@@ -671,7 +679,7 @@ This can also be used within [drop-down]({{ '/components/drop-down/#active' | pr
         </ul>
       </li>
     </ul>
-  </div><!-- /.bsk-container-fluid -->
+  </div>
 </nav>
 {% endexample %}
 
@@ -688,12 +696,16 @@ This can also be used within [drop-down]({{ '/components/drop-down/#active' | pr
   included="yes"
 %}
 
-Wrap navbar items to be hidden in the menu in an element with the `.bsk-navbar-collapse` class.
-The [hidden items menu]({{ '/components/navbar/#hidden-items-menu' | prepend: site.baseurl }}) is used to show and hide
-this menu.
+Use the `.bsk-navbar-collapse` class on an element that will contain navbar items to be hidden behind a menu at small
+screen sizes.
+
+When the screen size narrows past the [small grid size]({{ 'core/grid/#grid-sizes' | prepend: site.baseurl }}), items
+in this element will be hidden using the [collapse]({{ '/interactivity/collapse' | prepend: site.baseurl }}) JavaScript
+plugin. A [hidden items menu]({{ 'components/navbars/#hidden-items-menu' | prepend: site.baseurl }}) button is used to
+show or hide these items in a vertical menu.
 
 {% capture alert_content %}
-The navbar component requires the [collapse]({{ '/interactivity/collapse' | prepend: site.baseurl }}){: .bsk-alert-link }
+This navbar component requires the [collapse]({{ '/interactivity/collapse' | prepend: site.baseurl }}){: .bsk-alert-link }
 JavaScript plugin, which is enabled on this site.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
@@ -702,12 +714,8 @@ JavaScript plugin, which is enabled on this site.
   content=alert_content
 %}
 
-When the screen size narrows past the [small grid size]({{ 'core/grid/#grid-sizes' | prepend: site.baseurl }}), items
-will be hidden using CSS classes to be shown in a menu. The collapse JavaScript plugin is used to control this menu.
-Without this plugin, these items can never be shown, until the screen size increases past the small grid size.
-
 {% capture alert_content %}
-The example below will only behave correctly at small screen sizes.
+This example will only work at small screen sizes.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="info"
@@ -741,8 +749,8 @@ The example below will only behave correctly at small screen sizes.
         <li><a href="#">Item 8</a></li>
         <li><a href="#">Item 9</a></li>
       </ul>
-    </div><!-- /.bsk-navbar-collapse -->
-  </div><!-- /.bsk-container-fluid -->
+    </div>
+  </div>
 </nav>
 {% endexample %}
 
@@ -777,7 +785,7 @@ Multiple right aligned elements are not currently supported and won't look right
     <ul class="bsk-nav bsk-navbar-nav bsk-navbar-right">
       <li><a href="#">Right aligned item</a></li>
     </ul>
-  </div><!-- /.bsk-container-fluid -->
+  </div>
 </nav>
 {% endexample %}
 
@@ -810,9 +818,18 @@ body {
       <li class="bsk-active"><a href="#">Home <span class="bsk-sr-only">(current)</span></a></li>
       <li><a href="#">About</a></li>
     </ul>
-  </div><!-- /.bsk-container-fluid -->
+  </div>
 </nav>
 {% endexample %}
+
+{% capture alert_content %}
+This example would normally use absolute positioning. It is disabled here to avoid breaking the website.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 {% include topic-section-metadata.html
   title="Fixed to bottom item"
@@ -845,9 +862,18 @@ body {
       <li class="bsk-active"><a href="#">Home <span class="bsk-sr-only">(current)</span></a></li>
       <li><a href="#">About</a></li>
     </ul>
-  </div><!-- /.bsk-container-fluid -->
+  </div>
 </nav>
 {% endexample %}
+
+{% capture alert_content %}
+This example would normally use absolute positioning. It is disabled here to avoid breaking the website.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 {% include topic-section-metadata.html
   title="Static top"
@@ -879,6 +905,6 @@ Unlike the `.bsk-navbar-fixed-*` classes, you do not need to change any padding 
       <li class="bsk-active"><a href="#">Home <span class="bsk-sr-only">(current)</span></a></li>
       <li><a href="#">About</a></li>
     </ul>
-  </div><!-- /.bsk-container-fluid -->
+  </div>
 </nav>
 {% endexample %}
