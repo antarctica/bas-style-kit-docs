@@ -21,6 +21,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 ### Removed
 
 * Deprecated 'wells' component
+* Outdated documentation
 
 ## v1.4.0 - 31/07/2018
 

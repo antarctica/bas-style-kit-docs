@@ -752,9 +752,6 @@ Add one of these classes to alter the size of a form control:
 {% include topic-section-metadata.html
   title="Element states"
   heading_level=2
-  phase="live"
-  initial_version="0.1.0"
-  included="yes"
 %}
 
 {% include topic-section-metadata.html

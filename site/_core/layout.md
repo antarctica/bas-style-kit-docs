@@ -350,11 +350,6 @@ Both classes and mixins are available for setting these states generally (i.e. u
 | Screen reader only | `.bsk-sr-only`   | `.sr-only();`   |
 {: .bsk-table .bsk-table-responsive }
 
-### Responsive visibility classes
-{: #{{ 'Responsive visibility classes' | slugify }} }
-
-{% include bas-style-kit/bsk-snippet--back-to-top.html %}
-
 {% include topic-section-metadata.html
   title="Responsive visibility classes"
   heading_level=2
