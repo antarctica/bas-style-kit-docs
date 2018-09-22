@@ -54,12 +54,12 @@ button, otherwise it will look strange. It is not enough to use `.bsk-btn` on it
 
 These elements are fully supported:
 
-* <code>&lt;button&gt;</code>
+* `<button>`
 
 These elements are also supported, but to a lesser extent:
 
-* <code>&lt;a&gt;</code>
-* <code>&lt;input&gt;</code>
+* `<a>`
+* `<input>`
 
 Other elements may be used as well, but are not supported and may not look right.
 

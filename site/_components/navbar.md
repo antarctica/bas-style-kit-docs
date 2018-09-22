@@ -792,27 +792,9 @@ Multiple right aligned elements are not currently supported and won't look right
 Add the `.bsk-navbar-fixed-top` class and include a [container]({{ 'core/layout/#containers' | prepend: site.baseurl }})
 to fix a navbar to the top of the page.
 
-{% capture alert_content %}
-Fixed styles require additional padding on the `body` element. Otherwise the navbar will cover up other page content.
-{% endcapture %}
-{% include bas-style-kit/bsk-snippet--alert.html
-  variant="warning"
-  style="outline"
-  content=alert_content
-%}
+Additional CSS rules, such as the example below, are needed to prevent the navbar covering up other page content.
 
-The Style Kit doesn’t provide styles for this, however the class below can be used as a starting point
-
-{% capture alert_content %}
-The example below would normally use absolute positioning. It is disabled here to avoid breaking the site layout.
-{% endcapture %}
-{% include bas-style-kit/bsk-snippet--alert.html
-  variant="info"
-  style="highlight"
-  content=alert_content
-%}
-
-{% highlight css %}
+{% highlight scss %}
 body {
   padding-top: 70px;
 }
@@ -843,18 +825,11 @@ body {
 Add the `.bsk-navbar-fixed-bottom` class and include a
 [container]({{ 'core/layout/#containers' | prepend: site.baseurl }}) to fix a navbar to the bottom of the page.
 
-{% capture alert_content %}
-Fixed styles require additional padding on the `body` element. Otherwise the navbar will cover up other page content.
-{% endcapture %}
-{% include bas-style-kit/bsk-snippet--alert.html
-  variant="warning"
-  style="outline"
-  content=alert_content
-%}
+Additional CSS rules, such as the example below, are needed to prevent the navbar covering up other page content.
 
 The Style Kit doesn’t provide styles for this, however the class below can be used as a starting point
 
-{% highlight css %}
+{% highlight scss %}
 body {
   padding-bottom: 70px;
 }

@@ -51,12 +51,12 @@ You don't need to include `frameborder="0"` on embedded items, as the Style Kit 
   included="yes"
 %}
 
-This component is supported when used with these elements:
+These elements are fully supported:
 
-* <code>&lt;iframe&gt;</code>
-* <code>&lt;embed&gt;</code>
-* <code>&lt;video&gt;</code>
-* <code>&lt;object&gt;</code>
+* `<iframe>`
+* `<embed>`
+* `<video>`
+* `<object>`
 
 {% include topic-section-metadata.html
   title="Variants"

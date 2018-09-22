@@ -43,7 +43,7 @@ Use the `aria-label` element so assistive technologies can tell each pagination 
 %}
 
 {% capture alert_content %}
-**Heads up!** Pagination and pager elements are not yet fully styled, but will be in the next version of the Style Kit.
+**Heads up!** Pagination and pagers are not yet fully styled, but will be in the next version of the Style Kit.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="info"

@@ -52,7 +52,10 @@ Thumbnails are really only intended for media items. For more general purposes, 
   included="yes"
 %}
 
-Thumbnail styles are designed for <code>&lt;div&gt;</code> or <code>&lt;a&gt;</code> elements.
+These elements are fully supported:
+
+* `<div>`
+* `<a>`
 
 {% include topic-section-metadata.html
   title="Variants"

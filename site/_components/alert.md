@@ -107,8 +107,18 @@ There is no *default* alert variant, as a grey alert for example wouldn't make a
   included="yes"
 %}
 
-This variant is only intended for displaying a cookie notice. It can be used with the
-[cookie notice]({{ '/interactivity/cookie-notice' | prepend: site.baseurl }}) plugin.
+This variant is only intended for displaying a cookie notice.
+
+{% capture alert_content %}
+Interactive cookie notices require the [Alert]({{ '/interactivity/alert' | prepend: site.baseurl }}){: .bsk-alert-link }
+and [Cookie Notice]({{ '/interactivity/cookie-notice' | prepend: site.baseurl }}){: .bsk-alert-link } JavaScript
+plugins, which are enabled on this site.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="solid"
+  content=alert_content
+%}
 
 {% example html %}
 <div class="bsk-alert bsk-alert-solid bsk-alert-cookie-notice" role="alert">

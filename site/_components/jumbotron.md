@@ -87,7 +87,11 @@ Use the `.jumbotron-inverse` class to use a darker background for a jumbotron.
 
 An image can also be used as a background for a jumbotron.
 
-Additional CSS rules will be needed to set a `background-image` property.
+Additional CSS rules, such as the example below, are needed to use an image as a background:
+
+{% highlight scss %}
+background-image: url("/img/site-masthead-tom-welsh.jpg");
+{% endhighlight %}
 
 {% example html %}
 <div class="bsk-jumbotron bsk-jumbotron-image-example">

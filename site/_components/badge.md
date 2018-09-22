@@ -21,12 +21,12 @@ Use the `.bsk-badge` class to highlight a count, such as items needing further a
 automatically collapse and be hidden.
 
 {% capture alert_content %}
-Badges are only designed for numbers. For more general purposes, including other types of indicators, use
+Badges are only intended for numbers. For more general purposes, use
 [Label's]({{ '/components/label' | prepend: site.baseurl }}){: .bsk-alert-link }.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
-  variant="warning"
-  style="outline"
+  variant="info"
+  style="solid"
   content=alert_content
 %}
 
