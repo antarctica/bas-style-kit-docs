@@ -244,11 +244,17 @@ Do not use these classes in [navbars]({{ '/components/navbar' | prepend: site.ba
 %}
 
 {% example html %}
-<div class="bsk-pull-left">...</div>
+<div class="bsk-pull-left bsk-docs-content-block">...</div>
+
+<!-- This class is used to make this example look correct -->
+<div class="bsk-clearfix"></div>
 {% endexample %}
 
 {% example html %}
-<div class="bsk-pull-right">...</div>
+<div class="bsk-pull-right bsk-docs-content-block">...</div>
+
+<!-- This class is used to make this example look correct -->
+<div class="bsk-clearfix"></div>
 {% endexample %}
 
 Alternatively, mixins can be used:
