@@ -21,6 +21,10 @@
 * Last updated in version **{{ include.revised_version }}**
 {% endif %}
 
+{% if include.included == 'no' %}
+* <span class="bsk-text-warning"><i class="far fa-fw fa-minus-circle"></i> Optional</span>
+{% endif %}
+
 * {% include bas-style-kit/bsk-snippet--back-to-top.html %}
 
-* <a href="#{{ include.title | slugify }}"><i class="fa fa-fw fa-link" aria-hidden="true"></i> Link to this section</a>
+* <a href="#{{ include.title | slugify }}"><i class="far fa-fw fa-link" aria-hidden="true"></i> Link to section</a>

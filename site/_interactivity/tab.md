@@ -24,7 +24,7 @@ Use the Bootstrap [tabs](http://getbootstrap.com/javascript/#tabs) plugin with t
 This plugin depends upon [jQuery](https://jquery.com).
 
 {% capture alert_content %}
-See [distribution]({{ '/start/distribution/#javaScript-libraries' | prepend: site.baseurl }}){: .bsk-alert-link} for
+See [distribution]({{ '/start/distribution/#javascript-dependencies' | prepend: site.baseurl }}){: .bsk-alert-link} for
 how to include these dependencies.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html

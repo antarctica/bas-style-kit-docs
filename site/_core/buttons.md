@@ -54,12 +54,12 @@ button, otherwise it will look strange. It is not enough to use `.bsk-btn` on it
 
 These elements are fully supported:
 
-* <code>&lt;button&gt;</code>
+* `<button>`
 
 These elements are also supported, but to a lesser extent:
 
-* <code>&lt;a&gt;</code>
-* <code>&lt;input&gt;</code>
+* `<a>`
+* `<input>`
 
 Other elements may be used as well, but are not supported and may not look right.
 
@@ -158,8 +158,9 @@ used for context by adding these classes:
 {% include topic-section-metadata.html
   title="Contextual icons"
   heading_level=3
-  phase="live"
+  phase="alpha"
   initial_version="0.1.0"
+  revised_version="0.5.0"
   included="yes"
 %}
 
@@ -168,17 +169,17 @@ used for adding context to buttons, usually with the
 [contextual colours]({{ '/core/buttons/#contextual-colours' | prepend: site.baseurl }}).
 
 {% example html %}
-<button class="bsk-btn bsk-btn-default"><i class="fa fa-fw fa-check" aria-hidden="true"></i> Success Action</button>
-<button class="bsk-btn bsk-btn-default"><i class="fa fa-fw fa-exclamation-triangle" aria-hidden="true"></i> Warning Action</button>
-<button class="bsk-btn bsk-btn-default"><i class="fa fa-fw fa-exclamation-circle" aria-hidden="true"></i> Dangerous Action</button>
-<button class="bsk-btn bsk-btn-default"><i class="fa fa-fw fa-info" aria-hidden="true"></i> Info Action</button>
+<button class="bsk-btn bsk-btn-default"><i class="far fa-fw fa-check" aria-hidden="true"></i> Success Action</button>
+<button class="bsk-btn bsk-btn-default"><i class="far fa-fw fa-exclamation-triangle" aria-hidden="true"></i> Warning Action</button>
+<button class="bsk-btn bsk-btn-default"><i class="fas fa-fw fa-exclamation-circle" aria-hidden="true"></i> Dangerous Action</button>
+<button class="bsk-btn bsk-btn-default"><i class="far fa-fw fa-info-square" aria-hidden="true"></i> Info Action</button>
 {% endexample %}
 
 {% example html %}
-<button class="bsk-btn bsk-btn-success"><i class="fa fa-fw fa-check" aria-hidden="true"></i> Success Action</button>
-<button class="bsk-btn bsk-btn-warning"><i class="fa fa-fw fa-exclamation-triangle" aria-hidden="true"></i> Warning Action</button>
-<button class="bsk-btn bsk-btn-danger"><i class="fa fa-fw fa-exclamation-circle" aria-hidden="true"></i> Dangerous Action</button>
-<button class="bsk-btn bsk-btn-info"><i class="fa fa-fw fa-info" aria-hidden="true"></i> Info Action</button>
+<button class="bsk-btn bsk-btn-success"><i class="far fa-fw fa-check" aria-hidden="true"></i> Success Action</button>
+<button class="bsk-btn bsk-btn-warning"><i class="far fa-fw fa-exclamation-triangle" aria-hidden="true"></i> Warning Action</button>
+<button class="bsk-btn bsk-btn-danger"><i class="fas fa-fw fa-exclamation-circle" aria-hidden="true"></i> Dangerous Action</button>
+<button class="bsk-btn bsk-btn-info"><i class="far fa-fw fa-info-square" aria-hidden="true"></i> Info Action</button>
 {% endexample %}
 
 {% include topic-section-metadata.html
@@ -280,7 +281,7 @@ Use `aria-pressed="true"` to give
 <div class="bsk-alert bsk-alert-solid bsk-alert-danger bsk-alert-block bsk-alert-icon">
   <header class="bsk-alert-heading">
     <div class="bsk-h4">
-      <i class="fa fa-fw fa-exclamation-circle bsk-alert-icon"></i>
+      <i class="fas fa-fw fa-exclamation-circle bsk-alert-icon"></i>
       It is not safe to rely on this state to prevent users activating disabled actions
     </div>
   </header>

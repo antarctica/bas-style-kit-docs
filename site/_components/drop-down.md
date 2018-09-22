@@ -52,9 +52,6 @@ JavaScript plugin, which is enabled on this site.
   heading_level=2
 %}
 
-These elements are supported for triggering a drop-down menu. Other elements may be used, but are not supported and may
-not look right.
-
 {% include topic-section-metadata.html
   title="Button drop-down"
   heading_level=3
@@ -100,9 +97,6 @@ not look right.
 {% include topic-section-metadata.html
   title="Navbar item drop-down"
   heading_level=3
-  phase="live"
-  initial_version="0.1.0"
-  included="yes"
 %}
 
 See the [navbar]({{ '/components/navbar/#drop-down-menus' | prepend: site.baseurl }}) documentation for using drop-downs
@@ -267,7 +261,7 @@ This provides a non-visual indication of the currently active item, suitable for
 <div class="bsk-alert bsk-alert-solid bsk-alert-danger bsk-alert-block bsk-alert-icon">
   <header class="bsk-alert-heading">
     <div class="bsk-h4">
-      <i class="fa fa-fw fa-exclamation-circle bsk-alert-icon"></i>
+      <i class="fas fa-fw fa-exclamation-circle bsk-alert-icon"></i>
       It is not safe to rely on this state to prevent users activating disabled actions
     </div>
   </header>

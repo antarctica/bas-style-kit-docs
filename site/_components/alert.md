@@ -102,13 +102,24 @@ There is no *default* alert variant, as a grey alert for example wouldn't make a
 {% include topic-section-metadata.html
   title="Cookie notice alert"
   heading_level=3
-  phase="live"
+  phase="alpha"
   initial_version="0.3.0"
+  revised_version="0.5.0"
   included="yes"
 %}
 
-This variant is only intended for displaying a cookie notice. It can be used with the
-[cookie notice]({{ '/interactivity/cookie-notice' | prepend: site.baseurl }}) plugin.
+This variant is only intended for displaying a cookie notice.
+
+{% capture alert_content %}
+Interactive cookie notices require the [Alert]({{ '/interactivity/alert' | prepend: site.baseurl }}){: .bsk-alert-link }
+and [Cookie Notice]({{ '/interactivity/cookie-notice' | prepend: site.baseurl }}){: .bsk-alert-link } JavaScript
+plugins, which are enabled on this site.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="solid"
+  content=alert_content
+%}
 
 {% example html %}
 <div class="bsk-alert bsk-alert-solid bsk-alert-cookie-notice" role="alert">
@@ -137,11 +148,8 @@ this site's layout.
 <div class="bsk-fix-alert-static-top-fixed-container-wrapper">
   <div class="bsk-container">
     <div class="bsk-alert bsk-alert-static-top bsk-alert-dismissible bsk-alert-solid bsk-alert-cookie-notice" role="alert" data-bsk-role="cookie-notice">
-      <button type="button" class="bsk-close" data-dismiss="alert" aria-label="Close">
-        <i class="fa fa-times" aria-hidden="true"></i>
-      </button>
-      This website uses cookies to help us make it better -
-      <a href="#" class="bsk-alert-link">find out more</a>.
+      <button type="button" class="bsk-close" data-dismiss="alert" aria-label="Close">&times;</button>
+      This website uses cookies to help us make it better - <a href="#" class="bsk-alert-link">find out more</a>.
     </div>
   </div>
 </div>
@@ -155,6 +163,15 @@ this site's layout.
 </nav>
 {% endexample %}
 
+{% capture alert_content %}
+The required `data-bsk-role="cookie-notice"` attribute is missing from this example so that it's visible.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="outline"
+  content=alert_content
+%}
+
 If using a cookie notice with a [navbar]({{ '/components/navbar' | prepend: site.baseurl }}) as part of fluid-width
 design:
 
@@ -166,11 +183,8 @@ design:
 <div class="bsk-fix-alert-static-top-fluid-container-wrapper">
   <div class="bsk-container-fluid">
     <div class="bsk-alert bsk-alert-static-top bsk-alert-dismissible bsk-alert-solid bsk-alert-cookie-notice" role="alert" data-bsk-role="cookie-notice">
-      <button type="button" class="bsk-close" data-dismiss="alert" aria-label="Close">
-        <i class="fa fa-times" aria-hidden="true"></i>
-      </button>
-      This website uses cookies to help us make it better -
-      <a href="#" class="bsk-alert-link">find out more</a>.
+      <button type="button" class="bsk-close" data-dismiss="alert" aria-label="Close">&times;</button>
+      This website uses cookies to help us make it better - <a href="#" class="bsk-alert-link">find out more</a>.
     </div>
   </div>
 </div>
@@ -183,6 +197,15 @@ design:
   </div><!-- /.bsk-container -->
 </nav>
 {% endexample %}
+
+{% capture alert_content %}
+The required `data-bsk-role="cookie-notice"` attribute is missing from this example so that it's visible.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="outline"
+  content=alert_content
+%}
 
 {% include topic-section-metadata.html
   title="Contextual colours"
@@ -232,7 +255,7 @@ Use the `.bsk-alert-icon` class to properly format an icon in an alert.
 
 {% example html %}
 <div class="bsk-alert bsk-alert-solid bsk-alert-experimental" role="alert">
-  <i class="fa fa-fw fa-flask bsk-alert-icon" aria-hidden="true"></i> Experimental alert
+  <i class="fas fa-fw fa-flask bsk-alert-icon" aria-hidden="true"></i> Experimental alert
 </div>
 {% endexample %}
 
@@ -258,16 +281,16 @@ Use the `.bsk-alert-icon` class to properly format an icon in an alert.
 
 {% example html %}
 <div class="bsk-alert bsk-alert-icon bsk-alert-solid bsk-alert-success" role="alert">
-  <i class="fa fa-fw fa-check bsk-alert-icon" aria-hidden="true"></i> Success alert
+  <i class="far fa-fw fa-check bsk-alert-icon" aria-hidden="true"></i> Success alert
 </div>
 <div class="bsk-alert bsk-alert-icon bsk-alert-solid bsk-alert-warning" role="alert">
-  <i class="fa fa-fw fa-exclamation-triangle bsk-alert-icon" aria-hidden="true"></i> Warning alert
+  <i class="far fa-fw fa-exclamation-triangle bsk-alert-icon" aria-hidden="true"></i> Warning alert
 </div>
 <div class="bsk-alert bsk-alert-icon bsk-alert-solid bsk-alert-danger" role="alert">
-  <i class="fa fa-fw fa-exclamation-circle bsk-alert-icon" aria-hidden="true"></i> Danger alert
+  <i class="fas fa-fw fa-exclamation-circle bsk-alert-icon" aria-hidden="true"></i> Danger alert
 </div>
 <div class="bsk-alert bsk-alert-icon bsk-alert-solid bsk-alert-info" role="alert">
-  <i class="fa fa-fw fa-info bsk-alert-icon" aria-hidden="true"></i> Info alert
+  <i class="far fa-fw fa-info-square bsk-alert-icon" aria-hidden="true"></i> Info alert
 </div>
 {% endexample %}
 
@@ -342,14 +365,14 @@ Use the `.bsk-alert-link` class for any <code>&lt;a&gt;</code> elements within a
 {% include topic-section-metadata.html
   title="Dismissible alerts"
   heading_level=3
-  phase="live"
+  phase="alpha"
   initial_version="0.1.0"
-  revised_version="0.3.0"
+  revised_version="0.5.0"
   included="yes"
 %}
 
-Add a <code>&lt;button&gt;</code> element using the [close icon]({{ '/core/icons/#close-icon' | prepend: site.baseurl }})
-, to create an alert that can be closed or dismissed.
+Add a <code>&lt;button&gt;</code> element using the [close icon]({{ '/core/icons/#close-icon' | prepend: site.baseurl }}
+), to create an alert that can be closed or dismissed.
 
 {% capture alert_content %}
 Dismissible alerts require the [alert]({{ '/interactivity/alert' | prepend: site.baseurl }}){: .bsk-alert-link }
@@ -373,7 +396,7 @@ browser compatibility.
 
 {% example html %}
 <div class="bsk-alert bsk-alert-solid bsk-alert-success bsk-alert-dismissible" role="alert">
-  <button type="button" class="bsk-close" data-dismiss="alert" aria-label="Close"><i class="fa fa-times" aria-hidden="true"></i></button>
+  <button type="button" class="bsk-close" data-dismiss="alert" aria-label="Close">&times;</button>
   A dismissible alert
 </div>
 {% endexample %}

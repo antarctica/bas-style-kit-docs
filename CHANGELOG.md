@@ -5,15 +5,31 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ## [Unreleased][unreleased]
 
+### Added
+
+* Updating to Style Kit Jekyll theme 0.6.0 and Style Kit 0.5.0-alpha
+* Adding Font Awesome 5 Pro as an optional icon family
+* Updating navigation launcher to include link to Style Kit Testbed
+
 ### Fixed
 
 * Changing headers used in examples to use header classes to prevent being added to the page table of contents
 * Changing headers used in block alerts to use header classes to prevent being added to the page table of contents
+* Correcting documentation
+* Simplifying documentation
 * Improving internal consistency of alerts
+* Improving documentation consistency
+* Improving Dockerfile
+
+### Changed
+
+* Updating conventional context icons, the ‘info’ icon is now square and the ‘success’ icon is no longer enclosed
 
 ### Removed
 
+* References to Font Awesome as a bundled part of the Style Kit
 * Deprecated 'wells' component
+* Outdated documentation
 
 ## v1.4.0 - 31/07/2018
 

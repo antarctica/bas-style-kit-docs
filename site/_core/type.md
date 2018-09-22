@@ -127,11 +127,11 @@ Gill Sans is the BAS logo font used for high impact areas such as headings and t
 <div class="bsk-alert bsk-alert-solid bsk-alert-warning bsk-alert-block bsk-alert-icon">
   <header class="bsk-alert-heading">
     <div class="bsk-h4">
-      <i class="fa fa-fw fa-exclamation-triangle bsk-alert-icon"></i>
-      Gill Sans is a licensed work and may not be used without a license
+      <i class="far fa-fw fa-exclamation-triangle bsk-alert-icon"></i>
+      Gill Sans is a protected work and may not be used without a licence
     </div>
   </header>
-  <p>BAS has a license to use this font its official websites and applications. This license
+  <p>BAS has a licence to use this font its official websites and applications. This licence
   <strong>does not cover</strong> non-BAS projects, including personal projects of BAS Staff.</p>
 </div>
 
@@ -393,15 +393,16 @@ Provides formatting for addresses or contact information. Use <code>&lt;br&gt;</
   Cambridge<br>
   CB3 0ET<br>
   United Kingdom<br>
-  <i class="fa fa-fw fa-phone" aria-hidden="true"></i> <abbr title="Telephone">Tel:</abbr> +44 (0)1223 221400<br>
-  <i class="fa fa-fw fa-fax" aria-hidden="true"></i> <abbr title="Facsimile">Fax:</abbr> +44 (0)1223 362616<br>
-  <i class="fa fa-fw fa-globe" aria-hidden="true"></i> <abbr title="Website">Web:</abbr> <a href="https://www.bas.ac.uk">www.bas.ac.uk</a>
+  <i class="fas fa-fw fa-at" aria-hidden="true"></i> <abbr title="Email address">Email:</abbr> info@bas.ac.uk<br>
+  <i class="fas fa-fw fa-phone" aria-hidden="true"></i> <abbr title="Telephone">Tel:</abbr> +44 (0)1223 221400<br>
+  <i class="fas fa-fw fa-fax" aria-hidden="true"></i> <abbr title="Facsimile">Fax:</abbr> +44 (0)1223 362616<br>
+  <i class="fas fa-fw fa-globe" aria-hidden="true"></i> <abbr title="Website">Web:</abbr> <a href="https://www.bas.ac.uk">www.bas.ac.uk</a>
 </address>
 
 <address>
   <strong>Connie Watson</strong><br>
   Atmospheric Chemist<br>
-  <i class="fa fa-fw fa-envelope" aria-hidden="true"></i> <abbr title="Email address">Email:</abbr> <a href="mailto:#">conwat@bas.com</a>
+  <i class="fas fa-fw fa-at" aria-hidden="true"></i> <abbr title="Email address">Email:</abbr> <a href="mailto:#">conwat@bas.com</a>
 </address>
 {% endexample %}
 

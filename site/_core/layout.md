@@ -166,12 +166,12 @@ signage applications. It is not recommended for use in general websites.
 
 | Size        | Class Name | Example Device <small class="bsk-text-muted">Orientation</small> | Minimum Width (px)                      | Min Width Variable  | Core Bootstrap                                                                                             |
 | ----------- | ---------- | ---------------------------------------------------------------- | --------------------------------------- | ------------------- | ---------------------------------------------------------------------------------------------------------- |
-| Extra Small | `xs`       | Phone <small class="bsk-text-muted">portrait</small>             | 480 ([see note](#xs-min-width-note))    | `$screen-xs-min`    | <span class="bsk-text-success"><i class="fa fa-fw fa-check" aria-hidden="true"></i> Yes</span>             |
-| Small       | `sm`       | Phone <small class="bsk-text-muted">landscape</small>            | 768                                     | `$screen-sm-min`    | <span class="bsk-text-success"><i class="fa fa-fw fa-check" aria-hidden="true"></i> Yes</span>             |
-| Medium      | `md`       | Tablets                                                          | 992                                     | `$screen-md-min`    | <span class="bsk-text-success"><i class="fa fa-fw fa-check" aria-hidden="true"></i> Yes</span>             |
-| Large       | `lg`       | Computers                                                        | 1200                                    | `$screen-lg-min`    | <span class="bsk-text-success"><i class="fa fa-fw fa-check" aria-hidden="true"></i> Yes</span>             |
-| Extra Large | `xl`       | Large desktop computers                                          | 1800                                    | `$screen-xl-min`    | <span class="bsk-text-danger"><i class="fa fa-fw fa-exclamation-circle" aria-hidden="true"></i> No</span>  |
-| Full HD     | `fhd`      | Televisions                                                      | 1920                                    | `$screen-fhd-min`   | <span class="bsk-text-danger"><i class="fa fa-fw fa-exclamation-circle" aria-hidden="true"></i> No</span>  |
+| Extra Small | `xs`       | Phone <small class="bsk-text-muted">portrait</small>             | 480 ([see note](#xs-min-width-note))    | `$screen-xs-min`    | <span class="bsk-text-success"><i class="far fa-fw fa-check" aria-hidden="true"></i> Yes</span>             |
+| Small       | `sm`       | Phone <small class="bsk-text-muted">landscape</small>            | 768                                     | `$screen-sm-min`    | <span class="bsk-text-success"><i class="far fa-fw fa-check" aria-hidden="true"></i> Yes</span>             |
+| Medium      | `md`       | Tablets                                                          | 992                                     | `$screen-md-min`    | <span class="bsk-text-success"><i class="far fa-fw fa-check" aria-hidden="true"></i> Yes</span>             |
+| Large       | `lg`       | Computers                                                        | 1200                                    | `$screen-lg-min`    | <span class="bsk-text-success"><i class="far fa-fw fa-check" aria-hidden="true"></i> Yes</span>             |
+| Extra Large | `xl`       | Large desktop computers                                          | 1800                                    | `$screen-xl-min`    | <span class="bsk-text-danger"><i class="fas fa-fw fa-exclamation-circle" aria-hidden="true"></i> No</span>  |
+| Full HD     | `fhd`      | Televisions                                                      | 1920                                    | `$screen-fhd-min`   | <span class="bsk-text-danger"><i class="fas fa-fw fa-exclamation-circle" aria-hidden="true"></i> No</span>  |
 {: .bsk-table .bsk-table-responsive }
 
 {% include topic-section-metadata.html
@@ -197,7 +197,7 @@ calculated as the next minimum width size minus `1px`. There is no maximum width
 {: .bsk-table .bsk-table-responsive }
 
 {% include topic-section-metadata.html
-  title="Unit responsive breakpoints"
+  title="Using responsive breakpoints"
   heading_level=2
   phase="live"
   initial_version="0.1.0"
@@ -244,11 +244,17 @@ Do not use these classes in [navbars]({{ '/components/navbar' | prepend: site.ba
 %}
 
 {% example html %}
-<div class="bsk-pull-left">...</div>
+<div class="bsk-pull-left bsk-docs-content-block">...</div>
+
+<!-- This class is used to make this example look correct -->
+<div class="bsk-clearfix"></div>
 {% endexample %}
 
 {% example html %}
-<div class="bsk-pull-right">...</div>
+<div class="bsk-pull-right bsk-docs-content-block">...</div>
+
+<!-- This class is used to make this example look correct -->
+<div class="bsk-clearfix"></div>
 {% endexample %}
 
 Alternatively, mixins can be used:
@@ -349,11 +355,6 @@ Both classes and mixins are available for setting these states generally (i.e. u
 | Invisible          | `.bsk-invisible` | `.invisible();` |
 | Screen reader only | `.bsk-sr-only`   | `.sr-only();`   |
 {: .bsk-table .bsk-table-responsive }
-
-### Responsive visibility classes
-{: #{{ 'Responsive visibility classes' | slugify }} }
-
-{% include bas-style-kit/bsk-snippet--back-to-top.html %}
 
 {% include topic-section-metadata.html
   title="Responsive visibility classes"
