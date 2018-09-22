@@ -22,6 +22,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ### Removed
 
+* References to Font Awesome as a bundled part of the Style Kit
 * Deprecated 'wells' component
 * Outdated documentation
 
