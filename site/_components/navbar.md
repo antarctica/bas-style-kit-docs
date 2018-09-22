@@ -633,7 +633,7 @@ Add one of these classes to alter the size of a navbar:
 %}
 
 {% include topic-section-metadata.html
-  title="bsk-active item"
+  title="Active item"
   heading_level=3
   phase="live"
   initial_version="0.1.0"
