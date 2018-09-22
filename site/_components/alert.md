@@ -183,11 +183,8 @@ design:
 <div class="bsk-fix-alert-static-top-fluid-container-wrapper">
   <div class="bsk-container-fluid">
     <div class="bsk-alert bsk-alert-static-top bsk-alert-dismissible bsk-alert-solid bsk-alert-cookie-notice" role="alert" data-bsk-role="cookie-notice">
-      <button type="button" class="bsk-close" data-dismiss="alert" aria-label="Close">
-        <i class="fa fa-times" aria-hidden="true"></i>
-      </button>
-      This website uses cookies to help us make it better -
-      <a href="#" class="bsk-alert-link">find out more</a>.
+      <button type="button" class="bsk-close" data-dismiss="alert" aria-label="Close">&times;</button>
+      This website uses cookies to help us make it better - <a href="#" class="bsk-alert-link">find out more</a>.
     </div>
   </div>
 </div>

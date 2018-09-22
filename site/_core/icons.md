@@ -94,26 +94,6 @@ include it.
 %}
 
 {% include topic-section-metadata.html
-  title="Academic services"
-  heading_level=3
-  phase="alpha"
-  initial_version="0.5.0"
-  included="no"
-%}
-
-...
-
-{% include topic-section-metadata.html
-  title="Operating systems"
-  heading_level=3
-  phase="alpha"
-  initial_version="0.5.0"
-  included="no"
-%}
-
-...
-
-{% include topic-section-metadata.html
   title="Caret icon"
   heading_level=2
   phase="alpha"

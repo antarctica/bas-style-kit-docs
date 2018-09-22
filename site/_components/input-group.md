@@ -121,7 +121,7 @@ Input group addons can be before and/or after a
 </form>
 {% endexample %}
 
-Icons can be used as well.
+[Icons]({{ '/core/icons' | prepend: site.baseurl }}) can be used as well.
 
 {% example html %}
 <form>
