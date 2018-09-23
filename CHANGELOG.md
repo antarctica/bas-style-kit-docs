@@ -15,6 +15,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * BAS theme colours
 * BAS facility colours
 * EPS source files for the BAS logo and roundel
+* Icons for development phases
 * Updating to Style Kit Jekyll theme 0.6.0 and Style Kit 0.5.0-alpha
 * Adding Font Awesome 5 Pro as an optional icon family
 * Updating navigation launcher to include link to Style Kit Testbed
