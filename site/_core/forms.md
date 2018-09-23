@@ -2,7 +2,7 @@
 title: Forms
 menus:
   primary_core:
-    weight: 5
+    weight: 6
 sections:
   -
     title: Form controls

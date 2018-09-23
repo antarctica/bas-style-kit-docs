@@ -2,7 +2,7 @@
 title: Tables
 menus:
   primary_core:
-    weight: 13
+    weight: 14
 sections:
   -
     title: Basic table

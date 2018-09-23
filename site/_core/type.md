@@ -2,7 +2,7 @@
 title: Typography
 menus:
   primary_core:
-    weight: 14
+    weight: 15
 sections:
   -
     title: Typographic base

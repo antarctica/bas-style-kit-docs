@@ -2,7 +2,7 @@
 title: Reboot
 menus:
   primary_core:
-    weight: 12
+    weight: 13
 sections:
   -
     title: Overview

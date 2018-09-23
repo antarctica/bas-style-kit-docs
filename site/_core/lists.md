@@ -2,7 +2,7 @@
 title: Lists
 menus:
   primary_core:
-    weight: 10
+    weight: 11
 sections:
   -
     title: Lists

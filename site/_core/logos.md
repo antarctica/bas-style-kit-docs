@@ -2,7 +2,7 @@
 title: Logos
 menus:
   primary_core:
-    weight: 11
+    weight: 12
 sections:
   -
     title: Overview

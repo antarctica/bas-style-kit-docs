@@ -2,7 +2,7 @@
 title: Icons
 menus:
   primary_core:
-    weight: 7
+    weight: 8
 sections:
   -
     title: Overview
