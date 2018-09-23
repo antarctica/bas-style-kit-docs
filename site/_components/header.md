@@ -21,6 +21,16 @@ doesn't support navigation. The [BAS Logo]({{ '/core/logos/#bas-logo' | prepend:
 headers to reinforce the BAS brand.
 
 {% capture alert_content %}
+You **must** pick a [variant]({{ '/components/header/#variants' | prepend: site.baseurl }}){: .bsk-alert-link } for each
+header, otherwise it will look strange. It is not enough to use `.bsk-header` on its own.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="solid"
+  content=alert_content
+%}
+
+{% capture alert_content %}
 Headers should only be used where the [Navbar's]({{ '/components/navbar' | prepend: site.baseurl }}){: .bsk-alert-link }
 component is unsuitable, for example within external systems.
 {% endcapture %}
