@@ -717,7 +717,7 @@ These colours can be used with components such as:
 * [social media]({{ '/components/social-media' | prepend: site.baseurl }})
 
 {% capture alert_content %}
-These colours are part of the extended colour set and should not be used except for representing their respective
+These colours are part of the extended colour scheme and should not be used except for representing their respective
 service.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
