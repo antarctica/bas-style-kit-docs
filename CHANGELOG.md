@@ -10,6 +10,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * Favicon core component
 * Dropzone, drag and drop file upload JavaScript component
 * Full support for interactive tabs and pills
+* Full support for using modals
 * EPS source files for the BAS logo and roundel
 * Updating to Style Kit Jekyll theme 0.6.0 and Style Kit 0.5.0-alpha
 * Adding Font Awesome 5 Pro as an optional icon family
