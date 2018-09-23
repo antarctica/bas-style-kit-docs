@@ -25,7 +25,7 @@ sections:
   -
     title: Form
   -
-    title: Drop-down menus
+    title: Drop-down menu
   -
     title: Non-navigation links
   -
@@ -465,7 +465,7 @@ It is recommended to use this feature sparingly until support improves.
 {% endexample %}
 
 {% include topic-section-metadata.html
-  title="Drop-down menus"
+  title="Drop-down menu"
   heading_level=3
   phase="live"
   initial_version="0.1.0"
