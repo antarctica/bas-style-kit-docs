@@ -17,7 +17,7 @@ sections:
 
 Use the `.bsk-header` class to create an element with the illusion of a
 [navbar]({{ '/components/navbar' | prepend: site.baseurl }}), but using simpler, self-contained styles, and which
-doesn't support navigation. The [BAS Logo]({{ '/core/logos/#bas-logo' | prepend: site.baseurl }}) shoud be used in
+doesn't support navigation. The [BAS Logo]({{ '/core/logos/#bas-logo' | prepend: site.baseurl }}) should be used in
 headers to reinforce the BAS brand.
 
 {% capture alert_content %}
@@ -25,7 +25,7 @@ Headers should only be used where the [Navbar's]({{ '/components/navbar' | prepe
 component is unsuitable, for example within external systems.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
-  variant="warning"
+  variant="info"
   style="solid"
   content=alert_content
 %}
