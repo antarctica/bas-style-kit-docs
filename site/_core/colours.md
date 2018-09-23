@@ -642,6 +642,66 @@ incorporate them.
 </div>
 
 {% include topic-section-metadata.html
+  title="BAS facility colours"
+  heading_level=2
+  phase="alpha"
+  initial_version="0.5.0"
+  included="yes"
+%}
+
+To promote consistency, the BAS Style Kit defines a series of colours to represent major BAS facilities, such as
+offices, ships, stations and aircraft. These are termed 'BAS facility colours' and are unique to the Style Kit.
+
+Rothera (station)
+: Activities primarily associated with science and research undertaken at BAS or by BAS staff
+
+Bird Island (station)
+: Activities primarily associated with the operations of BAS ships, stations and aircraft
+
+Sir David Attenbourgh (ship)
+: Activities related to artistic endeavours, either as a primary focus or drawing from other BAS activities
+{: .bsk-dl-lg }
+
+{% capture alert_content %}
+This series is incomplete. If you need a colour for an undefined location check first with the BAS Communications Team.
+**Do not** simply use a colour.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="solid"
+  content=alert_content
+%}
+
+<div class="bsk-docs-swatch-wrapper">
+  <div class="bsk-row">
+    <div class="bsk-col-12-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-bas-facility-rothera-base"></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
+        <li>Rothera</li>
+        <li><code>$bas-facility-rothera</code></li>
+        <li class="bsk-docs-hex-reference">#2B8CC4</li>
+      </ul>
+    </div>
+    <div class="bsk-col-12-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-bas-facility-bird-island-base"></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
+        <li>Bird Island</li>
+        <li><code>$bas-facility-bird-island</code></li>
+        <li class="bsk-docs-hex-reference">#379245</li>
+      </ul>
+    </div>
+    <div class="bsk-col-12-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-bas-facility-sir-david-attenborough-base"></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
+        <li>Sir David Attenborough</li>
+        <li><code>$bas-facility-sir-david-attenborough</code></li>
+        <li class="bsk-docs-hex-reference">#B10E1E</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+{% include topic-section-metadata.html
   title="External service colours"
   heading_level=2
   phase="live"
