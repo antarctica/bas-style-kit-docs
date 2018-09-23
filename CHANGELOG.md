@@ -33,6 +33,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * Deprecating list groups
 * Deprecating inverse jumbotron
 * Deprecating buttons in input-groups
+* Rewriting and standardising interactive component documentation
 * Updating conventional context icons, the ‘info’ icon is now square and the ‘success’ icon is no longer enclosed
 
 ### Removed
