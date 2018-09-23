@@ -197,6 +197,36 @@ A default link colour is applied to the `<body>` element.
   included="yes"
 %}
 
+To indicate the significance of an element (such as a notice or action), the Style Kit uses a set of conventional
+colours.
+
+Primary
+: Indicates the most important, common or default option, may be used where there is only one option
+
+Experimental
+: Indicates something new or that will be different and is being tested, with possibly unexpected results
+{: .bsk-dl-lg }
+
+{% capture alert_content %}
+These colours have meaning. To promote recognition by users, they should not be used beyond their intended purpose.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="solid"
+  content=alert_content
+%}
+
+{% capture alert_content %}
+If something experimental may also be dangerous, use the 'danger'
+[contextual]({{ '/core/colours/#standard-contextual-colours' | prepend: site.baseurl }}){:.bsk-alert-link} colour as
+well.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="outline"
+  content=alert_content
+%}
+
 <div class="bsk-docs-swatch-wrapper">
   <div class="bsk-row">
     <div class="bsk-col-12-md-2">
@@ -244,8 +274,8 @@ A default link colour is applied to the `<body>` element.
   included="yes"
 %}
 
-To indicate the intent or purpose of an element (such as a notice or action), the Style Kit uses a set of conventional
-contextual colours.
+To indicate the context of an element (such as a notice or action), the Style Kit uses a set of conventional,
+contextual, colours.
 
 Success
 : Indicates something positive or successful will happen, or has happened
@@ -259,6 +289,15 @@ Danger
 Info
 : Indicates something neutral, or informative
 {: .bsk-dl-lg }
+
+{% capture alert_content %}
+These colours have meaning. To promote recognition by users, they should not be used beyond their intended purpose.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="solid"
+  content=alert_content
+%}
 
 These colours can be used with many core styles and components, such as:
 

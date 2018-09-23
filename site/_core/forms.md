@@ -607,7 +607,7 @@ On small devices (smaller than 768 pixels) form fields will always stack.
         </label>
       </div>
     </div>
-    <button type="submit" class="bsk-btn bsk-btn-primary">Login</button>
+    <button type="submit" class="bsk-btn bsk-btn-default">Login</button>
   </fieldset>
 </form>
 {% endexample %}
@@ -658,7 +658,7 @@ Labels **should** always be visible for checkboxes and radio options, to indicat
         </label>
       </div>
     </div>
-    <button type="submit" class="bsk-btn bsk-btn-primary">Login</button>
+    <button type="submit" class="bsk-btn bsk-btn-default">Login</button>
   </fieldset>
 </form>
 {% endexample %}
