@@ -141,6 +141,16 @@ The Style Kit will load these fonts from the [BAS CDN](https://cdn.web.bas.ac.uk
 [Logos]({{ '/core/logos' | prepend: site.baseurl }}) used by the BAS Style Kit are made available in these formats:
 
 * `.png`
+* `.eps`
+
+{% capture alert_content %}
+EPS logos should only be used when advised by the BAS Communications Team
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="highlight"
+  content=alert_content
+%}
 
 {% capture alert_content %}
 These logos are available from the [BAS CDN](https://cdn.web.bas.ac.uk){: .bsk-alert-link } and is the recommended way
