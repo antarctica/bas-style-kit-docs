@@ -257,7 +257,55 @@ These icons can be used with core styles and components, such as:
 </div>
 
 {% capture alert_content %}
-It is recommended to use the
+When used on their own, it is recommended to use the
+[standard contextual colours]({{ '/core/colours/#standard-contextual-colours' | prepend: site.baseurl }}){: .bsk-alert-link }
+with these icons.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="outline"
+  content=alert_content
+%}
+
+<div class="bsk-docs-icons-wrapper">
+  <div class="bsk-row">
+    <div class="bsk-col-12-md-3">
+      <div class="bsk-docs-icon"><i class="far fa-fw fa-4x fa-check bsk-docs-icon-context-success" aria-hidden="true"></i></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
+        <li>Success</li>
+        <li class="bsk-docs-icon-reference">far fa-check</li>
+        <li><code>&lt;i class="far fa-fw fa-check" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+      </ul>
+    </div>
+    <div class="bsk-col-12-md-3">
+      <div class="bsk-docs-icon"><i class="far fa-fw fa-4x fa-exclamation-triangle bsk-docs-icon-context-warning" aria-hidden="true"></i></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
+        <li>Warning</li>
+        <li class="bsk-docs-icon-reference">far fa-exclamation-triangle</li>
+        <li><code>&lt;i class="far fa-fw fa-exclamation-triangle" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+      </ul>
+    </div>
+    <div class="bsk-col-12-md-3">
+      <div class="bsk-docs-icon"><i class="fas fa-fw fa-4x fa-exclamation-circle bsk-docs-icon-context-danger" aria-hidden="true"></i></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
+        <li>Danger</li>
+        <li class="bsk-docs-icon-reference">fas fa-exclamation-circle</li>
+        <li><code>&lt;i class="fas fa-fw fa-exclamation-circle" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+      </ul>
+    </div>
+    <div class="bsk-col-12-md-3">
+      <div class="bsk-docs-icon"><i class="far fa-fw fa-4x fa-info-square bsk-docs-icon-context-info" aria-hidden="true"></i></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
+        <li>Info</li>
+        <li class="bsk-docs-icon-reference">far fa-info-square</li>
+        <li><code>&lt;i class="far fa-fw fa-info-square" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+{% capture alert_content %}
+When used with text, it is recommended to use the
 [contextual text colour classes]({{ '/core/type/#contextual-colours' | prepend: site.baseurl }}){: .bsk-alert-link }
 with these icons.
 {% endcapture %}
@@ -370,7 +418,7 @@ These icons can be used with components such as:
 
 {% capture alert_content %}
 It is recommended to use the
-[external service colour classes]({{ '/core/colours/#external-service-colours' | prepend: site.baseurl }}){: .bsk-alert-link }
+[external service colours]({{ '/core/colours/#external-service-colours' | prepend: site.baseurl }}){: .bsk-alert-link }
 with these icons.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
