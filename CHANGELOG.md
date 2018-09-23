@@ -11,6 +11,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * Dropzone, drag and drop file upload JavaScript component
 * Full support for interactive tabs and pills
 * Full support for using modals
+* Full support for using pop-overs and tool-tips
 * EPS source files for the BAS logo and roundel
 * Updating to Style Kit Jekyll theme 0.6.0 and Style Kit 0.5.0-alpha
 * Adding Font Awesome 5 Pro as an optional icon family
