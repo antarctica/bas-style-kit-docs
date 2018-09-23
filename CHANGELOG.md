@@ -14,6 +14,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * Adding Font Awesome 5 Pro as an optional icon family
 * Updating navigation launcher to include link to Style Kit Testbed
 * Guidance to not use primary variants of components for non-primary actions
+* Guidance defining how to use the navigation launcher as part of a navbar
 
 ### Fixed
 

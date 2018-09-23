@@ -148,13 +148,67 @@ This example, whilst quite complex, demonstrates the sort of items shown in a ty
           Part of British Antarctic Survey <span class="bsk-caret"></span></a>
           <ul class="bsk-dropdown-menu">
             <li><a href="https://www.bas.ac.uk">BAS Home</a></li>
-            <li><a href="#">Another link</a></li>
             <li><a href="https://data.bas.ac.uk">Discover BAS data</a></li>
+            <li><a href="#">Another service (optional)</a></li>
           </ul>
         </li>
-        <li><a href="#">Feedback</a></li>
       </ul>
     </div>
+  </div>
+</nav>
+{% endexample %}
+
+{% include topic-section-metadata.html
+  title="Usage"
+  heading_level=2
+%}
+
+{% include topic-section-metadata.html
+  title="Navigation launcher"
+  heading_level=3
+  phase="alpha"
+  initial_version="0.1.0"
+  revised_version="0.5.0"
+  included="yes"
+%}
+
+A [right aligned]({{ '/components/navbar/#item-alignment' | prepend: site.baseurl }}) navigation menu with a
+[drop-down menu]({{ '/components/navbar/#drop-down-menu' | prepend: site.baseurl }}) item should be used in all navbars
+to indicate a website or application is part of BAS. This menu is known as the navigation launcher.
+
+The navigation launcher **must** use the text 'Part of British Antarctic Survey'.
+
+The navigation launcher **must** contain links to:
+
+* the [BAS public website](https://www.bas.ac.uk), referred to as *BAS Home*
+* the [BAS data catalogue](https://data.bas.ac.uk), referred to as *Discover BAS data*
+
+Other links may be added after these required items.
+
+{% capture alert_content %}
+A version of the navigation launcher for internal websites and applications is still
+[under development](https://trello.com/c/BIUqkqc4){:.bsk-alert-link}.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
+
+{% example html %}
+<nav class="bsk-navbar">
+  <div class="bsk-container-fluid">
+    <ul class="bsk-nav bsk-navbar-nav bsk-navbar-right">
+      <li class="bsk-dropdown">
+        <a href="#" class="bsk-dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Part of British Antarctic Survey <span class="bsk-caret"></span></a>
+        <ul class="bsk-dropdown-menu">
+          <li><a href="https://www.bas.ac.uk">BAS Home</a></li>
+          <li><a href="https://data.bas.ac.uk">Discover BAS data</a></li>
+          <li><a href="#">Another service (optional)</a></li>
+        </ul>
+      </li>
+    </ul>
   </div>
 </nav>
 {% endexample %}
