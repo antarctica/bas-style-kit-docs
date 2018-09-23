@@ -28,6 +28,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ### Removed
 
+* References to Bootstrap plugins we never officially supported (affix, carousel and scroll-spy)
 * References to Font Awesome as a bundled part of the Style Kit
 * Deprecated 'wells' component
 * Outdated documentation
