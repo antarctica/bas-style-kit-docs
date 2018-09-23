@@ -2,7 +2,7 @@
 title: Cookie Notice
 menus:
   primary_interactivity:
-    weight: 7
+    weight: 5
 sections:
   -
     title: Overview

@@ -2,7 +2,7 @@
 title: Button
 menus:
   primary_interactivity:
-    weight: 4
+    weight: 3
 sections:
   -
     title: Overview

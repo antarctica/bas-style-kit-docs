@@ -2,7 +2,7 @@
 title: Transition
 menus:
   primary_interactivity:
-    weight: 14
+    weight: 12
 sections:
   -
     title: Overview

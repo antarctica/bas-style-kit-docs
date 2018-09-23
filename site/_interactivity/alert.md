@@ -2,7 +2,7 @@
 title: Alert
 menus:
   primary_interactivity:
-    weight: 3
+    weight: 2
 sections:
   -
     title: Overview

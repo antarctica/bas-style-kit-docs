@@ -2,7 +2,7 @@
 title: Collapse
 menus:
   primary_interactivity:
-    weight: 6
+    weight: 4
 sections:
   -
     title: Overview

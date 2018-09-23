@@ -2,7 +2,7 @@
 title: Drop-Down
 menus:
   primary_interactivity:
-    weight: 8
+    weight: 6
 sections:
   -
     title: Overview

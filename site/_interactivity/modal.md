@@ -2,7 +2,7 @@
 title: Modal
 menus:
   primary_interactivity:
-    weight: 9
+    weight: 8
 sections:
   -
     title: Overview

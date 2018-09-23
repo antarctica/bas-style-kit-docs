@@ -2,7 +2,7 @@
 title: Tool Tip
 menus:
   primary_interactivity:
-    weight: 13
+    weight: 11
 sections:
   -
     title: Overview

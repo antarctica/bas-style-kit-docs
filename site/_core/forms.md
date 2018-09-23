@@ -219,6 +219,15 @@ Field input elements have quite stubborn browser styling, such as rounded corner
   content=alert_content
 %}
 
+{% capture alert_content %}
+You can use the [Drop-zone]({{ '/interactivity/drop-zones' | prepend: site.baseurl }}){: .bsk-alert-link} JavaScript plugin to create a 'drag and drop' file uploader for multiple files.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
+
 {% example html %}
 <form>
   <fieldset class="bsk-form-group">
