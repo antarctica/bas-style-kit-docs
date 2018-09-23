@@ -22,6 +22,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * Adding variant warning to headers
 * Changing headers used in examples to use header classes to prevent being added to the page table of contents
 * Changing headers used in block alerts to use header classes to prevent being added to the page table of contents
+* Correcting reference to Pug templates NPM package
 * Correcting documentation
 * Simplifying documentation
 * Improving internal consistency of alerts
@@ -30,6 +31,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ### Changed
 
+* Changing reference to Style Kit NPM package
 * Deprecating list groups
 * Deprecating inverse jumbotron
 * Deprecating buttons in input-groups

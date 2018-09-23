@@ -439,7 +439,7 @@ Source files for the Style Kit are available as a
   %}
 {% else %}
 {% highlight shell %}
-$ npm i bas-style-kit
+$ npm i @antarctica/bas-style-kit
 {% endhighlight %}
 {% endunless %}
 
@@ -551,7 +551,7 @@ for latest supported version.
 %}
 {% else %}
 {% highlight shell %}
-$ npm i bas-style-kit-pug-templates
+$ npm i @antarctica/bas-style-kit-pug-templates
 {% endhighlight %}
 {% endunless %}
 
