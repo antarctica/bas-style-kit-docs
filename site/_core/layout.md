@@ -2,7 +2,7 @@
 title: Layout
 menus:
   primary_core:
-    weight: 9
+    weight: 10
 sections:
   -
     title: Overview

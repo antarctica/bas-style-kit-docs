@@ -99,7 +99,7 @@ JavaScript plugin, which is enabled on this site.
   heading_level=3
 %}
 
-See the [navbar]({{ '/components/navbar/#drop-down-menus' | prepend: site.baseurl }}) documentation for using drop-downs
+See the [navbar]({{ '/components/navbar/#drop-down-menu' | prepend: site.baseurl }}) documentation for using drop-downs
 in Navbar items.
 
 {% include topic-section-metadata.html

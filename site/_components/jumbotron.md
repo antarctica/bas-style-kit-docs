@@ -62,9 +62,19 @@ Add the `.bsk-jumbotron-default` class for a standard jumbotron.
 {% include topic-section-metadata.html
   title="Inverse jumbotron"
   heading_level=3
-  phase="live"
+  phase="deprecated"
   initial_version="0.1.0"
+  revised_version="0.5.0"
   included="yes"
+%}
+
+{% capture alert_content %}
+**Heads up!** Inverse Jumbotrons are deprecated and will be removed in the next version of the Style Kit.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="danger"
+  style="outline"
+  content=alert_content
 %}
 
 Add the `.jumbotron-inverse` class to use a darker background for a jumbotron.

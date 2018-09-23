@@ -2,7 +2,7 @@
 title: Forms
 menus:
   primary_core:
-    weight: 5
+    weight: 6
 sections:
   -
     title: Form controls
@@ -212,6 +212,15 @@ For file inputs use `.bsk-form-control-file` instead of `.bsk-form-control`.
 
 {% capture alert_content %}
 Field input elements have quite stubborn browser styling, such as rounded corners, which are difficult to override.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
+
+{% capture alert_content %}
+You can use the [Drop-zone]({{ '/interactivity/drop-zones' | prepend: site.baseurl }}){: .bsk-alert-link} JavaScript plugin to create a 'drag and drop' file uploader for multiple files.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="info"
@@ -598,7 +607,7 @@ On small devices (smaller than 768 pixels) form fields will always stack.
         </label>
       </div>
     </div>
-    <button type="submit" class="bsk-btn bsk-btn-primary">Login</button>
+    <button type="submit" class="bsk-btn bsk-btn-default">Login</button>
   </fieldset>
 </form>
 {% endexample %}
@@ -649,7 +658,7 @@ Labels **should** always be visible for checkboxes and radio options, to indicat
         </label>
       </div>
     </div>
-    <button type="submit" class="bsk-btn bsk-btn-primary">Login</button>
+    <button type="submit" class="bsk-btn bsk-btn-default">Login</button>
   </fieldset>
 </form>
 {% endexample %}

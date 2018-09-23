@@ -175,24 +175,23 @@ instead of text.
 {% include topic-section-metadata.html
   title="Button input group"
   heading_level=3
-  phase="alpha"
+  phase="deprecated"
   initial_version="0.1.0"
-  revised_version="0.3.0"
+  revised_version="0.5.0"
   included="yes"
+%}
+
+{% capture alert_content %}
+**Heads up!** Buttons in input groups are deprecated and will be removed in the next version of the Style Kit.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="danger"
+  style="outline"
+  content=alert_content
 %}
 
 Use the `.bsk-input-group-btn` class, instead of `.bsk-input-group-addon`, as an element which contains a
 [button]({{ '/core/buttons' | prepend: site.baseurl }}).
-
-{% capture alert_content %}
-**Heads up!** Buttons in input groups are not yet supported. If you need this feature please
-[vote](https://trello.com/c/qyW9R5wo){: .bsk-alert-link} for it.
-{% endcapture %}
-{% include bas-style-kit/bsk-snippet--alert.html
-  variant="warning"
-  style="outline"
-  content=alert_content
-%}
 
 {% example html %}
 <form>
@@ -212,24 +211,23 @@ Use the `.bsk-input-group-btn` class, instead of `.bsk-input-group-addon`, as an
 {% include topic-section-metadata.html
   title="Drop-down button input group"
   heading_level=3
-  phase="alpha"
+  phase="deprecated"
   initial_version="0.1.0"
-  revised_version="0.3.0"
+  revised_version="0.5.0"
   included="yes"
+%}
+
+{% capture alert_content %}
+**Heads up!** Button drop-downs in input groups are deprecated and will be removed in the next version of the Style Kit.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="danger"
+  style="outline"
+  content=alert_content
 %}
 
 Use the `.bsk-input-group-btn` class, instead of `.bsk-input-group-addon`, as an element which contains a
 [button drop-down]({{ '/components/drop-down/#button-drop-down' | prepend: site.baseurl }}).
-
-{% capture alert_content %}
-**Heads up!** Button drop-downs in input groups are not yet fully supported. If you need this feature please
-[vote](https://trello.com/c/Kd0Oq1Ng){: .bsk-alert-link} for it.
-{% endcapture %}
-{% include bas-style-kit/bsk-snippet--alert.html
-  variant="warning"
-  style="outline"
-  content=alert_content
-%}
 
 {% example html %}
 <form>
@@ -257,23 +255,24 @@ Use the `.bsk-input-group-btn` class, instead of `.bsk-input-group-addon`, as an
 {% include topic-section-metadata.html
   title="Split-button drop-down input group"
   heading_level=3
-  phase="beta"
+  phase="deprecated"
   initial_version="0.1.0"
-  revised_version="0.2.0"
+  revised_version="0.5.0"
   included="yes"
+%}
+
+{% capture alert_content %}
+**Heads up!** Split button drop-down's in input groups are deprecated and will be removed in the next version of the
+Style Kit.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="danger"
+  style="outline"
+  content=alert_content
 %}
 
 Use the `.bsk-input-group-btn` class, instead of `.bsk-input-group-addon`, as an element which contains a
 [split-button drop-down]({{ '/components/drop-down/#split-button-drop-down' | prepend: site.baseurl }}).
-
-{% capture alert_content %}
-**Heads up!** Split-button drop-down's in input groups are not yet fully supported.
-{% endcapture %}
-{% include bas-style-kit/bsk-snippet--alert.html
-  variant="warning"
-  style="outline"
-  content=alert_content
-%}
 
 {% example html %}
 <form>

@@ -7,14 +7,24 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ### Added
 
+* Favicon core component
+* Dropzone, drag and drop file upload JavaScript component
+* Full support for interactive tabs and pills
+* Full support for using modals
+* Full support for using pop-overs and tool-tips
+* EPS source files for the BAS logo and roundel
 * Updating to Style Kit Jekyll theme 0.6.0 and Style Kit 0.5.0-alpha
 * Adding Font Awesome 5 Pro as an optional icon family
 * Updating navigation launcher to include link to Style Kit Testbed
+* Guidance to not use primary variants of components for non-primary actions
+* Guidance defining how to use the navigation launcher as part of a navbar
 
 ### Fixed
 
+* Adding variant warning to headers
 * Changing headers used in examples to use header classes to prevent being added to the page table of contents
 * Changing headers used in block alerts to use header classes to prevent being added to the page table of contents
+* Correcting reference to Pug templates NPM package
 * Correcting documentation
 * Simplifying documentation
 * Improving internal consistency of alerts
@@ -23,10 +33,16 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ### Changed
 
+* Changing reference to Style Kit NPM package
+* Deprecating list groups
+* Deprecating inverse jumbotron
+* Deprecating buttons in input-groups
+* Rewriting and standardising interactive component documentation
 * Updating conventional context icons, the ‘info’ icon is now square and the ‘success’ icon is no longer enclosed
 
 ### Removed
 
+* References to Bootstrap plugins we never officially supported (affix, carousel and scroll-spy)
 * References to Font Awesome as a bundled part of the Style Kit
 * Deprecated 'wells' component
 * Outdated documentation

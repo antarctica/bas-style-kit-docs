@@ -2,7 +2,7 @@
 title: Logos
 menus:
   primary_core:
-    weight: 11
+    weight: 12
 sections:
   -
     title: Overview
@@ -326,6 +326,64 @@ These files are exports of vector images, do not resize them. Contact the BAS Co
       <td>1142 x 256</td>
     </tr>
     <tr><td class="highlight" colspan="3"><pre><code>{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/img/logos-symbols/bas-logo-inverse-transparent-256.png</code></pre></td></tr>
+  </tbody>
+</table>
+
+{% include topic-section-metadata.html
+  title="Source files (BAS logo)"
+  heading_level=3
+%}
+
+Source files are available for the BAS roundel and logo in EPS format.
+
+{% capture alert_content %}
+These files should not be used unless advised by the BAS Communications Team.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
+
+<table class="bsk-table bsk-table-bordered">
+  <thead>
+    <tr>
+      <th>Form</th>
+      <th>Variant</th>
+      <th>Download Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Roundel</td>
+      <td>Default</td>
+      <td><a href="{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/img/logos-symbols/bas-roundel-default-transparent.eps">bas-roundel-default-transparent.eps</a></td>
+    </tr>
+    <tr>
+      <td>Roundel</td>
+      <td>Monochrome</td>
+      <td><a href="{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/img/logos-symbols/bas-roundel-mono-transparent.eps">bas-roundel-mono-transparent.eps</a></td>
+    </tr>
+    <tr>
+      <td>Roundel</td>
+      <td>Inverse monochrome</td>
+      <td><a href="{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/img/logos-symbols/bas-roundel-inverse-transparent.eps">bas-roundel-inverse-transparent.eps</a></td>
+    </tr>
+    <tr>
+      <td>Full Logo</td>
+      <td>Default</td>
+      <td><a href="{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/img/logos-symbols/bas-logo-default-transparent.eps">bas-logo-default-transparent.eps</a></td>
+    </tr>
+    <tr>
+      <td>Full Logo</td>
+      <td>Monochrome</td>
+      <td><a href="{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/img/logos-symbols/bas-logo-mono-transparent.eps">bas-logo-mono-transparent.eps</a></td>
+    </tr>
+    <tr>
+      <td>Full Logo</td>
+      <td>Inverse monochrome</td>
+      <td><a href="{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/img/logos-symbols/bas-logo-inverse-transparent.eps">bas-logo-inverse-transparent.eps</a></td>
+    </tr>
   </tbody>
 </table>
 

@@ -2,7 +2,7 @@
 title: Images
 menus:
   primary_core:
-    weight: 8
+    weight: 9
 sections:
   -
     title: Responsive images

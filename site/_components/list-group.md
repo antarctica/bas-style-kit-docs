@@ -27,24 +27,25 @@ sections:
   heading_level=2
 %}
 
-Use the `.bsk-list-group` class for displaying stacked content, either as a minimal list, or more advanced custom layout.
-
-Use the `.bsk-list-group-item` for items within a list group, see the details of each.
-
 {% capture alert_content %}
-**Heads up!** List group elements are not yet fully styled, but will be in the next version of the Style Kit.
+**Heads up!** List groups are deprecated and will be removed in the next version of the Style Kit.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
-  variant="info"
+  variant="danger"
   style="outline"
   content=alert_content
 %}
 
+Use the `.bsk-list-group` class for displaying stacked content, either as a minimal list, or more advanced custom layout.
+
+Use the `.bsk-list-group-item` for items within a list group, see the details of each.
+
 {% include topic-section-metadata.html
   title="Supported elements"
   heading_level=2
-  phase="live"
+  phase="deprecated"
   initial_version="0.1.0"
+  revised_version="0.5.0"
   included="yes"
 %}
 
@@ -59,8 +60,9 @@ supporting elements, as documented. Other elements may be used, but are not supp
 {% include topic-section-metadata.html
   title="Basic list group"
   heading_level=3
-  phase="live"
+  phase="deprecated"
   initial_version="0.1.0"
+  revised_version="0.5.0"
   included="yes"
 %}
 
@@ -78,8 +80,9 @@ Use the `.bsk-list-group-item` class with <code>&lt;li&gt;</code> elements.
 {% include topic-section-metadata.html
   title="Linked list group"
   heading_level=3
-  phase="live"
+  phase="deprecated"
   initial_version="0.1.0"
+  revised_version="0.5.0"
   included="yes"
 %}
 
@@ -97,8 +100,9 @@ Use the `.bsk-list-group-item` class with <code>&lt;a&gt;</code> elements.
 {% include topic-section-metadata.html
   title="Contextual colours"
   heading_level=3
-  phase="live"
+  phase="deprecated"
   initial_version="0.1.0"
+  revised_version="0.5.0"
   included="yes"
 %}
 
@@ -125,8 +129,9 @@ used for context by adding these classes:
 {% include topic-section-metadata.html
   title="Button list group"
   heading_level=3
-  phase="live"
+  phase="deprecated"
   initial_version="0.1.0"
+  revised_version="0.5.0"
   included="yes"
 %}
 
@@ -149,8 +154,9 @@ Use the `.bsk-list-group-item` class with <code>&lt;button&gt;</code> elements.
 {% include topic-section-metadata.html
   title="Active item"
   heading_level=3
-  phase="live"
+  phase="deprecated"
   initial_version="0.1.0"
+  revised_version="0.5.0"
   included="yes"
 %}
 
@@ -191,8 +197,9 @@ This provides a non-visual indication of the currently active item, suitable for
 {% include topic-section-metadata.html
   title="Disabled item"
   heading_level=3
-  phase="live"
+  phase="deprecated"
   initial_version="0.1.0"
+  revised_version="0.5.0"
   included="yes"
 %}
 
@@ -237,8 +244,9 @@ Add the `.bsk-disabled` class to list group items which cannot be used.
 {% include topic-section-metadata.html
   title="Badges"
   heading_level=3
-  phase="live"
+  phase="deprecated"
   initial_version="0.1.0"
+  revised_version="0.5.0"
   included="yes"
 %}
 

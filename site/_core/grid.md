@@ -2,7 +2,7 @@
 title: Grid system
 menus:
   primary_core:
-    weight: 6
+    weight: 7
 sections:
   -
     title: Overview

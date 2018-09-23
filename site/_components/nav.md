@@ -23,7 +23,8 @@ sections:
   heading_level=2
 %}
 
-Use the `.bsk-nav` class to create secondary navigation elements, for splitting content into logical sections.
+Use the `.bsk-nav` class to create secondary navigation elements, for splitting content into logical sections or linking
+to other parts of an application or website.
 
 Each navigation item **must** use an <code>&lt;a&gt;</code> element.
 
@@ -38,7 +39,7 @@ around the element using the `.bsk-nav` class.
 %}
 
 {% capture alert_content %}
-Interactive tabs and pills require the [tabs]({{ '/interactivity/tab' | prepend: site.baseurl }}){: .bsk-alert-link }
+Interactive tabs and pills require the [nav]({{ '/interactivity/nav' | prepend: site.baseurl }}){: .bsk-alert-link }
 JavaScript plugin, which is enabled on this site.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
@@ -81,6 +82,15 @@ Add the `.bsk-nav-pills` class to create a minimalist navigation element.
 %}
 
 Add the `.bsk-nav-tabs` class to create a more structured navigation element.
+
+{% capture alert_content %}
+**Heads up!** Tab navigations are not yet fully styled, but will be in the next version of the Style Kit.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="outline"
+  content=alert_content
+%}
 
 {% example html %}
 <nav role="navigation">
@@ -140,6 +150,66 @@ Add the `.bsk-nav-tabs` class to create a more structured navigation element.
       </ul>
     </li>
   </ul>
+</nav>
+{% endexample %}
+
+{% include topic-section-metadata.html
+  title="Navigation content"
+  heading_level=3
+  phase="live"
+  initial_version="0.1.0"
+  included="yes"
+%}
+
+For each content section, use the `.bsk-tab-pane` class and a unique `id`. Each `id` should correspond to the target of
+a navigation item, which should have a `data-toggle="tab"` attribute set.
+
+Put all the sections in a an element with the `.bsk-tab-content` class. Put this, and the navigation menu, in an
+element with the `.bsk-nav-wrapper` class to hold everything.
+
+{% capture alert_content %}
+To work with the [nav]({{ '/interactivity/nav' | prepend: site.baseurl }}){: .bsk-alert-link } JavaScript plugin, extra
+attributes are needed which are shown in these examples.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
+
+{% example html %}
+<!-- Pills -->
+<nav class="bsk-nav-wrapper" role="navigation">
+  <ul class="bsk-nav bsk-nav-pills" role="tablist">
+    <li role="presentation" class="bsk-active"><a href="#nav-content-example-1A" role="tab" data-toggle="tab">Pill 1</a></li>
+    <li role="presentation"><a href="#nav-content-example-1B" role="tab" data-toggle="tab">Pill 2</a></li>
+  </ul>
+  <div class="bsk-tab-content">
+    <div class="bsk-tab-pane bsk-active" role="tabpanel" id="nav-content-example-1A">
+      Content for Navigation example 1 (A)
+    </div>
+    <div class="bsk-tab-pane" role="tabpanel" id="nav-content-example-1B">
+      Content for Navigation example 1 (B)
+    </div>
+  </div>
+</nav>
+{% endexample %}
+
+{% example html %}
+<!-- Tabs -->
+<nav class="bsk-nav-wrapper" role="navigation">
+  <ul class="bsk-nav bsk-nav-tabs" role="tablist">
+    <li role="presentation" class="bsk-active"><a href="#nav-content-example-2A" role="tab" data-toggle="tab">Tab 1</a></li>
+    <li role="presentation"><a href="#nav-content-example-2B" role="tab" data-toggle="tab">Tab 2</a></li>
+  </ul>
+  <div class="bsk-tab-content">
+    <div class="bsk-tab-pane bsk-active" role="tabpanel" id="nav-content-example-2A">
+      Content for Navigation example 2 (A)
+    </div>
+    <div class="bsk-tab-pane" role="tabpanel" id="nav-content-example-2B">
+      Content for Navigation example 2 (B)
+    </div>
+  </div>
 </nav>
 {% endexample %}
 
@@ -287,8 +357,8 @@ Add the `.bsk-nav-stacked` class to arrange pills vertically.
 Stacked tabs are not supported.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
-  variant="danger"
-  style="outline"
+  variant="info"
+  style="highlight"
   content=alert_content
 %}
 
@@ -296,7 +366,7 @@ Stacked tabs are not supported.
 <nav role="navigation">
   <ul class="bsk-nav bsk-nav-stacked bsk-nav-pills">
     <li role="presentation"><a href="#">Pill 1</a></li>
-    <li role="presentation"><a href="#">Pill 2</a></li>
+    <li class="bsk-active" role="presentation"><a href="#">Pill 2</a></li>
   </ul>
 </nav>
 {% endexample %}
@@ -317,7 +387,7 @@ On smaller screens, the navigation items are stacked.
 <nav role="navigation">
   <ul class="bsk-nav bsk-nav-justified bsk-nav-pills">
     <li role="presentation"><a href="#">Pill 1</a></li>
-    <li role="presentation"><a href="#">Pill 2</a></li>
+    <li class="bsk-active" role="presentation"><a href="#">Pill 2</a></li>
   </ul>
 </nav>
 {% endexample %}
@@ -327,7 +397,7 @@ On smaller screens, the navigation items are stacked.
 <nav role="navigation">
   <ul class="bsk-nav bsk-nav-justified bsk-nav-tabs">
     <li role="presentation"><a href="#">Tab 1</a></li>
-    <li role="presentation"><a href="#">Tab 2</a></li>
+    <li class="bsk-active" role="presentation"><a href="#">Tab 2</a></li>
   </ul>
 </nav>
 {% endexample %}
