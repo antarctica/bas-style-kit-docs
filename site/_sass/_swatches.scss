@@ -59,6 +59,8 @@
   color: #FFFFFF;
 }
 
+// Page background
+
 .bsk-docs-swatch-html-background {
   background-color: #333333;
   border: 1px solid #333333;
@@ -68,12 +70,16 @@
   border: 1px solid #EEEEEE;
 }
 
+// Typography
+
 .bsk-docs-swatch-page-text {
   background-color: #333333;
 }
 .bsk-docs-swatch-link-colour {
   background-color: #2B8CC4;
 }
+
+// Components
 
 .bsk-docs-swatch-component-default-color {
   background-color: #333333;
@@ -95,6 +101,8 @@
   background-color: #71B2D7;
 }
 
+// Variants
+
 .bsk-docs-swatch-variant-primary-base {
   background-color: #28A197;
 }
@@ -108,6 +116,8 @@
 .bsk-docs-swatch-variant-experimental-text {
   background-color: #4a4c75;
 }
+
+// Standard contextual
 
 .bsk-docs-swatch-context-success-base {
   background-color: #379245;
@@ -146,6 +156,8 @@
   background-color: #B7D8EB;
 }
 
+// Development phases
+
 .bsk-docs-swatch-development-phase-backlog-base {
   background-color: #2E358B;
 }
@@ -165,6 +177,48 @@
   background-color: #555555;
 }
 
+// BAS themes
+
+.bsk-docs-swatch-bas-theme-polar-science-base {
+  background-color: #B10E1E;
+}
+
+.bsk-docs-swatch-bas-theme-polar-operations-base {
+  background-color: #F47738;
+}
+
+.bsk-docs-swatch-bas-theme-polar-arts-base {
+  background-color: #912B88;
+}
+
+.bsk-docs-swatch-bas-theme-polar-people-base {
+  background-color: #1D5E83;
+}
+
+.bsk-docs-swatch-bas-theme-polar-environment-base {
+  background-color: #333333;
+}
+
+.bsk-docs-swatch-bas-theme-polar-wildlife-base {
+  background-color: #FFBF47;
+}
+
+// BAS Facilities
+
+.bsk-docs-swatch-bas-facility-rothera-base {
+  background-color: #2B8CC4;
+}
+
+.bsk-docs-swatch-bas-facility-bird-island-base {
+  background-color: #379245;
+}
+
+.bsk-docs-swatch-bas-facility-sir-david-attenborough-base {
+  background-color: #B10E1E;
+}
+
+// External services
+
 .bsk-docs-swatch-external-service-twitter-background {
   background-color: #55acee;
 }
@@ -177,6 +231,8 @@
 .bsk-docs-swatch-external-service-rss-background {
   background-color: #f26522;
 }
+
+// Standard colour scheme
 
 .bsk-docs-swatch-std-white {
   background-color: #FFFFFF;
@@ -412,6 +468,8 @@
   background-color: #3E2E16;
 }
 
+// Extended colour scheme
+
 .bsk-docs-swatch-ext-grey-light-lighter {
   background-color: #F7F7F7;
 }
@@ -425,15 +483,36 @@
   background-color: #2E358B;
 }
 
+// For icons
+
 .bsk-docs-icon-context-success {
-  color: #5cb85c;
+  color: #379245;
 }
 .bsk-docs-icon-context-warning {
-  color: #f0ad4e;
+  color: #FFBF47;
 }
 .bsk-docs-icon-context-danger {
-  color: #d9534f;
+  color: #B10E1E;
 }
 .bsk-docs-icon-context-info {
-  color: #5bc0de;
+  color: #2B8CC4;
+}
+
+.bsk-docs-icon-development-phase-backlog {
+  color: #2E358B;
+}
+.bsk-docs-icon-development-phase-discovery {
+  color: #912B88;
+}
+.bsk-docs-icon-development-phase-alpha {
+  color: #D53880;
+}
+.bsk-docs-icon-development-phase-beta {
+  color: #F47738;
+}
+.bsk-docs-icon-development-phase-live {
+  color: #AAB437;
+}
+.bsk-docs-icon-development-phase-retired {
+  color: #555555;
 }

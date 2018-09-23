@@ -12,6 +12,8 @@ sections:
     title: Close icon
   -
     title: Standard contextual icons
+  -
+    title: Development phase icons
 ---
 
 {% include topic-section-metadata.html
@@ -257,7 +259,55 @@ These icons can be used with core styles and components, such as:
 </div>
 
 {% capture alert_content %}
-It is recommended to use the
+When used on their own, it is recommended to use the
+[standard contextual colours]({{ '/core/colours/#standard-contextual-colours' | prepend: site.baseurl }}){: .bsk-alert-link }
+with these icons.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="outline"
+  content=alert_content
+%}
+
+<div class="bsk-docs-icons-wrapper">
+  <div class="bsk-row">
+    <div class="bsk-col-12-md-3">
+      <div class="bsk-docs-icon"><i class="far fa-fw fa-4x fa-check bsk-docs-icon-context-success" aria-hidden="true"></i></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
+        <li>Success</li>
+        <li class="bsk-docs-icon-reference">far fa-check</li>
+        <li><code>&lt;i class="far fa-fw fa-check" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+      </ul>
+    </div>
+    <div class="bsk-col-12-md-3">
+      <div class="bsk-docs-icon"><i class="far fa-fw fa-4x fa-exclamation-triangle bsk-docs-icon-context-warning" aria-hidden="true"></i></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
+        <li>Warning</li>
+        <li class="bsk-docs-icon-reference">far fa-exclamation-triangle</li>
+        <li><code>&lt;i class="far fa-fw fa-exclamation-triangle" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+      </ul>
+    </div>
+    <div class="bsk-col-12-md-3">
+      <div class="bsk-docs-icon"><i class="fas fa-fw fa-4x fa-exclamation-circle bsk-docs-icon-context-danger" aria-hidden="true"></i></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
+        <li>Danger</li>
+        <li class="bsk-docs-icon-reference">fas fa-exclamation-circle</li>
+        <li><code>&lt;i class="fas fa-fw fa-exclamation-circle" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+      </ul>
+    </div>
+    <div class="bsk-col-12-md-3">
+      <div class="bsk-docs-icon"><i class="far fa-fw fa-4x fa-info-square bsk-docs-icon-context-info" aria-hidden="true"></i></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
+        <li>Info</li>
+        <li class="bsk-docs-icon-reference">far fa-info-square</li>
+        <li><code>&lt;i class="far fa-fw fa-info-square" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+{% capture alert_content %}
+When used with text, it is recommended to use the
 [contextual text colour classes]({{ '/core/type/#contextual-colours' | prepend: site.baseurl }}){: .bsk-alert-link }
 with these icons.
 {% endcapture %}
@@ -299,6 +349,167 @@ with these icons.
         <li>Info</li>
         <li class="bsk-docs-icon-reference">far fa-info-square</li>
         <li><code>&lt;i class="far fa-fw fa-info-square" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+{% include topic-section-metadata.html
+  title="Development phase icons"
+  heading_level=3
+  phase="alpha"
+  initial_version="0.5.0"
+  included="no"
+%}
+
+Use these icons, from the [Font Awesome]({{ '/core/icons#font-awesome' | prepend: site.baseurl }}) icon family, to
+indicate the state of a service, project, feature, component or other concept in its life-cycle.
+
+Backlog
+: A phase for concepts that are yet to be evaluated, or deliberately held for review in the future
+
+Discovery
+: A phase before a concept is started to find out whether users need it and is not already provided by another service
+
+Alpha
+: A development phase during which a concept is prototyped and tested to demonstrate its feasibility and function
+
+Beta
+: A refinement phase following alpha where a concept is tested and improved until it is suitable for general use
+
+Live
+: A phase where a concept is generally available and receiving support for, improvements and fixes
+
+Retired
+: A phase for where a concept is no longer needed, due to changing needs or replacement by another concept
+{: .bsk-dl-lg }
+
+{% capture alert_content %}
+You should ensure icons are not the only means
+ [context is conveyed to ensure those using assistive technologies are not excluded]({{ '/start/standards-accessibility/#conveying-context-without-colours-or-icons' | prepend: site.baseurl }}){: .bsk-alert-link }.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
+
+<div class="bsk-docs-icons-wrapper">
+  <div class="bsk-row">
+    <div class="bsk-col-12-md-3">
+      <div class="bsk-docs-icon"><i class="fas fa-fw fa-4x fa-lightbulb" aria-hidden="true"></i></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
+        <li>Backlog</li>
+        <li class="bsk-docs-icon-reference">fas fa-lightbulb</li>
+        <li><code>&lt;i class="fas fa-fw fa-lightbulb" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+      </ul>
+    </div>
+    <div class="bsk-col-12-md-3">
+      <div class="bsk-docs-icon"><i class="fas fa-fw fa-4x fa-search" aria-hidden="true"></i></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
+        <li>Discovery</li>
+        <li class="bsk-docs-icon-reference">fas fa-search</li>
+        <li><code>&lt;i class="fas fa-fw fa-search" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+      </ul>
+    </div>
+    <div class="bsk-col-12-md-3">
+      <div class="bsk-docs-icon"><i class="fas fa-fw fa-4x fa-paper-plane" aria-hidden="true"></i></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
+        <li>Alpha</li>
+        <li class="bsk-docs-icon-reference">fas fa-paper-plane</li>
+        <li><code>&lt;i class="fas fa-fw fa-paper-plane" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+      </ul>
+    </div>
+    <div class="bsk-col-12-md-3">
+      <div class="bsk-docs-icon"><i class="fas fa-fw fa-4x fa-plane" aria-hidden="true"></i></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
+        <li>Beta</li>
+        <li class="bsk-docs-icon-reference">fas fa-plane</li>
+        <li><code>&lt;i class="fas fa-fw fa-plane" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+      </ul>
+    </div>
+  </div>
+  <div class="bsk-row">
+    <div class="bsk-col-12-md-3">
+      <div class="bsk-docs-icon"><i class="fas fa-fw fa-4x fa-rocket" aria-hidden="true"></i></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
+        <li>Live</li>
+        <li class="bsk-docs-icon-reference">fas fa-rocket</li>
+        <li><code>&lt;i class="fas fa-fw fa-rocket" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+      </ul>
+    </div>
+    <div class="bsk-col-12-md-3">
+      <div class="bsk-docs-icon"><i class="fas fa-fw fa-4x fa-moon" aria-hidden="true"></i></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
+        <li>Retired</li>
+        <li class="bsk-docs-icon-reference">fas fa-moon</li>
+        <li><code>&lt;i class="fas fa-fw fa-moon" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+{% capture alert_content %}
+It is recommended to use the
+[development phase colours]({{ '/core/colours/#development-phase-colours' | prepend: site.baseurl }}){: .bsk-alert-link }
+with these icons.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="outline"
+  content=alert_content
+%}
+
+<div class="bsk-docs-icons-wrapper">
+  <div class="bsk-row">
+    <div class="bsk-col-12-md-3">
+      <div class="bsk-docs-icon"><i class="fas fa-fw fa-4x fa-lightbulb bsk-docs-icon-development-phase-backlog" aria-hidden="true"></i></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
+        <li>Backlog</li>
+        <li class="bsk-docs-icon-reference">fas fa-lightbulb</li>
+        <li><code>&lt;i class="fas fa-fw fa-lightbulb" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+      </ul>
+    </div>
+    <div class="bsk-col-12-md-3">
+      <div class="bsk-docs-icon"><i class="fas fa-fw fa-4x fa-search bsk-docs-icon-development-phase-discovery" aria-hidden="true"></i></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
+        <li>Discovery</li>
+        <li class="bsk-docs-icon-reference">fas fa-search</li>
+        <li><code>&lt;i class="fas fa-fw fa-search" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+      </ul>
+    </div>
+    <div class="bsk-col-12-md-3">
+      <div class="bsk-docs-icon"><i class="fas fa-fw fa-4x fa-paper-plane bsk-docs-icon-development-phase-alpha" aria-hidden="true"></i></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
+        <li>Alpha</li>
+        <li class="bsk-docs-icon-reference">fas fa-paper-plane</li>
+        <li><code>&lt;i class="fas fa-fw fa-paper-plane" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+      </ul>
+    </div>
+    <div class="bsk-col-12-md-3">
+      <div class="bsk-docs-icon"><i class="fas fa-fw fa-4x fa-plane bsk-docs-icon-development-phase-beta" aria-hidden="true"></i></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
+        <li>Beta</li>
+        <li class="bsk-docs-icon-reference">fas fa-plane</li>
+        <li><code>&lt;i class="fas fa-fw fa-plane" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+      </ul>
+    </div>
+  </div>
+  <div class="bsk-row">
+    <div class="bsk-col-12-md-3">
+      <div class="bsk-docs-icon"><i class="fas fa-fw fa-4x fa-rocket bsk-docs-icon-development-phase-live" aria-hidden="true"></i></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
+        <li>Live</li>
+        <li class="bsk-docs-icon-reference">fas fa-rocket</li>
+        <li><code>&lt;i class="fas fa-fw fa-rocket" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+      </ul>
+    </div>
+    <div class="bsk-col-12-md-3">
+      <div class="bsk-docs-icon"><i class="fas fa-fw fa-4x fa-moon bsk-docs-icon-development-phase-retired" aria-hidden="true"></i></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
+        <li>Retired</li>
+        <li class="bsk-docs-icon-reference">fas fa-moon</li>
+        <li><code>&lt;i class="fas fa-fw fa-moon" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
   </div>
@@ -370,7 +581,7 @@ These icons can be used with components such as:
 
 {% capture alert_content %}
 It is recommended to use the
-[external service colour classes]({{ '/core/colours/#external-service-colours' | prepend: site.baseurl }}){: .bsk-alert-link }
+[external service colours]({{ '/core/colours/#external-service-colours' | prepend: site.baseurl }}){: .bsk-alert-link }
 with these icons.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
