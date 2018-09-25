@@ -45,7 +45,10 @@ collections:
   interactivity:
     output: true
     permalink: /:collection/:slug/
-  examples:
+  patterns:
+    output: true
+    permalink: /:collection/:slug/
+  more:
     output: true
     permalink: /:collection/:slug/
 

@@ -1,7 +1,7 @@
 ---
 title: Testbed
 menus:
-  primary_examples:
+  primary_more:
     weight: 10
 sections:
   -

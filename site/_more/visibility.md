@@ -1,7 +1,7 @@
 ---
 title: Visibility examples
 menus:
-  primary_examples:
+  primary_more:
     weight: 4
 sections:
   -

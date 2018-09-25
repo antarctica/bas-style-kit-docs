@@ -3,14 +3,14 @@ layout: bas-style-kit/bsk--standard
 sort_index: 0
 slug: index
 permalink: /:collection/index.html
-title: Examples
-subtitle: Build on a basic template or try out many of the Style Kit's components to solve various typical designs and uses
+title: Patterns
+subtitle: Best practice design solutions for specific user-focused tasks and page types
 menus:
   site_navigation_primary:
-    identifier: primary_examples
-    weight: 4
-  primary_examples:
-    title: All Examples
+    identifier: primary_patterns
+    weight: 5
+  primary_patterns:
+    title: All patterns
     weight: 1
 ---
 
@@ -19,7 +19,7 @@ menus:
   <p>{{ page.subtitle }}</p>
 </header>
 
-{% assign topics_sorted = site.examples | sort:"sort_index" %}
+{% assign topics_sorted = site.patterns | sort:"sort_index" %}
 {% for topic in topics_sorted %}
 {% unless topic.slug == "index" %}
     {% capture modulo %}{{ forloop.index | modulo: 3 }}{% endcapture %}
