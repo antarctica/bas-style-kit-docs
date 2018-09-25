@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ### Added
 
+* 'Page not found' pattern
 * Favicon core component
 * Dropzone, drag and drop file upload JavaScript component
 * Full support for interactive tabs and pills
