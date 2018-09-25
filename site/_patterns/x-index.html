@@ -1,0 +1,40 @@
+---
+layout: bas-style-kit/bsk--standard
+sort_index: 0
+slug: index
+permalink: /:collection/index.html
+title: Patterns
+subtitle: Best practice design solutions for specific user-focused tasks and page types
+menus:
+  site_navigation_primary:
+    identifier: primary_patterns
+    weight: 5
+  primary_patterns:
+    title: All patterns
+    weight: 1
+---
+
+<header class="bsk-jumbotron bsk-jumbotron-default bsk-jumbotron-lg bsk-docs-collection-masthead">
+  <h1>{{ page.title }}</h1>
+  <p>{{ page.subtitle }}</p>
+</header>
+
+{% assign topics_sorted = site.patterns | sort:"sort_index" %}
+{% for topic in topics_sorted %}
+{% unless topic.slug == "index" %}
+    {% capture modulo %}{{ forloop.index | modulo: 3 }}{% endcapture %}
+    {% if modulo == '1' %}<div class="bsk-row">{% endif %}
+      <div class="bsk-col-12-md-4">
+        <div class="bsk-docs-topic-index-divider"></div>
+        <h2><a href="{{ topic.url | prepend: site.baseurl }}">{{ topic.title }}</a></h2>
+        <ul class="bsk-list-inline">
+          {% for section in topic.sections %}
+            <li>
+              <a href="{{ topic.url | prepend: site.baseurl }}#{{ section.title | slugify }}">{{ section.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    {% if modulo == '0' or forloop.last %}</div>{% endif %}
+{% endunless %}
+{% endfor %}

@@ -46,6 +46,9 @@ collections:
     output: true
     permalink: /:collection/:slug/
   examples:
+  patterns:
+    output: true
+    permalink: /:collection/:slug/
     output: true
     permalink: /:collection/:slug/
 
