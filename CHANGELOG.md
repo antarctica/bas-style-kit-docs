@@ -37,6 +37,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ### Changed
 
+* Renaming 'examples' to 'more' to reflect it's more general nature
 * Changing reference to Style Kit NPM package
 * Deprecating list groups
 * Deprecating inverse jumbotron

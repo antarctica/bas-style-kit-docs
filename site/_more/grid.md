@@ -1,7 +1,7 @@
 ---
 title: Grid system examples
 menus:
-  primary_examples:
+  primary_more:
     weight: 3
 sections:
   -
