@@ -44,6 +44,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * Deprecating buttons in input-groups
 * Rewriting and standardising interactive component documentation
 * Updating conventional context icons, the ‘info’ icon is now square and the ‘success’ icon is no longer enclosed
+* Updating to latest Terraform and Terraform provider versions
 
 ### Removed
 

@@ -11,7 +11,7 @@
 # AWS source: https://aws.amazon.com/
 # Terraform source: https://www.terraform.io/docs/providers/aws/index.html
 provider "aws" {
-  version = "~> 1.12"
+  version = "~> 1.34"
 
   region = "eu-west-1"
 }
