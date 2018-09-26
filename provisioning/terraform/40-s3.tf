@@ -22,7 +22,7 @@ resource "aws_s3_bucket" "bas-style-kit-docs-staging" {
 
   website {
     index_document = "index.html"
-    error_document = "error.html"
+    error_document = "404.html"
   }
 
   tags {
@@ -53,7 +53,7 @@ resource "aws_s3_bucket" "bas-style-kit-docs-production" {
 
   website {
     index_document = "index.html"
-    error_document = "error.html"
+    error_document = "404.html"
   }
 
   tags {
