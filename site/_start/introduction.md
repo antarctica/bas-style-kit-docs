@@ -110,8 +110,16 @@ site. A BAS Style Kit Jekyll theme is available to use the Style Kit within a Je
 form of HTML that makes it ideal for prototyping. A set of templates (layouts, includes and mixins) are available to
 use the Style Kit with Pug.
 
+{% capture alert_content %}
 Pug is not a static site generator, and requires other tools to feed in to be compiled and place content in a structure
-for viewing. These tools can include task runners such as [Gulp](https://gulpjs.com/) or a static site generator.
+for viewing. These tools can include task runners such as [Gulp](https://gulpjs.com/){:.bsk-alert-link} or a static
+site generator.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 [Pug templates documentation](https://github.com/antarctica/bas-style-kit-pug-templates){: .bsk-btn .bsk-btn-default }
 
