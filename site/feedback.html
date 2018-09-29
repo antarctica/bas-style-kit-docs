@@ -85,7 +85,7 @@ body_js_files:
     <legend>Would you like a reply?</legend>
     <div class="bsk-form-group">
       <span class="bsk-help-block">
-        If you would like a reply please enter your contact details, we may not reply straight away.
+        If you would like a reply, please enter your contact details. We may not reply straight away.
       </span>
       <div class="bsk-form-horizontal">
         <div class="bsk-form-group">
@@ -107,23 +107,16 @@ body_js_files:
     </div>
   </fieldset><!-- /feedbackContact -->
   <fieldset>
-    <legend>Additional information collected</legend>
+    <legend>Additional information we collect</legend>
     <span class="bsk-help-block">
-      Some additional information which is useful for troubleshooting problems will be automatically included with your
-      feedback.
+      We gather some additional information about your computer to help us investigate problems.
     </span>
     <div class="bsk-alert bsk-alert-info bsk-alert-highlight">
       This information can not be used to personally identify you.
     </div>
-    <button id="feedbackEnvironmentContainerTrigger" class="bsk-btn bsk-btn-default" type="button" data-toggle="collapse" data-target="#feedbackEnvironmentContainer" aria-expanded="false" aria-controls="feedbackEnvironmentContainer" disabled>Show additional information</button>
+    <button id="feedbackEnvironmentContainerTrigger" class="bsk-btn bsk-btn-default" type="button" data-toggle="collapse" data-target="#feedbackEnvironmentContainer" aria-expanded="false" aria-controls="feedbackEnvironmentContainer" disabled>Show information</button>
     <div id="feedbackEnvironmentContainer">
       <dl class="bsk-dl-horizontal bsk-dl-horizontal-lg bsk-dl-lg">
-        <dt>Site identifier</dt>
-          <dd id="feedbackEnvironmentOutputSiteIdentifier">{{ site.data.variables.docs_feedback_api_identifier }}</dd>
-        <dt>Site version</dt>
-          <dd id="feedbackEnvironmentOutputSiteRevsion">{{ site.revision }}</dd>
-        <dt>BAS Style Kit version</dt>
-          <dd id="feedbackEnvironmentOutputBSKVersion">unknown</dd>
         <dt>JavaScript available</dt>
           <dd id="feedbackEnvironmentOutputJSAvailable">unknown</dd>
         <dt>User-agent</dt>
