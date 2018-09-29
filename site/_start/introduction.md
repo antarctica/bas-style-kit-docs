@@ -124,6 +124,28 @@ site generator.
 [Pug templates documentation](https://github.com/antarctica/bas-style-kit-pug-templates){: .bsk-btn .bsk-btn-default }
 
 {% include topic-section-metadata.html
+  title="Oracle Apex"
+  heading_level=3
+%}
+
+[Oracle Application Express (Apex)](https://apex.oracle.com/en/) an application development platform built on top of
+the Oracle Database. Apex can be used to make information available in databases available without needing to develop
+a bespoke application. An Apex theme is available which applies some of the Style Kit's styles and components on top of
+the [Apex Universal Theme](https://apex.oracle.com/pls/apex/f?p=42:100::::::).
+
+{% capture alert_content %}
+This theme is not a complete implementation of the Style Kit, but rather uses selected elements to make applications
+look consistent with it. The Style Kit's grid system for example cannot be used as it doesn't work with Apex.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
+
+[Apex theme documentation](https://github.com/antarctica/bas-style-kit-apex-theme){: .bsk-btn .bsk-btn-default }
+
+{% include topic-section-metadata.html
   title="Global prefix"
   heading_level=2
 %}
