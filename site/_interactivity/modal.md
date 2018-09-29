@@ -64,8 +64,10 @@ small devices, especially where there is lots of content.
 %}
 
 {% capture alert_content %}
-[Alerts]({{ '/components/alert' | prepend: site.baseurl }}){:.bsk-alert-link}, or taking users to a separate page to
-confirm an action, should generally be used instead of a modal.
+For highlighting information, consider using the
+[Alert]({{ '/components/alert' | prepend: site.baseurl }}){:.bsk-alert-link} component instead. For confirming an
+action, consider using a standard
+[JavaScript confirm](https://developer.mozilla.org/en-US/docs/Web/API/Window/confirm){:.bsk-alert-link}, as these have native browser and device support, or taking users to a separate page.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="info"
