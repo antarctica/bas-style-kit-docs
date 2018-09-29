@@ -20,7 +20,7 @@ body_js_files:
   <!-- Additional environment information -->
   <input type="hidden" id="feedbackEnvironmentSiteIdentifier" name="feedbackEnvironmentSiteIdentifier" value="{{ site.data.variables.docs_feedback_api_identifier }}"></input>
   <input type="hidden" id="feedbackEnvironmentSiteRevsion" name="feedbackEnvironmentSiteRevsion" value="{{ site.revision }}"></input>
-  <input type="hidden" id="feedbackEnvironmentBSKVersion" name="feedbackEnvironmentBSKVersion" value="{% include bsk-version.html %}"></input>
+  <input type="hidden" id="feedbackEnvironmentBSKVersion" name="feedbackEnvironmentBSKVersion" value="unknown"></input>
   <input type="hidden" id="feedbackEnvironmentJSAvailable" name="feedbackEnvironmentJSAvailable" value="false"></input>
   <input type="hidden" id="feedbackEnvironmentUA" name="feedbackEnvironmentUA" value="unkown"></input>
   <input type="hidden" id="feedbackEnvironmentBrowserSize" name="feedbackEnvironmentBrowserSize" value="unkown"></input>
@@ -123,7 +123,7 @@ body_js_files:
         <dt>Site version</dt>
           <dd id="feedbackEnvironmentOutputSiteRevsion">{{ site.revision }}</dd>
         <dt>BAS Style Kit version</dt>
-          <dd id="feedbackEnvironmentOutputBSKVersion">{% include bsk-version.html %}</dd>
+          <dd id="feedbackEnvironmentOutputBSKVersion">unknown</dd>
         <dt>JavaScript available</dt>
           <dd id="feedbackEnvironmentOutputJSAvailable">unknown</dd>
         <dt>User-agent</dt>
