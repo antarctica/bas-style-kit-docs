@@ -23,4 +23,9 @@ jQuery(function($){
   var browserSize = jQuery(window).width() + ' x ' + jQuery(window).height();
   jQuery('#feedbackEnvironmentBrowserSize').val(browserSize);
   jQuery('#feedbackEnvironmentOutputBrowserSize').text(browserSize);
+
+  // Get Style Kit version
+  var bskVersion = jQuery.fn.bsk_version.Constructor.VERSION;
+  jQuery('#feedbackEnvironmentBSKVersion').val(bskVersion);
+  jQuery('#feedbackEnvironmentOutputBSKVersion').text(bskVersion);
 });

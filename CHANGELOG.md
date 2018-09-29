@@ -46,6 +46,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * Rewriting and standardising interactive component documentation
 * Updating conventional context icons, the ‘info’ icon is now square and the ‘success’ icon is no longer enclosed
 * Updating 404 page to use 'page not found' pattern
+* Updating BSK version parameter in feedback page to use BSK Version JS variable
 * Updating to latest Terraform and Terraform provider versions
 
 ### Removed
