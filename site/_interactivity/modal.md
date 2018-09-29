@@ -64,8 +64,10 @@ small devices, especially where there is lots of content.
 %}
 
 {% capture alert_content %}
-[Alerts]({{ '/components/alert' | prepend: site.baseurl }}){:.bsk-alert-link}, or taking users to a separate page to
-confirm an action, should generally be used instead of a modal.
+For highlighting information, consider using the
+[Alert]({{ '/components/alert' | prepend: site.baseurl }}){:.bsk-alert-link} component instead. For confirming an
+action, consider using a standard
+[JavaScript confirm](https://developer.mozilla.org/en-US/docs/Web/API/Window/confirm){:.bsk-alert-link}, as these have native browser and device support, or taking users to a separate page.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="info"
@@ -90,7 +92,7 @@ confirm an action, should generally be used instead of a modal.
         <button class="bsk-close" type="button" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-        <h4 class="bsk-modal-title">Your booking will expire in 24 minutes</h4>
+        <div class="bsk-h4 bsk-modal-title">Your booking will expire in 24 minutes</div>
       </header>
       <div class="bsk-modal-body">
         <p>Your tickets are only reserved for a limited time until paid for. If your booking expires you will need to start again.</p>
@@ -102,3 +104,12 @@ confirm an action, should generally be used instead of a modal.
   </div>
 </div>
 {% endexample %}
+
+{% capture alert_content %}
+This example uses header classes instead of elements to avoid issues with the automatic table of contents.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
