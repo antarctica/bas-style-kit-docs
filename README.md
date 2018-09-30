@@ -104,7 +104,8 @@ $ docker login docker-registry.data.bas.ac.uk
 
 #### Dependency vulnerability scanning
 
-To ensure the security of this project, all dependencies are checked against [Snyk]() for vulnerabilities.
+To ensure the security of this project, all dependencies are checked against
+[Snyk](https://app.snyk.io/org/antarctica/project/15165351-5166-4aa2-870c-539f27cb3f08) for vulnerabilities.
 
 Through Continuous Integration, on each commit current dependencies are tested and a snapshot uploaded to Snyk. This snapshot is then monitored for vulnerabilities.
 

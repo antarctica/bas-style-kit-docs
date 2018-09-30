@@ -109,6 +109,8 @@ check-dependencies:
     - "bundle install"
     - "snyk test"
     - "snyk monitor --project-name=$SNYK_PROJECT_NAME --org=$SNYK_ORG"
+  only:
+    - master
 
 package-site-content:
   stage: package
