@@ -24,6 +24,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * Updating navigation launcher to include link to Style Kit Testbed
 * Guidance to not use primary variants of components for non-primary actions
 * Guidance defining how to use the navigation launcher as part of a navbar
+* Automatic scanning of dependencies using Snyk
 
 ### Fixed
 
@@ -49,6 +50,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * Updating 404 page to use 'page not found' pattern
 * Updating BSK version parameter in feedback page to use BSK Version JS variable
 * Updating to latest Terraform and Terraform provider versions
+* Including Gem/bundler lock file in project
 
 ### Removed
 

@@ -15,6 +15,9 @@
 # - AWS IAM id/secret keys for 'bas-gitlab-deploy-bas-style-kit-docs' user
 # > AWS_ACCESS_KEY_ID: "[Sensetive]"
 # > AWS_SECRET_ACCESS_KEY: "[Sensetive]"
+#
+# - Snyk
+# > SNYK_TOKEN: "[Sensitive]"
 
 # == Job Templates ==
 
@@ -31,6 +34,7 @@
 
 stages:
   - build
+  - security
   - package
   - deploy
 
@@ -45,6 +49,8 @@ variables:
   S3_DEPLOYMENT_BUCKET_STAGE: style-kit-testing.web.bas.ac.uk
   S3_DEPLOYMENT_BUCKET_PROD: style-kit.web.bas.ac.uk
   APP_NAME: bas-style-kit-docs
+  SNYK_ORG: antarctica
+  SNYK_PROJECT_NAME: bas-style-kit-docs
 
 # == Jobs ==
 
@@ -93,6 +99,16 @@ jekyll-build-production:
     paths:
       - site/_site
     expire_in: 1 day
+
+check-dependencies:
+  stage: security
+  image:
+    name: antarctica/snyk-cli:ruby-2
+    entrypoint: [""]
+  script:
+    - "bundle install"
+    - "snyk test"
+    - "snyk monitor --project-name=$SNYK_PROJECT_NAME --org=$SNYK_ORG"
 
 package-site-content:
   stage: package
