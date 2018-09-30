@@ -75,16 +75,25 @@ services:
 ### Updating dependencies
 
 If new Gem dependencies are introduced, the project Docker image will need to be rebuilt and pushed to the private BAS
-Docker Repository [1].
+Docker Repository [1]. A new `Gemfile.lock` file will also need to be generated for use with
+[Dependency vulnerability scanning](#dependency-vulnerability-scanning).
 
 The current date is used as part of the project Docker image tag to ensure the latest version is used by all developers.
 Before rebuilding this image you **MUST** update this tag value in `docker-compose.yml` and `.gitlab-ci.yml` first.
 
-```
-$ git clone https://github.com/antarctica/bas-style-kit-docs.git
-$ cd bas-style-kit-docs/
+```shell
+# build image to install updated dependencies
 $ docker-compose build app
 $ docker-compose push app
+
+# copy Gemfile.lock into project from the updated image
+$ docker-compose run --entrypoint="" app ash
+$ cd ..
+$ bundle install
+$ mv Gemfile.lock site/
+$ exit
+$ docker-compose down
+$ mv site/Gemfile.lock ./
 ```
 
 [1] You will need to authenticate to use the BAS private Docker registry initially:
@@ -92,6 +101,13 @@ $ docker-compose push app
 ```
 $ docker login docker-registry.data.bas.ac.uk
 ```
+
+#### Dependency vulnerability scanning
+
+To ensure the security of this project, all dependencies are checked against
+[Snyk](https://app.snyk.io/org/antarctica/project/15165351-5166-4aa2-870c-539f27cb3f08) for vulnerabilities.
+
+Through Continuous Integration, on each commit current dependencies are tested and a snapshot uploaded to Snyk. This snapshot is then monitored for vulnerabilities.
 
 ## Continuous Integration
 
