@@ -12,14 +12,17 @@ body_js_files:
   -
     href: '/js/feedback-environment.js'
     type: 'local'
+  -
+    href: '/js/feedback-submission.js'
+    type: 'local'
 ---
 
-<p class="bsk-lead">Use the form below to ask a question, report a problem or suggest an improvement we can make to this website.</p>
+<div id="site-feedback-outcome" class="bsk-hidden"></div>
 
-<form class="site-feedback-form" action="https://o4eepn35pb.execute-api.eu-west-1.amazonaws.com/prod/feedback" accept-charset="UTF-8" method="post">
+<form id="site-feedback-form" class="site-feedback-form" action="#" accept-charset="UTF-8" method="post">
   <!-- Additional environment information -->
-  <input type="hidden" id="feedbackEnvironmentSiteIdentifier" name="feedbackEnvironmentSiteIdentifier" value="{{ site.data.variables.docs_feedback_api_identifier }}"></input>
-  <input type="hidden" id="feedbackEnvironmentSiteRevsion" name="feedbackEnvironmentSiteRevsion" value="{{ site.revision }}"></input>
+  <input type="hidden" id="feedbackServiceKey" name="feedbackServiceKey" value="{{ site.data.variables.docs_feedback_api_identifier }}"></input>
+  <input type="hidden" id="feedbackEnvironmentSiteRevision" name="feedbackEnvironmentSiteRevision" value="{{ site.revision }}"></input>
   <input type="hidden" id="feedbackEnvironmentBSKVersion" name="feedbackEnvironmentBSKVersion" value="unknown"></input>
   <input type="hidden" id="feedbackEnvironmentJSAvailable" name="feedbackEnvironmentJSAvailable" value="false"></input>
   <input type="hidden" id="feedbackEnvironmentUA" name="feedbackEnvironmentUA" value="unkown"></input>
@@ -109,7 +112,7 @@ body_js_files:
   <fieldset>
     <legend>Additional information we collect</legend>
     <span class="bsk-help-block">
-      We gather some additional information about your computer to help us investigate problems.
+      We gather some additional information about your device to help us investigate problems.
     </span>
     <div class="bsk-alert bsk-alert-info bsk-alert-highlight">
       This information can not be used to personally identify you.
@@ -119,19 +122,22 @@ body_js_files:
       <dl class="bsk-dl-horizontal bsk-dl-horizontal-lg bsk-dl-lg">
         <dt>JavaScript available</dt>
           <dd id="feedbackEnvironmentOutputJSAvailable">unknown</dd>
-        <dt>User-agent</dt>
+        <dt>User agent (Web browser details)</dt>
           <dd id="feedbackEnvironmentOutputUA">unknown</dd>
-        <dt>Screen size (w x h)</dt>
+        <dt>Screen size (width x height)</dt>
           <dd id="feedbackEnvironmentOutputBrowserSize">unknown</dd>
       </dl>
     </div>
   </fieldset><!-- /feedbackEnvironment -->
   <fieldset>
-    <button type="submit" class="bsk-btn bsk-btn-lg bsk-btn-primary">Send Feedback</button>
-  </fieldset>
+    <button id="site-feedback-submit" type="submit" class="bsk-btn bsk-btn-lg bsk-btn-primary">
+      <i id="site-feedback-submit-icon" class="fa-fw far fa-envelope" aria-hidden="true"></i>
+      <span id="site-feedback-submit-text">Send Feedback</span>
+    </button>
+  </fieldset><!-- /Submit -->
 </form>
 
 <hr />
 
 <p class="bsk-text-muted">If this form isn't working you can leave feedback directly by contacting the
-<a href="mailto:servicedesk@bas.ac.uk">BAS Web &amp; Applications Team</a>.</p>
+<a href="mailto:servicedesk@bas.ac.uk">BAS Service Desk</a>.</p>

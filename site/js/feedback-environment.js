@@ -3,11 +3,11 @@ jQuery(function($){
   jQuery('#feedbackEnvironmentJSAvailable').val('true');
   jQuery('#feedbackEnvironmentOutputJSAvailable').text('Yes');
 
-  // Use refer as specific URL
-  var referrer = document.referrer;
-  if (referrer != '') {
-    jQuery('#feedbackScopeSpecificUrl').val(referrer);
-  }
+  // // Use refer as specific URL
+  // var referrer = document.referrer;
+  // if (referrer != '') {
+  //   jQuery('#feedbackScopeSpecificUrl').val(referrer);
+  // }
 
   // Get user-agent
   if (typeof navigator.userAgent !== 'undefined') {
