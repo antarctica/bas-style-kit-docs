@@ -11,6 +11,18 @@ sections:
     title: Uses
   -
     title: Basic
+  -
+    title: Contacts
+  -
+    title: Availability
+  -
+    title: Alternative
+  -
+    title: Partly closed
+  -
+    title: Replaced
+  -
+    title: Closed
 ---
 
 {% include topic-section-metadata.html
@@ -97,9 +109,63 @@ Use the `bsk-pattern-service-unavailable` class to create a page element contain
 
 Ensure you can update a service unavailable page as new information becomes available. If information is not known, or
 cannot be relied upon, do not include it.
+{% example html %}
+<main class="bsk-pattern-service-unavailable">
+  <h1 class="bsk-page-header">Sorry, <em>[website or application]</em> is unavailable</h1>
+  <p class="bsk-lead">You will be able to use the service later.</p>
+</main>
+{% endexample %}
+
+[Open full example](https://style-kit-testbed.web.bas.ac.uk/master/p/0002--service-unavailable-basic.html){:.bsk-btn.bsk-btn-default}
+
+{% include topic-section-metadata.html
+  title="Contacts"
+  heading_level=3
+  phase="beta"
+  initial_version="0.5.0"
+  included="yes"
+%}
+
+Where known, include an email address for, or link to information on, a team that can provide information on:
+
+* when the service will be available again (i.e. the technical owner)
+* how a task can be completed, or information accessed, whilst the service is unavailable (i.e. the business owner)
+
+If there isn't a contact for a service use the [BAS IT Service Desk](mailto:servicedesk.bas.ac.uk).
 
 {% capture alert_content %}
 If you are using one of the Style Kit's [themes or templates]({{ 'start/introduction/#themes-and-templates' | prepend: site.baseurl }}){:.bsk-alert-link} this page pattern is available as a special layout.
+{% example html %}
+<main class="bsk-pattern-service-unavailable">
+  <h1 class="bsk-page-header">Sorry, <em>[website or application]</em> is unavailable</h1>
+  <p class="bsk-lead">You will be able to use the service later.</p>
+  <p>Contact the <a href="mailto:servicedesk.bas.ac.uk">BAS IT Service Desk</a> for more information.</p>
+</main>
+{% endexample %}
+
+{% example html %}
+<main class="bsk-pattern-service-unavailable">
+  <h1 class="bsk-page-header">Sorry, <em>South</em> is unavailable</h1>
+  <p class="bsk-lead">You will be able to use the service later.</p>
+  <p>Contact the <a href="mailto:servicedesk.bas.ac.uk">BAS IT Service Desk</a> for more information.</p>
+  <p>Contact the <a href="https://www.bas.ac.uk/team/operational-teams/operational-delivery/field-planning-science-support/">Polar Operations Support Team</a> if you need to check your travel arrangements.</p>
+</main>
+{% endexample %}
+
+[Open full example](https://style-kit-testbed.web.bas.ac.uk/master/p/0003--service-unavailable-contact.html){:.bsk-btn.bsk-btn-default}
+
+{% include topic-section-metadata.html
+  title="Availability"
+  heading_level=3
+  phase="beta"
+  initial_version="0.5.0"
+  included="yes"
+%}
+
+Where known, change the lead paragraph to explain when the service can be used again.
+
+{% capture alert_content %}
+Where a time is known, make sure to include a time zone.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="info"
@@ -110,9 +176,30 @@ If you are using one of the Style Kit's [themes or templates]({{ 'start/introduc
 Wherever possible use specific contact information for each website or application, such as a team email address. If
 there is no contact for a service, use the [contact page](https://www.bas.ac.uk/about/contact-bas/) on the BAS public
 website.
+{% example html %}
+<main class="bsk-pattern-service-unavailable">
+  <h1 class="bsk-page-header">Sorry, <em>[website or application]</em> is unavailable</h1>
+  <p class="bsk-lead">You will be able to use this service on the 24th August 2012 from 14:00 (UTC).</p>
+  <p>Contact the <a href="mailto:servicedesk.bas.ac.uk">BAS IT Service Desk</a> for more information.</p>
+</main>
+{% endexample %}
+
+[Open full example](https://style-kit-testbed.web.bas.ac.uk/master/p/0004--service-unavailable-availability.html){:.bsk-btn.bsk-btn-default}
+
+{% include topic-section-metadata.html
+  title="Alternative"
+  heading_level=3
+  phase="beta"
+  initial_version="0.5.0"
+  included="yes"
+%}
+
+Include a link to any other services users can use for some tasks, or to access some information, whilst the main
+service is unavailable.
 
 {% capture alert_content %}
 Try not to mention specific people, as they may be on holiday or change role.
+Alternatives may include off-line information such as printed information.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="warning"
@@ -122,9 +209,84 @@ Try not to mention specific people, as they may be on holiday or change role.
 
 {% example html %}
 <main class="bsk-pattern-service-unavailable">
-  <h1 class="bsk-page-header">Sorry, the service is unavailable</h1>
-  <p class="bsk-lead">You will be able to use the service later</p>
+  <h1 class="bsk-page-header">Sorry, <em>[website or application]</em> is unavailable</h1>
+  <p class="bsk-lead">You will be able to use the service later.</p>
+  <p>Until then, you can use <a href="#">another service</a> to check some information.</p>
+  <p>Contact the <a href="mailto:servicedesk.bas.ac.uk">BAS IT Service Desk</a> for more information.</p>
 </main>
 {% endexample %}
 
-[See a full example](https://style-kit-testbed.web.bas.ac.uk/master/p/0002--service-unavailable-basic.html){:.bsk-btn.bsk-btn-default}
+{% example html %}
+<main class="bsk-pattern-service-unavailable">
+  <h1 class="bsk-page-header">Sorry, <em>[website or application]</em> is unavailable</h1>
+  <p class="bsk-lead">You will be able to use the service later.</p>
+  <p>Until then, you can check local noticeboards for important information.</p>
+  <p>Contact the <a href="mailto:servicedesk.bas.ac.uk">BAS IT Service Desk</a> for more information.</p>
+</main>
+{% endexample %}
+
+[Open full example](https://style-kit-testbed.web.bas.ac.uk/master/p/0005--service-unavailable-alternative.html){:.bsk-btn.bsk-btn-default}
+
+{% include topic-section-metadata.html
+  title="Partly closed"
+  heading_level=3
+  phase="beta"
+  initial_version="0.5.0"
+  included="yes"
+%}
+
+If a service can only be used for part of the year, or until a specific event, change the lead paragraph to explain
+when the service can be used again.
+
+{% example html %}
+<main class="bsk-pattern-service-unavailable">
+  <h1 class="bsk-page-header">Sorry, <em>[website or application]</em> is unavailable</h1>
+  <p class="bsk-lead">This service can only be used from April to August.</p>
+  <p>Contact the <a href="mailto:servicedesk.bas.ac.uk">BAS IT Service Desk</a> for more information.</p>
+</main>
+{% endexample %}
+
+[Open full example](https://style-kit-testbed.web.bas.ac.uk/master/p/0006--service-unavailable-partly-closed.html){:.bsk-btn.bsk-btn-default}
+
+{% include topic-section-metadata.html
+  title="Replaced"
+  heading_level=3
+  phase="beta"
+  initial_version="0.5.0"
+  included="yes"
+%}
+
+Change the lead paragraph to 'This service has been replaced and can longer be used.' and include a link to the service,
+or services, that replace the service.
+
+{% example html %}
+<main class="bsk-pattern-service-unavailable">
+  <h1 class="bsk-page-header">Sorry, <em>[website or application]</em> is unavailable</h1>
+  <p class="bsk-lead">This service has been replaced and can longer be used.</p>
+  <p>Use <a href="#">another service</a> to complete this task.</p>
+  <p>Contact the <a href="mailto:servicedesk.bas.ac.uk">BAS IT Service Desk</a> for more information.</p>
+</main>
+{% endexample %}
+
+[Open full example](https://style-kit-testbed.web.bas.ac.uk/master/p/0008--service-unavailable-replaced.html){:.bsk-btn.bsk-btn-default}
+
+{% include topic-section-metadata.html
+  title="Closed"
+  heading_level=3
+  phase="beta"
+  initial_version="0.5.0"
+  included="yes"
+%}
+
+Change the lead paragraph to 'This service has been closed and can no longer be used.' and explain who users should
+contact if they have questions.
+
+{% example html %}
+<main class="bsk-pattern-service-unavailable">
+  <h1 class="bsk-page-header">Sorry, <em>[website or application]</em> is unavailable</h1>
+  <p class="bsk-lead">This service has been closed and can no longer be used.</p>
+  <p>Contact the <a href="mailto:servicedesk.bas.ac.uk">BAS IT Service Desk</a> for more information.</p>
+</main>
+{% endexample %}
+
+[Open full example](https://style-kit-testbed.web.bas.ac.uk/master/p/0007--service-unavailable-closed.html){:.bsk-btn.bsk-btn-default}
