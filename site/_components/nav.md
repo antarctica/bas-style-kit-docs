@@ -113,7 +113,7 @@ Add the `.bsk-nav-tabs` class to create a more structured navigation element.
 <!-- Pills -->
 <nav role="navigation">
   <ul class="bsk-nav bsk-nav-pills">
-    <li role="presentation"><a href="#">Pill 1</a></li>
+    <li role="presentation" class="bsk-active"><a href="#">Pill 1</a></li>
     <li role="presentation"><a href="#">Pill 2</a></li>
     <li role="presentation" class="bsk-dropdown">
       <a href="#" class="bsk-dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -131,7 +131,7 @@ Add the `.bsk-nav-tabs` class to create a more structured navigation element.
 <!-- Tabs -->
 <nav role="navigation">
   <ul class="bsk-nav bsk-nav-tabs">
-    <li role="presentation"><a href="#">Tab 1</a></li>
+    <li role="presentation" class="bsk-active"><a href="#">Tab 1</a></li>
     <li role="presentation"><a href="#">Tab 2</a></li>
     <li role="presentation" class="bsk-dropdown">
       <a href="#" class="bsk-dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -162,8 +162,8 @@ another element with the `.bsk-nav-wrapper` and either the `.bsk-nav-wrapper-pil
 respectively.
 
 {% capture alert_content %}
-To work with the [nav]({{ '/interactivity/nav' | prepend: site.baseurl }}){: .bsk-alert-link } JavaScript plugin, extra
-attributes are needed which are shown in these examples.
+Some extra attributes, shown in these examples, are needed to work with the
+[nav]({{ '/interactivity/nav' | prepend: site.baseurl }}){: .bsk-alert-link } JavaScript plugin.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="info"

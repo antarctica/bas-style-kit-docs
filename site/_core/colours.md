@@ -652,17 +652,17 @@ incorporate them.
 To promote consistency, the BAS Style Kit defines a series of colours to represent major BAS facilities, such as
 offices, ships, stations and aircraft. These are termed 'BAS facility colours' and are unique to the Style Kit.
 
-Rothera (station)
-: Activities primarily associated with science and research undertaken at BAS or by BAS staff
+Rothera
+: Station
 
-Bird Island (station)
-: Activities primarily associated with the operations of BAS ships, stations and aircraft
+Bird Island
+: Station
 
-Sir David Attenbourgh (ship)
-: Activities related to artistic endeavours, either as a primary focus or drawing from other BAS activities
 King Edward Point
 : Station
 
+Sir David Attenbourgh
+: Ship
 {: .bsk-dl-lg }
 
 {% capture alert_content %}
