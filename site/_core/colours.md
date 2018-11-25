@@ -660,6 +660,9 @@ Bird Island (station)
 
 Sir David Attenbourgh (ship)
 : Activities related to artistic endeavours, either as a primary focus or drawing from other BAS activities
+King Edward Point
+: Station
+
 {: .bsk-dl-lg }
 
 {% capture alert_content %}
@@ -688,6 +691,14 @@ This series is incomplete. If you need a colour for an undefined location check 
         <li>Bird Island</li>
         <li><code>$bas-facility-bird-island</code></li>
         <li class="bsk-docs-hex-reference">#379245</li>
+      </ul>
+    </div>
+    <div class="bsk-col-12-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-bas-facility-king-edward-point-base"></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
+        <li>King Edward Point</li>
+        <li><code>$bas-facility-king-edward-point</code></li>
+        <li class="bsk-docs-hex-reference">#FFBF47</li>
       </ul>
     </div>
     <div class="bsk-col-12-md-2">
