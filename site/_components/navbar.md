@@ -166,7 +166,7 @@ This example, whilst quite complex, demonstrates the sort of items shown in a ty
 {% include topic-section-metadata.html
   title="Navigation launcher"
   heading_level=3
-  phase="alpha"
+  phase="beta"
   initial_version="0.1.0"
   revised_version="0.5.0"
   included="yes"

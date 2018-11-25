@@ -102,7 +102,7 @@ There is no *default* alert variant, as a grey alert for example wouldn't make a
 {% include topic-section-metadata.html
   title="Cookie notice alert"
   heading_level=3
-  phase="alpha"
+  phase="beta"
   initial_version="0.3.0"
   revised_version="0.5.0"
   included="yes"
@@ -365,7 +365,7 @@ Use the `.bsk-alert-link` class for any <code>&lt;a&gt;</code> elements within a
 {% include topic-section-metadata.html
   title="Dismissible alerts"
   heading_level=3
-  phase="alpha"
+  phase="beta"
   initial_version="0.1.0"
   revised_version="0.5.0"
   included="yes"

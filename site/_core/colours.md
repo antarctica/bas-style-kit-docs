@@ -551,7 +551,7 @@ These colours can be used with many core styles and components, such as:
 {% include topic-section-metadata.html
   title="BAS theme colours"
   heading_level=2
-  phase="alpha"
+  phase="beta"
   initial_version="0.5.0"
   included="yes"
 %}
@@ -644,7 +644,7 @@ incorporate them.
 {% include topic-section-metadata.html
   title="BAS facility colours"
   heading_level=2
-  phase="alpha"
+  phase="beta"
   initial_version="0.5.0"
   included="yes"
 %}

@@ -15,7 +15,7 @@ sections:
 {% include topic-section-metadata.html
   title="Overview"
   heading_level=2
-  phase="alpha"
+  phase="beta"
   initial_version="0.5.0"
 %}
 
@@ -28,7 +28,7 @@ classes. It's functionality and data API remain exactly the same.
 {% include topic-section-metadata.html
   title="Dependencies"
   heading_level=2
-  phase="alpha"
+  phase="beta"
   initial_version="0.5.0"
 %}
 

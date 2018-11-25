@@ -64,7 +64,7 @@ strongly recommended to use a [container]({{ '/core/layout/#containers' | prepen
 {% include topic-section-metadata.html
   title="Default footer"
   heading_level=3
-  phase="alpha"
+  phase="beta"
   initial_version="0.1.0"
   revised_version="0.5.0"
   included="yes"
@@ -183,7 +183,7 @@ Use the `.bsk-footer-is-something-wrong` class to position and style a link to g
 {% include topic-section-metadata.html
   title="Back to top link"
   heading_level=3
-  phase="alpha"
+  phase="beta"
   initial_version="0.4.0"
   revised_version="0.5.0"
   included="yes"
