@@ -5,6 +5,10 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ## [Unreleased][unreleased]
 
+### Removed
+
+* Support for warning validation state in forms
+
 ### Added
 
 * Oracle Apex theme for the Style Kit

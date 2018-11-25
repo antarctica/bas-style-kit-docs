@@ -926,8 +926,9 @@ to inform assistive technologies, such as screen readers.
 {% include topic-section-metadata.html
   title="Validation"
   heading_level=2
-  phase="live"
+  phase="beta"
   initial_version="0.1.0"
+  revised_version="0.5.0"
   included="yes"
 %}
 
@@ -936,9 +937,7 @@ The Style Kit includes validation classes, based on the
 such as `.bsk-form-group`, for best effect.
 
 {% capture alert_content %}
-It is strongly recommended to include a validation message, with the appropriate
-[standard contextual icon]({{ '/core/icons/#standard-contextual-icons' | prepend: site.baseurl }}){: .bsk-alert-link }
-where there is a validation warning or failure.
+**Heads up!** The Style Kit used to include a warning validation state. This has been removed and should not be used.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="info"
@@ -946,10 +945,19 @@ where there is a validation warning or failure.
   content=alert_content
 %}
 
+{% capture alert_content %}
+[standard contextual icons]({{ '/core/icons/#standard-contextual-icons' | prepend: site.baseurl }}){: .bsk-alert-link }
+can be used alongside validation messages.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
+
 | Validation State    | Validation Class     | Associated Standard Context |
 | ------------------- | -------------------- | --------------------------- |
 | Valid               | `.bsk-has-success`   | Success                     |
-| Valid, with warning | `.bsk-has-warning`   | Warning                     |
 | Invalid             | `.bsk-has-error`     | Danger                      |
 {: .bsk-table .bsk-table-responsive }
 
@@ -960,19 +968,6 @@ where there is a validation warning or failure.
       <input type="email" class="bsk-form-control" id="form-validation-example-1" value="john.smith@example.co.uk">
       <p class="bsk-help-block bsk-text-muted">
         We will only use this information for contacting you about your feedback.
-      </p>
-  </fieldset>
-
-  <fieldset class="bsk-form-group bsk-has-warning">
-      <label class="bsk-control-label" for="form-validation-example-2">Your email address</label>
-      <input type="email" class="bsk-form-control" id="form-validation-example-2" value="john.smith@example.c.uk">
-      <p class="bsk-help-block bsk-text-muted">
-        We will only use this information for contacting you about your feedback.
-      </p>
-      <p class="bsk-help-block bsk-text-muted">
-        <i class="far fa-fw fa-exclamation-triangle" aria-hidden="true"></i>
-        Did you mean <em>john.smith@example.<strong>co</strong>.uk</em>,
-        rather than <em>john.smith@bas.<strong>c</strong>.uk</em>?
       </p>
   </fieldset>
 
