@@ -12,7 +12,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 ### Added
 
 * Oracle Apex theme for the Style Kit
-* Basic 'service unavailable' pattern
+* 'service unavailable' pattern
 * 'Page not found' pattern
 * Favicon core component
 * Dropzone, drag and drop file upload JavaScript component

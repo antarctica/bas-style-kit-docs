@@ -13,7 +13,7 @@ sections:
   -
     title: Paragraphs
   -
-    title: Lead paragraphs
+    title: Lead paragraph
   -
     title: Links
   -
@@ -240,7 +240,7 @@ regions.</p>
 {% endexample %}
 
 {% include topic-section-metadata.html
-  title="Lead paragraphs"
+  title="Lead paragraph"
   heading_level=3
   phase="live"
   initial_version="0.1.0"
