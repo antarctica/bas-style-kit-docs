@@ -15,6 +15,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * Full support for interactive tabs and pills
 * Full support for using modals
 * Full support for using pop-overs and tool-tips
+* Full support for tab navigation
 * BAS theme colours
 * BAS facility colours
 * EPS source files for the BAS logo and roundel
