@@ -30,22 +30,18 @@ sections:
   heading_level=2
 %}
 
-Use this page pattern where a service is planned to be unavailable. This pattern should be shown for
-*503 Service Unvailable* errors.
+Use this page pattern where a service is planned to be unavailable. This pattern should be shown for some
+*503 Service Unvailable* errors, where action has been taken deliberately.
 
-{% capture alert_content %}
-Page patterns represent complete pages that should be used with few changes to promote consistency.
-{% endcapture %}
-{% include bas-style-kit/bsk-snippet--alert.html
-  variant="info"
-  style="outline"
-  content=alert_content
-%}
+Page patterns represent complete pages that should be used with few changes to promote consistency. If you are using
+one of the Style Kit's
+[themes or templates]({{ 'start/introduction/#themes-and-templates' | prepend: site.baseurl }}){:.bsk-alert-link}, this
+page pattern is available as a special layout or view.
 
 {% capture alert_content %}
 Use the
 [problem with this service]({{ '/pattern/problem-with-this-service' | prepend: site.baseurl }}){:.bsk-alert-link}
-pattern where a service is not planned to be unavailable.
+pattern where a service is unavailable unexpectedly, i.e. where a service crashes and there isn't a fail-over.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="info"
@@ -83,6 +79,7 @@ When using this pattern, do not:
 * use technical jargon like '503' or 'resource unavailable'
 * use vague terms like 'we are making improvements'
 * use informal or humourous words like 'oops'
+* include information that is not known, or cannot be relied upon
 
 {% include topic-section-metadata.html
   title="Variants"
@@ -92,7 +89,7 @@ When using this pattern, do not:
 {% include topic-section-metadata.html
   title="Basic"
   heading_level=3
-  phase="alpha"
+  phase="beta"
   initial_version="0.5.0"
   included="yes"
 %}
@@ -100,15 +97,11 @@ When using this pattern, do not:
 Use the `bsk-pattern-service-unavailable` class to create a page element containing:
 
 * a page title of 'Service unavailable - [website or application]'
-* a [page header]({{ '/components/page-header' | prepend: site.baseurl }}) with 'Sorry, the service is unavailable' as a
+* a [page header]({{ '/components/page-header' | prepend: site.baseurl }}) with 'Sorry, [website or application] is unavailable' as a
   `h1` header
-* information on when the service will be available again
-* information on why the service is unavailable
-* contact information (see below)
-* a link to alternative service (if applicable)
+* a [lead paragraph]({{ '/core/type/#lead-paragraph' | prepend: site.baseurl }}) with 'You will be able to use the
+service later.'
 
-Ensure you can update a service unavailable page as new information becomes available. If information is not known, or
-cannot be relied upon, do not include it.
 {% example html %}
 <main class="bsk-pattern-service-unavailable">
   <h1 class="bsk-page-header">Sorry, <em>[website or application]</em> is unavailable</h1>
@@ -134,7 +127,14 @@ Where known, include an email address for, or link to information on, a team tha
 If there isn't a contact for a service use the [BAS IT Service Desk](mailto:servicedesk.bas.ac.uk).
 
 {% capture alert_content %}
-If you are using one of the Style Kit's [themes or templates]({{ 'start/introduction/#themes-and-templates' | prepend: site.baseurl }}){:.bsk-alert-link} this page pattern is available as a special layout.
+Try not to use specific people as contacts, as they may be on holiday or change role.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="highlight"
+  content=alert_content
+%}
+
 {% example html %}
 <main class="bsk-pattern-service-unavailable">
   <h1 class="bsk-page-header">Sorry, <em>[website or application]</em> is unavailable</h1>
@@ -173,9 +173,6 @@ Where a time is known, make sure to include a time zone.
   content=alert_content
 %}
 
-Wherever possible use specific contact information for each website or application, such as a team email address. If
-there is no contact for a service, use the [contact page](https://www.bas.ac.uk/about/contact-bas/) on the BAS public
-website.
 {% example html %}
 <main class="bsk-pattern-service-unavailable">
   <h1 class="bsk-page-header">Sorry, <em>[website or application]</em> is unavailable</h1>
@@ -198,11 +195,10 @@ Include a link to any other services users can use for some tasks, or to access 
 service is unavailable.
 
 {% capture alert_content %}
-Try not to mention specific people, as they may be on holiday or change role.
 Alternatives may include off-line information such as printed information.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
-  variant="warning"
+  variant="info"
   style="highlight"
   content=alert_content
 %}
