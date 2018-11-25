@@ -163,7 +163,7 @@ The colour contrast for text and any interactive elements **should** be at least
 %}
 
 Relying on colour or icons alone to indicate the meaning or context of an action or notice is bad practice. This
-information cannot is inaccessible to colour-blind users for example, or those using assistive technologies – such as
+information is inaccessible to colour-blind users for example, or those using assistive technologies – such as
 screen readers.
 
 Instead, efforts should be made to ensure that the context is either obvious from the content itself, or is included in
