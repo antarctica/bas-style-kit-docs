@@ -551,7 +551,7 @@ These colours can be used with many core styles and components, such as:
 {% include topic-section-metadata.html
   title="BAS theme colours"
   heading_level=2
-  phase="alpha"
+  phase="beta"
   initial_version="0.5.0"
   included="yes"
 %}
@@ -644,7 +644,7 @@ incorporate them.
 {% include topic-section-metadata.html
   title="BAS facility colours"
   heading_level=2
-  phase="alpha"
+  phase="beta"
   initial_version="0.5.0"
   included="yes"
 %}
@@ -652,14 +652,17 @@ incorporate them.
 To promote consistency, the BAS Style Kit defines a series of colours to represent major BAS facilities, such as
 offices, ships, stations and aircraft. These are termed 'BAS facility colours' and are unique to the Style Kit.
 
-Rothera (station)
-: Activities primarily associated with science and research undertaken at BAS or by BAS staff
+Rothera
+: Station
 
-Bird Island (station)
-: Activities primarily associated with the operations of BAS ships, stations and aircraft
+Bird Island
+: Station
 
-Sir David Attenbourgh (ship)
-: Activities related to artistic endeavours, either as a primary focus or drawing from other BAS activities
+King Edward Point
+: Station
+
+Sir David Attenbourgh
+: Ship
 {: .bsk-dl-lg }
 
 {% capture alert_content %}
@@ -688,6 +691,14 @@ This series is incomplete. If you need a colour for an undefined location check 
         <li>Bird Island</li>
         <li><code>$bas-facility-bird-island</code></li>
         <li class="bsk-docs-hex-reference">#379245</li>
+      </ul>
+    </div>
+    <div class="bsk-col-12-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-bas-facility-king-edward-point-base"></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
+        <li>King Edward Point</li>
+        <li><code>$bas-facility-king-edward-point</code></li>
+        <li class="bsk-docs-hex-reference">#FFBF47</li>
       </ul>
     </div>
     <div class="bsk-col-12-md-2">

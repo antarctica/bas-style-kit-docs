@@ -19,7 +19,7 @@ sections:
 {% include topic-section-metadata.html
   title="Overview"
   heading_level=2
-  phase="alpha"
+  phase="beta"
   initial_version="0.1.0"
   revised_version="0.5.0"
   included="yes"
@@ -61,7 +61,7 @@ optional.
 {% include topic-section-metadata.html
   title="Font Awesome"
   heading_level=3
-  phase="alpha"
+  phase="beta"
   initial_version="0.1.0"
   revised_version="0.5.0"
   included="no"
@@ -98,7 +98,7 @@ include it.
 {% include topic-section-metadata.html
   title="Caret icon"
   heading_level=2
-  phase="alpha"
+  phase="beta"
   initial_version="0.1.0"
   revised_version="0.5.0"
   included="yes"
@@ -113,7 +113,7 @@ Use `.bsk-caret` for [drop-down menus]({{ '/components/drop-down' | prepend: sit
 {% include topic-section-metadata.html
   title="Close icon"
   heading_level=2
-  phase="alpha"
+  phase="beta"
   initial_version="0.1.0"
   revised_version="0.5.0"
   included="yes"
@@ -154,7 +154,7 @@ Use the `&times;` HTML entity wrapped in a `.bsk-close` element for indicating c
 {% include topic-section-metadata.html
   title="Experimental icon"
   heading_level=3
-  phase="alpha"
+  phase="beta"
   initial_version="0.3.0"
   revised_version="0.5.0"
   included="no"
@@ -183,7 +183,7 @@ family, to indicate something that is experimental or a work in progress.
 {% include topic-section-metadata.html
   title="Standard contextual icons"
   heading_level=3
-  phase="alpha"
+  phase="beta"
   initial_version="0.1.0"
   revised_version="0.5.0"
   included="no"
@@ -357,7 +357,7 @@ with these icons.
 {% include topic-section-metadata.html
   title="Development phase icons"
   heading_level=3
-  phase="alpha"
+  phase="beta"
   initial_version="0.5.0"
   included="no"
 %}
@@ -518,7 +518,7 @@ with these icons.
 {% include topic-section-metadata.html
   title="External service icons"
   heading_level=3
-  phase="alpha"
+  phase="beta"
   initial_version="0.1.0"
   revised_version="0.5.0"
   included="no"

@@ -5,6 +5,10 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ## [Unreleased][unreleased]
 
+### Removed
+
+* Support for warning validation state in forms
+
 ### Added
 
 * Oracle Apex theme for the Style Kit
@@ -15,11 +19,12 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * Full support for interactive tabs and pills
 * Full support for using modals
 * Full support for using pop-overs and tool-tips
+* Full support for tab navigation
 * BAS theme colours
 * BAS facility colours
 * EPS source files for the BAS logo and roundel
 * Icons for development phases
-* Updating to Style Kit Jekyll theme 0.6.0 and Style Kit 0.5.0-alpha
+* Updating to Style Kit Jekyll theme 0.7.0 and Style Kit 0.5.0-beta
 * Adding Font Awesome 5 Pro as an optional icon family
 * Updating navigation launcher to include link to Style Kit Testbed
 * Guidance to not use primary variants of components for non-primary actions

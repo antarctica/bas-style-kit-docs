@@ -76,21 +76,13 @@ Add the `.bsk-nav-pills` class to create a minimalist navigation element.
 {% include topic-section-metadata.html
   title="Tab navigation"
   heading_level=3
-  phase="live"
+  phase="beta"
   initial_version="0.1.0"
+  revised_version="0.5.0"
   included="yes"
 %}
 
 Add the `.bsk-nav-tabs` class to create a more structured navigation element.
-
-{% capture alert_content %}
-**Heads up!** Tab navigations are not yet fully styled, but will be in the next version of the Style Kit.
-{% endcapture %}
-{% include bas-style-kit/bsk-snippet--alert.html
-  variant="info"
-  style="outline"
-  content=alert_content
-%}
 
 {% example html %}
 <nav role="navigation">
@@ -121,7 +113,7 @@ Add the `.bsk-nav-tabs` class to create a more structured navigation element.
 <!-- Pills -->
 <nav role="navigation">
   <ul class="bsk-nav bsk-nav-pills">
-    <li role="presentation"><a href="#">Pill 1</a></li>
+    <li role="presentation" class="bsk-active"><a href="#">Pill 1</a></li>
     <li role="presentation"><a href="#">Pill 2</a></li>
     <li role="presentation" class="bsk-dropdown">
       <a href="#" class="bsk-dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -139,7 +131,7 @@ Add the `.bsk-nav-tabs` class to create a more structured navigation element.
 <!-- Tabs -->
 <nav role="navigation">
   <ul class="bsk-nav bsk-nav-tabs">
-    <li role="presentation"><a href="#">Tab 1</a></li>
+    <li role="presentation" class="bsk-active"><a href="#">Tab 1</a></li>
     <li role="presentation"><a href="#">Tab 2</a></li>
     <li role="presentation" class="bsk-dropdown">
       <a href="#" class="bsk-dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
@@ -156,20 +148,22 @@ Add the `.bsk-nav-tabs` class to create a more structured navigation element.
 {% include topic-section-metadata.html
   title="Navigation content"
   heading_level=3
-  phase="live"
+  phase="beta"
   initial_version="0.1.0"
+  revised_version="0.5.0"
   included="yes"
 %}
 
-For each content section, use the `.bsk-tab-pane` class and a unique `id`. Each `id` should correspond to the target of
-a navigation item, which should have a `data-toggle="tab"` attribute set.
+Place the contents of each pill or tab in an element with the `.bsk-tab-pane` class, with a unique `id` attribute that
+corresponds to the target of a pill or tab, which have a `data-toggle="tab"` attribute.
 
-Put all the sections in a an element with the `.bsk-tab-content` class. Put this, and the navigation menu, in an
-element with the `.bsk-nav-wrapper` class to hold everything.
+Wrap all the content sections in an element with the `.bsk-tab-content` class. Wrap this, and the pills or tabs, in
+another element with the `.bsk-nav-wrapper` and either the `.bsk-nav-wrapper-pills` or `.bsk-nav-wrapper-tabs` class
+respectively.
 
 {% capture alert_content %}
-To work with the [nav]({{ '/interactivity/nav' | prepend: site.baseurl }}){: .bsk-alert-link } JavaScript plugin, extra
-attributes are needed which are shown in these examples.
+Some extra attributes, shown in these examples, are needed to work with the
+[nav]({{ '/interactivity/nav' | prepend: site.baseurl }}){: .bsk-alert-link } JavaScript plugin.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="info"
@@ -179,7 +173,7 @@ attributes are needed which are shown in these examples.
 
 {% example html %}
 <!-- Pills -->
-<nav class="bsk-nav-wrapper" role="navigation">
+<nav class="bsk-nav-wrapper bsk-nav-wrapper-pills" role="navigation">
   <ul class="bsk-nav bsk-nav-pills" role="tablist">
     <li role="presentation" class="bsk-active"><a href="#nav-content-example-1A" role="tab" data-toggle="tab">Pill 1</a></li>
     <li role="presentation"><a href="#nav-content-example-1B" role="tab" data-toggle="tab">Pill 2</a></li>
@@ -197,7 +191,7 @@ attributes are needed which are shown in these examples.
 
 {% example html %}
 <!-- Tabs -->
-<nav class="bsk-nav-wrapper" role="navigation">
+<nav class="bsk-nav-wrapper bsk-nav-wrapper-tabs" role="navigation">
   <ul class="bsk-nav bsk-nav-tabs" role="tablist">
     <li role="presentation" class="bsk-active"><a href="#nav-content-example-2A" role="tab" data-toggle="tab">Tab 1</a></li>
     <li role="presentation"><a href="#nav-content-example-2B" role="tab" data-toggle="tab">Tab 2</a></li>
