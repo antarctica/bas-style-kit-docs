@@ -95,7 +95,7 @@ function reportSuccess(
   setFeedbackOutcome(
       feedbackOutcomeSelector,
       'bsk-alert bsk-alert-solid bsk-alert-success',
-      'Your feedback has been received with reference of <strong>' + reference + '</strong>.'
+      'Your feedback has been received with reference <strong>' + reference + '</strong>.'
   );
 }
 
