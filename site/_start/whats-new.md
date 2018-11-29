@@ -8,6 +8,10 @@ sections:
   -
     title: Latest version
   -
+    title: v0.5.0
+  -
+    title: v0.4.0
+  -
     title: v0.3.0
   -
     title: v0.2.0
@@ -31,6 +35,32 @@ See the relevant project change log for this information:
 The latest stable version of the BAS Style Kit is **{{ site.data.variables.bsk_version_production }}**.
 
 The latest development version of the BAS Style Kit is **{{ site.data.variables.bsk_version_staging }}**.
+
+{% include topic-section-metadata.html
+  title="v0.5.0"
+  heading_level=2
+%}
+
+Key changes in this version:
+
+* [patterns]({{ '/patterns' | prepend: site.baseurl }}) for [page not found]({{ '/patterns/page-not-found' | prepend: site.baseurl }}), [service unavailable]({{ '/patterns/service-unavailable' | prepend: site.baseurl }}) and [there is a problem with this service]({{ '/patterns/problem-with-this-service' | prepend: site.baseurl }}) pages have been added
+* a [favicon component]({{ '/core/favicon' | prepend: site.baseurl }}) has been added to act as a default across devices
+* a [drag and drop file upload (drop-zone) interactive component]({{ '/interactivity/drop-zone/' | prepend: site.baseurl }}) has been added
+* the [tabs component]({{ '/components/nav/#tab-navigation' | prepend: site.baseurl }}) has been updated with proper styling
+* the deprecated wells component has been removed
+* colours for [BAS Themes]({{ '/core/colours/#bas-theme-colours' | prepend: site.baseurl }}) and [BAS Facilities]({{ '/core/colours/#bas-facility-colours' | prepend: site.baseurl }})
+* a Style Kit version of the Bootstrap [transitions]({{ '/interactivity/transitions' | prepend: site.baseurl }}) interactivity component has been added
+* a Style Kit version of the Bootstrap [pop-over]({{ '/interactivity/pop-over' | prepend: site.baseurl }}) interactivity component has been added
+* a Style Kit version of the Bootstrap [tool-tip]({{ '/interactivity/tool-tip' | prepend: site.baseurl }}) interactivity component has been added
+* a Style Kit version of the Bootstrap [button]({{ '/interactivity/button' | prepend: site.baseurl }}) interactivity component has been added
+* a set of [Pug templates]({{ '/start/distribution/#pug' | prepend: site.baseurl }}) has been added
+* an [Oracle Application Express (Apex)]({{ '/start/distribution/#oracle-apex' | prepend: site.baseurl }}) theme has been added
+* the [Font Awesome icon font]({{ '/core/icons/#font-awesome' | prepend: site.baseurl }}) has been updated to version 5 (Pro) and is now an optional component
+* the [NPM package]({{ '/start/distribution/#nodejs-package' | prepend: site.baseurl }}) for this project is now namespaced
+* the [list group component]({{ '/components/list-group/' | prepend: site.baseurl }}) is now deprecated
+* the [inverse jumbotron variant]({{ '/components/jumbotron/#inverse-jumbotron' | prepend: site.baseurl }}) is now deprecated
+* the [form input drop-down button input group]({{ '/components/input-group/#drop-down-button-input-group' | prepend: site.baseurl }}) is now deprecated
+* the [form input split-button drop-down input group]({{ '/components/input-group/#split-button-drop-down-input-group' | prepend: site.baseurl }}) is now deprecated
 
 {% include topic-section-metadata.html
   title="v0.4.0"

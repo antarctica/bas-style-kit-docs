@@ -5,6 +5,8 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ## [Unreleased][unreleased]
 
+## v1.5.0 - 29/11/2018
+
 ### Removed
 
 * Support for warning validation state in forms
