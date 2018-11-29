@@ -169,7 +169,7 @@ used for context by adding these classes:
 {% include topic-section-metadata.html
   title="Contextual icons"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.1.0"
   revised_version="0.5.0"
   included="yes"

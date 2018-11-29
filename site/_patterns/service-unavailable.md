@@ -89,7 +89,7 @@ When using this pattern, do not:
 {% include topic-section-metadata.html
   title="Basic"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.5.0"
   included="yes"
 %}
@@ -114,7 +114,7 @@ service later.'
 {% include topic-section-metadata.html
   title="Contacts"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.5.0"
   included="yes"
 %}
@@ -157,7 +157,7 @@ Try not to use specific people as contacts, as they may be on holiday or change 
 {% include topic-section-metadata.html
   title="Availability"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.5.0"
   included="yes"
 %}
@@ -186,7 +186,7 @@ Where a time is known, make sure to include a time zone.
 {% include topic-section-metadata.html
   title="Alternative"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.5.0"
   included="yes"
 %}
@@ -226,7 +226,7 @@ Alternatives may include off-line information such as printed information.
 {% include topic-section-metadata.html
   title="Partly closed"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.5.0"
   included="yes"
 %}
@@ -247,7 +247,7 @@ when the service can be used again.
 {% include topic-section-metadata.html
   title="Replaced"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.5.0"
   included="yes"
 %}
@@ -269,7 +269,7 @@ or services, that replace the service.
 {% include topic-section-metadata.html
   title="Closed"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.5.0"
   included="yes"
 %}

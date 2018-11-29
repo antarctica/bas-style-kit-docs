@@ -25,7 +25,7 @@ body_js_files:
 {% include topic-section-metadata.html
   title="Overview"
   heading_level=2
-  phase="beta"
+  phase="live"
   initial_version="0.5.0"
   included="no"
 %}
@@ -36,7 +36,7 @@ to upload multiple files.
 {% include topic-section-metadata.html
   title="Dependencies"
   heading_level=2
-  phase="beta"
+  phase="live"
   initial_version="0.5.0"
   included="no"
 %}

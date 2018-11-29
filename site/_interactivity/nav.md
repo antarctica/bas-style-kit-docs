@@ -13,7 +13,7 @@ sections:
 {% include topic-section-metadata.html
   title="Overview"
   heading_level=2
-  phase="beta"
+  phase="live"
   initial_version="0.5.0"
 %}
 
@@ -36,7 +36,7 @@ this plugin is known as *nav* rather than *tabs* but is otherwise exactly the sa
 {% include topic-section-metadata.html
   title="Dependencies"
   heading_level=2
-  phase="beta"
+  phase="live"
   initial_version="0.5.0"
 %}
 

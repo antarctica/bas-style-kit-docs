@@ -76,7 +76,7 @@ Add the `.bsk-nav-pills` class to create a minimalist navigation element.
 {% include topic-section-metadata.html
   title="Tab navigation"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.1.0"
   revised_version="0.5.0"
   included="yes"
@@ -148,7 +148,7 @@ Add the `.bsk-nav-tabs` class to create a more structured navigation element.
 {% include topic-section-metadata.html
   title="Navigation content"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.1.0"
   revised_version="0.5.0"
   included="yes"

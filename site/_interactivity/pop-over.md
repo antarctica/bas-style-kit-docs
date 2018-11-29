@@ -19,7 +19,7 @@ body_js_files:
 {% include topic-section-metadata.html
   title="Overview"
   heading_level=2
-  phase="beta"
+  phase="live"
   initial_version="0.5.0"
 %}
 
@@ -45,7 +45,7 @@ Pop-over's are not enabled globally. You will need to add the code from the
 {% include topic-section-metadata.html
   title="Dependencies"
   heading_level=2
-  phase="beta"
+  phase="live"
   initial_version="0.5.0"
 %}
 
