@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 gem "jekyll", "~> 3.8.5"
 
-gem "jekyll-theme-bas-style-kit", "~> 0.7.0"
+gem "jekyll-theme-bas-style-kit", "~> 0.8.0"
 
 # If you have any plugins, put them here!
 # group :jekyll_plugins do

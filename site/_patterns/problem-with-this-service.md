@@ -84,7 +84,7 @@ will take some time to fix any problems.
 {% include topic-section-metadata.html
   title="Basic"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.5.0"
   included="yes"
 %}
@@ -108,7 +108,7 @@ service' as a `h1` header
 {% include topic-section-metadata.html
   title="Contacts"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.5.0"
   included="yes"
 %}
@@ -172,7 +172,7 @@ Indicate whether users should contact someone to report errors, or if this happe
 {% include topic-section-metadata.html
   title="Alternative"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.5.0"
   included="yes"
 %}

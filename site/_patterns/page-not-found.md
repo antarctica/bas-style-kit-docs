@@ -73,7 +73,7 @@ Try not to use specific people as contacts, as they may be on holiday or change 
 {% include topic-section-metadata.html
   title="Basic"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.5.0"
   included="yes"
 %}
