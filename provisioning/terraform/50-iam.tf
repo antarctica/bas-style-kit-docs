@@ -34,25 +34,6 @@ resource "aws_iam_user" "bas-gitlab-deploy-bas-style-kit-docs" {
 #
 #    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *    *
 
-# BAS Packages Service
-#
-# Policy to store assets in the BAS Packages Service
-#
-# Inline policy
-#
-# This resource implicitly depends on the 'aws_iam_user.bas-gitlab-deploy-bas-style-kit-docs' resource
-# This resource relies on the AWS Terraform provider being previously configured.
-#
-# AWS source: http://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html#customer-managed-policies
-# Terraform source: https://www.terraform.io/docs/providers/aws/r/iam_user_policy.html
-#
-# Tags are not supported by this resource
-resource "aws_iam_user_policy" "bas-packages-service-management-policy" {
-  name   = "bas-packages-service-management-policy"
-  user   = "${aws_iam_user.bas-gitlab-deploy-bas-style-kit-docs.name}"
-  policy = "${file("70-resources/iam/policies/inline/packages-service-prod.json")}"
-}
-
 # Bucket management policy (Staging)
 #
 # Policy to manage the S3 bucket holding static website content

@@ -14,6 +14,10 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 * Link to Zip downloads
 
+### Changed
+
+* Snapshots of this project are no longer stored in S3, instead builds of tagged releases are kept in GitLab for 2 years
+
 ## v1.5.0 - 29/11/2018
 
 ### Removed

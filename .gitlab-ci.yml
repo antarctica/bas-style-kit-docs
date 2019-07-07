@@ -35,7 +35,6 @@
 stages:
   - build
   - security
-  - package
   - deploy
 
 image:
@@ -44,8 +43,6 @@ image:
 
 variables:
   AWS_DEFAULT_REGION: eu-west-1
-  PACKAGES_BUCKET: packages.data.bas.ac.uk
-  PACKAGES_BUCKET_PATH: zips/apps
   S3_DEPLOYMENT_BUCKET_STAGE: style-kit-testing.web.bas.ac.uk
   S3_DEPLOYMENT_BUCKET_PROD: style-kit.web.bas.ac.uk
   APP_NAME: bas-style-kit-docs
@@ -98,7 +95,7 @@ jekyll-build-production:
     name: "$CI_BUILD_TOKEN-content"
     paths:
       - site/_site
-    expire_in: 1 day
+    expire_in: 2 years
 
 check-dependencies:
   stage: security
@@ -111,37 +108,6 @@ check-dependencies:
     - "snyk monitor --project-name=$SNYK_PROJECT_NAME --org=$SNYK_ORG"
   only:
     - master
-
-package-site-content:
-  stage: package
-  image:
-    name: kramos/alpine-zip:latest
-    entrypoint: [""]
-  before_script:
-    - "export CI_BUILD_REF_SHORT=`echo $CI_BUILD_REF | cut -c1-7`"
-    - "export DATETIME_INSTANT=`date --utc -Iseconds`"
-    - "cd site/_site"
-  script: "zip -r ../../$CI_BUILD_REF_SHORT-$DATETIME_INSTANT.zip *"
-  artifacts:
-    name: "$CI_BUILD_TOKEN-zip"
-    paths:
-      - "*.zip"
-    expire_in: 1 day
-
-s3-snapshot-staging:
-  <<: *job_template_s3_sync
-  stage: deploy
-  only:
-    - master
-  script: "aws s3 cp $CI_BUILD_REF_SHORT-*.zip s3://$PACKAGES_BUCKET/$PACKAGES_BUCKET_PATH/$APP_NAME/snapshots/"
-
-
-s3-snapshot-production:
-  <<: *job_template_s3_sync
-  stage: deploy
-  only:
-    - tags
-  script: "aws s3 cp $CI_BUILD_REF_SHORT-*.zip s3://$PACKAGES_BUCKET/$PACKAGES_BUCKET_PATH/$APP_NAME/releases/$CDN_PROJECT_VERSION.zip"
 
 s3-website-staging:
   <<: *job_template_s3_sync
