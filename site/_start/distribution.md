@@ -262,8 +262,8 @@ Style Kit.
     <tr>
       <td><a href="{{ '/core/icons/#font-awesome' | prepend: site.baseurl }}">Font Awesome Pro</a></td>
       <td>CSS</td>
-      <td>5.3.1</td>
-      <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/libs/font-awesome-pro/5.3.1/css/all.min.css</code></pre></td>
+      <td>5.9.0</td>
+      <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/libs/font-awesome-pro/5.9.0/css/all.min.css</code></pre></td>
       <td><div class="bsk-label bsk-label-phase-live">Live</div></td>
     </tr>
     <tr>
@@ -356,7 +356,7 @@ SRI values are also available for Style Kit's
 
 | Resource                                      | SRI value                                             |
 | --------------------------------------------- | ----------------------------------------------------- |
-| `libs/font-awesome-pro/5.3.1/css/all.min.css` | `sha256-dmYY0yByM18KPaizF7sJXlVB3j4gBovN0xzGOEePAYg=` |
+| `libs/font-awesome-pro/5.9.0/css/all.min.css` | `sha256-kanXop/o8YI8mee6ao6HKghRywSQiUisB6pXb6HRsWk=` |
 | `libs/dropzone/5.5.0/js/dropzone.min.js`      | `fIn7+wa+KI2s9jjRMk/rcswRt8mf82rxIXntRYKLofg=`        |
 {: .bsk-table .bsk-table-hover .bsk-table-bordered }
 
