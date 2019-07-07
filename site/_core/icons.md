@@ -19,7 +19,7 @@ sections:
 {% include topic-section-metadata.html
   title="Overview"
   heading_level=2
-  phase="beta"
+  phase="live"
   initial_version="0.1.0"
   revised_version="0.5.0"
   included="yes"
@@ -61,7 +61,7 @@ optional.
 {% include topic-section-metadata.html
   title="Font Awesome"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.1.0"
   revised_version="0.5.0"
   included="no"
@@ -98,7 +98,7 @@ include it.
 {% include topic-section-metadata.html
   title="Caret icon"
   heading_level=2
-  phase="beta"
+  phase="live"
   initial_version="0.1.0"
   revised_version="0.5.0"
   included="yes"
@@ -113,7 +113,7 @@ Use `.bsk-caret` for [drop-down menus]({{ '/components/drop-down' | prepend: sit
 {% include topic-section-metadata.html
   title="Close icon"
   heading_level=2
-  phase="beta"
+  phase="live"
   initial_version="0.1.0"
   revised_version="0.5.0"
   included="yes"
@@ -154,7 +154,7 @@ Use the `&times;` HTML entity wrapped in a `.bsk-close` element for indicating c
 {% include topic-section-metadata.html
   title="Experimental icon"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.3.0"
   revised_version="0.5.0"
   included="no"
@@ -183,9 +183,9 @@ family, to indicate something that is experimental or a work in progress.
 {% include topic-section-metadata.html
   title="Standard contextual icons"
   heading_level=3
-  phase="beta"
+  phase="alpha"
   initial_version="0.1.0"
-  revised_version="0.5.0"
+  revised_version="0.6.0"
   included="no"
 %}
 
@@ -224,11 +224,11 @@ These icons can be used with core styles and components, such as:
 <div class="bsk-docs-icons-wrapper">
   <div class="bsk-row">
     <div class="bsk-col-12-md-3">
-      <div class="bsk-docs-icon"><i class="far fa-fw fa-4x fa-check" aria-hidden="true"></i></div>
+      <div class="bsk-docs-icon"><i class="fas fa-fw fa-4x fa-check" aria-hidden="true"></i></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Success</li>
-        <li class="bsk-docs-icon-reference">far fa-check</li>
-        <li><code>&lt;i class="far fa-fw fa-check" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+        <li class="bsk-docs-icon-reference">fas fa-check</li>
+        <li><code>&lt;i class="fas fa-fw fa-check" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
     <div class="bsk-col-12-md-3">
@@ -272,11 +272,11 @@ with these icons.
 <div class="bsk-docs-icons-wrapper">
   <div class="bsk-row">
     <div class="bsk-col-12-md-3">
-      <div class="bsk-docs-icon"><i class="far fa-fw fa-4x fa-check bsk-docs-icon-context-success" aria-hidden="true"></i></div>
+      <div class="bsk-docs-icon"><i class="fas fa-fw fa-4x fa-check bsk-docs-icon-context-success" aria-hidden="true"></i></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Success</li>
-        <li class="bsk-docs-icon-reference">far fa-check</li>
-        <li><code>&lt;i class="far fa-fw fa-check" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+        <li class="bsk-docs-icon-reference">fas fa-check</li>
+        <li><code>&lt;i class="faa fa-fw fa-check" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
     <div class="bsk-col-12-md-3">
@@ -320,11 +320,11 @@ with these icons.
 <div class="bsk-docs-icons-wrapper">
   <div class="bsk-row">
     <div class="bsk-col-12-md-3">
-      <div class="bsk-docs-icon"><i class="far fa-fw fa-4x fa-check bsk-text-success" aria-hidden="true"></i></div>
+      <div class="bsk-docs-icon"><i class="fas fa-fw fa-4x fa-check bsk-text-success" aria-hidden="true"></i></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Success</li>
-        <li class="bsk-docs-icon-reference">far fa-check</li>
-        <li><code>&lt;i class="far fa-fw fa-check" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+        <li class="bsk-docs-icon-reference">fas fa-check</li>
+        <li><code>&lt;i class="fas fa-fw fa-check" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
     <div class="bsk-col-12-md-3">
@@ -357,7 +357,7 @@ with these icons.
 {% include topic-section-metadata.html
   title="Development phase icons"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.5.0"
   included="no"
 %}
@@ -518,7 +518,7 @@ with these icons.
 {% include topic-section-metadata.html
   title="External service icons"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.1.0"
   revised_version="0.5.0"
   included="no"

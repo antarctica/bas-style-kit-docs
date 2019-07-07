@@ -337,7 +337,7 @@ These files are exports of vector images, do not resize them. Contact the BAS Co
 Source files are available for the BAS roundel and logo in EPS format.
 
 {% capture alert_content %}
-These files should not be used unless advised by the BAS Communications Team.
+These files should not be used unless advised by the [BAS Creative Services Team](mailto:pictures@bac.ac.uk){:.bsk-alert-link}.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="warning"
