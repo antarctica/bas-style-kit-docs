@@ -11,6 +11,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * Updating to Font Awesome 5.9.0
 * Microsoft sign-in button variant
 * ORCID iD and DOI icons
+* Missing documentation for Style Kit version plugin
 
 ### Fixed
 
