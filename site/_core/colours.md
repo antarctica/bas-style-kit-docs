@@ -771,6 +771,22 @@ service.
         <li class="bsk-docs-hex-reference">#F26522</li>
       </ul>
     </div>
+    <div class="bsk-col-12-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-external-service-orcid-background"></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
+        <li>ORCID</li>
+        <li><code>$bsk-colour-ext-orcid-base</code></li>
+        <li class="bsk-docs-hex-reference">#A6CE39</li>
+      </ul>
+    </div>
+    <div class="bsk-col-12-md-2">
+      <div class="bsk-docs-swatch-colour bsk-docs-swatch-external-service-doi-background"></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
+        <li>DOI</li>
+        <li><code>$bsk-colour-ext-doi-base</code></li>
+        <li class="bsk-docs-hex-reference">#FCB426</li>
+      </ul>
+    </div>
   </div>
 </div>
 
