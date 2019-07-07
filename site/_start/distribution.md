@@ -416,7 +416,7 @@ files yourself to make upgrading to future Style Kit releases easier.
   %}
 {% endunless %}
 
-[Download latest version]({{ site.data.variables.package_base }}/{% include bsk-version.html %}.zip){: .bsk-btn .bsk-btn-default }
+[Download latest version]({{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/{% include bsk-version.html %}.zip){: .bsk-btn .bsk-btn-default }
 
 {% include topic-section-metadata.html
   title="NodeJS package"
