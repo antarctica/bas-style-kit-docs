@@ -183,9 +183,9 @@ family, to indicate something that is experimental or a work in progress.
 {% include topic-section-metadata.html
   title="Standard contextual icons"
   heading_level=3
-  phase="beta"
+  phase="alpha"
   initial_version="0.1.0"
-  revised_version="0.5.0"
+  revised_version="0.6.0"
   included="no"
 %}
 
@@ -224,11 +224,11 @@ These icons can be used with core styles and components, such as:
 <div class="bsk-docs-icons-wrapper">
   <div class="bsk-row">
     <div class="bsk-col-12-md-3">
-      <div class="bsk-docs-icon"><i class="far fa-fw fa-4x fa-check" aria-hidden="true"></i></div>
+      <div class="bsk-docs-icon"><i class="fas fa-fw fa-4x fa-check" aria-hidden="true"></i></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Success</li>
-        <li class="bsk-docs-icon-reference">far fa-check</li>
-        <li><code>&lt;i class="far fa-fw fa-check" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+        <li class="bsk-docs-icon-reference">fas fa-check</li>
+        <li><code>&lt;i class="fas fa-fw fa-check" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
     <div class="bsk-col-12-md-3">
@@ -272,11 +272,11 @@ with these icons.
 <div class="bsk-docs-icons-wrapper">
   <div class="bsk-row">
     <div class="bsk-col-12-md-3">
-      <div class="bsk-docs-icon"><i class="far fa-fw fa-4x fa-check bsk-docs-icon-context-success" aria-hidden="true"></i></div>
+      <div class="bsk-docs-icon"><i class="fas fa-fw fa-4x fa-check bsk-docs-icon-context-success" aria-hidden="true"></i></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Success</li>
-        <li class="bsk-docs-icon-reference">far fa-check</li>
-        <li><code>&lt;i class="far fa-fw fa-check" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+        <li class="bsk-docs-icon-reference">fas fa-check</li>
+        <li><code>&lt;i class="faa fa-fw fa-check" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
     <div class="bsk-col-12-md-3">
@@ -320,11 +320,11 @@ with these icons.
 <div class="bsk-docs-icons-wrapper">
   <div class="bsk-row">
     <div class="bsk-col-12-md-3">
-      <div class="bsk-docs-icon"><i class="far fa-fw fa-4x fa-check bsk-text-success" aria-hidden="true"></i></div>
+      <div class="bsk-docs-icon"><i class="fas fa-fw fa-4x fa-check bsk-text-success" aria-hidden="true"></i></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Success</li>
-        <li class="bsk-docs-icon-reference">far fa-check</li>
-        <li><code>&lt;i class="far fa-fw fa-check" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+        <li class="bsk-docs-icon-reference">fas fa-check</li>
+        <li><code>&lt;i class="fas fa-fw fa-check" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
     <div class="bsk-col-12-md-3">
