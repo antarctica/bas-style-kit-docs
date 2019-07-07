@@ -10,6 +10,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * Updating to Style Kit Jekyll theme 0.9.0 and Style Kit 0.6.0-alpha
 * Updating to Font Awesome 5.9.0
 * Microsoft sign-in button variant
+* ORCID iD and DOI icons
 
 ### Fixed
 
