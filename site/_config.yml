@@ -71,8 +71,8 @@ bas_style_kit_jekyll_theme:
       id: UA-64130716-27
     site_styles:
         -
-          href: 'https://cdn.web.bas.ac.uk/libs/font-awesome-pro/5.3.1/css/all.min.css'
-          integrity: 'sha256-dmYY0yByM18KPaizF7sJXlVB3j4gBovN0xzGOEePAYg='
+          href: 'https://cdn.web.bas.ac.uk/libs/font-awesome-pro/5.9.0/css/all.min.css'
+          integrity: 'sha256-kanXop/o8YI8mee6ao6HKghRywSQiUisB6pXb6HRsWk='
           type: 'remote'
         -
           href: '/css/main.css'

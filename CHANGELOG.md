@@ -5,6 +5,20 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ## [Unreleased][unreleased]
 
+### Added
+
+* Updating to Style Kit Jekyll theme 0.9.0 and Style Kit 0.6.0-alpha
+* Updating to Font Awesome 5.9.0
+
+### Fixed
+
+* Link to Zip downloads
+
+### Changed
+
+* Snapshots of this project are no longer stored in S3, instead builds of tagged releases are kept in GitLab for 2 years
+* Simplifying GitLab CI/CD config
+
 ## v1.5.0 - 29/11/2018
 
 ### Removed
