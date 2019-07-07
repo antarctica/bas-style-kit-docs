@@ -1,6 +1,6 @@
 {
-  "dist/css/bas-style-kit.css":"sha256-e48N8sO6qN2OIRCS5WqduKowEzB3gSkHAGRf+TDeuXc=",
-  "dist/css/bas-style-kit.min.css":"sha256-f1krGfSoxLtD+u0HEHuqF3D5JW27nONtsLkNZ68+hhM=",
-  "dist/js/bas-style-kit.js":"sha256-0qtIuMJjlTzdT9seJFbpgr6zUYkwgIRwA9gviHNUwnQ=",
-  "dist/js/bas-style-kit.min.js":"sha256-ovsRXnHWw8vzEuH6E3/0R44Etu6OISlK9FjEA1mGuUQ="
-}
+  "dist/css/bas-style-kit.css": "sha256-wD0Zf8wCZUwZqtaeP5pRlgBZDhDdwZxYl0gY45gfTCA=",
+  "dist/css/bas-style-kit.min.css": "sha256-YsP5zVtOhiEalahZCyQcl8vG7vyzUJ4aP/yGoPXGOZ0=",
+  "dist/js/bas-style-kit.js": "sha256-EUgkaHBYgZAvkWNPEi7h6jaS9AqrDLuNdmsomghK+28=",
+  "dist/js/bas-style-kit.min.js": "sha256-pGW+MS4z0IRzUK+7MJrnpc/1FwbD0v0BdP4mvmMlJhw="
+  }

@@ -5,6 +5,10 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ## [Unreleased][unreleased]
 
+### Added
+
+* Updating to Style Kit Jekyll theme 0.9.0 and Style Kit 0.6.0-alpha
+
 ## v1.5.0 - 29/11/2018
 
 ### Removed
