@@ -3,8 +3,6 @@
 # == Notes ==
 
 # - GitLab automatically passes artifacts from previous stages by default
-# - This configuration file uses some advanced YAML features (namely anchors) which may not be correctly displayed
-#   by syntax highlighting
 # - Set required secret variables at: https://gitlab.data.bas.ac.uk/web-apps/bsk/bas-style-kit-docs/settings/ci_cd -
 #   see below
 
@@ -18,17 +16,6 @@
 #
 # - Snyk
 # > SNYK_TOKEN: "[Sensitive]"
-
-# == Job Templates ==
-
-.job_template_s3_sync: &job_template_s3_sync
-  image:
-    name: governmentpaas/awscli:latest
-    entrypoint: [""]
-  before_script:
-    - "export CI_BUILD_REF_SHORT=`echo $CI_BUILD_REF | cut -c1-7`"
-    - "export CI_BUILD_TAG_SHORT=`echo $CI_COMMIT_TAG | cut -c 2-`"
-    - "export CDN_PROJECT_VERSION=$CI_BUILD_TAG_SHORT"
 
 # == Global settings ==
 
@@ -110,21 +97,25 @@ check-dependencies:
     - master
 
 s3-website-staging:
-  <<: *job_template_s3_sync
   stage: deploy
+  image:
+    name: governmentpaas/awscli:latest
+    entrypoint: [""]
+  script: "aws s3 sync --delete site/_site s3://$S3_DEPLOYMENT_BUCKET_STAGE/"
   only:
     - master
-  script: "aws s3 sync --delete site/_site s3://$S3_DEPLOYMENT_BUCKET_STAGE/"
   environment:
     name: staging
     url: https://style-kit-testing.web.bas.ac.uk
 
 s3-website-production:
-  <<: *job_template_s3_sync
   stage: deploy
+  image:
+    name: governmentpaas/awscli:latest
+    entrypoint: [""]
+  script: "aws s3 sync --delete site/_site s3://$S3_DEPLOYMENT_BUCKET_PROD/"
   only:
     - tags
-  script: "aws s3 sync --delete site/_site s3://$S3_DEPLOYMENT_BUCKET_PROD/"
   environment:
     name: production
     url: https://style-kit.web.bas.ac.uk
