@@ -201,6 +201,31 @@ indicate something that is experimental or a work in progress.
 </div>
 
 {% include topic-section-metadata.html
+  title="Sortable icon"
+  heading_level=3
+  phase="live"
+  initial_version="0.5.0"
+  included="no"
+%}
+
+Use `.far.fa-bars`, from the [Font Awesome]({{ '/core/icons#font-awesome' | prepend: site.baseurl }}) icon family, to
+indicate something that can be reordered, such as the
+[Sortable]({{ '/interactivity/sortable' | prepend: site.baseurl }}) component.
+
+<div class="bsk-docs-icons-wrapper">
+  <div class="bsk-row">
+    <div class="bsk-col-12-md-3">
+      <div class="bsk-docs-icon"><i class="far fa-fw fa-4x fa-bars" aria-hidden="true"></i></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
+        <li>Bars</li>
+        <li class="bsk-docs-icon-reference">far fa-bars</li>
+        <li><code>&lt;i class="far fa-fw fa-bars" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+{% include topic-section-metadata.html
   title="ORCID iD icon"
   heading_level=3
   phase="alpha"

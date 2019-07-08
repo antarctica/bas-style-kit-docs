@@ -12,6 +12,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * Microsoft sign-in button variant
 * ORCID iD and DOI icons
 * Missing documentation for Style Kit version plugin
+* Missing documentaion for Sortable component
 
 ### Fixed
 
