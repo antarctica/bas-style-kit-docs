@@ -223,7 +223,7 @@ recommended way to include them in a website or application.
 %}
 
 {% capture alert_content %}
-These libraries are not included in other distribution types and will need to be sourced separately.
+These libraries are not included in other distribution types and will need to be included separately.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="danger"
@@ -236,17 +236,8 @@ These libraries are not included in other distribution types and will need to be
   heading_level=2
 %}
 
-{% capture alert_content %}
-These components are not part of the Style Kit but can be included to enable extra features.
-{% endcapture %}
-{% include bas-style-kit/bsk-snippet--alert.html
-  variant="info"
-  style="outline"
-  content=alert_content
-%}
-
-Each optional component will list the libraries or other files it depends upon. These files are not included in the
-Style Kit.
+Some components in the Style Kit require one or more extra dependencies. This will be indicated by the relevant
+component where this applies.
 
 <table class="bsk-table bsk-table-bordered">
   <thead>
@@ -260,7 +251,7 @@ Style Kit.
   </thead>
   <tbody>
     <tr>
-      <td><a href="{{ '/core/icons/#font-awesome' | prepend: site.baseurl }}">Font Awesome Pro</a></td>
+      <td><a href="https://fontawesome.com">Font Awesome Pro</a></td>
       <td>CSS</td>
       <td>5.9.0</td>
       <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/libs/font-awesome-pro/5.9.0/css/all.min.css</code></pre></td>
@@ -287,7 +278,7 @@ recommended way to include them in a website or application.
 %}
 
 {% capture alert_content %}
-These files are not included in other distribution types and will need to be sourced separately.
+These files are not included in other distribution types and will need to be included separately.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="danger"

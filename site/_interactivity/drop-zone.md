@@ -15,7 +15,7 @@ sections:
 body_js_files:
   -
     href: 'https://cdn.web.bas.ac.uk/libs/dropzone/5.5.0/js/dropzone.min.js'
-    integrity: 'fIn7+wa+KI2s9jjRMk/rcswRt8mf82rxIXntRYKLofg='
+    integrity: 'sha256-fIn7+wa+KI2s9jjRMk/rcswRt8mf82rxIXntRYKLofg='
     type: 'remote'
   -
     href: '/js/dropzone.js'
@@ -30,8 +30,8 @@ body_js_files:
   included="no"
 %}
 
-The Style Kit includes classes and a recommended implementation for using the [Dropzone.js](https://www.dropzonejs.com)
-to upload multiple files.
+The Style Kit includes classes and a recommended implementation for using [Dropzone.js](https://www.dropzonejs.com) to
+upload multiple files.
 
 {% include topic-section-metadata.html
   title="Dependencies"
