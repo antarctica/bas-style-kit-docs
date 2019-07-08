@@ -78,7 +78,7 @@ Try not to use specific people as contacts, as they may be on holiday or change 
   included="yes"
 %}
 
-Use the `bsk-pattern-page-not-found` class to create a page element containing:
+Use the `.bsk-pattern-page-not-found` class to create a page element containing:
 
 * a page title of 'Page not found - [website or application]'
 * a [page header]({{ '/components/page-header' | prepend: site.baseurl }}) with 'Page not found' as a `h1` header
