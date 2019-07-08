@@ -223,7 +223,7 @@ recommended way to include them in a website or application.
 %}
 
 {% capture alert_content %}
-These libraries are not included in other distribution types and will need to be sourced separately.
+These libraries are not included in other distribution types and will need to be included separately.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="danger"
@@ -236,17 +236,8 @@ These libraries are not included in other distribution types and will need to be
   heading_level=2
 %}
 
-{% capture alert_content %}
-These components are not part of the Style Kit but can be included to enable extra features.
-{% endcapture %}
-{% include bas-style-kit/bsk-snippet--alert.html
-  variant="info"
-  style="outline"
-  content=alert_content
-%}
-
-Each optional component will list the libraries or other files it depends upon. These files are not included in the
-Style Kit.
+Some components in the Style Kit require one or more extra dependencies. This will be indicated by the relevant
+component where this applies.
 
 <table class="bsk-table bsk-table-bordered">
   <thead>
@@ -260,7 +251,7 @@ Style Kit.
   </thead>
   <tbody>
     <tr>
-      <td><a href="{{ '/core/icons/#font-awesome' | prepend: site.baseurl }}">Font Awesome Pro</a></td>
+      <td><a href="https://fontawesome.com">Font Awesome Pro</a></td>
       <td>CSS</td>
       <td>5.9.0</td>
       <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/libs/font-awesome-pro/5.9.0/css/all.min.css</code></pre></td>
@@ -271,6 +262,13 @@ Style Kit.
       <td>JS</td>
       <td>5.5.0</td>
       <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/libs/dropzone/5.5.0/js/dropzone.min.js</code></pre></td>
+      <td><div class="bsk-label bsk-label-phase-live">Live</div></td>
+    </tr>
+    <tr>
+      <td><a href="https://lukasoppermann.github.io/html5sortable/index.html">HTML5 Sortable</a></td>
+      <td>JS</td>
+      <td>0.9.4</td>
+      <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/libs/html5sortable/0.9.4/js/html5sortable.min.js</code></pre></td>
       <td><div class="bsk-label bsk-label-phase-live">Live</div></td>
     </tr>
   </tbody>
@@ -287,7 +285,7 @@ recommended way to include them in a website or application.
 %}
 
 {% capture alert_content %}
-These files are not included in other distribution types and will need to be sourced separately.
+These files are not included in other distribution types and will need to be included separately.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="danger"
@@ -354,10 +352,11 @@ SRI values are also available for Style Kit's
 SRI values are also available for Style Kit's
 [Optional components]({{ '/start/distribution/#optional-components' | prepend: site.baseurl }}).
 
-| Resource                                      | SRI value                                             |
-| --------------------------------------------- | ----------------------------------------------------- |
-| `libs/font-awesome-pro/5.9.0/css/all.min.css` | `sha256-kanXop/o8YI8mee6ao6HKghRywSQiUisB6pXb6HRsWk=` |
-| `libs/dropzone/5.5.0/js/dropzone.min.js`      | `fIn7+wa+KI2s9jjRMk/rcswRt8mf82rxIXntRYKLofg=`        |
+| Resource                                           | SRI value                                             |
+| -------------------------------------------------- | ----------------------------------------------------- |
+| `libs/font-awesome-pro/5.9.0/css/all.min.css`      | `sha256-kanXop/o8YI8mee6ao6HKghRywSQiUisB6pXb6HRsWk=` |
+| `libs/dropzone/5.5.0/js/dropzone.min.js`           | `sha256-fIn7+wa+KI2s9jjRMk/rcswRt8mf82rxIXntRYKLofg=` |
+| `libs/html5sortable/0.9.4/js/html5sortable.min.js` | `sha256-a5lgB8k+KyfXyaS32wQevsCnEm8Hz2o7cPEfthVOzLM=` |
 {: .bsk-table .bsk-table-hover .bsk-table-bordered }
 
 {% include topic-section-metadata.html

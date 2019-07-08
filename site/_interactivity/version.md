@@ -2,7 +2,7 @@
 title: Version
 menus:
   primary_interactivity:
-    weight: 3
+    weight: 14
 sections:
   -
     title: Overview
