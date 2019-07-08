@@ -13,6 +13,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * ORCID iD and DOI icons
 * Missing documentation for Style Kit version plugin
 * Missing documentaion for Sortable component
+* Adding guidance for not using tables as item grids
 
 ### Fixed
 

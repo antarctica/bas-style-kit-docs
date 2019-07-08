@@ -21,6 +21,22 @@ sections:
 ---
 
 {% include topic-section-metadata.html
+  title="Uses"
+  heading_level=2
+%}
+
+{% capture alert_content %}
+You should one use tables for tabular data. For other use cases, such as a listing of items with actions, you should
+use the [grid system]({{ '/core/grid' | prepend: site.baseurl }}){: .bsk-alert-link } instead of a table so that it
+works correctly on mobiles.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="outline"
+  content=alert_content
+%}
+
+{% include topic-section-metadata.html
   title="Variations"
   heading_level=2
 %}
