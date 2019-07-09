@@ -15,6 +15,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * Missing documentaion for Sortable component
 * Guidance for not using tables as item grids
 * Item header pattern and stacked page header component
+* Standard header pattern
 
 ### Fixed
 

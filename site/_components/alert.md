@@ -108,7 +108,8 @@ There is no *default* alert variant, as a grey alert for example wouldn't make a
   included="yes"
 %}
 
-This variant is only intended for displaying a cookie notice.
+This variant is only intended for displaying a cookie notice as part of the
+[standard header]({{ '/patterns/standard-header' | prepend: site.baseurl }}) pattern.
 
 {% capture alert_content %}
 Interactive cookie notices require the [Alert]({{ '/interactivity/alert' | prepend: site.baseurl }}){: .bsk-alert-link }
@@ -126,86 +127,6 @@ plugins, which are enabled on this site.
 This website uses cookies to help us make it better - <a href="#" class="bsk-alert-link">find out more</a>.
 </div>
 {% endexample %}
-
-If using a cookie notice with a [navbar]({{ '/components/navbar' | prepend: site.baseurl }}) as part of fixed-width
-design:
-
-* wrap the cookie notice in a
-[fixed-width container]({{ '/core/layout/#fixed-width-container' | prepend: site.baseurl }})
-* wrap the container in a <code>&lt;div&gt;</code> with the `.bsk-fix-alert-static-top-fixed-container-wrapper` class
-
-{% capture alert_content %}
-The cookie notice in the example will appear broken, this is because it is already placed within a container as part of
-this site's layout.
-{% endcapture %}
-{% include bas-style-kit/bsk-snippet--alert.html
-  variant="info"
-  style="highlight"
-  content=alert_content
-%}
-
-{% example html %}
-<div class="bsk-fix-alert-static-top-fixed-container-wrapper">
-  <div class="bsk-container">
-    <div class="bsk-alert bsk-alert-static-top bsk-alert-dismissible bsk-alert-solid bsk-alert-cookie-notice" role="alert" data-bsk-role="cookie-notice">
-      <button type="button" class="bsk-close" data-dismiss="alert" aria-label="Close">&times;</button>
-      This website uses cookies to help us make it better - <a href="#" class="bsk-alert-link">find out more</a>.
-    </div>
-  </div>
-</div>
-
-<nav class="bsk-navbar">
-  <div class="bsk-container">
-    <div class="bsk-navbar-header">
-      <a class="bsk-navbar-brand" href="#">Site Name</a>
-    </div>
-  </div><!-- /.bsk-container -->
-</nav>
-{% endexample %}
-
-{% capture alert_content %}
-The required `data-bsk-role="cookie-notice"` attribute is missing from this example so that it's visible.
-{% endcapture %}
-{% include bas-style-kit/bsk-snippet--alert.html
-  variant="info"
-  style="outline"
-  content=alert_content
-%}
-
-If using a cookie notice with a [navbar]({{ '/components/navbar' | prepend: site.baseurl }}) as part of fluid-width
-design:
-
-* wrap the cookie notice in a
-[fluid-width container]({{ '/core/layout/#fluid-width-container' | prepend: site.baseurl }})
-* wrap the container in a <code>&lt;div&gt;</code> with the `.bsk-fix-alert-static-top-fluid-container-wrapper` class
-
-{% example html %}
-<div class="bsk-fix-alert-static-top-fluid-container-wrapper">
-  <div class="bsk-container-fluid">
-    <div class="bsk-alert bsk-alert-static-top bsk-alert-dismissible bsk-alert-solid bsk-alert-cookie-notice" role="alert" data-bsk-role="cookie-notice">
-      <button type="button" class="bsk-close" data-dismiss="alert" aria-label="Close">&times;</button>
-      This website uses cookies to help us make it better - <a href="#" class="bsk-alert-link">find out more</a>.
-    </div>
-  </div>
-</div>
-
-<nav class="bsk-navbar">
-  <div class="bsk-container-fluid">
-    <div class="bsk-navbar-header">
-      <a class="bsk-navbar-brand" href="#">Site Name</a>
-    </div>
-  </div><!-- /.bsk-container -->
-</nav>
-{% endexample %}
-
-{% capture alert_content %}
-The required `data-bsk-role="cookie-notice"` attribute is missing from this example so that it's visible.
-{% endcapture %}
-{% include bas-style-kit/bsk-snippet--alert.html
-  variant="info"
-  style="outline"
-  content=alert_content
-%}
 
 {% include topic-section-metadata.html
   title="Contextual colours"
