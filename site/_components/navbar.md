@@ -94,6 +94,8 @@ sizes to ensure things work correctly.
   included="yes"
 %}
 
+This variant is used as part of the [standard header]({{ '/patterns/standard-header' | prepend: site.baseurl }}) pattern.
+
 {% example html %}
 <nav class="bsk-navbar">
   <div class="bsk-container-fluid">
@@ -104,56 +106,6 @@ sizes to ensure things work correctly.
       <li class="bsk-active"><a href="#">Home <span class="bsk-sr-only">(current)</span></a></li>
       <li><a href="#">About</a></li>
     </ul>
-  </div>
-</nav>
-{% endexample %}
-
-This example, whilst quite complex, demonstrates the sort of items shown in a typical navbar.
-
-{% example html %}
-<nav class="bsk-navbar">
-  <div class="bsk-container-fluid">
-    <!-- Site name and toggle get grouped for better mobile display -->
-    <div class="bsk-navbar-header">
-      <button type="button" class="bsk-navbar-toggle bsk-collapsed" data-toggle="collapse" data-target="#bsk-example-navbar-collapse-1" aria-expanded="false">
-        <span class="bsk-sr-only">Toggle navigation</span>
-        <span class="bsk-icon-bar"></span>
-        <span class="bsk-icon-bar"></span>
-        <span class="bsk-icon-bar"></span>
-      </button>
-      <a class="bsk-navbar-brand" href="#">Site Name</a>
-    </div>
-    <!-- Collect navigation links, forms, and other items for hiding at smaller screen sizes -->
-    <div class="bsk-collapse bsk-navbar-collapse" id="bsk-example-navbar-collapse-1">
-      <ul class="bsk-nav bsk-navbar-nav">
-        <li class="bsk-active"><a href="#">Home <span class="bsk-sr-only">(current)</span></a></li>
-        <li><a href="#">About</a></li>
-        <li class="bsk-dropdown">
-          <a href="#" class="bsk-dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-          Dropdown <span class="bsk-caret"></span></a>
-          <ul class="bsk-dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
-            <li role="separator" class="bsk-divider"></li>
-            <li><a href="#">Separated link</a></li>
-            <li role="separator" class="bsk-divider"></li>
-            <li><a href="#">One more separated link</a></li>
-          </ul>
-        </li>
-      </ul>
-      <ul class="bsk-nav bsk-navbar-nav bsk-navbar-right">
-        <li class="bsk-dropdown">
-          <a href="#" class="bsk-dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-          Part of British Antarctic Survey <span class="bsk-caret"></span></a>
-          <ul class="bsk-dropdown-menu">
-            <li><a href="https://www.bas.ac.uk">BAS Home</a></li>
-            <li><a href="https://data.bas.ac.uk">Discover BAS data</a></li>
-            <li><a href="#">Another service (optional)</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
   </div>
 </nav>
 {% endexample %}
