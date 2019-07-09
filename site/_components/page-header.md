@@ -8,6 +8,8 @@ sections:
     title: Overview
   -
     title: Default page header
+  -
+    title: Stacked page header
 ---
 
 {% include topic-section-metadata.html
@@ -34,5 +36,36 @@ spacing.
 {% example html %}
 <header class="bsk-page-header">
   <h1>Example page header <small>Subtext for header</small></h1>
+</header>
+{% endexample %}
+
+{% include topic-section-metadata.html
+  title="Stacked page header"
+  heading_level=3
+  phase="alpha"
+  initial_version="0.6.0"
+  included="yes"
+%}
+
+Add the `.bsk-page-header-stacked` class and place the subtitle on a new line before the main title to create a stacked
+page header.
+
+{% capture alert_content %}
+Stacked page headers are used in the
+[item header]({{ '/patterns/item-header' | prepend: site.baseurl }}){: .bsk-alert-link } pattern.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
+
+{% example html %}
+<header class="bsk-page-header bsk-page-header-stacked">
+  <h1>
+    <small>Item type</small>
+    <br>
+    Example item header
+  </h1>
 </header>
 {% endexample %}

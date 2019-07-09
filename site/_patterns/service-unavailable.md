@@ -94,7 +94,7 @@ When using this pattern, do not:
   included="yes"
 %}
 
-Use the `bsk-pattern-service-unavailable` class to create a page element containing:
+Use the `.bsk-pattern-service-unavailable` class to create a page element containing:
 
 * a page title of 'Service unavailable - [website or application]'
 * a [page header]({{ '/components/page-header' | prepend: site.baseurl }}) with 'Sorry, [website or application] is unavailable' as a

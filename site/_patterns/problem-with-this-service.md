@@ -89,7 +89,7 @@ will take some time to fix any problems.
   included="yes"
 %}
 
-Use the `bsk-pattern-problem-with-service` class to create a page element containing:
+Use the `.bsk-pattern-problem-with-service` class to create a page element containing:
 
 * a page title of 'There is a problem with this service - [website or application]'
 * a [page header]({{ '/components/page-header' | prepend: site.baseurl }}) with 'Sorry, there is a problem with this
