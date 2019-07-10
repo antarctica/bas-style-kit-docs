@@ -3,7 +3,7 @@
 title: Item header
 menus:
   primary_patterns:
-    weight: 2
+    weight: 8
 sections:
   -
     title: Overview

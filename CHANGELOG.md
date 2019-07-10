@@ -17,6 +17,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * Item header pattern and stacked page header component
 * Standard header pattern
 * Start page pattern
+* Sign in to continue pattern
 
 ### Fixed
 

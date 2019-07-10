@@ -3,7 +3,7 @@
 title: Service unavailable page
 menus:
   primary_patterns:
-    weight: 3
+    weight: 4
 sections:
   -
     title: Overview

@@ -3,7 +3,7 @@
 title: Start page
 menus:
   primary_patterns:
-    weight: 2
+    weight: 5
 sections:
   -
     title: Overview
@@ -55,7 +55,7 @@ When using this pattern, do:
 
 When using this pattern, do not:
 
-* change the style and text of the *start now* button
+* change the style and text of the *Start Now* button
 
 Where known, include an email address for, or link to information on, a team that can provide information on the
 service. If there isn't a contact for a service, use the [BAS IT Service Desk](https://servicedesk.bas.ac.uk).
@@ -200,10 +200,15 @@ This example does not use heading elements to prevent breaking the table of cont
 
 Where a service requires a user to sign in to start:
 
-* add a [info highlight alert]({{ '/components/alert/#highlight' | prepend: site.baseurl }}) in the 'before you start'
-  sectiom with information on who can or can't use a service
-* change the *Start Now* button to read 'Sign in to Start' and use the
+* in the 'before you start' section:
+  * add a [info highlight alert]({{ '/components/alert/#highlight' | prepend: site.baseurl }}) with information on who
+    can or can't use a service
+* in the 'call to action' section:
+  * change the *Start Now* button to read 'Sign in to Start' and use the
 [Microsoft sign-in button variant]({{ '/core/buttons/#microsoft-sign-in-button' | prepend: site.baseurl }})
+  * add a paragraph with `.bsk-sign-in-hint.bsk-text-muted` describing the account users need to sign-in with
+* in the 'more information' section:
+  * add a point of contact if users have problems signing in
 
 {% example html %}
 <main class="bsk-pattern-start">
