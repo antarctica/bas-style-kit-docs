@@ -201,6 +201,31 @@ indicate something that is experimental or a work in progress.
 </div>
 
 {% include topic-section-metadata.html
+  title="Start now icon"
+  heading_level=3
+  phase="alpha"
+  initial_version="0.6.0"
+  included="no"
+%}
+
+Use `.fas.fa-chevron-right`, from the [Font Awesome]({{ '/core/icons#font-awesome' | prepend: site.baseurl }}) icon
+family, to consistently identify buttons that will start a process or task, as in the
+[Start page]({{ '/patterns/start-page' | prepend: site.baseurl }}) pattern.
+
+<div class="bsk-docs-icons-wrapper">
+  <div class="bsk-row">
+    <div class="bsk-col-12-md-3">
+      <div class="bsk-docs-icon"><i class="fas fa-fw fa-4x fa-chevron-right" aria-hidden="true"></i></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
+        <li>Chevron Right</li>
+        <li class="bsk-docs-icon-reference">fas fa-chevron-right</li>
+        <li><code>&lt;i class="fas fa-fw fa-chevron-right" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+{% include topic-section-metadata.html
   title="Sortable icon"
   heading_level=3
   phase="live"

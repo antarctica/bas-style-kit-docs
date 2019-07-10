@@ -8,11 +8,13 @@ sections:
   -
     title: Overview
   -
-    title: Site development notice
-  -
     title: Uses
   -
-    title: Basic
+    title: How it works
+  -
+    title: Site development notice
+  -
+    title: Standard
 ---
 
 {% include topic-section-metadata.html
@@ -22,13 +24,9 @@ sections:
 
 The standard header pattern gives users important information about the website they are using.
 
-This information includes:
-
-* a notice about the use of cookies, if they are used
-* the name of the website
-* primary navigation for the website
-* links to other important BAS websites
-* a notice about whether the website is in alpha or beta
+If you are using one of the Style Kit's
+[themes or templates]({{ 'start/introduction/#themes-and-templates' | prepend: site.baseurl }}){:.bsk-alert-link}, this
+pattern is included in the *Style Kit standard* layout.
 
 {% include topic-section-metadata.html
   title="Uses"
@@ -36,17 +34,6 @@ This information includes:
 %}
 
 All websites should use this pattern.
-
-{% capture alert_content %}
-If you are using one of the Style Kit's
-[themes or templates]({{ '/start/introduction/#themes-and-templates' | prepend: site.baseurl }}){:.bsk-alert-link},
-this pattern is incorporated into the `bsk--standard` layout.
-{% endcapture %}
-{% include bas-style-kit/bsk-snippet--alert.html
-  variant="success"
-  style="highlight"
-  content=alert_content
-%}
 
 When using this pattern, do:
 
@@ -72,6 +59,17 @@ cookie notice must be included if cookies are used.
   style="solid"
   content=alert_content
 %}
+
+{% include topic-section-metadata.html
+  title="How it works"
+  heading_level=2
+%}
+
+A standard header consists of:
+
+1. a notice about the use of cookies, if they are used
+2. primary navigation, including the name of the website and links to other important BAS websites
+3. a notice about whether the website is in alpha, beta or testing, if the website is in development or used for testing
 
 {% include topic-section-metadata.html
   title="Components"

@@ -557,3 +557,102 @@ alternative sizes.
     <tr><td class="highlight" colspan="3"><pre><code>{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/img/logos-symbols/ogl-symbol-inverse-transparent-256.png</code></pre></td></tr>
   </tbody>
 </table>
+
+{% include topic-section-metadata.html
+  title="Microsoft user account pictogram"
+  heading_level=2
+  phase="alpha"
+  initial_version="0.6.0"
+  included="yes"
+%}
+
+The
+[Microsoft User Account Pictogram](https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-add-branding-in-azure-ad-apps#user-account-pictogram)
+is used to help users understand that they can reuse the account they use with Office 365 or other Microsoft business
+services to sign into other websites or applications. At BAS, it indicates to users they can use their NERC Active
+Directory account.
+
+The Microsoft User Account Pictogram can be used with components such as:
+
+* [Microsoft sign-in buttons]({{ '/core/buttons/#microsoft-sign-in-button' | prepend: site.baseurl }})
+
+{% capture alert_content %}
+The Microsoft User Account Pictogram is controlled by Microsoft and may only be used to indicate where a Microsoft
+based account can be used to sign into a website or application.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="solid"
+  content=alert_content
+%}
+
+{% capture alert_content %}
+The Microsoft User Account Pictogram MUST be used in accordance to its
+[guidelines](https://docs.microsoft.com/en-us/azure/active-directory/develop/howto-add-branding-in-azure-ad-apps){: .bsk-alert-link}.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="warning"
+  style="outline"
+  content=alert_content
+%}
+
+{% capture alert_content %}
+Contact the Web &amp; Applications Team if you have any questions around the use of the Microsoft User Account
+Pictogram.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="outline"
+  content=alert_content
+%}
+
+{% include topic-section-metadata.html
+  title="Variants (Microsoft User Account Pictogram)"
+  heading_level=3
+%}
+
+The Microsoft User Account Pictogram only has a single variant for use in all circumstances.
+
+<div class="bsk-row bsk-docs-logomark-wrapper">
+  <div class="bsk-col-12-md-6">
+    <div class="bsk-docs-logomark-transparent-background">
+      <img class="bsk-ms-pictogram bsk-docs-logomark bsk-center-block" type="image/svg+xml" width="128px" height="128px"  src="{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/img/logos-symbols/ms-pictogram.svg"/>
+    </div>
+  </div>
+  <div class="bsk-col-12-md-6">
+    <div class="bsk-docs-logomark-transparent-background-dark">
+      <img class="bsk-ms-pictogram bsk-docs-logomark bsk-center-block" type="image/svg+xml" width="128px" height="128px"  src="{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/img/logos-symbols/ms-pictogram.svg"/>
+    </div>
+  </div>
+</div>
+<p class="bsk-text-center">Default pictogram</p>
+
+{% include topic-section-metadata.html
+  title="Sizes (Microsoft User Account Pictogram)"
+  heading_level=3
+%}
+
+{% capture alert_content %}
+The Microsoft User Account Pictogram is a vector file that can automatically scale to any size required.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="outline"
+  content=alert_content
+%}
+
+<table class="bsk-table bsk-table-bordered">
+  <thead>
+    <tr>
+      <th>Variant</th>
+      <th>Size (Width &times; Height)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Default</td>
+      <td>N/A</td>
+    </tr>
+    <tr><td class="highlight" colspan="3"><pre><code>{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/img/logos-symbols/ms-pictogram.svg</code></pre></td></tr>
+  </tbody>
+</table>

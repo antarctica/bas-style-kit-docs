@@ -114,12 +114,6 @@ Add the `.bsk-btn-default` class for standard or secondary buttons. For added co
 Add the `.bsk-btn-primary` class for the main call to action.
 
 <div class="bsk-alert bsk-alert-solid bsk-alert-info bsk-alert-block bsk-alert-icon">
-  <header class="bsk-alert-heading">
-    <div class="bsk-h4">
-      <i class="far fa-fw fa-info-square bsk-alert-icon"></i>
-      This variant has meaning
-    </div>
-  </header>
   <p>To promote recognition by users, there should only be one primary button per set of actions. It should not be used
   in supporting elements such as navigation.</p>
 </div>
@@ -151,15 +145,10 @@ Add the `.bsk-btn-experimental` class for actions that are experimental or not y
 %}
 
 Add the `.bsk-btn-ms-account` class for actions that will sign users into an application or website using their NERC
-Active Directory account.
+Active Directory account. This variant incorporates the
+[Microsoft User Account Pictogram]({{ '/core/logos/#microsoft-user-account-pictogram' | prepend: site.baseurl }}).
 
 <div class="bsk-alert bsk-alert-solid bsk-alert-info bsk-alert-block bsk-alert-icon">
-  <header class="bsk-alert-heading">
-    <div class="bsk-h4">
-      <i class="far fa-fw fa-info-square bsk-alert-icon"></i>
-      This variant has meaning
-    </div>
-  </header>
   <p>To promote recognition by users, this variant should only be used where users will be signed-in using their NERC Active Directory account through Microsoft Azure (either directly or via ADFS).</p>
   <p><strong>Do not</strong> use this variant for other accounts, such as BAS legacy LDAP accounts, or direct sign-ins.</p>
 </div>
