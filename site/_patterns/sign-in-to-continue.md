@@ -3,7 +3,7 @@
 title: Sign in to continue
 menus:
   primary_patterns:
-    weight: 2
+    weight: 6
 sections:
   -
     title: Overview

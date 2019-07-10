@@ -3,7 +3,7 @@
 title: Problem with this service page
 menus:
   primary_patterns:
-    weight: 2
+    weight: 3
 sections:
   -
     title: Overview

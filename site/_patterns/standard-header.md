@@ -3,7 +3,7 @@
 title: Standard header
 menus:
   primary_patterns:
-    weight: 2
+    weight: 7
 sections:
   -
     title: Overview
