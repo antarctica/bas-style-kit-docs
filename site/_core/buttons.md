@@ -145,7 +145,8 @@ Add the `.bsk-btn-experimental` class for actions that are experimental or not y
 %}
 
 Add the `.bsk-btn-ms-account` class for actions that will sign users into an application or website using their NERC
-Active Directory account.
+Active Directory account. This variant incorporates the
+[Microsoft User Account Pictogram]({{ '/core/logos/#microsoft-user-account-pictogram' | prepend: site.baseurl }}).
 
 <div class="bsk-alert bsk-alert-solid bsk-alert-info bsk-alert-block bsk-alert-icon">
   <p>To promote recognition by users, this variant should only be used where users will be signed-in using their NERC Active Directory account through Microsoft Azure (either directly or via ADFS).</p>
