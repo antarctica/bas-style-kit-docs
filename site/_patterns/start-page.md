@@ -125,7 +125,7 @@ include the [start now]({{ '/core/icons/#start-now-icon' | prepend: site.baseurl
   </section>
   <section class="bsk-more-information">
     <div class="bsk-h3">More information</div>
-    <p>Contact the <a href="#">Example team</a> for more information and help with [website or application].</p>
+    <p>Contact the <a href="#">Example team</a> for information and help on how to use [website or application].
   </section>
 </main>
 {% endexample %}
