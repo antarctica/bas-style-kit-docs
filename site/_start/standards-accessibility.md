@@ -1,4 +1,5 @@
 ---
+item_type: Start
 sort_index: 3
 title: Standards and Accessibility
 menus:

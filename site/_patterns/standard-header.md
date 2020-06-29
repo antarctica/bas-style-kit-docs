@@ -1,4 +1,5 @@
 ---
+item_type: Pattern
 title: Standard header
 menus:
   primary_patterns:

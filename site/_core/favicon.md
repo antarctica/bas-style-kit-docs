@@ -1,4 +1,5 @@
 ---
+item_type: Core
 title: Favicon
 menus:
   primary_core:

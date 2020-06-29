@@ -1,4 +1,5 @@
 ---
+item_type: Core
 title: Icons
 menus:
   primary_core:

@@ -1,4 +1,5 @@
 ---
+item_type: Component
 title: Breadcrumb
 menus:
   primary_components:

@@ -1,4 +1,5 @@
 ---
+item_type: Core
 title: Buttons
 menus:
   primary_core:

@@ -1,4 +1,5 @@
 ---
+item_type: Interactive
 title: Collapse
 menus:
   primary_interactivity:

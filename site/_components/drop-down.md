@@ -1,4 +1,5 @@
 ---
+item_type: Component
 title: Drop down
 menus:
   primary_components:

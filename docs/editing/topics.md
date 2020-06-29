@@ -34,3 +34,21 @@ title: Foo
 
 Page content
 ```
+
+### Topic type
+
+Topics use the Item type header pattern where the item type is the name of the collection each topic belongs to.
+
+For example, a topic for an alert component in a 'components' collection would use a item_type of 'component'.
+
+Example front matter.
+
+
+```markdown
+---
+item_type: Bar
+title: Foo
+---
+
+Page content
+```

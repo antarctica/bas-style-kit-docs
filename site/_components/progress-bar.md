@@ -1,4 +1,5 @@
 ---
+item_type: Component
 title: Progress bar
 menus:
   primary_components:

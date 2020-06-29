@@ -1,4 +1,5 @@
 ---
+item_type: Component
 title: Image copyright
 menus:
   primary_components:

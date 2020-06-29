@@ -1,4 +1,5 @@
 ---
+item_type: Core
 title: Tables
 menus:
   primary_core:

@@ -1,4 +1,5 @@
 ---
+item_type: Core
 title: Layout
 menus:
   primary_core:

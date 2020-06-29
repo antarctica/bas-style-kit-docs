@@ -1,4 +1,5 @@
 ---
+item_type: Pattern
 title: Service unavailable page
 menus:
   primary_patterns:

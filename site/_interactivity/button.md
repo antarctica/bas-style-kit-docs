@@ -1,4 +1,5 @@
 ---
+item_type: Interactive
 title: Button
 menus:
   primary_interactivity:

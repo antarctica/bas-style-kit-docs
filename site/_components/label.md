@@ -1,4 +1,5 @@
 ---
+item_type: Component
 title: Label
 menus:
   primary_components:

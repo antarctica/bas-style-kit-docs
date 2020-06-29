@@ -1,4 +1,5 @@
 ---
+item_type: Component
 title: Header
 menus:
   primary_components:

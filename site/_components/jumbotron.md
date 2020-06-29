@@ -1,4 +1,5 @@
 ---
+item_type: Component
 title: Jumbotron
 menus:
   primary_components:

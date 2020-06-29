@@ -1,4 +1,5 @@
 ---
+item_type: Start
 sort_index: 4
 title: What's new
 menus:

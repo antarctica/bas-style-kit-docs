@@ -1,4 +1,5 @@
 ---
+item_type: Example
 title: Form examples
 menus:
   primary_more:

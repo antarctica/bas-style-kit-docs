@@ -1,4 +1,5 @@
 ---
+item_type: Component
 title: Navbar
 menus:
   primary_components:

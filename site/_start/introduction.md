@@ -1,4 +1,5 @@
 ---
+item_type: Start
 sort_index: 1
 title: Introduction
 menus:

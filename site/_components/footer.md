@@ -1,4 +1,5 @@
 ---
+item_type: Component
 title: Footer
 menus:
   primary_components:

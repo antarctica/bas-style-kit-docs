@@ -1,4 +1,5 @@
 ---
+item_type: Pattern
 title: Start page
 menus:
   primary_patterns:

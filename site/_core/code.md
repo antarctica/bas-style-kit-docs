@@ -1,4 +1,5 @@
 ---
+item_type: Code
 title: Code
 menus:
   primary_core:

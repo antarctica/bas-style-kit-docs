@@ -1,4 +1,5 @@
 ---
+item_type: Example
 title: Visibility examples
 menus:
   primary_more:

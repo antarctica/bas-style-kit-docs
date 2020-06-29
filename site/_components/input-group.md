@@ -1,4 +1,5 @@
 ---
+item_type: Component
 title: Input group
 menus:
   primary_components:

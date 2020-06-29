@@ -1,4 +1,5 @@
 ---
+item_type: Core
 title: Grid system
 menus:
   primary_core:

@@ -1,4 +1,5 @@
 ---
+item_type: Resource
 title: Testbed
 menus:
   primary_more:

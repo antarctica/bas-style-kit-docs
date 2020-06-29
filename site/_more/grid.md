@@ -1,4 +1,5 @@
 ---
+item_type: Example
 title: Grid system examples
 menus:
   primary_more:

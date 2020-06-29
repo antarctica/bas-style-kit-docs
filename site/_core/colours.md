@@ -1,4 +1,5 @@
 ---
+item_type: Core
 title: Colours
 menus:
   primary_core:

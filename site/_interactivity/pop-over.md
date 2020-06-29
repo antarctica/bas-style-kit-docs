@@ -1,4 +1,5 @@
 ---
+item_type: Interactive
 title: Pop-Over
 menus:
   primary_interactivity:

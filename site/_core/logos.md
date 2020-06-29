@@ -1,4 +1,5 @@
 ---
+item_type: Core
 title: Logos
 menus:
   primary_core:

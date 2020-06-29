@@ -1,4 +1,5 @@
 ---
+item_type: Pattern
 title: Page not found page
 menus:
   primary_patterns:

@@ -1,4 +1,5 @@
 ---
+item_type: Interactive
 title: Navigation
 menus:
   primary_interactivity:

@@ -1,4 +1,5 @@
 ---
+item_type: Component
 title: Responsive embed
 menus:
   primary_components:

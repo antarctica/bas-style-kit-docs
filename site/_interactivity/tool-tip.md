@@ -1,4 +1,5 @@
 ---
+item_type: Interactive
 title: Tool-Tip
 menus:
   primary_interactivity:

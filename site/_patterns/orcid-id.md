@@ -1,4 +1,5 @@
 ---
+item_type: Pattern
 title: ORCID iD
 menus:
   primary_patterns:

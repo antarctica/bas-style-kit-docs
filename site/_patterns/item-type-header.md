@@ -1,4 +1,5 @@
 ---
+item_type: Pattern
 title: Item type header
 menus:
   primary_patterns:
@@ -28,6 +29,10 @@ where a page is about an individual.
 Use this pattern when:
 
 * the page is about a single subject, such as a dataset or person
+
+Use this pattern, do:
+
+* use the singular term for the type or kind of thing (e.g. 'person' not 'people')
 
 When using this pattern, do not:
 

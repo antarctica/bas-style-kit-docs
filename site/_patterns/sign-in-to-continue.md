@@ -1,4 +1,5 @@
 ---
+item_type: Pattern
 title: Sign in to continue
 menus:
   primary_patterns:

@@ -1,4 +1,5 @@
 ---
+item_type: Component
 title: Button group
 menus:
   primary_components:

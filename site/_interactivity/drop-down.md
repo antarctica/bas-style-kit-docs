@@ -1,4 +1,5 @@
 ---
+item_type: Interactive
 title: Drop-Down
 menus:
   primary_interactivity:

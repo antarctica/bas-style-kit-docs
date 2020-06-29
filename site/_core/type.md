@@ -1,4 +1,5 @@
 ---
+item_type: Core
 title: Typography
 menus:
   primary_core:

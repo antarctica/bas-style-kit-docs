@@ -1,4 +1,5 @@
 ---
+item_type: Core
 title: Reboot
 menus:
   primary_core:

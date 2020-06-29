@@ -1,4 +1,5 @@
 ---
+item_type: Component
 title: Media object
 menus:
   primary_components:

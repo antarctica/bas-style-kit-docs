@@ -1,4 +1,5 @@
 ---
+item_type: Core
 title: Forms
 menus:
   primary_core:

@@ -1,4 +1,5 @@
 ---
+item_type: Interactive
 title: Cookie Notice
 menus:
   primary_interactivity:

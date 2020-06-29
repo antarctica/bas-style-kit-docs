@@ -1,4 +1,5 @@
 ---
+item_type: Interactive
 title: Transition
 menus:
   primary_interactivity:

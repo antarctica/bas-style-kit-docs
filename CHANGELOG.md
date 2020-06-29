@@ -20,6 +20,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * Standard header pattern
 * Start page pattern
 * Sign in to continue pattern
+* Topics updated to implement item type header pattern
 
 ### Fixed
 

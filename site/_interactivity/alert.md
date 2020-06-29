@@ -1,4 +1,5 @@
 ---
+item_type: Interactive
 title: Alert
 menus:
   primary_interactivity:

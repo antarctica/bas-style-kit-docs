@@ -1,4 +1,5 @@
 ---
+item_type: Interactive
 title: Drop-Zone
 menus:
   primary_interactivity:
