@@ -1,5 +1,4 @@
 ---
-# layout: bas-style-kit/bsk--standard
 title: Standard header
 menus:
   primary_patterns:
@@ -22,7 +21,7 @@ sections:
   heading_level=2
 %}
 
-The standard header pattern gives users important information about the website they are using.
+The standard header pattern gives users important information about the service they are using.
 
 If you are using one of the Style Kit's
 [themes or templates]({{ 'start/introduction/#themes-and-templates' | prepend: site.baseurl }}){:.bsk-alert-link}, this
@@ -45,14 +44,16 @@ When using this pattern, do:
 
 When using this pattern, do not:
 
-* omit the cookie notice alert if cookies are used by a website - this includes cookies used for analytics and session
-  management
-* link the website name to the main BAS website - this is included elsewhere
-* remove links to the main BAS website and BAS data catalogue from the 'part of British Antarctic Survey' links
+* omit the cookie notice alert if cookies are used by a website for non-essential tasks
+  * cookies for session management are essential to the operation of the service and so don't need a cookie notice
+  * cookies for analytics are not essential (though may be very useful) and so require a cookie notice
+* link the website name to the main BAS website - this is included in the 'Part of British Antarctic Survey' links
+* remove links to the main BAS website and BAS data catalogue from the 'Part of British Antarctic Survey' links
 
 {% capture alert_content %}
-[By law](https://ico.org.uk/for-organisations/guide-to-pecr/cookies-and-similar-technologies/){:.bsk-alert-link}, a
-cookie notice must be included if cookies are used.
+Under the
+[Privacy and Electronic Communications Regulations (PECR)](https://ico.org.uk/for-organisations/guide-to-pecr/cookies-and-similar-technologies/){:.bsk-alert-link}
+, a cookie notice <strong>MUST</strong> be included if non-essential cookies are used.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="warning"
@@ -67,9 +68,9 @@ cookie notice must be included if cookies are used.
 
 A standard header consists of:
 
-1. a notice about the use of cookies, if they are used
+1. a cookie notice, if non-required cookies are used
 2. primary navigation, including the name of the website and links to other important BAS websites
-3. a notice about whether the website is in alpha, beta or testing, if the website is in development or used for testing
+3. a notice about whether the website is in alpha, beta or testing, if applicable
 
 {% include topic-section-metadata.html
   title="Components"
@@ -80,10 +81,10 @@ The standard header pattern consists of:
 
 1. a [cookie alert]({{ '/components/alert/#cookie-notice-alert' | prepend: site.baseurl }})
 2. a [navbar]({{ '/components/navbar' | prepend: site.baseurl }})
-3. a [site-development-notice](#site-development-notice) to optionally indicate the state of development
+3. a [site development notice](#site-development-notice) to optionally indicate the state of development
 
 {% capture alert_content %}
-If the website is in the 'live' development phase, you don't need to include a site development notice.
+Services in the 'live' development phase don't need a site development notice but you can if you want to.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="info"
@@ -118,12 +119,21 @@ This example uses a fluid container so it does not appear broken.
 {% example html %}
 <div class="site-development-notice">
   <div class="bsk-container-fluid">
-    <span class="bsk-label bsk-label-phase-alpha">Alpha</span> This is a new website – your <a href='#'>feedback</a>
+    <span class="bsk-label bsk-label-phase-alpha">Alpha</span> This is a new website – your <a href='#' target="_blank">feedback</a>
     will help us to improve it.
     <hr />
   </div>
 </div>
 {% endexample %}
+
+{% capture alert_content %}
+It's strongly recommended to open feedback links in a new tab so users don't loose their place in a process or information they were looking at.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 {% include topic-section-metadata.html
   title="Variants"

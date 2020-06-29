@@ -1,6 +1,5 @@
 ---
-# layout: bas-style-kit/bsk--standard
-title: Item header
+title: Item type header
 menus:
   primary_patterns:
     weight: 8
@@ -18,7 +17,8 @@ sections:
   heading_level=2
 %}
 
-Use this component pattern to indicate the type of item a page is about.
+Use this component pattern to indicate what type or kind of *thing* the subject of a page is about. For example 'person'
+where a page is about an individual.
 
 {% include topic-section-metadata.html
   title="Uses"
@@ -27,7 +27,7 @@ Use this component pattern to indicate the type of item a page is about.
 
 Use this pattern when:
 
-* the page is about a single item, such as a dataset or person
+* the page is about a single subject, such as a dataset or person
 
 When using this pattern, do not:
 
@@ -41,7 +41,7 @@ When using this pattern, do not:
 {% include topic-section-metadata.html
   title="Basic"
   heading_level=3
-  phase="alpha"
+  phase="beta"
   initial_version="0.6.0"
   included="yes"
 %}

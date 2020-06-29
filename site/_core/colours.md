@@ -726,6 +726,7 @@ services.
 These colours can be used with components such as:
 
 * [social media]({{ '/components/social-media' | prepend: site.baseurl }})
+* [addresses]({{ '/core/type/#addresses' | prepend: site.baseurl }})
 
 {% capture alert_content %}
 These colours are part of the extended colour scheme and should not be used except for representing their respective
@@ -777,14 +778,6 @@ service.
         <li>ORCID</li>
         <li><code>$bsk-colour-ext-orcid-base</code></li>
         <li class="bsk-docs-hex-reference">#A6CE39</li>
-      </ul>
-    </div>
-    <div class="bsk-col-12-md-2">
-      <div class="bsk-docs-swatch-colour bsk-docs-swatch-external-service-doi-background"></div>
-      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
-        <li>DOI</li>
-        <li><code>$bsk-colour-ext-doi-base</code></li>
-        <li class="bsk-docs-hex-reference">#FCB426</li>
       </ul>
     </div>
   </div>

@@ -87,7 +87,7 @@ This example, whilst more complex, demonstrates the sort of information shown in
       <a href="#site-top">Back to top</a>
     </div>
     <div class="bsk-footer-is-something-wrong">
-      <a href="#">Is something wrong with this page?</a>
+      <a href="#" target="_blank">Is something wrong with this page?</a>
     </div>
     <div role="separator" class="bsk-footer-spacer"></div>
     <!-- main content -->
@@ -174,11 +174,20 @@ Use the `.bsk-footer-is-something-wrong` class to position and style a link to g
 <footer class="bsk-footer bsk-footer-default">
   <div class="bsk-container-fluid">
     <div class="bsk-footer-is-something-wrong">
-      <a href="#">Is something wrong with this page?</a>
+      <a href="#" target="_blank">Is something wrong with this page?</a>
     </div>
   </div>
 </footer>
 {% endexample %}
+
+{% capture alert_content %}
+It's strongly recommended to open feedback links in a new tab so users don't loose their place in a process or information they were looking at.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 {% include topic-section-metadata.html
   title="Back to top link"

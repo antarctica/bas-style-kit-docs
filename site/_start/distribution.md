@@ -16,6 +16,8 @@ sections:
   -
     title: Optional components
   -
+    title: Additional components (Non-Style Kit)
+  -
     title: SRI
   -
     title: Themes and templates
@@ -201,12 +203,24 @@ in the Style Kit and need to loaded **before** the Style Kit to function correct
       <td>jQuery</td>
       <td>3.3.1</td>
       <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/libs/jquery/3.3.1/jquery-3.3.1.min.js</code></pre></td>
+      <td><div class="bsk-label bsk-label-phase-retired">Retired</div></td>
+    </tr>
+    <tr>
+      <td>jQuery</td>
+      <td>3.5.1</td>
+      <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/libs/jquery/3.5.1/js/jquery-3.5.1.min.js</code></pre></td>
       <td><div class="bsk-label bsk-label-phase-live">Live</div></td>
     </tr>
     <tr>
       <td>js-cookie</td>
       <td>2.1.3</td>
       <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/libs/js-cookie/2.1.3/js.cookie-2.1.3.min.js</code></pre></td>
+      <td><div class="bsk-label bsk-label-phase-retired">Retired</div></td>
+    </tr>
+    <tr>
+      <td>js-cookie</td>
+      <td>2.2.1</td>
+      <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/libs/js-cookie/2.2.1/js/js.cookie-2.2.1.min.js</code></pre></td>
       <td><div class="bsk-label bsk-label-phase-live">Live</div></td>
     </tr>
   </tbody>
@@ -255,6 +269,13 @@ component where this applies.
       <td>CSS</td>
       <td>5.9.0</td>
       <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/libs/font-awesome-pro/5.9.0/css/all.min.css</code></pre></td>
+      <td><div class="bsk-label bsk-label-phase-retired">Retired</div></td>
+    </tr>
+    <tr>
+      <td><a href="https://fontawesome.com">Font Awesome Pro</a></td>
+      <td>CSS</td>
+      <td>5.13.0</td>
+      <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/libs/font-awesome-pro/5.13.0/css/all.min.css</code></pre></td>
       <td><div class="bsk-label bsk-label-phase-live">Live</div></td>
     </tr>
     <tr>
@@ -269,6 +290,83 @@ component where this applies.
       <td>JS</td>
       <td>0.9.4</td>
       <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/libs/html5sortable/0.9.4/js/html5sortable.min.js</code></pre></td>
+      <td><div class="bsk-label bsk-label-phase-live">Live</div></td>
+    </tr>
+  </tbody>
+</table>
+
+{% capture alert_content %}
+For convenience, these files are hosted by the [BAS CDN](https://cdn.web.bas.ac.uk){: .bsk-alert-link } and is the
+recommended way to include them in a website or application.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="success"
+  style="highlight"
+  content=alert_content
+%}
+
+{% capture alert_content %}
+These files are not included in other distribution types and will need to be included separately.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="danger"
+  style="highlight"
+  content=alert_content
+%}
+
+{% include topic-section-metadata.html
+  title="Additional components (Non-Style Kit)"
+  heading_level=2
+%}
+
+For convenience, there are a number of additional components that can be used in websites and applications.
+
+{% capture alert_content %}
+These components are not part of the Style Kit but are documented here for consistency.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
+
+<table class="bsk-table bsk-table-bordered">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Type</th>
+      <th>Version</th>
+      <th>URL</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><a href="http://proj4js.org">Proj4JS</a></td>
+      <td>JS</td>
+      <td>2.4.3</td>
+      <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/libs/proj4js/2.4.3/proj4-2.4.3.min.js</code></pre></td>
+      <td><div class="bsk-label bsk-label-phase-live">Live</div></td>
+    </tr>
+    <tr>
+      <td><a href="https://leafletjs.com">Leaflet</a></td>
+      <td>JS</td>
+      <td>1.6.0</td>
+      <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/libs/leaflet/1.6.0/js/leaflet.min.js</code></pre></td>
+      <td><div class="bsk-label bsk-label-phase-live">Live</div></td>
+    </tr>
+    <tr>
+      <td><a href="https://leafletjs.com">Leaflet</a></td>
+      <td>CSS</td>
+      <td>1.6.0</td>
+      <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/libs/leaflet/1.6.0/css/leaflet.min.css</code></pre></td>
+      <td><div class="bsk-label bsk-label-phase-live">Live</div></td>
+    </tr>
+    <tr>
+      <td><a href="https://kartena.github.io/Proj4Leaflet/">Proj4Leaflet</a></td>
+      <td>JS</td>
+      <td>1.0.1</td>
+      <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/libs/proj4leaflet/v1.0.1/js/proj4leaflet-1.0.1.min.js</code></pre></td>
       <td><div class="bsk-label bsk-label-phase-live">Live</div></td>
     </tr>
   </tbody>
@@ -328,9 +426,9 @@ referenced within them, such as fonts.
 | Resource                    | SRI value                                                                                                                                                                                                                 |
 | --------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `css/bas-style-kit.css`     | `{% unless jekyll.environment == 'production' %}{{ site.data.bsk_sri_base_staging['dist/css/bas-style-kit.css'] }}{% else %}{{ site.data.bsk_sri_base_production['dist/css/bas-style-kit.css'] }}{% endunless %}`         |
-| `css/bas-style-kit.js`      | `{% unless jekyll.environment == 'production' %}{{ site.data.bsk_sri_base_staging['dist/js/bas-style-kit.js'] }}{% else %}{{ site.data.bsk_sri_base_production['dist/js/bas-style-kit.js'] }}{% endunless %}`             |
+| `js/bas-style-kit.js`      | `{% unless jekyll.environment == 'production' %}{{ site.data.bsk_sri_base_staging['dist/js/bas-style-kit.js'] }}{% else %}{{ site.data.bsk_sri_base_production['dist/js/bas-style-kit.js'] }}{% endunless %}`             |
 | `css/bas-style-kit.min.css` | `{% unless jekyll.environment == 'production' %}{{ site.data.bsk_sri_base_staging['dist/css/bas-style-kit.min.css'] }}{% else %}{{ site.data.bsk_sri_base_production['dist/css/bas-style-kit.min.css'] }}{% endunless %}` |
-| `css/bas-style-kit.min.js`  | `{% unless jekyll.environment == 'production' %}{{ site.data.bsk_sri_base_staging['dist/js/bas-style-kit.min.js'] }}{% else %}{{ site.data.bsk_sri_base_production['dist/js/bas-style-kit.min.js'] }}{% endunless %}`     |
+| `js/bas-style-kit.min.js`  | `{% unless jekyll.environment == 'production' %}{{ site.data.bsk_sri_base_staging['dist/js/bas-style-kit.min.js'] }}{% else %}{{ site.data.bsk_sri_base_production['dist/js/bas-style-kit.min.js'] }}{% endunless %}`     |
 {: .bsk-table .bsk-table-hover .bsk-table-bordered }
 
 These values are also available in a machine readable format from:
@@ -342,21 +440,35 @@ https://{% unless jekyll.environment == 'production' %}{{ site.data.variables.do
 SRI values are also available for Style Kit's
 [JavaScript dependencies]({{ '/start/distribution/#javascript-dependencies' | prepend: site.baseurl }}).
 
-| Resource                                      | SRI value                                             |
-| --------------------------------------------- | ----------------------------------------------------- |
-| `libs/jquery/3.1.1/jquery-3.1.1.min.js`       | `sha256-iS/MJJubD9bocndB0h1c3VR0I4MnuhFjCLXfrW3f0b0=` |
-| `libs/jquery/3.3.1/jquery-3.3.1.min.js`       | `sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=` |
-| `libs/js-cookie/2.1.3/js.cookie-2.1.3.min.js` | `sha256-EareStqgZTnMUqLWtDkCa3SldvB8NPBY8u5C6ZUMWRc=` |
+| Resource                                         | SRI value                                             |
+| ------------------------------------------------ | ----------------------------------------------------- |
+| `libs/jquery/3.1.1/jquery-3.1.1.min.js`          | `sha256-iS/MJJubD9bocndB0h1c3VR0I4MnuhFjCLXfrW3f0b0=` |
+| `libs/jquery/3.3.1/jquery-3.3.1.min.js`          | `sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=` |
+| `libs/jquery/3.5.1/js/jquery-3.5.1.min.js`       | `sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=` |
+| `libs/js-cookie/2.1.3/js.cookie-2.1.3.min.js`    | `sha256-EareStqgZTnMUqLWtDkCa3SldvB8NPBY8u5C6ZUMWRc=` |
+| `libs/js-cookie/2.2.1/js/js.cookie-2.2.1.min.js` | `sha256-MdF5lmO7tgKSFNkLp9uc3HJfoCwW1LCQrdNyHkQji2s=` |
 {: .bsk-table .bsk-table-hover .bsk-table-bordered }
 
-SRI values are also available for Style Kit's
+SRI values are also available for the Style Kit's
 [Optional components]({{ '/start/distribution/#optional-components' | prepend: site.baseurl }}).
 
 | Resource                                           | SRI value                                             |
 | -------------------------------------------------- | ----------------------------------------------------- |
 | `libs/font-awesome-pro/5.9.0/css/all.min.css`      | `sha256-kanXop/o8YI8mee6ao6HKghRywSQiUisB6pXb6HRsWk=` |
+| `libs/font-awesome-pro/5.13.0/css/all.min.css`     | `sha256-DjbUjEiuM4tczO997cVF1zbf91BC9OzycscGGk/ZKks=` |
 | `libs/dropzone/5.5.0/js/dropzone.min.js`           | `sha256-fIn7+wa+KI2s9jjRMk/rcswRt8mf82rxIXntRYKLofg=` |
 | `libs/html5sortable/0.9.4/js/html5sortable.min.js` | `sha256-a5lgB8k+KyfXyaS32wQevsCnEm8Hz2o7cPEfthVOzLM=` |
+{: .bsk-table .bsk-table-hover .bsk-table-bordered }
+
+SRI values are also available for the non-Style Kit
+[additional components]({{ '/start/distribution/#additional-components-non-style-kit' | prepend: site.baseurl }}).
+
+| Resource                                                | SRI value                                             |
+| ------------------------------------------------------- | ----------------------------------------------------- |
+| `libs/proj4js/2.4.3/proj4-2.4.3.min.js`                 | `sha256-2ywP8gZSxQqabTEhcw+Xc3zpb/n6aAc3D0sneTtRNHw=` |
+| `libs/leaflet/1.6.0/js/leaflet.min.js`                  | `sha256-JOnsZs28NnzfQkVhxtJmqdalYkF/ejmYWXD//vFzgWA=` |
+| `libs/leaflet/1.6.0/css/leaflet.min.css`                | `sha256-UU2pVKdO1sE4T0KZHipoxQmYePb1fWMCCR09RzM616Y=` |
+| `libs/proj4leaflet/v1.0.1/js/proj4leaflet-1.0.1.min.js` | `sha256-2/tIGOC+qdPryEVGe/iMOwpH4YHC3tcam5t8aqi74KI=` |
 {: .bsk-table .bsk-table-hover .bsk-table-bordered }
 
 {% include topic-section-metadata.html

@@ -21,9 +21,8 @@ sections:
 
 Use the `.bsk-image-copyright` class as a container to identify the copyright holder of an image or other media item.
 
-Use the `.bsk-image-copyright-image` class on the image or media item.
-
-Use the `.bsk-image-copyright-attribution` class to specify the attribution information for the image or media item.
+Use the `.bsk-image-copyright-image` class on the image or media item. Use the `.bsk-image-copyright-attribution` class
+to specify the attribution information for the image or media item.
 
 {% capture alert_content %}
 This attribution can also include a link, for example to purchase an image from the BAS Image Collection
@@ -42,24 +41,22 @@ This attribution can also include a link, for example to purchase an image from 
 {% include topic-section-metadata.html
   title="Figure"
   heading_level=3
-  phase="live"
+  phase="beta"
   initial_version="0.1.0"
-  revised_version="0.3.0"
+  revised_version="0.6.0"
   included="yes"
 %}
 
 Use a <code>&lt;figure&gt;</code> element with the `.bsk-image-copyright` class containing:
-<ul>
-  <li>an <code>&lt;img&gt;</code> element with the `.bsk-image-copyright-image` class for the image</li>
-  <li>a <code>&lt;figcaption&gt;</code> element with the `.bsk-image-copyright-attribution` class for the attribution</li>
-</ul>
+
+* an <code>&lt;img&gt;</code> element with the `.bsk-image-copyright-image` class for the image
+* a <code>&lt;figcaption&gt;</code> element with the `.bsk-image-copyright-attribution` class for the attribution
 
 {% capture alert_content %}
-If a <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> don't make semantic sense use
-<code>&lt;div&gt;</code>'s instead.
+Only use <code>&lt;figure&gt;</code> and <code>&lt;figcaption&gt;</code> elements if they make semantic sense.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
-  variant="info"
+  variant="warning"
   style="highlight"
   content=alert_content
 %}

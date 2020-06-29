@@ -52,8 +52,8 @@ to add the Style Kit's JS file and its dependencies, usually just before the end
 element.
 
 {% highlight html %}
-<script src="{{ site.data.variables.cdn_base_libs }}/jquery/3.3.1/jquery-3.3.1.min.js" integrity="{{ site.data.bas_cdn_libs_sri['libs/jquery/3.3.1/jquery-3.3.1.min.js'] }}" crossorigin="anonymous"></script>
-<script src="{{ site.data.variables.cdn_base_libs }}/js-cookie/2.1.3/js.cookie-2.1.3.min.js" integrity="{{ site.data.bas_cdn_libs_sri['libs/js-cookie/2.1.3/js.cookie-2.1.3.min.js'] }}" crossorigin="anonymous"></script>
+<script src="{{ site.data.variables.cdn_base_libs }}/jquery/3.5.1/js/jquery-3.5.1.min.js" integrity="{{ site.data.bas_cdn_libs_sri['libs/jquery/3.5.1/js/jquery-3.5.1.min.js'] }}" crossorigin="anonymous"></script>
+<script src="{{ site.data.variables.cdn_base_libs }}/js-cookie/2.2.1/js/js.cookie-2.2.1.min.js" integrity="{{ site.data.bas_cdn_libs_sri['libs/js-cookie/2.2.1/js/js.cookie-2.2.1.min.js'] }}" crossorigin="anonymous"></script>
 <script src="{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/js/bas-style-kit.min.js" integrity="
   {%- unless jekyll.environment == 'production' -%}
     {{ site.data.bsk_sri_base_staging['dist/js/bas-style-kit.min.js'] }}

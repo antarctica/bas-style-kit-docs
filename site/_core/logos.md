@@ -574,7 +574,7 @@ Directory account.
 
 The Microsoft User Account Pictogram can be used with components such as:
 
-* [Microsoft sign-in buttons]({{ '/core/buttons/#microsoft-sign-in-button' | prepend: site.baseurl }})
+* [Microsoft sign in buttons]({{ '/core/buttons/#microsoft-sign-in-button' | prepend: site.baseurl }})
 
 {% capture alert_content %}
 The Microsoft User Account Pictogram is controlled by Microsoft and may only be used to indicate where a Microsoft

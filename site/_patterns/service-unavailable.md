@@ -1,5 +1,4 @@
 ---
-# layout: bas-style-kit/bsk--standard
 title: Service unavailable page
 menus:
   primary_patterns:
@@ -11,8 +10,6 @@ sections:
     title: Uses
   -
     title: Basic
-  -
-    title: Contacts
   -
     title: Availability
   -
@@ -101,30 +98,10 @@ Use the `.bsk-pattern-service-unavailable` class to create a page element contai
   `h1` header
 * a [lead paragraph]({{ '/core/type/#lead-paragraph' | prepend: site.baseurl }}) with 'You will be able to use the
 service later.'
-
-{% example html %}
-<main class="bsk-pattern-service-unavailable">
-  <h1 class="bsk-page-header">Sorry, <em>[website or application]</em> is unavailable</h1>
-  <p class="bsk-lead">You will be able to use the service later.</p>
-</main>
-{% endexample %}
-
-[Open full example](https://style-kit-testbed.web.bas.ac.uk/master/p/0002--service-unavailable-basic.html){:.bsk-btn.bsk-btn-default}
-
-{% include topic-section-metadata.html
-  title="Contacts"
-  heading_level=3
-  phase="live"
-  initial_version="0.5.0"
-  included="yes"
-%}
-
-Where known, include an email address for, or link to information on, a team that can provide information on:
-
-* when the service will be available again (i.e. the technical owner)
-* how a task can be completed, or information accessed, whilst the service is unavailable (i.e. the business owner)
-
-If there isn't a contact for a service use the [BAS IT Service Desk](mailto:servicedesk.bas.ac.uk).
+* include an email address for, or link to information on, a team that can provide information on:
+  * when the service will be available again (i.e. the technical owner)
+  * how a task can be completed, or information accessed, whilst the service is unavailable (i.e. the business owner)
+  * if there isn't a contact for a service use the [BAS IT Service Desk](mailto:servicedesk.bas.ac.uk).
 
 {% capture alert_content %}
 Try not to use specific people as contacts, as they may be on holiday or change role.
@@ -152,7 +129,7 @@ Try not to use specific people as contacts, as they may be on holiday or change 
 </main>
 {% endexample %}
 
-[Open full example](https://style-kit-testbed.web.bas.ac.uk/master/p/0003--service-unavailable-contact.html){:.bsk-btn.bsk-btn-default}
+[Open full example](https://style-kit-testbed.web.bas.ac.uk/master/p/0002--service-unavailable-basic.html){:.bsk-btn.bsk-btn-default}
 
 {% include topic-section-metadata.html
   title="Availability"

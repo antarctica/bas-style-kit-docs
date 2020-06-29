@@ -9,13 +9,9 @@ sections:
   -
     title: Font Awesome
   -
-    title: Academicons
-  -
     title: Close icon
   -
-    title: Standard contextual icons
-  -
-    title: Development phase icons
+    title: Conventional icons
 ---
 
 {% include topic-section-metadata.html
@@ -31,7 +27,8 @@ The Style Kit uses some basic icons for drop-down menus and closing alerts only.
 an external icon family alongside the Style Kit.
 
 For general use, the [Font Awesome]({{ '/core/icons/#font-awesome' | prepend: site.baseurl }}) icon family is
-recommended, with some specific icons recommended for consistency. Other families are available for more specialist needs.
+recommended, with some specific icons recommended for consistency. Other families are available for more specialist
+needs.
 
 {% capture alert_content %}
 Icons should be used to enhance rather than replace other content, unless it is clearer or more familiar for users.
@@ -94,28 +91,6 @@ include it.
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="info"
   style="outline"
-  content=alert_content
-%}
-
-{% include topic-section-metadata.html
-  title="Academicons"
-  heading_level=3
-  phase="alpha"
-  initial_version="0.6.0"
-  included="yes"
-%}
-
-[Academicons](https://jpswalsh.github.io/academicons/) is a specialist icon family designed for use in websites and applications that are, or use services that are, academic in nature.
-
-It includes a range of icons for academic services, providers and concepts, for example 'open access', ORCID iDs,
-Figshare, etc. These icons are designed to compliment general purpose icon sets, such as [Font Awesome](#font-awesome).
-
-{% capture alert_content %}
-Font Awesome is included in the core Style Kit, it does not need to be included separately.
-{% endcapture %}
-{% include bas-style-kit/bsk-snippet--alert.html
-  variant="success"
-  style="highlight"
   content=alert_content
 %}
 
@@ -253,57 +228,39 @@ indicate something that can be reordered, such as the
 {% include topic-section-metadata.html
   title="ORCID iD icon"
   heading_level=3
-  phase="alpha"
+  phase="beta"
   initial_version="0.6.0"
 %}
 
-Use `.ai.ai-orcid`, from the [academicons]({{ '/core/icons#academicons' | prepend: site.baseurl }}) icon family, for
+Use `.fab.fa-orcid`, from the [Font Awesome]({{ '/core/icons#font-awesome' | prepend: site.baseurl }}) icon family, for
 ORCID iDs.
 
 {% capture alert_content %}
-It is recommended to use the
-[external service colours]({{ '/core/colours/#external-service-colours' | prepend: site.baseurl }}){: .bsk-alert-link }
-with this icon.
+ORCID iD must be displayed according to
+[ORCID Brand Guidelines](https://orcid.org/trademark-and-id-display-guidelines){: .bsk-alert-link }.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
-  variant="info"
-  style="outline"
+  variant="warning"
+  style="solid"
   content=alert_content
 %}
 
 <div class="bsk-docs-icons-wrapper">
   <div class="bsk-row">
     <div class="bsk-col-12-md-3">
-      <div class="bsk-docs-icon"><i class="fa-fw fa-4x ai ai-orcid" aria-hidden="true"></i></div>
+      <div class="bsk-docs-icon"><i class="fa-fw fa-4x fab fa-orcid" aria-hidden="true"></i></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
-        <li>Ocrid</li>
-        <li class="bsk-docs-icon-reference">ai ai-orcid</li>
-        <li><code>&lt;i class="fa-fw ai ai-orcid" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
-      </ul>
-    </div>
-    <div class="bsk-col-12-md-3">
-      <div class="bsk-docs-icon"><i class="fa-fw fa-4x ai ai-orcid bsk-docs-identifiers-orcid" aria-hidden="true"></i></div>
-      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
-        <li>Ocrid</li>
-        <li class="bsk-docs-icon-reference">ai ai-orcid</li>
-        <li><code>&lt;i class="fa-fw ai ai-orcid" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+        <li>ORCID iD</li>
+        <li class="bsk-docs-icon-reference">fab fa-orcid</li>
+        <li><code>&lt;i class="fa-fw fab fa-orcid" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
   </div>
 </div>
 
-{% include topic-section-metadata.html
-  title="DOI icon"
-  heading_level=3
-  phase="alpha"
-  initial_version="0.6.0"
-%}
-
-Use `.ai.ai-doi`, from the [academicons]({{ '/core/icons#academicons' | prepend: site.baseurl }}) icon family, for DOIs.
-
 {% capture alert_content %}
-It is recommended to use the
-[external service colours]({{ '/core/colours/#external-service-colours' | prepend: site.baseurl }}){: .bsk-alert-link }
+It is recommended to use the relevant
+[external service colour]({{ '/core/colours/#external-service-colours' | prepend: site.baseurl }}){: .bsk-alert-link }
 with this icon.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
@@ -315,19 +272,11 @@ with this icon.
 <div class="bsk-docs-icons-wrapper">
   <div class="bsk-row">
     <div class="bsk-col-12-md-3">
-      <div class="bsk-docs-icon"><i class="fa-fw fa-4x ai ai-doi" aria-hidden="true"></i></div>
+      <div class="bsk-docs-icon"><i class="fa-fw fa-4x fab fa-orcid bsk-docs-identifiers-orcid" aria-hidden="true"></i></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
-        <li>Doi</li>
-        <li class="bsk-docs-icon-reference">ai ai-doi</li>
-        <li><code>&lt;i class="fa-fw ai ai-doi" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
-      </ul>
-    </div>
-    <div class="bsk-col-12-md-3">
-      <div class="bsk-docs-icon"><i class="fa-fw fa-4x ai ai-doi bsk-docs-identifiers-doi" aria-hidden="true"></i></div>
-      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
-        <li>Doi</li>
-        <li class="bsk-docs-icon-reference">ai ai-doi</li>
-        <li><code>&lt;i class="fa-fw ai ai-doi" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+        <li>ORCID iD</li>
+        <li class="bsk-docs-icon-reference">fab fa-orcid</li>
+        <li><code>&lt;i class="fa-fw fab fa-orcid" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
   </div>

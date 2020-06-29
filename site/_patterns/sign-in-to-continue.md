@@ -1,5 +1,4 @@
 ---
-# layout: bas-style-kit/bsk--standard
 title: Sign in to continue
 menus:
   primary_patterns:
@@ -34,8 +33,8 @@ page pattern is available as a special layout or view.
 
 Use this pattern where a user's identity is needed to complete a task or process.
 
-This pattern is intended to require users to sign-in when they have to, rather than as an initial step that isn't
-needed. For example, an application may allow anyone to view items, but only some users to manage them.
+This pattern is intended to require users to sign in when they have to, rather than as an initial step that isn't always
+needed. For example, you may need to sign in to manage items but not to view them.
 
 When using this pattern, do not:
 
@@ -73,11 +72,11 @@ Use the `.bsk-pattern-sign-in` class to create a page element containing:
   header
 * a lead paragraph using `.bsk-lead` with 'We need to check you are allowed to use this part of this service.'
 * a section with the `.bsk-call-to-action` class, containing:
-  * a [Microsoft sign-in button]({{ '/core/buttons/#microsoft-sign-in-button' | prepend: site.baseurl }}) with 'Sign in
+  * a [Microsoft sign in button]({{ '/core/buttons/#microsoft-sign-in-button' | prepend: site.baseurl }}) with 'Sign in
     to Continue'
 * a section with the `.bsk-sign-in-information` class, containing:
-  * a description of the account users need to sign-in with
-  * a point of contact for a service
+  * a description of the account users need to sign in with
+  * a point of contact for the service
   * a point of contact if users have problems signing in
 
 {% example html %}

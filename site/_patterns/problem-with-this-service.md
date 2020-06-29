@@ -1,5 +1,4 @@
 ---
-# layout: bas-style-kit/bsk--standard
 title: Problem with this service page
 menus:
   primary_patterns:
@@ -11,8 +10,6 @@ sections:
     title: Uses
   -
     title: Basic
-  -
-    title: Contacts
   -
     title: Alternative
 ---
@@ -95,30 +92,10 @@ Use the `.bsk-pattern-problem-with-service` class to create a page element conta
 * a [page header]({{ '/components/page-header' | prepend: site.baseurl }}) with 'Sorry, there is a problem with this
 service' as a `h1` header
 * a [lead paragraph]({{ '/core/type/#lead-paragraph' | prepend: site.baseurl }}) with 'Try again later.'
-
-{% example html %}
-<main class="bsk-pattern-problem-with-service">
-  <h1 class="bsk-page-header">Sorry, there is a problem with this service</h1>
-  <p class="bsk-lead">Try again later.</p>
-</main>
-{% endexample %}
-
-[Open full example](https://style-kit-testbed.web.bas.ac.uk/master/p/0009--problem-with-service-basic.html){:.bsk-btn.bsk-btn-default}
-
-{% include topic-section-metadata.html
-  title="Contacts"
-  heading_level=3
-  phase="live"
-  initial_version="0.5.0"
-  included="yes"
-%}
-
-Where known, include an email address for, or link to information on, a team that can provide information on:
-
-* when the service will be available again (i.e. the technical owner)
-* how a task can be completed, or information accessed, whilst the service is unavailable (i.e. the business owner)
-
-If there isn't a contact for a service use the [BAS IT Service Desk](mailto:servicedesk.bas.ac.uk).
+* an email address for, or link to information on, a team that can provide information on:
+  * when the service will be available again (i.e. the technical owner)
+  * how a task can be completed, or information accessed, whilst the service is unavailable (i.e. the business owner)
+  * if there isn't a contact for a service use the [BAS IT Service Desk](mailto:servicedesk.bas.ac.uk).
 
 {% capture alert_content %}
 Try not to use specific people as contacts, as they may be on holiday or change role.
@@ -147,6 +124,8 @@ Indicate whether users should contact someone to report errors, or if this happe
 </main>
 {% endexample %}
 
+[Open full example](https://style-kit-testbed.web.bas.ac.uk/master/p/0011--problem-with-service-alternative.html){:.bsk-btn.bsk-btn-default}
+
 {% example html %}
 <main class="bsk-pattern-problem-with-service">
   <h1 class="bsk-page-header">Sorry, there is a problem with this service</h1>
@@ -166,8 +145,6 @@ Indicate whether users should contact someone to report errors, or if this happe
   <p>Contact the <a href="https://www.bas.ac.uk/team/operational-teams/operational-delivery/field-planning-science-support/">Polar Operations Support Team</a> if you need to check your travel arrangements.</p>
 </main>
 {% endexample %}
-
-[Open full example](https://style-kit-testbed.web.bas.ac.uk/master/p/0010--problem-with-service-contact.html){:.bsk-btn.bsk-btn-default}
 
 {% include topic-section-metadata.html
   title="Alternative"
@@ -198,5 +175,3 @@ Alternatives may include off-line information such as printed information.
   <p>Contact the <a href="mailto:servicedesk.bas.ac.uk">BAS IT Service Desk</a> for more information.</p>
 </main>
 {% endexample %}
-
-[Open full example](https://style-kit-testbed.web.bas.ac.uk/master/p/0011--problem-with-service-alternative.html){:.bsk-btn.bsk-btn-default}
