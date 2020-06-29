@@ -143,7 +143,7 @@ It's strongly recommended to open feedback links in a new tab so users don't loo
 {% include topic-section-metadata.html
   title="Standard"
   heading_level=3
-  phase="alpha"
+  phase="beta"
   initial_version="0.6.0"
   included="yes"
 %}

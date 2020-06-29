@@ -561,7 +561,7 @@ alternative sizes.
 {% include topic-section-metadata.html
   title="Microsoft user account pictogram"
   heading_level=2
-  phase="alpha"
+  phase="beta"
   initial_version="0.6.0"
   included="yes"
 %}

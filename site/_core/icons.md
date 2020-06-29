@@ -178,7 +178,7 @@ indicate something that is experimental or a work in progress.
 {% include topic-section-metadata.html
   title="Start now icon"
   heading_level=3
-  phase="alpha"
+  phase="beta"
   initial_version="0.6.0"
   included="no"
 %}
@@ -285,7 +285,7 @@ with this icon.
 {% include topic-section-metadata.html
   title="Standard contextual icons"
   heading_level=3
-  phase="alpha"
+  phase="beta"
   initial_version="0.1.0"
   revised_version="0.6.0"
   included="no"

@@ -42,7 +42,7 @@ spacing.
 {% include topic-section-metadata.html
   title="Stacked page header"
   heading_level=3
-  phase="alpha"
+  phase="beta"
   initial_version="0.6.0"
   included="yes"
 %}
@@ -52,7 +52,7 @@ page header.
 
 {% capture alert_content %}
 Stacked page headers are used in the
-[item header]({{ '/patterns/item-header' | prepend: site.baseurl }}){: .bsk-alert-link } pattern.
+[item type header]({{ '/patterns/item-type-header' | prepend: site.baseurl }}){: .bsk-alert-link } pattern.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="info"

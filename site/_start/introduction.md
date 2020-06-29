@@ -20,14 +20,14 @@ sections:
   heading_level=2
 %}
 
-The BAS Style Kit is based on [Bootstrap](https://www.getbootstrap.com), the worlds most popular CSS framework.
+The BAS Style Kit is based on [Bootstrap](https://www.getbootstrap.com), the world's most popular CSS framework.
 The Style Kit uses a customised version of Bootstrap to follow our design choices (such as not using rounded corners).
 
 The Style Kit is based on version *3.3.7* of the official [Bootstrap Sass port](https://github.com/twbs/bootstrap-sass).
 
 As well as Bootstrap, the BAS Style Kit takes influences from:
 
-* the [Government Digital Service (GDS)](https://gds.blog.gov.uk/about/)
+* the [Government Design System](https://design-system.service.gov.uk)
 * other frameworks, organisations and sources of best practice
 
 {% include topic-section-metadata.html
@@ -151,7 +151,7 @@ look consistent with it. The Style Kit's grid system for example cannot be used 
 %}
 
 To avoid clashes with other CSS styles and to provide a more uniform and predictable structure, all classes within the
-Style Kit use a *Global Prefix* of `bsk-`.
+Style Kit use a `bsk-` prefix.
 
 {% capture alert_content %}
 I.e. use `.bsk-btn .bsk-btn-default` not `.btn .btn-default`.

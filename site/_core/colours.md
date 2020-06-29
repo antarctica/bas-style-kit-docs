@@ -715,8 +715,9 @@ This series is incomplete. If you need a colour for an undefined location check 
 {% include topic-section-metadata.html
   title="External service colours"
   heading_level=2
-  phase="live"
+  phase="beta"
   initial_version="0.1.0"
+  revised_version="0.6.0"
   included="yes"
 %}
 

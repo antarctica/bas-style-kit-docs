@@ -65,7 +65,7 @@ These elements are fully supported:
 {% include topic-section-metadata.html
   title="Default thumbnail"
   heading_level=3
-  phase="alpha"
+  phase="beta"
   initial_version="0.1.0"
   revised_version="0.6.0"
   included="yes"
@@ -91,7 +91,7 @@ Add the `.bsk-thumbnail-default` class for standard thumbnails.
 {% include topic-section-metadata.html
   title="Inverse thumbnail"
   heading_level=3
-  phase="alpha"
+  phase="beta"
   initial_version="0.1.0"
   revised_version="0.6.0"
   included="yes"

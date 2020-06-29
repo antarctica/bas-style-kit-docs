@@ -28,16 +28,15 @@ sections:
   heading_level=2
 %}
 
-The Style Kit consists of a CSS file and optionally a JavaScript file for the Style Kit's
-[Interactive components]({{ '/interactivity' | prepend: site.baseurl }}).
+The Style Kit's CSS and optional JavaScript are available as *minified* or *un-minified* versions:
 
-These files are available in two forms:
+* **un-minified** files are intended for testing, they include whitespace and full variables names but are larger
+* **minified** files are intended for production, things like whitespace are removed to reduce the file size
 
-* **default/normal** - designed for testing and human readable with whitespace and full variable names
-* **minified** - is intended for production use with optimisations to reduce the file size (such as no whitespace)
+You only need to include one or the other not both. If in doubt, use the **minified** versions.
 
 {% capture alert_content %}
-Both forms work exactly the same way and include all of the Style Kit, the only difference is their readability by humans
+Functionally both versions work the same way, the difference is the overall file size and readability by humans.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="info"
@@ -79,13 +78,13 @@ Both forms work exactly the same way and include all of the Style Kit, the only 
       </td>
     </tr>
     <tr>
-      <td>CSS (minified)</td>
+      <td>CSS (minified) <br> <strong>recommended</strong></td>
       <td class="highlight">
         <pre><code>{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/css/bas-style-kit.min.css</code></pre>
       </td>
     </tr>
     <tr>
-      <td>JavaScript (minified)</td>
+      <td>JavaScript (minified) <br> <strong>recommended</strong></td>
       <td class="highlight">
         <pre><code>{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/js/bas-style-kit.min.js</code></pre>
       </td>
@@ -105,7 +104,7 @@ include the Style Kit in a website or application.
 
 {% capture alert_content %}
 If the BAS Style Kit JavaScript files are included, you will also need to include additional
-[JavaScript dependencies](#javascript-dependencies){: .bsk-alert-link }.
+[JavaScript dependencies](#javascript-dependencies){: .bsk-alert-link } too.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="warning"
@@ -146,7 +145,7 @@ The Style Kit will load these fonts from the [BAS CDN](https://cdn.web.bas.ac.uk
 * `.eps`
 
 {% capture alert_content %}
-EPS logos should only be used when advised by the BAS Communications Team
+EPS logos should only be used when advised by the BAS Communications Team.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="warning"
@@ -180,8 +179,7 @@ This section only applies if you are using the BAS Style Kit's
   content=alert_content
 %}
 
-Each component will list the libraries it depends upon (in the dependencies section). These libraries are not included
-in the Style Kit and need to loaded **before** the Style Kit to function correctly.
+These dependencies need to be loaded **before** the Style Kit for it to function correctly.
 
 <table class="bsk-table bsk-table-bordered">
   <thead>
@@ -189,39 +187,18 @@ in the Style Kit and need to loaded **before** the Style Kit to function correct
       <th>Name</th>
       <th>Version</th>
       <th>URL</th>
-      <th>Status</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td>jQuery</td>
-      <td>3.1.1</td>
-      <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/libs/jquery/3.1.1/jquery-3.1.1.min.js</code></pre></td>
-      <td><div class="bsk-label bsk-label-phase-retired">Retired</div></td>
-    </tr>
-    <tr>
-      <td>jQuery</td>
-      <td>3.3.1</td>
-      <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/libs/jquery/3.3.1/jquery-3.3.1.min.js</code></pre></td>
-      <td><div class="bsk-label bsk-label-phase-retired">Retired</div></td>
-    </tr>
-    <tr>
-      <td>jQuery</td>
       <td>3.5.1</td>
       <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/libs/jquery/3.5.1/js/jquery-3.5.1.min.js</code></pre></td>
-      <td><div class="bsk-label bsk-label-phase-live">Live</div></td>
-    </tr>
-    <tr>
-      <td>js-cookie</td>
-      <td>2.1.3</td>
-      <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/libs/js-cookie/2.1.3/js.cookie-2.1.3.min.js</code></pre></td>
-      <td><div class="bsk-label bsk-label-phase-retired">Retired</div></td>
     </tr>
     <tr>
       <td>js-cookie</td>
       <td>2.2.1</td>
       <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/libs/js-cookie/2.2.1/js/js.cookie-2.2.1.min.js</code></pre></td>
-      <td><div class="bsk-label bsk-label-phase-live">Live</div></td>
     </tr>
   </tbody>
 </table>
@@ -260,37 +237,27 @@ component where this applies.
       <th>Type</th>
       <th>Version</th>
       <th>URL</th>
-      <th>Status</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td><a href="https://fontawesome.com">Font Awesome Pro</a></td>
       <td>CSS</td>
-      <td>5.9.0</td>
-      <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/libs/font-awesome-pro/5.9.0/css/all.min.css</code></pre></td>
-      <td><div class="bsk-label bsk-label-phase-retired">Retired</div></td>
-    </tr>
-    <tr>
-      <td><a href="https://fontawesome.com">Font Awesome Pro</a></td>
-      <td>CSS</td>
       <td>5.13.0</td>
       <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/libs/font-awesome-pro/5.13.0/css/all.min.css</code></pre></td>
-      <td><div class="bsk-label bsk-label-phase-live">Live</div></td>
     </tr>
     <tr>
       <td><a href="https://www.dropzonejs.com">Dropzone.js</a></td>
       <td>JS</td>
       <td>5.5.0</td>
       <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/libs/dropzone/5.5.0/js/dropzone.min.js</code></pre></td>
-      <td><div class="bsk-label bsk-label-phase-live">Live</div></td>
     </tr>
     <tr>
       <td><a href="https://lukasoppermann.github.io/html5sortable/index.html">HTML5 Sortable</a></td>
       <td>JS</td>
       <td>0.9.4</td>
-      <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/libs/html5sortable/0.9.4/js/html5sortable.min.js</code></pre></td>
-      <td><div class="bsk-label bsk-label-phase-live">Live</div></td>
+      <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/libs/html5sortable/0.9.4/js/html5sortable.min.js</code></pre>
+    </td>
     </tr>
   </tbody>
 </table>
@@ -337,7 +304,6 @@ These components are not part of the Style Kit but are documented here for consi
       <th>Type</th>
       <th>Version</th>
       <th>URL</th>
-      <th>Status</th>
     </tr>
   </thead>
   <tbody>
@@ -346,28 +312,24 @@ These components are not part of the Style Kit but are documented here for consi
       <td>JS</td>
       <td>2.4.3</td>
       <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/libs/proj4js/2.4.3/proj4-2.4.3.min.js</code></pre></td>
-      <td><div class="bsk-label bsk-label-phase-live">Live</div></td>
     </tr>
     <tr>
       <td><a href="https://leafletjs.com">Leaflet</a></td>
       <td>JS</td>
       <td>1.6.0</td>
       <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/libs/leaflet/1.6.0/js/leaflet.min.js</code></pre></td>
-      <td><div class="bsk-label bsk-label-phase-live">Live</div></td>
     </tr>
     <tr>
       <td><a href="https://leafletjs.com">Leaflet</a></td>
       <td>CSS</td>
       <td>1.6.0</td>
       <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/libs/leaflet/1.6.0/css/leaflet.min.css</code></pre></td>
-      <td><div class="bsk-label bsk-label-phase-live">Live</div></td>
     </tr>
     <tr>
       <td><a href="https://kartena.github.io/Proj4Leaflet/">Proj4Leaflet</a></td>
       <td>JS</td>
       <td>1.0.1</td>
       <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/libs/proj4leaflet/v1.0.1/js/proj4leaflet-1.0.1.min.js</code></pre></td>
-      <td><div class="bsk-label bsk-label-phase-live">Live</div></td>
     </tr>
   </tbody>
 </table>

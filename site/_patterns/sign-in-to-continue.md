@@ -60,7 +60,7 @@ Try not to use specific people as contacts, as they may be on holiday or change 
 {% include topic-section-metadata.html
   title="Basic"
   heading_level=3
-  phase="alpha"
+  phase="beta"
   initial_version="0.6.0"
   included="yes"
 %}

@@ -22,7 +22,7 @@ automatically collapse and be hidden.
 
 {% capture alert_content %}
 Badges are only intended for numbers. For more general purposes, use
-[Label's]({{ '/components/label' | prepend: site.baseurl }}){: .bsk-alert-link }.
+[Labels]({{ '/components/label' | prepend: site.baseurl }}){: .bsk-alert-link }.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="info"
