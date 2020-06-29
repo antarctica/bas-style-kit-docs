@@ -32,6 +32,10 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * Tweaking EPS logo warning, as requested by communications
 * Changing style of conventional success icon
 
+### Removed
+
+* Synk dependency testing due to incompatibilities with dependencies
+
 ## v1.5.0 - 29/11/2018
 
 ### Removed
