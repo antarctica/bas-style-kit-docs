@@ -292,15 +292,6 @@ with this icon.
   </div>
 </div>
 
-{% include topic-section-metadata.html
-  title="DOI icon"
-  heading_level=3
-  phase="alpha"
-  initial_version="0.6.0"
-%}
-
-Use `.ai.ai-doi`, from the [academicons]({{ '/core/icons#academicons' | prepend: site.baseurl }}) icon family, for DOIs.
-
 {% capture alert_content %}
 It is recommended to use the
 [external service colours]({{ '/core/colours/#external-service-colours' | prepend: site.baseurl }}){: .bsk-alert-link }
@@ -315,19 +306,7 @@ with this icon.
 <div class="bsk-docs-icons-wrapper">
   <div class="bsk-row">
     <div class="bsk-col-12-md-3">
-      <div class="bsk-docs-icon"><i class="fa-fw fa-4x ai ai-doi" aria-hidden="true"></i></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
-        <li>Doi</li>
-        <li class="bsk-docs-icon-reference">ai ai-doi</li>
-        <li><code>&lt;i class="fa-fw ai ai-doi" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
-      </ul>
-    </div>
-    <div class="bsk-col-12-md-3">
-      <div class="bsk-docs-icon"><i class="fa-fw fa-4x ai ai-doi bsk-docs-identifiers-doi" aria-hidden="true"></i></div>
-      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
-        <li>Doi</li>
-        <li class="bsk-docs-icon-reference">ai ai-doi</li>
-        <li><code>&lt;i class="fa-fw ai ai-doi" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
   </div>
