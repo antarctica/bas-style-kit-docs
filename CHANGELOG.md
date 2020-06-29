@@ -23,6 +23,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 ### Fixed
 
 * Link to Zip downloads
+* Link to NPM package
 
 ### Changed
 
