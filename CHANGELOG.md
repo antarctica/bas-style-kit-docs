@@ -14,6 +14,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * Missing documentation for Style Kit version plugin
 * Missing documentation for Sortable component
 * Missing documentation for muted text variant
+* Links and SRI values for non-Style Kit additional components (Leaflet and related projection libraries)
 * Guidance for not using tables as item grids
 * Item header pattern and stacked page header component
 * Standard header pattern
