@@ -9,8 +9,6 @@ sections:
   -
     title: Font Awesome
   -
-    title: Academicons
-  -
     title: Close icon
   -
     title: Standard contextual icons
@@ -94,28 +92,6 @@ include it.
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="info"
   style="outline"
-  content=alert_content
-%}
-
-{% include topic-section-metadata.html
-  title="Academicons"
-  heading_level=3
-  phase="alpha"
-  initial_version="0.6.0"
-  included="yes"
-%}
-
-[Academicons](https://jpswalsh.github.io/academicons/) is a specialist icon family designed for use in websites and applications that are, or use services that are, academic in nature.
-
-It includes a range of icons for academic services, providers and concepts, for example 'open access', ORCID iDs,
-Figshare, etc. These icons are designed to compliment general purpose icon sets, such as [Font Awesome](#font-awesome).
-
-{% capture alert_content %}
-Font Awesome is included in the core Style Kit, it does not need to be included separately.
-{% endcapture %}
-{% include bas-style-kit/bsk-snippet--alert.html
-  variant="success"
-  style="highlight"
   content=alert_content
 %}
 
