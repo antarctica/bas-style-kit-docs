@@ -381,30 +381,43 @@ Blockquotes can be aligned right using `.bsk-blockquote-reverse`.
 {% include topic-section-metadata.html
   title="Addresses"
   heading_level=2
-  phase="live"
+  phase="beta"
   initial_version="0.1.0"
+  revised_version="0.6.0"
   included="yes"
 %}
 
 Provides formatting for addresses or contact information. Use <code>&lt;br&gt;</code> elements to preserve structure.
 
+{% capture alert_content %}
+Some common and recommended examples are shown below. More examples can be found in
+[Testbed sample #0036](https://style-kit-testbed.web.bas.ac.uk/master/s/0036--address.html){:.bsk-alert-link}.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
+
 {% example html %}
 <address>
+  <strong>Mapping and Geographic Information Centre (MAGIC)</strong><br>
   <strong>British Antarctic Survey</strong><br>
   High Cross, Madingley Road<br>
   Cambridge<br>
   CB3 0ET<br>
   United Kingdom<br>
-  <i class="fas fa-fw fa-at" aria-hidden="true"></i> <abbr title="Email address">Email:</abbr> info@bas.ac.uk<br>
-  <i class="fas fa-fw fa-phone" aria-hidden="true"></i> <abbr title="Telephone">Tel:</abbr> +44 (0)1223 221400<br>
-  <i class="fas fa-fw fa-fax" aria-hidden="true"></i> <abbr title="Facsimile">Fax:</abbr> +44 (0)1223 362616<br>
-  <i class="fas fa-fw fa-globe" aria-hidden="true"></i> <abbr title="Website">Web:</abbr> <a href="https://www.bas.ac.uk">www.bas.ac.uk</a>
+  <i class="far fa-fw fa-at" aria-hidden="true"></i> <abbr title="Email address">Email:</abbr> magic@bas.ac.uk<br>
+  <i class="far fa-fw fa-phone-rotary" aria-hidden="true"></i> <abbr title="Telephone">Tel:</abbr> +44 (0)1223 221400<br>
+  <i class="far fa-fw fa-globe" aria-hidden="true"></i> <abbr title="Website">Web:</abbr> <a href="https://www.bas.ac.uk/team/magic">www.bas.ac.uk/team/magic</a>
 </address>
 
 <address>
   <strong>Connie Watson</strong><br>
-  Atmospheric Chemist<br>
-  <i class="fas fa-fw fa-at" aria-hidden="true"></i> <abbr title="Email address">Email:</abbr> <a href="mailto:#">conwat@bas.com</a>
+  <strong><em>Atmospheric Chemist</em></strong><br>
+  <strong>British Antarctic Survey</strong><br>
+  <i class="far fa-fw fa-at" aria-hidden="true"></i> <abbr title="Email address">Email:</abbr> <a href="mailto:#">conwat@bas.com</a><br>
+  <i class="fab fa-fw fa-orcid bsk-orcid-id" aria-hidden="true"></i> <abbr title="ORCID iD">ORCiD:</abbr> <a href="https://sandbox.orcid.org/0000-0001-8373-6934">https://sandbox.orcid.org/0000-0001-8373-6934</a>
 </address>
 {% endexample %}
 

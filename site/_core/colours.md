@@ -726,6 +726,7 @@ services.
 These colours can be used with components such as:
 
 * [social media]({{ '/components/social-media' | prepend: site.baseurl }})
+* [addresses]({{ '/core/type/#addresses' | prepend: site.baseurl }})
 
 {% capture alert_content %}
 These colours are part of the extended colour scheme and should not be used except for representing their respective

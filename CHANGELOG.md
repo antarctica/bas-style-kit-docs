@@ -31,6 +31,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * Simplifying GitLab CI/CD config
 * Tweaking EPS logo warning, as requested by communications
 * Changing style of conventional success icon
+* Improving Address typography core component
 
 ### Removed
 
