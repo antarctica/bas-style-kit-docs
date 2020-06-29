@@ -118,12 +118,21 @@ This example uses a fluid container so it does not appear broken.
 {% example html %}
 <div class="site-development-notice">
   <div class="bsk-container-fluid">
-    <span class="bsk-label bsk-label-phase-alpha">Alpha</span> This is a new website – your <a href='#'>feedback</a>
+    <span class="bsk-label bsk-label-phase-alpha">Alpha</span> This is a new website – your <a href='#' target="_blank">feedback</a>
     will help us to improve it.
     <hr />
   </div>
 </div>
 {% endexample %}
+
+{% capture alert_content %}
+It's strongly recommended to open feedback links in a new tab so users don't loose their place in a process or information they were looking at.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
 
 {% include topic-section-metadata.html
   title="Variants"
