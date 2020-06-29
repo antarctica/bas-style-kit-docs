@@ -25,7 +25,7 @@ stages:
   - deploy
 
 image:
-  name: docker-registry.data.bas.ac.uk/web-apps/bsk/bas-style-kit-docs:2018-11-29-alpine
+  name: docker-registry.data.bas.ac.uk/web-apps/bsk/bas-style-kit-docs:2020-06-27-alpine
   entrypoint: [""]
 
 variables:

@@ -7,10 +7,10 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ### Added
 
-* Updating to Style Kit Jekyll theme 0.9.0 and Style Kit 0.6.0-alpha
 * Updating to Font Awesome 5.9.0
 * Microsoft sign-in button variant
 * ORCID iD and DOI icons
+* Updating to Style Kit Jekyll theme 0.10.0 and Style Kit 0.6.0-beta
 * Missing documentation for Style Kit version plugin
 * Missing documentaion for Sortable component
 * Guidance for not using tables as item grids
