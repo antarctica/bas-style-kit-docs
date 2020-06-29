@@ -1,4 +1,4 @@
-FROM docker-registry.data.bas.ac.uk/web-apps/infrastructure/bdi/jekyll-image:0.4.0-alpine
+FROM docker-registry.data.bas.ac.uk/web-apps/infrastructure/bdi/jekyll-image:0.5.0-alpine
 
 LABEL maintainer = "Felix Fennell <felnne@bas.ac.uk>"
 
