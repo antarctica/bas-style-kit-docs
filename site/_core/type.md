@@ -27,6 +27,8 @@ sections:
   -
     title: Horizontal rule
   -
+    title: Muted text
+  -
     title: Primary text
   -
     title: Experimental text
@@ -423,6 +425,19 @@ Use to separate content. Add the `.bsk-hr-dashed` class for an alternative style
 
 {% example html %}
 <hr class="bsk-hr-dashed" />
+{% endexample %}
+
+{% include topic-section-metadata.html
+  title="Muted text"
+  heading_level=2
+  phase="live"
+  initial_version="0.1.0"
+  included="yes"
+%}
+
+{% example html %}
+<p class="bsk-text-muted">De carne animata corpora quaeritis.</p>
+<p>De carne animata corpora quaeritis.</p>
 {% endexample %}
 
 {% include topic-section-metadata.html
