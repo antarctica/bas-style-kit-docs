@@ -1,5 +1,4 @@
 ---
-# layout: bas-style-kit/bsk--standard
 title: Start page
 menus:
   primary_patterns:
@@ -11,6 +10,8 @@ sections:
     title: Uses
   -
     title: Basic
+  -
+    title: Sign in to start
   -
     title: Before you start
 ---
@@ -50,18 +51,19 @@ When using this pattern, do:
 * include the name of the service
 * include a list of tasks the service can be used for, so that the user can check they are using the right service
 * include information on who can use a service and why, if it is restricted
-* include of list of things a user must have done or information they need access to, such as their employee number
-* include links to other relevant information about a service or the tasks it relates to
+* include a list of things a user must have done or information they need to know, such as their employee number
+* include links to other relevant information about a service such as documentation and the team that provides support
 
 When using this pattern, do not:
 
-* change the style and text of the *Start Now* button
+* change the style and text of the *Start Now* button, except where the [Sign in to start](#sign-in-to-start) variant is
+  used
 
 Where known, include an email address for, or link to information on, a team that can provide information on the
 service. If there isn't a contact for a service, use the [BAS IT Service Desk](https://servicedesk.bas.ac.uk).
 
 {% capture alert_content %}
-Try not to use specific people as contacts, as they may be on holiday or change role.
+Try not to use specific people as contacts for providing support, as they may be on holiday or change role.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="warning"
@@ -95,7 +97,7 @@ Use the `.bsk-pattern-page-start` class to create a page element containing:
     of a process or task
 * a section with the `.bsk-more-information` class, containing:
   * a `h2` header with the `.bsk-h3` class that says 'More information'
-  * a point of contact for a service
+  * a point of contact for the service
 
 {% capture alert_content %}
 If you are using the [Font Awesome icons]({{ '/core/icons/#font-awesome' | prepend: site.baseurl }}){:.bsk-alert-link},
@@ -125,7 +127,7 @@ include the [start now]({{ '/core/icons/#start-now-icon' | prepend: site.baseurl
   </section>
   <section class="bsk-more-information">
     <div class="bsk-h3">More information</div>
-    <p>Contact the <a href="#">Example team</a> for information and help on how to use [website or application].
+    <p>Contact the <a href="#">Example team</a> for information and help on how to use [website or application].</p>
   </section>
 </main>
 {% endexample %}
@@ -205,10 +207,10 @@ Where a service requires a user to sign in to start:
     can or can't use a service
 * in the 'call to action' section:
   * change the *Start Now* button to read 'Sign in to Start' and use the
-[Microsoft sign-in button variant]({{ '/core/buttons/#microsoft-sign-in-button' | prepend: site.baseurl }})
-  * add a paragraph with `.bsk-sign-in-hint.bsk-text-muted` describing the account users need to sign-in with
+[Microsoft sign in button variant]({{ '/core/buttons/#microsoft-sign-in-button' | prepend: site.baseurl }})
+  * add a paragraph with `.bsk-sign-in-hint.bsk-text-muted` describing the account users need to sign in with
 * in the 'more information' section:
-  * add a point of contact if users have problems signing in
+  * add an additional point of contact if users have problems signing in
 
 {% example html %}
 <main class="bsk-pattern-start">

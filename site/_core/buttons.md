@@ -15,7 +15,7 @@ sections:
   -
     title: Experimental button
   -
-    title: Microsoft sign-in button
+    title: Microsoft sign in button
   -
     title: Contextual colours
   -
@@ -137,9 +137,9 @@ Add the `.bsk-btn-experimental` class for actions that are experimental or not y
 {% endexample %}
 
 {% include topic-section-metadata.html
-  title="Microsoft sign-in button button"
+  title="Microsoft sign in button"
   heading_level=3
-  phase="alpha"
+  phase="beta"
   initial_version="0.6.0"
   included="yes"
 %}
@@ -149,8 +149,8 @@ Active Directory account. This variant incorporates the
 [Microsoft User Account Pictogram]({{ '/core/logos/#microsoft-user-account-pictogram' | prepend: site.baseurl }}).
 
 <div class="bsk-alert bsk-alert-solid bsk-alert-info bsk-alert-block bsk-alert-icon">
-  <p>To promote recognition by users, this variant should only be used where users will be signed-in using their NERC Active Directory account through Microsoft Azure (either directly or via ADFS).</p>
-  <p><strong>Do not</strong> use this variant for other accounts, such as BAS legacy LDAP accounts, or direct sign-ins.</p>
+  <p>To promote recognition by users, this variant <strong>MUST</strong> only be used where users will sign in using their NERC Active Directory account.</p>
+  <p>You <strong>MUST NOT</strong> use this variant for other accounts, such as BAS legacy LDAP accounts, or direct logins.</p>
 </div>
 
 {% example html %}

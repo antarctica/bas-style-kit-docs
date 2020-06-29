@@ -11,9 +11,7 @@ sections:
   -
     title: Close icon
   -
-    title: Standard contextual icons
-  -
-    title: Development phase icons
+    title: Conventional icons
 ---
 
 {% include topic-section-metadata.html
@@ -29,7 +27,8 @@ The Style Kit uses some basic icons for drop-down menus and closing alerts only.
 an external icon family alongside the Style Kit.
 
 For general use, the [Font Awesome]({{ '/core/icons/#font-awesome' | prepend: site.baseurl }}) icon family is
-recommended, with some specific icons recommended for consistency. Other families are available for more specialist needs.
+recommended, with some specific icons recommended for consistency. Other families are available for more specialist
+needs.
 
 {% capture alert_content %}
 Icons should be used to enhance rather than replace other content, unless it is clearer or more familiar for users.
@@ -237,13 +236,12 @@ Use `.fab.fa-orcid`, from the [Font Awesome]({{ '/core/icons#font-awesome' | pre
 ORCID iDs.
 
 {% capture alert_content %}
-It is recommended to use the
-[external service colours]({{ '/core/colours/#external-service-colours' | prepend: site.baseurl }}){: .bsk-alert-link }
-with this icon.
+ORCID iD must be displayed according to
+[ORCID Brand Guidelines](https://orcid.org/trademark-and-id-display-guidelines){: .bsk-alert-link }.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
-  variant="info"
-  style="outline"
+  variant="warning"
+  style="solid"
   content=alert_content
 %}
 
@@ -261,8 +259,8 @@ with this icon.
 </div>
 
 {% capture alert_content %}
-It is recommended to use the
-[external service colours]({{ '/core/colours/#external-service-colours' | prepend: site.baseurl }}){: .bsk-alert-link }
+It is recommended to use the relevant
+[external service colour]({{ '/core/colours/#external-service-colours' | prepend: site.baseurl }}){: .bsk-alert-link }
 with this icon.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html

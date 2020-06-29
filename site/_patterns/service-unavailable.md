@@ -1,5 +1,4 @@
 ---
-# layout: bas-style-kit/bsk--standard
 title: Service unavailable page
 menus:
   primary_patterns:

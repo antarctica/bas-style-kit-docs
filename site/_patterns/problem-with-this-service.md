@@ -1,5 +1,4 @@
 ---
-# layout: bas-style-kit/bsk--standard
 title: Problem with this service page
 menus:
   primary_patterns:
