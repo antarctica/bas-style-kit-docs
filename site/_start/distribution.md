@@ -121,7 +121,6 @@ If the BAS Style Kit JavaScript files are included, you will also need to includ
 [Web fonts]({{ '/core/type/#font-families' | prepend: site.baseurl }}) used by the BAS Style Kit are declared in their
 respective `@font-face` declarations in these formats:
 
-* `.eot`
 * `.ttf`
 * `.woff`
 * `.woff2`
@@ -471,7 +470,7 @@ A `.zip` archive of the Style Kit is available containing:
 * compiled CSS
 * compiled JavaScript
 * compiled and minified JavaScript
-* web fonts in `.eot`, `.ttf`, `.woff` and `.woff2` formats
+* web fonts in `.ttf`, `.woff` and `.woff2` formats
 * logos in `.png` formats
 
 {% capture alert_content %}

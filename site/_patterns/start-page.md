@@ -80,7 +80,7 @@ Try not to use specific people as contacts for providing support, as they may be
 {% include topic-section-metadata.html
   title="Basic"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.6.0"
   included="yes"
 %}
@@ -147,7 +147,7 @@ This example does not use heading elements to prevent breaking the table of cont
 {% include topic-section-metadata.html
   title="Before you start"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.6.0"
   included="yes"
 %}
@@ -196,7 +196,7 @@ This example does not use heading elements to prevent breaking the table of cont
 {% include topic-section-metadata.html
   title="Sign in to start"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.6.0"
   included="yes"
 %}

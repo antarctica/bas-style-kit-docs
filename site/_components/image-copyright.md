@@ -80,7 +80,7 @@ Optionally the attribution information can be a link.
 {% include topic-section-metadata.html
   title="Thumbnail"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.1.0"
   revised_version="0.6.0"
   included="yes"
