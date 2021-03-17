@@ -284,6 +284,29 @@ with this icon.
 </div>
 
 {% include topic-section-metadata.html
+  title="Markdown icon"
+  heading_level=3
+  phase="live"
+  initial_version="0.6.0"
+%}
+
+Use `.fab.fa-markdown`, from the [Font Awesome]({{ '/core/icons#font-awesome' | prepend: site.baseurl }}) icon family
+to indicate support for Markdown formatting.
+
+<div class="bsk-docs-icons-wrapper">
+  <div class="bsk-row">
+    <div class="bsk-col-12-md-3">
+      <div class="bsk-docs-icon"><i class="fa-fw fa-4x fab fa-markdown" aria-hidden="true"></i></div>
+      <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
+        <li>Markdown</li>
+        <li class="bsk-docs-icon-reference">fab fa-markdown</li>
+        <li><code>&lt;i class="fa-fw fab fa-markdown" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+{% include topic-section-metadata.html
   title="Standard contextual icons"
   heading_level=3
   phase="beta"
