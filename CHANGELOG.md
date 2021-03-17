@@ -21,6 +21,8 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 ### Removed
 
 * Local page header include override which is now included in Jekyll theme
+* References to EOT fonts
+
 
 * Updating to Style Kit Jekyll theme 0.10.0 and Style Kit 0.6.0-beta
 * Updating to Font Awesome 5.13.0
