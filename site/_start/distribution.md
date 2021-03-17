@@ -648,6 +648,40 @@ more information.
 %}
 
 {% include topic-section-metadata.html
+  title="Jinja2"
+  heading_level=3
+%}
+
+A set of [Jinja2](https://jinja.palletsprojects.com/en/2.11.x/) templates are available for the Style Kit.
+
+{% unless jekyll.environment == 'production' %}
+{% capture alert_content %}
+The Jinja templates don't support the latest development version of the Style Kit. Visit
+[style-kit.web.bas.ac.uk]({{ 'https://' | append: site.data.variables.docs_site_production | append: '/start/distribution/#jinja2' }}){: .bsk-alert-link}
+for latest supported version.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="experimental"
+  style="outline"
+  content=alert_content
+%}
+{% else %}
+{% highlight shell %}
+$ pip install bas-style-kit-jinja-templates
+{% endhighlight %}
+{% endunless %}
+
+{% capture alert_content %}
+See the [Jinja templates documentation](https://github.com/antarctica/bas-style-kit-jinja-templates){: .bsk-alert-link} for
+more information.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
+
+{% include topic-section-metadata.html
   title="Oracle Apex"
   heading_level=3
 %}

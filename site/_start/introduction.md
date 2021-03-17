@@ -112,9 +112,8 @@ form of HTML that makes it ideal for prototyping. A set of templates (layouts, i
 use the Style Kit with Pug.
 
 {% capture alert_content %}
-Pug is not a static site generator, and requires other tools to feed in to be compiled and place content in a structure
-for viewing. These tools can include task runners such as [Gulp](https://gulpjs.com/){:.bsk-alert-link} or a static
-site generator.
+Pug is not a static site generator, and requires other tools to structure content for viewing. These tools can include
+task runners such as [Gulp](https://gulpjs.com/){:.bsk-alert-link} or a static site generator.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="info"
@@ -123,6 +122,26 @@ site generator.
 %}
 
 [Pug templates documentation](https://github.com/antarctica/bas-style-kit-pug-templates){: .bsk-btn .bsk-btn-default }
+
+{% include topic-section-metadata.html
+  title="Jinja2"
+  heading_level=3
+%}
+
+[Jinja2](https://jinja.palletsprojects.com) is a Python template engine. A set of templates (layouts, includes and
+macros) are available to use the Style Kit with Jinja.
+
+{% capture alert_content %}
+Jinja2 is not a static site generator, and requires other tools to structure content for viewing, such as
+[Flask](https://flask.palletsprojects.com) or a static site generator.
+{% endcapture %}
+{% include bas-style-kit/bsk-snippet--alert.html
+  variant="info"
+  style="highlight"
+  content=alert_content
+%}
+
+[Jinja templates documentation](https://github.com/antarctica/bas-style-kit-jinja-templates){: .bsk-btn .bsk-btn-default }
 
 {% include topic-section-metadata.html
   title="Oracle Apex"
