@@ -191,10 +191,10 @@ These dependencies need to be loaded **before** the Style Kit for it to function
     </tr>
   </thead>
   <tbody>
-    <tr>
+      <tr>
       <td>jQuery</td>
-      <td>3.5.1</td>
-      <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/libs/jquery/3.5.1/js/jquery-3.5.1.min.js</code></pre></td>
+      <td>3.6.0</td>
+      <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/libs/jquery/3.6.0/js/jquery-3.6.0.min.js</code></pre></td>
     </tr>
     <tr>
       <td>js-cookie</td>
@@ -408,6 +408,7 @@ SRI values are also available for Style Kit's
 | `libs/jquery/3.1.1/jquery-3.1.1.min.js`          | `sha256-iS/MJJubD9bocndB0h1c3VR0I4MnuhFjCLXfrW3f0b0=` |
 | `libs/jquery/3.3.1/jquery-3.3.1.min.js`          | `sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=` |
 | `libs/jquery/3.5.1/js/jquery-3.5.1.min.js`       | `sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=` |
+| `libs/jquery/3.6.0/js/jquery-3.6.0.min.js`       | `sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=` |
 | `libs/js-cookie/2.1.3/js.cookie-2.1.3.min.js`    | `sha256-EareStqgZTnMUqLWtDkCa3SldvB8NPBY8u5C6ZUMWRc=` |
 | `libs/js-cookie/2.2.1/js/js.cookie-2.2.1.min.js` | `sha256-MdF5lmO7tgKSFNkLp9uc3HJfoCwW1LCQrdNyHkQji2s=` |
 {: .bsk-table .bsk-table-hover .bsk-table-bordered }

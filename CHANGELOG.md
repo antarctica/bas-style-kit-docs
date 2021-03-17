@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ### Added
 
+* Distribution information on jQuery 3.6.0
 * Markdown textarea pattern
 * Updating to Style Kit Jekyll theme 0.11.0
 
