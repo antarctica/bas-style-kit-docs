@@ -332,6 +332,12 @@ These components are not part of the Style Kit but are documented here for consi
       <td>1.0.1</td>
       <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/libs/proj4leaflet/v1.0.1/js/proj4leaflet-1.0.1.min.js</code></pre></td>
     </tr>
+    <tr>
+      <td><a href="https://github.com/markdown-it/markdown-it">markdown-it</a></td>
+      <td>JS</td>
+      <td>11.0.0</td>
+      <td class="highlight"><pre><code>https://cdn.web.bas.ac.uk/libs/markdown-it/11.0.0/js/markdown-it.min.js</code></pre></td>
+    </tr>
   </tbody>
 </table>
 
@@ -433,6 +439,7 @@ SRI values are also available for the non-Style Kit
 | `libs/leaflet/1.6.0/js/leaflet.min.js`                  | `sha256-JOnsZs28NnzfQkVhxtJmqdalYkF/ejmYWXD//vFzgWA=` |
 | `libs/leaflet/1.6.0/css/leaflet.min.css`                | `sha256-UU2pVKdO1sE4T0KZHipoxQmYePb1fWMCCR09RzM616Y=` |
 | `libs/proj4leaflet/v1.0.1/js/proj4leaflet-1.0.1.min.js` | `sha256-2/tIGOC+qdPryEVGe/iMOwpH4YHC3tcam5t8aqi74KI=` |
+| `libs/markdown-it/11.0.0/js/markdown-it.min.js`          | `sha256-3mv+NUxFuBg26MtcnuN2X37WUxuGunWCCiG2YCSBjNc=` |
 {: .bsk-table .bsk-table-hover .bsk-table-bordered }
 
 {% include topic-section-metadata.html
