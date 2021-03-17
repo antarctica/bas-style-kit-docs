@@ -12,6 +12,10 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * Markdown textarea pattern
 * Updating to Style Kit Jekyll theme 0.11.0
 
+### Fixed
+
+* Added missing Jinja2 templates information
+
 ### Removed
 
 * Local page header include override which is now included in Jekyll theme
