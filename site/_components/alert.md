@@ -240,6 +240,7 @@ Use the `.bsk-alert-icon` class to properly format an icon in an alert.
   heading_level=3
   phase="live"
   initial_version="0.3.0"
+  revised_version="0.6.0"
   included="yes"
 %}
 
@@ -254,6 +255,7 @@ Use the `.bsk-alert-icon` class to properly format an icon in an alert.
   heading_level=3
   phase="live"
   initial_version="0.3.0"
+  revised_version="0.6.0"
   included="yes"
 %}
 

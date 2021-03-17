@@ -46,7 +46,7 @@ When using this pattern, do not:
 {% include topic-section-metadata.html
   title="Basic"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.6.0"
   included="yes"
 %}

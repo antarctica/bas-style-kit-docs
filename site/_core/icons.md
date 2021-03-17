@@ -179,7 +179,7 @@ indicate something that is experimental or a work in progress.
 {% include topic-section-metadata.html
   title="Start now icon"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.6.0"
   included="no"
 %}
@@ -229,7 +229,7 @@ indicate something that can be reordered, such as the
 {% include topic-section-metadata.html
   title="ORCID iD icon"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.6.0"
 %}
 
@@ -309,7 +309,7 @@ to indicate support for Markdown formatting.
 {% include topic-section-metadata.html
   title="Standard contextual icons"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.1.0"
   revised_version="0.6.0"
   included="no"

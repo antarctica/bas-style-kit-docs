@@ -382,7 +382,7 @@ Blockquotes can be aligned right using `.bsk-blockquote-reverse`.
 {% include topic-section-metadata.html
   title="Addresses"
   heading_level=2
-  phase="beta"
+  phase="live"
   initial_version="0.1.0"
   revised_version="0.6.0"
   included="yes"

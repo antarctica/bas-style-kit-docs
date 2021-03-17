@@ -140,7 +140,7 @@ Add the `.bsk-btn-experimental` class for actions that are experimental or not y
 {% include topic-section-metadata.html
   title="Microsoft sign in button"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.6.0"
   included="yes"
 %}

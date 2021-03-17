@@ -9,6 +9,8 @@ sections:
   -
     title: Latest version
   -
+    title: v0.6.0
+  -
     title: v0.5.0
   -
     title: v0.4.0
@@ -38,13 +40,42 @@ The latest stable version of the BAS Style Kit is **{{ site.data.variables.bsk_v
 The latest development version of the BAS Style Kit is **{{ site.data.variables.bsk_version_staging }}**.
 
 {% include topic-section-metadata.html
+  title="v0.6.0"
+  heading_level=2
+%}
+
+Key changes in this version:
+
+* [patterns]({{ '/patterns' | prepend: site.baseurl }}) for
+  [start page]({{ '/patterns/start-page' | prepend: site.baseurl }}),
+  [sign in to continue page]({{ '/patterns/sign-in-continue' | prepend: site.baseurl }}),
+  [standard page header]({{ '/patterns/standard-header' | prepend: site.baseurl }}),
+  [item type header]({{ '/patterns/item-type-header' | prepend: site.baseurl }}),
+  [ORCID iD]({{ '/patterns/orcid-id' | prepend: site.baseurl }}) and
+  [Markdown textarea]({{ '/patterns/markdown-textarea' | prepend: site.baseurl }})
+  have been added
+* [Microsoft Account]({{ '/core/buttons/#microsoft-sign-in-button' | prepend: site.baseurl }}) sign in button variant
+* [page header]({{ '/components/page-header/' | prepend: site.baseurl }}) spacing increased
+* [outline]({{ '/components/alert/#outline' | prepend: site.baseurl }}) and
+  [highlight]({{ '/components/alert/#highlight' | prepend: site.baseurl }}) alert types now use black text
+* deprecated components have been removed (inverse jumbotron, list group, button input group, drop-down button input
+  group and split-button input group)
+* Academicons icon font removed, replaced by updated
+  [Font Awesome]({{ '/core/icons/#font-awesome' | prepend: site.baseurl }}) icon font (for ORCID iD icon)
+* 50% smaller NPM package size
+
+{% include topic-section-metadata.html
   title="v0.5.0"
   heading_level=2
 %}
 
 Key changes in this version:
 
-* [patterns]({{ '/patterns' | prepend: site.baseurl }}) for [page not found]({{ '/patterns/page-not-found' | prepend: site.baseurl }}), [service unavailable]({{ '/patterns/service-unavailable' | prepend: site.baseurl }}) and [there is a problem with this service]({{ '/patterns/problem-with-this-service' | prepend: site.baseurl }}) pages have been added
+* [patterns]({{ '/patterns' | prepend: site.baseurl }}) for
+  [page not found]({{ '/patterns/page-not-found' | prepend: site.baseurl }}),
+  [service unavailable]({{ '/patterns/service-unavailable' | prepend: site.baseurl }}) and
+  [there is a problem with this service]({{ '/patterns/problem-with-this-service' | prepend: site.baseurl }})
+  pages have been added
 * a [favicon component]({{ '/core/favicon' | prepend: site.baseurl }}) has been added to act as a default across devices
 * a [drag and drop file upload (drop-zone) interactive component]({{ '/interactivity/drop-zone/' | prepend: site.baseurl }}) has been added
 * the [tabs component]({{ '/components/nav/#tab-navigation' | prepend: site.baseurl }}) has been updated with proper styling

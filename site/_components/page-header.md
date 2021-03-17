@@ -43,7 +43,7 @@ spacing.
 {% include topic-section-metadata.html
   title="Stacked page header"
   heading_level=3
-  phase="beta"
+  phase="live"
   initial_version="0.6.0"
   included="yes"
 %}
