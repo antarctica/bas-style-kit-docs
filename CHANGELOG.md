@@ -5,6 +5,8 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ## [Unreleased][unreleased]
 
+## v1.8.0 - 17/03/2021
+
 ### Added
 
 * Updating to Style Kit 0.6.1
@@ -23,6 +25,11 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 * Local page header include override which is now included in Jekyll theme
 * References to EOT fonts
 
+## v1.7.0 - 29/06/2020 [SKIPPED]
+
+## v1.6.0 - 29/06/2020
+
+### Added
 
 * Updating to Style Kit Jekyll theme 0.10.0 and Style Kit 0.6.0-beta
 * Updating to Font Awesome 5.13.0
