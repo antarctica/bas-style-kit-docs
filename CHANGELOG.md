@@ -7,6 +7,7 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ### Added
 
+* Updating to Style Kit 0.6.1
 * Additional accessibility resources
 * Documentation for Markdown-it optional dependency
 * Distribution information on jQuery 3.6.0
