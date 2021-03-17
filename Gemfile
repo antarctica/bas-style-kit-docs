@@ -1,8 +1,8 @@
 source "https://rubygems.org"
 
-gem "jekyll", "~> 4.1.0"
+gem "jekyll", "~> 4.2.0"
 
-gem "jekyll-theme-bas-style-kit", "~> 0.10.0"
+gem "jekyll-theme-bas-style-kit", "~> 0.11.0"
 
 # If you have any plugins, put them here!
 # group :jekyll_plugins do
