@@ -3,7 +3,7 @@ item_type: Component
 title: Input group
 menus:
   primary_components:
-    weight: 11
+    weight: 12
 sections:
   -
     title: Overview

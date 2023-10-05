@@ -125,17 +125,17 @@ used instead of drop-zones where only a single file is needed as they are part o
       <div class="bsk-dropzone-file-list">
         <div class="bsk-container-fluid">
           <header class="bsk-row bsk-dropzone-file-list-header">
-            <div class="bsk-col-24-md-15">File Name</div>
-            <div class="bsk-col-24-md-2">File Size</div>
-            <div class="bsk-col-24-md-4">File Status</div>
-            <div class="bsk-col-24-md-3 bsk-header-actions"> Actions</div>
+            <div class="bsk-col-md-6">File Name</div>
+            <div class="bsk-col-md-2">File Size</div>
+            <div class="bsk-col-md-2">File Status</div>
+            <div class="bsk-col-md-2 bsk-header-actions"> Actions</div>
           </header>
           <div class="bsk-dropzone-file-list-items">
             <div class="bsk-row bsk-dropzone-file-list-item">
-              <div class="bsk-col-24-md-15" data-dz-name></div>
-              <div class="bsk-col-24-md-2" data-dz-size></div>
-              <div class="bsk-col-24-md-4" data-bsk-dz-status></div>
-              <div class="bsk-col-24-md-3 bsk-item-action-remove">
+              <div class="bsk-col-md-6" data-dz-name></div>
+              <div class="bsk-col-md-2" data-dz-size></div>
+              <div class="bsk-col-md-2" data-bsk-dz-status></div>
+              <div class="bsk-col-md-2 bsk-item-action-remove">
                 <a class="bsk-text-danger" href="#" data-dz-remove>Remove</a>
               </div>
               <div class="bsk-item-progress-bar" style="width:0%;" data-dz-uploadprogress></div>

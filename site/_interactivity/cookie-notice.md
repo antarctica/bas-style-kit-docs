@@ -16,6 +16,7 @@ sections:
   heading_level=2
   phase="live"
   initial_version="0.3.0"
+  revised_version="0.7.0"
 %}
 
 The Style Kit includes a plugin for hiding a cookie notice for 30 days.
@@ -41,8 +42,7 @@ Using this plugin to target multiple elements (i.e. multiple cookie notices) is 
 
 This plugin depends upon:
 
-* [jQuery](https://jquery.com)
-* [js-cookie](https://github.com/js-cookie/js-cookie)
+* [cookieconsent](https://github.com/orestbida/cookieconsent)
 
 {% capture alert_content %}
 See [distribution]({{ '/start/distribution/#javascript-dependencies' | prepend: site.baseurl }}){: .bsk-alert-link} for

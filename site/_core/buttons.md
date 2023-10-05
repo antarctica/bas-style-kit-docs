@@ -265,7 +265,7 @@ Add `.bsk-btn-block` for buttons to span the width of their parent.
 
 {% example html %}
 <div class="bsk-row">
-  <div class="bsk-col-12-md-6 bsk-col-12-md-offset-3">
+  <div class="bsk-col-md-6 bsk-offset-md-3">
     <button class="bsk-btn bsk-btn-default bsk-btn-block" type="submit">Block Button</button>
   </div>
 </div>
@@ -340,5 +340,5 @@ Add the `disabled` attribute to indicate unavailable actions.
 Add the `.bsk-disabled` class to indicate unavailable actions.
 
 {% example html %}
-<a class="bsk-btn bsk-btn-default bsk-disabled" href="#" role="button">Disabled Action</a>
+<a class="bsk-btn bsk-btn-default bsk-disabled" disabled href="#" role="button">Disabled Action</a>
 {% endexample %}

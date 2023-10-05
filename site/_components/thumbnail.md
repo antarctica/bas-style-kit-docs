@@ -76,12 +76,12 @@ Add the `.bsk-thumbnail-default` class for standard thumbnails.
 
 {% example html %}
 <div class="bsk-row">
-  <div class="bsk-col-12-md-6">
+  <div class="bsk-col-md-6">
     <div class="bsk-thumbnail bsk-thumbnail-default">
       <img src="{{ '/img/placeholder-256.png' | prepend: site.baseurl }}" alt="thumbnail">
     </div>
   </div>
-  <div class="bsk-col-12-md-6">
+  <div class="bsk-col-md-6">
     <a href="#" class="bsk-thumbnail bsk-thumbnail-default">
       <img src="{{ '/img/placeholder-256.png' | prepend: site.baseurl }}" alt="thumbnail">
     </a>
@@ -102,12 +102,12 @@ Add the `.bsk-thumbnail-inverse` class for an alternative thumbnail style. This 
 
 {% example html %}
 <div class="bsk-row">
-  <div class="bsk-col-12-md-6">
+  <div class="bsk-col-md-6">
     <div class="bsk-thumbnail bsk-thumbnail-inverse">
       <img src="{{ '/img/placeholder-256.png' | prepend: site.baseurl }}" alt="thumbnail">
     </div>
   </div>
-  <div class="bsk-col-12-md-6">
+  <div class="bsk-col-md-6">
     <a href="#" class="bsk-thumbnail bsk-thumbnail-inverse">
       <img src="{{ '/img/placeholder-256.png' | prepend: site.baseurl }}" alt="thumbnail">
     </a>

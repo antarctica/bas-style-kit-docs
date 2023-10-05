@@ -3,7 +3,7 @@ item_type: Component
 title: Label
 menus:
   primary_components:
-    weight: 13
+    weight: 14
 sections:
   -
     title: Overview

@@ -105,6 +105,7 @@ Add the `.bsk-nav-tabs` class to create a more structured navigation element.
   heading_level=3
   phase="live"
   initial_version="0.1.0"
+  revised_version="0.7.0"
   included="yes"
 %}
 
@@ -117,7 +118,7 @@ Add the `.bsk-nav-tabs` class to create a more structured navigation element.
     <li role="presentation" class="bsk-active"><a href="#">Pill 1</a></li>
     <li role="presentation"><a href="#">Pill 2</a></li>
     <li role="presentation" class="bsk-dropdown">
-      <a href="#" class="bsk-dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+      <a href="#" class="bsk-dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
       Dropdown <span class="bsk-caret"></span></a>
       <ul class="bsk-dropdown-menu">
         <li><a href="#">Action</a></li>
@@ -135,7 +136,7 @@ Add the `.bsk-nav-tabs` class to create a more structured navigation element.
     <li role="presentation" class="bsk-active"><a href="#">Tab 1</a></li>
     <li role="presentation"><a href="#">Tab 2</a></li>
     <li role="presentation" class="bsk-dropdown">
-      <a href="#" class="bsk-dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+      <a href="#" class="bsk-dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
       Dropdown <span class="bsk-caret"></span></a>
       <ul class="bsk-dropdown-menu">
         <li><a href="#">Action</a></li>
@@ -151,7 +152,7 @@ Add the `.bsk-nav-tabs` class to create a more structured navigation element.
   heading_level=3
   phase="live"
   initial_version="0.1.0"
-  revised_version="0.5.0"
+  revised_version="0.7.0"
   included="yes"
 %}
 
@@ -224,7 +225,7 @@ Some extra attributes, shown in these examples, are needed to work with the
 Add the `.bsk-active` class to the navigation item currently active, to highlight where the end user is in the site.
 
 {% capture alert_content %}
-Make sure to include a `<span class="bsk-sr-only">(current)</span>` element as well. <br />
+Make sure to include a `<span class="bsk-visually-hidden">(current)</span>` element as well. <br />
 This provides a non-visual indication of the currently active item, suitable for assistive technologies.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
@@ -263,7 +264,7 @@ This can also be used within [drop-down]({{ '/components/drop-down/#active' | pr
     <li role="presentation"><a href="#">Pill 1</a></li>
     <li role="presentation"><a href="#">Pill 2</a></li>
     <li role="presentation" class="bsk-dropdown bsk-active">
-      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+      <a href="#" class="bsk-dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
       Dropdown <span class="bsk-caret"></span></a>
       <ul class="bsk-dropdown-menu">
         <li class="bsk-active"><a href="#">Action</a></li>
@@ -281,7 +282,7 @@ This can also be used within [drop-down]({{ '/components/drop-down/#active' | pr
     <li role="presentation"><a href="#">Tab 1</a></li>
     <li role="presentation"><a href="#">Tab 2</a></li>
     <li role="presentation" class="bsk-dropdown bsk-active">
-      <a href="#" class="bsk-dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+      <a href="#" class="bsk-dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
       Dropdown <span class="bsk-caret"></span></a>
       <ul class="bsk-dropdown-menu">
         <li class="bsk-active"><a href="#">Action</a></li>

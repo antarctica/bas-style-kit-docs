@@ -1,10 +1,10 @@
 ---
-version: '2'
+version: '3'
 
 services:
   app:
     build: .
-    image: docker-registry.data.bas.ac.uk/web-apps/bsk/bas-style-kit-docs:2021-03-17-alpine
+    # image: docker-registry.data.bas.ac.uk/web-apps/bsk/bas-style-kit-docs:2021-03-17-alpine
     working_dir: /usr/src/app/site
     volumes:
       - ./site:/usr/src/app/site

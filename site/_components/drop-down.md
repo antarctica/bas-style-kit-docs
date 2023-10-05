@@ -3,7 +3,7 @@ item_type: Component
 title: Drop down
 menus:
   primary_components:
-    weight: 7
+    weight: 8
 sections:
   -
     title: Overview
@@ -58,12 +58,13 @@ JavaScript plugin, which is enabled on this site.
   heading_level=3
   phase="live"
   initial_version="0.1.0"
+  revised_version="0.7.0"
   included="yes"
 %}
 
 {% example html %}
 <div class="bsk-dropdown">
-  <button class="bsk-btn bsk-btn-default bsk-dropdown-toggle" type="button" id="dropdown-menu-1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+  <button class="bsk-btn bsk-btn-default bsk-dropdown-toggle" type="button" id="dropdown-menu-1" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
     Dropdown <span class="bsk-caret"></span>
   </button>
   <ul class="bsk-dropdown-menu" aria-labelledby="dropdown-menu-1">
@@ -78,15 +79,16 @@ JavaScript plugin, which is enabled on this site.
   heading_level=3
   phase="live"
   initial_version="0.1.0"
+  revised_version="0.7.0"
   included="yes"
 %}
 
 {% example html %}
 <div class="bsk-btn-group">
   <button class="bsk-btn bsk-btn-default" type="button">Dropdown</button>
-  <button class="bsk-btn bsk-btn-default bsk-dropdown-toggle" type="button" id="dropdown-menu-1a" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button class="bsk-btn bsk-btn-default bsk-dropdown-toggle" type="button" id="dropdown-menu-1a" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     <span class="bsk-caret"></span>
-    <span class="bsk-sr-only">Toggle Dropdown</span>
+    <span class="bsk-visually-hidden">Toggle Dropdown</span>
   </button>
   <ul class="bsk-dropdown-menu">
     <li><a href="#">Action</a></li>
@@ -113,12 +115,13 @@ in Navbar items.
   heading_level=3
   phase="live"
   initial_version="0.1.0"
+  revised_version="0.7.0"
   included="yes"
 %}
 
 {% example html %}
 <div class="bsk-dropdown">
-  <button class="bsk-btn bsk-btn-default bsk-dropdown-toggle" type="button" id="dropdown-menu-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+  <button class="bsk-btn bsk-btn-default bsk-dropdown-toggle" type="button" id="dropdown-menu-2" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
     Dropdown <span class="bsk-caret"></span>
   </button>
   <ul class="bsk-dropdown-menu" aria-labelledby="dropdown-menu-2">
@@ -133,6 +136,7 @@ in Navbar items.
   heading_level=3
   phase="live"
   initial_version="0.1.0"
+  initial_version="0.7.0"
   included="yes"
 %}
 
@@ -140,7 +144,7 @@ Use the `.bsk-dropup` class, rather than `.bsk-dropdown` to have the drop-down m
 
 {% example html %}
 <div class="bsk-dropup">
-  <button class="bsk-btn bsk-btn-default bsk-dropdown-toggle" type="button" id="dropdown-menu-3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+  <button class="bsk-btn bsk-btn-default bsk-dropdown-toggle" type="button" id="dropdown-menu-3" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
     Dropup <span class="bsk-caret"></span>
   </button>
   <ul class="bsk-dropdown-menu" aria-labelledby="dropdown-menu-3">
@@ -177,17 +181,18 @@ Use the `.bsk-dropup` class, rather than `.bsk-dropdown` to have the drop-down m
   heading_level=3
   phase="live"
   initial_version="0.1.0"
+  revised_version="0.7.0"
   included="yes"
 %}
 
-Use the `.dropdown-divider` class on a drop-down item.
+Use the `.bsk-dropdown-divider` class on a drop-down item.
 
 {% example html %}
 <div class="bsk-dropdown bsk-docs-dropdown-example">
   <ul class="bsk-dropdown-menu">
     <li><a href="#">Action</a></li>
     <li><a href="#">Another action</a></li>
-    <li role="separator" class="bsk-divider"></li>
+    <li><hr class="bsk-dropdown-divider"></li>
     <li><a href="#">Separated link</a></li>
   </ul>
 </div>
@@ -229,7 +234,7 @@ Use the `.bsk-dropdown-header` class on a drop-down item.
 If used within the [Navbar]({{ '/components/navbar' | prepend: site.baseurl }}) component, add the `.bsk-active` class
 to the drop-down menu item currently active, to highlight where the end user is in the site.
 
-Make sure to include a `<span class="bsk-sr-only">(current)</span>` element as well. <br />
+Make sure to include a `<span class="bsk-visually-hidden">(current)</span>` element as well. <br />
 This provides a non-visual indication of the currently active item, suitable for assistive technologies.
 {: .alert .alert-warning }
 
@@ -245,7 +250,7 @@ This provides a non-visual indication of the currently active item, suitable for
 {% example html %}
 <div class="bsk-dropdown bsk-docs-dropdown-example">
   <ul class="bsk-dropdown-menu">
-    <li class="bsk-active"><span class="bsk-sr-only">(current)</span><a href="#">Active Action</a></li>
+    <li class="bsk-active"><span class="bsk-visually-hidden">(current)</span><a href="#">Active Action</a></li>
     <li><a href="#">Another action</a></li>
   </ul>
 </div>
@@ -256,6 +261,7 @@ This provides a non-visual indication of the currently active item, suitable for
   heading_level=3
   phase="live"
   initial_version="0.1.0"
+  revised_version="0.7.0"
   included="yes"
 %}
 
@@ -271,9 +277,9 @@ This provides a non-visual indication of the currently active item, suitable for
 </div>
 
 {% example html %}
-<div class="bsk-disabled-dropdown bsk-docs-dropdown-example">
+<div class="bsk-docs-dropdown-example">
   <ul class="bsk-dropdown-menu">
-    <li class="bsk-disabled"><a href="#" disabled>Disabled Action</a></li>
+    <li class="bsk-disabled"><a href="#" class="bsk-disabled">Disabled Action</a></li>
     <li><a href="#">Another action</a></li>
   </ul>
 </div>
@@ -292,16 +298,19 @@ This provides a non-visual indication of the currently active item, suitable for
   heading_level=3
   phase="live"
   initial_version="0.1.0"
+  revised_version="0.7.0"
   included="yes"
 %}
 
-Add the `.bsk-dropdown-menu-right` class to right align the drop-down menu
+Add the `.bsk-dropend` class to right align the drop-down menu
 [supported element]({{ '/components/drop-down/supported-elements' | prepend: site.baseurl }}), by default the menu is
 left aligned.
 
+Other alignments are available too: `https://getbootstrap.com/docs/5.2/components/dropdowns/#directions`
+
 {% example html %}
-<div class="bsk-dropdown">
-  <button class="bsk-btn bsk-btn-default bsk-dropdown-toggle" type="button" id="dropdown-menu-4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+<div class="bsk-dropdown bsk-dropend">
+  <button class="bsk-btn bsk-btn-default bsk-dropdown-toggle" type="button" id="dropdown-menu-4" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
     Dropdown (right aligned) <span class="bsk-caret"></span>
   </button>
   <ul class="bsk-dropdown-menu bsk-dropdown-menu-right" aria-labelledby="dropdown-menu-4">

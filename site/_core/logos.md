@@ -107,42 +107,42 @@ Use the *default* variant if you are unsure which to use.
 %}
 
 <div class="bsk-row bsk-docs-logomark-wrapper">
-  <div class="bsk-col-12-md-6">
+  <div class="bsk-col-md-6">
     <div class="bsk-docs-logomark-transparent-background">
-      <img src="{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/img/logos-symbols/bas-roundel-default-transparent-64.png" class="bsk-docs-logomark bsk-center-block">
+      <img src="{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/img/logos-symbols/bas-roundel-default-transparent-64.png" class="bsk-docs-logomark bsk-position-absolute bsk-start-50">
     </div>
   </div>
-  <div class="bsk-col-12-md-6">
+  <div class="bsk-col-md-6">
     <div class="bsk-docs-logomark-transparent-background">
-      <img src="{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/img/logos-symbols/bas-logo-default-transparent-64.png" class="bsk-docs-logomark bsk-center-block">
+      <img src="{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/img/logos-symbols/bas-logo-default-transparent-64.png" class="bsk-docs-logomark bsk-position-absolute bsk-start-50">
     </div>
   </div>
 </div>
 <p class="bsk-text-center">Default roundel and full logo</p>
 
 <div class="bsk-row bsk-docs-logomark-wrapper">
-  <div class="bsk-col-12-md-6">
+  <div class="bsk-col-md-6">
     <div class="bsk-docs-logomark-transparent-background">
-      <img src="{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/img/logos-symbols/bas-roundel-mono-transparent-64.png" class="bsk-docs-logomark bsk-center-block">
+      <img src="{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/img/logos-symbols/bas-roundel-mono-transparent-64.png" class="bsk-docs-logomark bsk-position-absolute bsk-start-50">
     </div>
   </div>
-  <div class="bsk-col-12-md-6">
+  <div class="bsk-col-md-6">
     <div class="bsk-docs-logomark-transparent-background">
-      <img src="{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/img/logos-symbols/bas-logo-mono-transparent-64.png" class="bsk-docs-logomark bsk-center-block">
+      <img src="{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/img/logos-symbols/bas-logo-mono-transparent-64.png" class="bsk-docs-logomark bsk-position-absolute bsk-start-50">
     </div>
   </div>
 </div>
 <p class="bsk-text-center">Monochrome roundel and full logo</p>
 
 <div class="bsk-row bsk-docs-logomark-wrapper">
-  <div class="bsk-col-12-md-6">
+  <div class="bsk-col-md-6">
     <div class="bsk-docs-logomark-transparent-background-dark">
-      <img src="{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/img/logos-symbols/bas-roundel-inverse-transparent-64.png" class="bsk-docs-logomark bsk-center-block">
+      <img src="{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/img/logos-symbols/bas-roundel-inverse-transparent-64.png" class="bsk-docs-logomark bsk-position-absolute bsk-start-50">
     </div>
   </div>
-  <div class="bsk-col-12-md-6">
+  <div class="bsk-col-md-6">
     <div class="bsk-docs-logomark-transparent-background-dark">
-      <img src="{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/img/logos-symbols/bas-logo-inverse-transparent-64.png" class="bsk-docs-logomark bsk-center-block">
+      <img src="{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/img/logos-symbols/bas-logo-inverse-transparent-64.png" class="bsk-docs-logomark bsk-position-absolute bsk-start-50">
     </div>
   </div>
 </div>
@@ -469,15 +469,15 @@ Use the *default* variant if you are unsure which to use.
 %}
 
 <div class="bsk-row bsk-docs-logomark-wrapper">
-  <div class="bsk-col-12-md-6">
+  <div class="bsk-col-md-6">
     <div class="bsk-docs-logomark-transparent-background">
-      <img src="{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/img/logos-symbols/ogl-symbol-default-transparent-64.png" class="bsk-docs-logomark bsk-center-block">
+      <img src="{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/img/logos-symbols/ogl-symbol-default-transparent-64.png" class="bsk-docs-logomark bsk-position-absolute bsk-start-50">
     </div>
     <p class="bsk-text-center">Default symbol</p>
   </div>
-  <div class="bsk-col-12-md-6">
+  <div class="bsk-col-md-6">
     <div class="bsk-docs-logomark-transparent-background-dark">
-      <img src="{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/img/logos-symbols/ogl-symbol-inverse-transparent-64.png" class="bsk-docs-logomark bsk-center-block">
+      <img src="{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/img/logos-symbols/ogl-symbol-inverse-transparent-64.png" class="bsk-docs-logomark bsk-position-absolute bsk-start-50">
     </div>
     <p class="bsk-text-center">Inverse symbol</p>
   </div>
@@ -615,14 +615,14 @@ Pictogram.
 The Microsoft User Account Pictogram only has a single variant for use in all circumstances.
 
 <div class="bsk-row bsk-docs-logomark-wrapper">
-  <div class="bsk-col-12-md-6">
+  <div class="bsk-col-md-6">
     <div class="bsk-docs-logomark-transparent-background">
-      <img class="bsk-ms-pictogram bsk-docs-logomark bsk-center-block" type="image/svg+xml" width="128px" height="128px"  src="{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/img/logos-symbols/ms-pictogram.svg"/>
+      <img class="bsk-ms-pictogram bsk-docs-logomark bsk-position-absolute bsk-start-50" type="image/svg+xml" width="128px" height="128px"  src="{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/img/logos-symbols/ms-pictogram.svg"/>
     </div>
   </div>
-  <div class="bsk-col-12-md-6">
+  <div class="bsk-col-md-6">
     <div class="bsk-docs-logomark-transparent-background-dark">
-      <img class="bsk-ms-pictogram bsk-docs-logomark bsk-center-block" type="image/svg+xml" width="128px" height="128px"  src="{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/img/logos-symbols/ms-pictogram.svg"/>
+      <img class="bsk-ms-pictogram bsk-docs-logomark bsk-position-absolute bsk-start-50" type="image/svg+xml" width="128px" height="128px"  src="{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/img/logos-symbols/ms-pictogram.svg"/>
     </div>
   </div>
 </div>

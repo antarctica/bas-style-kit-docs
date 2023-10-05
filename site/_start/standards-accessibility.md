@@ -119,7 +119,7 @@ Colours or icons should not be used alone to indicate the meaning or context of 
 inaccessible to, amongst others, some colour-blind users or those using assistive technologies – such as screen readers.
 
 Instead, context should be either obvious from the content itself, or included in an additional content using the
-`.bsk-sr-only` class.
+`.bsk-visually-hidden` class.
 
 Ideally [contextual colours]({{ '/core/colours/#standard-contextual-colours' | prepend: site.baseurl }}) and
 [icons]({{ '/core/icons/#standard-contextual-icons' | prepend: site.baseurl }}) should only be needed for reinforcing
@@ -148,7 +148,7 @@ Sighted readers will be able to infer such a link using visual cues (such as pla
 however this will be invisible to those using assistive technologies, such as screen readers.
 
 For context applicable to all users, adding a `aria-describedby` attribute is usually enough. For context intended
-specifically for assistive technologies, such as to explain how items are arranged on screen, use the `.bsk-sr-only`.
+specifically for assistive technologies, such as to explain how items are arranged on screen, use the `.bsk-visually-hidden`.
 
 See the [form help text]({{ '/core/forms/#help-text' | prepend: site.baseurl }}) section for an example.
 
@@ -177,14 +177,14 @@ See the [form validation]({{ '/core/forms/#validation' | prepend: site.baseurl }
 %}
 
 Pages with large numbers of navigation links, such as a [navbar]({{ '/components/navbar' | prepend: site.baseurl }}),
-should include a link to skip to the page content. This link can be hidden to non-screen readers using the `.bsk-sr-only`
+should include a link to skip to the page content. This link can be hidden to non-screen readers using the `.bsk-visually-hidden`
 class, and requires a page structure such as this:
 
 {% highlight html %}
 <body>
-  <a href="#site-content" class="sr-only sr-only-focusable">Skip to main content</a>
+  <a href="#site-content" class="bsk-visually-hidden bsk-visually-hidden-focusable">Skip to main content</a>
   ...
-  <div class="container" id="site-content" tabindex="-1">
+  <div class="bsk-container" id="site-content" tabindex="-1">
     <!-- main content -->
   </div>
 </body>

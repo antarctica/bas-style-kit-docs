@@ -44,7 +44,7 @@ All form fields should have a label to make sure they can be understood by assis
 %}
 
 {% capture alert_content %}
-For styling across devices and browsers, form controls should use the `.form-control` class and labels `.control-label`.
+For styling across devices and browsers, form controls should use the `.bsk-form-control` class and labels `.bsk-control-label`.
 Each form field should be be wrapped in a
 [from group]({{ '/core/forms/#form-groups-and-fieldsets' | prepend: site.baseurl }}){: .bsk-alert-link } to
 structurally separate each form field.
@@ -209,7 +209,7 @@ Select elements have quite stubborn browser styling, such as rounded corners, wh
   included="yes"
 %}
 
-For file inputs use `.bsk-form-control-file` instead of `.bsk-form-control`.
+<!-- For file inputs use `.bsk-form-control-file` instead of `.bsk-form-control`. -->
 
 {% capture alert_content %}
 Field input elements have quite stubborn browser styling, such as rounded corners, which are difficult to override.
@@ -233,7 +233,7 @@ You can use the [Drop-zone]({{ '/interactivity/drop-zones' | prepend: site.baseu
 <form>
   <fieldset class="bsk-form-group">
     <label class="bsk-control-label" for="form-file-example-1">File input</label>
-    <input type="file" class="bsk-form-control-file" id="form-file-example-1">
+    <input type="file" class="bsk-form-control" id="form-file-example-1">
   </fieldset>
 </form>
 {% endexample %}
@@ -312,6 +312,7 @@ Style Kit.
   heading_level=3
   phase="live"
   initial_version="0.1.0"
+  revised_version="0.7.0"
   included="yes"
 %}
 
@@ -331,42 +332,42 @@ the Style Kit.
 {% example html %}
 <form>
   <fieldset class="bsk-form-group">
-    <div class="bsk-checkbox-inline">
+    <div class="bsk-form-check bsk-form-check-inline">
+      <input type="checkbox" name="form-checkbox-example-2" id="form-checkbox-example-2-a" value="A">
       <label class="bsk-control-label">
-        <input type="checkbox" name="form-checkbox-example-2" id="form-checkbox-example-2-a" value="A">
           Option 1 (A)
       </label>
     </div>
-    <div class="bsk-checkbox-inline">
+    <div class="bsk-form-check bsk-form-check-inline">
+      <input type="checkbox" name="form-checkbox-example-2" id="form-checkbox-example-2-b" value="B">
       <label class="bsk-control-label">
-        <input type="checkbox" name="form-checkbox-example-2" id="form-checkbox-example-2-b" value="B">
           Option 1 (B)
       </label>
     </div>
-    <div class="bsk-checkbox-inline">
+    <div class="bsk-form-check bsk-form-check-inline">
+      <input type="checkbox" name="form-checkbox-example-2" id="form-checkbox-example-2-c" value="C">
       <label class="bsk-control-label">
-        <input type="checkbox" name="form-checkbox-example-2" id="form-checkbox-example-2-c" value="C">
           Option 1 (C)
       </label>
     </div>
   </fieldset>
 
   <fieldset class="bsk-form-group">
-    <div class="bsk-radio-inline">
-      <label class="control-label">
-        <input type="radio" name="form-radio-example-2" id="form-radio-example-2-a" value="A">
+    <div class="bsk-form-check bsk-form-check-inline">
+      <input type="radio" name="form-radio-example-2" id="form-radio-example-2-a" value="A">
+      <label class="bsk-control-label">
           Option 2 (A)
       </label>
     </div>
-    <div class="bsk-radio-inline">
+    <div class="bsk-form-check bsk-form-check-inline">
+      <input type="radio" name="form-radio-example-2" id="form-radio-example-2-b" value="B">
       <label class="bsk-control-label">
-        <input type="radio" name="form-radio-example-2" id="form-radio-example-2-b" value="B">
           Option 2 (B)
       </label>
     </div>
-    <div class="bsk-radio-inline">
+    <div class="bsk-form-check bsk-form-check-inline">
+      <input type="radio" name="form-radio-example-2" id="form-radio-example-2-c" value="C">
       <label class="bsk-control-label">
-        <input type="radio" name="form-radio-example-2" id="form-radio-example-2-c" value="C">
           Option 2 (C)
       </label>
     </div>
@@ -451,7 +452,7 @@ Where a form field is standalone, use a <code>&lt;fieldset&gt;</code>. For a gro
     <div class="bsk-form-group">
       <label class="bsk-control-label" for="form-group-example-3">Your email address</label>
       <input type="email" class="bsk-form-control" id="form-group-example-3" placeholder="john.smith@example.co.uk">
-      <p class="bsk-help-block bsk-text-muted">We will only use this information for contacting you about your feedback.</p>
+      <p class="bsk-help-block">We will only use this information for contacting you about your feedback.</p>
     </div>
   </fieldset>
 </form>
@@ -466,7 +467,7 @@ Where a form field is standalone, use a <code>&lt;fieldset&gt;</code>. For a gro
 %}
 
 Use the `.bsk-form-horizontal` class to display labels and controls side-by-side using
-[grid system]({{ '/core/grid/' | prepend: site.baseurl }}). Ensure all labels use the `.control-label` class for best
+[grid system]({{ '/core/grid/' | prepend: site.baseurl }}). Ensure all labels use the `.bsk-control-label` class for best
 results.
 
 {% capture alert_content %}
@@ -482,7 +483,7 @@ inner <code>&lt;div&gt;</code> to prevent the <code>&lt;legend&gt;</code> from a
 {% example html %}
 <form class="bsk-form-horizontal">
   <fieldset class="bsk-form-group">
-    <label class="bsk-control-label bsk-col-12-md-2" for="form-horizontal-example-1">Small textarea</label>
+    <label class="bsk-control-label bsk-col-md-2" for="form-horizontal-example-1">Small textarea</label>
     <div class="bsk-col-md-10">
       <textarea class="bsk-form-control" id="form-horizontal-example-1" rows="3"></textarea>
     </div>
@@ -491,7 +492,7 @@ inner <code>&lt;div&gt;</code> to prevent the <code>&lt;legend&gt;</code> from a
   <fieldset>
     <legend>Select one or more options</legend>
     <div class="bsk-form-group">
-      <div class="bsk-col-12-md-10 bsk-col-12-md-offset-2">
+      <div class="bsk-col-md-10 bsk-offset-md-2">
         <div class="bsk-checkbox">
           <label>
             <input type="checkbox" name="form-horizontal-example-2" id="form-horizontal-example-2-a" value="A">
@@ -515,22 +516,22 @@ inner <code>&lt;div&gt;</code> to prevent the <code>&lt;legend&gt;</code> from a
   </fieldset>
 
   <fieldset class="bsk-form-group">
-    <div class="bsk-col-12-md-10 bsk-col-12-md-offset-2">
-      <div class="bsk-checkbox-inline">
+    <div class="bsk-col-md-10 bsk-offset-md-2">
+      <div class="bsk-form-check bsk-form-check-inline">
+        <input type="checkbox" name="form-horizontal-example-3" id="form-horizontal-example-3-a" value="A">
         <label>
-          <input type="checkbox" name="form-horizontal-example-3" id="form-horizontal-example-3-a" value="A">
             Option 2 (A)
         </label>
       </div><!-- / .checkbox-inline -->
-      <div class="bsk-checkbox-inline">
+      <div class="bsk-form-check bsk-form-check-inline">
+        <input type="checkbox" name="form-horizontal-example-3" id="form-horizontal-example-3-b" value="B">
         <label>
-          <input type="checkbox" name="form-horizontal-example-3" id="form-horizontal-example-3-b" value="B">
             Option 2 (B)
         </label>
       </div><!-- / .checkbox-inline -->
-      <div class="bsk-checkbox-inline">
+      <div class="bsk-form-check bsk-form-check-inline">
+        <input type="checkbox" name="form-horizontal-example-3" id="form-horizontal-example-3-c" value="C">
         <label>
-          <input type="checkbox" name="form-horizontal-example-3" id="form-horizontal-example-3-c" value="C">
             Option 2 (C)
         </label>
       </div><!-- / .checkbox-inline -->
@@ -540,16 +541,16 @@ inner <code>&lt;div&gt;</code> to prevent the <code>&lt;legend&gt;</code> from a
   <fieldset>
     <legend>Would you like a reply?</legend>
     <div class="bsk-form-group">
-      <label class="bsk-control-label bsk-col-12-md-2" for="form-horizontal-example-3">Your name</label>
-      <div class="bsk-col-12-md-10">
+      <label class="bsk-control-label bsk-col-md-2" for="form-horizontal-example-3">Your name</label>
+      <div class="bsk-col-md-10">
         <input type="text" class="bsk-form-control" id="form-horizontal-example-3" placeholder="John Smith">
       </div>
     </div>
     <div class="bsk-form-group">
-      <label class="bsk-control-label bsk-col-12-md-2" for="form-horizontal-example-4">Your email address</label>
-      <div class="bsk-col-12-md-10">
+      <label class="bsk-control-label bsk-col-md-2" for="form-horizontal-example-4">Your email address</label>
+      <div class="bsk-col-md-10">
         <input type="email" class="bsk-form-control" id="form-horizontal-example-4" placeholder="john.smith@example.co.uk">
-        <p class="bsk-help-block bsk-text-muted">We will only use this information for contacting you about your feedback.</p>
+        <p class="bsk-help-block">We will only use this information for contacting you about your feedback.</p>
       </div>
     </div>
   </fieldset>
@@ -561,10 +562,11 @@ inner <code>&lt;div&gt;</code> to prevent the <code>&lt;legend&gt;</code> from a
   heading_level=3
   phase="live"
   initial_version="0.1.0"
+  initial_version="0.7.0"
   included="yes"
 %}
 
-Use the `.bsk-form-inline` class to display labels and controls in a single horizontal row.
+Use the classes in the example to display labels and controls in a single horizontal row.
 
 {% capture alert_content %}
 Some manual sizing may be needed for inline forms, ensure thorough testing at a range of grid sizes.
@@ -590,26 +592,22 @@ On small devices (smaller than 768 pixels) form fields will always stack.
 %}
 
 {% example html %}
-<form class="bsk-form-inline">
-  <fieldset>
-    <div class="bsk-form-group">
-      <label class="bsk-control-label" for="form-inline-example-1">Username</label>
-      <input type="text" class="bsk-form-control" id="form-inline-example-1" placeholder="john.smith@example.co.uk">
+<form>
+  <div class="bsk-row mb-3">
+    <label class="bsk-col-auto bsk-col-form-label" for="form-inline-example-1a">Username</label>
+    <div class="bsk-col-md-2 bsk-p-0">
+      <input type="text" class="bsk-form-control" id="form-inline-example-1a" placeholder="john.smith@example.co.uk">
     </div>
-    <div class="bsk-form-group">
-      <label class="bsk-control-label" for="form-inline-example-2">Password</label>
-      <input type="password" class="bsk-form-control" id="form-inline-example-2">
+    <label class="bsk-col-auto bsk-col-form-label" for="form-inline-example-2a">Password</label>
+    <div class="bsk-col-md-2 bsk-p-0">
+      <input type="password" class="bsk-form-control" id="form-inline-example-2a">
     </div>
-    <div class="bsk-form-group">
-      <div class="bsk-checkbox">
-        <label class="bsk-control-label">
-          <input type="checkbox" name="form-inline-example-3" id="form-inline-example-3-a" value="1" checked>
-          Remember Me
-        </label>
-      </div>
+    <div class="bsk-col-auto">
+      <input type="checkbox" name="form-inline-example-3a" id="form-inline-example-3a" value="1" checked>
+        Remember Me
+      <button type="submit" class="bsk-btn bsk-btn-default">Login</button>
     </div>
-    <button type="submit" class="bsk-btn bsk-btn-default">Login</button>
-  </fieldset>
+  </div>
 </form>
 {% endexample %}
 
@@ -622,7 +620,7 @@ It is strongly recommended to include visible labels for each form field (the `p
 universally supported yet for example).
 
 {% capture alert_content %}
-Where labels are hidden, the `.bsk-sr-only` class **should** always be used to ensure assistive technologies can
+Where labels are hidden, the `.bsk-visually-hidden` class **should** always be used to ensure assistive technologies can
 understand forms. Alternatively, you can use the `aria-label`, `aria-labelledby` or `title` attributes.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
@@ -641,26 +639,24 @@ Labels **should** always be visible for checkboxes and radio options, to indicat
 %}
 
 {% example html %}
-<form class="bsk-form-inline">
-  <fieldset>
-    <div class="bsk-form-group">
-      <label class="bsk-sr-only" for="form-inline-example-1">Username</label>
-      <input type="text" class="bsk-form-control" id="form-inline-example-1" placeholder="john.smith@example.co.uk">
+<form class="bsk-row bsk-align-items-center">
+  <div class="bsk-col-3">
+    <label class="bsk-visually-hidden" for="form-inline-example-1b">Username</label>
+    <div class="bsk-col-sm-12 bsk-ps-0 bsk-pe-0">
+      <input type="text" class="bsk-form-control" id="form-inline-example-1b" placeholder="john.smith@example.co.uk">
     </div>
-    <div class="bsk-form-group">
-      <label class="bsk-sr-only" for="form-inline-example-2">Password</label>
-      <input type="password" class="bsk-form-control" id="form-inline-example-2">
+  </div>
+  <div class="bsk-col-3">
+    <label class="bsk-visually-hidden" for="form-inline-example-2b">Password</label>
+    <div class="bsk-col-sm-12 bsk-ps-0 bsk-pe-0">
+      <input type="password" class="bsk-form-control" id="form-inline-example-2b" placeholder="********">
     </div>
-    <div class="bsk-form-group">
-      <div class="bsk-checkbox">
-        <label>
-          <input type="checkbox" name="form-inline-example-3" id="form-inline-example-3-a" value="1" checked>
-          Remember Me
-        </label>
-      </div>
-    </div>
+  </div>
+  <div class="bsk-col-auto">
+    <input type="checkbox" name="form-inline-example-3b" id="form-inline-example-3b" value="1" checked>
+      Remember Me
     <button type="submit" class="bsk-btn bsk-btn-default">Login</button>
-  </fieldset>
+  </div>
 </form>
 {% endexample %}
 
@@ -704,19 +700,19 @@ Make sure to use `.control-label` to ensure all labels are virtually aligned.
 {% example html %}
 <form>
   <div class="bsk-row">
-    <fieldset class="bsk-form-group bsk-col-12-md-3">
-      <label class="bsk-control-label" for="form-sizing-example-1">Text input</label>
+    <fieldset class="bsk-form-group bsk-col-md-3">
+      <label class="bsk-control-label" for="form-sizing-example-1b">Text input</label>
       <input type="text" class="bsk-form-control" id="form-sizing-example-1">
     </fieldset>
   </div>
   <div class="bsk-row">
-    <fieldset class="bsk-form-group bsk-col-12-md-6">
+    <fieldset class="bsk-form-group bsk-col-md-6">
       <label class="bsk-control-label" for="form-sizing-example-2">An extra long label for a text input for this demo</label>
       <input type="text" class="bsk-form-control" id="form-sizing-example-2">
     </fieldset>
   </div>
   <div class="bsk-row">
-    <fieldset class="bsk-form-group bsk-col-12-md-12">
+    <fieldset class="bsk-form-group bsk-col-md-12">
       <label class="bsk-control-label" for="form-sizing-example-3">Text input</label>
       <input type="text" class="bsk-form-control" id="form-sizing-example-3">
     </fieldset>
@@ -817,7 +813,7 @@ this, either apply the `disabled` attribute on links directly, or use JavaScript
     </div>
     <div class="bsk-form-group">
       <label class="bsk-control-label" for="form-disabled-example-2">Disabled select menu</label>
-      <select id="form-disabled-example-2" class="bsk-form-control">
+      <select id="form-disabled-example-2" class="bsk-form-control bsk-form-select">
         <option>Disabled select menu</option>
       </select>
     </div>
@@ -885,11 +881,12 @@ appearance, but won't change the cursor.
   heading_level=2
   phase="live"
   initial_version="0.1.0"
+  revised_version="0.7.0"
   included="yes"
 %}
 
 Add context or other guidance to form fields, or more generally to sections of a form, using a combination of
-`.bsk-help-block` and `.bsk-text-muted`.
+`.bsk-help-block`.
 
 {% capture alert_content %}
 Where help text relates to a specific form field,
@@ -906,19 +903,19 @@ to inform assistive technologies, such as screen readers.
 <form>
   <fieldset>
     <legend>Would you like a reply?</legend>
-    <p class="bsk-help-block bsk-text-muted">If you would like a reply, please enter your contact details,
+    <p class="bsk-help-block">If you would like a reply, please enter your contact details,
   we may not reply straight away.</p>
     <div class="bsk-form-group">
         <label class="bsk-control-label" for="form-help-example-1">Your name</label>
         <input type="text" class="bsk-form-control" id="form-help-example-1" placeholder="Adam Smith" aria-describedby="form-help-example-1-help">
-        <p id="form-help-example-1-help" class="bsk-help-block text-muted">
+        <p id="form-help-example-1-help" class="bsk-help-block">
           Please enter your name as you would expect in a reply (e.g. Mr. A Smith).
         </p>
     </div>
     <div class="bsk-form-group">
         <label class="bsk-control-label" for="form-help-example-2">Your email address</label>
         <input type="email" class="bsk-form-control" id="form-help-example-2" placeholder="john.smith@example.co.uk">
-        <p class="bsk-help-block bsk-text-muted">We will only use this information for contacting you about your feedback.</p>
+        <p class="bsk-help-block">We will only use this information for contacting you about your feedback.</p>
     </div>
   </fieldset>
 </form>
@@ -929,7 +926,7 @@ to inform assistive technologies, such as screen readers.
   heading_level=2
   phase="live"
   initial_version="0.1.0"
-  revised_version="0.5.0"
+  revised_version="0.7.0"
   included="yes"
 %}
 
@@ -967,7 +964,7 @@ can be used alongside validation messages.
   <fieldset class="bsk-form-group bsk-has-success">
       <label class="bsk-control-label" for="form-validation-example-1">Your email address</label>
       <input type="email" class="bsk-form-control" id="form-validation-example-1" value="john.smith@example.co.uk">
-      <p class="bsk-help-block bsk-text-muted">
+      <p class="bsk-help-block">
         We will only use this information for contacting you about your feedback.
       </p>
   </fieldset>
@@ -975,8 +972,8 @@ can be used alongside validation messages.
   <fieldset class="bsk-form-group bsk-has-error">
       <label class="bsk-control-label" for="form-validation-example-3">Your email address</label>
       <input type="email" class="bsk-form-control" id="form-validation-example-3" value="john.smith" aria-invalid="true">
-      <p class="bsk-help-block bsk-text-muted">We will only use this information for contacting you about your feedback.</p>
-      <p class="bsk-help-block bsk-text-muted"><i class="fas fa-fw fa-exclamation-circle" aria-hidden="true"></i> <em>john.smith</em>,
+      <p class="bsk-help-block">We will only use this information for contacting you about your feedback.</p>
+      <p class="bsk-help-block"><i class="fas fa-fw fa-exclamation-circle" aria-hidden="true"></i> <em>john.smith</em>,
       is not a valid email address.</p>
   </fieldset>
 </form>
