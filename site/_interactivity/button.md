@@ -19,21 +19,18 @@ sections:
 %}
 
 The Style Kit includes a customised version of the Bootstrap
-[button](https://getbootstrap.com/docs/3.3/javascript/#buttons) plugin to be compatible with Style Kit specific classes.
+[button](https://getbootstrap.com/docs/5.2/components/buttons/#button-plugin) plugin to be compatible with Style Kit specific classes.
 It's functionality and data API remain exactly the same.
 
-[View Button Plugin](https://getbootstrap.com/docs/3.3/javascript/#buttons){:.bsk-btn .bsk-btn-default }
+[View Button Plugin](https://getbootstrap.com/docs/5.2/components/buttons/#button-plugin){:.bsk-btn .bsk-btn-default }
 
 {% include topic-section-metadata.html
   title="Dependencies"
   heading_level=2
   phase="live"
   initial_version="0.5.0"
+  revised_version="0.7.0"
 %}
-
-This plugin depends upon:
-
-* [jQuery](https://jquery.com).
 
 {% capture alert_content %}
 See [distribution]({{ '/start/distribution/#javascript-dependencies' | prepend: site.baseurl }}){: .bsk-alert-link} for
@@ -60,7 +57,7 @@ more advanced button toolbars.
 %}
 
 {% example html %}
-<button type="button" class="bsk-btn bsk-btn-default" data-toggle="button" aria-pressed="false" autocomplete="off">
+<button type="button" class="bsk-btn bsk-btn-default" data-bs-toggle="button" aria-pressed="false" autocomplete="off">
   Toggle Action
 </button>
 {% endexample %}

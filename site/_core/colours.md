@@ -75,7 +75,7 @@ space would be shown after the [footer]({{ '/components/footer' | prepend: site.
 
 <div class="bsk-docs-swatch-wrapper">
   <div class="bsk-row">
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-html-background"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>HTML background</li>
@@ -83,7 +83,7 @@ space would be shown after the [footer]({{ '/components/footer' | prepend: site.
         <li class="bsk-docs-hex-reference">#333333</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-body-background"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Body background</li>
@@ -108,7 +108,7 @@ A default link colour is applied to the `<body>` element.
 
 <div class="bsk-docs-swatch-wrapper">
   <div class="bsk-row">
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-page-text"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Page text</li>
@@ -116,7 +116,7 @@ A default link colour is applied to the `<body>` element.
         <li class="bsk-docs-hex-reference">#333333</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-link-colour"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Link colour</li>
@@ -137,7 +137,7 @@ A default link colour is applied to the `<body>` element.
 
 <div class="bsk-docs-swatch-wrapper">
   <div class="bsk-row">
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-component-default-color"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Default component colour</li>
@@ -145,7 +145,7 @@ A default link colour is applied to the `<body>` element.
         <li class="bsk-docs-hex-reference">#333333</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-component-default-bg"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Default component background</li>
@@ -153,7 +153,7 @@ A default link colour is applied to the `<body>` element.
         <li class="bsk-docs-hex-reference">#EEEEEE</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-component-default-active-bg"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Default component active background</li>
@@ -163,7 +163,7 @@ A default link colour is applied to the `<body>` element.
     </div>
   </div>
   <div class="bsk-row">
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-component-inverse-color"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Inverse component colour</li>
@@ -171,7 +171,7 @@ A default link colour is applied to the `<body>` element.
         <li class="bsk-docs-hex-reference">#EEEEEE</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-component-inverse-bg"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Inverse component background</li>
@@ -179,7 +179,7 @@ A default link colour is applied to the `<body>` element.
         <li class="bsk-docs-hex-reference">#555555</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-component-inverse-link-color"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Inverse component link colour</li>
@@ -230,7 +230,7 @@ well.
 
 <div class="bsk-docs-swatch-wrapper">
   <div class="bsk-row">
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-variant-primary-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Primary variant base</li>
@@ -238,7 +238,7 @@ well.
         <li class="bsk-docs-hex-reference">#28A197</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-variant-experimental-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Experimental variant base</li>
@@ -248,7 +248,7 @@ well.
     </div>
   </div>
   <div class="bsk-row">
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-variant-primary-text"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Primary variant text</li>
@@ -256,7 +256,7 @@ well.
         <li class="bsk-docs-hex-reference">#1B6C65</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-variant-experimental-text"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Experimental variant text</li>
@@ -336,7 +336,7 @@ which can be used alongside these classes.
 
 <div class="bsk-docs-swatch-wrapper">
   <div class="bsk-row">
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-context-success-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Success base</li>
@@ -344,7 +344,7 @@ which can be used alongside these classes.
         <li class="bsk-docs-hex-reference">#379245</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-context-warning-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Warning base</li>
@@ -352,7 +352,7 @@ which can be used alongside these classes.
         <li class="bsk-docs-hex-reference">#FFBF47</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-context-danger-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Danger base</li>
@@ -360,7 +360,7 @@ which can be used alongside these classes.
         <li class="bsk-docs-hex-reference">#B10E1E</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-context-info-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Info base</li>
@@ -370,7 +370,7 @@ which can be used alongside these classes.
     </div>
   </div>
   <div class="bsk-row">
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-context-success-text"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Success text</li>
@@ -378,7 +378,7 @@ which can be used alongside these classes.
         <li class="bsk-docs-hex-reference">#25622E</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-context-warning-text"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Warning text</li>
@@ -386,7 +386,7 @@ which can be used alongside these classes.
         <li class="bsk-docs-hex-reference">#AB8030</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-context-danger-text"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Danger text</li>
@@ -394,7 +394,7 @@ which can be used alongside these classes.
         <li class="bsk-docs-hex-reference">#770914</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-context-info-text"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Info text</li>
@@ -426,7 +426,7 @@ used as the background of an element using these classes:
 
 <div class="bsk-docs-swatch-wrapper">
   <div class="bsk-row">
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-context-success-bg"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Success background</li>
@@ -434,7 +434,7 @@ used as the background of an element using these classes:
         <li class="bsk-docs-hex-reference">#BBDAC0</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-context-warning-bg"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Warning background</li>
@@ -442,7 +442,7 @@ used as the background of an element using these classes:
         <li class="bsk-docs-hex-reference">#FFE9C0</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-context-danger-bg"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Danger background</li>
@@ -450,7 +450,7 @@ used as the background of an element using these classes:
         <li class="bsk-docs-hex-reference">#E4ADB3</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-context-info-bg"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Info background</li>
@@ -498,7 +498,7 @@ These colours can be used with many core styles and components, such as:
 
 <div class="bsk-docs-swatch-wrapper">
   <div class="bsk-row">
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-development-phase-backlog-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Backlog base</li>
@@ -506,7 +506,7 @@ These colours can be used with many core styles and components, such as:
         <li class="bsk-docs-hex-reference">#2E358B</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-development-phase-discovery-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Discovery base</li>
@@ -514,7 +514,7 @@ These colours can be used with many core styles and components, such as:
         <li class="bsk-docs-hex-reference">#912B88</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-development-phase-alpha-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Alpha base</li>
@@ -522,7 +522,7 @@ These colours can be used with many core styles and components, such as:
         <li class="bsk-docs-hex-reference">#D53880</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-development-phase-beta-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Beta base</li>
@@ -530,7 +530,7 @@ These colours can be used with many core styles and components, such as:
         <li class="bsk-docs-hex-reference">#F47738</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-development-phase-live-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Live base</li>
@@ -538,7 +538,7 @@ These colours can be used with many core styles and components, such as:
         <li class="bsk-docs-hex-reference">#AAB437</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-development-phase-retired-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Retired base</li>
@@ -591,7 +591,7 @@ incorporate them.
 
 <div class="bsk-docs-swatch-wrapper">
   <div class="bsk-row">
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-bas-theme-polar-science-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Polar Science</li>
@@ -599,7 +599,7 @@ incorporate them.
         <li class="bsk-docs-hex-reference">#B10E1E</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-bas-theme-polar-operations-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Polar Operations</li>
@@ -607,7 +607,7 @@ incorporate them.
         <li class="bsk-docs-hex-reference">#F47738</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-bas-theme-polar-arts-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Polar Arts</li>
@@ -615,7 +615,7 @@ incorporate them.
         <li class="bsk-docs-hex-reference">#912B88</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-bas-theme-polar-people-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Polar People</li>
@@ -623,7 +623,7 @@ incorporate them.
         <li class="bsk-docs-hex-reference">#1D5E83</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-bas-theme-polar-environment-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Polar Environment</li>
@@ -631,7 +631,7 @@ incorporate them.
         <li class="bsk-docs-hex-reference">#333333</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-bas-theme-polar-wildlife-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Polar Wildlife</li>
@@ -678,7 +678,7 @@ This series is incomplete. If you need a colour for an undefined location check 
 
 <div class="bsk-docs-swatch-wrapper">
   <div class="bsk-row">
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-bas-facility-rothera-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Rothera</li>
@@ -686,7 +686,7 @@ This series is incomplete. If you need a colour for an undefined location check 
         <li class="bsk-docs-hex-reference">#2B8CC4</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-bas-facility-bird-island-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Bird Island</li>
@@ -694,7 +694,7 @@ This series is incomplete. If you need a colour for an undefined location check 
         <li class="bsk-docs-hex-reference">#379245</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-bas-facility-king-edward-point-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>King Edward Point</li>
@@ -702,7 +702,7 @@ This series is incomplete. If you need a colour for an undefined location check 
         <li class="bsk-docs-hex-reference">#FFBF47</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-bas-facility-sir-david-attenborough-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Sir David Attenborough</li>
@@ -742,7 +742,7 @@ service.
 
 <div class="bsk-docs-swatch-wrapper">
   <div class="bsk-row">
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-external-service-twitter-background"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Twitter</li>
@@ -750,7 +750,7 @@ service.
         <li class="bsk-docs-hex-reference">#55ACEE</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-external-service-facebook-background"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Facebook</li>
@@ -758,7 +758,7 @@ service.
         <li class="bsk-docs-hex-reference">#3B5998</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-external-service-youtube-background"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>YouTube</li>
@@ -766,7 +766,7 @@ service.
         <li class="bsk-docs-hex-reference">#CD201F</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-external-service-rss-background"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>RSS</li>
@@ -774,7 +774,7 @@ service.
         <li class="bsk-docs-hex-reference">#F26522</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-external-service-orcid-background"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>ORCID</li>
@@ -800,7 +800,7 @@ These colours are defined by mixing black with a white base, they do not use a c
 
 <div class="bsk-docs-swatch-wrapper">
   <div class="bsk-row">
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-white"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>White</li>
@@ -808,7 +808,7 @@ These colours are defined by mixing black with a white base, they do not use a c
         <li class="bsk-docs-hex-reference">#FFFFFF</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-grey-lighter"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Grey lighter</li>
@@ -816,7 +816,7 @@ These colours are defined by mixing black with a white base, they do not use a c
         <li class="bsk-docs-hex-reference">#EEEEEE</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-grey-light"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Grey light</li>
@@ -824,7 +824,7 @@ These colours are defined by mixing black with a white base, they do not use a c
         <li class="bsk-docs-hex-reference">#999999</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-grey-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Grey base</li>
@@ -832,7 +832,7 @@ These colours are defined by mixing black with a white base, they do not use a c
         <li class="bsk-docs-hex-reference">#777777</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-grey-dark"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Grey dark</li>
@@ -840,7 +840,7 @@ These colours are defined by mixing black with a white base, they do not use a c
         <li class="bsk-docs-hex-reference">#555555</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-grey-darker"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Grey darker</li>
@@ -850,7 +850,7 @@ These colours are defined by mixing black with a white base, they do not use a c
     </div>
   </div>
   <div class="bsk-row">
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-black"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Black</li>
@@ -899,7 +899,7 @@ NERC Green
 <!-- Bases -->
 <div class="bsk-docs-swatch-wrapper">
   <div class="bsk-row">
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-yellow-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Yellow</li>
@@ -907,7 +907,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#FFBF47</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-orange-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Orange</li>
@@ -915,7 +915,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#F47738</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-aircraft-red-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Aircraft-red</li>
@@ -923,7 +923,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#CC0033</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-red-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>red</li>
@@ -931,7 +931,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#B10E1E</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-baby-pink-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Baby pink</li>
@@ -939,7 +939,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#F499BE</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-pink-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Pink</li>
@@ -949,7 +949,7 @@ NERC Green
     </div>
   </div>
   <div class="bsk-row">
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-fuschia-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Fuschia</li>
@@ -957,7 +957,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#912B88</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-mauve-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Mauve</li>
@@ -965,7 +965,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#6F72AF</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-sky-blue-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Sky blue</li>
@@ -973,7 +973,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#2B8CC4</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-blue-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Blue</li>
@@ -981,7 +981,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#003A5D</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-turquoise-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Turquoise</li>
@@ -989,7 +989,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#28A197</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-green-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>green</li>
@@ -999,7 +999,7 @@ NERC Green
     </div>
   </div>
   <div class="bsk-row">
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-nerc-green-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>NERC Green</li>
@@ -1007,7 +1007,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#AAB437</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-brown-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Brown</li>
@@ -1023,7 +1023,7 @@ NERC Green
 <!-- Yellow -->
 <div class="bsk-docs-swatch-wrapper">
   <div class="bsk-row">
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-yellow-lighter"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Yellow lighter</li>
@@ -1031,7 +1031,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#FFE9C0</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-yellow-light"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Yellow light</li>
@@ -1039,7 +1039,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#FFD484</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-yellow-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Yellow base</li>
@@ -1047,7 +1047,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#FFBF47</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-yellow-dark"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Yellow dark</li>
@@ -1055,7 +1055,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#AB8030</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-yellow-darker"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Yellow darker</li>
@@ -1069,7 +1069,7 @@ NERC Green
 <!-- Orange -->
 <div class="bsk-docs-swatch-wrapper">
   <div class="bsk-row">
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-orange-lighter"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Orange lighter</li>
@@ -1077,7 +1077,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#FBD1BB</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-orange-light"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Orange light</li>
@@ -1085,7 +1085,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#F8A47A</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-orange-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Orange base</li>
@@ -1093,7 +1093,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#F47738</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-orange-dark"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Orange dark</li>
@@ -1101,7 +1101,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#A35026</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-orange-darker"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Orange darker</li>
@@ -1115,7 +1115,7 @@ NERC Green
 <!-- Aircraft Red -->
 <div class="bsk-docs-swatch-wrapper">
   <div class="bsk-row">
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-aircraft-red-lighter"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Aircraft red lighter</li>
@@ -1123,7 +1123,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#EEA8BA</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-aircraft-red-light"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Aircraft red light</li>
@@ -1131,7 +1131,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#DD5476</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-aircraft-red-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Aircraft red base</li>
@@ -1139,7 +1139,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#CC0033</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-aircraft-red-dark"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Aircraft red dark</li>
@@ -1147,7 +1147,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#890022</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-aircraft-red-darker"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Aircraft red darker</li>
@@ -1161,7 +1161,7 @@ NERC Green
 <!-- Red -->
 <div class="bsk-docs-swatch-wrapper">
   <div class="bsk-row">
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-red-lighter"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Red lighter</li>
@@ -1169,7 +1169,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#E4ADB3</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-red-light"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Red light</li>
@@ -1177,7 +1177,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#CB5E68</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-red-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Red base</li>
@@ -1185,7 +1185,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#B10E1E</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-red-dark"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Red dark</li>
@@ -1193,7 +1193,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#770914</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-red-darker"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Red darker</li>
@@ -1207,7 +1207,7 @@ NERC Green
 <!-- Baby pink -->
 <div class="bsk-docs-swatch-wrapper">
   <div class="bsk-row">
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-baby-pink-lighter"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Baby pink lighter</li>
@@ -1215,7 +1215,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#FBDCE9</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-baby-pink-light"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Baby pink light</li>
@@ -1223,7 +1223,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#F8BBD3</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-baby-pink-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Baby pink base</li>
@@ -1231,7 +1231,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#F499BE</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-baby-pink-dark"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Baby pink dark</li>
@@ -1239,7 +1239,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#A3677F</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-baby-pink-darker"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Baby pink darker</li>
@@ -1253,7 +1253,7 @@ NERC Green
 <!-- Pink -->
 <div class="bsk-docs-swatch-wrapper">
   <div class="bsk-row">
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-pink-lighter"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Pink lighter</li>
@@ -1261,7 +1261,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#F1BBD4</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-pink-light"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Pink light</li>
@@ -1269,7 +1269,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#E37AAA</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-pink-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Pink base</li>
@@ -1277,7 +1277,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#D53880</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-pink-dark"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Pink dark</li>
@@ -1285,7 +1285,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#8F2656</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-pink-darker"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Pink darker</li>
@@ -1299,7 +1299,7 @@ NERC Green
 <!-- Fuschia -->
 <div class="bsk-docs-swatch-wrapper">
   <div class="bsk-row">
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-fuschia-lighter"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Fuschia lighter</li>
@@ -1307,7 +1307,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#DAB7D7</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-fuschia-light"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Fuschia light</li>
@@ -1315,7 +1315,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#B571AF</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-fuschia-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Fuschia base</li>
@@ -1323,7 +1323,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#912B88</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-fuschia-dark"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Fuschia dark</li>
@@ -1331,7 +1331,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#611D5B</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-fuschia-darker"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Fuschia darker</li>
@@ -1345,7 +1345,7 @@ NERC Green
 <!-- Mauve -->
 <div class="bsk-docs-swatch-wrapper">
   <div class="bsk-row">
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-mauve-lighter"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Mauve lighter</li>
@@ -1353,7 +1353,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#CECFE4</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-mauve-light"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Mauve light</li>
@@ -1361,7 +1361,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#9FA1C9</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-mauve-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Mauve base</li>
@@ -1369,7 +1369,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#6F72AF</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-mauve-dark"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Mauve dark</li>
@@ -1377,7 +1377,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#4A4C75</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-mauve-darker"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Mauve darker</li>
@@ -1391,7 +1391,7 @@ NERC Green
 <!-- Sky blue -->
 <div class="bsk-docs-swatch-wrapper">
   <div class="bsk-row">
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-sky-blue-lighter"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Sky blue lighter</li>
@@ -1399,7 +1399,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#B7D8EB</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-sky-blue-light"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Sky blue light</li>
@@ -1407,7 +1407,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#71B2D7</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-sky-blue-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Sky blue base</li>
@@ -1415,7 +1415,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#2B8CC4</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-sky-blue-dark"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Sky blue dark</li>
@@ -1423,7 +1423,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#1D5E83</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-sky-blue-darker"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Sky blue darker</li>
@@ -1437,7 +1437,7 @@ NERC Green
 <!-- Blue -->
 <div class="bsk-docs-swatch-wrapper">
   <div class="bsk-row">
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-blue-lighter"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Blue lighter</li>
@@ -1445,7 +1445,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#A8BCC8</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-blue-light"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>blue light</li>
@@ -1453,7 +1453,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#547B92</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-blue-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Blue base</li>
@@ -1461,7 +1461,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#003A5D</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-blue-dark"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Blue dark</li>
@@ -1469,7 +1469,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#00273E</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-blue-darker"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Blue darker</li>
@@ -1483,7 +1483,7 @@ NERC Green
 <!-- Turquoise -->
 <div class="bsk-docs-swatch-wrapper">
   <div class="bsk-row">
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-turquoise-lighter"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Turquoise lighter</li>
@@ -1491,7 +1491,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#B6DFDC</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-turquoise-light"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Turquoise light</li>
@@ -1499,7 +1499,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#6FC0B9</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-turquoise-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Turquoise base</li>
@@ -1507,7 +1507,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#28A197</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-turquoise-dark"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Turquoise dark</li>
@@ -1515,7 +1515,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#1B6C65</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-turquoise-darker"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Turquoise darker</li>
@@ -1529,7 +1529,7 @@ NERC Green
 <!-- Green -->
 <div class="bsk-docs-swatch-wrapper">
   <div class="bsk-row">
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-green-lighter"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Green lighter</li>
@@ -1537,7 +1537,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#BBDAC0</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-green-light"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Green light</li>
@@ -1545,7 +1545,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#79B682</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-green-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Green base</li>
@@ -1553,7 +1553,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#379245</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-green-dark"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Green dark</li>
@@ -1561,7 +1561,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#25622E</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-green-darker"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Green darker</li>
@@ -1575,7 +1575,7 @@ NERC Green
 <!-- NERC Green -->
 <div class="bsk-docs-swatch-wrapper">
   <div class="bsk-row">
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-nerc-green-lighter"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>NERC green lighter</li>
@@ -1583,7 +1583,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#E2E6BB</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-nerc-green-light"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>NERC green light</li>
@@ -1591,7 +1591,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#C6CD79</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-nerc-green-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>NERC green base</li>
@@ -1599,7 +1599,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#AAB437</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-nerc-green-dark"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>NERC green dark</li>
@@ -1607,7 +1607,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#727925</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-nerc-green-darker"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>NERC green darker</li>
@@ -1621,7 +1621,7 @@ NERC Green
 <!-- Brown -->
 <div class="bsk-docs-swatch-wrapper">
   <div class="bsk-row">
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-brown-lighter"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Brown lighter</li>
@@ -1629,7 +1629,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#E6D7BE</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-brown-light"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Brown light</li>
@@ -1637,7 +1637,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#CDAF7F</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-brown-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Brown base</li>
@@ -1645,7 +1645,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#B58840</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-brown-dark"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Brown dark</li>
@@ -1653,7 +1653,7 @@ NERC Green
         <li class="bsk-docs-hex-reference">#795B2B</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-std-brown-darker"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Brown darker</li>
@@ -1703,7 +1703,7 @@ Inline code component
 
 <div class="bsk-docs-swatch-wrapper">
   <div class="bsk-row">
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-ext-grey-light-lighter"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Grey light lighter</li>
@@ -1711,7 +1711,7 @@ Inline code component
         <li class="bsk-docs-hex-reference">#F7F7F7</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-ext-grey-darker-dark"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Grey darker dark</li>
@@ -1719,7 +1719,7 @@ Inline code component
         <li class="bsk-docs-hex-reference">#222222</li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-ext-sky-blue-lighter-light"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Sky blue lighter light</li>
@@ -1748,7 +1748,7 @@ the (UK Government) Department of Work and Pensions (DWP).
 
 <div class="bsk-docs-swatch-wrapper">
   <div class="bsk-row">
-    <div class="bsk-col-12-md-2">
+    <div class="bsk-col-md-2">
       <div class="bsk-docs-swatch-colour bsk-docs-swatch-ext-purple-base"></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-swatch-details">
         <li>Purple base</li>

@@ -59,19 +59,20 @@ Use the `aria-label` element so assistive technologies can tell each pagination 
   heading_level=3
   phase="live"
   initial_version="0.1.0"
+  revised_version="0.7.0"
   included="yes"
 %}
 
 {% example html %}
 <nav aria-label="pagination-example-1">
   <ul class="bsk-pagination">
-    <li><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
-    <li class="bsk-active"><a href="#">1 <span class="bsk-sr-only">(current)</span></a></li>
-    <li><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li><a href="#">4</a></li>
-    <li><a href="#">5</a></li>
-    <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+    <li class="bsk-page-item"><a href="#" class="bsk-page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+    <li class="bsk-page-item bsk-active"><a href="#" class="bsk-page-link">1 <span class="bsk-visually-hidden">(current)</span></a></li>
+    <li class="bsk-page-item"><a href="#" class="bsk-page-link">2</a></li>
+    <li class="bsk-page-item"><a href="#" class="bsk-page-link">3</a></li>
+    <li class="bsk-page-item"><a href="#" class="bsk-page-link">4</a></li>
+    <li class="bsk-page-item"><a href="#" class="bsk-page-link">5</a></li>
+    <li class="bsk-page-item"><a href="#" class="bsk-page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
   </ul>
 </nav>
 {% endexample %}
@@ -121,35 +122,35 @@ These classes don't apply to the pager.
 {% example html %}
 <nav aria-label="pagination-example-2">
   <ul class="bsk-pagination bsk-pagination-sm">
-    <li><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
-    <li><a href="#">1 <span class="bsk-sr-only">(current)</span></a></li>
-    <li><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li><a href="#">4</a></li>
-    <li><a href="#">5</a></li>
-    <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+    <li class="bsk-page-item"><a href="#" class="bsk-page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+    <li class="bsk-page-item"><a href="#" class="bsk-page-link">1 <span class="bsk-visually-hidden">(current)</span></a></li>
+    <li class="bsk-page-item"><a href="#" class="bsk-page-link">2</a></li>
+    <li class="bsk-page-item"><a href="#" class="bsk-page-link">3</a></li>
+    <li class="bsk-page-item"><a href="#" class="bsk-page-link">4</a></li>
+    <li class="bsk-page-item"><a href="#" class="bsk-page-link">5</a></li>
+    <li class="bsk-page-item"><a href="#" class="bsk-page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
   </ul>
 </nav>
 <nav aria-label="pagination-example-3">
   <ul class="bsk-pagination">
-    <li><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
-    <li><a href="#">1 <span class="bsk-sr-only">(current)</span></a></li>
-    <li><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li><a href="#">4</a></li>
-    <li><a href="#">5</a></li>
-    <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+    <li class="bsk-page-item"><a href="#" class="bsk-page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+    <li class="bsk-page-item"><a href="#" class="bsk-page-link">1 <span class="bsk-visually-hidden">(current)</span></a></li>
+    <li class="bsk-page-item"><a href="#" class="bsk-page-link">2</a></li>
+    <li class="bsk-page-item"><a href="#" class="bsk-page-link">3</a></li>
+    <li class="bsk-page-item"><a href="#" class="bsk-page-link">4</a></li>
+    <li class="bsk-page-item"><a href="#" class="bsk-page-link">5</a></li>
+    <li class="bsk-page-item"><a href="#" class="bsk-page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
   </ul>
 </nav>
 <nav aria-label="pagination-example-4">
   <ul class="bsk-pagination bsk-pagination-lg">
-    <li><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
-    <li><a href="#">1 <span class="bsk-sr-only">(current)</span></a></li>
-    <li><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li><a href="#">4</a></li>
-    <li><a href="#">5</a></li>
-    <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+    <li class="bsk-page-item"><a href="#" class="bsk-page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+    <li class="bsk-page-item"><a href="#" class="bsk-page-link">1 <span class="bsk-visually-hidden">(current)</span></a></li>
+    <li class="bsk-page-item"><a href="#" class="bsk-page-link">2</a></li>
+    <li class="bsk-page-item"><a href="#" class="bsk-page-link">3</a></li>
+    <li class="bsk-page-item"><a href="#" class="bsk-page-link">4</a></li>
+    <li class="bsk-page-item"><a href="#" class="bsk-page-link">5</a></li>
+    <li class="bsk-page-item"><a href="#" class="bsk-page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
   </ul>
 </nav>
 {% endexample %}
@@ -175,13 +176,13 @@ The active state doesn't apply to the pager.
 {% example html %}
 <nav aria-label="pagination-example-5">
   <ul class="bsk-pagination">
-    <li><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
-    <li class="bsk-active"><a href="#">1 <span class="bsk-sr-only">(current)</span></a></li>
-    <li><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li><a href="#">4</a></li>
-    <li><a href="#">5</a></li>
-    <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+    <li class="bsk-page-item"><a href="#" class="bsk-page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+    <li class="bsk-page-item bsk-active"><a href="#" class="bsk-page-link">1 <span class="bsk-visually-hidden">(current)</span></a></li>
+    <li class="bsk-page-item"><a href="#" class="bsk-page-link">2</a></li>
+    <li class="bsk-page-item"><a href="#" class="bsk-page-link">3</a></li>
+    <li class="bsk-page-item"><a href="#" class="bsk-page-link">4</a></li>
+    <li class="bsk-page-item"><a href="#" class="bsk-page-link">5</a></li>
+    <li class="bsk-page-item"><a href="#" class="bsk-page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
   </ul>
 </nav>
 {% endexample %}
@@ -210,13 +211,13 @@ Add the `.bsk-disabled` class to indicate unavailable items or actions.
 {% example html %}
 <nav aria-label="pagination-example-6">
   <ul class="bsk-pagination">
-    <li class="bsk-disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
-    <li><a href="#">1 <span class="bsk-sr-only">(current)</span></a></li>
-    <li><a href="#">2</a></li>
-    <li><a href="#">3</a></li>
-    <li><a href="#">4</a></li>
-    <li><a href="#">5</a></li>
-    <li><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+    <li class="bsk-page-item bsk-disabled"><a href="#" class="bsk-page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+    <li class="bsk-page-item"><a href="#" class="bsk-page-link">1 <span class="bsk-visually-hidden">(current)</span></a></li>
+    <li class="bsk-page-item"><a href="#" class="bsk-page-link">2</a></li>
+    <li class="bsk-page-item"><a href="#" class="bsk-page-link">3</a></li>
+    <li class="bsk-page-item"><a href="#" class="bsk-page-link">4</a></li>
+    <li class="bsk-page-item"><a href="#" class="bsk-page-link">5</a></li>
+    <li class="bsk-page-item"><a href="#" class="bsk-page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
   </ul>
 </nav>
 {% endexample %}

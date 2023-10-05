@@ -1,6 +1,6 @@
-FROM docker-registry.data.bas.ac.uk/web-apps/infrastructure/bdi/jekyll-image:0.7.0-alpine
+FROM docker-registry.data.bas.ac.uk/web-apps/infrastructure/bdi/jekyll-image:0.8.0-alpine
 
-LABEL maintainer = "Felix Fennell <felnne@bas.ac.uk>"
+LABEL maintainer="Web & Apps <webapps@bas.ac.uk>"
 
 # Setup project
 WORKDIR /usr/src/app

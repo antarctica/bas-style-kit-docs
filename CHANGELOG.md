@@ -5,6 +5,20 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ## [Unreleased][unreleased]
 
+## v1.9.0 - 12/09/2023
+
+### Added
+
+
+### Removed
+
+* transition.md
+* column size xs-* replaced with xs- E.g. `bsk-col-xs-6` is now `bsk-col-6`
+
+### Changed
+
+
+
 ## v1.8.0 - 17/03/2021
 
 ### Added

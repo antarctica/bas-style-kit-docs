@@ -11,10 +11,6 @@ sections:
     title: Usage
   -
     title: Examples
-body_js_files:
-  -
-    href: '/js/tooltips.js'
-    type: 'local'
 ---
 
 {% include topic-section-metadata.html
@@ -25,7 +21,7 @@ body_js_files:
 %}
 
 The Style Kit includes a customised version of the Bootstrap
-[tool-tip](https://getbootstrap.com/docs/3.3/javascript/#tooltips) plugin to be compatible with Style Kit specific
+[tool-tip](https://getbootstrap.com/docs/5.2/components/tooltips/#enable-tooltips) plugin to be compatible with Style Kit specific
 classes. It's functionality and data API remain exactly the same.
 
 {% capture alert_content %}
@@ -38,7 +34,7 @@ Tool-tip's are not enabled globally. You will need to add the code from the
   content=alert_content
 %}
 
-[View Tool-Tip Plugin](https://getbootstrap.com/docs/3.3/javascript/#tooltips){:.bsk-btn .bsk-btn-default }
+[View Tool-Tip Plugin](https://getbootstrap.com/docs/5.2/components/tooltips/#enable-tooltips){:.bsk-btn .bsk-btn-default }
 
 {% include topic-section-metadata.html
   title="Dependencies"
@@ -61,7 +57,7 @@ how to include these dependencies.
   content=alert_content
 %}
 
-{% include topic-section-metadata.html
+<!-- {% include topic-section-metadata.html
   title="Activation"
   heading_level=2
 %}
@@ -73,7 +69,7 @@ Style Kit's JavaScript file.
 jQuery(document).ready(function() {
   jQuery('[data-toggle="tooltip"]').tooltip()
 });
-{% endhighlight %}
+{% endhighlight %} -->
 
 {% include topic-section-metadata.html
   title="Uses"
@@ -105,7 +101,7 @@ Wherever possible `title` attributes should be used as they are part of the HTML
 %}
 
 {% example html %}
-<button class="bsk-btn bsk-btn-default" type="button" data-toggle="tooltip" data-placement="bottom" title="tooltip on the bottom" style="margin-bottom:20px;">Tooltip (bottom)</button>
+<button class="bsk-btn bsk-btn-default" type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-original-title="Tooltip on the bottom" style="margin-bottom:20px;">Tooltip (bottom)</button>
 {% endexample %}
 
 {% capture alert_content %}

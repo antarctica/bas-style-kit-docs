@@ -18,24 +18,22 @@ sections:
   heading_level=2
   phase="live"
   initial_version="0.5.0"
+  revised_version="0.7.0"
 %}
 
 The Style Kit includes a customised version of the Bootstrap
-[modal](https://getbootstrap.com/docs/3.3/javascript/#modal) plugin to be compatible with Style Kit specific
+[modal](https://getbootstrap.com/docs/5.2/components/navs-tabs/#javascript-behavior) plugin to be compatible with Style Kit specific
 classes. It's functionality and data API remain exactly the same.
 
-[View Modal Plugin](https://getbootstrap.com/docs/3.3/javascript/#modal){:.bsk-btn .bsk-btn-default }
+[View Modal Plugin](https://getbootstrap.com/docs/5.2/components/navs-tabs/#javascript-behavior){:.bsk-btn .bsk-btn-default }
 
 {% include topic-section-metadata.html
   title="Dependencies"
   heading_level=2
   phase="live"
   initial_version="0.5.0"
+  revised_version="0.7.0"
 %}
-
-This plugin depends upon:
-
-* [jQuery](https://jquery.com).
 
 {% capture alert_content %}
 See [distribution]({{ '/start/distribution/#javascript-dependencies' | prepend: site.baseurl }}){: .bsk-alert-link} for
@@ -83,23 +81,23 @@ action, consider using a standard
 
 {% example html %}
 <!-- trigger -->
-<button class="bsk-btn bsk-btn-default" type="button" data-toggle="modal" data-target="#example-modal">Trigger modal</button>
+<button class="bsk-btn bsk-btn-default" type="button" data-bs-toggle="modal" data-bs-target="#example-modal">Trigger modal</button>
 
 <!-- modal -->
 <div class="bsk-modal bsk-fade" id="example-modal" tabindex="-1" role="dialog">
   <div class="bsk-modal-dialog" role="document">
     <div class="bsk-modal-content">
       <header class="bsk-modal-header">
+        <div class="bsk-h4 bsk-modal-title">Your booking will expire in 24 minutes</div>
         <button class="bsk-close" type="button" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
-        <div class="bsk-h4 bsk-modal-title">Your booking will expire in 24 minutes</div>
       </header>
       <div class="bsk-modal-body">
         <p>Your tickets are only reserved for a limited time until paid for. If your booking expires you will need to start again.</p>
       </div>
       <footer class="bsk-modal-footer">
-        <button class="bsk-btn bsk-btn-primary" type="button" data-dismiss="modal">Continue</button>
+        <button class="bsk-btn bsk-btn-primary" type="button" data-bs-dismiss="modal" data-bs-target="#example-modal">Continue</button>
       </footer>
     </div>
   </div>

@@ -173,52 +173,47 @@ This example uses a fluid container so it does not appear broken.
 {% example html %}
 <div class="bsk-fix-alert-static-top-fixed-container-wrapper">
   <div class="bsk-container-fluid">
-    <div class="bsk-alert bsk-alert-static-top bsk-alert-dismissible bsk-alert-solid bsk-alert-cookie-notice" role="alert" data-bsk-role="cookie-notice-example">
-      <button type="button" class="bsk-close" data-dismiss="alert" aria-label="Close">&times;</button>
+    <div id="alert-message" class="bsk-alert bsk-alert-static-top bsk-alert-dismissible bsk-alert-solid bsk-alert-cookie-notice" role="alert" data-bsk-role="cookie-notice-example">
+      <button type="button" class="bsk-close" data-bs-dismiss="alert" data-bs-target="#alert-message" aria-label="Close">&times;</button>
       This website uses cookies to help us make it better - <a href="#" class="bsk-alert-link">find out more</a>.
     </div>
   </div>
 </div>
 
-<nav class="bsk-navbar">
+<nav class="bsk-navbar bsk-navbar-expand-lg bsk-navbar-dark bsk-bg-dark">
   <div class="bsk-container-fluid">
     <!-- Site name and toggle get grouped for better mobile display -->
-    <div class="bsk-navbar-header">
-      <button type="button" class="bsk-navbar-toggle bsk-collapsed" data-toggle="collapse" data-target="#bsk-example-navbar-collapse-1" aria-expanded="false">
-        <span class="bsk-sr-only">Toggle navigation</span>
-        <span class="bsk-icon-bar"></span>
-        <span class="bsk-icon-bar"></span>
-        <span class="bsk-icon-bar"></span>
-      </button>
-      <a class="bsk-navbar-brand" href="#">Site Name</a>
-    </div>
+    <a class="bsk-navbar-brand" href="#">Site Name</a>
+    <button type="button" class="bsk-navbar-toggler bsk-ms-auto" data-bs-toggle="collapse" data-bs-target="#bsk-example-navbar-collapse-1" aria-label="Toggle navigation">
+      <span class="bsk-navbar-toggler-icon"></span>
+    </button>
     <!-- Collect navigation links, forms, and other items for hiding at smaller screen sizes -->
-    <div class="bsk-collapse bsk-navbar-collapse" id="bsk-example-navbar-collapse-1">
+    <div id="bsk-example-navbar-collapse-1" class="bsk-collapse bsk-navbar-collapse">
       <ul class="bsk-nav bsk-navbar-nav">
-        <li class="bsk-active"><a href="#">Home <span class="bsk-sr-only">(current)</span></a></li>
-        <li><a href="#">About</a></li>
+        <li class="bsk-active"><a href="#" class="bsk-dropdown-item">Home <span class="bsk-visually-hidden">(current)</span></a></li>
+        <li><a href="#" class="bsk-dropdown-item">About</a></li>
         <li class="bsk-dropdown">
-          <a href="#" class="bsk-dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          <a href="#" class="bsk-dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
           Dropdown <span class="bsk-caret"></span></a>
-          <ul class="bsk-dropdown-menu">
-            <li><a href="#">Action</a></li>
-            <li><a href="#">Another action</a></li>
-            <li><a href="#">Something else here</a></li>
+          <ul class="bsk-dropdown-menu bsk-shadow">
+            <li><a href="#" class="bsk-dropdown-item">Action</a></li>
+            <li><a href="#" class="bsk-dropdown-item">Another action</a></li>
+            <li><a href="#" class="bsk-dropdown-item">Something else here</a></li>
             <li role="separator" class="bsk-divider"></li>
-            <li><a href="#">Separated link</a></li>
+            <li><a href="#" class="bsk-dropdown-item">Separated link</a></li>
             <li role="separator" class="bsk-divider"></li>
-            <li><a href="#">One more separated link</a></li>
+            <li><a href="#" class="bsk-dropdown-item">One more separated link</a></li>
           </ul>
         </li>
       </ul>
-      <ul class="bsk-nav bsk-navbar-nav bsk-navbar-right">
+      <ul class="bsk-nav bsk-navbar-nav bsk-ms-auto">
         <li class="bsk-dropdown">
-          <a href="#" class="bsk-dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          <a href="#" class="bsk-dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
           Part of British Antarctic Survey <span class="bsk-caret"></span></a>
-          <ul class="bsk-dropdown-menu">
-            <li><a href="https://www.bas.ac.uk">BAS Home</a></li>
-            <li><a href="https://data.bas.ac.uk">Discover BAS data</a></li>
-            <li><a href="#">Another service (optional)</a></li>
+          <ul class="bsk-dropdown-menu bsk-shadow bsk-dropdown-menu-lg-end">
+            <li><a href="https://www.bas.ac.uk" class="bsk-dropdown-item">BAS Home</a></li>
+            <li><a href="https://data.bas.ac.uk" class="bsk-dropdown-item">Discover BAS data</a></li>
+            <li><a href="#" class="bsk-dropdown-item">Another service (optional)</a></li>
           </ul>
         </li>
       </ul>

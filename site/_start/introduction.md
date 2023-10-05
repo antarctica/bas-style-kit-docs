@@ -24,8 +24,6 @@ sections:
 The BAS Style Kit is based on [Bootstrap](https://www.getbootstrap.com), the world's most popular CSS framework.
 The Style Kit uses a customised version of Bootstrap to follow our design choices (such as not using rounded corners).
 
-The Style Kit is based on version *3.3.7* of the official [Bootstrap Sass port](https://github.com/twbs/bootstrap-sass).
-
 As well as Bootstrap, the BAS Style Kit takes influences from:
 
 * the [Government Design System](https://design-system.service.gov.uk)
@@ -53,8 +51,7 @@ to add the Style Kit's JS file and its dependencies, usually just before the end
 element.
 
 {% highlight html %}
-<script src="{{ site.data.variables.cdn_base_libs }}/jquery/3.5.1/js/jquery-3.6.0.min.js" integrity="{{ site.data.bas_cdn_libs_sri['libs/jquery/3.6.0/js/jquery-3.6.0.min.js'] }}" crossorigin="anonymous"></script>
-<script src="{{ site.data.variables.cdn_base_libs }}/js-cookie/2.2.1/js/js.cookie-2.2.1.min.js" integrity="{{ site.data.bas_cdn_libs_sri['libs/js-cookie/2.2.1/js/js.cookie-2.2.1.min.js'] }}" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.8.9/dist/cookieconsent.js"></script>
 <script src="{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/js/bas-style-kit.min.js" integrity="
   {%- unless jekyll.environment == 'production' -%}
     {{ site.data.bsk_sri_base_staging['dist/js/bas-style-kit.min.js'] }}
@@ -164,6 +161,13 @@ look consistent with it. The Style Kit's grid system for example cannot be used 
 %}
 
 [Apex theme documentation](https://github.com/antarctica/bas-style-kit-apex-theme){: .bsk-btn .bsk-btn-default }
+
+{% include topic-section-metadata.html
+  title="Apache listing pages"
+  heading_level=3
+%}
+
+An Apache 2 setup to style listing pages with the BAS Style Kit - [https://gitlab.data.bas.ac.uk/web-apps/bsk/apache-directory-pages-styling](https://gitlab.data.bas.ac.uk/web-apps/bsk/apache-directory-pages-styling)
 
 {% include topic-section-metadata.html
   title="Global prefix"

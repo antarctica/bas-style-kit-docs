@@ -3,7 +3,7 @@ item_type: Component
 title: Image copyright
 menus:
   primary_components:
-    weight: 10
+    weight: 11
 sections:
   -
     title: Overview

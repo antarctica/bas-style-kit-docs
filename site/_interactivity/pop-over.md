@@ -11,10 +11,6 @@ sections:
     title: Usage
   -
     title: Examples
-body_js_files:
-  -
-    href: '/js/popovers.js'
-    type: 'local'
 ---
 
 {% include topic-section-metadata.html
@@ -22,10 +18,11 @@ body_js_files:
   heading_level=2
   phase="live"
   initial_version="0.5.0"
+  revised_version="0.7.0"
 %}
 
 The Style Kit includes a customised version of the Bootstrap
-[pop-over](https://getbootstrap.com/docs/3.3/javascript/#popover) plugin to be compatible with Style Kit specific
+[pop-over](https://getbootstrap.com/docs/5.2/components/popovers/) plugin to be compatible with Style Kit specific
 classes. It's functionality and data API remain exactly the same.
 
 This plugin builds upon functionality provided by the [tool-tip]({{ '/interactivity/tool-tip' | prepend: site.baseurl }})
@@ -41,18 +38,19 @@ Pop-over's are not enabled globally. You will need to add the code from the
   content=alert_content
 %}
 
-[View Pop-Over Plugin](https://getbootstrap.com/docs/3.3/javascript/#popover){:.bsk-btn .bsk-btn-default }
+[View Pop-Over Plugin](https://getbootstrap.com/docs/5.2/components/popovers/){:.bsk-btn .bsk-btn-default }
 
 {% include topic-section-metadata.html
   title="Dependencies"
   heading_level=2
   phase="live"
   initial_version="0.5.0"
+  revised_version="0.7.0"
 %}
 
 This plugin depends upon:
 
-* [jQuery](https://jquery.com).
+* [Popper](https://popper.js.org/).
 
 {% capture alert_content %}
 See [distribution]({{ '/start/distribution/#javascript-dependencies' | prepend: site.baseurl }}){: .bsk-alert-link} for
@@ -69,14 +67,16 @@ how to include these dependencies.
   heading_level=2
 %}
 
-To enable any element with a `data-toggle="popover"` attribute as a pop-over, include this JavaScript code after the
+To enable any element with a `data-bs-toggle="popover"` attribute as a pop-over, include this JavaScript code after the
 Style Kit's JavaScript file.
 
-{% highlight js %}
-jQuery(document).ready(function() {
-  jQuery('[data-toggle="popover"]').popover()
-});
-{% endhighlight %}
+<!-- {% highlight js %}
+var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+console.log(popoverTriggerList);
+var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+  return new bootstrap.Popover(popoverTriggerEl)
+})
+{% endhighlight %} -->
 
 {% include topic-section-metadata.html
   title="Uses"
@@ -112,7 +112,9 @@ normally.
 %}
 
 {% example html %}
-<button class="bsk-btn bsk-btn-default" type="button" data-toggle="popover" data-placement="top" data-content="Popover content" title="popover on the top" style="margin-top:80px;margin-left:20px;">Popover (top)</button>
+<button class="bsk-btn bsk-btn-default" type="button" data-bs-toggle="popover" data-bs-placement="top" data-bs-content="Popover content" title="popover on the top" style="margin-top:80px;margin-left:20px;">Popover (top)</button>
+
+
 {% endexample %}
 
 {% capture alert_content %}

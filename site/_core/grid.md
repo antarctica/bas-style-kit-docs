@@ -40,7 +40,7 @@ The BAS Style Kit inherits, and expands, the grid system provided by Bootstrap.
   heading_level=2
   phase="live"
   initial_version="0.1.0"
-  revised_version="0.2.0"
+  revised_version="0.7.0"
   included="yes"
 %}
 
@@ -67,10 +67,11 @@ they are defined after the standard grid classes in the CSS file.
   content=alert_content
 %}
 
-| Grid Name     | Total Columns | Class Prefix   |
-| ------------- | ------------- | -------------- |
-| Standard      | 12            | `.bsk-col-12`  |
-| Alternate     | 24            | `.bsk-col-24`  |
+| Grid Name                           | Total Columns | Class Prefix   |
+| ----------------------------------- | ------------- | -------------- |
+| Bootstrap 12 column                 | 12            | `.bsk-col-*`   |
+| <s>Standard - depreciated</s>       | 12            | `.bsk-col-12`  |
+| <s>Alternate - depreciated</s>      | 24            | `.bsk-col-24`  |
 {: .bsk-table .bsk-table-responsive }
 
 {% include topic-section-metadata.html
@@ -90,14 +91,14 @@ There are some rules for using the grid system:
 1. all rows must be wrapped in a [container]({{ '/core/layout/#containers' | prepend: site.baseurl }}), but this
 doesn't need to be an direct parent
 2. only columns can be the direct children of rows
-3. each row can't span more more than the total number of columns for each grid (i.e. either 12 or 24)
+3. each row can't span more more than the total number of columns for each grid
 
 {% include topic-section-metadata.html
   title="Grid sizes"
   heading_level=2
   phase="live"
   initial_version="0.1.0"
-  revised_version="0.3.0"
+  revised_version="0.7.0"
   included="yes"
 %}
 
@@ -145,21 +146,21 @@ shown full width, stacked one after the other, on smaller devices.
     </tr>
     <tr>
       <th>Standard Grid Class Prefix</th>
-      <td><code>.bsk-col-12-xs</code></td>
-      <td><code>.bsk-col-12-sm</code></td>
-      <td><code>.bsk-col-12-md</code></td>
-      <td><code>.bsk-col-12-lg</code></td>
-      <td><code>.bsk-col-12-xl</code></td>
-      <td><code>.bsk-col-12-fhd</code></td>
+      <td><code>.bsk-col-xs</code></td>
+      <td><code>.bsk-col-sm</code></td>
+      <td><code>.bsk-col-md</code></td>
+      <td><code>.bsk-col-lg</code></td>
+      <td><code>.bsk-col-xl</code></td>
+      <td><code>.bsk-col-fhd</code></td>
     </tr>
     <tr>
       <th>Alternate Grid Class Prefix</th>
-      <td><code>.bsk-col-24-xs</code></td>
-      <td><code>.bsk-col-24-sm</code></td>
-      <td><code>.bsk-col-24-md</code></td>
-      <td><code>.bsk-col-24-lg</code></td>
-      <td><code>.bsk-col-24-xl</code></td>
-      <td><code>.bsk-col-24-fhd</code></td>
+      <td><code>.bsk-col-xs</code></td>
+      <td><code>.bsk-col-sm</code></td>
+      <td><code>.bsk-col-md</code></td>
+      <td><code>.bsk-col-lg</code></td>
+      <td><code>.bsk-col-xl</code></td>
+      <td><code>.bsk-col-fhd</code></td>
     </tr>
     <tr>
       <th>Column Width</th>
@@ -179,15 +180,14 @@ shown full width, stacked one after the other, on smaller devices.
 
 {% example html %}
 <div class="bsk-row">
-  <div class="bsk-col-12-md-6 bsk-docs-content-block">.bsk-col-12-md-6</div>
-  <div class="bsk-col-12-md-6 bsk-docs-content-block">.bsk-col-12-md-6</div>
+  <div class="bsk-col-md-6 bsk-docs-content-block">.bsk-col-md-6</div>
+  <div class="bsk-col-md-6 bsk-docs-content-block">.bsk-col-md-6</div>
 </div>
 {% endexample %}
 
 {% example html %}
 <div class="bsk-row">
-  <div class="bsk-col-24-md-12 bsk-docs-content-block">.bsk-col-24-md-12</div>
-  <div class="bsk-col-24-md-12 bsk-docs-content-block">.bsk-col-24-md-12</div>
+  <div class="bsk-col-md-12 bsk-docs-content-block">.bsk-col-md-12</div>
 </div>
 {% endexample %}
 
@@ -196,40 +196,26 @@ shown full width, stacked one after the other, on smaller devices.
   heading_level=2
   phase="live"
   initial_version="0.1.0"
-  revised_version="0.2.0"
+  revised_version="0.7.0"
   included="yes"
 %}
 
 Offset classes can be used to 'indent' columns within a row.
 
-For example `.bsk-col-12-md-offset-4` offsets a column by 4 grid columns, or `.bsk-col-24-md-offset-8` if using the BAS
+For example `.bsk-offset-md-4` offsets a column by 4 grid columns, or `.bsk-offset-md-8` if using the BAS
 Style Kit grid.
 
 {% example html %}
 <div class="bsk-row">
-  <div class="bsk-col-12-md-4 bsk-docs-content-block">.bsk-col-12-md-4</div>
-  <div class="bsk-col-12-md-4 bsk-col-12-md-offset-4 bsk-docs-content-block">.bsk-col-12-md-4 .bsk-col-12-md-offset-4</div>
+  <div class="bsk-col-md-4 bsk-docs-content-block">.bsk-col-md-4</div>
+  <div class="bsk-col-md-4 bsk-offset-md-4 bsk-docs-content-block">.bsk-col-md-4 .bsk-offset-md-4</div>
 </div>
 <div class="bsk-row">
-  <div class="bsk-col-12-md-3 bsk-col-12-md-offset-3 bsk-docs-content-block">.bsk-col-12-md-3 .bsk-col-12-md-offset-3</div>
-  <div class="bsk-col-12-md-3 bsk-col-12-md-offset-3 bsk-docs-content-block">.bsk-col-12-md-3 .bsk-col-12-md-offset-3</div>
+  <div class="bsk-col-md-3 bsk-offset-md-3 bsk-docs-content-block">.bsk-col-md-3 .bsk-offset-md-3</div>
+  <div class="bsk-col-md-3 bsk-offset-md-3 bsk-docs-content-block">.bsk-col-md-3 .bsk-offset-md-3</div>
 </div>
 <div class="bsk-row">
-  <div class="bsk-col-12-md-6 bsk-col-12-md-offset-3 bsk-docs-content-block">.bsk-col-12-md-6 .bsk-col-12-md-offset-3</div>
-</div>
-{% endexample %}
-
-{% example html %}
-<div class="bsk-row">
-  <div class="bsk-col-24-md-8 bsk-docs-content-block">.bsk-col-24-md-8</div>
-  <div class="bsk-col-24-md-8 bsk-col-24-md-offset-8 bsk-docs-content-block">.bsk-col-24-md-8 .bsk-col-24-md-offset-8</div>
-</div>
-<div class="bsk-row">
-  <div class="bsk-col-24-md-6 bsk-col-24-md-offset-6 bsk-docs-content-block">.bsk-col-24-md-6 .bsk-col-24-md-offset-6</div>
-  <div class="bsk-col-24-md-6 bsk-col-24-md-offset-6 bsk-docs-content-block">.bsk-col-24-md-6 .bsk-col-24-md-offset-6</div>
-</div>
-<div class="bsk-row">
-  <div class="bsk-col-24-md-12 bsk-col-24-md-offset-6 bsk-docs-content-block">.bsk-col-24-md-12 .bsk-col-24-md-offset-6</div>
+  <div class="bsk-col-md-6 bsk-offset-md-3 bsk-docs-content-block">.bsk-col-md-6 .bsk-offset-md-3</div>
 </div>
 {% endexample %}
 
@@ -238,12 +224,12 @@ Style Kit grid.
   heading_level=2
   phase="live"
   initial_version="0.1.0"
-  revised_version="0.2.0"
+  revised_version="0.7.0"
   included="yes"
 %}
 
 Rows can be used within a column to create a nested grid. Each nested grid has the same total number of grid columns,
-but you don't need to use all of them. You can also nest the alternate grid within the standard grid or vice versa.
+but you don't need to use all of them. <s>You can also nest the alternate grid within the standard grid or vice versa.</s>
 
 For example, a row has two columns, A and B, spanning 6 columns each in the standard grid (12 columns). Column A has a
 row with three nested columns, each spanning 8 columns each of the alternate grid.
@@ -259,22 +245,22 @@ The nested columns in this example will appear to escape their parent column, th
 
 {% example html %}
 <div class="bsk-row">
-  <div class="bsk-col-12-md-6 bsk-docs-content-block">
-    Level 1: .bsk-col-12-sm-6 (column A)
+  <div class="bsk-col-md-6 bsk-docs-content-block">
+    Level 1: .bsk-col-sm-6 (column A)
     <div class="bsk-row">
-      <div class="bsk-col-12-bsk-md-8 bsk-docs-content-block">
-        Level 2: .bsk-col-12-bsk-md-8 (1)
+      <div class="bsk-col-bsk-md-8 bsk-docs-content-block">
+        Level 2: .bsk-col-bsk-md-8 (1)
       </div>
-      <div class="bsk-col-12-bsk-md-8 bsk-docs-content-block">
-        Level 2: .bsk-col-12-bsk-md-8 (2)
+      <div class="bsk-col-bsk-md-8 bsk-docs-content-block">
+        Level 2: .bsk-col-bsk-md-8 (2)
       </div>
-      <div class="bsk-col-12-bsk-md-8 bsk-docs-content-block">
-        Level 2: .bsk-col-12-bsk-md-8 (3)
+      <div class="bsk-col-bsk-md-8 bsk-docs-content-block">
+        Level 2: .bsk-col-bsk-md-8 (3)
       </div>
     </div>
   </div>
-  <div class="bsk-col-12-md-6 bsk-docs-content-block">
-    Level 1: .bsk-col-12-md-6 (column B)
+  <div class="bsk-col-md-6 bsk-docs-content-block">
+    Level 1: .bsk-col-md-6 (column B)
   </div>
 </div>
 {% endexample %}
@@ -284,23 +270,17 @@ The nested columns in this example will appear to escape their parent column, th
   heading_level=2
   phase="live"
   initial_version="0.1.0"
-  revised_version="0.2.0"
+  revised_version="0.7.0"
   included="yes"
 %}
 
-Pull and push classes can be used to order columns within a row, though this is rarely needed.
+Order classes can be used to order columns within a row.
 
 {% example html %}
 <div class="bsk-row">
-  <div class="bsk-col-12-md-9 bsk-col-12-md-push-3 bsk-docs-content-block">.bsk-col-12-md-9 .bsk-col-12-md-push-3</div>
-  <div class="bsk-col-12-md-3 bsk-col-12-md-pull-9 bsk-docs-content-block">.bsk-col-12-md-3 .bsk-col-12-md-pull-9</div>
-</div>
-{% endexample %}
-
-{% example html %}
-<div class="bsk-row">
-  <div class="bsk-col-24-md-18 bsk-col-24-md-push-6 bsk-docs-content-block">.bsk-col-24-md-18 .bsk-col-24-md-push-6</div>
-  <div class="bsk-col-24-md-6 bsk-col-24-md-pull-18 bsk-docs-content-block">.bsk-col-24-md-6 .bsk-col-24-md-pull-18</div>
+  <div class="bsk-col-md-4 bsk-order-2 bsk-docs-content-block">1 .bsk-col-md-4 .bsk-order-2</div>
+  <div class="bsk-col-md-4 bsk-order-1 bsk-docs-content-block">2 .bsk-col-md-4 .bsk-order-1</div>
+  <div class="bsk-col-md-4 bsk-order-3 bsk-docs-content-block">3 .bsk-col-md-4 .bsk-order-3</div>
 </div>
 {% endexample %}
 

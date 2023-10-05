@@ -5,9 +5,6 @@
 // Styles for documentation elements
 @import 'documentation';
 
-// Styles for fixing examples, such as fixed with footers and navbars, otherwise they would spill out of examples.
-@import 'example-fixes';
-
 // Styles for colour swatches & icon lists - base classes may become a component in the future
 @import 'swatches';
 
@@ -23,3 +20,6 @@
 // Styles for specific pages
 @import 'homepage';
 @import 'feedback_page';
+
+// Styles for fixing examples, such as fixed with footers and navbars, otherwise they would spill out of examples.
+@import 'example-fixes';

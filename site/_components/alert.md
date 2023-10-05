@@ -291,7 +291,7 @@ Use the `.bsk-alert-link` class for any <code>&lt;a&gt;</code> elements within a
   heading_level=3
   phase="live"
   initial_version="0.1.0"
-  revised_version="0.5.0"
+  revised_version="0.7.0"
   included="yes"
 %}
 
@@ -319,8 +319,8 @@ browser compatibility.
 %}
 
 {% example html %}
-<div class="bsk-alert bsk-alert-solid bsk-alert-success bsk-alert-dismissible" role="alert">
-  <button type="button" class="bsk-close" data-dismiss="alert" aria-label="Close">&times;</button>
+<div id="alert-id" class="bsk-alert bsk-alert-solid bsk-alert-success bsk-alert-dismissible" role="alert">
+  <button type="button" class="bsk-close" data-bs-dismiss="alert" data-bs-target="#alert-id"  aria-label="Close">&times;</button>
   A dismissible alert
 </div>
 {% endexample %}

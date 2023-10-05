@@ -3,7 +3,7 @@ item_type: Component
 title: Header
 menus:
   primary_components:
-    weight: 9
+    weight: 10
 sections:
   -
     title: Overview

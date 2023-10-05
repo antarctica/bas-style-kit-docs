@@ -135,12 +135,12 @@ to identify the type of device being used. If this information is needed conside
 %}
 
 {% capture alert_content %}
-No media-query is used for the *extra small* size, therefore devices smaller than the extra small minimum will still be
+Resolved now?: No media-query is used for the *extra small* size, therefore devices smaller than the extra small minimum will still be
 considered extra small. This slightly strange situation is resolved in the next Bootstrap version (v4) and will be
 included in future versions of the Style Kit when this is released.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
-  variant="info"
+  variant="danger"
   style="outline"
   content=alert_content
 %}
@@ -228,15 +228,18 @@ or, in cases where you are integrating with existing code or a third party syste
   heading_level=2
   phase="live"
   initial_version="0.1.0"
+  revised_version="0.7.0"
   included="yes"
 %}
 
-Use the `.bsk-pull-left` and `.bsk-pull-right` classes to float content. The `!important` modifier is used to prevent
+Bootstrap 5 float breaking changes: [https://getbootstrap.com/docs/5.2/migration/#utilities](https://getbootstrap.com/docs/5.2/migration/#utilities)
+
+Use the `.bsk-float-start` and `.bsk-float-end` classes to float content. The `!important` modifier is used to prevent
 specificity issues.
 
 {% capture alert_content %}
 Do not use these classes in [navbars]({{ '/components/navbar' | prepend: site.baseurl }}){: .bsk-alert-link},
-`.bsk-navbar-left` and `.bsk-navbar-right` classes should be used instead.
+Alternative classes such as `.bsk-ms-auto` should be used instead.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="warning"
@@ -245,20 +248,20 @@ Do not use these classes in [navbars]({{ '/components/navbar' | prepend: site.ba
 %}
 
 {% example html %}
-<div class="bsk-pull-left bsk-docs-content-block">...</div>
+<div class="bsk-float-start bsk-docs-content-block">...</div>
 
 <!-- This class is used to make this example look correct -->
 <div class="bsk-clearfix"></div>
 {% endexample %}
 
 {% example html %}
-<div class="bsk-pull-right bsk-docs-content-block">...</div>
+<div class="bsk-float-end bsk-docs-content-block">...</div>
 
 <!-- This class is used to make this example look correct -->
 <div class="bsk-clearfix"></div>
 {% endexample %}
 
-Alternatively, mixins can be used:
+<!-- Alternatively, mixins can be used:
 
 {% highlight scss %}
 .element-one {
@@ -267,29 +270,30 @@ Alternatively, mixins can be used:
 .element-two {
   .pull-right();
 }
-{% endhighlight %}
+{% endhighlight %} -->
 
 {% include topic-section-metadata.html
   title="Centred blocks"
   heading_level=2
   phase="live"
   initial_version="0.1.0"
+  revised_version="0.7.0"
   included="yes"
 %}
 
-Use the `.bsk-center-block` class to align a block using CSS margins.
+Use the `.bsk-position-absolute .bsk-start-50 .bsk-translate-middle` classes to align a block using CSS margins.
 
 {% example html %}
-<div class="bsk-center-block bsk-docs-content-block">...</div>
+<div class="bsk-position-absolute bsk-start-50 bsk-translate-middle bsk-docs-content-block">...</div>
 {% endexample %}
 
-Alternatively, a mixin can be used:
+<!-- Alternatively, a mixin can be used:
 
 {% highlight scss %}
 .element {
   .center-block();
 }
-{% endhighlight %}
+{% endhighlight %} -->
 
 {% include topic-section-metadata.html
   title="Clearfix"
@@ -319,6 +323,7 @@ Alternatively, a mixin can be used:
   heading_level=2
   phase="live"
   initial_version="0.1.0"
+  revised_version="0.7.0"
   included="yes"
 %}
 
@@ -347,14 +352,14 @@ page layout
   included="yes"
 %}
 
-Both classes and mixins are available for setting these states generally (i.e. under any circumstances).
+Both classes are available for setting these states generally (i.e. under any circumstances).
 
-| State              | Class            | Mixin           |
-| ------------------ | ---------------- | --------------- |
-| Shown              | `.bsk-show`      | `.show();`      |
-| Hidden             | `.bsk-hidden`    | `.hidden();`    |
-| Invisible          | `.bsk-invisible` | `.invisible();` |
-| Screen reader only | `.bsk-sr-only`   | `.sr-only();`   |
+| State              | Class                 |
+| ------------------ | --------------------- |
+| Shown              | `.bsk-show`           |
+| Hidden             | `.bsk-d-none`         |
+| Invisible          | `.bsk-invisible`      |
+| Screen reader only | `.bsk-visually-hidden`|
 {: .bsk-table .bsk-table-responsive }
 
 {% include topic-section-metadata.html
@@ -362,7 +367,7 @@ Both classes and mixins are available for setting these states generally (i.e. u
   heading_level=2
   phase="live"
   initial_version="0.1.0"
-  revised_version="0.3.0"
+  revised_version="0.7.0"
   included="yes"
 %}
 
@@ -399,14 +404,14 @@ Unlike grid columns for example, visibility does not flow upwards grid sizes. If
   content=alert_content
 %}
 
-| Size        | Visible Classes                                                                                  | Hidden Class      |
-| ----------- | ------------------------------------------------------------------------------------------------ |------------------ |
-| Extra Small | `.bsk-visible-xs-block` <br /> `.bsk-visible-xs-inline` <br /> `.bsk-visible-xs-inline-block`    | `.bsk-hidden-xs`  |
-| Small       | `.bsk-visible-sm-block` <br /> `.bsk-visible-sm-inline` <br /> `.bsk-visible-sm-inline-block`    | `.bsk-hidden-sm`  |
-| Medium      | `.bsk-visible-md-block` <br /> `.bsk-visible-md-inline` <br /> `.bsk-visible-md-inline-block`    | `.bsk-hidden-md`  |
-| Large       | `.bsk-visible-lg-block` <br /> `.bsk-visible-lg-inline` <br /> `.bsk-visible-lg-inline-block`    | `.bsk-hidden-lg`  |
-| Extra Large | `.bsk-visible-xl-block` <br /> `.bsk-visible-xl-inline` <br /> `.bsk-visible-xl-inline-block`    | `.bsk-hidden-xl`  |
-| Full HD     | `.bsk-visible-fhd-block` <br /> `.bsk-visible-fhd-inline` <br /> `.bsk-visible-fhd-inline-block` | `.bsk-hidden-fhd` |
+| Size        | Visible Classes                       | Hidden Class                                  |
+| ----------- | --------------------------------------|-----------------------------------------------|
+| Extra Small | `.bsk-d-none .bsk-d-sm-table-cell`    | `.bsk-d-none .bsk-d-sm-none`                  |
+| Small       | `.bsk-d-sm-none .bsk-d-md-table-cell` | `.bsk-d-none .bsk-d-sm-block bsk-d-md-none`   |
+| Medium      | `.bsk-d-md-none .bsk-d-lg-table-cell` | `.bsk-d-none .bsk-d-md-none .bsk-d-lg-block`  |
+| Large       | `.bsk-d-lg-none .bsk-d-xl-table-cell` | `.bsk-d-none .bsk-d-lg-block .bsk-d-xl-none`  |
+| Extra Large | `.bsk-d-xl-none .bsk-d-fhd-table-cell`| `.bsk-d-none .bsk-d-xl-block .bsk-d-fhd-none` |
+| Full HD     | `.bsk-d-fhd-none`                     | `.bsk-d-none .bsk-d-fhd-block`                |
 {: .bsk-table .bsk-table-responsive }
 
 {% include topic-section-metadata.html
@@ -414,13 +419,14 @@ Unlike grid columns for example, visibility does not flow upwards grid sizes. If
   heading_level=2
   phase="live"
   initial_version="0.1.0"
+  revised_version="0.7.0"
   included="yes"
 %}
 
-The `.bsk-visible-print-block`, `.bsk-visible-print-inline` and `.bsk-visible-print-inline-block` classes can be used
+The `.bsk-d-print-block`, `.bsk-d-print-inline` and `.bsk-d-print-inline-block` classes can be used
 to show content when printing.
 
-Conversely, the `.bsk-hidden-print` class can be used to hide content.
+Conversely, the `.bsk-d-print-none` class can be used to hide content.
 
 {% include topic-section-metadata.html
   title="Test cases"

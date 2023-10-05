@@ -163,7 +163,7 @@ Button groups can be nested to include drop-down menus with buttons in a group.
   <button type="button" class="bsk-btn bsk-btn-default">One</button>
   <button type="button" class="bsk-btn bsk-btn-default">Two</button>
   <div class="bsk-btn-group" role="group" aria-label="Button group example 5 drop-down 1">
-    <button type="button" class="bsk-btn bsk-btn-default bsk-dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <button type="button" class="bsk-btn bsk-btn-default bsk-dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Dropdown
       <span class="bsk-caret"></span>
     </button>
@@ -180,6 +180,7 @@ Button groups can be nested to include drop-down menus with buttons in a group.
   heading_level=3
   phase="live"
   initial_version="0.1.0"
+  revised_version="0.7.0"
   included="yes"
 %}
 
@@ -199,7 +200,7 @@ Split button drop-downs and button toolbars are not supported in vertical button
   <button type="button" class="bsk-btn bsk-btn-default">One</button>
   <button type="button" class="bsk-btn bsk-btn-default">Two</button>
   <div class="bsk-btn-group" role="group" aria-label="Button group example 6 drop-down 1">
-    <button type="button" class="bsk-btn bsk-btn-default bsk-dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <button type="button" class="bsk-btn bsk-btn-default bsk-dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Dropdown
       <span class="bsk-caret"></span>
     </button>
@@ -216,6 +217,7 @@ Split button drop-downs and button toolbars are not supported in vertical button
   heading_level=3
   phase="live"
   initial_version="0.1.0"
+  revised_version="0.7.0"
   included="yes"
 %}
 
@@ -253,7 +255,7 @@ For button groups using <code>&lt;button&gt;</code> button elements, each button
     <button type="button" class="bsk-btn bsk-btn-default">Two</button>
   </div>
   <div class="bsk-btn-group" role="group" aria-label="Button group example 8 drop-down 1">
-    <button type="button" class="bsk-btn bsk-btn-default bsk-dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <button type="button" class="bsk-btn bsk-btn-default bsk-dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Dropdown
       <span class="bsk-caret"></span>
     </button>

@@ -10,6 +10,8 @@ sections:
   -
     title: Font Awesome
   -
+    title: Bootstrap Icons
+  -
     title: Close icon
   -
     title: Conventional icons
@@ -20,7 +22,7 @@ sections:
   heading_level=2
   phase="live"
   initial_version="0.1.0"
-  revised_version="0.5.0"
+  revised_version="0.7.0"
   included="yes"
 %}
 
@@ -96,18 +98,38 @@ include it.
 %}
 
 {% include topic-section-metadata.html
-  title="Caret icon"
+  title="Bootstrap Icons"
   heading_level=2
   phase="live"
-  initial_version="0.1.0"
-  revised_version="0.5.0"
+  initial_version="0.7.0"
   included="yes"
 %}
 
-Use `.bsk-caret` for [drop-down menus]({{ '/components/drop-down' | prepend: site.baseurl }}).
+[Bootstrap Icons](https://icons.getbootstrap.com/) are another general purpose set of icons.  
+They are available under an MIT license: [https://github.com/twbs/icons/blob/main/LICENSE](https://github.com/twbs/icons/blob/main/LICENSE)  
+As of 2023 they are open source.  
+
+It is recommended to use the *solid* or *regular* font variants.
+
+In most cases the Font Awesome icons should be prefered over the Bootstrap icons.
+
+{% include topic-section-metadata.html
+  title="Caret icon"
+  heading_level=2
+  phase="depreciated"
+  initial_version="0.1.0"
+  revised_version="0.7.0"
+  included="yes"
+%}
+
+The caret icon is now included in [drop-down menus]({{ '/components/drop-down' | prepend: site.baseurl }}).
+
+If a caret is needed elsewhere use a Font Awesome icon or an SVG.
 
 {% example html %}
-<span class="bsk-caret"></span>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+  <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+</svg>
 {% endexample %}
 
 {% include topic-section-metadata.html
@@ -124,7 +146,7 @@ Use the `&times;` HTML entity wrapped in a `.bsk-close` element for indicating c
 
 <div class="bsk-docs-icons-wrapper">
   <div class="bsk-row">
-    <div class="bsk-col-12-md-3">
+    <div class="bsk-col-md-3">
       <div class="bsk-docs-icon">&times;</div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Times</li>
@@ -165,7 +187,7 @@ indicate something that is experimental or a work in progress.
 
 <div class="bsk-docs-icons-wrapper">
   <div class="bsk-row">
-    <div class="bsk-col-12-md-3">
+    <div class="bsk-col-md-3">
       <div class="bsk-docs-icon"><i class="fas fa-fw fa-4x fa-flask" aria-hidden="true"></i></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Flask</li>
@@ -190,7 +212,7 @@ family, to consistently identify buttons that will start a process or task, as i
 
 <div class="bsk-docs-icons-wrapper">
   <div class="bsk-row">
-    <div class="bsk-col-12-md-3">
+    <div class="bsk-col-md-3">
       <div class="bsk-docs-icon"><i class="fas fa-fw fa-4x fa-chevron-right" aria-hidden="true"></i></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Chevron Right</li>
@@ -215,7 +237,7 @@ indicate something that can be reordered, such as the
 
 <div class="bsk-docs-icons-wrapper">
   <div class="bsk-row">
-    <div class="bsk-col-12-md-3">
+    <div class="bsk-col-md-3">
       <div class="bsk-docs-icon"><i class="far fa-fw fa-4x fa-bars" aria-hidden="true"></i></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Bars</li>
@@ -248,7 +270,7 @@ ORCID iD must be displayed according to
 
 <div class="bsk-docs-icons-wrapper">
   <div class="bsk-row">
-    <div class="bsk-col-12-md-3">
+    <div class="bsk-col-md-3">
       <div class="bsk-docs-icon"><i class="fa-fw fa-4x fab fa-orcid" aria-hidden="true"></i></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>ORCID iD</li>
@@ -272,7 +294,7 @@ with this icon.
 
 <div class="bsk-docs-icons-wrapper">
   <div class="bsk-row">
-    <div class="bsk-col-12-md-3">
+    <div class="bsk-col-md-3">
       <div class="bsk-docs-icon"><i class="fa-fw fa-4x fab fa-orcid bsk-docs-identifiers-orcid" aria-hidden="true"></i></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>ORCID iD</li>
@@ -295,7 +317,7 @@ to indicate support for Markdown formatting.
 
 <div class="bsk-docs-icons-wrapper">
   <div class="bsk-row">
-    <div class="bsk-col-12-md-3">
+    <div class="bsk-col-md-3">
       <div class="bsk-docs-icon"><i class="fa-fw fa-4x fab fa-markdown" aria-hidden="true"></i></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Markdown</li>
@@ -349,7 +371,7 @@ These icons can be used with core styles and components, such as:
 
 <div class="bsk-docs-icons-wrapper">
   <div class="bsk-row">
-    <div class="bsk-col-12-md-3">
+    <div class="bsk-col-md-3">
       <div class="bsk-docs-icon"><i class="fas fa-fw fa-4x fa-check" aria-hidden="true"></i></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Success</li>
@@ -357,7 +379,7 @@ These icons can be used with core styles and components, such as:
         <li><code>&lt;i class="fas fa-fw fa-check" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-3">
+    <div class="bsk-col-md-3">
       <div class="bsk-docs-icon"><i class="far fa-fw fa-4x fa-exclamation-triangle" aria-hidden="true"></i></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Warning</li>
@@ -365,7 +387,7 @@ These icons can be used with core styles and components, such as:
         <li><code>&lt;i class="far fa-fw fa-exclamation-triangle" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-3">
+    <div class="bsk-col-md-3">
       <div class="bsk-docs-icon"><i class="fas fa-fw fa-4x fa-exclamation-circle" aria-hidden="true"></i></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Danger</li>
@@ -373,7 +395,7 @@ These icons can be used with core styles and components, such as:
         <li><code>&lt;i class="fas fa-fw fa-exclamation-circle" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-3">
+    <div class="bsk-col-md-3">
       <div class="bsk-docs-icon"><i class="far fa-fw fa-4x fa-info-square" aria-hidden="true"></i></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Info</li>
@@ -397,7 +419,7 @@ with these icons.
 
 <div class="bsk-docs-icons-wrapper">
   <div class="bsk-row">
-    <div class="bsk-col-12-md-3">
+    <div class="bsk-col-md-3">
       <div class="bsk-docs-icon"><i class="fas fa-fw fa-4x fa-check bsk-docs-icon-context-success" aria-hidden="true"></i></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Success</li>
@@ -405,7 +427,7 @@ with these icons.
         <li><code>&lt;i class="faa fa-fw fa-check" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-3">
+    <div class="bsk-col-md-3">
       <div class="bsk-docs-icon"><i class="far fa-fw fa-4x fa-exclamation-triangle bsk-docs-icon-context-warning" aria-hidden="true"></i></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Warning</li>
@@ -413,7 +435,7 @@ with these icons.
         <li><code>&lt;i class="far fa-fw fa-exclamation-triangle" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-3">
+    <div class="bsk-col-md-3">
       <div class="bsk-docs-icon"><i class="fas fa-fw fa-4x fa-exclamation-circle bsk-docs-icon-context-danger" aria-hidden="true"></i></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Danger</li>
@@ -421,7 +443,7 @@ with these icons.
         <li><code>&lt;i class="fas fa-fw fa-exclamation-circle" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-3">
+    <div class="bsk-col-md-3">
       <div class="bsk-docs-icon"><i class="far fa-fw fa-4x fa-info-square bsk-docs-icon-context-info" aria-hidden="true"></i></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Info</li>
@@ -445,7 +467,7 @@ with these icons.
 
 <div class="bsk-docs-icons-wrapper">
   <div class="bsk-row">
-    <div class="bsk-col-12-md-3">
+    <div class="bsk-col-md-3">
       <div class="bsk-docs-icon"><i class="fas fa-fw fa-4x fa-check bsk-text-success" aria-hidden="true"></i></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Success</li>
@@ -453,7 +475,7 @@ with these icons.
         <li><code>&lt;i class="fas fa-fw fa-check" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-3">
+    <div class="bsk-col-md-3">
       <div class="bsk-docs-icon"><i class="far fa-fw fa-4x fa-exclamation-triangle bsk-text-warning" aria-hidden="true"></i></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Warning</li>
@@ -461,7 +483,7 @@ with these icons.
         <li><code>&lt;i class="far fa-fw fa-exclamation-triangle" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-3">
+    <div class="bsk-col-md-3">
       <div class="bsk-docs-icon"><i class="fas fa-fw fa-4x fa-exclamation-circle bsk-text-danger" aria-hidden="true"></i></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Danger</li>
@@ -469,7 +491,7 @@ with these icons.
         <li><code>&lt;i class="fas fa-fw fa-exclamation-circle" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-3">
+    <div class="bsk-col-md-3">
       <div class="bsk-docs-icon"><i class="far fa-fw fa-4x fa-info-square bsk-text-info" aria-hidden="true"></i></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Info</li>
@@ -522,7 +544,7 @@ You should ensure icons are not the only means
 
 <div class="bsk-docs-icons-wrapper">
   <div class="bsk-row">
-    <div class="bsk-col-12-md-3">
+    <div class="bsk-col-md-3">
       <div class="bsk-docs-icon"><i class="fas fa-fw fa-4x fa-lightbulb" aria-hidden="true"></i></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Backlog</li>
@@ -530,7 +552,7 @@ You should ensure icons are not the only means
         <li><code>&lt;i class="fas fa-fw fa-lightbulb" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-3">
+    <div class="bsk-col-md-3">
       <div class="bsk-docs-icon"><i class="fas fa-fw fa-4x fa-search" aria-hidden="true"></i></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Discovery</li>
@@ -538,7 +560,7 @@ You should ensure icons are not the only means
         <li><code>&lt;i class="fas fa-fw fa-search" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-3">
+    <div class="bsk-col-md-3">
       <div class="bsk-docs-icon"><i class="fas fa-fw fa-4x fa-paper-plane" aria-hidden="true"></i></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Alpha</li>
@@ -546,7 +568,7 @@ You should ensure icons are not the only means
         <li><code>&lt;i class="fas fa-fw fa-paper-plane" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-3">
+    <div class="bsk-col-md-3">
       <div class="bsk-docs-icon"><i class="fas fa-fw fa-4x fa-plane" aria-hidden="true"></i></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Beta</li>
@@ -556,7 +578,7 @@ You should ensure icons are not the only means
     </div>
   </div>
   <div class="bsk-row">
-    <div class="bsk-col-12-md-3">
+    <div class="bsk-col-md-3">
       <div class="bsk-docs-icon"><i class="fas fa-fw fa-4x fa-rocket" aria-hidden="true"></i></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Live</li>
@@ -564,7 +586,7 @@ You should ensure icons are not the only means
         <li><code>&lt;i class="fas fa-fw fa-rocket" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-3">
+    <div class="bsk-col-md-3">
       <div class="bsk-docs-icon"><i class="fas fa-fw fa-4x fa-moon" aria-hidden="true"></i></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Retired</li>
@@ -588,7 +610,7 @@ with these icons.
 
 <div class="bsk-docs-icons-wrapper">
   <div class="bsk-row">
-    <div class="bsk-col-12-md-3">
+    <div class="bsk-col-md-3">
       <div class="bsk-docs-icon"><i class="fas fa-fw fa-4x fa-lightbulb bsk-docs-icon-development-phase-backlog" aria-hidden="true"></i></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Backlog</li>
@@ -596,7 +618,7 @@ with these icons.
         <li><code>&lt;i class="fas fa-fw fa-lightbulb" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-3">
+    <div class="bsk-col-md-3">
       <div class="bsk-docs-icon"><i class="fas fa-fw fa-4x fa-search bsk-docs-icon-development-phase-discovery" aria-hidden="true"></i></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Discovery</li>
@@ -604,7 +626,7 @@ with these icons.
         <li><code>&lt;i class="fas fa-fw fa-search" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-3">
+    <div class="bsk-col-md-3">
       <div class="bsk-docs-icon"><i class="fas fa-fw fa-4x fa-paper-plane bsk-docs-icon-development-phase-alpha" aria-hidden="true"></i></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Alpha</li>
@@ -612,7 +634,7 @@ with these icons.
         <li><code>&lt;i class="fas fa-fw fa-paper-plane" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-3">
+    <div class="bsk-col-md-3">
       <div class="bsk-docs-icon"><i class="fas fa-fw fa-4x fa-plane bsk-docs-icon-development-phase-beta" aria-hidden="true"></i></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Beta</li>
@@ -622,7 +644,7 @@ with these icons.
     </div>
   </div>
   <div class="bsk-row">
-    <div class="bsk-col-12-md-3">
+    <div class="bsk-col-md-3">
       <div class="bsk-docs-icon"><i class="fas fa-fw fa-4x fa-rocket bsk-docs-icon-development-phase-live" aria-hidden="true"></i></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Live</li>
@@ -630,7 +652,7 @@ with these icons.
         <li><code>&lt;i class="fas fa-fw fa-rocket" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-3">
+    <div class="bsk-col-md-3">
       <div class="bsk-docs-icon"><i class="fas fa-fw fa-4x fa-moon bsk-docs-icon-development-phase-retired" aria-hidden="true"></i></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Retired</li>
@@ -669,7 +691,7 @@ These icons can be used with components such as:
 
 <div class="bsk-docs-icons-wrapper">
   <div class="bsk-row">
-    <div class="bsk-col-12-md-3">
+    <div class="bsk-col-md-3">
       <div class="bsk-docs-icon"><i class="fab fa-fw fa-4x fa-twitter-square" aria-hidden="true"></i></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Twitter</li>
@@ -677,7 +699,7 @@ These icons can be used with components such as:
         <li><code>&lt;i class="fab fa-fw fa-twitter-square" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-3">
+    <div class="bsk-col-md-3">
       <div class="bsk-docs-icon"><i class="fab fa-fw fa-4x fa-facebook-square" aria-hidden="true"></i></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>Facebook</li>
@@ -685,7 +707,7 @@ These icons can be used with components such as:
         <li><code>&lt;i class="fab fa-fw fa-facebook-square" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-3">
+    <div class="bsk-col-md-3">
       <div class="bsk-docs-icon"><i class="fab fa-fw fa-4x fa-youtube-square" aria-hidden="true"></i></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
         <li>YouTube</li>
@@ -693,7 +715,7 @@ These icons can be used with components such as:
         <li><code>&lt;i class="fab fa-fw fa-youtube-square" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-3">
+    <div class="bsk-col-md-3">
       <div class="bsk-docs-icon"><i class="fas fa-fw fa-4x fa-rss-square"
       aria-hidden="true"></i></div>
       <ul class="bsk-list-unstyled bsk-text-center bsk-docs-icons-details">
@@ -718,7 +740,7 @@ with these icons.
 
 <div class="bsk-docs-icons-wrapper">
   <div class="bsk-row">
-    <div class="bsk-col-12-md-3">
+    <div class="bsk-col-md-3">
       <div class="bsk-docs-icon bsk-social-media-static bsk-twitter">
         <i class="fab fa-fw fa-4x fa-twitter-square bsk-twitter" aria-hidden="true"></i>
       </div>
@@ -728,7 +750,7 @@ with these icons.
         <li><code>&lt;i class="fab fa-fw fa-twitter-square" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-3">
+    <div class="bsk-col-md-3">
       <div class="bsk-docs-icon bsk-social-media-static bsk-facebook">
         <i class="fab fa-fw fa-4x fa-facebook-square" aria-hidden="true"></i>
       </div>
@@ -738,7 +760,7 @@ with these icons.
         <li><code>&lt;i class="fab fa-fw fa-facebook-square" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-3">
+    <div class="bsk-col-md-3">
       <div class="bsk-docs-icon bsk-social-media-static bsk-youtube">
         <i class="fab fa-fw fa-4x fa-youtube-square" aria-hidden="true"></i>
       </div>
@@ -748,7 +770,7 @@ with these icons.
         <li><code>&lt;i class="fab fa-fw fa-youtube-square" aria-hidden="true"&gt;&lt;/i&gt;</code></li>
       </ul>
     </div>
-    <div class="bsk-col-12-md-3">
+    <div class="bsk-col-md-3">
       <div class="bsk-docs-icon bsk-social-media-static bsk-rss">
         <i class="fas fa-fw fa-4x fa-rss-square" aria-hidden="true"></i>
       </div>

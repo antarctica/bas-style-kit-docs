@@ -1,8 +1,11 @@
 .bsk-docs-example {
+
   .bsk-center-block {
     width: 50%;
   }
 
+  .bsk-fixed-top,
+  .bsk-fixed-bottom,
   .bsk-navbar-fixed-top,
   .bsk-navbar-fixed-bottom,
   .bsk-footer-fixed-bottom {
@@ -21,6 +24,7 @@
     border-color: #222;
     border: 1px solid transparent;
     border-radius: 0;
+    display: block;
 
     &:hover, &:focus {
       background-color: #555;
@@ -54,4 +58,65 @@
   .bsk-jumbotron-image-example {
     background-image: url('/img/site-masthead-tom-welsh.jpg');
   }
+
+  @media (min-width: 1300) {
+    .navbar-expand-custom {
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+    .navbar-expand-custom .navbar-nav {
+        flex-direction: row;
+    }
+    .navbar-expand-custom .dropdown-menu {
+        position: absolute;
+    }
+    .navbar-expand-custom .nav-link {
+        padding-right: .5rem;
+        padding-left: .5rem;
+    }
+    .navbar-expand-custom > .container {
+        flex-wrap: nowrap;
+    }
+    .navbar-expand-custom .navbar-collapse {
+        display: flex!important;
+        flex-basis: auto;
+    }
+    .navbar-expand-custom .navbar-toggler {
+        display: none;
+    }
+  }
+
+  ul {
+      margin-bottom: 0;
+  }
+
+  .bsk-pagination {
+      margin-bottom: 1rem
+  }
+
+  .bsk-navbar-toggler {
+    margin: 6px 0;
+  }
+
+  .bsk-navbar-lg .bsk-navbar-nav li a {
+    padding: 2.8rem 1rem;
+  }
+
+  .bsk-navbar-lg .bsk-navbar-nav li ul li a {
+    font-size: 1.4rem;
+    padding: 1.4rem 1rem;
+  }
+  
+  .bsk-nav li > a:hover, .bsk-nav li > a:focus {
+    text-decoration: none;
+  }
+
+  .bsk-card {
+      height: auto;
+  }
+
+  .bsk-progress{
+    margin-bottom: 1rem;
+  }
+
 }

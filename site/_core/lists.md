@@ -101,15 +101,16 @@ This only applies to immediate list items. I.e. this style won't be used by any 
   heading_level=3
   phase="live"
   initial_version="0.1.0"
+  revised_version="0.7.0"
   included="yes"
 %}
 
-Use the `.bsk-list-inline` class to place all list items on a single line, with horizontal spacing between.
+Use the `.bsk-list-inline` & `bsk-list-inline-item` classes to place all list items on a single line, with horizontal spacing between.
 
 {% example html %}
 <ul class="bsk-list-inline">
-  <li>Information Services</li>
-  <li>Polar Data Centre</li>
+  <li class="bsk-list-inline-item">Information Services</li>
+  <li class="bsk-list-inline-item">Polar Data Centre</li>
 </ul>
 {% endexample %}
 
