@@ -110,6 +110,15 @@ in `.gitlab-ci.yml`.
 
 ## Continuous Deployment
 
+To deploy changes it is likely that the docker images will need to be updated. The following commands should make that process easy:
+```shell
+# build image to install updated dependencies
+$ docker-compose build app
+$ docker-compose push app
+```
+Alternatively manually tagging and pushing the new image will work as well. The current date is used as part of the project Docker image tag to ensure the latest version is used by all developers.
+Before rebuilding this image you **MUST** update this tag value in `docker-compose.yml` and `.gitlab-ci.yml` first.
+
 The BAS GitLab instance is used for
 [Continuous Deployment](https://gitlab.data.bas.ac.uk/web-apps/bsk/bas-style-kit-docs/builds) using settings defined in
 `.gitlab-ci.yml`.
