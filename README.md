@@ -84,7 +84,7 @@ Before rebuilding this image you **MUST** update this tag value in `docker-compo
 ```shell
 # build image to install updated dependencies
 $ docker-compose build app
-$ docker-compose push app
+$ docker-compose push app # gets the date from the tag used in the docker-compose.yml
 
 # copy Gemfile.lock into project from the updated image
 $ docker-compose run --entrypoint="" app ash
