@@ -110,9 +110,11 @@ in `.gitlab-ci.yml`.
 
 ## Continuous Deployment
 
-To deploy changes it is likely that the docker images will need to be updated. The following commands should make that process easy:
+#### To deploy changes:
+- Update the tags (using the date method described in [Updating dependencies](#updating-dependencies) for the docker image in both the docker-compose.yml & the gitlab-ci.yml
+- it is likely that the docker images will need to be updated. The following commands should make that process easy:
 ```shell
-# build image to install updated dependencies
+# build and use a new docker image to deploy changes
 $ docker-compose build app
 $ docker-compose push app
 ```
