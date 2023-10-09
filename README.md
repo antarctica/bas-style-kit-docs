@@ -72,6 +72,18 @@ services:
 
 ## Developing
 
+### Flowchart explaining how to work on this project
+``` mermaid
+graph TD
+  A(Work on CSS & JS) --> B
+  B[Style Kit Core <br> https://gitlab.data.bas.ac.uk/web-apps/bsk/bas-style-kit] --> |Include assets directly or via the BAS CDN| G
+  D(Work on website partials)--> E
+  E[Style Kit - Jekyll Theme <br> https://gitlab.data.bas.ac.uk/web-apps/bsk/bas-style-kit-jekyll-theme] --> |Ruby Gem hosted at https://rubygems.org| G
+  G[Style Kit Docs <br> Jekyll webpages for this project] --> |Create new Docker Image & push to BAS GitLab Docker registry <br> Git push to master branch| I
+  I[Deploy to Staging <br> style-kit-testing.web.bas.ac.uk] --> |Create a new GitLab tag| J
+  J[Deploy to Production <br> style-kit.web.bas.ac.uk]    
+```
+
 ### Updating dependencies
 
 If new Gem dependencies are introduced, the project Docker image will need to be rebuilt and pushed to the private BAS
