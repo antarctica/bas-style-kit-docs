@@ -3,7 +3,7 @@ item_type: Pattern
 title: Start page
 menus:
   primary_patterns:
-    weight: 5
+    weight: 8
 sections:
   -
     title: Overview
