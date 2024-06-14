@@ -1,0 +1,92 @@
+<style>
+    .v0-6-1 {
+        /* display: none !important; */
+    }
+    .version-list-element {
+        display: none !important;
+    }
+</style>
+{% if site.menus.site_navigation_primary %}
+    <ul class="bsk-nav bsk-navbar-nav">
+        {% for item in site.menus.site_navigation_primary %}
+            {% if item.children %}
+                {% assign is_active = false %}
+                {% for item in item.children %}
+                    {% if page.url == item.url %}
+                        {% assign is_active = true %}
+                    {% endif %}
+                {% endfor %}
+                <li class="bsk-nav-item bsk-dropdown {% if is_active == true %}bsk-active{% endif %}">
+                    <a class="bsk-dropdown-toggle bsk-nav-link" href="#" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                        {{ item.title }} <span class="bsk-caret"></span>
+                    </a>
+                    <ul class="bsk-dropdown-menu bsk-shadow">
+                        {% for item in item.children %}
+                            <li {% if page.url == item.url %}class="bsk-active"{% endif %} class="version-list-element {{ item.url | slice: 1, 6 | replace: '.', '-'}}">
+                                <!-- {% if page.url == item.url %}<span class="bsk-visually-hidden">(current)</span>{% endif %} -->
+                                <a href="{{ item.url }}">{{ item.title }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </li>
+            {% else %}
+                <li class="{{ item.url }}" {% if page.url == item.url %}class="bsk-active"{% endif %}>
+                    <!-- {% if page.url == item.url %}<span class="bsk-visually-hidden">(current)</span>{% endif %} -->
+                    <a href="{{ item.url }}">{{ item.title }}</a>
+                </li>
+            {% endif %}
+        {% endfor %}
+
+        <li class="bsk-nav-item" style="padding:14px 0 0 8px;">
+            <p style="color:#FFF;">Version: 
+                <select id="menu-select-version">
+                    <option value="">latest</option>
+                    <option value="v0.6.1">v0.6.1</option>
+                </select>
+            </p>
+        </li>
+
+    </ul>
+{% endif %}
+
+<script>
+
+window.onload = function() {
+
+    var url = window.location.pathname;
+    var version = url.split('/');
+
+    var select_value = document.getElementById('menu-select-version');
+
+    // Set element.value based on 1st part of URL
+    if (select_value) {
+        select_value.value = version[1];
+        // Set value from v0.6.1 to v0-6-1 - can't have . in a classname          
+        version_classname = select_value.value.replace('.', '-').replace('.', '-');
+    }
+
+    if(version_classname == 'v0-6-1') {
+        for (var element of document.getElementsByClassName(version_classname)){
+                element.classList.remove("version-list-element");
+            }
+    } else {
+        var exclude_class = "li:not(.v0-6-1)";
+        elements = document.querySelectorAll(exclude_class);
+        for (var element of elements){
+            element.classList.remove("version-list-element");
+        }
+    }
+
+    if (!select_value.value) {
+        select_value.value = '';
+    }
+};
+
+document.getElementById('menu-select-version').addEventListener('change', function() {
+    if(this.value){
+        document.location.href = "/" + this.value + "/";
+    } else {
+        document.location.href = "/";
+    }
+});
+</script>
