@@ -80,16 +80,16 @@ Use the `.bsk-social-media-static` class with the relevant class for each servic
 
 {% example html %}
 <!-- Twitter -->
-<div class="bsk-social-media-static bsk-twitter"><i class="fab fa-fw fa-3x fa-twitter-square"></i><span class="bsk-visually-hidden">Follow us on Twitter</span></div>
+<div class="bsk-social-media-static bsk-twitter"><i class="fab fa-fw fa-3x fa-twitter-square"></i><span class="bsk-sr-only">Follow us on Twitter</span></div>
 
 <!-- Facebook -->
-<div class="bsk-social-media-static bsk-facebook"><i class="fab fa-fw fa-3x fa-facebook-square"></i><span class="bsk-visually-hidden">Follow us on Facebook</span></div>
+<div class="bsk-social-media-static bsk-facebook"><i class="fab fa-fw fa-3x fa-facebook-square"></i><span class="bsk-sr-only">Follow us on Facebook</span></div>
 
 <!-- YouTube -->
-<div class="bsk-social-media-static bsk-youtube"><i class="fab fa-fw fa-3x fa-youtube-square"></i><span class="bsk-visually-hidden">Subscribe to us on YouTube</span></div>
+<div class="bsk-social-media-static bsk-youtube"><i class="fab fa-fw fa-3x fa-youtube-square"></i><span class="bsk-sr-only">Subscribe to us on YouTube</span></div>
 
 <!-- RSS -->
-<div class="bsk-social-media-static bsk-rss"><i class="fas fa-fw fa-3x fa-rss-square"></i><span class="bsk-visually-hidden">Follow us with RSS</span></div>
+<div class="bsk-social-media-static bsk-rss"><i class="fas fa-fw fa-3x fa-rss-square"></i><span class="bsk-sr-only">Follow us with RSS</span></div>
 {% endexample %}
 
 {% include topic-section-metadata.html
@@ -105,16 +105,16 @@ Use the `.bsk-social-media-link` class with the relevant class for each service,
 
 {% example html %}
 <!-- Twitter -->
-<div><a href="#" class="bsk-social-media-link bsk-twitter"><i class="fab fa-fw fa-3x fa-twitter-square"></i><span class="bsk-visually-hidden">Follow us on Twitter</span></a></div>
+<div><a href="#" class="bsk-social-media-link bsk-twitter"><i class="fab fa-fw fa-3x fa-twitter-square"></i><span class="bsk-sr-only">Follow us on Twitter</span></a></div>
 
 <!-- Facebook -->
-<div><a href="#" class="bsk-social-media-link bsk-facebook"><i class="fab fa-fw fa-3x fa-facebook-square"></i><span class="bsk-visually-hidden">Follow us on Facebook</span></a></div>
+<div><a href="#" class="bsk-social-media-link bsk-facebook"><i class="fab fa-fw fa-3x fa-facebook-square"></i><span class="bsk-sr-only">Follow us on Facebook</span></a></div>
 
 <!-- YouTube -->
-<div><a href="#" class="bsk-social-media-link bsk-youtube"><i class="fab fa-fw fa-3x fa-youtube-square"></i><span class="bsk-visually-hidden">Subscribe to us on YouTube</span></a></div>
+<div><a href="#" class="bsk-social-media-link bsk-youtube"><i class="fab fa-fw fa-3x fa-youtube-square"></i><span class="bsk-sr-only">Subscribe to us on YouTube</span></a></div>
 
 <!-- RSS -->
-<div><a href="#" class="bsk-social-media-link bsk-rss"><i class="fas fa-fw fa-3x fa-rss-square"></i><span class="bsk-visually-hidden">Follow us with RSS</span></a></div>
+<div><a href="#" class="bsk-social-media-link bsk-rss"><i class="fas fa-fw fa-3x fa-rss-square"></i><span class="bsk-sr-only">Follow us with RSS</span></a></div>
 {% endexample %}
 
 ## Layouts
@@ -125,19 +125,19 @@ Use the `.bsk-social-media-link` class with the relevant class for each service,
   heading_level=3
   phase="live"
   initial_version="0.1.0"
-  revised_version="0.7.0"
   included="yes"
 %}
 
-Use the `.bsk-social-media-list` class and the `.bsk-list-inline-item` class with a [inline list]({{ '/core/type/#inline-lists' | prepend: site.baseurl }})
+Use the `.bsk-social-media-list` class with a [inline list]({{ '/core/type/#inline-lists' | prepend: site.baseurl }})
 to display multiple [static]({{ '/components/social-media/#static-symbols' | prepend: site.baseurl }}) or
-[linked]({{ '/components/social-media/#linked-symbols' | prepend: site.baseurl }}) social media symbols next to each other.
+[linked]({{ '/components/social-media/#linked-symbols' | prepend: site.baseurl }}) social media symbols next to each
+other.
 
 {% example html %}
 <ul class="bsk-list-inline bsk-social-media-list">
-  <li class="bsk-list-inline-item"><a href="#" class="bsk-social-media-link bsk-twitter"><i class="fab fa-fw fa-3x fa-twitter-square"></i><span class="bsk-visually-hidden">Follow us on Twitter</span></a></li>
-  <li class="bsk-list-inline-item"><a href="#" class="bsk-social-media-link bsk-facebook"><i class="fab fa-fw fa-3x fa-facebook-square"></i><span class="bsk-visually-hidden">Follow us on Facebook</span></a></li>
-  <li class="bsk-list-inline-item"><a href="#" class="bsk-social-media-link bsk-youtube"><i class="fab fa-fw fa-3x fa-youtube-square"></i><span class="bsk-visually-hidden">Subscribe to us on YouTube</span></a></li>
-  <li class="bsk-list-inline-item"><a href="#" class="bsk-social-media-link bsk-rss"><i class="fas fa-fw fa-3x fa-rss-square"></i><span class="bsk-visually-hidden">Follow us with RSS</span></a></li>
+  <li><a href="#" class="bsk-social-media-link bsk-twitter"><i class="fab fa-fw fa-3x fa-twitter-square"></i><span class="bsk-sr-only">Follow us on Twitter</span></a></li>
+  <li><a href="#" class="bsk-social-media-link bsk-facebook"><i class="fab fa-fw fa-3x fa-facebook-square"></i><span class="bsk-sr-only">Follow us on Facebook</span></a></li>
+  <li><a href="#" class="bsk-social-media-link bsk-youtube"><i class="fab fa-fw fa-3x fa-youtube-square"></i><span class="bsk-sr-only">Subscribe to us on YouTube</span></a></li>
+  <li><a href="#" class="bsk-social-media-link bsk-rss"><i class="fas fa-fw fa-3x fa-rss-square"></i><span class="bsk-sr-only">Follow us with RSS</span></a></li>
 </ul>
 {% endexample %}

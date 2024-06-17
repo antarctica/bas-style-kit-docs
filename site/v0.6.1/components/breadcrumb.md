@@ -51,7 +51,7 @@ around the element using the `.bsk-nav` class.
   <ol class="bsk-breadcrumb">
     <li><a href="#">Level 1</a></li>
     <li><a href="#">Level 2</a></li>
-    <li class="bsk-active"><span class="bsk-visually-hidden">(current)</span>Level 3</li>
+    <li class="bsk-active"><span class="bsk-sr-only">(current)</span>Level 3</li>
   </ol>
 </nav>
 {% endexample %}
@@ -72,7 +72,7 @@ around the element using the `.bsk-nav` class.
 Add the `.bsk-active` class to the drop-down menu item currently active, to highlight where the end user is in the site.
 
 {% capture alert_content %}
-Make sure to include a `<span class="bsk-visually-hidden">(current)</span>` element as well. <br />
+Make sure to include a `<span class="bsk-sr-only">(current)</span>` element as well. <br />
 This provides a non-visual indication of the currently active item, suitable for assistive technologies.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
@@ -86,7 +86,7 @@ This provides a non-visual indication of the currently active item, suitable for
   <ol class="bsk-breadcrumb">
     <li><a href="#">Level 1</a></li>
     <li><a href="#">Level 2</a></li>
-    <li class="bsk-active"><span class="bsk-visually-hidden">(current)</span>Level 3</li>
+    <li class="bsk-active"><span class="bsk-sr-only">(current)</span>Level 3</li>
   </ol>
 </nav>
 {% endexample %}

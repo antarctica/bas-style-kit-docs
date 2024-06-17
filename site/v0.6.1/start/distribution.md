@@ -69,25 +69,25 @@ Functionally both versions work the same way, the difference is the overall file
     <tr>
       <td>CSS</td>
       <td class="highlight">
-        <pre><code>{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/css/bas-style-kit.css</code></pre>
+        <pre><code>{{ site.data.variables.cdn_base }}/0.6.1/css/bas-style-kit.css</code></pre>
       </td>
     </tr>
     <tr>
       <td>JavaScript</td>
       <td class="highlight">
-        <pre><code>{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/js/bas-style-kit.js</code></pre>
+        <pre><code>{{ site.data.variables.cdn_base }}/0.6.1/js/bas-style-kit.js</code></pre>
       </td>
     </tr>
     <tr>
       <td>CSS (minified) <br> <strong>recommended</strong></td>
       <td class="highlight">
-        <pre><code>{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/css/bas-style-kit.min.css</code></pre>
+        <pre><code>{{ site.data.variables.cdn_base }}/0.6.1/css/bas-style-kit.min.css</code></pre>
       </td>
     </tr>
     <tr>
       <td>JavaScript (minified) <br> <strong>recommended</strong></td>
       <td class="highlight">
-        <pre><code>{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/js/bas-style-kit.min.js</code></pre>
+        <pre><code>{{ site.data.variables.cdn_base }}/0.6.1/js/bas-style-kit.min.js</code></pre>
       </td>
     </tr>
   </tbody>
@@ -497,7 +497,7 @@ files yourself to make upgrading to future Style Kit releases easier.
   %}
 {% endunless %}
 
-[Download latest version]({{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/{% include bsk-version.html %}.zip){: .bsk-btn .bsk-btn-default }
+[Download latest version]({{ site.data.variables.cdn_base }}/0.6.1/0.6.1.zip){: .bsk-btn .bsk-btn-default }
 
 {% include topic-section-metadata.html
   title="NodeJS package"

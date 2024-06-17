@@ -2,7 +2,7 @@
 layout: bas-style-kit/bsk--standard
 sort_index: 0
 slug: index
-permalink: /v0.6.1/start/index
+permalink: /v0.6.1/start/index.html
 title: Getting Started
 subtitle: An overview of the BAS Style Kit, how to get it, how it's developed, and more
 menus:
@@ -16,14 +16,12 @@ menus:
   <p>{{ page.subtitle }}</p>
 </header>
 
-<div class="bsk-row">
 {% assign topics_sorted = site.start | sort:"sort_index" %}
 
+<div class="bsk-row bsk-row-cols-3">
 {% for topic in topics_sorted %}
 {% unless topic.slug == "index" %}
-    {% capture modulo %}{{ forloop.index | modulo: 4 }}{% endcapture %}
-    {% if modulo == '1' %}<div class="bsk-row">{% endif %}
-      <div class="bsk-col-md-4">
+      <div class="bsk-col">
         <div class="bsk-docs-topic-index-divider"></div>
         <h2><a href="{{ topic.title | slugify }}">{{ topic.title }}</a></h2>
         <ul class="bsk-list-inline">
@@ -34,7 +32,7 @@ menus:
           {% endfor %}
         </ul>
       </div>
-    {% if modulo == '0' or forloop.last %}</div>{% endif %}
 {% endunless %}
 {% endfor %}
 </div>
+

@@ -28,7 +28,7 @@ Use the `width` inline CSS property to set the progress of each progress bar.
 
 {% capture alert_content %}
 Make sure to include the `aria-valuenow`, `aria-valuemin` and `aria-valuemax` attributes as well a
-`<span class="bsk-visually-hidden">` element. <br /> This provides a non-visual indication of the progress item, suitable for
+`<span class="bsk-sr-only">` element. <br /> This provides a non-visual indication of the progress item, suitable for
 assistive technologies.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
@@ -62,7 +62,7 @@ assistive technologies.
 {% example html %}
 <div class="bsk-progress">
   <div class="bsk-progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-    <span class="bsk-visually-hidden">60% Complete</span>
+    <span class="bsk-sr-only">60% Complete</span>
   </div>
 </div>
 {% endexample %}
@@ -78,7 +78,7 @@ assistive technologies.
 Add the progress directly within the progress bar to display the progress as an exact value.
 
 {% capture alert_content %}
-You don't need to use a `<span class="bsk-visually-hidden">` element with an explicit label.
+You don't need to use a `<span class="bsk-sr-only">` element with an explicit label.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="info"
@@ -132,22 +132,22 @@ used for context by adding these classes:
 {% example html %}
 <div class="bsk-progress">
   <div class="bsk-progress-bar bsk-progress-bar-success" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%;">
-    <span class="bsk-visually-hidden">25% Complete</span>
+    <span class="bsk-sr-only">25% Complete</span>
   </div>
 </div>
 <div class="bsk-progress">
   <div class="bsk-progress-bar bsk-progress-bar-warning" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;">
-    <span class="bsk-visually-hidden">50% Complete</span>
+    <span class="bsk-sr-only">50% Complete</span>
   </div>
 </div>
 <div class="bsk-progress">
   <div class="bsk-progress-bar bsk-progress-bar-danger" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%;">
-    <span class="bsk-visually-hidden">75% Complete</span>
+    <span class="bsk-sr-only">75% Complete</span>
   </div>
 </div>
 <div class="bsk-progress">
   <div class="bsk-progress-bar bsk-progress-bar-info" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 100%;">
-    <span class="bsk-visually-hidden">100% Complete</span>
+    <span class="bsk-sr-only">100% Complete</span>
   </div>
 </div>
 {% endexample %}
@@ -165,10 +165,10 @@ Use the `.bsk-progress` class on an element which wraps around multiple progress
 {% example html %}
 <div class="bsk-progress">
   <div class="bsk-progress-bar" style="width: 25%">
-    <span class="bsk-visually-hidden">First progress bar 25% complete</span>
+    <span class="bsk-sr-only">First progress bar 25% complete</span>
   </div>
   <div class="bsk-progress-bar bsk-progress-bar-warning" style="width: 60%">
-    <span class="bsk-visually-hidden">Second progress bar 60% complete</span>
+    <span class="bsk-sr-only">Second progress bar 60% complete</span>
   </div>
 </div>
 {% endexample %}

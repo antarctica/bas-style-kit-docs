@@ -3,7 +3,7 @@ item_type: Component
 title: Header
 menus:
   primary_components:
-    weight: 10
+    weight: 9
 sections:
   -
     title: Overview
@@ -77,7 +77,7 @@ If you need to use a specific size not in this list you will need to use your ow
 <header class="bsk-header bsk-header-default">
   <div class="bsk-header-container-fluid">
     <a href="#">
-      <img class="bsk-header-image-64" alt="British Antarctic Survey Logo" src="{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/img/logos-symbols/bas-logo-inverse-transparent-64.png">
+      <img class="bsk-header-image-64" alt="British Antarctic Survey Logo" src="{{ site.data.variables.cdn_base }}/0.6.1/img/logos-symbols/bas-logo-inverse-transparent-64.png">
     </a>
   </div>
 </header>

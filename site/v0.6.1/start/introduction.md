@@ -24,6 +24,8 @@ sections:
 The BAS Style Kit is based on [Bootstrap](https://www.getbootstrap.com), the world's most popular CSS framework.
 The Style Kit uses a customised version of Bootstrap to follow our design choices (such as not using rounded corners).
 
+The Style Kit is based on version *3.3.7* of the official [Bootstrap Sass port](https://github.com/twbs/bootstrap-sass).
+
 As well as Bootstrap, the BAS Style Kit takes influences from:
 
 * the [Government Design System](https://design-system.service.gov.uk)
@@ -38,12 +40,7 @@ The simplest way to use the Style Kit is to include it's CSS file, before any ot
 <code>&lt;head&gt;</code> element of your website or service.
 
 {% highlight html %}
-<link rel="stylesheet" href="{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/css/bas-style-kit.min.css" integrity="
-  {%- unless jekyll.environment == 'production' -%}
-    {{ site.data.bsk_sri_base_staging['dist/css/bas-style-kit.min.css'] }}
-  {%- else -%}
-    {{ site.data.bsk_sri_base_production['dist/css/bas-style-kit.min.css'] }}
-  {%- endunless -%}" crossorigin="anonymous">
+<link rel="stylesheet" href="{{ site.data.variables.cdn_base }}/0.6.1/css/bas-style-kit.min.css" integrity="sha256-k05vjok9IGTMBJ8KYnQYX9sEc7A9eGWsTM8tQ2XqE8A=" crossorigin="anonymous">
 {% endhighlight %}
 
 To use any of the Style Kit's [interactive features]({{ '/interactivity' | prepend: site.baseurl }}), you will also need
@@ -51,13 +48,9 @@ to add the Style Kit's JS file and its dependencies, usually just before the end
 element.
 
 {% highlight html %}
-<script src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.8.9/dist/cookieconsent.js"></script>
-<script src="{{ site.data.variables.cdn_base }}/{% include bsk-version.html %}/js/bas-style-kit.min.js" integrity="
-  {%- unless jekyll.environment == 'production' -%}
-    {{ site.data.bsk_sri_base_staging['dist/js/bas-style-kit.min.js'] }}
-  {%- else -%}
-    {{ site.data.bsk_sri_base_production['dist/js/bas-style-kit.min.js'] }}
-  {%- endunless -%}" crossorigin="anonymous"></script>
+<script src="{{ site.data.variables.cdn_base_libs }}/jquery/3.5.1/js/jquery-3.6.0.min.js" integrity="{{ site.data.bas_cdn_libs_sri['libs/jquery/3.6.0/js/jquery-3.6.0.min.js'] }}" crossorigin="anonymous"></script>
+<script src="{{ site.data.variables.cdn_base_libs }}/js-cookie/2.2.1/js/js.cookie-2.2.1.min.js" integrity="{{ site.data.bas_cdn_libs_sri['libs/js-cookie/2.2.1/js/js.cookie-2.2.1.min.js'] }}" crossorigin="anonymous"></script>
+<script src="{{ site.data.variables.cdn_base }}/0.6.1/js/bas-style-kit.min.js" integrity="sha256-cW+jowQERFqjJwdZ1VSZgG7dXQly19ykM5kVIONXmFg=" crossorigin="anonymous"></script>
 {% endhighlight %}
 
 {% capture alert_content %}
@@ -161,13 +154,6 @@ look consistent with it. The Style Kit's grid system for example cannot be used 
 %}
 
 [Apex theme documentation](https://github.com/antarctica/bas-style-kit-apex-theme){: .bsk-btn .bsk-btn-default }
-
-{% include topic-section-metadata.html
-  title="Apache listing pages"
-  heading_level=3
-%}
-
-An Apache 2 setup to style listing pages with the BAS Style Kit - [https://gitlab.data.bas.ac.uk/web-apps/bsk/apache-directory-pages-styling](https://gitlab.data.bas.ac.uk/web-apps/bsk/apache-directory-pages-styling)
 
 {% include topic-section-metadata.html
   title="Global prefix"

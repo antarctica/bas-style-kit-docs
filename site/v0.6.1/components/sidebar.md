@@ -53,7 +53,6 @@ that is distinct from main content, but which is shown **within** it.
   heading_level=3
   phase="live"
   initial_version="0.1.0"
-  revised_version="0.7.0"
   included="yes"
 %}
 
@@ -61,7 +60,7 @@ Add the `.bsk-sidebar-default` class a for standard sidebar.
 
 {% example html %}
 <div class="bsk-row">
-  <div class="bsk-offset-md-9 bsk-col-md-3">
+  <div class="bsk-col-12-md-offset-9 bsk-12-col-md-3">
     <aside class="bsk-sidebar bsk-sidebar-default">
       Sidebar content
     </aside>
@@ -71,7 +70,7 @@ Add the `.bsk-sidebar-default` class a for standard sidebar.
 
 {% example html %}
 <div class="bsk-row">
-  <div class="bsk-col-md-9">
+  <div class="bsk-col-12-md-9">
     <main>
       <h2>Main content</h2>
       <p>Hundreds of thousands rich in heavy atoms shores of the cosmic ocean corpus callosum? Trillion adipisci velit
@@ -83,7 +82,7 @@ Add the `.bsk-sidebar-default` class a for standard sidebar.
       sunrise but a galaxyrise, colonies worldlets with pretty stories for which there's little good evidence.</p>
     </main>
   </div>
-  <div class="bsk-col-md-3">
+  <div class="bsk-col-12-md-3">
     <aside class="bsk-sidebar bsk-sidebar-default">
       <h2>Sidebar content</h2>
       <p>Explorations dream of the mind's eye laws of physics not a sunrise but a galaxyrise, colonies worldlets with
@@ -105,7 +104,7 @@ This adds the same top margin applied to headings and makes the page layout look
 
 {% example html %}
 <div class="bsk-row">
-  <div class="bsk-col-md-9">
+  <div class="bsk-col-12-md-9">
     <main>
       <h2>Main content</h2>
       <p>Hundreds of thousands rich in heavy atoms shores of the cosmic ocean corpus callosum? Trillion adipisci velit
@@ -117,7 +116,7 @@ This adds the same top margin applied to headings and makes the page layout look
       sunrise but a galaxyrise, colonies worldlets with pretty stories for which there's little good evidence.</p>
     </main>
   </div>
-  <div class="bsk-col-md-3">
+  <div class="bsk-col-12-md-3">
     <aside class="bsk-sidebar bsk-sidebar-default bsk-sidebar-no-heading">
       <p>Explorations dream of the mind's eye laws of physics not a sunrise but a galaxyrise, colonies worldlets with
       pretty stories for which there's little good evidence.</p>
@@ -128,7 +127,7 @@ This adds the same top margin applied to headings and makes the page layout look
 
 {% example html %}
 <div class="bsk-row">
-  <div class="bsk-col-md-9">
+  <div class="bsk-col-12-md-9">
     <main>
       <h2>Main content</h2>
       <p>Hundreds of thousands rich in heavy atoms shores of the cosmic ocean corpus callosum? Trillion adipisci velit
@@ -140,7 +139,7 @@ This adds the same top margin applied to headings and makes the page layout look
       sunrise but a galaxyrise, colonies worldlets with pretty stories for which there's little good evidence.</p>
     </main>
   </div>
-  <div class="bsk-col-md-3">
+  <div class="bsk-col-12-md-3">
     <aside class="bsk-sidebar bsk-sidebar-default">
       <h2>Summary</h2>
       <dl class="bsk-dl-lg">
@@ -159,7 +158,6 @@ This adds the same top margin applied to headings and makes the page layout look
   heading_level=3
   phase="live"
   initial_version="0.1.0"
-  revised_version="0.7.0"
   included="yes"
 %}
 
@@ -168,7 +166,7 @@ Use the `.bsk-sidebar-inverse` class to use a darker background for a sidebar. E
 
 {% example html %}
 <div class="bsk-row">
-  <div class="bsk-offset-md-9 bsk-col-md-3">
+  <div class="bsk-col-12-md-offset-9 bsk-col-12-md-3">
     <aside class="bsk-sidebar bsk-sidebar-inverse">
       <h2>Sidebar content</h2>
       <p>Explorations dream of the mind's eye laws of physics not a sunrise but a galaxyrise</p>
@@ -203,7 +201,7 @@ Use the [grid system]({{ '/core/grid' | prepend: site.baseurl }}){: .bsk-alert-l
 
 {% example html %}
 <div class="bsk-row">
-  <div class="bsk-col-md-9">
+  <div class="bsk-col-12-md-9">
     <main>
       <h2>Main content</h2>
       <p>Hundreds of thousands rich in heavy atoms shores of the cosmic ocean corpus callosum? Trillion adipisci velit
@@ -215,7 +213,7 @@ Use the [grid system]({{ '/core/grid' | prepend: site.baseurl }}){: .bsk-alert-l
       sunrise but a galaxyrise, colonies worldlets with pretty stories for which there's little good evidence.</p>
     </main>
   </div>
-  <div class="bsk-col-md-3">
+  <div class="bsk-col-12-md-3">
     <aside class="bsk-sidebar bsk-sidebar-default bsk-sidebar-lg">
       <h2>Sidebar content</h2>
       <p>Explorations dream of the mind's eye laws of physics not a sunrise but a galaxyrise, colonies worldlets with

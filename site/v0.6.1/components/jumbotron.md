@@ -3,7 +3,7 @@ item_type: Component
 title: Jumbotron
 menus:
   primary_components:
-    weight: 13
+    weight: 12
 sections:
   -
     title: Overview

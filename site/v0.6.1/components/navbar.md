@@ -92,27 +92,21 @@ sizes to ensure things work correctly.
   heading_level=3
   phase="live"
   initial_version="0.1.0"
-  revised_version="0.7.0"
   included="yes"
 %}
 
 This variant is used as part of the [standard header]({{ '/patterns/standard-header' | prepend: site.baseurl }}) pattern.
 
-Use `bsk-navbar-expand-**` to change the width at which the menu collapses.  
-E.g. `sm`, `md`, `lg`, `custom` - can be set in the website override css E.g. `site/_sass/_example-fixes.scss`
-
 {% example html %}
-<nav class="bsk-navbar bsk-navbar-expand-sm">
+<nav class="bsk-navbar">
   <div class="bsk-container-fluid">
-    <div class="bsk-navbar-collapse">
-        <a class="bsk-navbar-brand bsk-nav-link" href="#">Site Name</a>
-      <div class="collapse navbar-collapse">
-        <ul class="bsk-nav bsk-navbar-nav bsk-flex-sm-row">
-          <li class="bsk-active"><a href="#" class="bsk-nav-link">Home <span class="bsk-visually-hidden">(current)</span></a></li>
-          <li><a href="#" class="bsk-nav-link">About</a></li>
-        </ul>
-      </div>
+    <div class="bsk-navbar-header">
+      <a class="bsk-navbar-brand" href="#">Site Name</a>
     </div>
+    <ul class="bsk-nav bsk-navbar-nav">
+      <li class="bsk-active"><a href="#">Home <span class="bsk-sr-only">(current)</span></a></li>
+      <li><a href="#">About</a></li>
+    </ul>
   </div>
 </nav>
 {% endexample %}
@@ -127,7 +121,7 @@ E.g. `sm`, `md`, `lg`, `custom` - can be set in the website override css E.g. `s
   heading_level=3
   phase="live"
   initial_version="0.1.0"
-  revised_version="0.7.0"
+  revised_version="0.5.0"
   included="yes"
 %}
 
@@ -155,13 +149,13 @@ A version of the navigation launcher for internal websites and applications is s
 %}
 
 {% example html %}
-<nav class="bsk-navbar bsk-navbar-expand-lg">
+<nav class="bsk-navbar">
   <div class="bsk-container-fluid">
-    <ul class="bsk-nav bsk-ms-auto">
-      <li class="bsk-dropdown bsk-nav-item">
-        <a href="#" class="bsk-dropdown-toggle bsk-nav-link" data-bs-toggle="dropdown" role="button" aria-expanded="false">
+    <ul class="bsk-nav bsk-navbar-nav bsk-navbar-right">
+      <li class="bsk-dropdown">
+        <a href="#" class="bsk-dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
         Part of British Antarctic Survey <span class="bsk-caret"></span></a>
-        <ul class="bsk-dropdown-menu bsk-dropdown-menu-lg-end">
+        <ul class="bsk-dropdown-menu">
           <li><a href="https://www.bas.ac.uk">BAS Home</a></li>
           <li><a href="https://data.bas.ac.uk">Discover BAS data</a></li>
           <li><a href="#">Another service (optional)</a></li>
@@ -202,7 +196,6 @@ Use a list of <code>&lt;a&gt;</code> elements within a navigation menu using the
   heading_level=3
   phase="live"
   initial_version="0.1.0"
-  revised_version="0.7.0"
   included="yes"
 %}
 
@@ -216,14 +209,19 @@ This example simulates the menu button at all sizes.
   style="highlight"
   content=alert_content
 %}
+
 {% example html %}
-<nav class="bsk-navbar bsk-navbar-lg bsk-navbar-expand-lg bsk-navbar-dark bsk-bg-dark">
+<nav class="bsk-navbar">
   <div class="bsk-container-fluid">
+    <div class="bsk-navbar-header">
       <!-- The '.bsk-docs-navbar-toggle-always' class is used instead of '.bsk-navbar-toggle' for demonstration purposes -->
-      <!-- <a class="bsk-navbar-brand" href="#">Site Name</a> -->
-      <button class="bsk-navbar-toggler bsk-docs-navbar-toggle-always bsk-collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bsk-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="bsk-navbar-toggler-icon"></span>
+      <button type="button" class="bsk-docs-navbar-toggle-always bsk-collapsed" data-toggle="collapse" data-target="#bsk-example-navbar-collapse-3" aria-expanded="false">
+        <span class="bsk-sr-only">Toggle navigation</span>
+        <span class="bsk-icon-bar"></span>
+        <span class="bsk-icon-bar"></span>
+        <span class="bsk-icon-bar"></span>
       </button>
+    </div>
   </div>
 </nav>
 {% endexample %}
@@ -238,11 +236,14 @@ This example is real but will only work at small screen sizes.
 %}
 
 {% example html %}
-<nav class="bsk-navbar bsk-navbar-expand-lg bsk-navbar-dark bsk-bg-dark">
+<nav class="bsk-navbar">
   <div class="bsk-container-fluid">
     <div class="bsk-navbar-header">
-      <button class="bsk-navbar-toggler bsk-collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#bsk-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="bsk-navbar-toggler-icon"></span>
+      <button type="button" class="bsk-navbar-toggle bsk-collapsed" data-toggle="collapse" data-target="#bsk-example-navbar-collapse-2" aria-expanded="false">
+        <span class="bsk-sr-only">Toggle navigation</span>
+        <span class="bsk-icon-bar"></span>
+        <span class="bsk-icon-bar"></span>
+        <span class="bsk-icon-bar"></span>
       </button>
     </div>
   </div>
@@ -407,7 +408,7 @@ Using the `.bsk-btn` class with an <code>&lt;a&gt;</code> element, within a navi
   heading_level=3
   phase="live"
   initial_version="0.1.0"
-  revised_version="0.7.0"
+  revised_version="0.3.0"
   included="yes"
 %}
 
@@ -427,7 +428,7 @@ It is strongly recommended to include visible labels for each form field (the `p
 universally supported).
 
 {% capture alert_content %}
-Where labels are hidden, the `.bsk-visually-hidden` class **should** always be used to ensure assistive technologies can
+Where labels are hidden, the `.bsk-sr-only` class **should** always be used to ensure assistive technologies can
 understand forms. Alternatively, you can use the `aria-label`, `aria-labelledby` or `title` attributes.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
@@ -459,9 +460,11 @@ It is recommended to use this feature sparingly until support improves.
 {% example html %}
 <nav class="bsk-navbar">
   <div class="bsk-container-fluid">
-    <form class="bsk-d-flex" role="search">
-      <label class="bsk-control-label bsk-visually-hidden" for="bsk-navbar-form-inputs-example-1">Text input</label>
-      <input id="bsk-navbar-form-inputs-example-1" type="search" class="bsk-form-control" placeholder="Search">
+    <form class="bsk-navbar-form bsk-navbar-left" role="search">
+      <div class="bsk-form-group">
+        <label class="bsk-control-label bsk-sr-only" for="bsk-navbar-form-inputs-example-1">Text input</label>
+        <input id="bsk-navbar-form-inputs-example-1" type="search" class="bsk-form-control" placeholder="Search">
+      </div>
       <button type="submit" class="bsk-btn bsk-btn-default bsk-navbar-btn">Submit</button>
     </form>
   </div>
@@ -473,27 +476,24 @@ It is recommended to use this feature sparingly until support improves.
   heading_level=3
   phase="live"
   initial_version="0.1.0"
-  revised_version="0.7.0"
   included="yes"
 %}
 
 [Drop-down menus]({{ '/components/drop-down' | prepend: site.baseurl }}) can be used as navbar items.
 
 {% example html %}
-<nav class="bsk-navbar bsk-navbar-expand-lg">
+<nav class="bsk-navbar">
   <div class="bsk-container-fluid">
-    <div class="bsk-navbar-collapse">
-      <ul class="bsk-navbar-nav">
-        <li class="bsk-nav-item bsk-dropdown">
-          <a href="#" class="bsk-dropdown-toggle bsk-nav-link" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Dropdown <span class="bsk-caret"></span></a>
-          <ul class="bsk-dropdown-menu">
-            <li><a href="#" class="bsk-dropdown-item">Action</a></li>
-            <li><a href="#" class="bsk-dropdown-item">Another item</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
+    <ul class="bsk-nav bsk-navbar-nav">
+      <li class="bsk-dropdown">
+        <a href="#" class="bsk-dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Dropdown <span class="bsk-caret"></span></a>
+        <ul class="bsk-dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li><a href="#">Another item</a></li>
+        </ul>
+      </li>
+    </ul>
   </div>
 </nav>
 {% endexample %}
@@ -531,49 +531,56 @@ Typically this will be used within elements using the
   heading_level=2
   phase="live"
   initial_version="0.1.0"
-  revised_version="0.7.0"
   included="yes"
 %}
 
-Large:
+Add one of these classes to alter the size of a navbar:
 
-| Navbar Size | Navbar Size Class |  Font Size  | 
-| ----------- | ----------------- | ----------- |
-| Large       | `.bsk-navbar-lg`  | `.bsk-fs-*` |
-{: .bsk-table .bsk-table-responsive }   
+| Navbar Size | Navbar Size Class |
+| ----------- | ----------------- |
+| Large       | `.bsk-navbar-lg`  |
+{: .bsk-table .bsk-table-responsive }
+
 {% example html %}
-<nav class="bsk-navbar bsk-navbar-lg bsk-fs-4 bsk-navbar-expand-xl bsk-navbar-dark bsk-bg-dark">
+<nav class="bsk-navbar bsk-navbar-lg">
   <div class="bsk-container-fluid">
     <!-- Site name and toggle get grouped for better mobile display -->
-      <a class="bsk-navbar-brand" href="#">Site Name</a>
-      <button class="bsk-navbar-toggler bsk-ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#bsk-example-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="bsk-navbar-toggler-icon"></span>
+    <div class="bsk-navbar-header">
+      <button type="button" class="bsk-navbar-toggle bsk-collapsed" data-toggle="collapse" data-target="#bsk-example-navbar-collapse-1" aria-expanded="false">
+        <span class="bsk-sr-only">Toggle navigation</span>
+        <span class="bsk-icon-bar"></span>
+        <span class="bsk-icon-bar"></span>
+        <span class="bsk-icon-bar"></span>
       </button>
+      <a class="bsk-navbar-brand" href="#">Site Name</a>
+    </div>
     <!-- Collect navigation links, forms, and other items for hiding at smaller screen sizes -->
-    <div class="bsk-collapse bsk-navbar-collapse" id="bsk-example-navbar-collapse-1" >
-      <ul class="bsk-navbar-nav">
-        <li><a href="#" class="bsk-nav-link bsk-active">Home <span class="bsk-visually-hidden">(current)</span></a></li>
-        <li><a href="#" class="bsk-nav-link">About</a></li>
+    <div class="bsk-collapse bsk-navbar-collapse" id="bsk-example-navbar-collapse-1">
+      <ul class="bsk-nav bsk-navbar-nav">
+        <li class="bsk-active"><a href="#">Home <span class="bsk-sr-only">(current)</span></a></li>
+        <li><a href="#">About</a></li>
         <li class="bsk-dropdown">
-          <a href="#" class="bsk-nav-link bsk-dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Dropdown</a>
+          <a href="#" class="bsk-dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          Dropdown <span class="bsk-caret"></span></a>
           <ul class="bsk-dropdown-menu">
-            <li><a href="#" class="bsk-dropdown-item">Action</a></li>
-            <li><a href="#" class="bsk-dropdown-item">Another action</a></li>
-            <li><a href="#" class="bsk-dropdown-item">Something else here</a></li>
-            <li><a href="#" class="bsk-dropdown-item">Separated link</a></li>
-            <li><a href="#" class="bsk-dropdown-item">One more separated link</a></li>
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="bsk-divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="bsk-divider"></li>
+            <li><a href="#">One more separated link</a></li>
           </ul>
         </li>
       </ul>
-      <ul class="bsk-nav bsk-navbar-nav bsk-ms-auto">
+      <ul class="bsk-nav bsk-navbar-nav bsk-navbar-right">
         <li class="bsk-dropdown">
-          <a href="#" class="bsk-dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false">
+          <a href="#" class="bsk-dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
           Part of British Antarctic Survey <span class="bsk-caret"></span></a>
-          <ul class="bsk-dropdown-menu bsk-dropdown-menu-lg-end">
-            <li><a href="https://www.bas.ac.uk" class="bsk-dropdown-item">BAS Home</a></li>
-            <li><a href="#" class="bsk-dropdown-item">Another link</a></li>
-            <li><a href="https://data.bas.ac.uk" class="bsk-dropdown-item">Discover BAS data</a></li>
+          <ul class="bsk-dropdown-menu">
+            <li><a href="https://www.bas.ac.uk">BAS Home</a></li>
+            <li><a href="#">Another link</a></li>
+            <li><a href="https://data.bas.ac.uk">Discover BAS data</a></li>
           </ul>
         </li>
         <li><a href="#">Feedback</a></li>
@@ -588,15 +595,18 @@ Large:
   <div class="bsk-container-fluid">
     <!-- Site name and toggle get grouped for better mobile display -->
     <div class="bsk-navbar-header">
+      <button type="button" class="bsk-navbar-toggle bsk-collapsed" data-toggle="collapse" data-target="#bsk-example-navbar-collapse-1" aria-expanded="false">
+        <span class="bsk-sr-only">Toggle navigation</span>
+        <span class="bsk-icon-bar"></span>
+        <span class="bsk-icon-bar"></span>
+        <span class="bsk-icon-bar"></span>
+      </button>
       <a class="bsk-navbar-brand bsk-navbar-brand-image-64" href="#">
         <img src="{{ '/img/placeholder-64.png' | prepend: site.baseurl }}">
       </a>
-      <!-- <button class="bsk-navbar-toggler bsk-ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#bsk-example-navbar-collapse-2" aria-controls="bsk-example-navbar-collapse-2" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="bsk-navbar-toggler-icon"></span>
-      </button> -->
     </div>
-    <ul class="bsk-navbar-nav">
-      <li><a href="#" class="bsk-nav-link">Item</a></li>
+    <ul class="bsk-nav bsk-navbar-nav">
+      <li><a href="#">Item</a></li>
     </ul>
   </div>
 </nav>
@@ -607,15 +617,18 @@ Large:
   <div class="bsk-container-fluid">
     <!-- Site name and toggle get grouped for better mobile display -->
     <div class="bsk-navbar-header">
+      <button type="button" class="bsk-navbar-toggle bsk-collapsed" data-toggle="collapse" data-target="#bsk-example-navbar-collapse-1" aria-expanded="false">
+        <span class="bsk-sr-only">Toggle navigation</span>
+        <span class="bsk-icon-bar"></span>
+        <span class="bsk-icon-bar"></span>
+        <span class="bsk-icon-bar"></span>
+      </button>
       <a class="bsk-navbar-brand bsk-navbar-brand-image-96" href="#">
         <img src="{{ '/img/placeholder-96.png' | prepend: site.baseurl }}">
       </a>
-      <!-- <button class="bsk-navbar-toggler bsk-ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#bsk-example-navbar-collapse-3" aria-controls="bsk-example-navbar-collapse-3" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="bsk-navbar-toggler-icon"></span>
-      </button> -->
     </div>
-    <ul class="bsk-navbar-nabsk-navbar-navv">
-      <li><a href="#" class="bsk-nav-link">Item</a></li>
+    <ul class="bsk-nav bsk-navbar-nav">
+      <li><a href="#">Item</a></li>
     </ul>
   </div>
 </nav>
@@ -637,7 +650,7 @@ Large:
 Add the `.bsk-active` class to the navbar item currently active, to highlight where the end user is in the site.
 
 {% capture alert_content %}
-Make sure to include a `<span class="bsk-visually-hidden">(current)</span>` element as well. <br />
+Make sure to include a `<span class="bsk-sr-only">(current)</span>` element as well. <br />
 This provides a non-visual indication of the currently active item, suitable for assistive technologies.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
@@ -647,14 +660,12 @@ This provides a non-visual indication of the currently active item, suitable for
 %}
 
 {% example html %}
-<nav class="bsk-navbar bsk-navbar-expand-lg">
+<nav class="bsk-navbar">
   <div class="bsk-container-fluid">
-    <div class="bsk-navbar-collapse">
-      <ul class="bsk-navbar-nav bsk-flex-lg-row">
-        <li class="bsk-active"><a href="#" class="bsk-nav-link">Active item <span class="bsk-visually-hidden">(current)</span></a></li>
-        <li><a href="#" class="bsk-nav-link">Another item</a></li>
-      </ul>
-    </div>
+    <ul class="bsk-nav bsk-navbar-nav">
+      <li class="bsk-active"><a href="#">Active item <span class="bsk-sr-only">(current)</span></a></li>
+      <li><a href="#">Another item</a></li>
+    </ul>
   </div>
 </nav>
 {% endexample %}
@@ -662,21 +673,19 @@ This provides a non-visual indication of the currently active item, suitable for
 This can also be used within [drop-down]({{ '/components/drop-down/#active' | prepend: site.baseurl }}) menus.
 
 {% example html %}
-<nav class="bsk-navbar bsk-navbar-expand-lg">
+<nav class="bsk-navbar">
   <div class="bsk-container-fluid">
-    <div class="bsk-navbar-collapse">
-      <ul class="bsk-navbar-nav">
-        <li class="bsk-nav-item bsk-dropdown bsk-active">
-          <a href="#" class="bsk-dropdown-toggle bsk-nav-link" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-          Dropdown <span class="bsk-caret"></span></a>
-          <ul class="bsk-dropdown-menu bsk-dropdown-menu-dark">
-            <li><a href="#" class="bsk-dropdown-item">Action</a></li>
-            <li class="bsk-active"><a href="#" class="bsk-dropdown-item">Active item <span class="bsk-visually-hidden">(current)</span></a></li>
-            <li><a href="#" class="bsk-dropdown-item">Another item</a></li>
-          </ul>
-        </li>
-      </ul>
-    </div>
+    <ul class="bsk-nav bsk-navbar-nav">
+      <li class="bsk-active bsk-dropdown">
+        <a href="#" class="bsk-dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+        Dropdown <span class="bsk-caret"></span></a>
+        <ul class="bsk-dropdown-menu">
+          <li><a href="#">Action</a></li>
+          <li class="bsk-active"><a href="#">Active item <span class="bsk-sr-only">(current)</span></a></li>
+          <li><a href="#">Another item</a></li>
+        </ul>
+      </li>
+    </ul>
   </div>
 </nav>
 {% endexample %}
@@ -722,24 +731,30 @@ This example will only work at small screen sizes.
 %}
 
 {% example html %}
-<nav class="bsk-navbar bsk-navbar-expand-md bsk-navbar-dark bsk-bg-dark">
+<nav class="bsk-navbar">
   <div class="bsk-container-fluid">
-      <button class="bsk-navbar-toggler bsk-ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#bsk-example-navbar-collapse-4" aria-controls="bsk-example-navbar-collapse-4" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="bsk-navbar-toggler-icon"></span>
+    <!-- Hidden navbar items menu -->
+    <div class="bsk-navbar-header">
+      <button type="button" class="bsk-navbar-toggle bsk-collapsed" data-toggle="collapse" data-target="#bsk-example-navbar-collapse-4" aria-expanded="false">
+        <span class="bsk-sr-only">Toggle navigation</span>
+        <span class="bsk-icon-bar"></span>
+        <span class="bsk-icon-bar"></span>
+        <span class="bsk-icon-bar"></span>
       </button>
+    </div>
     <!-- Collect navigation links, forms, and other items for hiding at smaller screen sizes -->
     <div class="bsk-collapse bsk-navbar-collapse" id="bsk-example-navbar-collapse-4">
       <ul class="bsk-nav bsk-navbar-nav">
-        <li><a href="#" class="bsk-dropdown-item">Item 0</a></li>
-        <li><a href="#" class="bsk-dropdown-item">Item 1</a></li>
-        <li><a href="#" class="bsk-dropdown-item">Item 2</a></li>
-        <li><a href="#" class="bsk-dropdown-item">Item 3</a></li>
-        <li><a href="#" class="bsk-dropdown-item">Item 4</a></li>
-        <li><a href="#" class="bsk-dropdown-item">Item 5</a></li>
-        <li><a href="#" class="bsk-dropdown-item">Item 6</a></li>
-        <li><a href="#" class="bsk-dropdown-item">Item 7</a></li>
-        <li><a href="#" class="bsk-dropdown-item">Item 8</a></li>
-        <li><a href="#" class="bsk-dropdown-item">Item 9</a></li>
+        <li><a href="#">Item 0</a></li>
+        <li><a href="#">Item 1</a></li>
+        <li><a href="#">Item 2</a></li>
+        <li><a href="#">Item 3</a></li>
+        <li><a href="#">Item 4</a></li>
+        <li><a href="#">Item 5</a></li>
+        <li><a href="#">Item 6</a></li>
+        <li><a href="#">Item 7</a></li>
+        <li><a href="#">Item 8</a></li>
+        <li><a href="#">Item 9</a></li>
       </ul>
     </div>
   </div>
@@ -751,17 +766,16 @@ This example will only work at small screen sizes.
   heading_level=3
   phase="live"
   initial_version="0.1.0"
-  revised_version="0.7.0"
   included="yes"
 %}
 
-Use the `.bsk-ms-auto` class to position navbar items to the right, including navigation links, drop-down
+Use the `.bsk-navbar-left` and `.bsk-navbar-right` classes to position navbar items, including navigation links, drop-down
 menus, text, buttons etc.
 
 To align navigation links and drop-downs wrap them in a `ul` element with the relevant alignment class.
 
 {% capture alert_content %}
-Multiple right aligned elements are not currently supported and may not look correct.
+Multiple right aligned elements are not currently supported and won't look right.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
   variant="warning"
@@ -775,7 +789,7 @@ Multiple right aligned elements are not currently supported and may not look cor
     <ul class="bsk-nav bsk-navbar-nav">
       <li><a href="#">Left (Non)-aligned item</a></li>
     </ul>
-    <ul class="bsk-nav bsk-navbar-nav bsk-ms-auto">
+    <ul class="bsk-nav bsk-navbar-nav bsk-navbar-right">
       <li><a href="#">Right aligned item</a></li>
     </ul>
   </div>
@@ -787,11 +801,10 @@ Multiple right aligned elements are not currently supported and may not look cor
   heading_level=3
   phase="live"
   initial_version="0.1.0"
-  revised_version="0.7.0"
   included="yes"
 %}
 
-Add the `.bsk-fixed-top` class and include a [container]({{ 'core/layout/#containers' | prepend: site.baseurl }})
+Add the `.bsk-navbar-fixed-top` class and include a [container]({{ 'core/layout/#containers' | prepend: site.baseurl }})
 to fix a navbar to the top of the page.
 
 Additional CSS rules, such as the example below, are needed to prevent the navbar covering up other page content.
@@ -803,13 +816,13 @@ body {
 {% endhighlight %}
 
 {% example html %}
-<nav class="bsk-navbar bsk-fixed-top">
+<nav class="bsk-navbar navbar-fixed-top">
   <div class="bsk-container-fluid">
     <div class="bsk-navbar-header">
       <a class="bsk-navbar-brand" href="#">Site Name</a>
     </div>
-    <ul class="bsk-nav bsk-navbar-nav bsk-flex-sm-row">
-      <li class="bsk-active"><a href="#">Home <span class="bsk-visually-hidden">(current)</span></a></li>
+    <ul class="bsk-nav bsk-navbar-nav">
+      <li class="bsk-active"><a href="#">Home <span class="bsk-sr-only">(current)</span></a></li>
       <li><a href="#">About</a></li>
     </ul>
   </div>
@@ -833,7 +846,7 @@ This example would normally use absolute positioning. It is disabled here to avo
   included="yes"
 %}
 
-Add the `.bsk-fixed-bottom` class and include a
+Add the `.bsk-navbar-fixed-bottom` class and include a
 [container]({{ 'core/layout/#containers' | prepend: site.baseurl }}) to fix a navbar to the bottom of the page.
 
 Additional CSS rules, such as the example below, are needed to prevent the navbar covering up other page content.
@@ -847,17 +860,15 @@ body {
 {% endhighlight %}
 
 {% example html %}
-<nav class="bsk-navbar bsk-navbar-expand-lg bsk-fixed-bottom">
+<nav class="bsk-navbar navbar-fixed-bottom">
   <div class="bsk-container-fluid">
-    <div class="bsk-navbar-collapse">
+    <div class="bsk-navbar-header">
       <a class="bsk-navbar-brand" href="#">Site Name</a>
-      <div class="collapse navbar-collapse">
-        <ul class="bsk-nav bsk-navbar-nav bsk-flex-sm-row">
-          <li class="bsk-active"><a href="#">Home <span class="bsk-visually-hidden">(current)</span></a></li>
-          <li><a href="#">About</a></li>
-        </ul>
-      </div>
     </div>
+    <ul class="bsk-nav bsk-navbar-nav">
+      <li class="bsk-active"><a href="#">Home <span class="bsk-sr-only">(current)</span></a></li>
+      <li><a href="#">About</a></li>
+    </ul>
   </div>
 </nav>
 {% endexample %}
@@ -872,15 +883,14 @@ This example would normally use absolute positioning. It is disabled here to avo
 %}
 
 {% include topic-section-metadata.html
-  title="Sticky top"
+  title="Static top"
   heading_level=3
   phase="live"
   initial_version="0.1.0"
-  revised_version="0.7.0"
   included="yes"
 %}
 
-Add the `.bsk-sticky-top` class and include a [container]({{ 'core/layout/#containers' | prepend: site.baseurl }})
+Add the `.bsk-navbar-static-top` class and include a [container]({{ 'core/layout/#containers' | prepend: site.baseurl }})
 to create a full-width navbar that scrolls with the page.
 
 {% capture alert_content %}
@@ -893,15 +903,15 @@ Unlike the `.bsk-navbar-fixed-*` classes, you do not need to change any padding 
 %}
 
 {% example html %}
-<nav class="bsk-navbar bsk-sticky-top">
+<nav class="bsk-navbar navbar-static-top">
   <div class="bsk-container-fluid">
-    <a class="bsk-navbar-brand" href="#">Site Name</a>
-    <div class="collapse navbar-collapse">
-      <ul class="bsk-nav bsk-navbar-nav bsk-flex-sm-row">
-        <li class="bsk-active"><a href="#">Home <span class="bsk-visually-hidden">(current)</span></a></li>
-        <li><a href="#">About</a></li>
-      </ul>
+    <div class="bsk-navbar-header">
+      <a class="bsk-navbar-brand" href="#">Site Name</a>
     </div>
+    <ul class="bsk-nav bsk-navbar-nav">
+      <li class="bsk-active"><a href="#">Home <span class="bsk-sr-only">(current)</span></a></li>
+      <li><a href="#">About</a></li>
+    </ul>
   </div>
 </nav>
 {% endexample %}

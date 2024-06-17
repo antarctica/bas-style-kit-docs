@@ -3,7 +3,7 @@ item_type: Component
 title: Footer
 menus:
   primary_components:
-    weight: 9
+    weight: 8
 sections:
   -
     title: Overview
@@ -67,7 +67,7 @@ strongly recommended to use a [container]({{ '/core/layout/#containers' | prepen
   heading_level=3
   phase="live"
   initial_version="0.1.0"
-  revised_version="0.7.0"
+  revised_version="0.5.0"
   included="yes"
 %}
 
@@ -84,32 +84,31 @@ This example, whilst more complex, demonstrates the sort of information shown in
 {% example html %}
 <footer class="bsk-footer bsk-footer-default">
   <div class="bsk-container-fluid">
-    <div class="bsk-footer-is-something-wrong bsk-float-start">
-      <a href="#" target="_blank">Is something wrong with this page?</a>
-    </div>
-    <div class="bsk-footer-back-to-top bsk-float-end">
+    <div class="bsk-footer-back-to-top">
       <a href="#site-top">Back to top</a>
     </div>
-    <div class="div bsk-clearfix"></div>
+    <div class="bsk-footer-is-something-wrong">
+      <a href="#" target="_blank">Is something wrong with this page?</a>
+    </div>
     <div role="separator" class="bsk-footer-spacer"></div>
     <!-- main content -->
     <div class="bsk-row">
-      <div class="bsk-col-md-6">
+      <div class="bsk-col-12-md-6">
         Footer content with a <a href="#">link</a>
       </div>
     </div>
     <div role="separator" class="bsk-footer-divider"></div>
     <!-- Copyright & legal -->
-    <div class="bsk-footer-governance bsk-float-start">
+    <div class="bsk-footer-governance">
       The <a href="https://www.bas.ac.uk">British Antarctic Survey</a> (BAS) is part of <a href="https://www.ukri.org">UK Research and Innovation</a> (UKRI)
       <div class="bsk-footer-ogl"><div class="bsk-ogl-symbol"><a href="http://www.nationalarchives.gov.uk/doc/open-government-licence" rel="license"><span class="bsk-ogl-symbol">Open Government Licence</span></a></div>
       All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence" rel="license">Open Government Licence v3.0</a>, except where otherwise stated</div>
     </div>
-    <div class="bsk-footer-policy-links bsk-float-end">
+    <div class="bsk-footer-policy-links">
       <ul class="bsk-list-inline">
-        <li class="bsk-list-inline-item"><a href="#">Cookies</a></li>
-        <li class="bsk-list-inline-item"><a href="#">Copyright</a></li>
-        <li class="bsk-list-inline-item"><a href="#">Privacy</a></li>
+        <li><a href="#">Cookies</a></li>
+        <li><a href="#">Copyright</a></li>
+        <li><a href="#">Privacy</a></li>
       </ul>
       © (Year) British Antarctic Survey
     </div>
@@ -175,7 +174,7 @@ Use the `.bsk-footer-is-something-wrong` class to position and style a link to g
 {% example html %}
 <footer class="bsk-footer bsk-footer-default">
   <div class="bsk-container-fluid">
-    <div class="bsk-footer-is-something-wrong bsk-float-start">
+    <div class="bsk-footer-is-something-wrong">
       <a href="#" target="_blank">Is something wrong with this page?</a>
     </div>
   </div>
@@ -196,7 +195,7 @@ It's strongly recommended to open feedback links in a new tab so users don't loo
   heading_level=3
   phase="live"
   initial_version="0.4.0"
-  revised_version="0.7.0"
+  revised_version="0.5.0"
   included="yes"
 %}
 
@@ -205,7 +204,7 @@ Use the `.bsk-footer-back-to-top` class to position and style a link to the top 
 {% example html %}
 <footer class="bsk-footer bsk-footer-default">
   <div class="bsk-container-fluid">
-    <div class="bsk-footer-back-to-top bsk-float-end">
+    <div class="bsk-footer-back-to-top">
       <a href="#site-top">Back to top</a>
     </div>
   </div>
@@ -228,7 +227,7 @@ statement explaining BAS is part of UKRI, and that content is licensed under the
 {% example html %}
 <footer class="bsk-footer bsk-footer-default">
   <div class="bsk-container-fluid">
-    <div class="bsk-footer-governance bsk-float-start">
+    <div class="bsk-footer-governance">
       The <a href="https://www.bas.ac.uk">British Antarctic Survey</a> (BAS) is part of <a href="https://www.ukri.org">UK Research and Innovation</a> (UKRI)
       <div class="bsk-footer-ogl"><div class="bsk-ogl-symbol"><a href="http://www.nationalarchives.gov.uk/doc/open-government-licence" rel="license"><span class="bsk-ogl-symbol">Open Government Licence</span></a></div>
       All content is available under the <a href="http://www.nationalarchives.gov.uk/doc/open-government-licence" rel="license">Open Government Licence v3.0</a>, except where otherwise stated</div>
@@ -242,7 +241,6 @@ statement explaining BAS is part of UKRI, and that content is licensed under the
   heading_level=3
   phase="live"
   initial_version="0.1.0"
-  revised_version="0.7.0"
   included="yes"
 %}
 
@@ -252,11 +250,11 @@ statements.
 {% example html %}
 <footer class="bsk-footer bsk-footer-default">
   <div class="bsk-container-fluid">
-    <div class="bsk-footer-policy-links bsk-float-end">
+    <div class="bsk-footer-policy-links">
       <ul class="bsk-list-inline">
-        <li class="bsk-list-inline-item"><a href="#">Cookies</a></li>
-        <li class="bsk-list-inline-item"><a href="#">Copyright</a></li>
-        <li class="bsk-list-inline-item"><a href="#">Privacy</a></li>
+        <li><a href="#">Cookies</a></li>
+        <li><a href="#">Copyright</a></li>
+        <li><a href="#">Privacy</a></li>
       </ul>
       © (Year) British Antarctic Survey
     </div>
@@ -275,7 +273,6 @@ statements.
   current_phase="live"
   phase="live"
   initial_version="0.1.0"
-  revised_version="0.7.0"
   included="yes"
 %}
 
@@ -307,7 +304,7 @@ The example below would normally use absolute positioning. It is disabled here t
     Footer content with a <a href="#">link</a>
     <div role="separator" class="bsk-footer-divider"></div>
     <!-- Copyright & legal -->
-    <div class="bsk-float-end">
+    <div class="bsk-pull-right">
       Copyright &amp; Legal
     </div>
   </div>
@@ -319,7 +316,6 @@ The example below would normally use absolute positioning. It is disabled here t
   heading_level=3
   phase="live"
   initial_version="0.1.0"
-  revised_version="0.7.0"
   included="yes"
 %}
 
@@ -341,7 +337,7 @@ Unlike with fixed footers, you do not need to change any padding on the `body` e
     Footer content with a <a href="#">link</a>
     <div role="separator" class="bsk-footer-divider"></div>
     <!-- Copyright & legal -->
-    <div class="bsk-float-end">
+    <div class="bsk-pull-right">
       Copyright &amp; Legal
     </div>
   </div>

@@ -9,8 +9,6 @@ sections:
   -
     title: Latest version
   -
-    title: v0.6.1
-  -
     title: v0.6.0
   -
     title: v0.5.0
@@ -40,19 +38,6 @@ See the relevant project change log for this information:
 The latest stable version of the BAS Style Kit is **{{ site.data.variables.bsk_version_production }}**.
 
 The latest development version of the BAS Style Kit is **{{ site.data.variables.bsk_version_staging }}**.
-
-Key changes in this version:
-
-* Grid - /core/grid
-* Layout Floated blocks - /core/layout/
-
-
-{% include topic-section-metadata.html
-  title="v0.6.1"  
-  heading_level=2
-%}
-
-Key changes in this version:
 
 {% include topic-section-metadata.html
   title="v0.6.0"
