@@ -3,7 +3,7 @@ item_type: Pattern
 title: ORCID iD
 menus:
   primary_patterns:
-    weight: 8
+    weight: 3
 sections:
   -
     title: Overview

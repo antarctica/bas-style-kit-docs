@@ -1,0 +1,37 @@
+---
+layout: bas-style-kit/bsk--standard
+sort_index: 0
+slug: index
+permalink: /v0.6.1/core/index.html
+title: Core styles
+subtitle: Global CSS settings, fundamental HTML elements styled and enhanced with extensible classes, and an advanced grid system
+menus:
+  primary_core:
+    title: All core styles
+    weight: 1
+---
+
+<header class="bsk-jumbotron bsk-jumbotron-default bsk-jumbotron-lg bsk-docs-collection-masthead">
+  <h1>{{ page.title }}</h1>
+  <p>{{ page.subtitle }}</p>
+</header>
+
+{% assign topics_sorted = site.core | sort:"sort_index" %}
+
+<div class="bsk-row bsk-row-cols-3">
+  {% for topic in topics_sorted %}
+  {% unless topic.slug == "index" %}
+        <div class="bsk-col">
+        <div class="bsk-docs-topic-index-divider"></div>
+        <h2><a href="{{ topic.title | slugify }}">{{ topic.title }}</a></h2>
+        <ul class="bsk-list-inline">
+          {% for section in topic.sections %}
+            <li class="bsk-list-inline-item">
+              <a href="{{ topic.title | slugify }}#{{ section.title | slugify }}">{{ section.title }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+{% endunless %}
+{% endfor %}
+</div>

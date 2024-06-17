@@ -1,0 +1,82 @@
+---
+layout: bas-style-kit/bsk--base
+---
+{% include bas-style-kit/bsk-body--back-to-top.html %}
+{% if site.bas_style_kit_jekyll_theme.attributes.container == 'fixed' %}
+  {% assign bsk_attributes_container_class = "bsk-container" %}
+{% elsif site.bas_style_kit_jekyll_theme.attributes.container == 'fluid' %}
+  {% assign bsk_attributes_container_class = "bsk-container-fluid" %}
+{% endif %}
+<header class="site-header">
+  {% if site.bas_style_kit_jekyll_theme.feature_flags.standard_header.cookie_notice == true %}
+    {% include bas-style-kit/bsk-header--cookie-notice.html %}
+  {% endif %}
+  {% if site.bas_style_kit_jekyll_theme.feature_flags.standard_header.site_navigation == true %}
+    <nav class="bsk-navbar bsk-navbar bsk-navbar-expand-md bsk-navbar-dark bsk-bg-dark site-home-navbar">
+      <div class="{{ bsk_attributes_container_class }}">
+        {% include bas-style-kit/bsk-nav--header.html %}
+        {% include bas-style-kit/bsk-nav--collapse.html %}
+      </div>
+    </nav>
+  {% endif %}
+</header>
+
+<div class="bsk-jumbotron bsk-jumbotron-bsk-inverse bsk-image-copyright site-home-masthead">
+  <div class="bsk-container">
+    <div class="bsk-center-block site-home-masthead-wrapper bsk-d-flex bsk-justify-content-center">
+      <div class="site-home-masthead-symbol"></div>
+    </div>
+
+    <h1 class="bsk-text-center site-home-masthead-title">
+      BAS Style Kit
+      {% unless jekyll.environment == 'production' %}
+        <i class="fas fa-fw fa-flask site-text-experimental-light" aria-hidden="true"></i>
+        <span class="bsk-visually-hidden">Testing version</span>
+      {% endunless %}
+    </h1>
+
+    <p class="bsk-text-center site-home-masthead-strapline"><span class="bsk-jumbotron-overlay">A collection of HTML, CSS, and JS components for developing web projects consistent with the BAS brand</span></span></p>
+    <p class="bsk-text-center">
+      <a href="{{ "/v0.6.1/start/introduction/#quick-start" | prepend: site.baseurl }}" class="bsk-btn bsk-btn-default bsk-btn-lg">
+        Download the BAS Style Kit
+      </a>
+    </p>
+    <p class="site-home-masthead-version bsk-text-center">Version 0.6.1</p>
+  </div>
+  <div class="bsk-image-copyright-attribution">Sky at Halley VI research station | Tom Wales / BAS</div>
+</div>
+
+<div class="{{ bsk_attributes_container_class }}">
+  {% if jekyll.environment != 'production' %}
+    <section class="bsk-row">
+
+      <div class="bsk-col-md-8 bsk-offset-md-2 bsk-alert bsk-alert-solid bsk-alert-experimental bsk-alert-icon bsk-alert-block bsk-text-center site-home-alert">
+        <header class="bsk-alert-heading">
+          <h2><i class="fas fa-fw fa-flask bsk-alert-icon"></i>This website is used for testing</h2>
+        </header>
+        <p>This site contains a preview of upcoming changes and other experiments. It isn't safe to rely on examples
+          from this website, as as they may not work, or be removed at any time.</p>
+        <div class="site-home-spacer-md"></div>
+        <p><a class="bsk-btn bsk-btn-default bsk-btn-lg" href="{{ 'https://' | append: site.data.variables.docs_site_production }}">
+          View the stable documentation instead
+        </a></p>
+      </div>
+    </section>
+
+    <hr class="site-home-hr" /> 
+  {% endif %}
+
+  <section class="bsk-row">
+    <div class="bsk-col-md-8 bsk-offset-md-2 bsk-text-center bsk-alert bsk-alert-solid bsk-alert-warning bsk-alert-icon bsk-alert-block site-home-alert">
+      <header class="bsk-alert-heading">
+        <h2><i class="far fa-fw fa-exclamation-triangle bsk-alert-icon"></i>Parts of the BAS Style Kit are protected works</h2>
+      </header>
+      <p>Elements such as the BAS logo may only be used in certain conditions.</p>
+      <p>This is explained in more detail where applicable.</p>
+    </div>
+  </section>
+</div>
+
+{% if site.bas_style_kit_jekyll_theme.feature_flags.site.standard_footer == true %}
+  {% include bas-style-kit/bsk-body--standard-footer.html %}
+{% endif %}
