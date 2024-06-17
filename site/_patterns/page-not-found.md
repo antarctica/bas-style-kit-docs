@@ -3,7 +3,7 @@ item_type: Pattern
 title: Page not found page
 menus:
   primary_patterns:
-    weight: 2
+    weight: 4
 sections:
   -
     title: Overview

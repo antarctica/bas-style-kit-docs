@@ -2,7 +2,6 @@
 layout: bas-style-kit/bsk--standard
 sort_index: 0
 slug: index
-permalink: /:collection/index.html
 title: Components
 subtitle: Over a dozen reusable components built to provide iconography, dropdowns, input groups, navigation, alerts, and much more
 menus:
@@ -20,11 +19,11 @@ menus:
 </header>
 
 {% assign topics_sorted = site.components | sort:"sort_index" %}
+
+<div class="bsk-row bsk-row-cols-3">
 {% for topic in topics_sorted %}
 {% unless topic.slug == "index" %}
-    {% capture modulo %}{{ forloop.index | modulo: 3 }}{% endcapture %}
-    {% if modulo == '1' %}<div class="bsk-row">{% endif %}
-      <div class="bsk-col-md-4">
+      <div class="bsk-col">
         <div class="bsk-docs-topic-index-divider"></div>
         <h2><a href="{{ topic.url | prepend: site.baseurl }}">{{ topic.title }}</a></h2>
         <ul class="bsk-list-inline">
@@ -35,6 +34,6 @@ menus:
           {% endfor %}
         </ul>
       </div>
-    {% if modulo == '0' or forloop.last %}</div>{% endif %}
 {% endunless %}
 {% endfor %}
+</div>

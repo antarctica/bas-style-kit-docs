@@ -69,8 +69,7 @@ they are defined after the standard grid classes in the CSS file.
 
 | Grid Name                           | Total Columns | Class Prefix   |
 | ----------------------------------- | ------------- | -------------- |
-| Bootstrap 12 column                 | 12            | `.bsk-col-*`   |
-| <s>Standard - depreciated</s>       | 12            | `.bsk-col-12`  |
+| Standard                            | 12            | `.bsk-col-12`  |
 | <s>Alternate - depreciated</s>      | 24            | `.bsk-col-24`  |
 {: .bsk-table .bsk-table-responsive }
 

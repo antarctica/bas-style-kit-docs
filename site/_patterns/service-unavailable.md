@@ -3,7 +3,7 @@ item_type: Pattern
 title: Service unavailable page
 menus:
   primary_patterns:
-    weight: 4
+    weight: 6
 sections:
   -
     title: Overview
