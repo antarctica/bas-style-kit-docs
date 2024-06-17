@@ -19,19 +19,19 @@ menus:
 {% assign topics_sorted = site.interactivity | sort:"sort_index" %}
 
 <div class="bsk-row bsk-row-cols-3">
-  {% for topic in topics_sorted %}
-  {% unless topic.slug == "index" %}
-      <div class="bsk-col">
-        <div class="bsk-docs-topic-index-divider"></div>
-        <h2><a href="{{ topic.title | slugify }}">{{ topic.title }}</a></h2>
-        <ul class="bsk-list-inline">
-          {% for section in topic.sections %}
-            <li class="bsk-list-inline-item">
-              <a href="{{ topic.title | slugify }}#{{ section.title | slugify }}">{{ section.title }}</a>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
+{% for topic in topics_sorted %}
+{% unless topic.slug == "index" %}
+  <div class="bsk-col">
+    <div class="bsk-docs-topic-index-divider"></div>
+    <h2><a href="{{ topic.title | slugify }}.html">{{ topic.title }}</a></h2>
+    <ul class="bsk-list-inline">
+      {% for section in topic.sections %}
+        <li class="bsk-list-inline-item">
+          <a href="{{ topic.title | slugify }}.html#{{ section.title | slugify }}">{{ section.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
 {% endunless %}
 {% endfor %}
 </div>
