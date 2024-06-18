@@ -1,7 +1,4 @@
 <style>
-    .v0-6-1 {
-        /* display: none !important; */
-    }
     .version-list-element {
         display: none !important;
     }
@@ -50,12 +47,10 @@
 {% endif %}
 
 <script>
-
 window.onload = function() {
 
     var url = window.location.pathname;
     var version = url.split('/');
-
     var select_value = document.getElementById('menu-select-version');
 
     // Set element.value based on 1st part of URL
@@ -66,9 +61,15 @@ window.onload = function() {
     }
 
     if(version_classname == 'v0-6-1') {
+
+        var brand_link = document.querySelector('.bsk-navbar-brand');
+        brand_link.textContent="BAS Style Kit - 0.6.1";
+        brand_link.setAttribute('href', '/v0.6.1/');
+
         for (var element of document.getElementsByClassName(version_classname)){
                 element.classList.remove("version-list-element");
             }
+
     } else {
         var exclude_class = "li:not(.v0-6-1)";
         elements = document.querySelectorAll(exclude_class);
