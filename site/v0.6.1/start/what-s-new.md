@@ -7,9 +7,7 @@ menus:
     weight: 5
 sections:
   -
-    title: Latest version
-  -
-    title: v0.6.0
+    title: v0.6.1
   -
     title: v0.5.0
   -
@@ -27,20 +25,8 @@ process are not included here.
 
 See the relevant project change log for this information:
 
-* [BAS Style Kit change log]({{ site.data.variables.source_code_url }}/blob/master/CHANGELOG.md)
-* [BAS Style Kit documentation change log]({{ site.data.variables.docs_source_code_url }}/blob/master/CHANGELOG.md)
-
 {% include topic-section-metadata.html
-  title="Latest version"
-  heading_level=2
-%}
-
-The latest stable version of the BAS Style Kit is **{{ site.data.variables.bsk_version_production }}**.
-
-The latest development version of the BAS Style Kit is **{{ site.data.variables.bsk_version_staging }}**.
-
-{% include topic-section-metadata.html
-  title="v0.6.0"
+  title="v0.6.1"
   heading_level=2
 %}
 
