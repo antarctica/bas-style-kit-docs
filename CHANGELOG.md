@@ -5,18 +5,23 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ## [Unreleased][unreleased]
 
-## v1.9.0 - 12/09/2023
+## v1.9.0 - 18/06/2024
 
 ### Added
 
+* Card
 
 ### Removed
 
-* transition.md
-* column size xs-* replaced with xs- E.g. `bsk-col-xs-6` is now `bsk-col-6`
+* Panel
 
 ### Changed
 
+* Grid Columns - `bsk-col-*-*-*` is now `bsk-col-*-*` E.g. `bsk-col-md-6`
+* Grid Columns Offsetting - `bsk-offset-md-*` - instead of `bsk-col-*-md-offset-*`
+* Grid Columns Nesting - removal of `bsk-col-*-bsk-*-*` classes, E.g. `bsk-col-12-bsk-md-8` - now uses `bsk-col-bsk-md-8`
+* Grid Columns Ordering - removal of `bsk-col-*-md-push-*` classes E.g. `bsk-col-12-md-push-3` - now uses `bsk-col-md-push-3` - also for `pull` classes
+* Floated Blocks - The method of aligning elements is now controlled using Flexbox
 
 
 ## v1.8.0 - 17/03/2021
