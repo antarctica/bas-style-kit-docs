@@ -153,15 +153,6 @@ shown full width, stacked one after the other, on smaller devices.
       <td><code>.bsk-col-fhd</code></td>
     </tr>
     <tr>
-      <th>Alternate Grid Class Prefix</th>
-      <td><code>.bsk-col-xs</code></td>
-      <td><code>.bsk-col-sm</code></td>
-      <td><code>.bsk-col-md</code></td>
-      <td><code>.bsk-col-lg</code></td>
-      <td><code>.bsk-col-xl</code></td>
-      <td><code>.bsk-col-fhd</code></td>
-    </tr>
-    <tr>
       <th>Column Width</th>
       <td>Auto</td>
       <td>~62px</td>
@@ -228,7 +219,7 @@ Style Kit grid.
 %}
 
 Rows can be used within a column to create a nested grid. Each nested grid has the same total number of grid columns,
-but you don't need to use all of them. <s>You can also nest the alternate grid within the standard grid or vice versa.</s>
+but you don't need to use all of them.
 
 For example, a row has two columns, A and B, spanning 6 columns each in the standard grid (12 columns). Column A has a
 row with three nested columns, each spanning 8 columns each of the alternate grid.
