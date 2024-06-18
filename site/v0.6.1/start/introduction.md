@@ -54,7 +54,7 @@ element.
 {% endhighlight %}
 
 {% capture alert_content %}
-See the [distribution]({{ '/v0.6.1/start/distribution' | prepend: site.baseurl }}){: .bsk-alert-link } section for other ways
+See the [distribution]({{ '/v0.6.1/start/distribution.html' | prepend: site.baseurl }}){: .bsk-alert-link } section for other ways
 to include the Style Kit.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
