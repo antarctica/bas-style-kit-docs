@@ -43,16 +43,26 @@ The latest development version of the BAS Style Kit is **{{ site.data.variables.
 
 Key changes in this version:
 
-* Grid - /core/grid
-* Layout Floated blocks - /core/layout/
+* Breaking - [grid]({{ '/core/grid' | prepend: site.baseurl }}) - removal of `bsk-col-*-*-*` classes E.g. `bsk-col-12-xs-6` - now uses `bsk-col-md-6`
+* Breaking - [offsetting-columns]({{ 'core/grid/#offsetting-columns' | prepend: site.baseurl }}) `bsk-offset-md-*` - instead of `bsk-col-*-md-offset-*`
+* Breaking - [nesting-columns]({{  'core/grid/#nesting-columns'  | prepend: site.baseurl }})  - removal of `bsk-col-*-bsk-*-*` classes E.g. `bsk-col-12-bsk-md-8` - now uses `bsk-col-bsk-md-8`
+* Breaking - [ordering-columns]({{  'core/grid/#ordering-columns'  | prepend: site.baseurl }})  - removal of `bsk-col-*-md-push-*` classes E.g. `bsk-col-12-md-push-3` - now uses `bsk-col-md-push-3` - same for `pull` classes
+* Breaking - [floated-blocks]({{'/core/layout/#floated-blocks' | prepend: site.baseurl }}) - The method of aligning elements is now controlled using Flexbox
+* Breaking - panel removed - replaced by [card]({{ '/components/card/' | prepend: site.baseurl }})
+* Revisions
+  - Alerts
+  - Button group
+  - Drop down
+  - Footer
+  - Image copyright
+  - Jumbotron
+  - Navigation
+  - Navbar
+  - Pagination
+  - Sidebar
+  - Social media
+  - Thumbnail
 
-
-{% include topic-section-metadata.html
-  title="v0.6.1"  
-  heading_level=2
-%}
-
-Key changes in this version:
 
 {% include topic-section-metadata.html
   title="v0.6.0"
