@@ -177,19 +177,37 @@ shown full width, stacked one after the other, on smaller devices.
   </tbody>
 </table>
 
-{% example html %}
-<div class="bsk-row">
-  <div class="bsk-col-12-md-6 bsk-docs-content-block">.bsk-col-12-md-6</div>
-  <div class="bsk-col-12-md-6 bsk-docs-content-block">.bsk-col-12-md-6</div>
+<div class="bsk-container">
+  <div class="bsk-row">
+    <div class="bsk-col-md-6 bsk-docs-content-block">.bsk-col-12-md-6</div>
+    <div class="bsk-col-md-6 bsk-docs-content-block">.bsk-col-12-md-6</div>
+  </div>
 </div>
-{% endexample %}
+<xmp style="border: 1px solid rgba(140, 140, 140, 0.2); background:rgba(195, 195, 195, 0.15); margin:0;">
+<div class="bsk-container">
+  <div class="bsk-row">
+    <div class="bsk-col-12-md-6">.bsk-col-12-md-6</div>
+    <div class="bsk-col-12-md-6">.bsk-col-12-md-6</div>
+  </div>
+</div>
+</xmp>
 
-{% example html %}
-<div class="bsk-row">
-  <div class="bsk-col-24-md-12 bsk-docs-content-block">.bsk-col-24-md-12</div>
-  <div class="bsk-col-24-md-12 bsk-docs-content-block">.bsk-col-24-md-12</div>
+<br>
+
+<div class="bsk-container">
+  <div class="bsk-row">
+    <div class="bsk-col-md-6 bsk-docs-content-block">.bsk-col-24-md-12</div>
+    <div class="bsk-col-md-6 bsk-docs-content-block">.bsk-col-24-md-12</div>
+  </div>
 </div>
-{% endexample %}
+<xmp style="border: 1px solid rgba(140, 140, 140, 0.2); background:rgba(195, 195, 195, 0.15); margin:0;">
+<div class="bsk-container">
+  <div class="bsk-row">
+    <div class="bsk-col-24-md-12">.bsk-col-24-md-12</div>
+    <div class="bsk-col-24-md-12">.bsk-col-24-md-12</div>
+  </div>
+</div>
+</xmp>
 
 {% include topic-section-metadata.html
   title="Offsetting columns"
@@ -205,33 +223,34 @@ Offset classes can be used to 'indent' columns within a row.
 For example `.bsk-col-12-md-offset-4` offsets a column by 4 grid columns, or `.bsk-col-24-md-offset-8` if using the BAS
 Style Kit grid.
 
-{% example html %}
-<div class="bsk-row">
-  <div class="bsk-col-12-md-4 bsk-docs-content-block">.bsk-col-12-md-4</div>
-  <div class="bsk-col-12-md-4 bsk-col-12-md-offset-4 bsk-docs-content-block">.bsk-col-12-md-4 .bsk-col-12-md-offset-4</div>
+<div class="bsk-container">
+  <div class="bsk-row">
+    <div class="bsk-col-md-4 bsk-docs-content-block">.bsk-col-12-md-4</div>
+    <div class="bsk-col-md-4 bsk-offset-md-4 bsk-docs-content-block">.bsk-col-12-md-4 .bsk-col-12-md-offset-4</div>
+  </div>
+  <div class="bsk-row">
+    <div class="bsk-col-md-3 bsk-offset-md-3 bsk-docs-content-block">.bsk-col-12-md-3 .bsk-col-12-md-offset-3</div>
+    <div class="bsk-col-md-3 bsk-offset-md-3 bsk-docs-content-block">.bsk-col-12-md-3 .bsk-col-12-md-offset-3</div>
+  </div>
+  <div class="bsk-row">
+    <div class="bsk-col-md-6 bsk-offset-md-3 bsk-docs-content-block">.bsk-col-12-md-6 .bsk-col-12-md-offset-3</div>
+  </div>
 </div>
-<div class="bsk-row">
-  <div class="bsk-col-12-md-3 bsk-col-12-md-offset-3 bsk-docs-content-block">.bsk-col-12-md-3 .bsk-col-12-md-offset-3</div>
-  <div class="bsk-col-12-md-3 bsk-col-12-md-offset-3 bsk-docs-content-block">.bsk-col-12-md-3 .bsk-col-12-md-offset-3</div>
+<xmp style="border: 1px solid rgba(140, 140, 140, 0.2); background:rgba(195, 195, 195, 0.15); margin:0;">
+<div class="bsk-container">
+  <div class="bsk-row">
+    <div class="bsk-col-12-md-4">.bsk-col-12-md-4</div>
+    <div class="bsk-col-12-md-4 bsk-col-12-md-offset-4">.bsk-col-12-md-4 .bsk-col-12-md-offset-4</div>
+  </div>
+  <div class="bsk-row">
+    <div class="bsk-col-12-md-3 bsk-col-12-md-offset-3">.bsk-col-12-md-3 .bsk-col-12-md-offset-3</div>
+    <div class="bsk-col-12-md-3 bsk-col-12-md-offset-3">.bsk-col-12-md-3 .bsk-col-12-md-offset-3</div>
+  </div>
+  <div class="bsk-row">
+    <div class="bsk-col-12-md-6 bsk-col-12-md-offset-3">.bsk-col-12-md-6 .bsk-col-12-md-offset-3</div>
+  </div>
 </div>
-<div class="bsk-row">
-  <div class="bsk-col-12-md-6 bsk-col-12-md-offset-3 bsk-docs-content-block">.bsk-col-12-md-6 .bsk-col-12-md-offset-3</div>
-</div>
-{% endexample %}
-
-{% example html %}
-<div class="bsk-row">
-  <div class="bsk-col-24-md-8 bsk-docs-content-block">.bsk-col-24-md-8</div>
-  <div class="bsk-col-24-md-8 bsk-col-24-md-offset-8 bsk-docs-content-block">.bsk-col-24-md-8 .bsk-col-24-md-offset-8</div>
-</div>
-<div class="bsk-row">
-  <div class="bsk-col-24-md-6 bsk-col-24-md-offset-6 bsk-docs-content-block">.bsk-col-24-md-6 .bsk-col-24-md-offset-6</div>
-  <div class="bsk-col-24-md-6 bsk-col-24-md-offset-6 bsk-docs-content-block">.bsk-col-24-md-6 .bsk-col-24-md-offset-6</div>
-</div>
-<div class="bsk-row">
-  <div class="bsk-col-24-md-12 bsk-col-24-md-offset-6 bsk-docs-content-block">.bsk-col-24-md-12 .bsk-col-24-md-offset-6</div>
-</div>
-{% endexample %}
+</xmp>
 
 {% include topic-section-metadata.html
   title="Nesting columns"
@@ -257,27 +276,52 @@ The nested columns in this example will appear to escape their parent column, th
   content=alert_content
 %}
 
-{% example html %}
-<div class="bsk-row">
-  <div class="bsk-col-12-md-6 bsk-docs-content-block">
-    Level 1: .bsk-col-12-sm-6 (column A)
-    <div class="bsk-row">
-      <div class="bsk-col-12-bsk-md-8 bsk-docs-content-block">
-        Level 2: .bsk-col-12-bsk-md-8 (1)
-      </div>
-      <div class="bsk-col-12-bsk-md-8 bsk-docs-content-block">
-        Level 2: .bsk-col-12-bsk-md-8 (2)
-      </div>
-      <div class="bsk-col-12-bsk-md-8 bsk-docs-content-block">
-        Level 2: .bsk-col-12-bsk-md-8 (3)
+<div class="bsk-container">
+  <div class="bsk-row">
+    <div class="bsk-col-md-6 bsk-docs-content-block">
+      Level 1: .bsk-col-12-sm-6 (column A)
+      <div class="bsk-row">
+        <div class="bsk-col-bsk-md-8 bsk-docs-content-block">
+          Level 2: .bsk-col-12-bsk-md-8 (1)
+        </div>
+        <div class="bsk-col-bsk-md-8 bsk-docs-content-block">
+          Level 2: .bsk-col-12-bsk-md-8 (2)
+        </div>
+        <div class="bsk-col-bsk-md-8 bsk-docs-content-block">
+          Level 2: .bsk-col-12-bsk-md-8 (3)
+        </div>
       </div>
     </div>
-  </div>
-  <div class="bsk-col-12-md-6 bsk-docs-content-block">
-    Level 1: .bsk-col-12-md-6 (column B)
+    <div class="bsk-col-md-6 bsk-docs-content-block">
+      Level 1: .bsk-col-12-md-6 (column B)
+    </div>
   </div>
 </div>
-{% endexample %}
+<xmp style="border: 1px solid rgba(140, 140, 140, 0.2); background:rgba(195, 195, 195, 0.15); margin:0;">
+<div class="bsk-container">
+  <div class="bsk-row">
+    <div class="bsk-col-12-md-6">
+      Level 1: .bsk-col-12-sm-6 (column A)
+      <div class="bsk-row">
+        <div class="bsk-col-12-bsk-md-8">
+          Level 2: .bsk-col-12-bsk-md-8 (1)
+        </div>
+        <div class="bsk-col-12-bsk-md-8">
+          Level 2: .bsk-col-12-bsk-md-8 (2)
+        </div>
+        <div class="bsk-col-12-bsk-md-8">
+          Level 2: .bsk-col-12-bsk-md-8 (3)
+        </div>
+      </div>
+    </div>
+    <div class="bsk-col-12-md-6">
+      Level 1: .bsk-col-12-md-6 (column B)
+    </div>
+  </div>
+</div>
+</xmp>
+
+
 
 {% include topic-section-metadata.html
   title="Ordering columns"
@@ -290,19 +334,38 @@ The nested columns in this example will appear to escape their parent column, th
 
 Pull and push classes can be used to order columns within a row, though this is rarely needed.
 
-{% example html %}
-<div class="bsk-row">
-  <div class="bsk-col-12-md-9 bsk-col-12-md-push-3 bsk-docs-content-block">.bsk-col-12-md-9 .bsk-col-12-md-push-3</div>
-  <div class="bsk-col-12-md-3 bsk-col-12-md-pull-9 bsk-docs-content-block">.bsk-col-12-md-3 .bsk-col-12-md-pull-9</div>
-</div>
-{% endexample %}
 
-{% example html %}
-<div class="bsk-row">
-  <div class="bsk-col-24-md-18 bsk-col-24-md-push-6 bsk-docs-content-block">.bsk-col-24-md-18 .bsk-col-24-md-push-6</div>
-  <div class="bsk-col-24-md-6 bsk-col-24-md-pull-18 bsk-docs-content-block">.bsk-col-24-md-6 .bsk-col-24-md-pull-18</div>
+<div class="bsk-container">
+  <div class="bsk-row">
+    <div class="bsk-col-md-9 bsk-col-md-push-3 bsk-docs-content-block">.bsk-col-12-md-9 .bsk-col-12-md-push-3</div>
+    <div class="bsk-col-md-3 bsk-col-md-pull-9 bsk-docs-content-block">.bsk-col-12-md-3 .bsk-col-12-md-pull-9</div>
+  </div>
 </div>
-{% endexample %}
+<xmp style="border: 1px solid rgba(140, 140, 140, 0.2); background:rgba(195, 195, 195, 0.15); margin:0;">
+<div class="bsk-container">
+  <div class="bsk-row">
+    <div class="bsk-col-12-md-9 bsk-col-12-md-push-3 bsk-docs-content-block">.bsk-col-md-9 .bsk-col-md-push-3</div>
+    <div class="bsk-col-12-md-3 bsk-col-12-md-pull-9 bsk-docs-content-block">.bsk-col-md-3 .bsk-col-md-pull-9</div>
+  </div>
+</div>
+</xmp>
+
+<br>
+
+<div class="bsk-container">
+  <div class="bsk-row">
+    <div class="bsk-col-md-9 bsk-col-md-push-3 bsk-docs-content-block">.bsk-col-24-md-18 .bsk-col-24-md-push-6</div>
+    <div class="bsk-col-md-3 bsk-col-md-pull-9 bsk-docs-content-block">.bsk-col-24-md-6 .bsk-col-24-md-pull-18</div>
+  </div>
+</div>
+<xmp style="border: 1px solid rgba(140, 140, 140, 0.2); background:rgba(195, 195, 195, 0.15); margin:0;">
+<div class="bsk-container">
+  <div class="bsk-row">
+    <div class="bsk-col-24-md-18 bsk-col-24-md-push-18 bsk-docs-content-block">.bsk-col-24-md-18 .bsk-col-24-md-push-18</div>
+    <div class="bsk-col-24-md-6 bsk-col-24-md-pull-18 bsk-docs-content-block">.bsk-col-24-md-6 .bsk-col-24-md-pull-18</div>
+  </div>
+</div>
+</xmp>
 
 {% include topic-section-metadata.html
   title="Examples"
