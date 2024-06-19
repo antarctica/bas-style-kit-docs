@@ -1,0 +1,10 @@
+{% if site.bas_style_kit_jekyll_theme.attributes.site_analytics.id %}
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.bas_style_kit_jekyll_theme.attributes.site_analytics.id }}"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', '{{ site.bas_style_kit_jekyll_theme.attributes.site_analytics.id }}', { 'anonymize_ip': true });
+    </script>
+{% endif %}
