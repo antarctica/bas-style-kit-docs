@@ -68,7 +68,7 @@ bas_style_kit_jekyll_theme:
         href: '/'
     site_development_phase: 'live'
     site_analytics:
-      id: UA-64130716-27
+      id: G-16B6W9T2B1
     site_styles:
         -
           href: 'https://cdn.web.bas.ac.uk/libs/font-awesome-pro/5.13.0/css/all.min.css'
