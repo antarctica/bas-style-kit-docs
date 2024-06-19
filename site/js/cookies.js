@@ -1,4 +1,4 @@
-const domain = "";
+const domain = ".bas.ac.uk";
 
 // Function to create the cookie popup
 function createCookiePopup() {
@@ -199,7 +199,6 @@ function getCookiesWithRegex(cookieRegex) {
 
 // Show the cookie popup when the "Change Cookie Settings" button is clicked
 var openCookiePopupButton = document.getElementById("open-cookie-consent-popup");
-console.log('fkdslf;ksd', openCookiePopupButton);
 if (openCookiePopupButton) {
     openCookiePopupButton.addEventListener("click", function () {
         var cookieModal = document.getElementById("cookie-modal");
