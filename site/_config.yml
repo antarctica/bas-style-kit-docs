@@ -77,3 +77,7 @@ bas_style_kit_jekyll_theme:
         -
           href: '/css/main.css'
           type: 'local'
+    site_scripts:
+        -
+          href: '/js/cookies.js'
+          type: 'local'

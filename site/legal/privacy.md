@@ -2,79 +2,55 @@
 title: Privacy policy
 ---
 
-We collect information or data about you when you use this website.
+This privacy notice is for all users of websites run by the British Antarctic Survey (BAS), to explain how and why BAS uses your personal data. It does not replace the UKRI Privacy Notice, which can be found here: [https://www.ukri.org/who-we-are/privacy-notice/](https://www.ukri.org/who-we-are/privacy-notice/)
 
-This includes:
+#### What information is processed?
 
-* any feedback you leave, including your name and email address, if you choose to provide it
-* part of your computers IP address
-* details about which web browser and device you are using (e.g. the version and screen size)
-* information on how you use this website, including the pages you visit, using analytics and cookies
+Information processed through the BAS websites includes:
 
-This enables us to:
+* information that you provide by filling in forms or surveys
+* information in correspondence that you send us
+* information you provide in accessing products or services, including payment, contact and delivery information
+* information you provide when applying for a job vacancy, including your name, email and information contained within your CV, Cover Letter and the Equality Monitoring form
+* details of your visits to our websites including, but not limited to, traffic data, location data, weblogs and other communication data, and the resources that you access
+* information about your computer, such as your IP address, user ID of logged in users, and username of login attempts, are conditionally logged to check for malicious activity and to protect the site from specific kinds of cyber-attacks. This information is retained for 14 days.
 
-* respond to any feedback you send us, if you've asked us to
-* learn where visitors to this website came from
-* ensure this website works correctly for as many devices as possible
-* learn which parts of this website are more or less popular to help focus on what's most useful for most people
+For websites with accounts, BAS will process information to administer your log in and account settings.
 
-**We cannot personally identify you with this information, unless you provide it yourself directly**
+We may use this information to:
 
-We use IP address anonymisation to prevent your full IP address being stored. Please see
-[support.google.com/analytics/answer/2763052](https://support.google.com/analytics/answer/2763052?hl=en)
-for more information.
+* ensure that content from our website is presented in the most effective way to provide you with information, products or services that you request from us or which we feel may interest you, where you have consented to be contacted for such purposes
+* provide you with a means to access or purchase products and services
+* allow you to apply for vacancies at BAS
+* allow you to participate in interactive elements of our services when you choose to do so
+* evaluate and improve the BAS websites based on the way they are used
+* notify you about changes to our websites or services
+* check for malicious activity on BAS websites.
 
-## Keeping your information secure
+#### Security
 
-Transmitting information over the internet is generally not completely secure, and we can't guarantee the security of
-your data.
+Transmitting information over the internet is generally not completely secure, and we can't guarantee the security of your data. Any data you transmit is at your own risk. Information received by BAS will be held securely, in line with our Information Security policies. Your information will not be passed to third parties, except when this is required by our statutory duties, such as in the event of an audit.
 
-**Any data you transmit is at your own risk**
+#### Links to Third Party Websites
 
-We have procedures and security features in place to try and keep your data secure once we receive it.
+This Privacy Policy does not cover any links to external webpages (not operated by BAS) that may appear on the website. BAS does not assume any responsibility for websites that you are able to access through our website, and we encourage you to review each Third-Party website's privacy policy before disclosing any personal information to them.
 
-## Processing your information
+#### How long will the information be stored for?
 
-We handle personal data in compliance with the Data Protection Act 1998, and recognise the importance of the correct
-and lawful processing of personal data in maintaining confidence in our operations. Further information can be found in
-our [Parent Body’s information notice](http://www.nerc.ac.uk/about/policy/foi/information/).
+BAS will retain your personal information for only as long as it is required, where it will be securely deleted. This is done in accordance with the UKRI Retention Schedule and the needs of the business. If you wish to delete your account on a BAS Website, contact complaints@bas.ac.uk.
 
-## Where your information is stored
+#### Contact Us
 
-We will store your data to ensure an adequate level of protection for your data protection rights and freedoms.
-This sometimes may involve the use of assured third-party systems.
+If you have a question about or issue with how your information is processed by a BAS website, please contact BAS at complaints@bas.ac.uk
 
-## Disclosing your information
+Data Controller We are registered with the Information Commissioner’s Office with the registration number za333592. UKRI is the data controller for the personal information we process, unless otherwise stated. Our registered office is Polaris House, Swindon, SN2 1FL.
 
-We won’t pass on your details to other websites, unless you provide your consent for us to do so, and we won’t share
-your information with any other organisations for marketing, market research or commercial purposes.
+Our Data Protection Officer (DPO) is:
 
-We may pass on your personal information if we have a legal obligation to do so.
+David Hyett, Head of Information Governance, Polaris House, Swindon, SN2 1FL, email: dataprotection@ukri.org
 
-## Your rights
+#### Updates to this Policy
 
-You can find out what information we hold about you, and ask us not use any of the information we collect.
+We may update this privacy policy from time to time, so it is important you check back regularly to see any changes made.
 
-Our contact information is: [foi@bas.ac.uk](mailto:foi@bas.ac.uk).
-
-If you are not happy with the response you receive, or do not hear back, please follow the
-[BAS complaints procedure](https://www.bas.ac.uk/about/contact-bas/complaints/).
-
-## Links to other websites
-
-This website has links to other websites for which we are not responsible.
-
-This privacy policy only applies to this website.
-
-## Following a link to another website
-
-If you go to another website from this one, read the privacy policy on that website to find out what it does with your
-information.
-
-----
-
-## Changes to this policy
-
-### 16th June 2016
-
-* initial policy
+Policy Issued: 10/01/2024
