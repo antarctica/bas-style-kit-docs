@@ -64,4 +64,4 @@ to create an item header:
 </header>
 {% endexample %}
 
-[Open full example](https://style-kit-testbed.web.bas.ac.uk/master/p/0018--item-page.html){:.bsk-btn.bsk-btn-default}
+[Open full example](https://style-kit-testbed.web.bas.ac.uk/master/p/0018--item-type-header.html){:.bsk-btn.bsk-btn-default}
