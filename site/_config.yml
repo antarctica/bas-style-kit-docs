@@ -81,3 +81,11 @@ bas_style_kit_jekyll_theme:
         -
           href: '/js/cookies.js'
           type: 'local'
+    site_footer:
+      ogl:
+        href: 'http://www.nationalarchives.gov.uk/doc/open-government-licence'
+        text_version: 'v3.0'
+      legal_policies:
+        copyright_href: '/legal/copyright.html'
+        cookies_href: '/legal/cookies.html'
+        privacy_href: '/legal/privacy.html'
