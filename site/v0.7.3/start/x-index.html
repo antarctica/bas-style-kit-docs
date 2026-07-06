@@ -2,15 +2,15 @@
 layout: bas-style-kit/bsk--standard
 sort_index: 0
 slug: index
-permalink: /:collection/index.html
-title: Patterns
-subtitle: Best practice design solutions for specific user-focused tasks and page types
+permalink: /v0.7.3/start/index.html
+title: Getting Started
+subtitle: An overview of the BAS Style Kit, how to get it, how it's developed, and more
 menus:
   site_navigation_primary:
-    identifier: primary_patterns
-    weight: 5
-  primary_patterns:
-    title: All patterns
+    identifier: primary_start
+    weight: 1
+  primary_start:
+    title: All getting started
     weight: 1
 ---
 
@@ -19,7 +19,7 @@ menus:
   <p>{{ page.subtitle }}</p>
 </header>
 
-{% assign topics_sorted = site.patterns | sort:"sort_index" %}
+{% assign topics_sorted = site.start | sort:"sort_index" %}
 
 <div class="bsk-row bsk-row-cols-3">
 {% for topic in topics_sorted %}

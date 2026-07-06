@@ -34,12 +34,10 @@ recommended, with some specific icons recommended for consistency. Other familie
 needs.
 
 {% capture alert_content %}
-Icons should be used to enhance rather than replace other content, unless it is clearer or more familiar for users.
-Always ensure any icons used are
-[accessible]({{ '/start/standards-accessibility/#link-context-and-roles' | prepend: site.baseurl }}){: .bsk-alert-link }.
+To promote consistency, it is strongly recommended to only use [standard colours](#standard-colours), unless specifically recommended to use an alternative.
 {% endcapture %}
 {% include bas-style-kit/bsk-snippet--alert.html
-  variant="warning"
+  variant="info"
   style="outline"
   content=alert_content
 %}

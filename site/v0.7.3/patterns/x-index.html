@@ -2,15 +2,15 @@
 layout: bas-style-kit/bsk--standard
 sort_index: 0
 slug: index
-permalink: /:collection/index.html
-title: More
-subtitle: Learn more about the Style Kit and the different ways it can be used
+permalink: /v0.7.3/patterns/index.html
+title: Patterns
+subtitle: Best practice design solutions for specific user-focused tasks and page types
 menus:
   site_navigation_primary:
-    identifier: primary_more
-    weight: 6
-  primary_more:
-    title: All topics
+    identifier: primary_patterns
+    weight: 5
+  primary_patterns:
+    title: All patterns
     weight: 1
 ---
 
@@ -19,12 +19,12 @@ menus:
   <p>{{ page.subtitle }}</p>
 </header>
 
-{% assign topics_sorted = site.more | sort:"sort_index" %}
+{% assign topics_sorted = site.patterns | sort:"sort_index" %}
 
 <div class="bsk-row bsk-row-cols-3">
-  {% for topic in topics_sorted %}
-  {% unless topic.slug == "index" %}
-        <div class="bsk-col">
+{% for topic in topics_sorted %}
+{% unless topic.slug == "index" %}
+      <div class="bsk-col">
         <div class="bsk-docs-topic-index-divider"></div>
         <h2><a href="{{ topic.url | prepend: site.baseurl }}">{{ topic.title }}</a></h2>
         <ul class="bsk-list-inline">

@@ -24,7 +24,7 @@ Creates a basic grid system that starts out stacked on small devices before beco
 devices.
 
 {% example html %}
-<div class="bsk-row">
+<div class="bsk-row">.........
   <div class="bsk-col-md-1 bsk-docs-content-block">.bsk-col-md-1</div>
   <div class="bsk-col-md-1 bsk-docs-content-block">.bsk-col-md-1</div>
   <div class="bsk-col-md-1 bsk-docs-content-block">.bsk-col-md-1</div>
