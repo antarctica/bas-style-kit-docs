@@ -2,15 +2,15 @@
 layout: bas-style-kit/bsk--standard
 sort_index: 0
 slug: index
-title: Core styles
-subtitle: Global CSS settings, fundamental HTML elements styled and enhanced with extensible classes, and an advanced grid system
+permalink: /v0.7.3/more/index.html
+title: More
+subtitle: Learn more about the Style Kit and the different ways it can be used
 menus:
   site_navigation_primary:
-    identifier: primary_core
-    title: Core
-    weight: 2
-  primary_core:
-    title: All core styles
+    identifier: primary_more
+    weight: 6
+  primary_more:
+    title: All topics
     weight: 1
 ---
 
@@ -19,12 +19,12 @@ menus:
   <p>{{ page.subtitle }}</p>
 </header>
 
-{% assign topics_sorted = site.core | sort:"sort_index" %}
+{% assign topics_sorted = site.more | sort:"sort_index" %}
 
 <div class="bsk-row bsk-row-cols-3">
-{% for topic in topics_sorted %}
-{% unless topic.slug == "index" %}
-      <div class="bsk-col">
+  {% for topic in topics_sorted %}
+  {% unless topic.slug == "index" %}
+        <div class="bsk-col">
         <div class="bsk-docs-topic-index-divider"></div>
         <h2><a href="{{ topic.url | prepend: site.baseurl }}">{{ topic.title }}</a></h2>
         <ul class="bsk-list-inline">

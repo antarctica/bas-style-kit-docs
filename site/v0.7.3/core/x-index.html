@@ -2,15 +2,16 @@
 layout: bas-style-kit/bsk--standard
 sort_index: 0
 slug: index
-permalink: /:collection/index.html
-title: Getting Started
-subtitle: An overview of the BAS Style Kit, how to get it, how it's developed, and more
+permalink: /v0.7.3/core/index.html
+title: Core styles
+subtitle: Global CSS settings, fundamental HTML elements styled and enhanced with extensible classes, and an advanced grid system
 menus:
   site_navigation_primary:
-    identifier: primary_start
-    weight: 1
-  primary_start:
-    title: All getting started
+    identifier: primary_core
+    title: Core
+    weight: 2
+  primary_core:
+    title: All core styles
     weight: 1
 ---
 
@@ -19,7 +20,7 @@ menus:
   <p>{{ page.subtitle }}</p>
 </header>
 
-{% assign topics_sorted = site.start | sort:"sort_index" %}
+{% assign topics_sorted = site.core | sort:"sort_index" %}
 
 <div class="bsk-row bsk-row-cols-3">
 {% for topic in topics_sorted %}

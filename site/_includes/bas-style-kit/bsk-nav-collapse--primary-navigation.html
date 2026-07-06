@@ -35,9 +35,9 @@
         {% endfor %}
 
         <li class="bsk-nav-item" style="padding:14px 0 0 8px;">
-            <p style="color:#FFF;">Version: 
+            <p style="color:#FFF;">Version:
                 <select id="menu-select-version">
-                    <option value="">latest</option>
+                    <option value="v0.7.3">v0.7.3</option>
                     <option value="v0.6.1">v0.6.1</option>
                 </select>
             </p>
@@ -65,6 +65,24 @@ window.onload = function() {
         var brand_link = document.querySelector('.bsk-navbar-brand');
         brand_link.textContent="BAS Style Kit - 0.6.1";
         brand_link.setAttribute('href', '/v0.6.1/');
+
+        for (var element of document.getElementsByClassName(version_classname)){
+                element.classList.remove("version-list-element");
+            }
+
+    } else {
+        var exclude_class = "li:not(.v0-6-1)";
+        elements = document.querySelectorAll(exclude_class);
+        for (var element of elements){
+            element.classList.remove("version-list-element");
+        }
+    }
+
+    if(version_classname == 'v0-7-3') {
+
+        var brand_link = document.querySelector('.bsk-navbar-brand');
+        brand_link.textContent="BAS Style Kit - 0.7.3";
+        brand_link.setAttribute('href', '/v0.7.3/');
 
         for (var element of document.getElementsByClassName(version_classname)){
                 element.classList.remove("version-list-element");
