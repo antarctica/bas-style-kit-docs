@@ -1,15 +1,15 @@
 {% if jekyll.environment == 'production' %}
     {% unless site.bas_style_kit_jekyll_theme.attributes.site_development_phase == 'live-stable' %}
-        <div class="{{ bsk_attributes_container_class }}">
+        <!-- <div class="{{ bsk_attributes_container_class }}">
             <span class="bsk-text-uppercase bsk-label bsk-label-phase-{{ site.bas_style_kit_jekyll_theme.attributes.site_development_phase }}">{{ site.bas_style_kit_jekyll_theme.attributes.site_development_phase }}</span>
             This is a new website – your <a href="{{ site.bas_style_kit_jekyll_theme.attributes.site_feedback_href }}">feedback</a> will help us to improve it.
             <hr class="bsk-hr-dashed" />
-        </div>
+        </div> -->
     {% endunless %}
 {% else %}
-    <div class="{{ bsk_attributes_container_class }}">
+    <!-- <div class="{{ bsk_attributes_container_class }}">
         <span class="bsk-text-uppercase bsk-label bsk-label-experimental">Experimental</span>
         This website is used for testing – your <a href="{{ site.bas_style_kit_jekyll_theme.attributes.site_feedback_href }}">feedback</a> will help us to improve it.    
         <hr class="bsk-hr-dashed" />
-    </div>    
+    </div>     -->
 {% endif %}
