@@ -5,6 +5,12 @@ This project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html
 
 ## [Unreleased][unreleased]
 
+## v1.9.1 - 06/07/2026
+
+### Changed
+
+* Set the website to be a depreciated repository for this resource. Works in tandem with the 2025 websites and resources.
+
 ## v1.9.0 - 18/06/2024
 
 ### Added

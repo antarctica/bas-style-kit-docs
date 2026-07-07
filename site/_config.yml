@@ -66,7 +66,7 @@ bas_style_kit_jekyll_theme:
     site_brand:
         text: 'BAS Style Kit'
         href: '/'
-    site_development_phase: 'live'
+    site_development_phase: 'deprecated'
     site_analytics:
       id: G-16B6W9T2B1
     site_styles:

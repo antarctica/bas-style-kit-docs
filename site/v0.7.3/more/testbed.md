@@ -30,4 +30,4 @@ examples intentionally designed not to work or for testing.
   content=alert_content
 %}
 
-[View the testbed](https://style-kit-testbed.web.bas.ac.uk/master/){: .bsk-btn .bsk-btn-lg .bsk-btn-default }
+[View the testbed](https://style-kit-testbed.web.bas.ac.uk/){: .bsk-btn .bsk-btn-lg .bsk-btn-default }

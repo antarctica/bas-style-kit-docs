@@ -48,20 +48,20 @@ jekyll-build-develop:
       - site/_site
     expire_in: 1 day
 
-jekyll-build-staging:
-  stage: build
-  only:
-    - master
-  variables:
-    JEKYLL_ENV: staging
-  before_script:
-    - "cd site"
-  script: "jekyll build"
-  artifacts:
-    name: "$CI_BUILD_TOKEN-content"
-    paths:
-      - site/_site
-    expire_in: 1 day
+# jekyll-build-staging:
+#   stage: build
+#   only:
+#     - master
+#   variables:
+#     JEKYLL_ENV: staging
+#   before_script:
+#     - "cd site"
+#   script: "jekyll build"
+#   artifacts:
+#     name: "$CI_BUILD_TOKEN-content"
+#     paths:
+#       - site/_site
+#     expire_in: 1 day
 
 jekyll-build-production:
   stage: build
@@ -78,17 +78,17 @@ jekyll-build-production:
       - site/_site
     expire_in: 2 years
 
-s3-website-staging:
-  stage: deploy
-  image:
-    name: governmentpaas/awscli:latest
-    entrypoint: [""]
-  script: "aws s3 sync --delete site/_site s3://$S3_DEPLOYMENT_BUCKET_STAGE/"
-  only:
-    - master
-  environment:
-    name: staging
-    url: https://style-kit-testing.web.bas.ac.uk
+# s3-website-staging:
+#   stage: deploy
+#   image:
+#     name: governmentpaas/awscli:latest
+#     entrypoint: [""]
+#   script: "aws s3 sync --delete site/_site s3://$S3_DEPLOYMENT_BUCKET_STAGE/"
+#   only:
+#     - master
+#   environment:
+#     name: staging
+#     url: https://style-kit-testing.web.bas.ac.uk
 
 s3-website-production:
   stage: deploy
