@@ -20,6 +20,7 @@ layout: bas-style-kit/bsk--base
     </nav>
   {% endif %}
 </header>
+<div class="bsk-alert bsk-alert-solid bsk-alert-warning" role="alert" style="margin-bottom: 0"><i class="far fa-fw fa-exclamation-triangle bsk-alert-icon"></i> <b>This version of the style kit is depreciated.</b> Find the most recent version here: <a href="https://style-kit.web.bas.ac.uk/" style="color: #000; text-decoration: underline";>style-kit.web.bas.ac.uk</a></div>
 
 <div class="bsk-jumbotron bsk-jumbotron-bsk-inverse bsk-image-copyright site-home-masthead">
   <div class="bsk-container">
@@ -29,10 +30,6 @@ layout: bas-style-kit/bsk--base
 
     <h1 class="bsk-text-center site-home-masthead-title">
       BAS Style Kit
-      {% unless jekyll.environment == 'production' %}
-        <i class="fas fa-fw fa-flask site-text-experimental-light" aria-hidden="true"></i>
-        <span class="bsk-visually-hidden">Testing version</span>
-      {% endunless %}
     </h1>
 
     <p class="bsk-text-center site-home-masthead-strapline"><span class="bsk-jumbotron-overlay">A collection of HTML, CSS, and JS components for developing web projects consistent with the BAS brand</span></span></p>
@@ -47,25 +44,6 @@ layout: bas-style-kit/bsk--base
 </div>
 
 <div class="{{ bsk_attributes_container_class }}">
-  {% if jekyll.environment != 'production' %}
-    <section class="bsk-row">
-
-      <div class="bsk-col-md-8 bsk-offset-md-2 bsk-alert bsk-alert-solid bsk-alert-experimental bsk-alert-icon bsk-alert-block bsk-text-center site-home-alert">
-        <header class="bsk-alert-heading">
-          <h2><i class="fas fa-fw fa-flask bsk-alert-icon"></i>This website is used for testing</h2>
-        </header>
-        <p>This site contains a preview of upcoming changes and other experiments. It isn't safe to rely on examples
-          from this website, as as they may not work, or be removed at any time.</p>
-        <div class="site-home-spacer-md"></div>
-        <p><a class="bsk-btn bsk-btn-default bsk-btn-lg" href="{{ 'https://' | append: site.data.variables.docs_site_production }}">
-          View the stable documentation instead
-        </a></p>
-      </div>
-    </section>
-
-    <hr class="site-home-hr" /> 
-  {% endif %}
-
   <section class="bsk-row">
     <div class="bsk-col-md-8 bsk-offset-md-2 bsk-text-center bsk-alert bsk-alert-solid bsk-alert-warning bsk-alert-icon bsk-alert-block site-home-alert">
       <header class="bsk-alert-heading">
